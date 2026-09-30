@@ -1,3 +1,9 @@
 node_modules
 dist
 .DS_Store
+# Bulky, regenerable full-page screenshot sets (kept on disk, not versioned; see each AUDIT.md for the tools that regenerate them)
+recon/audit-pages-2/before/
+recon/audit-pages-2/after/cmp/
+recon/audit-pages-2/states/**/*.png
+recon/motion-3/**/*.png
+recon/motion-4/**/*.png

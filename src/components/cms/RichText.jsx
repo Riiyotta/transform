@@ -6,6 +6,10 @@
 function Inline({ run }) {
   if (run.br) return <br />
   let node = run.text
+  if (run.italic) node = <em>{node}</em>
+  if (run.bold) node = <strong>{node}</strong>
+  // Live nests the formatting inside the link (`<a><strong>…</strong></a>`, the only linked+bold
+  // run in the source HTML), so the link is the outermost wrapper.
   if (run.link) {
     node = (
       <a href={run.link.href} target={run.link.target} rel={run.link.rel}>
@@ -13,8 +17,6 @@ function Inline({ run }) {
       </a>
     )
   }
-  if (run.italic) node = <em>{node}</em>
-  if (run.bold) node = <strong>{node}</strong>
   return node
 }
 
