@@ -30,3 +30,16 @@ Audit: read-only `Explore` pass, 2026-09-30, at git d0e2be0. Findings verified b
 | R3 | Navbar `useNavRoll` ignores mouseleave below 992 | Rolled text can stick after resize across breakpoint | Reset y in matchMedia cleanup. |
 | R4 | Lenis own rAF vs gsap.ticker | Possible 1-frame ScrollTrigger lag | Drive Lenis from gsap.ticker (standard pattern); verify M22 wheel curve unchanged. |
 | R5 | Tailwind `w-nav` | Latent 60px-wide nav | Covered by #5 blocklist. |
+
+## Schedule (user-directed restructure, 2026-09-30)
+The user asked to move cleanup to the end or remove what isn't necessary. This departs from the workflow's "cleanup before extraction" gate; the reasoning is recorded here.
+
+**Source frozen for IA + design-repo extraction at git `c223e50`** (no cleanup applied).
+
+| Group | Items | Handling |
+|---|---|---|
+| Would mislead extraction | #1, #3, #4, #5 | No code change. The design-repo records the canonical model: one ease map (`outQuad` = `power1.out`; the Navbar M15 bezier is an equivalent CSS approximation, which measured within one frame of live); one `PixelGrid` contract with three variants; CSS custom properties as the token system (Tailwind = preflight only); tint/green/gray colours owned by tokens. Each is listed in the design-repo as a known implementation duplication, citing this file. |
+| Small correctness risks | R1, R2, R3, #9, #11, #12 (apple-touch-icon link), #17 | Deferred to the very end, optional, main session. If applied: rerun smoke/edges/motion spot checks, then refresh any affected design-repo citations. |
+| Tidy-up only | #2, #6, #7, #8, #10, #13, #14, #15, R4 | Dropped. Rewriting QA-passed code risks regressions with no benefit to the deliverables. The extractor is told to treat stale comments (#8) and dead hooks (#2, #7) as non-authoritative. |
+
+The two cleanup agents dispatched at c223e50 were stopped before editing any source.
