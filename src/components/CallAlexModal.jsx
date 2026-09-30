@@ -110,12 +110,14 @@ export default function CallAlexModal() {
                     Privacy Policy
                   </a>
                 </div>
-                <div className="popup-bottom-wrap">
-                  <div className="captcha-popup" aria-hidden="true" />
-                  <div className="submit-form-wrap has-underline">
-                    <input type="submit" value="Call Me Now" data-wait="Please wait..." className="submit-form call-me" />
-                    <UnderlinePair />
-                  </div>
+              </div>
+              {/* Sibling of .call-form-bottom (not a child), as on the original: at <=767
+                  .call-form-bottom is a 16px-gap flex column and nesting adds that gap. */}
+              <div className="popup-bottom-wrap">
+                <div className="captcha-popup" aria-hidden="true" />
+                <div className="submit-form-wrap has-underline">
+                  <input type="submit" value="Call Me Now" data-wait="Please wait..." className="submit-form call-me" />
+                  <UnderlinePair />
                 </div>
               </div>
             </form>
