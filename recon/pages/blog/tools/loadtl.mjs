@@ -28,5 +28,5 @@ for (const [key, path] of [['post', '/blog/redefining-healthcare-ai'], ['cs', '/
   res[key] = { path, loadAt: s.load, preloaderBeforeLoad: s.pre, pendingAt4s: slow, changes: rows }
   await ctx.close()
 }
-fs.writeFileSync(`${OUT}/load-timeline-detail.json`, JSON.stringify(res, null, 1))
+fs.writeFileSync(`${OUT}/blog/shared/load-timeline-detail.json`, JSON.stringify(res, null, 1))
 await b.close()

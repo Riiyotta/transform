@@ -1,0 +1,317 @@
+{
+ "height": 7278,
+ "overflowX": 0,
+ "font": true,
+ "title": "Privacy Policy",
+ "els": {
+  "section.hero.hide-on-scroll": {
+   "count": 1,
+   "rect": {
+    "x": 0,
+    "y": 0,
+    "w": 768,
+    "h": 1024
+   },
+   "fontSize": "14px",
+   "lineHeight": "19.6px",
+   "color": "rgb(2, 8, 1)",
+   "marginTop": "0px",
+   "marginLeft": "0px",
+   "maxWidth": "none",
+   "paddingTop": "110px",
+   "opacity": "1"
+  },
+  "h1.white-text.hero-home.legal": {
+   "count": 1,
+   "rect": {
+    "x": 47,
+    "y": 230,
+    "w": 602,
+    "h": 303
+   },
+   "fontSize": "75px",
+   "lineHeight": "75.75px",
+   "color": "rgb(255, 255, 255)",
+   "marginTop": "120px",
+   "marginLeft": "47px",
+   "maxWidth": "672px",
+   "paddingTop": "0px",
+   "opacity": "1"
+  },
+  "div.hero-home-bottom.legal": {
+   "count": 1,
+   "rect": {
+    "x": 0,
+    "y": 693.28,
+    "w": 768,
+    "h": 300
+   },
+   "fontSize": "14px",
+   "lineHeight": "19.6px",
+   "color": "rgb(2, 8, 1)",
+   "marginTop": "0px",
+   "marginLeft": "0px",
+   "maxWidth": "none",
+   "paddingTop": "0px",
+   "opacity": "1"
+  },
+  "div.hero-bottom-block.full-width": {
+   "count": 1,
+   "rect": {
+    "x": 0,
+    "y": 693.28,
+    "w": 768,
+    "h": 299
+   },
+   "fontSize": "14px",
+   "lineHeight": "19.6px",
+   "color": "rgb(2, 8, 1)",
+   "marginTop": "0px",
+   "marginLeft": "0px",
+   "maxWidth": "none",
+   "paddingTop": "20px",
+   "opacity": "1"
+  },
+  "div._16px-text.white-text": {
+   "count": 1,
+   "rect": {
+    "x": 63,
+    "y": 713.28,
+    "w": 685,
+    "h": 19.59
+   },
+   "fontSize": "14px",
+   "lineHeight": "19.6px",
+   "color": "rgb(255, 255, 255)",
+   "marginTop": "0px",
+   "marginLeft": "43px",
+   "maxWidth": "none",
+   "paddingTop": "0px",
+   "opacity": "1"
+  },
+  "p._30px-text.home-hero-text.white.legal-privacy": {
+   "count": 1,
+   "rect": {
+    "x": 63,
+    "y": 885.91,
+    "w": 437.75,
+    "h": 86.38
+   },
+   "fontSize": "18px",
+   "lineHeight": "21.6px",
+   "color": "rgb(255, 255, 255)",
+   "marginTop": "0px",
+   "marginLeft": "43px",
+   "maxWidth": "437.76px",
+   "paddingTop": "0px",
+   "opacity": "1"
+  },
+  "section.legal-section": {
+   "count": 1,
+   "rect": {
+    "x": 0,
+    "y": 1024,
+    "w": 768,
+    "h": 5260.41
+   },
+   "fontSize": "14px",
+   "lineHeight": "19.6px",
+   "color": "rgb(2, 8, 1)",
+   "marginTop": "0px",
+   "marginLeft": "0px",
+   "maxWidth": "none",
+   "paddingTop": "80px",
+   "opacity": "1"
+  },
+  "div.legal-cont": {
+   "count": 1,
+   "rect": {
+    "x": 20,
+    "y": 1104,
+    "w": 728,
+    "h": 5180.41
+   },
+   "fontSize": "14px",
+   "lineHeight": "19.6px",
+   "color": "rgb(2, 8, 1)",
+   "marginTop": "0px",
+   "marginLeft": "0px",
+   "maxWidth": "960px",
+   "paddingTop": "0px",
+   "opacity": "1"
+  },
+  "div.legal-block": {
+   "count": 15,
+   "rect": {
+    "x": 20,
+    "y": 1104,
+    "w": 728,
+    "h": 149.38
+   },
+   "fontSize": "14px",
+   "lineHeight": "19.6px",
+   "color": "rgb(2, 8, 1)",
+   "marginTop": "0px",
+   "marginLeft": "0px",
+   "maxWidth": "none",
+   "paddingTop": "0px",
+   "opacity": "1"
+  },
+  "div.legal-text-wrap": {
+   "count": 16,
+   "rect": {
+    "x": 20,
+    "y": 1177.19,
+    "w": 728,
+    "h": 39.19
+   },
+   "fontSize": "14px",
+   "lineHeight": "19.6px",
+   "color": "rgb(2, 8, 1)",
+   "marginTop": "0px",
+   "marginLeft": "0px",
+   "maxWidth": "none",
+   "paddingTop": "0px",
+   "opacity": "1"
+  },
+  "h2._30px-text.white": {
+   "count": 16,
+   "rect": {
+    "x": 20,
+    "y": 1104,
+    "w": 728,
+    "h": 43.19
+   },
+   "fontSize": "18px",
+   "lineHeight": "21.6px",
+   "color": "rgb(255, 255, 255)",
+   "marginTop": "0px",
+   "marginLeft": "0px",
+   "maxWidth": "none",
+   "paddingTop": "0px",
+   "opacity": "1"
+  },
+  "p._16px-text.white-text.transp": {
+   "count": 51,
+   "rect": {
+    "x": 63,
+    "y": 1177.19,
+    "w": 685,
+    "h": 39.19
+   },
+   "fontSize": "14px",
+   "lineHeight": "19.6px",
+   "color": "rgba(255, 255, 255, 0.5)",
+   "marginTop": "0px",
+   "marginLeft": "43px",
+   "maxWidth": "none",
+   "paddingTop": "0px",
+   "opacity": "1"
+  },
+  "p._22px-text-green": null,
+  "ul.list-white.transp": {
+   "count": 8,
+   "rect": {
+    "x": 20,
+    "y": 1587.53,
+    "w": 728,
+    "h": 58.78
+   },
+   "fontSize": "14px",
+   "lineHeight": "19.6px",
+   "color": "rgba(255, 255, 255, 0.5)",
+   "marginTop": "0px",
+   "marginLeft": "0px",
+   "maxWidth": "none",
+   "paddingTop": "0px",
+   "opacity": "1"
+  },
+  "li.list-item": {
+   "count": 24,
+   "rect": {
+    "x": 60,
+    "y": 1587.53,
+    "w": 688,
+    "h": 19.59
+   },
+   "fontSize": "14px",
+   "lineHeight": "19.6px",
+   "color": "rgba(255, 255, 255, 0.5)",
+   "marginTop": "0px",
+   "marginLeft": "0px",
+   "maxWidth": "none",
+   "paddingTop": "0px",
+   "opacity": "1"
+  },
+  "a.link-transp": {
+   "count": 2,
+   "rect": {
+    "x": 63,
+    "y": 3072.66,
+    "w": 427.84,
+    "h": 14
+   },
+   "fontSize": "14px",
+   "lineHeight": "19.6px",
+   "color": "rgb(255, 255, 255)",
+   "marginTop": "0px",
+   "marginLeft": "0px",
+   "maxWidth": "none",
+   "paddingTop": "0px",
+   "opacity": "0.5"
+  },
+  "div.legal-block.last": {
+   "count": 1,
+   "rect": {
+    "x": 20,
+    "y": 6017.28,
+    "w": 728,
+    "h": 267.13
+   },
+   "fontSize": "14px",
+   "lineHeight": "19.6px",
+   "color": "rgb(2, 8, 1)",
+   "marginTop": "0px",
+   "marginLeft": "0px",
+   "maxWidth": "none",
+   "paddingTop": "0px",
+   "opacity": "1"
+  },
+  "section.footer.section": {
+   "count": 1,
+   "rect": {
+    "x": 0,
+    "y": 6284.41,
+    "w": 768,
+    "h": 713.27
+   },
+   "fontSize": "14px",
+   "lineHeight": "19.6px",
+   "color": "rgb(2, 8, 1)",
+   "marginTop": "0px",
+   "marginLeft": "0px",
+   "maxWidth": "none",
+   "paddingTop": "0px",
+   "opacity": "1"
+  },
+  "div.footer-bottom-wrap": {
+   "count": 1,
+   "rect": {
+    "x": 0,
+    "y": 743.66,
+    "w": 768,
+    "h": 280.34
+   },
+   "fontSize": "14px",
+   "lineHeight": "19.6px",
+   "color": "rgb(2, 8, 1)",
+   "marginTop": "0px",
+   "marginLeft": "0px",
+   "maxWidth": "none",
+   "paddingTop": "0px",
+   "opacity": "1"
+  }
+ },
+ "errors": [],
+ "external": []
+}

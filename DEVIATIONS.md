@@ -12,3 +12,8 @@
 | D8 | Call Alex popup keyboard behaviour | Not measured / Webflow default | Focus moves into dialog on open, Escape closes, focus returns to opener on close | Accessibility; no visual change |
 | D9 | /book-a-demo form | Posts to HubSpot, may redirect to an unseen `redirectUri`; honeypot + 1500ms spam guard | Client-side validation → brief "Submitting..." → Webflow "Thank you!" block; no network; spam guards omitted; dead Finsweet/dropdown-redirect scripts and `#t9-hubspot-form` CSS stripped | D2 policy (no submission); redirect target unknown and off-site |
 | D10 | Privacy-policy inline links | `target=_blank` without rel | Adds `rel="noopener"` | Same as D6 |
+| D11 | Page-load intro (compare, book-a-demo, legal, blog, case studies) | Starts when the Webflow runtime / window `load` fires (2.3–6s observed, once ~50s, due to third-party scripts) | Same intro timeline and values, started on mount | User decision 2026-09-30 |
+| D12 | /book-a-demo form labels | Black on black (invisible) | Visible white labels, measured size/weight/spacing | User decision 2026-09-30 (accessibility) |
+| D13 | Blog post share icons | Finsweet script opens share popups | Icons render with hover, clicks do nothing (script stripped, no replacement) | User decision 2026-09-30 |
+| D14 | `/blog?523ae0d4_page=2` | Broken on live (page 1 again + unstyled Previous button) | Renders the normal blog index; Load More appends older posts in place as on live | User decision 2026-09-30 |
+| D15 | Hidden style-guide block on blog/case-study detail pages | Hidden, but still loads Twitter widgets + a YouTube iframe | Not rendered; no third-party loads | D1 policy |

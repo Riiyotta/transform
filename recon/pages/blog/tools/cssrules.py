@@ -1,6 +1,6 @@
 # Extract rules from the shared Webflow CSS that reference classes used on the blog/case-study pages; group by media query.
 import re,glob,sys
-css=open('tools/shared.css').read()
+css=open('blog/tools/shared.css').read()
 home=open('../homepage-rules.css').read()
 homecls=set(re.findall(r'\.(-?[_a-zA-Z][\w-]*)',home))
 cls=set()
@@ -32,10 +32,10 @@ for media,sel,body in out:
     sc=set(re.findall(r'\.(-?[_a-zA-Z][\w-]*)',sel))
     if sc & cls and (sc-homecls or any(r in sel for r in rich)):
         groups.setdefault(media,[]).append(f'{sel} {{{body}}}')
-with open('page-rules.css','w') as w:
+with open('blog/shared/page-rules.css','w') as w:
     for m in ['base']+[k for k in groups if k!='base']:
         if m in groups:
             w.write(f'\n/* ===== {m} ===== */\n'+'\n'.join(groups[m])+'\n')
 new=sorted(c for c in cls if c not in homecls)
-open('new-classes.txt','w').write('\n'.join(new))
+open('blog/shared/new-classes.txt','w').write('\n'.join(new))
 print(len(cls),'classes;',len(new),'not in homepage-rules;', sum(len(v) for v in groups.values()),'rules')

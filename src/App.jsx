@@ -27,7 +27,7 @@ export default function App() {
       {route.preloader && <Preloader />}
       {route.modal && <CallAlexModal />}
       <div className="page-wrap">
-        <PageLayers />
+        {route.layers && <PageLayers />}
         {route.page(route.params)}
         {route.footer === 'full' && <FooterTop />}
       </div>

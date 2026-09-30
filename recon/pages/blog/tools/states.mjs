@@ -99,6 +99,6 @@ await p.evaluate(() => window.scrollTo(0, 3700)); await p.waitForTimeout(800)
 const rnProbe = async () => ({ imgWrap: await pick(rn + ' .post-img-wrap', ['background-color']), wh: await pick(rn + ' .cl-wh-logo-on-cell', ['opacity']), bottom: await pick(rn + ' .post-bottom-wrap', ['background-color']), title: await pick(rn + ' ._30px-text', ['color']), arrow: await pick(rn + ' .post-arrow-wrap', ['opacity']) })
 res.csReadNextRest = await rnProbe(); await p.hover(rn); await p.waitForTimeout(800); res.csReadNextHover = await rnProbe()
 res.csBackRest = await pick('.icon-w-text', ['opacity']); await p.evaluate(() => window.scrollTo(0, 0)); await p.waitForTimeout(600); await p.hover('.icon-w-text'); await p.waitForTimeout(900); res.csBackHover = { link: await pick('.icon-w-text', ['opacity']), a1: await pick('.icon-w-text .back-1', ['transform']) }
-fs.writeFileSync(`${OUT}/states-1440.json`, JSON.stringify(res, null, 1))
+fs.writeFileSync(`${OUT}/blog/shared/states-1440.json`, JSON.stringify(res, null, 1))
 await b.close()
 console.log('done')

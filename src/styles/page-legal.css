@@ -1,1 +1,162 @@
-/* LegalPage — page styles (legal). Owned by the builder assigned to this family. */
+/* =============================================================================
+   LegalPage — /terms-of-use, /privacy-policy, /hipaa (specs/legal.md).
+   Loaded before src/index.css in the bundle, so every rule that overrides a shared
+   homepage class is scoped (`.legal-hero …`, `.legal-section …`) to win on specificity.
+   ============================================================================= */
+
+/* ---- Page tokens (specs/legal.md §5). Not in src/index.css yet. ---- */
+:root {
+  /* PROMOTE: text-white-50 — colour, not opacity (.transp paragraphs and lists) */
+  --color-white-50: rgba(255, 255, 255, 0.5);
+  /* PROMOTE: legal-subhead — p._22px-text-green (22px up to 1440) */
+  --fs-legal-subhead: max(1.375rem, 1.528vw);
+  /* PROMOTE: legal-cont width — 50vw clamped 720–960; 100% at <=991 */
+  --legal-cont-w: 50vw;
+  --legal-cont-min: 720px;
+  --legal-cont-max: 960px;
+  /* PROMOTE: legal gaps */
+  --legal-section-pt: max(80px, 5.556vw);
+  --legal-cont-gap: clamp(36px, 2.5vw, 2.5vw);
+  --legal-block-gap: clamp(30px, 2.083vw, 40px);
+  --legal-block-pb: max(36px, 2.5vw);
+  --legal-text-gap: 24px;
+  /* PROMOTE: Webflow base ul/ol padding-left */
+  --list-indent: 40px;
+}
+@media screen and (max-width: 991px) {
+  :root {
+    --legal-cont-w: 100%;
+    --legal-cont-min: auto;
+  }
+}
+@media screen and (max-width: 479px) {
+  :root {
+    --legal-cont-gap: 24px;
+    --legal-block-gap: 20px;
+    --legal-block-pb: 24px;
+  }
+}
+
+/* =============================================================================
+   HERO — section.hero.hide-on-scroll (§3). Webflow `.hero` base (not `.hero.home`):
+   height 100dvh, pt 110 / 90 @<=479, pb 3vh @<=991, 20px @<=767, 0 @<=479.
+   ============================================================================= */
+.hero.legal-hero {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100dvh;
+  padding-top: 110px;
+  overflow: hidden;
+}
+/* .hero-bottom-block.full-width: no right border, relative */
+.legal-hero .hero-bottom-block.full-width {
+  position: relative;
+  border-right-width: 0;
+}
+/* p._30px-text.home-hero-text.white.legal-terms — max 31ch, no left margin */
+.legal-hero .home-hero-text.legal-terms {
+  max-width: 31ch;
+}
+/* .legal-privacy (privacy + hipaa) — max 38ch, ml 43 at EVERY width (x 63 @390), so this
+   is a literal, not --indent-label (which drops to 0 at <=479). */
+.legal-hero .home-hero-text.legal-privacy {
+  max-width: 38ch;
+  margin-left: 43px;
+}
+
+/* =============================================================================
+   LEGAL CONTENT — section.legal-section (§4)
+   ============================================================================= */
+.legal-section {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: var(--legal-section-pt);
+  padding-bottom: 0;
+}
+.legal-section .legal-cont {
+  display: flex;
+  flex-direction: column;
+  gap: var(--legal-cont-gap);
+  width: var(--legal-cont-w);
+  min-width: var(--legal-cont-min);
+  max-width: var(--legal-cont-max);
+}
+.legal-section .legal-block {
+  display: flex;
+  flex-direction: column;
+  gap: var(--legal-block-gap);
+  padding-bottom: var(--legal-block-pb);
+  border-bottom: 1px solid var(--color-stroke-dark);
+}
+.legal-section .legal-block.last {
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+.legal-section .legal-text-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: var(--legal-text-gap);
+}
+/* h2._30px-text.white — 30 / 21.33 / 18 / 24 */
+.legal-section .text-30.white {
+  position: relative;
+  margin: 0;
+  color: var(--color-white);
+  font-size: var(--fs-30);
+  line-height: var(--lh-30);
+}
+/* p._16px-text.white-text.transp — .label-16 (16/16/14/16, ml 43 → 0 @<=479) in white-50 */
+.legal-section .label-16.transp {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: var(--color-white-50);
+}
+/* p._22px-text-green (terms only) — no indent */
+.legal-section .text-22-green {
+  margin: 0;
+  color: var(--color-green);
+  font-size: var(--fs-legal-subhead);
+  line-height: var(--lh-body);
+}
+/* ul.list-white.transp — browser default disc coloured white-50, padding-left 40 */
+.legal-section .list-white.transp {
+  margin: 0;
+  padding-left: var(--list-indent);
+  color: var(--color-white-50);
+  list-style: disc;
+}
+.legal-section .list-item {
+  display: list-item;
+}
+/* a.link-transp (privacy only) — white at opacity .5, underline, no hover change */
+.legal-section .link-transp {
+  color: var(--color-white);
+  text-decoration: underline;
+  opacity: 0.5;
+}
+
+@media screen and (max-width: 991px) {
+  .hero.legal-hero {
+    padding-bottom: 3vh;
+  }
+  .legal-section {
+    padding-right: var(--pad);
+    padding-left: var(--pad);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .hero.legal-hero {
+    padding-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .hero.legal-hero {
+    padding-top: 90px;
+    padding-bottom: 0;
+  }
+}
