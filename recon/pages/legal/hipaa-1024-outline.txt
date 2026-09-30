@@ -1,0 +1,290 @@
+<body .body > {0,0 1024x4206}
+  <div .nav-menu.w-nav #book-demo-btn role=banner> {0,0 1024x60}
+    <div .nav-container > {0,0 1024x60}
+      <a .logo-wrap.w-nav-brand href=/ aria-label=home> {0,0 167x60}
+        <img .logo-white src=https://cdn.prod.website-files.com/684a82e3294991569082d379/68639bb30a93107837363b04_logo-2.svg loading=eager alt=transform9 logo> {19,11 130x38}
+        <img .logo-black src=https://cdn.prod.website-files.com/684a82e3294991569082d379/68906575d051bc5b61776ed5_logo-black.svg loading=eager alt=transform9 logo> {19,11 130x38}
+      <nav .nav-links.w-nav-menu role=navigation> {167,0 857x60}
+        <div .nav-links-cont > {167,0 857x60}
+          <div .nav-links-left > {167,0 360x60}
+            <a .nav-link-block._1st.w-inline-block href=/compare> {167,0 77x60}
+              <div .nav-text-wrap > {167,20 57x20}
+                <div .nav-text > {167,20 57x20}
+                  "Compare"
+                <div .nav-text.hiden > {167,40 57x20}
+                  "Compare"
+            <a .nav-link-block.w-inline-block href=/blog> {245,0 68x60}
+              <div .nav-text-wrap > {265,20 28x20}
+                <div .nav-text > {265,20 28x20}
+                  "Blog"
+                <div .nav-text.hiden > {265,40 28x20}
+                  "Blog"
+            <a .nav-link-block.w-inline-block href=/case-studies> {313,0 124x60}
+              <div .nav-text-wrap > {333,20 84x20}
+                <div .nav-text > {333,20 84x20}
+                  "Case Studies"
+                <div .nav-text.hiden > {333,40 84x20}
+                  "Case Studies"
+            <a .nav-link-block.w-inline-block href=https://apply.workable.com/transform9/ target=_blank> {438,0 90x60}
+              <div .nav-text-wrap > {458,20 50x20}
+                <div .nav-text > {458,20 50x20}
+                  "Careers"
+                <div .nav-text.hiden > {458,40 50x20}
+                  "Careers"
+          <div .nav-links-right > {809,0 215x60}
+            <a .nav-link-block.login.w-inline-block href=https://portal.transform9.com/> {809,0 83x60}
+              <div .nav-text-wrap > {833,20 35x20}
+                <div .nav-text > {833,20 35x20}
+                  "Login"
+                <div .nav-text.hiden > {833,40 35x20}
+                  "Login"
+            <a .nav-link-block.cta.w-inline-block href=/book-a-demo> {892,0 132x60}
+              <div .nav-text-wrap > {916,20 84x20}
+                <div .cta > {916,20 84x20}
+                  "Book a Demo"
+          <div .bg-noise.nav-tabet > [display:none] {0,0 0x0}
+      <a .nav-link-block.cta.mobil-top-cta.w-inline-block href=/book-a-demo> [display:none] {0,0 0x0}
+        <div .nav-text-wrap > {0,0 0x0}
+          <div .cta > {0,0 0x0}
+            "Book a Demo"
+      <div .menu-btn.w-nav-button role=button aria-label=menu> [display:none] {0,0 0x0}
+        <div .menu-btn-wrap > {0,0 0x0}
+          <img .burger-white src=https://cdn.prod.website-files.com/684a82e3294991569082d379/68a300503634463bc8a25527_menu-burger.svg loading=eager alt=menu icon> {0,0 0x0}
+          <img .nav-cross-white src=https://cdn.prod.website-files.com/684a82e3294991569082d379/689caa3e67c8dbd2e70dc1bc_close-icon-white.svg loading=eager alt=close icon> {0,0 0x0}
+          <img .burger-black src=https://cdn.prod.website-files.com/684a82e3294991569082d379/68a5a50307e780f41451718b_menu-burger-close.svg loading=eager alt=> {0,0 0x0}
+      <div .nav-border-on-white > {0,59 1024x1}
+    <div .w-nav-overlay #w-nav-overlay-0> [display:none] {0,0 0x0}
+  <div .preloader-wrap > {0,0 1024x900}
+  <div .page-wrap > {0,0 1024x3912}
+    <div .bg-noise-wrap > {0,0 1024x900}
+      <div .bg-noise.test-home > {0,0 1024x900}
+    <div .bg-pixels-wrapper > {0,0 1023x900}
+      <div .bg-video-pixels.w-background-video.w-background-video-atom > {0,0 1023x900}
+        <video #a7474c60-9259-2d1f-d197-47b7cabab9e7-video> {0,0 1023x900}
+          <source src=https://cdn.prod.website-files.com/684a82e3294991569082d379%2F6aae963300a522b95e867d73_Tablet-Final_mp4.mp4> {0,0 0x0}
+          <source src=https://cdn.prod.website-files.com/684a82e3294991569082d379%2F6aae963300a522b95e867d73_Tablet-Final_webm.webm> {0,0 0x0}
+      <div .bg-pic-pixels > [display:none] {0,0 0x0}
+    <div .page-wrap-solid-bg > {0,0 1024x3912}
+    <section .hero.hide-on-scroll > {0,0 1024x900}
+      <h1 .white-text.hero-home.legal > {76,230 829x134}
+        "HIPAA Compliance Services | Expert Solutions"
+      <div .hero-home-bottom.legal > {0,600 1024x300}
+        <div .hero-bottom-block.full-width > {0,600 1024x299}
+          <div ._16px-text.white-text > {79,636 909x22}
+            "About Page"
+          <p ._30px-text.home-hero-text.white.legal-privacy > {79,761 519x102}
+            "Transform9 helps you book appointments and may share certain health information with your provider. Some of this data is considered 'PHI' under HIPAA and may require your authorization."
+        <div .line-hor.on-hero > {0,600 1024x1}
+      <div .bg-circle-wrap.home-hero.legal > {1024,-768 0x614}
+        <div .bg-circle.home-hero-circle > [display:none] {0,0 0x0}
+    <section .legal-section > {0,900 1024x2328}
+      <div .legal-cont > {152,980 720x2248}
+        <div .legal-block > {152,980 720x272}
+          <h2 ._30px-text.white > {152,980 720x26}
+            "HIPAA Authorization"
+          <div .legal-text-wrap > {152,1036 720x179}
+            <p ._16px-text.white-text.transp > {195,1036 677x179}
+              "Transform9 offers services, such as helping you book appointments with the healthcare provider(s) of your choice (“Your Healthcare Provider”) and notifying you of your appointment details (“Transform9 Services”). As part of providing the Transform9 Services, Transform9 may collect, use, share, and exchange your health-related information with Your Healthcare Providers. Under a federal law called the Health Insurance Portability and Accountability Act (“HIPAA”), some of this health and health-related information may be considered “protected health information” or “PHI” if such information is received from or on behalf of Your Healthcare Providers."
+        <div .legal-block > {152,1288 720x227}
+          <h2 ._30px-text.white > {152,1288 720x26}
+            "Safeguards for PHI"
+          <div .legal-text-wrap > {152,1343 720x134}
+            <p ._16px-text.white-text.transp > {195,1343 677x134}
+              "HIPAA protects the privacy and security of your PHI by limiting the uses and disclosures of PHI by most healthcare providers and by health plans (called “Covered Entities”) as well as companies, like Transform9, that provide certain types of assistance to Covered Entities (called “Business Associates”). Under certain circumstances described in HIPAA, an individual needs to sign an Authorization form before a Covered Entity, like Your Healthcare Provider(s), can disclose protected health information to a third party."
+        <div .legal-block > {152,1551 720x160}
+          <h2 ._30px-text.white > {152,1551 720x26}
+            "Non-Protected Health Information"
+          <div .legal-text-wrap > {152,1606 720x67}
+            <p ._16px-text.white-text.transp > {195,1606 677x67}
+              "As a condition of creating your Transform9 account, you are required to read and agree to Transform9 Privacy Policy. Transform9’s Privacy Policy explains how Transform9 processes and shares information received from you that is not covered by HIPAA (“Non-PHI”)."
+        <div .legal-block > {152,1746 720x702}
+          <h2 ._30px-text.white > {152,1746 720x26}
+            "Your PHI Authorization"
+          <div .legal-text-wrap > {152,1802 720x609}
+            <p ._16px-text.white-text.transp > {195,1802 677x90}
+              "The purpose of this Transform9 Authorization (“Authorization”) is to request your written permission to allow Transform9 to use and disclose your PHI. If Transform9 is a Business Associate of Your Healthcare Providers, Transform9 needs your Authorization to be able to use and disclose your PHI. Specifically, you agree that Transform9 can use your PHI to:"
+            <ul .list-white.transp role=list> {152,1916 720x179}
+              <li .list-item > {192,1916 680x22}
+                <p ._16px-text.white-text.transp > {235,1916 637x22}
+                  "enable and customize your use of the Transform9 Services;"
+              <li .list-item > {192,1938 680x22}
+                <p ._16px-text.white-text.transp > {235,1938 637x22}
+                  "provide you alerts or other Transform9 Services regarding future appointments;"
+              <li .list-item > {192,1960 680x22}
+                <p ._16px-text.white-text.transp > {235,1960 637x22}
+                  "provide you with updates and information about the Transform9 Services;"
+              <li .list-item > {192,1983 680x22}
+                <p ._16px-text.white-text.transp > {235,1983 637x22}
+                  "conduct analysis for Your Healthcare Provider and Transform9’s business purposes;"
+              <li .list-item > {192,2005 680x22}
+                <p ._16px-text.white-text.transp > {235,2005 637x22}
+                  "support development of the Transform9 Services; and"
+              <li .list-item > {192,2028 680x67}
+                <p ._16px-text.white-text.transp > {235,2028 637x67}
+                  "create de-identified information and then use and disclose this information in any way permitted by law, including to third parties in connection with their commercial and marketing efforts."
+            <p ._16px-text.white-text.transp > {195,2119 677x22}
+              "You also agree that Transform9 can disclose your PHI to:"
+            <ul .list-white.transp role=list> {152,2165 720x246}
+              <li .list-item > {192,2165 680x22}
+                <p ._16px-text.white-text.transp > {235,2165 637x22}
+                  "third parties assisting Transform9 with any of the uses described above;"
+              <li .list-item > {192,2187 680x67}
+                <p ._16px-text.white-text.transp > {235,2187 637x67}
+                  "Your Healthcare Providers to enable them to refer you to, and make appointments with, other providers on your behalf, or to perform an analysis on potential health issues or treatments, provided that you choose to use the applicable Transform9 Service;"
+              <li .list-item > {192,2255 680x90}
+                <p ._16px-text.white-text.transp > {235,2255 637x90}
+                  "our business partners who assist us by performing core services (such as hosting, billing, fulfillment, or data storage and security) related to the operation or provision of our services, even when Transform9 is no longer working on behalf of Your Healthcare Providers;"
+              <li .list-item > {192,2344 680x22}
+                <p ._16px-text.white-text.transp > {235,2344 637x22}
+                  "a provider of medical services, in the event of an emergency; and"
+              <li .list-item > {192,2367 680x45}
+                <p ._16px-text.white-text.transp > {235,2367 637x45}
+                  "organizations that collect, aggregate and organize your information so they can make it more easily accessible to your providers.​"
+        <div .legal-block > {152,2484 720x227}
+          <h2 ._30px-text.white > {152,2484 720x26}
+            "Redisclosure"
+          <div .legal-text-wrap > {152,2540 720x134}
+            <p ._16px-text.white-text.transp > {195,2540 677x134}
+              "If Transform9 discloses your PHI, Transform9 will require that the person or entity receiving your PHI agrees to only use and disclose your PHI to carry out its specific business obligations to Transform9 or for the permitted purpose of the disclosure (as described above). Transform9 cannot, however, guarantee that any such person or entity to which Transform9 discloses your PHI or other information will not re-disclose it in ways that you or we did not intend or permit."
+        <div .legal-block.last > {152,2747 720x481}
+          <h2 ._30px-text.white > {152,2747 720x26}
+            "Expiration and Revocation of Authorization"
+          <div .legal-text-wrap > {152,2803 720x425}
+            <p ._16px-text.white-text.transp > {195,2803 677x425}
+              "Your Authorization remains in effect until you provide written notice of revocation to Transform9."
+              <br > {283,2828 0x16}
+              <br > {195,2851 0x16}
+              "YOU CAN CHANGE YOUR MIND AND REVOKE THIS AUTHORIZATION AT ANY TIME AND FOR ANY (OR NO) REASON."
+              <br > {363,2895 0x16}
+              <br > {195,2918 0x16}
+              "If you wish to revoke this Authorization, you must notify Transform9 by submitting a revocation through your account settings page. Your decision not to execute this Authorization or to revoke it at any time will not affect your ability to use certain of the Transform9 Services. A Revocation of Authorization is effective after you submit it to Transform9, but it does not have any effect on Transform9’s prior actions taken in reliance on the Authorization before revoked."
+              <br > {459,3052 0x16}
+              "‍"
+              <br > {195,3075 0x16}
+              "Once Transform9 receives your Revocation of Authorization, Transform9 can only use and disclose your PHI as permitted in Transform9’s agreements with Your Healthcare Provider(s). Your Revocation of Authorization does not affect Transform9’s use of your Non-PHI."
+              <br > {805,3142 0x16}
+              <br > {195,3164 0x16}
+              "We will make available to Your Healthcare Provider(s), current and past, your agreement to or revocation of this Authorization."
+    <section .footer.section > {0,3228 1024x684}
+      <div .footer-top-wrap > {0,3228 1024x683}
+        <div .bg-noise > {0,3228 1024x682}
+        <div .footer-top-row > {0,3392 1024x247}
+          <div .footer-top-left > {0,3393 274x246}
+            <div ._14px-text.white-text.footer-transp.left > {36,3429 202x78}
+              "Transform9 improves access, generates savings, and increases efficiency for practices and patients."
+          <div .right-side.footer-top-right > {274,3393 750x246}
+            <div .footer-columns-wrap > {310,3429 465x174}
+              <div .footer-column > {310,3429 84x174}
+                <div ._14px-text.white-text.footer-transp > {310,3429 84x20}
+                  "Navigate"
+                <div .footer-column-links > {310,3474 84x128}
+                  <a .footer-link-wrap.w-inline-block href=/> {310,3474 37x26}
+                    <div ._14px-text.white-text.footer-link > {310,3474 37x26}
+                      "Home"
+                    <div .underline-small._1 > {310,3493 0x1}
+                    <div .underline-small._2 > {346,3493 0x1}
+                  <a .footer-link-wrap.w-inline-block href=/compare> {310,3500 57x26}
+                    <div ._14px-text.white-text.footer-link > {310,3500 57x26}
+                      "Compare"
+                    <div .underline-small._1 > {310,3519 0x1}
+                    <div .underline-small._2 > {367,3519 0x1}
+                  <a .footer-link-wrap.w-inline-block href=/blog> {310,3526 28x26}
+                    <div ._14px-text.white-text.footer-link > {310,3526 28x26}
+                      "Blog"
+                    <div .underline-small._1 > {310,3544 0x1}
+                    <div .underline-small._2 > {338,3544 0x1}
+                  <a .footer-link-wrap.w-inline-block href=/case-studies> {310,3551 84x26}
+                    <div ._14px-text.white-text.footer-link > {310,3551 84x26}
+                      "Case Studies"
+                    <div .underline-small._1 > {310,3570 0x1}
+                    <div .underline-small._2 > {394,3570 0x1}
+                  <a .footer-link-wrap.w-inline-block href=https://apply.workable.com/transform9/ target=_blank> {310,3577 50x26}
+                    <div ._14px-text.white-text.footer-link > {310,3577 50x26}
+                      "Careers"
+                    <div .underline-small._1 > {310,3595 0x1}
+                    <div .underline-small._2 > {359,3595 0x1}
+              <div .footer-column > {514,3429 86x174}
+                <div ._14px-text.white-text.footer-transp > {514,3429 86x20}
+                  "Integrate"
+                <div .footer-column-links > {514,3474 86x77}
+                  <a .footer-link-wrap.w-inline-block href=https://marketplace.athenahealth.com/product/transform9 target=_blank> {514,3474 86x26}
+                    <div ._14px-text.white-text.footer-link > {514,3474 86x26}
+                      "Athenahealth"
+                    <div .underline-small._1 > {514,3493 0x1}
+                    <div .underline-small._2 > {600,3493 0x1}
+                  <a .footer-link-wrap.w-inline-block href=https://synapsys.modmed.com/s/partner-app/a9YVV00000003lt2AA/transform9 target=_blank> {514,3500 56x26}
+                    <div ._14px-text.white-text.footer-link > {514,3500 56x26}
+                      "ModMed"
+                    <div .underline-small._1 > {514,3519 0x1}
+                    <div .underline-small._2 > {571,3519 0x1}
+                  <a .footer-link-wrap.w-inline-block href=https://www.nextgen.com/solutions/marketplace/transform9 target=_blank> {514,3526 56x26}
+                    <div ._14px-text.white-text.footer-link > {514,3526 56x26}
+                      "NextGen"
+                    <div .underline-small._1 > {514,3544 0x1}
+                    <div .underline-small._2 > {570,3544 0x1}
+              <div .footer-column > {720,3429 55x174}
+                <div ._14px-text.white-text.footer-transp > {720,3429 55x20}
+                  "Follow"
+                <div .footer-column-links > {720,3474 55x51}
+                  <a .footer-link-wrap.w-inline-block href=https://www.linkedin.com/company/transform9 target=_blank> {720,3474 53x26}
+                    <div ._14px-text.white-text.footer-link > {720,3474 53x26}
+                      "LinkedIn"
+                    <div .underline-small._1 > {720,3493 0x1}
+                    <div .underline-small._2 > {773,3493 0x1}
+                  <a .footer-link-wrap.w-inline-block href=https://www.youtube.com/@Transform9 target=_blank> {720,3500 55x26}
+                    <div ._14px-text.white-text.footer-link > {720,3500 55x26}
+                      "YouTube"
+                    <div .underline-small._1 > {720,3519 0x1}
+                    <div .underline-small._2 > {775,3519 0x1}
+            <div .footer-top-right > {841,3429 147x26}
+              <a .footer-link-wrap.w-inline-block href=https://portal.transform9.com/> {841,3429 35x26}
+                <div ._14px-text.white-text.footer-link > {841,3429 35x26}
+                  "Login"
+                <div .underline-small._1 > {841,3447 0x1}
+                <div .underline-small._2 > {876,3447 0x1}
+              <a .footer-link-wrap.w-inline-block href=/book-a-demo> {904,3429 84x26}
+                <div ._14px-text.white-text.footer-link > {904,3429 84x26}
+                  "Book a Demo"
+                <div .underline-small._1 > {904,3447 0x1}
+                <div .underline-small._2 > {988,3447 0x1}
+        <div .footer-subs-wrap > {0,3638 1024x272}
+          <div .subs-lefr-wrap > {0,3638 324x272}
+            <div .left-side.footer-subs.hide > [display:none] {0,0 0x0}
+              <div .footer-bottom-left > {0,0 0x0}
+                <div ._14px-text.white-text.footer-transp > {0,0 0x0}
+                  "Call Us"
+                <a ._30px-text.white._w-underline.w-inline-block href=tel:+12059083709> {0,0 0x0}
+                  <div > {0,0 0x0}
+                    "(205) 908-3709"
+                  <div .underline._1 > {0,0 0x0}
+                  <div .underline._2 > {0,0 0x0}
+            <div .footer-bottom-center > {42,3638 282x272}
+              <div ._14px-text.white-text.footer-transp > {78,3674 72x20}
+                "Contact Us"
+              <a ._30px-text.white._w-underline.w-inline-block href=mailto:info@transform9.com> {78,3814 210x60}
+                <div .text-block-4 > {78,3814 210x35}
+                  "(205) 892-2888"
+                <div > {78,3848 210x26}
+                  "info@transform9.com"
+                <div .underline._1 > {78,3872 210x2}
+                <div .underline._2 > {78,3872 0x2}
+          <div .footer-bottom-right > {578,3638 372x272}
+            <div ._14px-text.white-text.footer-transp > {614,3674 300x20}
+              "Stay Updated"
+            <div .w-embed.w-script > {614,3720 300x154}
+              <div .hbspt-form #hbspt-form-07aac634-31fb-4a80-a9eb-a0408fe19641> {614,3720 300x154}
+                <iframe .hs-form-iframe #hs-form-iframe-0> {614,3720 300x154}
+  <div .footer-bottom-wrap > {0,606 1024x294}
+    <div .footer-logo-wrap > {0,606 1024x235}
+      <img .footer-logo src=https://cdn.prod.website-files.com/684a82e3294991569082d379/68920b38695cade17f6e41a0_logo-footer.svg loading=lazy alt=> {36,642 952x162}
+    <div .footer-bottom-row > {0,840 1024x60}
+      <div ._14px-text.white-text.footer-transp.bottom > {36,860 263x20}
+        "© 2026 Transform9. All Rights Reserved."
+      <div .footer-bottom-row-right > {706,860 282x20}
+        <a ._14px-text.white-text.footer-transp.bottom-links.w--current href=/hipaa> {706,860 40x20}
+          "HIPAA"
+        <a ._14px-text.white-text.footer-transp.bottom-links href=/terms-of-use> {782,860 83x20}
+          "Terms of Use"
+        <a ._14px-text.white-text.footer-transp.bottom-links href=/privacy-policy> {901,860 87x20}
+          "Privacy Policy"
+  <iframe > [display:none] {0,0 0x0}

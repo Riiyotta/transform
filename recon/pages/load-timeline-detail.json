@@ -1,0 +1,2353 @@
+{
+ "post": {
+  "path": "/blog/redefining-healthcare-ai",
+  "loadAt": 5690,
+  "preloaderBeforeLoad": [
+   [
+    1257,
+    "1",
+    "hidden",
+    "block"
+   ],
+   [
+    3032,
+    "1",
+    "hidden",
+    "block"
+   ],
+   [
+    3227,
+    "1",
+    "visible",
+    "block"
+   ],
+   [
+    4227,
+    "1",
+    "visible",
+    "block"
+   ],
+   [
+    5226,
+    "1",
+    "visible",
+    "block"
+   ]
+  ],
+  "pendingAt4s": [
+   "https://ad.doubleclick.net/ccm/s/collect?auid=171220513.1790764891&gtm=45je69s1v9244105823z89247996386za20gzb9247996386z",
+   "https://js.hs-analytics.net/analytics/1790764800000/48695808.js",
+   "https://syndication.twitter.com/settings?session_id=90a46e01ee3ed88830f54515a3fa692a351c99b5",
+   "https://jnn-pa.googleapis.com/$rpc/google.internal.waa.v1.Waa/GenerateIT"
+  ],
+  "changes": [
+   {
+    "t": 0,
+    ".preloader-wrap": "1",
+    ".nav-menu": "0",
+    ".bg-pixels": "0",
+    ".bg-pixels-overlay": "1",
+    ".blog-top-header": "0",
+    ".post-body-section": "0"
+   },
+   {
+    "t": 7,
+    ".preloader-wrap": "0.6241",
+    ".nav-menu": "0",
+    ".bg-pixels": "0.0248",
+    ".bg-pixels-overlay": "1",
+    ".blog-top-header": "0",
+    ".post-body-section": "0"
+   },
+   {
+    "t": 23,
+    ".preloader-wrap": "0.3844",
+    ".nav-menu": "0",
+    ".bg-pixels": "0.3994",
+    ".bg-pixels-overlay": "1",
+    ".blog-top-header": "0",
+    ".post-body-section": "0"
+   },
+   {
+    "t": 31,
+    ".preloader-wrap": "0.3025",
+    ".nav-menu": "0",
+    ".bg-pixels": "0.5273",
+    ".bg-pixels-overlay": "1",
+    ".blog-top-header": "0",
+    ".post-body-section": "0"
+   },
+   {
+    "t": 62,
+    ".preloader-wrap": "0.0576",
+    ".nav-menu": "0",
+    ".bg-pixels": "0.91",
+    ".bg-pixels-overlay": "1",
+    ".blog-top-header": "0",
+    ".post-body-section": "0"
+   },
+   {
+    "t": 70,
+    ".preloader-wrap": "0.0256",
+    ".nav-menu": "0",
+    ".bg-pixels": "0.96",
+    ".bg-pixels-overlay": "1",
+    ".blog-top-header": "0",
+    ".post-body-section": "0"
+   },
+   {
+    "t": 72,
+    ".preloader-wrap": "0.0196",
+    ".nav-menu": "0",
+    ".bg-pixels": "0.9694",
+    ".bg-pixels-overlay": "1",
+    ".blog-top-header": "0",
+    ".post-body-section": "0"
+   },
+   {
+    "t": 88,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.0115",
+    ".bg-pixels": "1",
+    ".bg-pixels-overlay": "1",
+    ".blog-top-header": "0.0115",
+    ".post-body-section": "0.0115"
+   },
+   {
+    "t": 104,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.1037",
+    ".bg-pixels": "1",
+    ".bg-pixels-overlay": "1",
+    ".blog-top-header": "0.1037",
+    ".post-body-section": "0.1037"
+   },
+   {
+    "t": 121,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.1824",
+    ".bg-pixels": "1",
+    ".bg-pixels-overlay": "1",
+    ".blog-top-header": "0.1824",
+    ".post-body-section": "0.1824"
+   },
+   {
+    "t": 137,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.2541",
+    ".bg-pixels": "1",
+    ".bg-pixels-overlay": "1",
+    ".blog-top-header": "0.2541",
+    ".post-body-section": "0.2541"
+   },
+   {
+    "t": 154,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.3232",
+    ".bg-pixels": "1",
+    ".bg-pixels-overlay": "1",
+    ".blog-top-header": "0.3232",
+    ".post-body-section": "0.3232"
+   },
+   {
+    "t": 170,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.3857",
+    ".bg-pixels": "1",
+    ".bg-pixels-overlay": "1",
+    ".blog-top-header": "0.3857",
+    ".post-body-section": "0.3857"
+   },
+   {
+    "t": 190,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.4488",
+    ".bg-pixels": "1",
+    ".bg-pixels-overlay": "1",
+    ".blog-top-header": "0.4488",
+    ".post-body-section": "0.4488"
+   },
+   {
+    "t": 214,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.5193",
+    ".bg-pixels": "1",
+    ".bg-pixels-overlay": "1",
+    ".blog-top-header": "0.5193",
+    ".post-body-section": "0.5193"
+   },
+   {
+    "t": 241,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.588",
+    ".bg-pixels": "1",
+    ".bg-pixels-overlay": "1",
+    ".blog-top-header": "0.588",
+    ".post-body-section": "0.588"
+   },
+   {
+    "t": 263,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.6367",
+    ".bg-pixels": "1",
+    ".bg-pixels-overlay": "1",
+    ".blog-top-header": "0.6367",
+    ".post-body-section": "0.6367"
+   },
+   {
+    "t": 296,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.6995",
+    ".bg-pixels": "1",
+    ".bg-pixels-overlay": "1",
+    ".blog-top-header": "0.6995",
+    ".post-body-section": "0.6995"
+   },
+   {
+    "t": 329,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.7534",
+    ".bg-pixels": "1",
+    ".bg-pixels-overlay": "1",
+    ".blog-top-header": "0.7534",
+    ".post-body-section": "0.7534"
+   },
+   {
+    "t": 351,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.7833",
+    ".bg-pixels": "1",
+    ".bg-pixels-overlay": "1",
+    ".blog-top-header": "0.7833",
+    ".post-body-section": "0.7833"
+   },
+   {
+    "t": 371,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.8063",
+    ".bg-pixels": "1",
+    ".bg-pixels-overlay": "1",
+    ".blog-top-header": "0.8063",
+    ".post-body-section": "0.8063"
+   },
+   {
+    "t": 388,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.825",
+    ".bg-pixels": "1",
+    ".bg-pixels-overlay": "1",
+    ".blog-top-header": "0.825",
+    ".post-body-section": "0.825"
+   },
+   {
+    "t": 405,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.843",
+    ".bg-pixels": "1",
+    ".bg-pixels-overlay": "1",
+    ".blog-top-header": "0.843",
+    ".post-body-section": "0.843"
+   },
+   {
+    "t": 422,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.8576",
+    ".bg-pixels": "1",
+    ".bg-pixels-overlay": "1",
+    ".blog-top-header": "0.8576",
+    ".post-body-section": "0.8576"
+   },
+   {
+    "t": 437,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.8702",
+    ".bg-pixels": "1",
+    ".bg-pixels-overlay": "1",
+    ".blog-top-header": "0.8702",
+    ".post-body-section": "0.8702"
+   },
+   {
+    "t": 454,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.8832",
+    ".bg-pixels": "1",
+    ".bg-pixels-overlay": "1",
+    ".blog-top-header": "0.8832",
+    ".post-body-section": "0.8832"
+   },
+   {
+    "t": 471,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.895",
+    ".bg-pixels": "1",
+    ".bg-pixels-overlay": "1",
+    ".blog-top-header": "0.895",
+    ".post-body-section": "0.895"
+   },
+   {
+    "t": 488,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.9058",
+    ".bg-pixels": "1",
+    ".bg-pixels-overlay": "1",
+    ".blog-top-header": "0.9058",
+    ".post-body-section": "0.9058"
+   },
+   {
+    "t": 504,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.9156",
+    ".bg-pixels": "1",
+    ".bg-pixels-overlay": "1",
+    ".blog-top-header": "0.9156",
+    ".post-body-section": "0.9156"
+   },
+   {
+    "t": 521,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.924",
+    ".bg-pixels": "1",
+    ".bg-pixels-overlay": "1",
+    ".blog-top-header": "0.924",
+    ".post-body-section": "0.924"
+   },
+   {
+    "t": 537,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.9317",
+    ".bg-pixels": "1",
+    ".bg-pixels-overlay": "1",
+    ".blog-top-header": "0.9317",
+    ".post-body-section": "0.9317"
+   },
+   {
+    "t": 554,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.939",
+    ".bg-pixels": "1",
+    ".bg-pixels-overlay": "1",
+    ".blog-top-header": "0.939",
+    ".post-body-section": "0.939"
+   },
+   {
+    "t": 570,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.9457",
+    ".bg-pixels": "1",
+    ".bg-pixels-overlay": "1",
+    ".blog-top-header": "0.9457",
+    ".post-body-section": "0.9457"
+   },
+   {
+    "t": 588,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.9518",
+    ".bg-pixels": "1",
+    ".bg-pixels-overlay": "0.9943",
+    ".blog-top-header": "0.9518",
+    ".post-body-section": "0.9518"
+   },
+   {
+    "t": 604,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.9572",
+    ".bg-pixels": "1",
+    ".bg-pixels-overlay": "0.9465",
+    ".blog-top-header": "0.9572",
+    ".post-body-section": "0.9572"
+   },
+   {
+    "t": 621,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.9619",
+    ".bg-pixels": "1",
+    ".bg-pixels-overlay": "0.9025",
+    ".blog-top-header": "0.9619",
+    ".post-body-section": "0.9619"
+   },
+   {
+    "t": 637,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.9661",
+    ".bg-pixels": "1",
+    ".bg-pixels-overlay": "0.8596",
+    ".blog-top-header": "0.9661",
+    ".post-body-section": "0.9661"
+   },
+   {
+    "t": 654,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.9703",
+    ".bg-pixels": "1",
+    ".bg-pixels-overlay": "0.8126",
+    ".blog-top-header": "0.9703",
+    ".post-body-section": "0.9703"
+   },
+   {
+    "t": 671,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.9737",
+    ".bg-pixels": "1",
+    ".bg-pixels-overlay": "0.7719",
+    ".blog-top-header": "0.9737",
+    ".post-body-section": "0.9737"
+   },
+   {
+    "t": 687,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.9769",
+    ".bg-pixels": "1",
+    ".bg-pixels-overlay": "0.7298",
+    ".blog-top-header": "0.9769",
+    ".post-body-section": "0.9769"
+   },
+   {
+    "t": 704,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.9796",
+    ".bg-pixels": "1",
+    ".bg-pixels-overlay": "0.6913",
+    ".blog-top-header": "0.9796",
+    ".post-body-section": "0.9796"
+   },
+   {
+    "t": 721,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.9822",
+    ".bg-pixels": "1",
+    ".bg-pixels-overlay": "0.6515",
+    ".blog-top-header": "0.9822",
+    ".post-body-section": "0.9822"
+   },
+   {
+    "t": 737,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.9845",
+    ".bg-pixels": "1",
+    ".bg-pixels-overlay": "0.6129",
+    ".blog-top-header": "0.9845",
+    ".post-body-section": "0.9845"
+   },
+   {
+    "t": 754,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.9864",
+    ".bg-pixels": "1",
+    ".bg-pixels-overlay": "0.5776",
+    ".blog-top-header": "0.9864",
+    ".post-body-section": "0.9864"
+   },
+   {
+    "t": 771,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.9882",
+    ".bg-pixels": "1",
+    ".bg-pixels-overlay": "0.5413",
+    ".blog-top-header": "0.9882",
+    ".post-body-section": "0.9882"
+   },
+   {
+    "t": 788,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.9898",
+    ".bg-pixels": "1",
+    ".bg-pixels-overlay": "0.5061",
+    ".blog-top-header": "0.9898",
+    ".post-body-section": "0.9898"
+   },
+   {
+    "t": 804,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.9911",
+    ".bg-pixels": "1",
+    ".bg-pixels-overlay": "0.4741",
+    ".blog-top-header": "0.9911",
+    ".post-body-section": "0.9911"
+   },
+   {
+    "t": 820,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.9924",
+    ".bg-pixels": "1",
+    ".bg-pixels-overlay": "0.4413",
+    ".blog-top-header": "0.9924",
+    ".post-body-section": "0.9924"
+   },
+   {
+    "t": 838,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.9935",
+    ".bg-pixels": "1",
+    ".bg-pixels-overlay": "0.4096",
+    ".blog-top-header": "0.9935",
+    ".post-body-section": "0.9935"
+   },
+   {
+    "t": 854,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.9943",
+    ".bg-pixels": "1",
+    ".bg-pixels-overlay": "0.3809",
+    ".blog-top-header": "0.9943",
+    ".post-body-section": "0.9943"
+   },
+   {
+    "t": 871,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.9952",
+    ".bg-pixels": "1",
+    ".bg-pixels-overlay": "0.3515",
+    ".blog-top-header": "0.9952",
+    ".post-body-section": "0.9952"
+   },
+   {
+    "t": 887,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.9958",
+    ".bg-pixels": "1",
+    ".bg-pixels-overlay": "0.3249",
+    ".blog-top-header": "0.9958",
+    ".post-body-section": "0.9958"
+   },
+   {
+    "t": 904,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.9965",
+    ".bg-pixels": "1",
+    ".bg-pixels-overlay": "0.2962",
+    ".blog-top-header": "0.9965",
+    ".post-body-section": "0.9965"
+   },
+   {
+    "t": 921,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.997",
+    ".bg-pixels": "1",
+    ".bg-pixels-overlay": "0.2719",
+    ".blog-top-header": "0.997",
+    ".post-body-section": "0.997"
+   },
+   {
+    "t": 938,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.9975",
+    ".bg-pixels": "1",
+    ".bg-pixels-overlay": "0.2472",
+    ".blog-top-header": "0.9975",
+    ".post-body-section": "0.9975"
+   },
+   {
+    "t": 954,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.9979",
+    ".bg-pixels": "1",
+    ".bg-pixels-overlay": "0.2236",
+    ".blog-top-header": "0.9979",
+    ".post-body-section": "0.9979"
+   },
+   {
+    "t": 970,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.9982",
+    ".bg-pixels": "1",
+    ".bg-pixels-overlay": "0.2038",
+    ".blog-top-header": "0.9982",
+    ".post-body-section": "0.9982"
+   },
+   {
+    "t": 988,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.9985",
+    ".bg-pixels": "1",
+    ".bg-pixels-overlay": "0.1812",
+    ".blog-top-header": "0.9985",
+    ".post-body-section": "0.9985"
+   },
+   {
+    "t": 1004,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.9987",
+    ".bg-pixels": "1",
+    ".bg-pixels-overlay": "0.1611",
+    ".blog-top-header": "0.9987",
+    ".post-body-section": "0.9987"
+   },
+   {
+    "t": 1021,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.9989",
+    ".bg-pixels": "1",
+    ".bg-pixels-overlay": "0.1433",
+    ".blog-top-header": "0.9989",
+    ".post-body-section": "0.9989"
+   },
+   {
+    "t": 1038,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.9991",
+    ".bg-pixels": "1",
+    ".bg-pixels-overlay": "0.1255",
+    ".blog-top-header": "0.9991",
+    ".post-body-section": "0.9991"
+   },
+   {
+    "t": 1054,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.9992",
+    ".bg-pixels": "1",
+    ".bg-pixels-overlay": "0.1098",
+    ".blog-top-header": "0.9992",
+    ".post-body-section": "0.9992"
+   },
+   {
+    "t": 1071,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.9994",
+    ".bg-pixels": "1",
+    ".bg-pixels-overlay": "0.0943",
+    ".blog-top-header": "0.9994",
+    ".post-body-section": "0.9994"
+   },
+   {
+    "t": 1088,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.9995",
+    ".bg-pixels": "1",
+    ".bg-pixels-overlay": "0.08",
+    ".blog-top-header": "0.9995",
+    ".post-body-section": "0.9995"
+   },
+   {
+    "t": 1104,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.9996",
+    ".bg-pixels": "1",
+    ".bg-pixels-overlay": "0.0669",
+    ".blog-top-header": "0.9996",
+    ".post-body-section": "0.9996"
+   },
+   {
+    "t": 1121,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.9996",
+    ".bg-pixels": "1",
+    ".bg-pixels-overlay": "0.0556",
+    ".blog-top-header": "0.9996",
+    ".post-body-section": "0.9996"
+   },
+   {
+    "t": 1137,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.9997",
+    ".bg-pixels": "1",
+    ".bg-pixels-overlay": "0.0453",
+    ".blog-top-header": "0.9997",
+    ".post-body-section": "0.9997"
+   },
+   {
+    "t": 1154,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.9998",
+    ".bg-pixels": "1",
+    ".bg-pixels-overlay": "0.035",
+    ".blog-top-header": "0.9998",
+    ".post-body-section": "0.9998"
+   },
+   {
+    "t": 1170,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.9998",
+    ".bg-pixels": "1",
+    ".bg-pixels-overlay": "0.0275",
+    ".blog-top-header": "0.9998",
+    ".post-body-section": "0.9998"
+   },
+   {
+    "t": 1188,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.9999",
+    ".bg-pixels": "1",
+    ".bg-pixels-overlay": "0.0196",
+    ".blog-top-header": "0.9999",
+    ".post-body-section": "0.9999"
+   },
+   {
+    "t": 1204,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.9999",
+    ".bg-pixels": "1",
+    ".bg-pixels-overlay": "0.0137",
+    ".blog-top-header": "0.9999",
+    ".post-body-section": "0.9999"
+   },
+   {
+    "t": 1221,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.9999",
+    ".bg-pixels": "1",
+    ".bg-pixels-overlay": "0.0086",
+    ".blog-top-header": "0.9999",
+    ".post-body-section": "0.9999"
+   },
+   {
+    "t": 1237,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.9999",
+    ".bg-pixels": "1",
+    ".bg-pixels-overlay": "0.0049",
+    ".blog-top-header": "0.9999",
+    ".post-body-section": "0.9999"
+   },
+   {
+    "t": 1254,
+    ".preloader-wrap": "0",
+    ".nav-menu": "1",
+    ".bg-pixels": "1",
+    ".bg-pixels-overlay": "0.002",
+    ".blog-top-header": "1",
+    ".post-body-section": "1"
+   },
+   {
+    "t": 1271,
+    ".preloader-wrap": "0",
+    ".nav-menu": "1",
+    ".bg-pixels": "1",
+    ".bg-pixels-overlay": "0.0005",
+    ".blog-top-header": "1",
+    ".post-body-section": "1"
+   },
+   {
+    "t": 1287,
+    ".preloader-wrap": "0",
+    ".nav-menu": "1",
+    ".bg-pixels": "1",
+    ".bg-pixels-overlay": "0",
+    ".blog-top-header": "1",
+    ".post-body-section": "1"
+   }
+  ]
+ },
+ "cs": {
+  "path": "/case-studies/southern-bone-joint",
+  "loadAt": 3198,
+  "preloaderBeforeLoad": [
+   [
+    1235,
+    "1",
+    "hidden",
+    "block"
+   ],
+   [
+    2233,
+    "1",
+    "hidden",
+    "block"
+   ]
+  ],
+  "pendingAt4s": [
+   "https://js.zi-scripts.com/unified/v1/master/getSubscriptions",
+   "https://syndication.x.com/i/jot/embeds?l=%7B%22_category_%22%3A%22tfw_client_event%22%2C%22triggered_on%22%3A17907649024"
+  ],
+  "changes": [
+   {
+    "t": 0,
+    ".preloader-wrap": "1",
+    ".nav-menu": "0",
+    ".bg-pixels": "0",
+    ".bg-pixels-overlay": "1",
+    ".blog-top-header": "0",
+    ".post-body-section": "0"
+   },
+   {
+    "t": 8,
+    ".preloader-wrap": "0.5776",
+    ".nav-menu": "0",
+    ".bg-pixels": "0.0975",
+    ".bg-pixels-overlay": "1",
+    ".blog-top-header": "0",
+    ".post-body-section": "0"
+   },
+   {
+    "t": 24,
+    ".preloader-wrap": "0.3481",
+    ".nav-menu": "0",
+    ".bg-pixels": "0.4561",
+    ".bg-pixels-overlay": "1",
+    ".blog-top-header": "0",
+    ".post-body-section": "0"
+   },
+   {
+    "t": 41,
+    ".preloader-wrap": "0.1764",
+    ".nav-menu": "0",
+    ".bg-pixels": "0.7244",
+    ".bg-pixels-overlay": "1",
+    ".blog-top-header": "0",
+    ".post-body-section": "0"
+   },
+   {
+    "t": 57,
+    ".preloader-wrap": "0.0625",
+    ".nav-menu": "0",
+    ".bg-pixels": "0.9023",
+    ".bg-pixels-overlay": "1",
+    ".blog-top-header": "0",
+    ".post-body-section": "0"
+   },
+   {
+    "t": 74,
+    ".preloader-wrap": "0.0081",
+    ".nav-menu": "0",
+    ".bg-pixels": "0.9873",
+    ".bg-pixels-overlay": "1",
+    ".blog-top-header": "0",
+    ".post-body-section": "0"
+   },
+   {
+    "t": 92,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.0451",
+    ".bg-pixels": "1",
+    ".bg-pixels-overlay": "1",
+    ".blog-top-header": "0.0451",
+    ".post-body-section": "0.0451"
+   },
+   {
+    "t": 111,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.1489",
+    ".bg-pixels": "1",
+    ".bg-pixels-overlay": "1",
+    ".blog-top-header": "0.1489",
+    ".post-body-section": "0.1489"
+   },
+   {
+    "t": 124,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.2101",
+    ".bg-pixels": "1",
+    ".bg-pixels-overlay": "1",
+    ".blog-top-header": "0.2101",
+    ".post-body-section": "0.2101"
+   },
+   {
+    "t": 140,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.2833",
+    ".bg-pixels": "1",
+    ".bg-pixels-overlay": "1",
+    ".blog-top-header": "0.2833",
+    ".post-body-section": "0.2833"
+   },
+   {
+    "t": 158,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.3497",
+    ".bg-pixels": "1",
+    ".bg-pixels-overlay": "1",
+    ".blog-top-header": "0.3497",
+    ".post-body-section": "0.3497"
+   },
+   {
+    "t": 173,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.4064",
+    ".bg-pixels": "1",
+    ".bg-pixels-overlay": "1",
+    ".blog-top-header": "0.4064",
+    ".post-body-section": "0.4064"
+   },
+   {
+    "t": 191,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.4612",
+    ".bg-pixels": "1",
+    ".bg-pixels-overlay": "1",
+    ".blog-top-header": "0.4612",
+    ".post-body-section": "0.4612"
+   },
+   {
+    "t": 207,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.5082",
+    ".bg-pixels": "1",
+    ".bg-pixels-overlay": "1",
+    ".blog-top-header": "0.5082",
+    ".post-body-section": "0.5082"
+   },
+   {
+    "t": 224,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.5537",
+    ".bg-pixels": "1",
+    ".bg-pixels-overlay": "1",
+    ".blog-top-header": "0.5537",
+    ".post-body-section": "0.5537"
+   },
+   {
+    "t": 241,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.595",
+    ".bg-pixels": "1",
+    ".bg-pixels-overlay": "1",
+    ".blog-top-header": "0.595",
+    ".post-body-section": "0.595"
+   },
+   {
+    "t": 257,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.6325",
+    ".bg-pixels": "1",
+    ".bg-pixels-overlay": "1",
+    ".blog-top-header": "0.6325",
+    ".post-body-section": "0.6325"
+   },
+   {
+    "t": 274,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.6648",
+    ".bg-pixels": "1",
+    ".bg-pixels-overlay": "1",
+    ".blog-top-header": "0.6648",
+    ".post-body-section": "0.6648"
+   },
+   {
+    "t": 291,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.6961",
+    ".bg-pixels": "1",
+    ".bg-pixels-overlay": "1",
+    ".blog-top-header": "0.6961",
+    ".post-body-section": "0.6961"
+   },
+   {
+    "t": 307,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.7245",
+    ".bg-pixels": "1",
+    ".bg-pixels-overlay": "1",
+    ".blog-top-header": "0.7245",
+    ".post-body-section": "0.7245"
+   },
+   {
+    "t": 324,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.749",
+    ".bg-pixels": "1",
+    ".bg-pixels-overlay": "1",
+    ".blog-top-header": "0.749",
+    ".post-body-section": "0.749"
+   },
+   {
+    "t": 341,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.7728",
+    ".bg-pixels": "1",
+    ".bg-pixels-overlay": "1",
+    ".blog-top-header": "0.7728",
+    ".post-body-section": "0.7728"
+   },
+   {
+    "t": 357,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.7945",
+    ".bg-pixels": "1",
+    ".bg-pixels-overlay": "1",
+    ".blog-top-header": "0.7945",
+    ".post-body-section": "0.7945"
+   },
+   {
+    "t": 373,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.8131",
+    ".bg-pixels": "1",
+    ".bg-pixels-overlay": "1",
+    ".blog-top-header": "0.8131",
+    ".post-body-section": "0.8131"
+   },
+   {
+    "t": 390,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.8302",
+    ".bg-pixels": "1",
+    ".bg-pixels-overlay": "1",
+    ".blog-top-header": "0.8302",
+    ".post-body-section": "0.8302"
+   },
+   {
+    "t": 407,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.8468",
+    ".bg-pixels": "1",
+    ".bg-pixels-overlay": "1",
+    ".blog-top-header": "0.8468",
+    ".post-body-section": "0.8468"
+   },
+   {
+    "t": 424,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.8619",
+    ".bg-pixels": "1",
+    ".bg-pixels-overlay": "1",
+    ".blog-top-header": "0.8619",
+    ".post-body-section": "0.8619"
+   },
+   {
+    "t": 441,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.8757",
+    ".bg-pixels": "1",
+    ".bg-pixels-overlay": "1",
+    ".blog-top-header": "0.8757",
+    ".post-body-section": "0.8757"
+   },
+   {
+    "t": 457,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.8882",
+    ".bg-pixels": "1",
+    ".bg-pixels-overlay": "1",
+    ".blog-top-header": "0.8882",
+    ".post-body-section": "0.8882"
+   },
+   {
+    "t": 474,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.899",
+    ".bg-pixels": "1",
+    ".bg-pixels-overlay": "1",
+    ".blog-top-header": "0.899",
+    ".post-body-section": "0.899"
+   },
+   {
+    "t": 491,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.9094",
+    ".bg-pixels": "1",
+    ".bg-pixels-overlay": "1",
+    ".blog-top-header": "0.9094",
+    ".post-body-section": "0.9094"
+   },
+   {
+    "t": 507,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.9188",
+    ".bg-pixels": "1",
+    ".bg-pixels-overlay": "1",
+    ".blog-top-header": "0.9188",
+    ".post-body-section": "0.9188"
+   },
+   {
+    "t": 524,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.927",
+    ".bg-pixels": "1",
+    ".bg-pixels-overlay": "1",
+    ".blog-top-header": "0.927",
+    ".post-body-section": "0.927"
+   },
+   {
+    "t": 540,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.9343",
+    ".bg-pixels": "1",
+    ".bg-pixels-overlay": "1",
+    ".blog-top-header": "0.9343",
+    ".post-body-section": "0.9343"
+   },
+   {
+    "t": 559,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.9423",
+    ".bg-pixels": "1",
+    ".bg-pixels-overlay": "1",
+    ".blog-top-header": "0.9423",
+    ".post-body-section": "0.9423"
+   },
+   {
+    "t": 574,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.9479",
+    ".bg-pixels": "1",
+    ".bg-pixels-overlay": "1",
+    ".blog-top-header": "0.9479",
+    ".post-body-section": "0.9479"
+   },
+   {
+    "t": 591,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.9538",
+    ".bg-pixels": "1",
+    ".bg-pixels-overlay": "0.9773",
+    ".blog-top-header": "0.9538",
+    ".post-body-section": "0.9538"
+   },
+   {
+    "t": 607,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.959",
+    ".bg-pixels": "1",
+    ".bg-pixels-overlay": "0.9298",
+    ".blog-top-header": "0.959",
+    ".post-body-section": "0.959"
+   },
+   {
+    "t": 624,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.9635",
+    ".bg-pixels": "1",
+    ".bg-pixels-overlay": "0.8863",
+    ".blog-top-header": "0.9635",
+    ".post-body-section": "0.9635"
+   },
+   {
+    "t": 641,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.9678",
+    ".bg-pixels": "1",
+    ".bg-pixels-overlay": "0.8412",
+    ".blog-top-header": "0.9678",
+    ".post-body-section": "0.9678"
+   },
+   {
+    "t": 657,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.9716",
+    ".bg-pixels": "1",
+    ".bg-pixels-overlay": "0.7972",
+    ".blog-top-header": "0.9716",
+    ".post-body-section": "0.9716"
+   },
+   {
+    "t": 673,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.9749",
+    ".bg-pixels": "1",
+    ".bg-pixels-overlay": "0.7569",
+    ".blog-top-header": "0.9749",
+    ".post-body-section": "0.9749"
+   },
+   {
+    "t": 691,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.978",
+    ".bg-pixels": "1",
+    ".bg-pixels-overlay": "0.7152",
+    ".blog-top-header": "0.978",
+    ".post-body-section": "0.978"
+   },
+   {
+    "t": 707,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.9807",
+    ".bg-pixels": "1",
+    ".bg-pixels-overlay": "0.6747",
+    ".blog-top-header": "0.9807",
+    ".post-body-section": "0.9807"
+   },
+   {
+    "t": 724,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.9831",
+    ".bg-pixels": "1",
+    ".bg-pixels-overlay": "0.6377",
+    ".blog-top-header": "0.9831",
+    ".post-body-section": "0.9831"
+   },
+   {
+    "t": 741,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.9852",
+    ".bg-pixels": "1",
+    ".bg-pixels-overlay": "0.5995",
+    ".blog-top-header": "0.9852",
+    ".post-body-section": "0.9852"
+   },
+   {
+    "t": 757,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.9872",
+    ".bg-pixels": "1",
+    ".bg-pixels-overlay": "0.5625",
+    ".blog-top-header": "0.9872",
+    ".post-body-section": "0.9872"
+   },
+   {
+    "t": 773,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.9888",
+    ".bg-pixels": "1",
+    ".bg-pixels-overlay": "0.5287",
+    ".blog-top-header": "0.9888",
+    ".post-body-section": "0.9888"
+   },
+   {
+    "t": 790,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.9902",
+    ".bg-pixels": "1",
+    ".bg-pixels-overlay": "0.496",
+    ".blog-top-header": "0.9902",
+    ".post-body-section": "0.9902"
+   },
+   {
+    "t": 809,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.9918",
+    ".bg-pixels": "1",
+    ".bg-pixels-overlay": "0.4566",
+    ".blog-top-header": "0.9918",
+    ".post-body-section": "0.9918"
+   },
+   {
+    "t": 824,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.9928",
+    ".bg-pixels": "1",
+    ".bg-pixels-overlay": "0.43",
+    ".blog-top-header": "0.9928",
+    ".post-body-section": "0.9928"
+   },
+   {
+    "t": 840,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.9938",
+    ".bg-pixels": "1",
+    ".bg-pixels-overlay": "0.3987",
+    ".blog-top-header": "0.9938",
+    ".post-body-section": "0.9938"
+   },
+   {
+    "t": 860,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.9948",
+    ".bg-pixels": "1",
+    ".bg-pixels-overlay": "0.3652",
+    ".blog-top-header": "0.9948",
+    ".post-body-section": "0.9948"
+   },
+   {
+    "t": 877,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.9956",
+    ".bg-pixels": "1",
+    ".bg-pixels-overlay": "0.3347",
+    ".blog-top-header": "0.9956",
+    ".post-body-section": "0.9956"
+   },
+   {
+    "t": 893,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.9962",
+    ".bg-pixels": "1",
+    ".bg-pixels-overlay": "0.3088",
+    ".blog-top-header": "0.9962",
+    ".post-body-section": "0.9962"
+   },
+   {
+    "t": 911,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.9968",
+    ".bg-pixels": "1",
+    ".bg-pixels-overlay": "0.2824",
+    ".blog-top-header": "0.9968",
+    ".post-body-section": "0.9968"
+   },
+   {
+    "t": 924,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.9972",
+    ".bg-pixels": "1",
+    ".bg-pixels-overlay": "0.263",
+    ".blog-top-header": "0.9972",
+    ".post-body-section": "0.9972"
+   },
+   {
+    "t": 941,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.9976",
+    ".bg-pixels": "1",
+    ".bg-pixels-overlay": "0.2387",
+    ".blog-top-header": "0.9976",
+    ".post-body-section": "0.9976"
+   },
+   {
+    "t": 957,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.998",
+    ".bg-pixels": "1",
+    ".bg-pixels-overlay": "0.2156",
+    ".blog-top-header": "0.998",
+    ".post-body-section": "0.998"
+   },
+   {
+    "t": 974,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.9983",
+    ".bg-pixels": "1",
+    ".bg-pixels-overlay": "0.1949",
+    ".blog-top-header": "0.9983",
+    ".post-body-section": "0.9983"
+   },
+   {
+    "t": 991,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.9986",
+    ".bg-pixels": "1",
+    ".bg-pixels-overlay": "0.174",
+    ".blog-top-header": "0.9986",
+    ".post-body-section": "0.9986"
+   },
+   {
+    "t": 1007,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.9988",
+    ".bg-pixels": "1",
+    ".bg-pixels-overlay": "0.1555",
+    ".blog-top-header": "0.9988",
+    ".post-body-section": "0.9988"
+   },
+   {
+    "t": 1024,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.999",
+    ".bg-pixels": "1",
+    ".bg-pixels-overlay": "0.1369",
+    ".blog-top-header": "0.999",
+    ".post-body-section": "0.999"
+   },
+   {
+    "t": 1040,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.9991",
+    ".bg-pixels": "1",
+    ".bg-pixels-overlay": "0.1205",
+    ".blog-top-header": "0.9991",
+    ".post-body-section": "0.9991"
+   },
+   {
+    "t": 1056,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.9993",
+    ".bg-pixels": "1",
+    ".bg-pixels-overlay": "0.1042",
+    ".blog-top-header": "0.9993",
+    ".post-body-section": "0.9993"
+   },
+   {
+    "t": 1073,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.9994",
+    ".bg-pixels": "1",
+    ".bg-pixels-overlay": "0.0891",
+    ".blog-top-header": "0.9994",
+    ".post-body-section": "0.9994"
+   },
+   {
+    "t": 1091,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.9995",
+    ".bg-pixels": "1",
+    ".bg-pixels-overlay": "0.0752",
+    ".blog-top-header": "0.9995",
+    ".post-body-section": "0.9995"
+   },
+   {
+    "t": 1107,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.9996",
+    ".bg-pixels": "1",
+    ".bg-pixels-overlay": "0.0632",
+    ".blog-top-header": "0.9996",
+    ".post-body-section": "0.9996"
+   },
+   {
+    "t": 1124,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.9997",
+    ".bg-pixels": "1",
+    ".bg-pixels-overlay": "0.0516",
+    ".blog-top-header": "0.9997",
+    ".post-body-section": "0.9997"
+   },
+   {
+    "t": 1141,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.9997",
+    ".bg-pixels": "1",
+    ".bg-pixels-overlay": "0.0412",
+    ".blog-top-header": "0.9997",
+    ".post-body-section": "0.9997"
+   },
+   {
+    "t": 1157,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.9998",
+    ".bg-pixels": "1",
+    ".bg-pixels-overlay": "0.0319",
+    ".blog-top-header": "0.9998",
+    ".post-body-section": "0.9998"
+   },
+   {
+    "t": 1174,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.9998",
+    ".bg-pixels": "1",
+    ".bg-pixels-overlay": "0.0242",
+    ".blog-top-header": "0.9998",
+    ".post-body-section": "0.9998"
+   },
+   {
+    "t": 1191,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.9999",
+    ".bg-pixels": "1",
+    ".bg-pixels-overlay": "0.0173",
+    ".blog-top-header": "0.9999",
+    ".post-body-section": "0.9999"
+   },
+   {
+    "t": 1207,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.9999",
+    ".bg-pixels": "1",
+    ".bg-pixels-overlay": "0.0118",
+    ".blog-top-header": "0.9999",
+    ".post-body-section": "0.9999"
+   },
+   {
+    "t": 1224,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.9999",
+    ".bg-pixels": "1",
+    ".bg-pixels-overlay": "0.0071",
+    ".blog-top-header": "0.9999",
+    ".post-body-section": "0.9999"
+   },
+   {
+    "t": 1241,
+    ".preloader-wrap": "0",
+    ".nav-menu": "1",
+    ".bg-pixels": "1",
+    ".bg-pixels-overlay": "0.0036",
+    ".blog-top-header": "1",
+    ".post-body-section": "1"
+   },
+   {
+    "t": 1257,
+    ".preloader-wrap": "0",
+    ".nav-menu": "1",
+    ".bg-pixels": "1",
+    ".bg-pixels-overlay": "0.0013",
+    ".blog-top-header": "1",
+    ".post-body-section": "1"
+   },
+   {
+    "t": 1274,
+    ".preloader-wrap": "0",
+    ".nav-menu": "1",
+    ".bg-pixels": "1",
+    ".bg-pixels-overlay": "0.0002",
+    ".blog-top-header": "1",
+    ".post-body-section": "1"
+   },
+   {
+    "t": 1290,
+    ".preloader-wrap": "0",
+    ".nav-menu": "1",
+    ".bg-pixels": "1",
+    ".bg-pixels-overlay": "0",
+    ".blog-top-header": "1",
+    ".post-body-section": "1"
+   }
+  ]
+ },
+ "csindex": {
+  "path": "/case-studies",
+  "loadAt": 3232,
+  "preloaderBeforeLoad": [
+   [
+    1603,
+    "1",
+    "hidden",
+    "block"
+   ],
+   [
+    2604,
+    "1",
+    "hidden",
+    "block"
+   ]
+  ],
+  "pendingAt4s": [
+   "https://log.intellimize.co/logger",
+   "https://js.zi-scripts.com/unified/v1/master/getSubscriptions"
+  ],
+  "changes": [
+   {
+    "t": 0,
+    ".preloader-wrap": "1",
+    ".nav-menu": "0",
+    ".all-blogs-section": "0",
+    ".gsap_split_word1": "0 matrix(1, 0, 0, 1, 0, 47.2656)",
+    ".gsap_split_word2": "0 matrix(1, 0, 0, 1, 0, 47.2656)",
+    ".gsap_split_word6": "0 matrix(1, 0, 0, 1, 0, 47.2656)"
+   },
+   {
+    "t": 6,
+    ".preloader-wrap": "0.6561",
+    ".nav-menu": "0",
+    ".all-blogs-section": "0",
+    ".gsap_split_word1": "0 matrix(1, 0, 0, 1, 0, 47.2656)",
+    ".gsap_split_word2": "0 matrix(1, 0, 0, 1, 0, 47.2656)",
+    ".gsap_split_word6": "0 matrix(1, 0, 0, 1, 0, 47.2656)"
+   },
+   {
+    "t": 21,
+    ".preloader-wrap": "0.4356",
+    ".nav-menu": "0",
+    ".all-blogs-section": "0",
+    ".gsap_split_word1": "0 matrix(1, 0, 0, 1, 0, 47.2656)",
+    ".gsap_split_word2": "0 matrix(1, 0, 0, 1, 0, 47.2656)",
+    ".gsap_split_word6": "0 matrix(1, 0, 0, 1, 0, 47.2656)"
+   },
+   {
+    "t": 38,
+    ".preloader-wrap": "0.2401",
+    ".nav-menu": "0",
+    ".all-blogs-section": "0",
+    ".gsap_split_word1": "0 matrix(1, 0, 0, 1, 0, 47.2656)",
+    ".gsap_split_word2": "0 matrix(1, 0, 0, 1, 0, 47.2656)",
+    ".gsap_split_word6": "0 matrix(1, 0, 0, 1, 0, 47.2656)"
+   },
+   {
+    "t": 55,
+    ".preloader-wrap": "0.1024",
+    ".nav-menu": "0",
+    ".all-blogs-section": "0",
+    ".gsap_split_word1": "0 matrix(1, 0, 0, 1, 0, 47.2656)",
+    ".gsap_split_word2": "0 matrix(1, 0, 0, 1, 0, 47.2656)",
+    ".gsap_split_word6": "0 matrix(1, 0, 0, 1, 0, 47.2656)"
+   },
+   {
+    "t": 71,
+    ".preloader-wrap": "0.0256",
+    ".nav-menu": "0",
+    ".all-blogs-section": "0",
+    ".gsap_split_word1": "0 matrix(1, 0, 0, 1, 0, 47.2656)",
+    ".gsap_split_word2": "0 matrix(1, 0, 0, 1, 0, 47.2656)",
+    ".gsap_split_word6": "0 matrix(1, 0, 0, 1, 0, 47.2656)"
+   },
+   {
+    "t": 89,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.0058",
+    ".all-blogs-section": "0.0058",
+    ".gsap_split_word1": "0.0069 matrix(1, 0, 0, 1, 0, 46.9392)",
+    ".gsap_split_word2": "0 matrix(1, 0, 0, 1, 0, 47.2656)",
+    ".gsap_split_word6": "0 matrix(1, 0, 0, 1, 0, 47.2656)"
+   },
+   {
+    "t": 105,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.0986",
+    ".all-blogs-section": "0.0986",
+    ".gsap_split_word1": "0.117 matrix(1, 0, 0, 1, 0, 41.7335)",
+    ".gsap_split_word2": "0 matrix(1, 0, 0, 1, 0, 47.2656)",
+    ".gsap_split_word6": "0 matrix(1, 0, 0, 1, 0, 47.2656)"
+   },
+   {
+    "t": 122,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.1777",
+    ".all-blogs-section": "0.1777",
+    ".gsap_split_word1": "0.2092 matrix(1, 0, 0, 1, 0, 37.378)",
+    ".gsap_split_word2": "0 matrix(1, 0, 0, 1, 0, 47.2656)",
+    ".gsap_split_word6": "0 matrix(1, 0, 0, 1, 0, 47.2656)"
+   },
+   {
+    "t": 138,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.2541",
+    ".all-blogs-section": "0.2541",
+    ".gsap_split_word1": "0.2963 matrix(1, 0, 0, 1, 0, 33.259)",
+    ".gsap_split_word2": "0 matrix(1, 0, 0, 1, 0, 47.2656)",
+    ".gsap_split_word6": "0 matrix(1, 0, 0, 1, 0, 47.2656)"
+   },
+   {
+    "t": 155,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.3232",
+    ".all-blogs-section": "0.3232",
+    ".gsap_split_word1": "0.3737 matrix(1, 0, 0, 1, 0, 29.6019)",
+    ".gsap_split_word2": "0 matrix(1, 0, 0, 1, 0, 47.2656)",
+    ".gsap_split_word6": "0 matrix(1, 0, 0, 1, 0, 47.2656)"
+   },
+   {
+    "t": 172,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.3857",
+    ".all-blogs-section": "0.3857",
+    ".gsap_split_word1": "0.4425 matrix(1, 0, 0, 1, 0, 26.3511)",
+    ".gsap_split_word2": "0 matrix(1, 0, 0, 1, 0, 47.2656)",
+    ".gsap_split_word6": "0 matrix(1, 0, 0, 1, 0, 47.2656)"
+   },
+   {
+    "t": 188,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.4393",
+    ".all-blogs-section": "0.4393",
+    ".gsap_split_word1": "0.5003 matrix(1, 0, 0, 1, 0, 23.6193)",
+    ".gsap_split_word2": "0.0069 matrix(1, 0, 0, 1, 0, 46.9392)",
+    ".gsap_split_word6": "0 matrix(1, 0, 0, 1, 0, 47.2656)"
+   },
+   {
+    "t": 205,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.4911",
+    ".all-blogs-section": "0.4911",
+    ".gsap_split_word1": "0.5552 matrix(1, 0, 0, 1, 0, 21.0249)",
+    ".gsap_split_word2": "0.117 matrix(1, 0, 0, 1, 0, 41.7335)",
+    ".gsap_split_word6": "0 matrix(1, 0, 0, 1, 0, 47.2656)"
+   },
+   {
+    "t": 222,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.5355",
+    ".all-blogs-section": "0.5355",
+    ".gsap_split_word1": "0.6014 matrix(1, 0, 0, 1, 0, 18.8406)",
+    ".gsap_split_word2": "0.2092 matrix(1, 0, 0, 1, 0, 37.378)",
+    ".gsap_split_word6": "0 matrix(1, 0, 0, 1, 0, 47.2656)"
+   },
+   {
+    "t": 238,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.5784",
+    ".all-blogs-section": "0.5784",
+    ".gsap_split_word1": "0.6454 matrix(1, 0, 0, 1, 0, 16.7624)",
+    ".gsap_split_word2": "0.2963 matrix(1, 0, 0, 1, 0, 33.259)",
+    ".gsap_split_word6": "0 matrix(1, 0, 0, 1, 0, 47.2656)"
+   },
+   {
+    "t": 255,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.6175",
+    ".all-blogs-section": "0.6175",
+    ".gsap_split_word1": "0.6846 matrix(1, 0, 0, 1, 0, 14.9065)",
+    ".gsap_split_word2": "0.3737 matrix(1, 0, 0, 1, 0, 29.6019)",
+    ".gsap_split_word6": "0 matrix(1, 0, 0, 1, 0, 47.2656)"
+   },
+   {
+    "t": 272,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.653",
+    ".all-blogs-section": "0.653",
+    ".gsap_split_word1": "0.7197 matrix(1, 0, 0, 1, 0, 13.2481)",
+    ".gsap_split_word2": "0.4425 matrix(1, 0, 0, 1, 0, 26.3511)",
+    ".gsap_split_word6": "0 matrix(1, 0, 0, 1, 0, 47.2656)"
+   },
+   {
+    "t": 288,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.6835",
+    ".all-blogs-section": "0.6835",
+    ".gsap_split_word1": "0.7493 matrix(1, 0, 0, 1, 0, 11.848)",
+    ".gsap_split_word2": "0.5003 matrix(1, 0, 0, 1, 0, 23.6193)",
+    ".gsap_split_word6": "0 matrix(1, 0, 0, 1, 0, 47.2656)"
+   },
+   {
+    "t": 305,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.7131",
+    ".all-blogs-section": "0.7131",
+    ".gsap_split_word1": "0.7776 matrix(1, 0, 0, 1, 0, 10.5129)",
+    ".gsap_split_word2": "0.5552 matrix(1, 0, 0, 1, 0, 21.0249)",
+    ".gsap_split_word6": "0 matrix(1, 0, 0, 1, 0, 47.2656)"
+   },
+   {
+    "t": 321,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.7386",
+    ".all-blogs-section": "0.7386",
+    ".gsap_split_word1": "0.8014 matrix(1, 0, 0, 1, 0, 9.38525)",
+    ".gsap_split_word2": "0.6014 matrix(1, 0, 0, 1, 0, 18.8406)",
+    ".gsap_split_word6": "0 matrix(1, 0, 0, 1, 0, 47.2656)"
+   },
+   {
+    "t": 338,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.7633",
+    ".all-blogs-section": "0.7633",
+    ".gsap_split_word1": "0.8242 matrix(1, 0, 0, 1, 0, 8.30967)",
+    ".gsap_split_word2": "0.6454 matrix(1, 0, 0, 1, 0, 16.7624)",
+    ".gsap_split_word6": "0 matrix(1, 0, 0, 1, 0, 47.2656)"
+   },
+   {
+    "t": 355,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.7845",
+    ".all-blogs-section": "0.7845",
+    ".gsap_split_word1": "0.8434 matrix(1, 0, 0, 1, 0, 7.40114)",
+    ".gsap_split_word2": "0.6824 matrix(1, 0, 0, 1, 0, 15.01)",
+    ".gsap_split_word6": "0 matrix(1, 0, 0, 1, 0, 47.2656)"
+   },
+   {
+    "t": 371,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.8052",
+    ".all-blogs-section": "0.8052",
+    ".gsap_split_word1": "0.8617 matrix(1, 0, 0, 1, 0, 6.53504)",
+    ".gsap_split_word2": "0.7178 matrix(1, 0, 0, 1, 0, 13.3405)",
+    ".gsap_split_word6": "0 matrix(1, 0, 0, 1, 0, 47.2656)"
+   },
+   {
+    "t": 388,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.824",
+    ".all-blogs-section": "0.824",
+    ".gsap_split_word1": "0.8781 matrix(1, 0, 0, 1, 0, 5.76083)",
+    ".gsap_split_word2": "0.7493 matrix(1, 0, 0, 1, 0, 11.848)",
+    ".gsap_split_word6": "0 matrix(1, 0, 0, 1, 0, 47.2656)"
+   },
+   {
+    "t": 405,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.8411",
+    ".all-blogs-section": "0.8411",
+    ".gsap_split_word1": "0.8928 matrix(1, 0, 0, 1, 0, 5.06924)",
+    ".gsap_split_word2": "0.7776 matrix(1, 0, 0, 1, 0, 10.5129)",
+    ".gsap_split_word6": "0 matrix(1, 0, 0, 1, 0, 47.2656)"
+   },
+   {
+    "t": 421,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.8559",
+    ".all-blogs-section": "0.8559",
+    ".gsap_split_word1": "0.9051 matrix(1, 0, 0, 1, 0, 4.48636)",
+    ".gsap_split_word2": "0.8014 matrix(1, 0, 0, 1, 0, 9.38525)",
+    ".gsap_split_word6": "0 matrix(1, 0, 0, 1, 0, 47.2656)"
+   },
+   {
+    "t": 439,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.871",
+    ".all-blogs-section": "0.871",
+    ".gsap_split_word1": "0.9175 matrix(1, 0, 0, 1, 0, 3.90168)",
+    ".gsap_split_word2": "0.8255 matrix(1, 0, 0, 1, 0, 8.25003)",
+    ".gsap_split_word6": "0 matrix(1, 0, 0, 1, 0, 47.2656)"
+   },
+   {
+    "t": 455,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.8832",
+    ".all-blogs-section": "0.8832",
+    ".gsap_split_word1": "0.9272 matrix(1, 0, 0, 1, 0, 3.43905)",
+    ".gsap_split_word2": "0.8445 matrix(1, 0, 0, 1, 0, 7.34754)",
+    ".gsap_split_word6": "0 matrix(1, 0, 0, 1, 0, 47.2656)"
+   },
+   {
+    "t": 472,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.895",
+    ".all-blogs-section": "0.895",
+    ".gsap_split_word1": "0.9365 matrix(1, 0, 0, 1, 0, 3.00042)",
+    ".gsap_split_word2": "0.8628 matrix(1, 0, 0, 1, 0, 6.48702)",
+    ".gsap_split_word6": "0 matrix(1, 0, 0, 1, 0, 47.2656)"
+   },
+   {
+    "t": 488,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.9052",
+    ".all-blogs-section": "0.9052",
+    ".gsap_split_word1": "0.9443 matrix(1, 0, 0, 1, 0, 2.63279)",
+    ".gsap_split_word2": "0.8781 matrix(1, 0, 0, 1, 0, 5.76083)",
+    ".gsap_split_word6": "0 matrix(1, 0, 0, 1, 0, 47.2656)"
+   },
+   {
+    "t": 505,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.9151",
+    ".all-blogs-section": "0.9151",
+    ".gsap_split_word1": "0.9516 matrix(1, 0, 0, 1, 0, 2.28548)",
+    ".gsap_split_word2": "0.8928 matrix(1, 0, 0, 1, 0, 5.06924)",
+    ".gsap_split_word6": "0 matrix(1, 0, 0, 1, 0, 47.2656)"
+   },
+   {
+    "t": 522,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.9235",
+    ".all-blogs-section": "0.9235",
+    ".gsap_split_word1": "0.9578 matrix(1, 0, 0, 1, 0, 1.99537)",
+    ".gsap_split_word2": "0.9051 matrix(1, 0, 0, 1, 0, 4.48636)",
+    ".gsap_split_word6": "0 matrix(1, 0, 0, 1, 0, 47.2656)"
+   },
+   {
+    "t": 539,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.9321",
+    ".all-blogs-section": "0.9321",
+    ".gsap_split_word1": "0.9639 matrix(1, 0, 0, 1, 0, 1.70752)",
+    ".gsap_split_word2": "0.9175 matrix(1, 0, 0, 1, 0, 3.90168)",
+    ".gsap_split_word6": "0 matrix(1, 0, 0, 1, 0, 47.2656)"
+   },
+   {
+    "t": 555,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.939",
+    ".all-blogs-section": "0.939",
+    ".gsap_split_word1": "0.9686 matrix(1, 0, 0, 1, 0, 1.48244)",
+    ".gsap_split_word2": "0.9272 matrix(1, 0, 0, 1, 0, 3.43905)",
+    ".gsap_split_word6": "0 matrix(1, 0, 0, 1, 0, 47.2656)"
+   },
+   {
+    "t": 571,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.9454",
+    ".all-blogs-section": "0.9454",
+    ".gsap_split_word1": "0.9728 matrix(1, 0, 0, 1, 0, 1.28336)",
+    ".gsap_split_word2": "0.936 matrix(1, 0, 0, 1, 0, 3.02481)",
+    ".gsap_split_word6": "0 matrix(1, 0, 0, 1, 0, 47.2656)"
+   },
+   {
+    "t": 588,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.9514",
+    ".all-blogs-section": "0.9514",
+    ".gsap_split_word1": "0.9768 matrix(1, 0, 0, 1, 0, 1.09751)",
+    ".gsap_split_word2": "0.9443 matrix(1, 0, 0, 1, 0, 2.63279)",
+    ".gsap_split_word6": "0.0069 matrix(1, 0, 0, 1, 0, 46.9392)"
+   },
+   {
+    "t": 605,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.9569",
+    ".all-blogs-section": "0.9569",
+    ".gsap_split_word1": "0.9802 matrix(1, 0, 0, 1, 0, 0.935481)",
+    ".gsap_split_word2": "0.9516 matrix(1, 0, 0, 1, 0, 2.28548)",
+    ".gsap_split_word6": "0.117 matrix(1, 0, 0, 1, 0, 41.7335)"
+   },
+   {
+    "t": 622,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.9616",
+    ".all-blogs-section": "0.9616",
+    ".gsap_split_word1": "0.983 matrix(1, 0, 0, 1, 0, 0.802287)",
+    ".gsap_split_word2": "0.9578 matrix(1, 0, 0, 1, 0, 1.99537)",
+    ".gsap_split_word6": "0.2092 matrix(1, 0, 0, 1, 0, 37.378)"
+   },
+   {
+    "t": 638,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.9661",
+    ".all-blogs-section": "0.9661",
+    ".gsap_split_word1": "0.9856 matrix(1, 0, 0, 1, 0, 0.679112)",
+    ".gsap_split_word2": "0.9636 matrix(1, 0, 0, 1, 0, 1.72255)",
+    ".gsap_split_word6": "0.2963 matrix(1, 0, 0, 1, 0, 33.259)"
+   },
+   {
+    "t": 654,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.9699",
+    ".all-blogs-section": "0.9699",
+    ".gsap_split_word1": "0.9878 matrix(1, 0, 0, 1, 0, 0.578626)",
+    ".gsap_split_word2": "0.9684 matrix(1, 0, 0, 1, 0, 1.49567)",
+    ".gsap_split_word6": "0.3694 matrix(1, 0, 0, 1, 0, 29.8052)"
+   },
+   {
+    "t": 671,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.9735",
+    ".all-blogs-section": "0.9735",
+    ".gsap_split_word1": "0.9897 matrix(1, 0, 0, 1, 0, 0.486363)",
+    ".gsap_split_word2": "0.9728 matrix(1, 0, 0, 1, 0, 1.28336)",
+    ".gsap_split_word6": "0.4387 matrix(1, 0, 0, 1, 0, 26.5319)"
+   },
+   {
+    "t": 688,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.9767",
+    ".all-blogs-section": "0.9767",
+    ".gsap_split_word1": "0.9914 matrix(1, 0, 0, 1, 0, 0.407241)",
+    ".gsap_split_word2": "0.9768 matrix(1, 0, 0, 1, 0, 1.09751)",
+    ".gsap_split_word6": "0.5003 matrix(1, 0, 0, 1, 0, 23.6193)"
+   },
+   {
+    "t": 705,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.9795",
+    ".all-blogs-section": "0.9795",
+    ".gsap_split_word1": "0.9927 matrix(1, 0, 0, 1, 0, 0.343432)",
+    ".gsap_split_word2": "0.98 matrix(1, 0, 0, 1, 0, 0.944367)",
+    ".gsap_split_word6": "0.5521 matrix(1, 0, 0, 1, 0, 21.1693)"
+   },
+   {
+    "t": 721,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.9821",
+    ".all-blogs-section": "0.9821",
+    ".gsap_split_word1": "0.994 matrix(1, 0, 0, 1, 0, 0.285579)",
+    ".gsap_split_word2": "0.983 matrix(1, 0, 0, 1, 0, 0.802287)",
+    ".gsap_split_word6": "0.6014 matrix(1, 0, 0, 1, 0, 18.8406)"
+   },
+   {
+    "t": 738,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.9844",
+    ".all-blogs-section": "0.9844",
+    ".gsap_split_word1": "0.995 matrix(1, 0, 0, 1, 0, 0.236612)",
+    ".gsap_split_word2": "0.9856 matrix(1, 0, 0, 1, 0, 0.679112)",
+    ".gsap_split_word6": "0.6454 matrix(1, 0, 0, 1, 0, 16.7624)"
+   },
+   {
+    "t": 755,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.9864",
+    ".all-blogs-section": "0.9864",
+    ".gsap_split_word1": "0.9959 matrix(1, 0, 0, 1, 0, 0.195302)",
+    ".gsap_split_word2": "0.9879 matrix(1, 0, 0, 1, 0, 0.572765)",
+    ".gsap_split_word6": "0.6846 matrix(1, 0, 0, 1, 0, 14.9065)"
+   },
+   {
+    "t": 773,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.9882",
+    ".all-blogs-section": "0.9882",
+    ".gsap_split_word1": "0.9966 matrix(1, 0, 0, 1, 0, 0.160703)",
+    ".gsap_split_word2": "0.9898 matrix(1, 0, 0, 1, 0, 0.481353)",
+    ".gsap_split_word6": "0.7197 matrix(1, 0, 0, 1, 0, 13.2481)"
+   },
+   {
+    "t": 788,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.9897",
+    ".all-blogs-section": "0.9897",
+    ".gsap_split_word1": "0.9972 matrix(1, 0, 0, 1, 0, 0.133289)",
+    ".gsap_split_word2": "0.9914 matrix(1, 0, 0, 1, 0, 0.407241)",
+    ".gsap_split_word6": "0.7493 matrix(1, 0, 0, 1, 0, 11.848)"
+   },
+   {
+    "t": 805,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.9911",
+    ".all-blogs-section": "0.9911",
+    ".gsap_split_word1": "0.9977 matrix(1, 0, 0, 1, 0, 0.110318)",
+    ".gsap_split_word2": "0.9927 matrix(1, 0, 0, 1, 0, 0.343432)",
+    ".gsap_split_word6": "0.776 matrix(1, 0, 0, 1, 0, 10.5874)"
+   },
+   {
+    "t": 827,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.9927",
+    ".all-blogs-section": "0.9927",
+    ".gsap_split_word1": "0.9982 matrix(1, 0, 0, 1, 0, 0.0835656)",
+    ".gsap_split_word2": "0.9943 matrix(1, 0, 0, 1, 0, 0.267334)",
+    ".gsap_split_word6": "0.8098 matrix(1, 0, 0, 1, 0, 8.99191)"
+   },
+   {
+    "t": 845,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.9938",
+    ".all-blogs-section": "0.9938",
+    ".gsap_split_word1": "0.9986 matrix(1, 0, 0, 1, 0, 0.0670227)",
+    ".gsap_split_word2": "0.9954 matrix(1, 0, 0, 1, 0, 0.218745)",
+    ".gsap_split_word6": "0.8329 matrix(1, 0, 0, 1, 0, 7.90045)"
+   },
+   {
+    "t": 861,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.9946",
+    ".all-blogs-section": "0.9946",
+    ".gsap_split_word1": "0.9988 matrix(1, 0, 0, 1, 0, 0.0554898)",
+    ".gsap_split_word2": "0.9961 matrix(1, 0, 0, 1, 0, 0.184525)",
+    ".gsap_split_word6": "0.8501 matrix(1, 0, 0, 1, 0, 7.08436)"
+   },
+   {
+    "t": 878,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.9954",
+    ".all-blogs-section": "0.9954",
+    ".gsap_split_word1": "0.9991 matrix(1, 0, 0, 1, 0, 0.0441461)",
+    ".gsap_split_word2": "0.9968 matrix(1, 0, 0, 1, 0, 0.149832)",
+    ".gsap_split_word6": "0.8687 matrix(1, 0, 0, 1, 0, 6.20569)"
+   },
+   {
+    "t": 905,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.9965",
+    ".all-blogs-section": "0.9965",
+    ".gsap_split_word1": "0.9993 matrix(1, 0, 0, 1, 0, 0.0311008)",
+    ".gsap_split_word2": "0.9977 matrix(1, 0, 0, 1, 0, 0.108995)",
+    ".gsap_split_word6": "0.8928 matrix(1, 0, 0, 1, 0, 5.06924)"
+   },
+   {
+    "t": 922,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.997",
+    ".all-blogs-section": "0.997",
+    ".gsap_split_word1": "0.9995 matrix(1, 0, 0, 1, 0, 0.0250508)",
+    ".gsap_split_word2": "0.9981 matrix(1, 0, 0, 1, 0, 0.0898992)",
+    ".gsap_split_word6": "0.9051 matrix(1, 0, 0, 1, 0, 4.48636)"
+   },
+   {
+    "t": 938,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.9974",
+    ".all-blogs-section": "0.9974",
+    ".gsap_split_word1": "0.9996 matrix(1, 0, 0, 1, 0, 0.019757)",
+    ".gsap_split_word2": "0.9985 matrix(1, 0, 0, 1, 0, 0.0730726)",
+    ".gsap_split_word6": "0.9168 matrix(1, 0, 0, 1, 0, 3.93231)"
+   },
+   {
+    "t": 955,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.9978",
+    ".all-blogs-section": "0.9978",
+    ".gsap_split_word1": "0.9997 matrix(1, 0, 0, 1, 0, 0.0156922)",
+    ".gsap_split_word2": "0.9987 matrix(1, 0, 0, 1, 0, 0.0598383)",
+    ".gsap_split_word6": "0.9267 matrix(1, 0, 0, 1, 0, 3.46646)"
+   },
+   {
+    "t": 971,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.9982",
+    ".all-blogs-section": "0.9982",
+    ".gsap_split_word1": "0.9997 matrix(1, 0, 0, 1, 0, 0.0121)",
+    ".gsap_split_word2": "0.999 matrix(1, 0, 0, 1, 0, 0.0483055)",
+    ".gsap_split_word6": "0.936 matrix(1, 0, 0, 1, 0, 3.02481)"
+   },
+   {
+    "t": 988,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.9985",
+    ".all-blogs-section": "0.9985",
+    ".gsap_split_word1": "0.9998 matrix(1, 0, 0, 1, 0, 0.009075)",
+    ".gsap_split_word2": "0.9992 matrix(1, 0, 0, 1, 0, 0.0388523)",
+    ".gsap_split_word6": "0.9443 matrix(1, 0, 0, 1, 0, 2.63279)"
+   },
+   {
+    "t": 1005,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.9987",
+    ".all-blogs-section": "0.9987",
+    ".gsap_split_word1": "0.9999 matrix(1, 0, 0, 1, 0, 0.00680625)",
+    ".gsap_split_word2": "0.9993 matrix(1, 0, 0, 1, 0, 0.0314789)",
+    ".gsap_split_word6": "0.9512 matrix(1, 0, 0, 1, 0, 2.30467)"
+   },
+   {
+    "t": 1021,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.9989",
+    ".all-blogs-section": "0.9989",
+    ".gsap_split_word1": "0.9999 matrix(1, 0, 0, 1, 0, 0.00482109)",
+    ".gsap_split_word2": "0.9995 matrix(1, 0, 0, 1, 0, 0.0250508)",
+    ".gsap_split_word6": "0.9578 matrix(1, 0, 0, 1, 0, 1.99537)"
+   },
+   {
+    "t": 1039,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.9991",
+    ".all-blogs-section": "0.9991",
+    ".gsap_split_word1": "0.9999 matrix(1, 0, 0, 1, 0, 0.00311953)",
+    ".gsap_split_word2": "0.9996 matrix(1, 0, 0, 1, 0, 0.0194734)",
+    ".gsap_split_word6": "0.9639 matrix(1, 0, 0, 1, 0, 1.70752)"
+   },
+   {
+    "t": 1055,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.9992",
+    ".all-blogs-section": "0.9992",
+    ".gsap_split_word1": "1 matrix(1, 0, 0, 1, 0, 0.00189063)",
+    ".gsap_split_word2": "0.9997 matrix(1, 0, 0, 1, 0, 0.0154086)",
+    ".gsap_split_word6": "0.9686 matrix(1, 0, 0, 1, 0, 1.48244)"
+   },
+   {
+    "t": 1072,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.9994",
+    ".all-blogs-section": "0.9994",
+    ".gsap_split_word1": "1 matrix(1, 0, 0, 1, 0, 0.00075625)",
+    ".gsap_split_word2": "0.9997 matrix(1, 0, 0, 1, 0, 0.0119109)",
+    ".gsap_split_word6": "0.9731 matrix(1, 0, 0, 1, 0, 1.27173)"
+   },
+   {
+    "t": 1088,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.9995",
+    ".all-blogs-section": "0.9995",
+    ".gsap_split_word1": "1",
+    ".gsap_split_word2": "0.9998 matrix(1, 0, 0, 1, 0, 0.009075)",
+    ".gsap_split_word6": "0.9768 matrix(1, 0, 0, 1, 0, 1.09751)"
+   },
+   {
+    "t": 1105,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.9996",
+    ".all-blogs-section": "0.9996",
+    ".gsap_split_word1": "1",
+    ".gsap_split_word2": "0.9999 matrix(1, 0, 0, 1, 0, 0.00671172)",
+    ".gsap_split_word6": "0.9802 matrix(1, 0, 0, 1, 0, 0.935481)"
+   },
+   {
+    "t": 1121,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.9996",
+    ".all-blogs-section": "0.9996",
+    ".gsap_split_word1": "1",
+    ".gsap_split_word2": "0.9999 matrix(1, 0, 0, 1, 0, 0.00482109)",
+    ".gsap_split_word6": "0.983 matrix(1, 0, 0, 1, 0, 0.802287)"
+   },
+   {
+    "t": 1139,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.9997",
+    ".all-blogs-section": "0.9997",
+    ".gsap_split_word1": "1",
+    ".gsap_split_word2": "0.9999 matrix(1, 0, 0, 1, 0, 0.00311953)",
+    ".gsap_split_word6": "0.9858 matrix(1, 0, 0, 1, 0, 0.672401)"
+   },
+   {
+    "t": 1155,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.9998",
+    ".all-blogs-section": "0.9998",
+    ".gsap_split_word1": "1",
+    ".gsap_split_word2": "1 matrix(1, 0, 0, 1, 0, 0.00189063)",
+    ".gsap_split_word6": "0.9879 matrix(1, 0, 0, 1, 0, 0.572765)"
+   },
+   {
+    "t": 1172,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.9998",
+    ".all-blogs-section": "0.9998",
+    ".gsap_split_word1": "1",
+    ".gsap_split_word2": "1 matrix(1, 0, 0, 1, 0, 0.00075625)",
+    ".gsap_split_word6": "0.9898 matrix(1, 0, 0, 1, 0, 0.481353)"
+   },
+   {
+    "t": 1188,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.9999",
+    ".all-blogs-section": "0.9999",
+    ".gsap_split_word1": "1",
+    ".gsap_split_word2": "1",
+    ".gsap_split_word6": "0.9914 matrix(1, 0, 0, 1, 0, 0.407241)"
+   },
+   {
+    "t": 1205,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.9999",
+    ".all-blogs-section": "0.9999",
+    ".gsap_split_word1": "1",
+    ".gsap_split_word2": "1",
+    ".gsap_split_word6": "0.9928 matrix(1, 0, 0, 1, 0, 0.339745)"
+   },
+   {
+    "t": 1221,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.9999",
+    ".all-blogs-section": "0.9999",
+    ".gsap_split_word1": "1",
+    ".gsap_split_word2": "1",
+    ".gsap_split_word6": "0.994 matrix(1, 0, 0, 1, 0, 0.285579)"
+   },
+   {
+    "t": 1238,
+    ".preloader-wrap": "0",
+    ".nav-menu": "0.9999",
+    ".all-blogs-section": "0.9999",
+    ".gsap_split_word1": "1",
+    ".gsap_split_word2": "1",
+    ".gsap_split_word6": "0.995 matrix(1, 0, 0, 1, 0, 0.236612)"
+   },
+   {
+    "t": 1255,
+    ".preloader-wrap": "0",
+    ".nav-menu": "1",
+    ".all-blogs-section": "1",
+    ".gsap_split_word1": "1",
+    ".gsap_split_word2": "1",
+    ".gsap_split_word6": "0.9958 matrix(1, 0, 0, 1, 0, 0.19757)"
+   },
+   {
+    "t": 1271,
+    ".preloader-wrap": "0",
+    ".nav-menu": "1",
+    ".all-blogs-section": "1",
+    ".gsap_split_word1": "1",
+    ".gsap_split_word2": "1",
+    ".gsap_split_word6": "0.9966 matrix(1, 0, 0, 1, 0, 0.162594)"
+   },
+   {
+    "t": 1288,
+    ".preloader-wrap": "0",
+    ".nav-menu": "1",
+    ".all-blogs-section": "1",
+    ".gsap_split_word1": "1",
+    ".gsap_split_word2": "1",
+    ".gsap_split_word6": "0.9972 matrix(1, 0, 0, 1, 0, 0.133289)"
+   },
+   {
+    "t": 1305,
+    ".preloader-wrap": "0",
+    ".nav-menu": "1",
+    ".all-blogs-section": "1",
+    ".gsap_split_word1": "1",
+    ".gsap_split_word2": "1",
+    ".gsap_split_word6": "0.9977 matrix(1, 0, 0, 1, 0, 0.110318)"
+   },
+   {
+    "t": 1321,
+    ".preloader-wrap": "0",
+    ".nav-menu": "1",
+    ".all-blogs-section": "1",
+    ".gsap_split_word1": "1",
+    ".gsap_split_word2": "1",
+    ".gsap_split_word6": "0.9981 matrix(1, 0, 0, 1, 0, 0.0898992)"
+   },
+   {
+    "t": 1338,
+    ".preloader-wrap": "0",
+    ".nav-menu": "1",
+    ".all-blogs-section": "1",
+    ".gsap_split_word1": "1",
+    ".gsap_split_word2": "1",
+    ".gsap_split_word6": "0.9985 matrix(1, 0, 0, 1, 0, 0.0730726)"
+   },
+   {
+    "t": 1355,
+    ".preloader-wrap": "0",
+    ".nav-menu": "1",
+    ".all-blogs-section": "1",
+    ".gsap_split_word1": "1",
+    ".gsap_split_word2": "1",
+    ".gsap_split_word6": "0.9987 matrix(1, 0, 0, 1, 0, 0.0598383)"
+   },
+   {
+    "t": 1371,
+    ".preloader-wrap": "0",
+    ".nav-menu": "1",
+    ".all-blogs-section": "1",
+    ".gsap_split_word1": "1",
+    ".gsap_split_word2": "1",
+    ".gsap_split_word6": "0.999 matrix(1, 0, 0, 1, 0, 0.0483055)"
+   },
+   {
+    "t": 1388,
+    ".preloader-wrap": "0",
+    ".nav-menu": "1",
+    ".all-blogs-section": "1",
+    ".gsap_split_word1": "1",
+    ".gsap_split_word2": "1",
+    ".gsap_split_word6": "0.9992 matrix(1, 0, 0, 1, 0, 0.0388523)"
+   },
+   {
+    "t": 1405,
+    ".preloader-wrap": "0",
+    ".nav-menu": "1",
+    ".all-blogs-section": "1",
+    ".gsap_split_word1": "1",
+    ".gsap_split_word2": "1",
+    ".gsap_split_word6": "0.9993 matrix(1, 0, 0, 1, 0, 0.0314789)"
+   },
+   {
+    "t": 1421,
+    ".preloader-wrap": "0",
+    ".nav-menu": "1",
+    ".all-blogs-section": "1",
+    ".gsap_split_word1": "1",
+    ".gsap_split_word2": "1",
+    ".gsap_split_word6": "0.9995 matrix(1, 0, 0, 1, 0, 0.0250508)"
+   },
+   {
+    "t": 1438,
+    ".preloader-wrap": "0",
+    ".nav-menu": "1",
+    ".all-blogs-section": "1",
+    ".gsap_split_word1": "1",
+    ".gsap_split_word2": "1",
+    ".gsap_split_word6": "0.9996 matrix(1, 0, 0, 1, 0, 0.019757)"
+   },
+   {
+    "t": 1455,
+    ".preloader-wrap": "0",
+    ".nav-menu": "1",
+    ".all-blogs-section": "1",
+    ".gsap_split_word1": "1",
+    ".gsap_split_word2": "1",
+    ".gsap_split_word6": "0.9997 matrix(1, 0, 0, 1, 0, 0.0156922)"
+   },
+   {
+    "t": 1472,
+    ".preloader-wrap": "0",
+    ".nav-menu": "1",
+    ".all-blogs-section": "1",
+    ".gsap_split_word1": "1",
+    ".gsap_split_word2": "1",
+    ".gsap_split_word6": "0.9997 matrix(1, 0, 0, 1, 0, 0.0119109)"
+   },
+   {
+    "t": 1488,
+    ".preloader-wrap": "0",
+    ".nav-menu": "1",
+    ".all-blogs-section": "1",
+    ".gsap_split_word1": "1",
+    ".gsap_split_word2": "1",
+    ".gsap_split_word6": "0.9998 matrix(1, 0, 0, 1, 0, 0.009075)"
+   },
+   {
+    "t": 1505,
+    ".preloader-wrap": "0",
+    ".nav-menu": "1",
+    ".all-blogs-section": "1",
+    ".gsap_split_word1": "1",
+    ".gsap_split_word2": "1",
+    ".gsap_split_word6": "0.9999 matrix(1, 0, 0, 1, 0, 0.00671172)"
+   },
+   {
+    "t": 1521,
+    ".preloader-wrap": "0",
+    ".nav-menu": "1",
+    ".all-blogs-section": "1",
+    ".gsap_split_word1": "1",
+    ".gsap_split_word2": "1",
+    ".gsap_split_word6": "0.9999 matrix(1, 0, 0, 1, 0, 0.00482109)"
+   },
+   {
+    "t": 1539,
+    ".preloader-wrap": "0",
+    ".nav-menu": "1",
+    ".all-blogs-section": "1",
+    ".gsap_split_word1": "1",
+    ".gsap_split_word2": "1",
+    ".gsap_split_word6": "0.9999 matrix(1, 0, 0, 1, 0, 0.00311953)"
+   },
+   {
+    "t": 1555,
+    ".preloader-wrap": "0",
+    ".nav-menu": "1",
+    ".all-blogs-section": "1",
+    ".gsap_split_word1": "1",
+    ".gsap_split_word2": "1",
+    ".gsap_split_word6": "1 matrix(1, 0, 0, 1, 0, 0.00189063)"
+   },
+   {
+    "t": 1572,
+    ".preloader-wrap": "0",
+    ".nav-menu": "1",
+    ".all-blogs-section": "1",
+    ".gsap_split_word1": "1",
+    ".gsap_split_word2": "1",
+    ".gsap_split_word6": "1 matrix(1, 0, 0, 1, 0, 0.00075625)"
+   },
+   {
+    "t": 1588,
+    ".preloader-wrap": "0",
+    ".nav-menu": "1",
+    ".all-blogs-section": "1",
+    ".gsap_split_word1": "1",
+    ".gsap_split_word2": "1",
+    ".gsap_split_word6": "1"
+   }
+  ]
+ }
+}

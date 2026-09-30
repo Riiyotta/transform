@@ -1,0 +1,261 @@
+{
+ "slug": "the-orthopaedic-center",
+ "url": "https://www.transform9.com/case-studies/the-orthopaedic-center",
+ "template": "case-study (wf page 697149b061298badae113701)",
+ "meta": {
+  "title": "The Orthopaedic Center",
+  "description": "How TOC improved Efficiency and patient experience",
+  "ogTitle": "The Orthopaedic Center",
+  "ogDescription": "How TOC improved Efficiency and patient experience",
+  "ogImage": null,
+  "twitterTitle": "The Orthopaedic Center",
+  "twitterImage": null,
+  "jsonLd": null,
+  "wfPage": "697149b061298badae113701",
+  "wfCollection": "697149b061298badae1136f9",
+  "wfItemSlug": "the-orthopaedic-center"
+ },
+ "title": "The Orthopaedic Center",
+ "logo": "https://cdn.prod.website-files.com/6961001f1082da89878fcb00/697155d042ff46942e0a512d_toc-2-wh.webp",
+ "logoAlt": "",
+ "highlight": null,
+ "stats": [
+  {
+   "value": "80%",
+   "label": "reduction in call abandonment rate — from 20% to just 3%",
+   "cls": "testim-point-wrap blog cs"
+  },
+  {
+   "value": "90%",
+   "label": "decrease in average patient hold times",
+   "cls": "testim-point-wrap blog cs"
+  }
+ ],
+ "headerConditional": [],
+ "backLink": {
+  "href": "/case-studies",
+  "text": "Back to Case Studies"
+ },
+ "shareLabel": "Found this useful? Share it",
+ "share": [
+  {
+   "network": "x",
+   "href": "#",
+   "icon": "https://cdn.prod.website-files.com/684a82e3294991569082d379/696e6fc3c1ef2e8dba004c36_x-icon.svg"
+  },
+  {
+   "network": "facebook",
+   "href": "#",
+   "icon": "https://cdn.prod.website-files.com/684a82e3294991569082d379/696e6fc3ae5b9aa0a271a803_fb-icon.svg"
+  },
+  {
+   "network": "linkedin",
+   "href": "#",
+   "icon": "https://cdn.prod.website-files.com/684a82e3294991569082d379/696e6fc3101115fca7e234e0_in-icon.svg"
+  }
+ ],
+ "slots": [
+  {
+   "slot": "1st",
+   "visible": true,
+   "empty": false,
+   "blockCount": 2
+  },
+  {
+   "slot": "bl-2",
+   "visible": true,
+   "empty": false,
+   "blockCount": 3
+  },
+  {
+   "slot": "bl-3",
+   "visible": true,
+   "empty": false,
+   "blockCount": 2
+  },
+  {
+   "slot": "bl-4",
+   "visible": true,
+   "empty": false,
+   "blockCount": 4
+  },
+  {
+   "slot": "bl-5",
+   "visible": false,
+   "empty": true,
+   "blockCount": 0
+  }
+ ],
+ "readNext": {
+  "sectionClass": "read-next-section read-next",
+  "visible": true,
+  "eyebrow": "Keep exploring",
+  "heading": "Read Next",
+  "items": [
+   {
+    "order": 1,
+    "href": "/case-studies/southern-bone-joint",
+    "linkClass": "post-link-block cs w-inline-block",
+    "title": "Southern Bone & Joint",
+    "image": null,
+    "logoWhite": "https://cdn.prod.website-files.com/6961001f1082da89878fcb00/698c60b11b32134b897d931c_SBJ-wh.webp",
+    "logoBlack": "https://cdn.prod.website-files.com/6961001f1082da89878fcb00/698c60b597afd6b738f5589b_SBJ-bl.webp",
+    "highlight": "A Partnership Built on Trust:\nHow Southern Bone & Joint Humanized Patient Access with “Ronnie”",
+    "meta": [],
+    "stats": [],
+    "hiddenConditional": []
+   }
+  ]
+ },
+ "summary": "How TOC improved Efficiency and patient experience",
+ "category": null,
+ "tags": [],
+ "body": [
+  {
+   "slot": "1st",
+   "type": "h2",
+   "text": "Challenges",
+   "inlines": [
+    {
+     "text": "Challenges",
+     "bold": true
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "p",
+   "text": "TOC was experiencing long patient hold times, which ledto poor patient experiences and missed appointmentopportunities. Additionally, their call center faced staffinginefficiencies, with high overhead costs and inconsistentservice quality",
+   "inlines": [
+    {
+     "text": "TOC was experiencing long patient hold times, which ledto poor patient experiences and missed appointmentopportunities. Additionally, their call center faced staffinginefficiencies, with high overhead costs and inconsistentservice quality"
+    }
+   ]
+  },
+  {
+   "slot": "bl-2",
+   "type": "h2",
+   "text": "Solutions",
+   "inlines": [
+    {
+     "text": "Solutions"
+    }
+   ]
+  },
+  {
+   "slot": "bl-2",
+   "type": "p",
+   "text": "TOC partnered with Transform9 to build a custom AIpowered voice agent designed to handle both inboundand outbound patient communication around the clock.",
+   "inlines": [
+    {
+     "text": "TOC partnered with Transform9 to build a custom AIpowered voice agent designed to handle both inboundand outbound patient communication around the clock."
+    }
+   ]
+  },
+  {
+   "slot": "bl-2",
+   "type": "blockquote",
+   "text": "“When I was first asked to work on this development, I saidI didn’t have time for a project like this, but it has turnedout to be a very rewarding process. The Transform9 teamhas been one of our best vendor relationships. Theirpeople know what they’re doing, hear what we’re saying,and even look out for things we don’t even know to lookout for.” – Tammy Jackson, Chief Administrative Officer.",
+   "inlines": [
+    {
+     "text": "“When I was first asked to work on this development, I saidI didn’t have time for a project like this, but it has turnedout to be a very rewarding process. The Transform9 teamhas been one of our best vendor relationships. Theirpeople know what they’re doing, hear what we’re saying,and even look out for things we don’t even know to lookout for.” – Tammy Jackson, Chief Administrative Officer."
+    }
+   ]
+  },
+  {
+   "slot": "bl-3",
+   "type": "h2",
+   "text": "Client",
+   "inlines": [
+    {
+     "text": "Client"
+    }
+   ]
+  },
+  {
+   "slot": "bl-3",
+   "type": "p",
+   "text": "The Orthopaedic Center (TOC) is aleading orthopaedic care providerbased in Huntsville, Alabama. It isknown for its team of specializedphysicians and commitment topatient-centered care. With over 70providers across 13 locations, TOCreceives more than 60,000 patientcalls each month. In 2021, theorganization partnered withTransform9 to enhance patientcommunication and improveoperational efficiency.",
+   "inlines": [
+    {
+     "text": "The Orthopaedic Center (TOC) is aleading orthopaedic care providerbased in Huntsville, Alabama. It isknown for its team of specializedphysicians and commitment topatient-centered care. With over 70providers across 13 locations, TOCreceives more than 60,000 patientcalls each month. In 2021, theorganization partnered withTransform9 to enhance patientcommunication and improveoperational efficiency."
+    }
+   ]
+  },
+  {
+   "slot": "bl-4",
+   "type": "h2",
+   "text": "Results",
+   "inlines": [
+    {
+     "text": "Results"
+    }
+   ]
+  },
+  {
+   "slot": "bl-4",
+   "type": "p",
+   "text": "With Transform9, TOC experienced significant improvements.",
+   "inlines": [
+    {
+     "text": "With Transform9, TOC experienced significant improvements."
+    }
+   ]
+  },
+  {
+   "slot": "bl-4",
+   "type": "ul",
+   "items": [
+    {
+     "text": "80% reduction in call abandonment rate — from 20% to just 3%",
+     "inlines": [
+      {
+       "text": "80%",
+       "bold": true
+      },
+      {
+       "text": " reduction in call abandonment rate — from 20% to just 3%"
+      }
+     ]
+    },
+    {
+     "text": "90% decrease in average patient hold times",
+     "inlines": [
+      {
+       "text": "90%",
+       "bold": true
+      },
+      {
+       "text": " decrease in average patient hold times"
+      }
+     ]
+    },
+    {
+     "text": "Replaced the work of 4 full-time employees, at the cost of only 1 FTE",
+     "inlines": [
+      {
+       "text": "Replaced the work of "
+      },
+      {
+       "text": "4",
+       "bold": true
+      },
+      {
+       "text": " full-time employees, at the cost of only 1 FTE"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slot": "bl-4",
+   "type": "blockquote",
+   "text": "“We’ve been using Transform9 for almost 5 years, and we couldn’t be more satisfied with the results. Their customer service is exceptional, and the quality of their product is unmatched. Transform9 stays ahead of the technology curve. The cost is equivalent to 1 FTE, but it delivers the work of 4 FTEs—making the decision a no-brainer.” – Tammy Jackson, Chief Administrative Officer.",
+   "inlines": [
+    {
+     "text": "“We’ve been using Transform9 for almost 5 years, and we couldn’t be more satisfied with the results. Their customer service is exceptional, and the quality of their product is unmatched. Transform9 stays ahead of the technology curve. The cost is equivalent to 1 FTE, but it delivers the work of 4 FTEs—making the decision a no-brainer.” – Tammy Jackson, Chief Administrative Officer."
+    }
+   ]
+  }
+ ]
+}

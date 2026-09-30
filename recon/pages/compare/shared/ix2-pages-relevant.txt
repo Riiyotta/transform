@@ -1,0 +1,79 @@
+# IX2 events (site-wide data in module 9282) whose selector targets exist on /compare, /book-a-demo or legal pages.
+# Nav open/close events (e-14..e-25, e-54/55) target the navbar by element id and are the homepage M18 behaviour.
+
+e-26 MOUSE_OVER .hero-cta-link mq=['main', 'medium', 'small', 'tiny'] -> a-32 'underline-IN' firstGroupInitial=True
+    g0 STYLE_SIZE target=.underline._1  dur=500 delay=0 ease='' {'widthValue': 100, 'widthUnit': '%'}
+    g1 STYLE_SIZE target=.underline._1  dur=250 delay=0 ease='inOutQuad' {'widthValue': 0, 'widthUnit': '%'}
+    g2 STYLE_SIZE target=.underline._2  dur=250 delay=0 ease='inOutQuad' {'widthValue': 100, 'widthUnit': '%'}
+e-27 MOUSE_OUT .hero-cta-link mq=['main', 'medium', 'small', 'tiny'] -> a-33 'underline-OUT' firstGroupInitial=False
+    g0 STYLE_SIZE target=.underline._1  dur=0 delay=0 ease='outCubic' {'widthValue': 100, 'widthUnit': '%'}
+    g0 STYLE_SIZE target=.underline._2  dur=0 delay=0 ease='outCubic' {'widthValue': 0, 'widthUnit': '%'}
+e-28 MOUSE_OVER .submit-form-wrap mq=['main', 'medium', 'small', 'tiny'] -> a-32 'underline-IN' firstGroupInitial=True
+    g0 STYLE_SIZE target=.underline._1  dur=500 delay=0 ease='' {'widthValue': 100, 'widthUnit': '%'}
+    g1 STYLE_SIZE target=.underline._1  dur=250 delay=0 ease='inOutQuad' {'widthValue': 0, 'widthUnit': '%'}
+    g2 STYLE_SIZE target=.underline._2  dur=250 delay=0 ease='inOutQuad' {'widthValue': 100, 'widthUnit': '%'}
+e-29 MOUSE_OUT .submit-form-wrap mq=['main', 'medium', 'small', 'tiny'] -> a-33 'underline-OUT' firstGroupInitial=False
+    g0 STYLE_SIZE target=.underline._1  dur=0 delay=0 ease='outCubic' {'widthValue': 100, 'widthUnit': '%'}
+    g0 STYLE_SIZE target=.underline._2  dur=0 delay=0 ease='outCubic' {'widthValue': 0, 'widthUnit': '%'}
+e-30 MOUSE_OVER ._30px-text.white._w-underline mq=['main', 'medium', 'small', 'tiny'] -> a-32 'underline-IN' firstGroupInitial=True
+    g0 STYLE_SIZE target=.underline._1  dur=500 delay=0 ease='' {'widthValue': 100, 'widthUnit': '%'}
+    g1 STYLE_SIZE target=.underline._1  dur=250 delay=0 ease='inOutQuad' {'widthValue': 0, 'widthUnit': '%'}
+    g2 STYLE_SIZE target=.underline._2  dur=250 delay=0 ease='inOutQuad' {'widthValue': 100, 'widthUnit': '%'}
+e-31 MOUSE_OUT ._30px-text.white._w-underline mq=['main', 'medium', 'small', 'tiny'] -> a-33 'underline-OUT' firstGroupInitial=False
+    g0 STYLE_SIZE target=.underline._1  dur=0 delay=0 ease='outCubic' {'widthValue': 100, 'widthUnit': '%'}
+    g0 STYLE_SIZE target=.underline._2  dur=0 delay=0 ease='outCubic' {'widthValue': 0, 'widthUnit': '%'}
+e-38 MOUSE_OVER .nav-link-block mq=['main'] -> a-40 'nav-link-hover-IN' firstGroupInitial=False
+    g0 TRANSFORM_MOVE target=.nav-text  dur=250 delay=0 ease='outQuad' {'yValue': -100, 'xUnit': 'PX', 'yUnit': '%'}
+e-39 MOUSE_OUT .nav-link-block mq=['main'] -> a-41 'nav-link-hover-OUT' firstGroupInitial=False
+    g0 TRANSFORM_MOVE target=.nav-text  dur=250 delay=0 ease='outQuad' {'yValue': 0, 'xUnit': 'PX', 'yUnit': '%'}
+e-40 MOUSE_OVER .footer-link-wrap mq=['main'] -> a-44 'underline-small-IN' firstGroupInitial=True
+    g0 STYLE_SIZE target=.underline-small._1  dur=250 delay=0 ease='inOutQuad' {'widthValue': 0, 'widthUnit': '%'}
+    g0 STYLE_OPACITY target=.underline-small._1  dur=500 delay=0 ease='' {'value': 1}
+    g1 STYLE_SIZE target=.underline-small._1  dur=250 delay=0 ease='inOutQuad' {'widthValue': 100, 'widthUnit': '%'}
+    g2 STYLE_SIZE target=.underline-small._2  dur=0 delay=0 ease='' {'widthValue': 100, 'widthUnit': '%'}
+    g3 STYLE_OPACITY target=.underline-small._1  dur=0 delay=0 ease='' {'value': 0}
+e-41 MOUSE_OUT .footer-link-wrap mq=['main'] -> a-45 'underline-small-OUT' firstGroupInitial=False
+    g0 STYLE_SIZE target=.underline-small._2  dur=250 delay=0 ease='inOutQuad' {'widthValue': 0, 'widthUnit': '%'}
+    g0 STYLE_SIZE target=.underline-small._1  dur=250 delay=0 ease='inOutQuad' {'widthValue': 0, 'widthUnit': '%'}
+    g1 STYLE_OPACITY target=.underline-small._1  dur=0 delay=0 ease='' {'value': 1}
+e-64 MOUSE_OVER .footer-link-wrap mq=['main'] -> a-54 'underline-small-IN 2' firstGroupInitial=True
+    g0 STYLE_SIZE target=.underline-small-2._1  dur=250 delay=0 ease='inOutQuad' {'widthValue': 0, 'widthUnit': '%'}
+    g0 STYLE_OPACITY target=.underline-small-2._1  dur=500 delay=0 ease='' {'value': 1}
+    g1 STYLE_SIZE target=.underline-small-2._1  dur=250 delay=0 ease='inOutQuad' {'widthValue': 100, 'widthUnit': '%'}
+    g2 STYLE_SIZE target=.underline-small-2._2  dur=0 delay=0 ease='' {'widthValue': 100, 'widthUnit': '%'}
+    g3 STYLE_OPACITY target=.underline-small-2._1  dur=0 delay=0 ease='' {'value': 0}
+e-65 MOUSE_OUT .footer-link-wrap mq=['main'] -> a-55 'underline-small-OUT 2' firstGroupInitial=False
+    g0 STYLE_SIZE target=.underline-small-2._2  dur=250 delay=0 ease='inOutQuad' {'widthValue': 0, 'widthUnit': '%'}
+    g0 STYLE_SIZE target=.underline-small-2._1  dur=250 delay=0 ease='inOutQuad' {'widthValue': 0, 'widthUnit': '%'}
+    g1 STYLE_OPACITY target=.underline-small-2._1  dur=0 delay=0 ease='' {'value': 1}
+e-66 MOUSE_OVER ._30px-text.white._w-underline mq=['main', 'medium', 'small', 'tiny'] -> a-56 'underline-IN 2' firstGroupInitial=True
+    g0 STYLE_SIZE target=.underline-2._1  dur=500 delay=0 ease='' {'widthValue': 100, 'widthUnit': '%'}
+    g1 STYLE_SIZE target=.underline-2._1  dur=250 delay=0 ease='inOutQuad' {'widthValue': 0, 'widthUnit': '%'}
+    g2 STYLE_SIZE target=.underline-2._2  dur=250 delay=0 ease='inOutQuad' {'widthValue': 100, 'widthUnit': '%'}
+e-67 MOUSE_OUT ._30px-text.white._w-underline mq=['main', 'medium', 'small', 'tiny'] -> a-57 'underline-OUT 2' firstGroupInitial=False
+    g0 STYLE_SIZE target=.underline-2._1  dur=0 delay=0 ease='outCubic' {'widthValue': 100, 'widthUnit': '%'}
+    g0 STYLE_SIZE target=.underline-2._2  dur=0 delay=0 ease='outCubic' {'widthValue': 0, 'widthUnit': '%'}
+e-68 MOUSE_OVER .submit-form-wrap mq=['main', 'medium', 'small', 'tiny'] -> a-56 'underline-IN 2' firstGroupInitial=True
+    g0 STYLE_SIZE target=.underline-2._1  dur=500 delay=0 ease='' {'widthValue': 100, 'widthUnit': '%'}
+    g1 STYLE_SIZE target=.underline-2._1  dur=250 delay=0 ease='inOutQuad' {'widthValue': 0, 'widthUnit': '%'}
+    g2 STYLE_SIZE target=.underline-2._2  dur=250 delay=0 ease='inOutQuad' {'widthValue': 100, 'widthUnit': '%'}
+e-69 MOUSE_OUT .submit-form-wrap mq=['main', 'medium', 'small', 'tiny'] -> a-57 'underline-OUT 2' firstGroupInitial=False
+    g0 STYLE_SIZE target=.underline-2._1  dur=0 delay=0 ease='outCubic' {'widthValue': 100, 'widthUnit': '%'}
+    g0 STYLE_SIZE target=.underline-2._2  dur=0 delay=0 ease='outCubic' {'widthValue': 0, 'widthUnit': '%'}
+e-70 MOUSE_OVER .integration-block.wh mq=['main', 'medium', 'small', 'tiny'] -> a-58 'Integration-IN (wh)' firstGroupInitial=False
+    g0 STYLE_BACKGROUND_COLOR target=EVENT_TARGET  dur=200 delay=0 ease='easeOut' {'globalSwatchId': '--green', 'rValue': 162, 'bValue': 142, 'gValue': 250, 'aValue': 1}
+e-71 MOUSE_OUT .integration-block.wh mq=['main', 'medium', 'small', 'tiny'] -> a-59 'Integration-OUT (wh)' firstGroupInitial=False
+    g0 STYLE_BACKGROUND_COLOR target=EVENT_TARGET  dur=200 delay=0 ease='easeOut' {'globalSwatchId': '--white', 'rValue': 255, 'bValue': 255, 'gValue': 255, 'aValue': 1}
+e-72 MOUSE_OVER .privacy-block mq=['main', 'medium', 'small', 'tiny'] -> a-60 'privacy-IN' firstGroupInitial=False
+    g0 STYLE_BACKGROUND_COLOR target=EVENT_TARGET  dur=200 delay=0 ease='easeOut' {'globalSwatchId': '--white', 'rValue': 255, 'bValue': 255, 'gValue': 255, 'aValue': 1}
+    g0 STYLE_TEXT_COLOR target=._30px-text.white.privacy-head  dur=200 delay=0 ease='easeOut' {'globalSwatchId': '--black', 'rValue': 2, 'gValue': 8, 'bValue': 1, 'aValue': 1}
+    g0 STYLE_TEXT_COLOR target=._16px-text.half-white.privacy-text  dur=200 delay=0 ease='easeOut' {'globalSwatchId': '--black', 'rValue': 2, 'gValue': 8, 'bValue': 1, 'aValue': 1}
+e-73 MOUSE_OUT .privacy-block mq=['main', 'medium', 'small', 'tiny'] -> a-61 'privacy-OUT' firstGroupInitial=False
+    g0 STYLE_BACKGROUND_COLOR target=EVENT_TARGET  dur=200 delay=0 ease='easeOut' {'rValue': 255, 'bValue': 255, 'gValue': 255, 'aValue': 0}
+    g0 STYLE_TEXT_COLOR target=._30px-text.white.privacy-head  dur=200 delay=0 ease='easeOut' {'globalSwatchId': '--white', 'rValue': 255, 'gValue': 255, 'bValue': 255, 'aValue': 1}
+    g0 STYLE_TEXT_COLOR target=._16px-text.half-white.privacy-text  dur=200 delay=0 ease='easeOut' {'rValue': 255, 'gValue': 255, 'bValue': 255, 'aValue': 0.5}
+e-74 TAB_ACTIVE .ev-tab mq=['main', 'medium', 'small', 'tiny'] -> a-62 'ev-tab-IN' firstGroupInitial=True
+    g0 GENERAL_DISPLAY target=._16px-text.ev-tab-text  dur=0 delay=0 ease='' {'value': 'none'}
+    g1 GENERAL_DISPLAY target=._16px-text.ev-tab-text  dur=0 delay=0 ease='' {'value': 'block'}
+e-75 TAB_INACTIVE .ev-tab mq=['main', 'medium', 'small', 'tiny'] -> a-63 'ev-tab-OUT' firstGroupInitial=False
+    g0 GENERAL_DISPLAY target=._16px-text.ev-tab-text  dur=0 delay=0 ease='' {'value': 'none'}

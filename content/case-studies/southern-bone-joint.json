@@ -1,0 +1,615 @@
+{
+ "slug": "southern-bone-joint",
+ "url": "https://www.transform9.com/case-studies/southern-bone-joint",
+ "template": "case-study (wf page 697149b061298badae113701)",
+ "meta": {
+  "title": "Southern Bone & Joint",
+  "description": "A Partnership Built on Trust: How Southern Bone & Joint Humanized Patient Access with “Ronnie”",
+  "ogTitle": "Southern Bone & Joint",
+  "ogDescription": "A Partnership Built on Trust: How Southern Bone & Joint Humanized Patient Access with “Ronnie”",
+  "ogImage": null,
+  "twitterTitle": "Southern Bone & Joint",
+  "twitterImage": null,
+  "jsonLd": null,
+  "wfPage": "697149b061298badae113701",
+  "wfCollection": "697149b061298badae1136f9",
+  "wfItemSlug": "southern-bone-joint"
+ },
+ "title": "Southern Bone & Joint",
+ "logo": "https://cdn.prod.website-files.com/6961001f1082da89878fcb00/698c60b11b32134b897d931c_SBJ-wh.webp",
+ "logoAlt": "",
+ "highlight": {
+  "text": "A Partnership Built on Trust:\nHow Southern Bone & Joint Humanized Patient Access with “Ronnie”",
+  "hiddenByCondition": false
+ },
+ "stats": [],
+ "headerConditional": [],
+ "backLink": {
+  "href": "/case-studies",
+  "text": "Back to Case Studies"
+ },
+ "shareLabel": "Found this useful? Share it",
+ "share": [
+  {
+   "network": "x",
+   "href": "#",
+   "icon": "https://cdn.prod.website-files.com/684a82e3294991569082d379/696e6fc3c1ef2e8dba004c36_x-icon.svg"
+  },
+  {
+   "network": "facebook",
+   "href": "#",
+   "icon": "https://cdn.prod.website-files.com/684a82e3294991569082d379/696e6fc3ae5b9aa0a271a803_fb-icon.svg"
+  },
+  {
+   "network": "linkedin",
+   "href": "#",
+   "icon": "https://cdn.prod.website-files.com/684a82e3294991569082d379/696e6fc3101115fca7e234e0_in-icon.svg"
+  }
+ ],
+ "slots": [
+  {
+   "slot": "1st",
+   "visible": true,
+   "empty": false,
+   "blockCount": 42
+  },
+  {
+   "slot": "bl-2",
+   "visible": true,
+   "empty": false,
+   "blockCount": 4
+  },
+  {
+   "slot": "bl-3",
+   "visible": true,
+   "empty": false,
+   "blockCount": 3
+  },
+  {
+   "slot": "bl-4",
+   "visible": false,
+   "empty": true,
+   "blockCount": 0
+  },
+  {
+   "slot": "bl-5",
+   "visible": false,
+   "empty": true,
+   "blockCount": 0
+  }
+ ],
+ "readNext": {
+  "sectionClass": "read-next-section read-next",
+  "visible": true,
+  "eyebrow": "Keep exploring",
+  "heading": "Read Next",
+  "items": [
+   {
+    "order": 1,
+    "href": "/case-studies/the-orthopaedic-center",
+    "linkClass": "post-link-block cs w-inline-block",
+    "title": "The Orthopaedic Center",
+    "image": null,
+    "logoWhite": "https://cdn.prod.website-files.com/6961001f1082da89878fcb00/697155d042ff46942e0a512d_toc-2-wh.webp",
+    "logoBlack": "https://cdn.prod.website-files.com/6961001f1082da89878fcb00/697155d4ccf7e923e9b73400_toc-2-bl.webp",
+    "highlight": null,
+    "meta": [],
+    "stats": [
+     {
+      "value": "80%",
+      "label": "reduction in call abandonment rate — from 20% to just 3%"
+     },
+     {
+      "value": "90%",
+      "label": "decrease in average patient hold times"
+     }
+    ],
+    "hiddenConditional": []
+   }
+  ]
+ },
+ "summary": "A Partnership Built on Trust: How Southern Bone & Joint Humanized Patient Access with “Ronnie”",
+ "category": null,
+ "tags": [],
+ "body": [
+  {
+   "slot": "1st",
+   "type": "h2",
+   "text": "Patients First, Always",
+   "inlines": [
+    {
+     "text": "Patients First, Always"
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "p",
+   "text": "For Southern Bone & Joint, the decision to explore AI was never about technology for its own sake — and it wasn’t driven by revenue targets or efficiency metrics alone.",
+   "inlines": [
+    {
+     "text": "For Southern Bone & Joint, the decision to explore AI was never about technology for its own sake — and it wasn’t driven by revenue targets or efficiency metrics alone."
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "p",
+   "text": "It started with a simple, deeply held belief: patients deserve better access to care.",
+   "inlines": [
+    {
+     "text": "It started with a simple, deeply held belief: "
+    },
+    {
+     "text": "patients deserve better access to care.",
+     "bold": true
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "p",
+   "text": "As a long-standing orthopedic practice rooted in its local community, Southern Bone & Joint doesn’t just serve patients — they serve neighbors, friends, family members, and people they’ve known their entire lives. That sense of responsibility shapes how the practice operates and why leadership is constantly looking for ways to improve the patient experience.",
+   "inlines": [
+    {
+     "text": "As a long-standing orthopedic practice rooted in its local community, Southern Bone & Joint doesn’t just serve patients — they serve neighbors, friends, family members, and people they’ve known their entire lives. That sense of responsibility shapes how the practice operates and why leadership is constantly looking for ways to improve the patient experience."
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "p",
+   "text": "Access became a natural focus.",
+   "inlines": [
+    {
+     "text": "Access became a natural focus."
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "p",
+   "text": "Long hold times, missed calls, and limited after-hours availability weren’t just operational challenges — they were barriers between patients and the care they needed. And for a practice that sees itself as an extension of the community it serves, those barriers mattered.",
+   "inlines": [
+    {
+     "text": "Long hold times, missed calls, and limited after-hours availability weren’t just operational challenges — they were barriers between patients and the care they needed. And for a practice that sees itself as an extension of the community it serves, those barriers mattered."
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "blockquote",
+   "text": "“We’re always asking ourselves how we can make things easier for our patients.” said Marlene Harrell, Director of HR and Compliance at SBJ. “If there’s a better way to serve them, we feel a responsibility to pursue it.”",
+   "inlines": [
+    {
+     "text": "“We’re always asking ourselves how we can make things easier for our patients.” said Marlene Harrell, Director of HR and Compliance at SBJ. “If there’s a better way to serve them, we feel a responsibility to pursue it.”"
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "p",
+   "text": "Once Southern Bone & Joint committed to improving patient access — making it easier, faster, and more consistent — the next question became clear: who could help them do it the right way?",
+   "inlines": [
+    {
+     "text": "Once Southern Bone & Joint committed to improving patient access — making it easier, faster, and more consistent — the next question became clear: who could help them do it the right way?"
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "p",
+   "text": "That’s when finding the right partner mattered. And that search ultimately led them to Transform9.",
+   "inlines": [
+    {
+     "text": "That’s when finding the right partner mattered. And that search ultimately led them to Transform9."
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "p",
+   "text": "‍",
+   "inlines": [
+    {
+     "text": "‍"
+    }
+   ],
+   "spacer": true
+  },
+  {
+   "slot": "1st",
+   "type": "h2",
+   "text": "From Day One: A True Partnership",
+   "inlines": [
+    {
+     "text": "From Day One: A True Partnership"
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "p",
+   "text": "From the beginning, Southern Bone & Joint describes their relationship with Transform9 as fundamentally different from a typical vendor engagement.",
+   "inlines": [
+    {
+     "text": "From the beginning, Southern Bone & Joint describes their relationship with Transform9 as fundamentally different from a typical vendor engagement."
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "p",
+   "text": "According to Scott Griffin, Chief Executive Officer, “Transform9 came highly recommended by a colleague in the industry that I trust implicitly. We were facing some of the same issues they were (at Andrew’s Sports Medicine in Birmingham, AL) so the recommendation meant everything. With so many options out there, it’s hard to know where to look or who to trust, but Transform9 has lived up to that recommendation – they really are a true partner. That’s hard to find these days.”",
+   "inlines": [
+    {
+     "text": "According to Scott Griffin, Chief Executive Officer, “Transform9 came highly recommended by a colleague in the industry that I trust implicitly. We were facing some of the same issues they were (at Andrew’s Sports Medicine in Birmingham, AL) so the recommendation meant everything. With so many options out there, it’s hard to know where to look or who to trust, but Transform9 has lived up to that recommendation – they really are a true partner. That’s hard to find these days.”"
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "blockquote",
+   "text": "“What stood out immediately was the responsiveness,” Marlene shared. “No matter how much Transform9 has grown, that attention to detail and personal support has never changed.”",
+   "inlines": [
+    {
+     "text": "“What stood out immediately was the responsiveness,” Marlene shared. “No matter how much Transform9 has grown, that attention to detail and personal support has never changed.”"
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "p",
+   "text": "Onboarding felt collaborative rather than transactional. The teams worked closely through early iterations, technical challenges, and evolving workflows — always with open communication and mutual respect.",
+   "inlines": [
+    {
+     "text": "Onboarding felt collaborative rather than transactional. The teams worked closely through early iterations, technical challenges, and evolving workflows — always with open communication and mutual respect."
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "p",
+   "text": "Southern Bone & Joint valued being able to reach real people who understood their environment and priorities.",
+   "inlines": [
+    {
+     "text": "Southern Bone & Joint valued being able to reach real people who understood their environment and priorities."
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "p",
+   "text": "Per Marlene, “That kind of access builds trust. It’s something we don’t always get from larger vendors — and it’s made a real difference.”",
+   "inlines": [
+    {
+     "text": "Per Marlene, “That kind of access builds trust. It’s something we don’t always get from larger vendors — and it’s made a real difference.”"
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "p",
+   "text": "‍",
+   "inlines": [
+    {
+     "text": "‍"
+    }
+   ],
+   "spacer": true
+  },
+  {
+   "slot": "1st",
+   "type": "h2",
+   "text": "Supporting Staff, Not Replacing Them",
+   "inlines": [
+    {
+     "text": "Supporting Staff, Not Replacing Them"
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "p",
+   "text": "SBJ’s agent, eventually named “Ronnie”, quickly became a member of the team. And as Ronnie took on routine, high-volume interactions such as appointment confirmations, reschedules, and cancellations, the impact on the call center was immediate and meaningful.",
+   "inlines": [
+    {
+     "text": "SBJ’s agent, eventually named “Ronnie”, quickly became a member of the team. And as Ronnie took on routine, high-volume interactions such as appointment confirmations, reschedules, and cancellations, the impact on the call center was immediate and meaningful."
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "p",
+   "text": "Rather than overwhelming a small front-desk team during peak days, Ronnie absorbed repetitive demand and allowed staff to focus on patients who needed human attention.",
+   "inlines": [
+    {
+     "text": "Rather than overwhelming a small front-desk team during peak days, Ronnie absorbed repetitive demand and allowed staff to focus on patients who needed human attention."
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "blockquote",
+   "text": "“Ronnie didn’t replace our team — it protected them,” Scott said. “Our staff could breathe, focus, and provide better care instead of just trying to keep up with phones.”",
+   "inlines": [
+    {
+     "text": "“Ronnie didn’t replace our team — it protected them,” Scott said. “Our staff could breathe, focus, and provide better care instead of just trying to keep up with phones.”"
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "p",
+   "text": "The result wasn’t just efficiency — it was sustainability. Fewer interruptions. Less burnout. More time for meaningful patient interactions. ",
+   "inlines": [
+    {
+     "text": "The result wasn’t just efficiency — it was sustainability. Fewer interruptions. Less burnout. More time for meaningful patient interactions. "
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "p",
+   "text": "And SBJ Physicians are feeling it too. The benefit to the patients wasn’t just felt on the phone. It was felt all the way through to the actual visit. “Ronnie has been wonderful. When I talk to my patients I really get the sense that they value and appreciate what Ronnie does for them. Keeping them off hold, helping them right away. My patients are happier with this level of attention and care. And with things running more smoothly overall, my patient interactions benefit as a result.” - Dr T. Ryan Pflugner, M.D.",
+   "inlines": [
+    {
+     "text": "And SBJ Physicians are feeling it too. The benefit to the patients wasn’t just felt on the phone. It was felt all the way through to the actual visit. “Ronnie has been wonderful. When I talk to my patients I really get the sense that they value and appreciate what Ronnie does for them. Keeping them off hold, helping them right away. My patients are happier with this level of attention and care. And with things running more smoothly overall, my patient interactions benefit as a result.” - Dr T. Ryan Pflugner, M.D."
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "p",
+   "text": "‍",
+   "inlines": [
+    {
+     "text": "‍"
+    }
+   ],
+   "spacer": true
+  },
+  {
+   "slot": "1st",
+   "type": "h2",
+   "text": "Improving Access Where It Matters Most",
+   "inlines": [
+    {
+     "text": "Improving Access Where It Matters Most"
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "p",
+   "text": "For Southern Bone & Joint, patient access was always the primary driver behind AI adoption.",
+   "inlines": [
+    {
+     "text": "For Southern Bone & Joint, patient access was always the primary driver behind AI adoption."
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "p",
+   "text": "Ronnie enabled patients to manage appointments after hours, during high-volume periods, or without waiting on hold — meeting them where they are, on their time.",
+   "inlines": [
+    {
+     "text": "Ronnie enabled patients to manage appointments after hours, during high-volume periods, or without waiting on hold — meeting them where they are, on their time."
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "blockquote",
+   "text": "“Patients don’t want to wait,” Marlene explained. “They want quick, clear access. Ronnie gives them that — and that matters.”",
+   "inlines": [
+    {
+     "text": "“Patients don’t want to wait,” Marlene explained. “They want quick, clear access. Ronnie gives them that — and that matters.”"
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "p",
+   "text": "Live chat capabilities further supported this approach, creating a flexible, two-way communication channel without adding workload to staff.",
+   "inlines": [
+    {
+     "text": "Live chat capabilities further supported this approach, creating a flexible, two-way communication channel without adding workload to staff."
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "p",
+   "text": "‍",
+   "inlines": [
+    {
+     "text": "‍"
+    }
+   ],
+   "spacer": true
+  },
+  {
+   "slot": "1st",
+   "type": "h2",
+   "text": "Quality That Feels Human",
+   "inlines": [
+    {
+     "text": "Quality That Feels Human"
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "p",
+   "text": "What ultimately differentiated Ronnie from other AI experiences wasn’t just what it did — it was how it did it.",
+   "inlines": [
+    {
+     "text": "What ultimately differentiated Ronnie from other AI experiences wasn’t just what it did — it was how it did it."
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "p",
+   "text": "Southern Bone & Joint has noticed moments where Ronnie demonstrated empathy and contextual awareness that was surprising and truly remarkable. ",
+   "inlines": [
+    {
+     "text": "Southern Bone & Joint has noticed moments where Ronnie demonstrated empathy and contextual awareness that was surprising and truly remarkable. "
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "blockquote",
+   "text": "“We’ve seen Ronnie handle emotional moments with real care,” Marlene shared. “That’s not something you see in low-quality AI. It feels human — and our patients notice. And more than that, our Doctor’s are noticing too.”",
+   "inlines": [
+    {
+     "text": "“We’ve seen Ronnie handle emotional moments with real care,” Marlene shared. “That’s not something you see in low-quality AI. It feels human — and our patients notice. And more than that, our Doctor’s are noticing too.”"
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "p",
+   "text": "This level of conversational intelligence reinforced patient trust and strengthened the practice’s reputation for compassion and professionalism.",
+   "inlines": [
+    {
+     "text": "This level of conversational intelligence reinforced patient trust and strengthened the practice’s reputation for compassion and professionalism."
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "p",
+   "text": "‍",
+   "inlines": [
+    {
+     "text": "‍"
+    }
+   ],
+   "spacer": true
+  },
+  {
+   "slot": "1st",
+   "type": "h2",
+   "text": "A Shared Commitment to Community",
+   "inlines": [
+    {
+     "text": "A Shared Commitment to Community"
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "p",
+   "text": "The story behind Ronnie’s name adds a deeply meaningful layer to the partnership.",
+   "inlines": [
+    {
+     "text": "The story behind Ronnie’s name adds a deeply meaningful layer to the partnership."
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "p",
+   "text": "Ronnie is named in honor of Ronnie Randall, whose legacy lives on through community initiatives led by Southern Bone & Joint — including the Ronnie Randall Memorial Golf Tournament, which funds scholarships for local students pursuing careers in healthcare.",
+   "inlines": [
+    {
+     "text": "Ronnie is named in honor of Ronnie Randall, whose legacy lives on through community initiatives led by Southern Bone & Joint — including the Ronnie Randall Memorial Golf Tournament, which funds scholarships for local students pursuing careers in healthcare."
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "p",
+   "text": "Last year alone, the tournament supported 15 scholarships, each helping future medical professionals begin their journey.",
+   "inlines": [
+    {
+     "text": "Last year alone, the tournament supported 15 scholarships, each helping future medical professionals begin their journey."
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "blockquote",
+   "text": "“Ronnie represents something bigger than technology for us,” Marlene said. “It’s about honoring a legacy, supporting our community, and doing something that truly matters. The fact that we get to help our patients along the way is icing on the cake. And we really wouldn’t have Ronnie without the T9 team.”",
+   "inlines": [
+    {
+     "text": "“Ronnie represents something bigger than technology for us,” Marlene said. “It’s about honoring a legacy, supporting our community, and doing something that truly matters. The fact that we get to help our patients along the way is icing on the cake. And we really wouldn’t have Ronnie without the T9 team.”"
+    }
+   ]
+  },
+  {
+   "slot": "bl-2",
+   "type": "h2",
+   "text": "Looking Ahead",
+   "inlines": [
+    {
+     "text": "Looking Ahead"
+    }
+   ]
+  },
+  {
+   "slot": "bl-2",
+   "type": "p",
+   "text": "Southern Bone & Joint and Transform9 continue to evolve together — expanding capabilities, refining workflows, and improving access step by step.",
+   "inlines": [
+    {
+     "text": "Southern Bone & Joint and Transform9 continue to evolve together — expanding capabilities, refining workflows, and improving access step by step."
+    }
+   ]
+  },
+  {
+   "slot": "bl-2",
+   "type": "p",
+   "text": "This first chapter of their story isn’t about dashboards or percentages. It’s about trust, collaboration, and proving that AI in healthcare can be both powerful and personal.",
+   "inlines": [
+    {
+     "text": "This first chapter of their story isn’t about dashboards or percentages. It’s about trust, collaboration, and proving that AI in healthcare can be both powerful and personal."
+    }
+   ]
+  },
+  {
+   "slot": "bl-2",
+   "type": "blockquote",
+   "text": "“Transform9 listens,” Marlene said. “They care. And that’s why this partnership works.”",
+   "inlines": [
+    {
+     "text": "“Transform9 listens,” Marlene said. “They care. And that’s why this partnership works.”"
+    }
+   ]
+  },
+  {
+   "slot": "bl-3",
+   "type": "h2",
+   "text": "A Note on Ronnie",
+   "inlines": [
+    {
+     "text": "A Note on Ronnie"
+    }
+   ]
+  },
+  {
+   "slot": "bl-3",
+   "type": "p",
+   "text": "Ronnie isn’t just an AI assistant.",
+   "inlines": [
+    {
+     "text": "Ronnie isn’t just an AI assistant."
+    }
+   ]
+  },
+  {
+   "slot": "bl-3",
+   "type": "p",
+   "text": "Ronnie is a reflection of Southern Bone & Joint’s values — compassion, community, and commitment to patients — brought to life through thoughtful technology and a trusted partnership.",
+   "inlines": [
+    {
+     "text": "Ronnie is a reflection of Southern Bone & Joint’s values — compassion, community, and commitment to patients — brought to life through thoughtful technology and a trusted partnership."
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,57 @@
+{
+  "url": "https://www.transform9.com/case-studies",
+  "template": "case-studies index (wf page 6971638a9ea15e3a1fb91fd5)",
+  "meta": {
+    "title": "Case Studies",
+    "description": "Our case studies showcase real projects and results, highlighting how our AI voice agents help specialty practices improve operations.",
+    "ogTitle": "Case Studies",
+    "ogDescription": "Our case studies showcase real projects and results, highlighting how our AI voice agents help specialty practices improve operations.",
+    "ogImage": "https://cdn.prod.website-files.com/684a82e3294991569082d379/68b191f59984678d1bd51942_Open%20Graph-opt.png",
+    "twitterTitle": "Case Studies",
+    "twitterImage": null,
+    "jsonLd": null,
+    "wfPage": "6971638a9ea15e3a1fb91fd5",
+    "wfCollection": null,
+    "wfItemSlug": null
+  },
+  "heroHeading": "Case Studies | Proven Success Stories",
+  "leftLabel": "Insights & Stories",
+  "list": [
+    {
+      "order": 1,
+      "href": "/case-studies/southern-bone-joint",
+      "linkClass": "post-link-block cs w-inline-block",
+      "title": "Southern Bone & Joint",
+      "image": null,
+      "logoWhite": "https://cdn.prod.website-files.com/6961001f1082da89878fcb00/698c60b11b32134b897d931c_SBJ-wh.webp",
+      "logoBlack": "https://cdn.prod.website-files.com/6961001f1082da89878fcb00/698c60b597afd6b738f5589b_SBJ-bl.webp",
+      "highlight": "A Partnership Built on Trust:\nHow Southern Bone & Joint Humanized Patient Access with “Ronnie”",
+      "meta": [],
+      "stats": [],
+      "hiddenConditional": []
+    },
+    {
+      "order": 2,
+      "href": "/case-studies/the-orthopaedic-center",
+      "linkClass": "post-link-block cs w-inline-block",
+      "title": "The Orthopaedic Center",
+      "image": null,
+      "logoWhite": "https://cdn.prod.website-files.com/6961001f1082da89878fcb00/697155d042ff46942e0a512d_toc-2-wh.webp",
+      "logoBlack": "https://cdn.prod.website-files.com/6961001f1082da89878fcb00/697155d4ccf7e923e9b73400_toc-2-bl.webp",
+      "highlight": null,
+      "meta": [],
+      "stats": [
+        {
+          "value": "80%",
+          "label": "reduction in call abandonment rate — from 20% to just 3%"
+        },
+        {
+          "value": "90%",
+          "label": "decrease in average patient hold times"
+        }
+      ],
+      "hiddenConditional": []
+    }
+  ],
+  "pagination": "none"
+}

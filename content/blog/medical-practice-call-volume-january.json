@@ -1,0 +1,546 @@
+{
+ "slug": "medical-practice-call-volume-january",
+ "url": "https://www.transform9.com/blog/medical-practice-call-volume-january",
+ "template": "blog-post (wf page 6961001f74e092b614cb17b7)",
+ "meta": {
+  "title": "Your Practice's January Call Surge Starts Being a Problem in October",
+  "description": "Medical practice call volume in January is predictable — and expensive. Here's the Q4 audit, deploy, and stress-test plan to protect patient access in 2027.",
+  "ogTitle": "Your Practice's January Call Surge Starts Being a Problem in October",
+  "ogDescription": "Medical practice call volume in January is predictable — and expensive. Here's the Q4 audit, deploy, and stress-test plan to protect patient access in 2027.",
+  "ogImage": "https://cdn.prod.website-files.com/6961001f1082da89878fcb00/6aaaeb672e1e0997bba4a0a0_featured-compressed.jpeg",
+  "twitterTitle": "Your Practice's January Call Surge Starts Being a Problem in October",
+  "twitterImage": "https://cdn.prod.website-files.com/6961001f1082da89878fcb00/6aaaeb672e1e0997bba4a0a0_featured-compressed.jpeg",
+  "jsonLd": {
+   "@context": "https://schema.org",
+   "@type": "BlogPosting",
+   "headline": "Your Practice&#39;s January Call Surge Starts Being a Problem in October",
+   "description": "Medical practice call volume in January is predictable — and expensive. Here&#39;s the Q4 audit, deploy, and stress-test plan to protect patient access in 2027.",
+   "image": "https://cdn.prod.website-files.com/6961001f1082da89878fcb00/6aaaeb672e1e0997bba4a0a0_featured-compressed.jpeg",
+   "author": {
+    "@type": "Organization",
+    "name": "Transform9",
+    "url": "https://www.transform9.com"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "name": "Transform9"
+   },
+   "datePublished": "2026-09-16",
+   "dateModified": "2026-09-16"
+  },
+  "wfPage": "6961001f74e092b614cb17b7",
+  "wfCollection": "6961001f74e092b614cb179f",
+  "wfItemSlug": "medical-practice-call-volume-january"
+ },
+ "title": "Your Practice's January Call Surge Starts Being a Problem in October",
+ "author": "Transform9",
+ "date": "September 16, 2026",
+ "heroImage": "https://cdn.prod.website-files.com/6961001f1082da89878fcb00/6aaaeb672e1e0997bba4a0a0_featured-compressed.jpeg",
+ "backLink": {
+  "href": "/blog",
+  "text": "Back to Blog"
+ },
+ "shareLabel": "Found this useful? Share it",
+ "share": [
+  {
+   "network": "x",
+   "href": "#",
+   "icon": "https://cdn.prod.website-files.com/684a82e3294991569082d379/696e6fc3c1ef2e8dba004c36_x-icon.svg"
+  },
+  {
+   "network": "facebook",
+   "href": "#",
+   "icon": "https://cdn.prod.website-files.com/684a82e3294991569082d379/696e6fc3ae5b9aa0a271a803_fb-icon.svg"
+  },
+  {
+   "network": "linkedin",
+   "href": "#",
+   "icon": "https://cdn.prod.website-files.com/684a82e3294991569082d379/696e6fc3101115fca7e234e0_in-icon.svg"
+  }
+ ],
+ "slots": [
+  {
+   "slot": "1st",
+   "visible": true,
+   "empty": false,
+   "blockCount": 33
+  },
+  {
+   "slot": "bl-2",
+   "visible": false,
+   "empty": true,
+   "blockCount": 0
+  },
+  {
+   "slot": "bl-3",
+   "visible": false,
+   "empty": true,
+   "blockCount": 0
+  },
+  {
+   "slot": "bl-4",
+   "visible": false,
+   "empty": true,
+   "blockCount": 0
+  },
+  {
+   "slot": "bl-5",
+   "visible": false,
+   "empty": true,
+   "blockCount": 0
+  }
+ ],
+ "readNext": {
+  "sectionClass": "read-next-section read-next hide",
+  "visible": false,
+  "eyebrow": "Keep exploring",
+  "heading": "Read Next",
+  "items": [
+   {
+    "order": 1,
+    "href": "/blog/ai-voice-agents-for-athenahealth-7-questions-to-ask-before-choosing-a-platform",
+    "linkClass": "post-link-block w-inline-block",
+    "title": "AI Voice Agents for athenahealth: 7 Questions to Ask Before Choosing a Platform",
+    "image": "https://cdn.prod.website-files.com/6961001f1082da89878fcb00/6aac50cd7d67b3ee047d814c_featured-compressed.jpeg",
+    "logoWhite": null,
+    "logoBlack": null,
+    "highlight": null,
+    "meta": [
+     "Transorm9",
+     "September 17, 2026"
+    ],
+    "stats": [],
+    "hiddenConditional": []
+   },
+   {
+    "order": 2,
+    "href": "/blog/why-traditional-ivr-is-failing-your-practice-and-how-ai-voice-agents-fix-the-press-0-trap",
+    "linkClass": "post-link-block w-inline-block",
+    "title": "Why Traditional IVR is Failing Your Practice—and How AI Voice Agents Fix the 'Press 0' Trap",
+    "image": "https://cdn.prod.website-files.com/6961001f1082da89878fcb00/6a76262bcb74f74bb12693ea_Screenshot%202026-08-07%20at%201.38.27%E2%80%AFPM.png",
+    "logoWhite": null,
+    "logoBlack": null,
+    "highlight": null,
+    "meta": [
+     "Transform9",
+     "August 7, 2026"
+    ],
+    "stats": [],
+    "hiddenConditional": []
+   }
+  ]
+ },
+ "summary": "Medical practice call volume in January is predictable — and expensive. Here's the Q4 audit, deploy, and stress-test plan to protect patient access in 2027.",
+ "category": null,
+ "tags": [],
+ "body": [
+  {
+   "slot": "1st",
+   "type": "h2",
+   "text": "The January Surge: Why Specialty Care Hits a Breaking Point",
+   "inlines": [
+    {
+     "text": "The January Surge: Why Specialty Care Hits a Breaking Point"
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "p",
+   "text": "At 8:02 a.m. on the first business Monday of January, the queue is already deep. Not because anything broke, but because three separate pressures converge on the same phone line at the same hour.",
+   "inlines": [
+    {
+     "text": "At 8:02 a.m. on the first business Monday of January, the queue is already deep. Not because anything broke, but because three separate pressures converge on the same phone line at the same hour."
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "p",
+   "text": "The first is the deductible reset — though not in the direction most staffing plans assume. Patients who met their deductible by November pushed their knee replacement or cystoscopy into December, when surgical volumes run roughly 25% above average. January is the mirror image: the out-of-pocket meter is back at zero, and the phone fills with patients asking what a procedure costs now, whether they should wait until fall, and how to move the appointment they booked in better financial weather. The call volume holds. Far fewer of those calls end in a booking.",
+   "inlines": [
+    {
+     "text": "The first is the deductible reset — though not in the direction most staffing plans assume. Patients who met their deductible by November pushed their knee replacement or cystoscopy into December, when "
+    },
+    {
+     "text": "surgical volumes run roughly 25% above average",
+     "link": {
+      "href": "https://www.ibj.com/articles/61339-patients-rush-to-surgery-before-insurance-deductibles-reset"
+     }
+    },
+    {
+     "text": ". January is the mirror image: the out-of-pocket meter is back at zero, and the phone fills with patients asking what a procedure costs now, whether they should wait until fall, and how to move the appointment they booked in better financial weather. The call volume holds. Far fewer of those calls end in a booking."
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "p",
+   "text": "The second is the plan year itself. New carriers, new member IDs, new networks, prior authorizations that have to be obtained all over again, referrals that reset. Every one of those calls carries a coverage re-verification burden that didn't exist in December, and each adds minutes to a call the front desk was already rushing.",
+   "inlines": [
+    {
+     "text": "The second is the plan year itself. New carriers, new member IDs, new networks, prior authorizations that have to be obtained all over again, referrals that reset. Every one of those calls carries a coverage re-verification burden that didn't exist in December, and each adds minutes to a call the front desk was already rushing."
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "p",
+   "text": "The third is volume the calendar generates on its own: winter falls and ski injuries, deferred post-op follow-up, new-year referrals, and the backlog of everything nobody scheduled during two short holiday weeks.",
+   "inlines": [
+    {
+     "text": "The third is volume the calendar generates on its own: winter falls and ski injuries, deferred post-op follow-up, new-year referrals, and the backlog of everything nobody scheduled during two short holiday weeks."
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "p",
+   "text": "None of this is a surprise. Medical practice call volume in January is a structural certainty with a known start date — and it is the most expensive volume your front desk handles all year, because the same number of calls yields fewer booked cases. That makes it a Q4 planning problem, not a Q1 firefight.",
+   "inlines": [
+    {
+     "text": "None of this is a surprise. Medical practice call volume in January is a structural certainty with a known start date — and it is the most expensive volume your front desk handles all year, because the same number of calls yields fewer booked cases. That makes it a Q4 planning problem, not a Q1 firefight."
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "h2",
+   "text": "The Hidden Cost of the Front-Desk Bottleneck",
+   "inlines": [
+    {
+     "text": "The Hidden Cost of the Front-Desk Bottleneck"
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "p",
+   "text": "When conversion is already working against you, every abandoned call costs more. The patient who calls in January and gets a busy signal is frequently the one still deciding — and a patient on the fence who can't reach you doesn't call back, they call the group across town. In specialty care that isn't a $95 office visit walking away; it's the front door of a surgical pathway, an imaging episode, or a multi-visit treatment plan. A call abandonment rate that reads as a minor service metric on a dashboard is, in a high-volume orthopedic or urology group, one of the largest uncontrolled leaks in the revenue cycle.",
+   "inlines": [
+    {
+     "text": "When conversion is already working against you, every abandoned call costs more. The patient who calls in January and gets a busy signal is frequently the one still deciding — and a patient on the fence who can't reach you doesn't call back, they call the group across town. In specialty care that isn't a $95 office visit walking away; it's the front door of a surgical pathway, an imaging episode, or a multi-visit treatment plan. A call abandonment rate that reads as a minor service metric on a dashboard is, in a high-volume orthopedic or urology group, one of the largest uncontrolled leaks in the revenue cycle."
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "p",
+   "text": "The damage compounds. Abandoned calls become voicemails, and voicemails become a second queue that the same overloaded staff must work through after hours — generating callbacks that frequently go unanswered and start the cycle again.",
+   "inlines": [
+    {
+     "text": "The damage compounds. Abandoned calls become voicemails, and voicemails become a second queue that the same overloaded staff must work through after hours — generating callbacks that frequently go unanswered and start the cycle again."
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "p",
+   "text": "Then there's the human cost. Front desk and patient access teams absorb the surge personally: back-to-back calls, frustrated patients, no recovery time. Turnover follows, and December and January are the most expensive months to lose someone, because a replacement hired in January won't be productive until the surge has already passed.",
+   "inlines": [
+    {
+     "text": "Then there's the human cost. Front desk and patient access teams absorb the surge personally: back-to-back calls, frustrated patients, no recovery time. Turnover follows, and December and January are the most expensive months to lose someone, because a replacement hired in January won't be productive until the surge has already passed."
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "h2",
+   "text": "Why Traditional Staffing Levers Fail the Math Test",
+   "inlines": [
+    {
+     "text": "Why Traditional Staffing Levers Fail the Math Test"
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "p",
+   "text": "The old way is straightforward: approve overtime in December, bring on two seasonal schedulers, and route overflow to an answering service. On a staffing spreadsheet, the math closes.",
+   "inlines": [
+    {
+     "text": "The old way is straightforward: approve overtime in December, bring on two seasonal schedulers, and route overflow to an answering service. On a staffing spreadsheet, the math closes."
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "p",
+   "text": "The reality is that specialty scheduling isn't a generic skill. A new scheduler has to learn sub-specialty routing, workers' compensation intake, imaging prerequisites, global period rules, and the practice's EMR workflow — typically four to eight weeks of ramp. A hire made in November is barely competent when the surge peaks. Third-party answering services avoid the ramp problem by avoiding the clinical context entirely: they take a message, which means the call still lands on the front desk as work. That's the callback queue paradox. Overflow routing doesn't remove calls; it converts one inbound call into an inbound call plus an outbound one.",
+   "inlines": [
+    {
+     "text": "The reality is that specialty scheduling isn't a generic skill. A new scheduler has to learn sub-specialty routing, workers' compensation intake, imaging prerequisites, global period rules, and the practice's EMR workflow — typically four to eight weeks of ramp. A hire made in November is barely competent when the surge peaks. Third-party answering services avoid the ramp problem by avoiding the clinical context entirely: they take a message, which means the call still lands on the front desk as work. That's the callback queue paradox. Overflow routing doesn't remove calls; it converts one inbound call into an inbound call plus an outbound one."
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "p",
+   "text": "For mid-market and enterprise groups, scaling front desk staffing linearly against a seasonal spike stopped being financially defensible some time ago.",
+   "inlines": [
+    {
+     "text": "For mid-market and enterprise groups, scaling front desk staffing linearly against a seasonal spike stopped being financially defensible some time ago."
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "h2",
+   "text": "The Q4 Readiness Plan: Automating the Patient Journey",
+   "inlines": [
+    {
+     "text": "The Q4 Readiness Plan: Automating the Patient Journey"
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "p",
+   "text": "The surge is a volume problem, so the fix has to scale with volume rather than with headcount. That's the case for deploying an AI voice agent for medical practices ahead of the plan year, not in reaction to it.",
+   "inlines": [
+    {
+     "text": "The surge is a volume problem, so the fix has to scale with volume rather than with headcount. That's the case for deploying an AI voice agent for medical practices ahead of the plan year, not in reaction to it."
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "p",
+   "text": "Start with the call types that repeat. New patient scheduling and appointment confirmations dominate January inbound. Cancellations and reschedules free high-value slots that should be refilled the same day. Insurance and FAQ handling — new member IDs, network questions, \"what do I owe now that my deductible reset\" — consume enormous staff time and require no clinical judgment. Specialty intake captures body part, mechanism of injury, referral source, or presenting symptom before the patient ever reaches a coordinator.",
+   "inlines": [
+    {
+     "text": "Start with the call types that repeat. New patient scheduling and appointment confirmations dominate January inbound. Cancellations and reschedules free high-value slots that should be refilled the same day. Insurance and FAQ handling — new member IDs, network questions, \"what do I owe now that my deductible reset\" — consume enormous staff time and require no clinical judgment. Specialty intake captures body part, mechanism of injury, referral source, or presenting symptom before the patient ever reaches a coordinator."
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "p",
+   "text": "The differentiator is where that data goes. Transform9 builds Custom AI Voice Agents that handle inbound patient calls, book appointments, and process PHI in compliance with HIPAA — with 100% native integrations into EMR and practice management systems, no middleware hops. The agent writes the appointment and the intake record directly, so nothing waits on a human to retype it.",
+   "inlines": [
+    {
+     "text": "The differentiator is where that data goes. Transform9 builds Custom AI Voice Agents that handle inbound patient calls, book appointments, and process PHI in compliance with HIPAA — with 100% native integrations into EMR and practice management systems, no middleware hops. The agent writes the appointment and the intake record directly, so nothing waits on a human to retype it."
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "p",
+   "text": "Security posture matters at this scale too: SOC 2 Type II, NIST 800-53 Moderate baseline controls, and NIST 800-30 risk assessments sit behind every call. These are federal-grade frameworks, not the minimum viable compliance most AI vendors stop at.",
+   "inlines": [
+    {
+     "text": "Security posture matters at this scale too: SOC 2 Type II, NIST 800-53 Moderate baseline controls, and NIST 800-30 risk assessments sit behind every call. These are federal-grade frameworks, not the minimum viable compliance most AI vendors stop at."
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "h2",
+   "text": "Implementation Timeline: From October Audit to January Launch",
+   "inlines": [
+    {
+     "text": "Implementation Timeline: From October Audit to January Launch"
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "p",
+   "text": "October — audit. Pull your call detail records for the last two Januaries. Identify peak hours, day-of-week concentration, abandonment by queue, and the top five reasons patients call. This dataset defines the scope of automation and the business case you'll take to your board.",
+   "inlines": [
+    {
+     "text": "October — audit.",
+     "bold": true
+    },
+    {
+     "text": " Pull your call detail records for the last two Januaries. Identify peak hours, day-of-week concentration, abandonment by queue, and the top five reasons patients call. This dataset defines the scope of automation and the business case you'll take to your board."
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "p",
+   "text": "November — deploy and tune. Stand up the agent against your highest-volume workflows first: new patient intake, confirmations, and cancellations. Configure sub-specialty routing and escalation rules so clinical questions reach a human immediately while scheduling resolves autonomously.",
+   "inlines": [
+    {
+     "text": "November — deploy and tune.",
+     "bold": true
+    },
+    {
+     "text": " Stand up the agent against your highest-volume workflows first: new patient intake, confirmations, and cancellations. Configure sub-specialty routing and escalation rules so clinical questions reach a human immediately while scheduling resolves autonomously."
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "p",
+   "text": "December — stress test and train. Run the agent at simulated January volume. Train staff on the escalation path so they know what reaches them and why. Validate that every booked appointment and intake record lands correctly in the EMR.",
+   "inlines": [
+    {
+     "text": "December — stress test and train.",
+     "bold": true
+    },
+    {
+     "text": " Run the agent at simulated January volume. Train staff on the escalation path so they know what reaches them and why. Validate that every booked appointment and intake record lands correctly in the EMR."
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "p",
+   "text": "January — run live. The agent answers around the clock, holds no one, and fills the schedule during the busiest weeks of the plan year.",
+   "inlines": [
+    {
+     "text": "January — run live.",
+     "bold": true
+    },
+    {
+     "text": " The agent answers around the clock, holds no one, and fills the schedule during the busiest weeks of the plan year."
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "h2",
+   "text": "The Bottom Line: What You Need to Know for 2027",
+   "inlines": [
+    {
+     "text": "The Bottom Line: What You Need to Know for 2027"
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "p",
+   "text": "For operations leaders building Q4 budgets, the decision reduces to four points:",
+   "inlines": [
+    {
+     "text": "For operations leaders building Q4 budgets, the decision reduces to four points:"
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "ul",
+   "items": [
+    {
+     "text": "January volume is a structural certainty, not an operational surprise. Deductible resets, new plan years, and post-holiday injury volume arrive on the same date every year and can be modeled from your own historical call data.",
+     "inlines": [
+      {
+       "text": "January volume is a structural certainty, not an operational surprise.",
+       "bold": true
+      },
+      {
+       "text": " Deductible resets, new plan years, and post-holiday injury volume arrive on the same date every year and can be modeled from your own historical call data."
+      }
+     ]
+    },
+    {
+     "text": "Seasonal hiring in Q4 is usually too late. Specialty scheduling requires four to eight weeks of ramp on EMR workflows, sub-specialty routing, and payer rules, so a November hire peaks after the surge does.",
+     "inlines": [
+      {
+       "text": "Seasonal hiring in Q4 is usually too late.",
+       "bold": true
+      },
+      {
+       "text": " Specialty scheduling requires four to eight weeks of ramp on EMR workflows, sub-specialty routing, and payer rules, so a November hire peaks after the surge does."
+      }
+     ]
+    },
+    {
+     "text": "AI voice agents scale patient access without scaling headcount. HIPAA-compliant agents answer every call 24/7, book directly into the EMR, and capture the high-value surgical and procedural inquiries that abandoned calls currently lose.",
+     "inlines": [
+      {
+       "text": "AI voice agents scale patient access without scaling headcount.",
+       "bold": true
+      },
+      {
+       "text": " HIPAA-compliant agents answer every call 24/7, book directly into the EMR, and capture the high-value surgical and procedural inquiries that abandoned calls currently lose."
+      }
+     ]
+    },
+    {
+     "text": "Automation deployed by December outperforms manual intake in Q1. Practices that audit in October, deploy in November, and stress-test in December enter January with capacity already proven, while everyone else is approving overtime.",
+     "inlines": [
+      {
+       "text": "Automation deployed by December outperforms manual intake in Q1.",
+       "bold": true
+      },
+      {
+       "text": " Practices that audit in October, deploy in November, and stress-test in December enter January with capacity already proven, while everyone else is approving overtime."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "p",
+   "text": "The practices that treat the surge as a math problem solve it. The ones that treat it as a staffing problem absorb it.",
+   "inlines": [
+    {
+     "text": "The practices that treat the surge as a math problem solve it. The ones that treat it as a staffing problem absorb it."
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "h2",
+   "text": "Securing Your Practice's Q1 Revenue Today",
+   "inlines": [
+    {
+     "text": "Securing Your Practice's Q1 Revenue Today"
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "p",
+   "text": "October decisions determine January outcomes. There is no version of this where a practice waits until the queue backs up and then builds capacity fast enough to matter — the ramp time, the integration work, and the staff training all sit in front of the surge, not beside it.",
+   "inlines": [
+    {
+     "text": "October decisions determine January outcomes. There is no version of this where a practice waits until the queue backs up and then builds capacity fast enough to matter — the ramp time, the integration work, and the staff training all sit in front of the surge, not beside it."
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "p",
+   "text": "Start with your own numbers. Pull last January's call abandonment rate, your average speed to answer during the 8 a.m. to 10 a.m. window, and the count of voicemails that never received a callback. If those figures make you uncomfortable, they're the business case.",
+   "inlines": [
+    {
+     "text": "Start with your own numbers. Pull last January's call abandonment rate, your average speed to answer during the 8 a.m. to 10 a.m. window, and the count of voicemails that never received a callback. If those figures make you uncomfortable, they're the business case."
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "p",
+   "text": "Transform9 configures Custom AI Voice Agents for high-volume specialty groups including orthopedics, urology, ophthalmology, dermatology, and ENT, where scheduling complexity and call volume outpace what any front desk can absorb. Native EMR integration, specialty-configurable workflows, and federal-grade security, deployed in time for the plan year.",
+   "inlines": [
+    {
+     "text": "Transform9 configures Custom AI Voice Agents for high-volume specialty groups including orthopedics, urology, ophthalmology, dermatology, and ENT, where scheduling complexity and call volume outpace what any front desk can absorb. Native EMR integration, specialty-configurable workflows, and federal-grade security, deployed in time for the plan year."
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "p",
+   "text": "The Q4 window is open now. Book a demo and see how an AI voice agent handles your practice's January surge before it starts.",
+   "inlines": [
+    {
+     "text": "The Q4 window is open now. "
+    },
+    {
+     "text": "Book a demo",
+     "link": {
+      "href": "https://www.transform9.com/book-a-demo"
+     }
+    },
+    {
+     "text": " and see how an AI voice agent handles your practice's January surge before it starts."
+    }
+   ]
+  }
+ ]
+}

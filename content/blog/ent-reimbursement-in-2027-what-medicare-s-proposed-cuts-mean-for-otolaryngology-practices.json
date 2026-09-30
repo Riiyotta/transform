@@ -1,0 +1,846 @@
+{
+ "slug": "ent-reimbursement-in-2027-what-medicare-s-proposed-cuts-mean-for-otolaryngology-practices",
+ "url": "https://www.transform9.com/blog/ent-reimbursement-in-2027-what-medicare-s-proposed-cuts-mean-for-otolaryngology-practices",
+ "template": "blog-post (wf page 6961001f74e092b614cb17b7)",
+ "meta": {
+  "title": "ENT Reimbursement in 2027: What Medicare's Proposed Cuts Mean for Otolaryngology Practices",
+  "description": "Medicare proposes a -9% reimbursement cut for otolaryngology in 2027. Learn what's driving the cuts, why ENT is hit hardest, and what practices can control.",
+  "ogTitle": "ENT Reimbursement in 2027: What Medicare's Proposed Cuts Mean for Otolaryngology Practices",
+  "ogDescription": "Medicare proposes a -9% reimbursement cut for otolaryngology in 2027. Learn what's driving the cuts, why ENT is hit hardest, and what practices can control.",
+  "ogImage": "https://cdn.prod.website-files.com/6961001f1082da89878fcb00/6a9620058ff8e8731722e05d_featured.png",
+  "twitterTitle": "ENT Reimbursement in 2027: What Medicare's Proposed Cuts Mean for Otolaryngology Practices",
+  "twitterImage": "https://cdn.prod.website-files.com/6961001f1082da89878fcb00/6a9620058ff8e8731722e05d_featured.png",
+  "jsonLd": {
+   "@context": "https://schema.org",
+   "@type": "BlogPosting",
+   "headline": "ENT Reimbursement in 2027: What Medicare&#39;s Proposed Cuts Mean for Otolaryngology Practices",
+   "description": "Medicare proposes a -9% reimbursement cut for otolaryngology in 2027. Learn what&#39;s driving the cuts, why ENT is hit hardest, and what practices can control.",
+   "image": "https://cdn.prod.website-files.com/6961001f1082da89878fcb00/6a9620058ff8e8731722e05d_featured.png",
+   "author": {
+    "@type": "Organization",
+    "name": "Transform9",
+    "url": "https://www.transform9.com"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "name": "Transform9"
+   },
+   "datePublished": "2026-08-31",
+   "dateModified": "2026-08-31"
+  },
+  "wfPage": "6961001f74e092b614cb17b7",
+  "wfCollection": "6961001f74e092b614cb179f",
+  "wfItemSlug": "ent-reimbursement-in-2027-what-medicare-s-proposed-cuts-mean-for-otolaryngology-practices"
+ },
+ "title": "ENT Reimbursement in 2027: What Medicare's Proposed Cuts Mean for Otolaryngology Practices",
+ "author": "Transform9",
+ "date": "August 31, 2026",
+ "heroImage": "https://cdn.prod.website-files.com/6961001f1082da89878fcb00/6a9620058ff8e8731722e05d_featured.png",
+ "backLink": {
+  "href": "/blog",
+  "text": "Back to Blog"
+ },
+ "shareLabel": "Found this useful? Share it",
+ "share": [
+  {
+   "network": "x",
+   "href": "#",
+   "icon": "https://cdn.prod.website-files.com/684a82e3294991569082d379/696e6fc3c1ef2e8dba004c36_x-icon.svg"
+  },
+  {
+   "network": "facebook",
+   "href": "#",
+   "icon": "https://cdn.prod.website-files.com/684a82e3294991569082d379/696e6fc3ae5b9aa0a271a803_fb-icon.svg"
+  },
+  {
+   "network": "linkedin",
+   "href": "#",
+   "icon": "https://cdn.prod.website-files.com/684a82e3294991569082d379/696e6fc3101115fca7e234e0_in-icon.svg"
+  }
+ ],
+ "slots": [
+  {
+   "slot": "1st",
+   "visible": true,
+   "empty": false,
+   "blockCount": 64
+  },
+  {
+   "slot": "bl-2",
+   "visible": false,
+   "empty": true,
+   "blockCount": 0
+  },
+  {
+   "slot": "bl-3",
+   "visible": false,
+   "empty": true,
+   "blockCount": 0
+  },
+  {
+   "slot": "bl-4",
+   "visible": false,
+   "empty": true,
+   "blockCount": 0
+  },
+  {
+   "slot": "bl-5",
+   "visible": false,
+   "empty": true,
+   "blockCount": 0
+  }
+ ],
+ "readNext": {
+  "sectionClass": "read-next-section read-next hide",
+  "visible": false,
+  "eyebrow": "Keep exploring",
+  "heading": "Read Next",
+  "items": [
+   {
+    "order": 1,
+    "href": "/blog/why-generic-ai-virtual-assistants-fail-specialty-medical-practices-and-what-actually-works",
+    "linkClass": "post-link-block w-inline-block",
+    "title": "Why Generic AI Virtual Assistants Fail Specialty Medical Practices (and What Actually Works)",
+    "image": "https://cdn.prod.website-files.com/6961001f1082da89878fcb00/6a7a5062d71f1eb2d1d87d96_front%20desk%20image.jpg",
+    "logoWhite": null,
+    "logoBlack": null,
+    "highlight": null,
+    "meta": [
+     "Transform9",
+     "August 10, 2026"
+    ],
+    "stats": [],
+    "hiddenConditional": []
+   },
+   {
+    "order": 2,
+    "href": "/blog/orthopedic-ai-answering-service",
+    "linkClass": "post-link-block w-inline-block",
+    "title": "The Orthopedic Bottleneck: Why Traditional Answering Services Are Failing Your Practice",
+    "image": "https://cdn.prod.website-files.com/6961001f1082da89878fcb00/6a84b734cfe28e9a4355d574_featured-compressed.jpeg",
+    "logoWhite": null,
+    "logoBlack": null,
+    "highlight": null,
+    "meta": [
+     "Transform9",
+     "August 18, 2026"
+    ],
+    "stats": [],
+    "hiddenConditional": []
+   }
+  ]
+ },
+ "summary": "Medicare proposes a -9% reimbursement cut for otolaryngology in 2027. Learn what's driving the cuts, why ENT is hit hardest, and what practices can control.",
+ "category": null,
+ "tags": [],
+ "body": [
+  {
+   "slot": "1st",
+   "type": "h1",
+   "text": "ENT Reimbursement in 2027: What Medicare's Proposed Cuts Mean for Otolaryngology Practices",
+   "inlines": [
+    {
+     "text": "ENT Reimbursement in 2027: What Medicare's Proposed Cuts Mean for Otolaryngology Practices"
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "p",
+   "text": "Every summer, CMS publishes a proposed Medicare Physician Fee Schedule, collects public comment, and finalizes it in November. Most years the proposal is a rounding error for any given specialty. This is not one of those years for otolaryngology.",
+   "inlines": [
+    {
+     "text": "Every summer, CMS publishes a proposed Medicare Physician Fee Schedule, collects public comment, and finalizes it in November. Most years the proposal is a rounding error for any given specialty. This is not one of those years for otolaryngology."
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "p",
+   "text": "In the CY 2027 proposed rule, published July 14, 2026, CMS's own impact table puts otolaryngology at an estimated −9% aggregate reduction in allowed charges — the largest single-specialty decline in the rule, tied with dermatology. Nothing in the rule targets ENT. The −9% is the compound result of two broad changes: a rebuild of practice expense methodology, which CMS's analysis identifies as the primary driver, and a change to how same-day services are paid that happens, almost incidentally, to describe the way otolaryngology is practiced.",
+   "inlines": [
+    {
+     "text": "In the CY 2027 proposed rule, published July 14, 2026, CMS's own impact table puts otolaryngology at an estimated −9% aggregate reduction in allowed charges — the largest single-specialty decline in the rule, tied with dermatology. Nothing in the rule targets ENT. The −9% is the compound result of two broad changes: a rebuild of practice expense methodology, which CMS's analysis identifies as the primary driver, and a change to how same-day services are paid that happens, almost incidentally, to describe the way otolaryngology is practiced."
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "p",
+   "text": "The public comment period closes September 14, 2026. The final rule is expected in November, effective January 1, 2027.",
+   "inlines": [
+    {
+     "text": "The public comment period closes September 14, 2026. The final rule is expected in November, effective January 1, 2027."
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "p",
+   "text": "Here is what was proposed, why ENT carries more exposure than most specialties, and what remains inside a practice's control once the rate per encounter is set by someone else.",
+   "inlines": [
+    {
+     "text": "Here is what was proposed, why ENT carries more exposure than most specialties, and what remains inside a practice's control once the rate per encounter is set by someone else."
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "h2",
+   "text": "What CMS proposed for CY 2027",
+   "inlines": [
+    {
+     "text": "What CMS proposed for CY 2027"
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "p",
+   "text": "Three provisions matter most for office-based otolaryngology. Taken in order of how much of the −9% they explain, practice expense comes first — but the same-day change is the one that will get argued about, so start there.",
+   "inlines": [
+    {
+     "text": "Three provisions matter most for office-based otolaryngology. Taken in order of how much of the −9% they explain, practice expense comes first — but the same-day change is the one that will get argued about, so start there."
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "h3",
+   "text": "1. Paying the second same-day service at 50%",
+   "inlines": [
+    {
+     "text": "1. Paying the second same-day service at 50%"
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "p",
+   "text": "CMS proposes that when a separately identifiable office or outpatient E/M visit is furnished by the same physician, or a physician in the same practice, on the same day as a procedure carrying a 0-, 10-, or 90- day global period, the highest-valued service is paid at 100% and every other service that day is paid at 50%.",
+   "inlines": [
+    {
+     "text": "CMS proposes that when a separately identifiable office or outpatient E/M visit is furnished by the same physician, or a physician in the same practice, on the same day as a procedure carrying a 0-, 10-, or 90- day global period, the highest-valued service is paid at 100% and every other service that day is paid at 50%."
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "p",
+   "text": "The industry shorthand for this is \"the modifier 25 cut,\" because modifier 25 is the mechanism used to bill a same-day E/M alongside a procedure. Strictly speaking, CMS is not changing the modifier. It is changing what the modifier gets you. CMS's stated rationale is that efficiencies exist when one physician performs both services in a single encounter, and that current methodology may therefore pay twice for overlapping work.",
+   "inlines": [
+    {
+     "text": "The industry shorthand for this is \"the modifier 25 cut,\" because modifier 25 is the mechanism used to bill a same-day E/M alongside a procedure. Strictly speaking, CMS is not changing the modifier. It is changing what the modifier gets you. CMS's stated rationale is that efficiencies exist when one physician performs both services in a single encounter, and that current methodology may therefore pay twice for overlapping work."
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "h3",
+   "text": "2. A rebuild of practice expense methodology",
+   "inlines": [
+    {
+     "text": "2. A rebuild of practice expense methodology"
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "p",
+   "text": "CMS proposes three connected changes to how indirect practice expense RVUs are allocated:",
+   "inlines": [
+    {
+     "text": "CMS proposes three connected changes to how indirect practice expense RVUs are allocated:"
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "p",
+   "text": "• Realigning indirect PE to track more closely to work RVUs and clinical labor inputs.",
+   "inlines": [
+    {
+     "text": "• Realigning indirect PE to track more closely to work RVUs and clinical labor inputs."
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "p",
+   "text": "• Phasing out the Indirect Practice Cost Index over a two-year transition, on the reasoning that it anchors PE values to outdated specialty survey data.",
+   "inlines": [
+    {
+     "text": "• Phasing out the Indirect Practice Cost Index over a two-year transition, on the reasoning that it anchors PE values to outdated specialty survey data."
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "p",
+   "text": "• Introducing a PE stabilization adjustment that would cap year-over-year movement in PE RVUs at roughly ±5% for most existing services.",
+   "inlines": [
+    {
+     "text": "• Introducing a PE stabilization adjustment that would cap year-over-year movement in PE RVUs at roughly ±5% for most existing services."
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "p",
+   "text": "The stabilization cap is the sleeper item here. It limits how fast values can fall, but it also limits how fast they can be corrected upward — which matters for any specialty that believes its current PE values already understate its real equipment and clinical staff costs in the office setting.",
+   "inlines": [
+    {
+     "text": "The stabilization cap is the sleeper item here. It limits how fast values can fall, but it also limits how fast they can be corrected upward — which matters for any specialty that believes its current PE values already understate its real equipment and clinical staff costs in the office setting."
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "h3",
+   "text": "3. Two conversion factors, both lower",
+   "inlines": [
+    {
+     "text": "3. Two conversion factors, both lower"
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "p",
+   "text": "The dual conversion factor structure introduced for 2026 continues. For CY 2027, CMS proposes:",
+   "inlines": [
+    {
+     "text": "The dual conversion factor structure introduced for 2026 continues. For CY 2027, CMS proposes:"
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "p",
+   "text": "• $32.84 for physicians not qualifying under an Advanced APM — a 1.68% reduction from $33.40. This is where most otolaryngologists sit.",
+   "inlines": [
+    {
+     "text": "• $32.84 for physicians not qualifying under an Advanced APM — a 1.68% reduction from $33.40. This is where most otolaryngologists sit."
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "p",
+   "text": "• $33.17 for qualifying APM participants — a 1.19% reduction from $33.57.",
+   "inlines": [
+    {
+     "text": "• $33.17 for qualifying APM participants — a 1.19% reduction from $33.57."
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "p",
+   "text": "It is worth understanding why these fall, because the reason is not CMS discretion. The statutory update for 2027 is actually positive — +0.25% for non-APM physicians, +0.75% for qualifying APM participants — and the budget neutrality adjustment adds another 0.53%. What overwhelms both is the expiration of the temporary 2.5% statutory increase Congress enacted for 2026 under the One Big Beautiful Bill Act. That increase lapses December 31, 2026, and absent further congressional action CMS is required by law to remove it.",
+   "inlines": [
+    {
+     "text": "It is worth understanding why these fall, because the reason is not CMS discretion. The statutory update for 2027 is actually positive — +0.25% for non-APM physicians, +0.75% for qualifying APM participants — and the budget neutrality adjustment adds another 0.53%. What overwhelms both is the expiration of the temporary 2.5% statutory increase Congress enacted for 2026 under the One Big Beautiful Bill Act. That increase lapses December 31, 2026, and absent further congressional action CMS is required by law to remove it."
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "p",
+   "text": "The practical implication: the conversion factor piece of this is a legislative problem with a legislative fix, and Congress has patched similar cliffs before. The −9% specialty impact, by contrast, comes from RVU and methodology changes inside CMS's control — which is why the comment period, not just the lobbying, matters.",
+   "inlines": [
+    {
+     "text": "The practical implication: the conversion factor piece of this is a legislative problem with a legislative fix, and Congress has patched similar cliffs before. The −9% specialty impact, by contrast, comes from RVU and methodology changes inside CMS's control — which is why the comment period, not just the lobbying, matters."
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "p",
+   "text": "CMS is also seeking comment on whether the facility versus non-facility site-of-service payment differential remains appropriate at all, which is worth watching for any group with an ambulatory surgery footprint.",
+   "inlines": [
+    {
+     "text": "CMS is also seeking comment on whether the facility versus non-facility site-of-service payment differential remains appropriate at all, which is worth watching for any group with an ambulatory surgery footprint."
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "h2",
+   "text": "Why otolaryngology is more exposed than other specialties",
+   "inlines": [
+    {
+     "text": "Why otolaryngology is more exposed than other specialties"
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "p",
+   "text": "The same-day proposal is specialty-neutral on paper. In practice, exposure scales directly with how often a single appointment slot contains both a diagnostic evaluation and a procedure. And in ENT, that is not an occasional occurrence. It is the standard episode of care.",
+   "inlines": [
+    {
+     "text": "The same-day proposal is specialty-neutral on paper. In practice, exposure scales directly with how often a single appointment slot contains both a diagnostic evaluation and a procedure. And in ENT, that is not an occasional occurrence. It is the standard episode of care."
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "p",
+   "text": "A patient presents with chronic sinus complaints and is scoped in the same visit. A hoarse patient gets a laryngoscopy. A pediatric tube check turns into a cerumen removal. A new allergy patient is evaluated and tested the same afternoon. Consolidating diagnosis and intervention into one encounter is not a billing strategy in otolaryngology — it is good medicine and good scheduling, and it is repeated dozens of times a day in a busy clinic.",
+   "inlines": [
+    {
+     "text": "A patient presents with chronic sinus complaints and is scoped in the same visit. A hoarse patient gets a laryngoscopy. A pediatric tube check turns into a cerumen removal. A new allergy patient is evaluated and tested the same afternoon. Consolidating diagnosis and intervention into one encounter is not a billing strategy in otolaryngology — it is good medicine and good scheduling, and it is repeated dozens of times a day in a busy clinic."
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "p",
+   "text": "That is why CMS's modeling lands otolaryngology, dermatology, and podiatry at the bottom of the impact table. The three specialties share a structural trait: high-volume, office-based, procedure-adjacent evaluation.",
+   "inlines": [
+    {
+     "text": "That is why CMS's modeling lands otolaryngology, dermatology, and podiatry at the bottom of the impact table. The three specialties share a structural trait: high-volume, office-based, procedure-adjacent evaluation."
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "p",
+   "text": "Exposure is proportional to how much of your schedule is diagnostic-plus-procedural in a single slot.",
+   "inlines": [
+    {
+     "text": "Exposure is proportional to how much of your schedule is diagnostic-plus-procedural in a single slot."
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "h2",
+   "text": "How to model your own exposure before September 14",
+   "inlines": [
+    {
+     "text": "How to model your own exposure before September 14"
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "p",
+   "text": "Aggregate specialty estimates are useful for context and nearly useless for planning. A −9% specialty average will overstate the impact for some practices and badly understate it for others, depending on payer mix, site of service, and how procedure-dense the schedule actually is.",
+   "inlines": [
+    {
+     "text": "Aggregate specialty estimates are useful for context and nearly useless for planning. A −9% specialty average will overstate the impact for some practices and badly understate it for others, depending on payer mix, site of service, and how procedure-dense the schedule actually is."
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "p",
+   "text": "The practice-level version is a single query:",
+   "inlines": [
+    {
+     "text": "The practice-level version is a single query:"
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "ol",
+   "items": [
+    {
+     "text": "Pull twelve months of professional claims.",
+     "inlines": [
+      {
+       "text": "Pull twelve months of professional claims."
+      }
+     ]
+    },
+    {
+     "text": "Isolate encounters where an office or outpatient E/M and a 0-, 10-, or 90-day global procedure were billed on the same date of service by the same physician.",
+     "inlines": [
+      {
+       "text": "Isolate encounters where an office or outpatient E/M and a 0-, 10-, or 90-day global procedure were billed on the same date of service by the same physician."
+      }
+     ]
+    },
+    {
+     "text": "Re-price the lower-valued line on each of those encounters at 50%.",
+     "inlines": [
+      {
+       "text": "Re-price the lower-valued line on each of those encounters at 50%."
+      }
+     ]
+    },
+    {
+     "text": "Total the delta, then scale it by your Medicare and Medicare-indexed commercial share.",
+     "inlines": [
+      {
+       "text": "Total the delta, then scale it by your Medicare and Medicare-indexed commercial share."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "p",
+   "text": "That number does two jobs. It is the substance of a comment letter — practice-level quantification carries more weight in the impact record than general objection — and it is the opening line of your 2027 budget conversation.",
+   "inlines": [
+    {
+     "text": "That number does two jobs. It is the substance of a comment letter — practice-level quantification carries more weight in the impact record than general objection — and it is the opening line of your 2027 budget conversation."
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "p",
+   "text": "AAO-HNS has signaled it will file a comprehensive comment pressing CMS on the accuracy of non-facility practice cost assumptions. Individual practice comments are additive to that, not redundant with it.",
+   "inlines": [
+    {
+     "text": "AAO-HNS has signaled it will file a comprehensive comment pressing CMS on the accuracy of non-facility practice cost assumptions. Individual practice comments are additive to that, not redundant with it."
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "h2",
+   "text": "What a rate cut actually leaves on the table",
+   "inlines": [
+    {
+     "text": "What a rate cut actually leaves on the table"
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "p",
+   "text": "Here is the uncomfortable structural point. A reduction in the rate per encounter cannot be coded around. Documentation improvement, coder education, and denial management all raise the percentage of earned revenue you actually collect. None of them raise the rate itself. If Medicare pays less for the same work, better coding does not recover it.",
+   "inlines": [
+    {
+     "text": "Here is the uncomfortable structural point. A reduction in the rate per encounter cannot be coded around. Documentation improvement, coder education, and denial management all raise the percentage of earned revenue you actually collect. None of them raise the rate itself. If Medicare pays less for the same work, better coding does not recover it."
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "p",
+   "text": "That leaves two levers, and only two:",
+   "inlines": [
+    {
+     "text": "That leaves two levers, and only two:"
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "p",
+   "text": "◦ Yield — what share of the demand already arriving at your practice converts into a completed, billed encounter.",
+   "inlines": [
+    {
+     "text": "◦ Yield — what share of the demand already arriving at your practice converts into a completed, billed encounter."
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "p",
+   "text": "◦ Cost to serve — what it costs you to convert each one.",
+   "inlines": [
+    {
+     "text": "◦ Cost to serve — what it costs you to convert each one."
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "p",
+   "text": "Both are operational. Neither depends on CMS. And in a year when the rate per encounter falls, both get more valuable, not less — because the offset has to come from volume and margin rather than price.",
+   "inlines": [
+    {
+     "text": "Both are operational. Neither depends on CMS. And in a year when the rate per encounter falls, both get more valuable, not less — because the offset has to come from volume and margin rather than price."
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "h2",
+   "text": "What the data says about patient access and unanswered calls",
+   "inlines": [
+    {
+     "text": "What the data says about patient access and unanswered calls"
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "p",
+   "text": "Yield in a specialty practice is largely a telephone problem, and the benchmarking here is worse than most administrators expect.",
+   "inlines": [
+    {
+     "text": "Yield in a specialty practice is largely a telephone problem, and the benchmarking here is worse than most administrators expect."
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "p",
+   "text": "Industry analysis of practice call data puts roughly 23% of calls to medical practices as never reaching a live person — routed to voicemail, abandoned on hold, or disconnected. Solo practices tend to run above 30%; large groups average closer to 15–18%. Formal healthcare call centers average about 7% abandonment against an industry target of under 5%, but individual physician practices commonly run 10– 20% or higher during peak windows. Patient tolerance is thin: roughly 60% of callers abandon after one minute on hold.",
+   "inlines": [
+    {
+     "text": "Industry analysis of practice call data puts roughly 23% of calls to medical practices as never reaching a live person — routed to voicemail, abandoned on hold, or disconnected. Solo practices tend to run above 30%; large groups average closer to 15–18%. Formal healthcare call centers average about 7% abandonment against an industry target of under 5%, but individual physician practices commonly run 10– 20% or higher during peak windows. Patient tolerance is thin: roughly 60% of callers abandon after one minute on hold."
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "h2",
+   "text": "ENT compounds all of it in three specific ways.",
+   "inlines": [
+    {
+     "text": "ENT compounds all of it in three specific ways."
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "p",
+   "text": "Seasonality. Allergy and sinus volume does not arrive evenly across the year. It arrives in surges that no fixed front-desk headcount plan absorbs, which means the abandonment rate is worst exactly when new-patient demand is highest.",
+   "inlines": [
+    {
+     "text": "Seasonality. Allergy and sinus volume does not arrive evenly across the year. It arrives in surges that no fixed front-desk headcount plan absorbs, which means the abandonment rate is worst exactly when new-patient demand is highest."
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "p",
+   "text": "Parallel call streams. Audiology and hearing-aid follow-up generate a second queue running alongside the physician schedule, often with different scheduling rules, different providers, and different templates.",
+   "inlines": [
+    {
+     "text": "Parallel call streams. Audiology and hearing-aid follow-up generate a second queue running alongside the physician schedule, often with different scheduling rules, different providers, and different templates."
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "p",
+   "text": "Call length. Pediatric tube and tonsil episodes bring parent calls that are long, detailed, and anxious, and parents are the least likely callers to wait on hold.",
+   "inlines": [
+    {
+     "text": "Call length. Pediatric tube and tonsil episodes bring parent calls that are long, detailed, and anxious, and parents are the least likely callers to wait on hold."
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "p",
+   "text": "Every unanswered call in that mix is a scheduled encounter that did not happen. It never enters the practice management system, so it never shows up in a productivity report. The revenue simply does not exist, and nothing in the reporting stack flags its absence.",
+   "inlines": [
+    {
+     "text": "Every unanswered call in that mix is a scheduled encounter that did not happen. It never enters the practice management system, so it never shows up in a productivity report. The revenue simply does not exist, and nothing in the reporting stack flags its absence."
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "p",
+   "text": "Doing the offset math Industry estimates for the first-visit value of a captured new-patient call in a specialty practice generally fall in the $200–$300 range, with materially higher figures once downstream imaging, procedures, and follow- up are included. The range is wide because the number is genuinely practice-specific. Compute your own: average first-year professional revenue per new patient, multiplied by your call-to-appointment conversion rate.",
+   "inlines": [
+    {
+     "text": "Doing the offset math Industry estimates for the first-visit value of a captured new-patient call in a specialty practice generally fall in the $200–$300 range, with materially higher figures once downstream imaging, procedures, and follow- up are included. The range is wide because the number is genuinely practice-specific. Compute your own: average first-year professional revenue per new patient, multiplied by your call-to-appointment conversion rate."
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "p",
+   "text": "Then run the offset. For a practice at $9M in professional collections facing a 9% reduction on Medicare-rate volume, exposure is roughly $810,000. At $257 per captured new-patient call, the midpoint of that range and a figure we use as a working assumption, closing the gap requires about 3,150 additional captured calls a year. Across roughly 252 business days, that is about a dozen recovered calls per day.",
+   "inlines": [
+    {
+     "text": "Then run the offset. For a practice at $9M in professional collections facing a 9% reduction on Medicare-rate volume, exposure is roughly $810,000. At $257 per captured new-patient call, the midpoint of that range and a figure we use as a working assumption, closing the gap requires about 3,150 additional captured calls a year. Across roughly 252 business days, that is about a dozen recovered calls per day."
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "p",
+   "text": "That framing matters. Twelve calls a day is not a restructuring. It is an access problem with a known cause and a measurable fix. Whether a practice solves it with staffing, workflow redesign, technology, or some combination is a separate question — but it is a solvable question, which is more than can be said for the conversion factor.",
+   "inlines": [
+    {
+     "text": "That framing matters. Twelve calls a day is not a restructuring. It is an access problem with a known cause and a measurable fix. Whether a practice solves it with staffing, workflow redesign, technology, or some combination is a separate question — but it is a solvable question, which is more than can be said for the conversion factor."
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "h2",
+   "text": "Questions worth asking before January",
+   "inlines": [
+    {
+     "text": "Questions worth asking before January"
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "p",
+   "text": "Three, for the next operations meeting:",
+   "inlines": [
+    {
+     "text": "Three, for the next operations meeting:"
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "ol",
+   "items": [
+    {
+     "text": "What percentage of inbound calls went unanswered or abandoned last month — and do you have that number broken out by day of week?",
+     "inlines": [
+      {
+       "text": "What percentage of inbound calls went unanswered or abandoned last month — and do you have that number broken out by day of week?"
+      }
+     ]
+    },
+    {
+     "text": "Of the calls you did answer, how many were purely administrative and required no clinical judgment?",
+     "inlines": [
+      {
+       "text": "Of the calls you did answer, how many were purely administrative and required no clinical judgment?"
+      }
+     ]
+    },
+    {
+     "text": "If reimbursement per encounter drops in January, what is the written plan to hold contribution flat, and does it depend on adding front-office headcount?",
+     "inlines": [
+      {
+       "text": "If reimbursement per encounter drops in January, what is the written plan to hold contribution flat, and does it depend on adding front-office headcount?"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "p",
+   "text": "If the answer to the first question is \"we don't measure that,\" the exposure created by the CY 2027 rule is larger than the rule itself.",
+   "inlines": [
+    {
+     "text": "If the answer to the first question is \"we don't measure that,\" the exposure created by the CY 2027 rule is larger than the rule itself."
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "h2",
+   "text": "Key dates",
+   "inlines": [
+    {
+     "text": "Key dates"
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "p",
+   "text": "July 14, 2026 CY 2027 MPFS proposed rule published",
+   "inlines": [
+    {
+     "text": "July 14, 2026",
+     "bold": true
+    },
+    {
+     "text": " CY 2027 MPFS proposed rule published"
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "p",
+   "text": "Sept 14, 2026 Public comment period closes",
+   "inlines": [
+    {
+     "text": "Sept 14, 2026",
+     "bold": true
+    },
+    {
+     "text": " Public comment period closes"
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "p",
+   "text": "Sept 15–18 2026 ASCENT Annual Educational Conference, Hilton Orlando Buena Vista Palace",
+   "inlines": [
+    {
+     "text": "Sept 15–18",
+     "bold": true
+    },
+    {
+     "text": " 2026 ASCENT Annual Educational Conference, Hilton Orlando Buena Vista Palace"
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "p",
+   "text": "Nov 2026 CY 2027 final rule expected",
+   "inlines": [
+    {
+     "text": "Nov 2026",
+     "bold": true
+    },
+    {
+     "text": " CY 2027 final rule expected"
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "p",
+   "text": "Jan 1, 2027 Finalized policies take effect",
+   "inlines": [
+    {
+     "text": "Jan 1, 2027",
+     "bold": true
+    },
+    {
+     "text": " Finalized policies take effect"
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "p",
+   "text": "A necessary caveat. This is a proposed rule. CMS has narrowed, delayed, and withdrawn provisions between proposal and final rule before, and it may do so here. Nothing above should be read as a prediction that the −9% estimate will survive to January in its current form. It should be read as the reason to file a comment before September 14 and to model the downside either way.",
+   "inlines": [
+    {
+     "text": "A necessary caveat. This is a proposed rule. CMS has narrowed, delayed, and withdrawn provisions between proposal and final rule before, and it may do so here. Nothing above should be read as a prediction that the −9% estimate will survive to January in its current form. It should be read as the reason to file a comment before September 14 and to model the downside either way."
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "p",
+   "text": "Sources. CMS, Calendar Year 2027 Medicare Physician Fee Schedule Proposed Rule (CMS-1848-P), published July 14, 2026, addenda updated July 21, 2026; Federal Register, July 16, 2026; AAO-HNS Summary of the CY 2027 MPFS Proposed Rule; CY 2026 MPFS Final Rule (CMS-1832-F). Patient-access benchmarks are drawn from published industry analyses of practice call data and represent estimates, not guarantees of result. Figures verified against the proposed rule and secondary summaries as of August 31, 2026. No correction notice, comment-period extension, or revision to the specialty impact table had been issued as of that date.",
+   "inlines": [
+    {
+     "text": "Sources. CMS, Calendar Year 2027 Medicare Physician Fee Schedule Proposed Rule (CMS-1848-P), published July 14, 2026, addenda updated July 21, 2026; Federal Register, July 16, 2026; AAO-HNS Summary of the CY 2027 MPFS Proposed Rule; CY 2026 MPFS Final Rule (CMS-1832-F). Patient-access benchmarks are drawn from published industry analyses of practice call data and represent estimates, not guarantees of result. Figures verified against the proposed rule and secondary summaries as of August 31, 2026. No correction notice, comment-period extension, or revision to the specialty impact table had been issued as of that date."
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "p",
+   "text": "Disclosure. Transform9 builds AI voice agents for physician and specialty practices, including otolaryngology. We are not a coding, billing, legal, or financial advisor, and nothing here is advice in any of those categories. Verify all figures against the rule text and your own payer mix before acting on them.",
+   "inlines": [
+    {
+     "text": "Disclosure. Transform9 builds AI voice agents for physician and specialty practices, including otolaryngology. We are not a coding, billing, legal, or financial advisor, and nothing here is advice in any of those categories. Verify all figures against the rule text and your own payer mix before acting on them."
+    }
+   ]
+  }
+ ]
+}

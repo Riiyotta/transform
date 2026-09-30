@@ -1,0 +1,420 @@
+### _index.html 761
+html.w-mod-js:not(.w-mod-ix3) :is(.grid-row._5.b-w .pixel, .grid-row._4.b-w .pixel, .grid-row._3.b-w .pixel, .grid-row._2.b-w .pixel, .grid-row._1.b-w .pixel, .scheduling-card._1, .grid-row._5._w-b .pixel, .grid-row._4._w-b .pixel, .grid-row._3._w-b .pixel, .grid-row._2._w-b .pixel, .grid-row._1._w-b .pixel, .modal-wrap, .grid-row._5.b-i .pixel, .grid-row._4.b-i .pixel, .grid-row._3.b-i .pixel, .grid-row._2.b-i .pixel, .grid-row._1.b-i .pixel, .hiw-text-block.left, .h1-text.white-text.hiw-text._2, .h1-text.white-text.hiw-text._1, .h1-text.white-text.hiw-text._3, .scheduling-card._2, .preloader-wrap, .bg-pixels, .bg-pixels-wrapper, .white-text.hero-home, .nav-menu, .bg-pixels-overlay, .featured-post, .all-blogs-section) {visibility: hidden !important;}
+
+### _index.html 864
+
+  /* Stop PolySans rendering heavy on macOS */
+  body {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* Background pixels: still image by default. The footer script adds
+     .has-video once the video actually plays, which covers iOS Low
+     Power Mode and any browser that blocks autoplay. */
+  .bg-pic-pixels            { display: block !important; }
+  .bg-video-pixels          { display: none  !important; }
+  .has-video .bg-video-pixels { display: block !important; }
+  .has-video .bg-pic-pixels   { display: none  !important; }
+
+  /* Click-to-play video: the iframe is created by JS, so it cannot
+     be styled in the Designer. */
+  .yt-facade iframe {
+    position: absolute; inset: 0;
+    width: 100%; height: 100%; border: 0;
+  }
+
+  .nav-text-wrap  { overflow: hidden; }
+  .preloader-wrap { display: block; }
+
+
+### _index_page2.html 761
+html.w-mod-js:not(.w-mod-ix3) :is(.grid-row._5.b-w .pixel, .grid-row._4.b-w .pixel, .grid-row._3.b-w .pixel, .grid-row._2.b-w .pixel, .grid-row._1.b-w .pixel, .scheduling-card._1, .grid-row._5._w-b .pixel, .grid-row._4._w-b .pixel, .grid-row._3._w-b .pixel, .grid-row._2._w-b .pixel, .grid-row._1._w-b .pixel, .modal-wrap, .grid-row._5.b-i .pixel, .grid-row._4.b-i .pixel, .grid-row._3.b-i .pixel, .grid-row._2.b-i .pixel, .grid-row._1.b-i .pixel, .hiw-text-block.left, .h1-text.white-text.hiw-text._2, .h1-text.white-text.hiw-text._1, .h1-text.white-text.hiw-text._3, .scheduling-card._2, .preloader-wrap, .bg-pixels, .bg-pixels-wrapper, .white-text.hero-home, .nav-menu, .bg-pixels-overlay, .featured-post, .all-blogs-section) {visibility: hidden !important;}
+
+### _index_page2.html 864
+
+  /* Stop PolySans rendering heavy on macOS */
+  body {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* Background pixels: still image by default. The footer script adds
+     .has-video once the video actually plays, which covers iOS Low
+     Power Mode and any browser that blocks autoplay. */
+  .bg-pic-pixels            { display: block !important; }
+  .bg-video-pixels          { display: none  !important; }
+  .has-video .bg-video-pixels { display: block !important; }
+  .has-video .bg-pic-pixels   { display: none  !important; }
+
+  /* Click-to-play video: the iframe is created by JS, so it cannot
+     be styled in the Designer. */
+  .yt-facade iframe {
+    position: absolute; inset: 0;
+    width: 100%; height: 100%; border: 0;
+  }
+
+  .nav-text-wrap  { overflow: hidden; }
+  .preloader-wrap { display: block; }
+
+
+### ai-voice-agents-for-athenahealth-7-questions-to-ask-before-choosing-a-platform.html 1063
+@media (min-width:992px) {html.w-mod-js:not(.w-mod-ix) [data-w-id="096ea224-6c21-a7c6-3efc-0bb1ae260dda"] {opacity:0.5;}html.w-mod-js:not(.w-mod-ix) [data-w-id="af48f960-4b22-22b8-8d34-06e6fc98ac79"] {-webkit-transform:translate3d(0%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);}html.w-mod-js:not(.w-mod-ix) [data-w-id="36de1699-875b-4040-0179-ff7e705e8113"] {-webkit-transform:translate3d(0%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);}}
+
+### ai-voice-agents-for-athenahealth-7-questions-to-ask-before-choosing-a-platform.html 740
+html.w-mod-js:not(.w-mod-ix3) :is(.grid-row._5.b-w .pixel, .grid-row._4.b-w .pixel, .grid-row._3.b-w .pixel, .grid-row._2.b-w .pixel, .grid-row._1.b-w .pixel, .scheduling-card._1, .grid-row._5._w-b .pixel, .grid-row._4._w-b .pixel, .grid-row._3._w-b .pixel, .grid-row._2._w-b .pixel, .grid-row._1._w-b .pixel, .modal-wrap, .grid-row._5.b-i .pixel, .grid-row._4.b-i .pixel, .grid-row._3.b-i .pixel, .grid-row._2.b-i .pixel, .grid-row._1.b-i .pixel, .hiw-text-block.left, .h1-text.white-text.hiw-text._2, .h1-text.white-text.hiw-text._1, .h1-text.white-text.hiw-text._3, .scheduling-card._2, .preloader-wrap, .bg-pixels, .bg-pixels-wrapper, .nav-menu, .bg-pixels-overlay, .blog-top-header, .post-body-section) {visibility: hidden !important;}
+
+### ai-voice-agents-for-athenahealth-7-questions-to-ask-before-choosing-a-platform.html 864
+
+  /* Stop PolySans rendering heavy on macOS */
+  body {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* Background pixels: still image by default. The footer script adds
+     .has-video once the video actually plays, which covers iOS Low
+     Power Mode and any browser that blocks autoplay. */
+  .bg-pic-pixels            { display: block !important; }
+  .bg-video-pixels          { display: none  !important; }
+  .has-video .bg-video-pixels { display: block !important; }
+  .has-video .bg-pic-pixels   { display: none  !important; }
+
+  /* Click-to-play video: the iframe is created by JS, so it cannot
+     be styled in the Designer. */
+  .yt-facade iframe {
+    position: absolute; inset: 0;
+    width: 100%; height: 100%; border: 0;
+  }
+
+  .nav-text-wrap  { overflow: hidden; }
+  .preloader-wrap { display: block; }
+
+
+### ent-reimbursement-in-2027-what-medicare-s-proposed-cuts-mean-for-otolaryngology-practices.html 1063
+@media (min-width:992px) {html.w-mod-js:not(.w-mod-ix) [data-w-id="096ea224-6c21-a7c6-3efc-0bb1ae260dda"] {opacity:0.5;}html.w-mod-js:not(.w-mod-ix) [data-w-id="af48f960-4b22-22b8-8d34-06e6fc98ac79"] {-webkit-transform:translate3d(0%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);}html.w-mod-js:not(.w-mod-ix) [data-w-id="36de1699-875b-4040-0179-ff7e705e8113"] {-webkit-transform:translate3d(0%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);}}
+
+### ent-reimbursement-in-2027-what-medicare-s-proposed-cuts-mean-for-otolaryngology-practices.html 740
+html.w-mod-js:not(.w-mod-ix3) :is(.grid-row._5.b-w .pixel, .grid-row._4.b-w .pixel, .grid-row._3.b-w .pixel, .grid-row._2.b-w .pixel, .grid-row._1.b-w .pixel, .scheduling-card._1, .grid-row._5._w-b .pixel, .grid-row._4._w-b .pixel, .grid-row._3._w-b .pixel, .grid-row._2._w-b .pixel, .grid-row._1._w-b .pixel, .modal-wrap, .grid-row._5.b-i .pixel, .grid-row._4.b-i .pixel, .grid-row._3.b-i .pixel, .grid-row._2.b-i .pixel, .grid-row._1.b-i .pixel, .hiw-text-block.left, .h1-text.white-text.hiw-text._2, .h1-text.white-text.hiw-text._1, .h1-text.white-text.hiw-text._3, .scheduling-card._2, .preloader-wrap, .bg-pixels, .bg-pixels-wrapper, .nav-menu, .bg-pixels-overlay, .blog-top-header, .post-body-section) {visibility: hidden !important;}
+
+### ent-reimbursement-in-2027-what-medicare-s-proposed-cuts-mean-for-otolaryngology-practices.html 864
+
+  /* Stop PolySans rendering heavy on macOS */
+  body {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* Background pixels: still image by default. The footer script adds
+     .has-video once the video actually plays, which covers iOS Low
+     Power Mode and any browser that blocks autoplay. */
+  .bg-pic-pixels            { display: block !important; }
+  .bg-video-pixels          { display: none  !important; }
+  .has-video .bg-video-pixels { display: block !important; }
+  .has-video .bg-pic-pixels   { display: none  !important; }
+
+  /* Click-to-play video: the iframe is created by JS, so it cannot
+     be styled in the Designer. */
+  .yt-facade iframe {
+    position: absolute; inset: 0;
+    width: 100%; height: 100%; border: 0;
+  }
+
+  .nav-text-wrap  { overflow: hidden; }
+  .preloader-wrap { display: block; }
+
+
+### medical-practice-call-volume-january.html 1063
+@media (min-width:992px) {html.w-mod-js:not(.w-mod-ix) [data-w-id="096ea224-6c21-a7c6-3efc-0bb1ae260dda"] {opacity:0.5;}html.w-mod-js:not(.w-mod-ix) [data-w-id="af48f960-4b22-22b8-8d34-06e6fc98ac79"] {-webkit-transform:translate3d(0%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);}html.w-mod-js:not(.w-mod-ix) [data-w-id="36de1699-875b-4040-0179-ff7e705e8113"] {-webkit-transform:translate3d(0%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);}}
+
+### medical-practice-call-volume-january.html 740
+html.w-mod-js:not(.w-mod-ix3) :is(.grid-row._5.b-w .pixel, .grid-row._4.b-w .pixel, .grid-row._3.b-w .pixel, .grid-row._2.b-w .pixel, .grid-row._1.b-w .pixel, .scheduling-card._1, .grid-row._5._w-b .pixel, .grid-row._4._w-b .pixel, .grid-row._3._w-b .pixel, .grid-row._2._w-b .pixel, .grid-row._1._w-b .pixel, .modal-wrap, .grid-row._5.b-i .pixel, .grid-row._4.b-i .pixel, .grid-row._3.b-i .pixel, .grid-row._2.b-i .pixel, .grid-row._1.b-i .pixel, .hiw-text-block.left, .h1-text.white-text.hiw-text._2, .h1-text.white-text.hiw-text._1, .h1-text.white-text.hiw-text._3, .scheduling-card._2, .preloader-wrap, .bg-pixels, .bg-pixels-wrapper, .nav-menu, .bg-pixels-overlay, .blog-top-header, .post-body-section) {visibility: hidden !important;}
+
+### medical-practice-call-volume-january.html 864
+
+  /* Stop PolySans rendering heavy on macOS */
+  body {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* Background pixels: still image by default. The footer script adds
+     .has-video once the video actually plays, which covers iOS Low
+     Power Mode and any browser that blocks autoplay. */
+  .bg-pic-pixels            { display: block !important; }
+  .bg-video-pixels          { display: none  !important; }
+  .has-video .bg-video-pixels { display: block !important; }
+  .has-video .bg-pic-pixels   { display: none  !important; }
+
+  /* Click-to-play video: the iframe is created by JS, so it cannot
+     be styled in the Designer. */
+  .yt-facade iframe {
+    position: absolute; inset: 0;
+    width: 100%; height: 100%; border: 0;
+  }
+
+  .nav-text-wrap  { overflow: hidden; }
+  .preloader-wrap { display: block; }
+
+
+### orthopedic-ai-answering-service.html 1063
+@media (min-width:992px) {html.w-mod-js:not(.w-mod-ix) [data-w-id="096ea224-6c21-a7c6-3efc-0bb1ae260dda"] {opacity:0.5;}html.w-mod-js:not(.w-mod-ix) [data-w-id="af48f960-4b22-22b8-8d34-06e6fc98ac79"] {-webkit-transform:translate3d(0%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);}html.w-mod-js:not(.w-mod-ix) [data-w-id="36de1699-875b-4040-0179-ff7e705e8113"] {-webkit-transform:translate3d(0%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);}}
+
+### orthopedic-ai-answering-service.html 740
+html.w-mod-js:not(.w-mod-ix3) :is(.grid-row._5.b-w .pixel, .grid-row._4.b-w .pixel, .grid-row._3.b-w .pixel, .grid-row._2.b-w .pixel, .grid-row._1.b-w .pixel, .scheduling-card._1, .grid-row._5._w-b .pixel, .grid-row._4._w-b .pixel, .grid-row._3._w-b .pixel, .grid-row._2._w-b .pixel, .grid-row._1._w-b .pixel, .modal-wrap, .grid-row._5.b-i .pixel, .grid-row._4.b-i .pixel, .grid-row._3.b-i .pixel, .grid-row._2.b-i .pixel, .grid-row._1.b-i .pixel, .hiw-text-block.left, .h1-text.white-text.hiw-text._2, .h1-text.white-text.hiw-text._1, .h1-text.white-text.hiw-text._3, .scheduling-card._2, .preloader-wrap, .bg-pixels, .bg-pixels-wrapper, .nav-menu, .bg-pixels-overlay, .blog-top-header, .post-body-section) {visibility: hidden !important;}
+
+### orthopedic-ai-answering-service.html 864
+
+  /* Stop PolySans rendering heavy on macOS */
+  body {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* Background pixels: still image by default. The footer script adds
+     .has-video once the video actually plays, which covers iOS Low
+     Power Mode and any browser that blocks autoplay. */
+  .bg-pic-pixels            { display: block !important; }
+  .bg-video-pixels          { display: none  !important; }
+  .has-video .bg-video-pixels { display: block !important; }
+  .has-video .bg-pic-pixels   { display: none  !important; }
+
+  /* Click-to-play video: the iframe is created by JS, so it cannot
+     be styled in the Designer. */
+  .yt-facade iframe {
+    position: absolute; inset: 0;
+    width: 100%; height: 100%; border: 0;
+  }
+
+  .nav-text-wrap  { overflow: hidden; }
+  .preloader-wrap { display: block; }
+
+
+### redefining-healthcare-ai.html 1063
+@media (min-width:992px) {html.w-mod-js:not(.w-mod-ix) [data-w-id="096ea224-6c21-a7c6-3efc-0bb1ae260dda"] {opacity:0.5;}html.w-mod-js:not(.w-mod-ix) [data-w-id="af48f960-4b22-22b8-8d34-06e6fc98ac79"] {-webkit-transform:translate3d(0%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);}html.w-mod-js:not(.w-mod-ix) [data-w-id="36de1699-875b-4040-0179-ff7e705e8113"] {-webkit-transform:translate3d(0%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);}}
+
+### redefining-healthcare-ai.html 740
+html.w-mod-js:not(.w-mod-ix3) :is(.grid-row._5.b-w .pixel, .grid-row._4.b-w .pixel, .grid-row._3.b-w .pixel, .grid-row._2.b-w .pixel, .grid-row._1.b-w .pixel, .scheduling-card._1, .grid-row._5._w-b .pixel, .grid-row._4._w-b .pixel, .grid-row._3._w-b .pixel, .grid-row._2._w-b .pixel, .grid-row._1._w-b .pixel, .modal-wrap, .grid-row._5.b-i .pixel, .grid-row._4.b-i .pixel, .grid-row._3.b-i .pixel, .grid-row._2.b-i .pixel, .grid-row._1.b-i .pixel, .hiw-text-block.left, .h1-text.white-text.hiw-text._2, .h1-text.white-text.hiw-text._1, .h1-text.white-text.hiw-text._3, .scheduling-card._2, .preloader-wrap, .bg-pixels, .bg-pixels-wrapper, .nav-menu, .bg-pixels-overlay, .blog-top-header, .post-body-section) {visibility: hidden !important;}
+
+### redefining-healthcare-ai.html 864
+
+  /* Stop PolySans rendering heavy on macOS */
+  body {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* Background pixels: still image by default. The footer script adds
+     .has-video once the video actually plays, which covers iOS Low
+     Power Mode and any browser that blocks autoplay. */
+  .bg-pic-pixels            { display: block !important; }
+  .bg-video-pixels          { display: none  !important; }
+  .has-video .bg-video-pixels { display: block !important; }
+  .has-video .bg-pic-pixels   { display: none  !important; }
+
+  /* Click-to-play video: the iframe is created by JS, so it cannot
+     be styled in the Designer. */
+  .yt-facade iframe {
+    position: absolute; inset: 0;
+    width: 100%; height: 100%; border: 0;
+  }
+
+  .nav-text-wrap  { overflow: hidden; }
+  .preloader-wrap { display: block; }
+
+
+### the-12-month-shift-why-voice-ai-agents-are-now-a-financial-imperative-for-specialty-practices.html 1063
+@media (min-width:992px) {html.w-mod-js:not(.w-mod-ix) [data-w-id="096ea224-6c21-a7c6-3efc-0bb1ae260dda"] {opacity:0.5;}html.w-mod-js:not(.w-mod-ix) [data-w-id="af48f960-4b22-22b8-8d34-06e6fc98ac79"] {-webkit-transform:translate3d(0%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);}html.w-mod-js:not(.w-mod-ix) [data-w-id="36de1699-875b-4040-0179-ff7e705e8113"] {-webkit-transform:translate3d(0%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);}}
+
+### the-12-month-shift-why-voice-ai-agents-are-now-a-financial-imperative-for-specialty-practices.html 740
+html.w-mod-js:not(.w-mod-ix3) :is(.grid-row._5.b-w .pixel, .grid-row._4.b-w .pixel, .grid-row._3.b-w .pixel, .grid-row._2.b-w .pixel, .grid-row._1.b-w .pixel, .scheduling-card._1, .grid-row._5._w-b .pixel, .grid-row._4._w-b .pixel, .grid-row._3._w-b .pixel, .grid-row._2._w-b .pixel, .grid-row._1._w-b .pixel, .modal-wrap, .grid-row._5.b-i .pixel, .grid-row._4.b-i .pixel, .grid-row._3.b-i .pixel, .grid-row._2.b-i .pixel, .grid-row._1.b-i .pixel, .hiw-text-block.left, .h1-text.white-text.hiw-text._2, .h1-text.white-text.hiw-text._1, .h1-text.white-text.hiw-text._3, .scheduling-card._2, .preloader-wrap, .bg-pixels, .bg-pixels-wrapper, .nav-menu, .bg-pixels-overlay, .blog-top-header, .post-body-section) {visibility: hidden !important;}
+
+### the-12-month-shift-why-voice-ai-agents-are-now-a-financial-imperative-for-specialty-practices.html 864
+
+  /* Stop PolySans rendering heavy on macOS */
+  body {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* Background pixels: still image by default. The footer script adds
+     .has-video once the video actually plays, which covers iOS Low
+     Power Mode and any browser that blocks autoplay. */
+  .bg-pic-pixels            { display: block !important; }
+  .bg-video-pixels          { display: none  !important; }
+  .has-video .bg-video-pixels { display: block !important; }
+  .has-video .bg-pic-pixels   { display: none  !important; }
+
+  /* Click-to-play video: the iframe is created by JS, so it cannot
+     be styled in the Designer. */
+  .yt-facade iframe {
+    position: absolute; inset: 0;
+    width: 100%; height: 100%; border: 0;
+  }
+
+  .nav-text-wrap  { overflow: hidden; }
+  .preloader-wrap { display: block; }
+
+
+### why-generic-ai-virtual-assistants-fail-specialty-medical-practices-and-what-actually-works.html 1063
+@media (min-width:992px) {html.w-mod-js:not(.w-mod-ix) [data-w-id="096ea224-6c21-a7c6-3efc-0bb1ae260dda"] {opacity:0.5;}html.w-mod-js:not(.w-mod-ix) [data-w-id="af48f960-4b22-22b8-8d34-06e6fc98ac79"] {-webkit-transform:translate3d(0%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);}html.w-mod-js:not(.w-mod-ix) [data-w-id="36de1699-875b-4040-0179-ff7e705e8113"] {-webkit-transform:translate3d(0%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);}}
+
+### why-generic-ai-virtual-assistants-fail-specialty-medical-practices-and-what-actually-works.html 740
+html.w-mod-js:not(.w-mod-ix3) :is(.grid-row._5.b-w .pixel, .grid-row._4.b-w .pixel, .grid-row._3.b-w .pixel, .grid-row._2.b-w .pixel, .grid-row._1.b-w .pixel, .scheduling-card._1, .grid-row._5._w-b .pixel, .grid-row._4._w-b .pixel, .grid-row._3._w-b .pixel, .grid-row._2._w-b .pixel, .grid-row._1._w-b .pixel, .modal-wrap, .grid-row._5.b-i .pixel, .grid-row._4.b-i .pixel, .grid-row._3.b-i .pixel, .grid-row._2.b-i .pixel, .grid-row._1.b-i .pixel, .hiw-text-block.left, .h1-text.white-text.hiw-text._2, .h1-text.white-text.hiw-text._1, .h1-text.white-text.hiw-text._3, .scheduling-card._2, .preloader-wrap, .bg-pixels, .bg-pixels-wrapper, .nav-menu, .bg-pixels-overlay, .blog-top-header, .post-body-section) {visibility: hidden !important;}
+
+### why-generic-ai-virtual-assistants-fail-specialty-medical-practices-and-what-actually-works.html 864
+
+  /* Stop PolySans rendering heavy on macOS */
+  body {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* Background pixels: still image by default. The footer script adds
+     .has-video once the video actually plays, which covers iOS Low
+     Power Mode and any browser that blocks autoplay. */
+  .bg-pic-pixels            { display: block !important; }
+  .bg-video-pixels          { display: none  !important; }
+  .has-video .bg-video-pixels { display: block !important; }
+  .has-video .bg-pic-pixels   { display: none  !important; }
+
+  /* Click-to-play video: the iframe is created by JS, so it cannot
+     be styled in the Designer. */
+  .yt-facade iframe {
+    position: absolute; inset: 0;
+    width: 100%; height: 100%; border: 0;
+  }
+
+  .nav-text-wrap  { overflow: hidden; }
+  .preloader-wrap { display: block; }
+
+
+### why-traditional-ivr-is-failing-your-practice-and-how-ai-voice-agents-fix-the-press-0-trap.html 1063
+@media (min-width:992px) {html.w-mod-js:not(.w-mod-ix) [data-w-id="096ea224-6c21-a7c6-3efc-0bb1ae260dda"] {opacity:0.5;}html.w-mod-js:not(.w-mod-ix) [data-w-id="af48f960-4b22-22b8-8d34-06e6fc98ac79"] {-webkit-transform:translate3d(0%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);}html.w-mod-js:not(.w-mod-ix) [data-w-id="36de1699-875b-4040-0179-ff7e705e8113"] {-webkit-transform:translate3d(0%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);}}
+
+### why-traditional-ivr-is-failing-your-practice-and-how-ai-voice-agents-fix-the-press-0-trap.html 740
+html.w-mod-js:not(.w-mod-ix3) :is(.grid-row._5.b-w .pixel, .grid-row._4.b-w .pixel, .grid-row._3.b-w .pixel, .grid-row._2.b-w .pixel, .grid-row._1.b-w .pixel, .scheduling-card._1, .grid-row._5._w-b .pixel, .grid-row._4._w-b .pixel, .grid-row._3._w-b .pixel, .grid-row._2._w-b .pixel, .grid-row._1._w-b .pixel, .modal-wrap, .grid-row._5.b-i .pixel, .grid-row._4.b-i .pixel, .grid-row._3.b-i .pixel, .grid-row._2.b-i .pixel, .grid-row._1.b-i .pixel, .hiw-text-block.left, .h1-text.white-text.hiw-text._2, .h1-text.white-text.hiw-text._1, .h1-text.white-text.hiw-text._3, .scheduling-card._2, .preloader-wrap, .bg-pixels, .bg-pixels-wrapper, .nav-menu, .bg-pixels-overlay, .blog-top-header, .post-body-section) {visibility: hidden !important;}
+
+### why-traditional-ivr-is-failing-your-practice-and-how-ai-voice-agents-fix-the-press-0-trap.html 864
+
+  /* Stop PolySans rendering heavy on macOS */
+  body {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* Background pixels: still image by default. The footer script adds
+     .has-video once the video actually plays, which covers iOS Low
+     Power Mode and any browser that blocks autoplay. */
+  .bg-pic-pixels            { display: block !important; }
+  .bg-video-pixels          { display: none  !important; }
+  .has-video .bg-video-pixels { display: block !important; }
+  .has-video .bg-pic-pixels   { display: none  !important; }
+
+  /* Click-to-play video: the iframe is created by JS, so it cannot
+     be styled in the Designer. */
+  .yt-facade iframe {
+    position: absolute; inset: 0;
+    width: 100%; height: 100%; border: 0;
+  }
+
+  .nav-text-wrap  { overflow: hidden; }
+  .preloader-wrap { display: block; }
+
+
+### _index.html 761
+html.w-mod-js:not(.w-mod-ix3) :is(.grid-row._5.b-w .pixel, .grid-row._4.b-w .pixel, .grid-row._3.b-w .pixel, .grid-row._2.b-w .pixel, .grid-row._1.b-w .pixel, .scheduling-card._1, .grid-row._5._w-b .pixel, .grid-row._4._w-b .pixel, .grid-row._3._w-b .pixel, .grid-row._2._w-b .pixel, .grid-row._1._w-b .pixel, .modal-wrap, .grid-row._5.b-i .pixel, .grid-row._4.b-i .pixel, .grid-row._3.b-i .pixel, .grid-row._2.b-i .pixel, .grid-row._1.b-i .pixel, .hiw-text-block.left, .h1-text.white-text.hiw-text._2, .h1-text.white-text.hiw-text._1, .h1-text.white-text.hiw-text._3, .scheduling-card._2, .preloader-wrap, .bg-pixels, .bg-pixels-wrapper, .white-text.hero-home, .nav-menu, .bg-pixels-overlay, .featured-post, .all-blogs-section) {visibility: hidden !important;}
+
+### _index.html 864
+
+  /* Stop PolySans rendering heavy on macOS */
+  body {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* Background pixels: still image by default. The footer script adds
+     .has-video once the video actually plays, which covers iOS Low
+     Power Mode and any browser that blocks autoplay. */
+  .bg-pic-pixels            { display: block !important; }
+  .bg-video-pixels          { display: none  !important; }
+  .has-video .bg-video-pixels { display: block !important; }
+  .has-video .bg-pic-pixels   { display: none  !important; }
+
+  /* Click-to-play video: the iframe is created by JS, so it cannot
+     be styled in the Designer. */
+  .yt-facade iframe {
+    position: absolute; inset: 0;
+    width: 100%; height: 100%; border: 0;
+  }
+
+  .nav-text-wrap  { overflow: hidden; }
+  .preloader-wrap { display: block; }
+
+
+### southern-bone-joint.html 1063
+@media (min-width:992px) {html.w-mod-js:not(.w-mod-ix) [data-w-id="96ebe567-e5c1-aa2f-907f-38d5e741f9a3"] {opacity:0.5;}html.w-mod-js:not(.w-mod-ix) [data-w-id="96ebe567-e5c1-aa2f-907f-38d5e741f9a5"] {-webkit-transform:translate3d(0%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);}html.w-mod-js:not(.w-mod-ix) [data-w-id="96ebe567-e5c1-aa2f-907f-38d5e741f9a6"] {-webkit-transform:translate3d(0%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);}}
+
+### southern-bone-joint.html 740
+html.w-mod-js:not(.w-mod-ix3) :is(.grid-row._5.b-w .pixel, .grid-row._4.b-w .pixel, .grid-row._3.b-w .pixel, .grid-row._2.b-w .pixel, .grid-row._1.b-w .pixel, .scheduling-card._1, .grid-row._5._w-b .pixel, .grid-row._4._w-b .pixel, .grid-row._3._w-b .pixel, .grid-row._2._w-b .pixel, .grid-row._1._w-b .pixel, .modal-wrap, .grid-row._5.b-i .pixel, .grid-row._4.b-i .pixel, .grid-row._3.b-i .pixel, .grid-row._2.b-i .pixel, .grid-row._1.b-i .pixel, .hiw-text-block.left, .h1-text.white-text.hiw-text._2, .h1-text.white-text.hiw-text._1, .h1-text.white-text.hiw-text._3, .scheduling-card._2, .preloader-wrap, .bg-pixels, .bg-pixels-wrapper, .nav-menu, .bg-pixels-overlay, .blog-top-header, .post-body-section) {visibility: hidden !important;}
+
+### southern-bone-joint.html 864
+
+  /* Stop PolySans rendering heavy on macOS */
+  body {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* Background pixels: still image by default. The footer script adds
+     .has-video once the video actually plays, which covers iOS Low
+     Power Mode and any browser that blocks autoplay. */
+  .bg-pic-pixels            { display: block !important; }
+  .bg-video-pixels          { display: none  !important; }
+  .has-video .bg-video-pixels { display: block !important; }
+  .has-video .bg-pic-pixels   { display: none  !important; }
+
+  /* Click-to-play video: the iframe is created by JS, so it cannot
+     be styled in the Designer. */
+  .yt-facade iframe {
+    position: absolute; inset: 0;
+    width: 100%; height: 100%; border: 0;
+  }
+
+  .nav-text-wrap  { overflow: hidden; }
+  .preloader-wrap { display: block; }
+
+
+### the-orthopaedic-center.html 1063
+@media (min-width:992px) {html.w-mod-js:not(.w-mod-ix) [data-w-id="96ebe567-e5c1-aa2f-907f-38d5e741f9a3"] {opacity:0.5;}html.w-mod-js:not(.w-mod-ix) [data-w-id="96ebe567-e5c1-aa2f-907f-38d5e741f9a5"] {-webkit-transform:translate3d(0%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);}html.w-mod-js:not(.w-mod-ix) [data-w-id="96ebe567-e5c1-aa2f-907f-38d5e741f9a6"] {-webkit-transform:translate3d(0%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);}}
+
+### the-orthopaedic-center.html 740
+html.w-mod-js:not(.w-mod-ix3) :is(.grid-row._5.b-w .pixel, .grid-row._4.b-w .pixel, .grid-row._3.b-w .pixel, .grid-row._2.b-w .pixel, .grid-row._1.b-w .pixel, .scheduling-card._1, .grid-row._5._w-b .pixel, .grid-row._4._w-b .pixel, .grid-row._3._w-b .pixel, .grid-row._2._w-b .pixel, .grid-row._1._w-b .pixel, .modal-wrap, .grid-row._5.b-i .pixel, .grid-row._4.b-i .pixel, .grid-row._3.b-i .pixel, .grid-row._2.b-i .pixel, .grid-row._1.b-i .pixel, .hiw-text-block.left, .h1-text.white-text.hiw-text._2, .h1-text.white-text.hiw-text._1, .h1-text.white-text.hiw-text._3, .scheduling-card._2, .preloader-wrap, .bg-pixels, .bg-pixels-wrapper, .nav-menu, .bg-pixels-overlay, .blog-top-header, .post-body-section) {visibility: hidden !important;}
+
+### the-orthopaedic-center.html 864
+
+  /* Stop PolySans rendering heavy on macOS */
+  body {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* Background pixels: still image by default. The footer script adds
+     .has-video once the video actually plays, which covers iOS Low
+     Power Mode and any browser that blocks autoplay. */
+  .bg-pic-pixels            { display: block !important; }
+  .bg-video-pixels          { display: none  !important; }
+  .has-video .bg-video-pixels { display: block !important; }
+  .has-video .bg-pic-pixels   { display: none  !important; }
+
+  /* Click-to-play video: the iframe is created by JS, so it cannot
+     be styled in the Designer. */
+  .yt-facade iframe {
+    position: absolute; inset: 0;
+    width: 100%; height: 100%; border: 0;
+  }
+
+  .nav-text-wrap  { overflow: hidden; }
+  .preloader-wrap { display: block; }
+
+

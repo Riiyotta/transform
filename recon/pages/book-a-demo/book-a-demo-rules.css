@@ -1,0 +1,28 @@
+/* New classes (not on homepage): book-demo-form-noise book-demo-left book-demo-right demo hide-on-scroll test-home text-block-5 */
+
+/* ===== base ===== */
+.hero.hide-on-scroll.demo {border-bottom: 1px solid var(--white-0-2); flex-flow: row; height: auto; min-height: 100dvh; padding-top: 0;}
+.hero.blog.hide-on-scroll.cs {padding-bottom: 7vw;}
+.white-text.hero-home.demo {color: var(--_apps---sidebar--sidebar-primary-dark); margin-top: -4px; margin-bottom: 32px; margin-right: 12px;}
+.book-demo-left {flex-flow: column; justify-content: space-between; width: 100%; padding-top: 110px; display: flex;}
+.book-demo-right {width: 100%; max-width: 100%; padding: 120px var(--_paddings--margins---padding) var(--_paddings--margins---padding); border-left: 1px solid var(--white-0-2); background-color: var(--black); position: relative;}
+.text-block-5 {color: var(--_apps---sidebar--sidebar); text-align: left; margin: 0 43px 139px 76px; padding: 0 41px 96px 0; font-weight: 400; position: static; top: -70px;}
+
+/* ===== @media screen and (max-width: 991px) ===== */
+.hero.hide-on-scroll.demo {border-bottom-style: none; border-bottom-width: 0; flex-flow: column; padding-bottom: 0; overflow: visible;}
+.hero.blog.hide-on-scroll {grid-column-gap: 30px; grid-row-gap: 30px; padding-bottom: 0;}
+.hero.blog.hide-on-scroll.cs {padding-bottom: 30px;}
+._30px-text.submit-form.call-me, ._30px-text.submit-form.demo {font-size: 30px;}
+.book-demo-left {flex: 1;}
+.book-demo-right {border-top: 1px solid var(--white-0-2); border-bottom: 1px solid var(--white-0-2); border-left-style: none; border-left-width: 0; margin-bottom: 0; padding-top: 80px; padding-bottom: 3vh;}
+
+/* ===== @media screen and (max-width: 767px) ===== */
+.book-demo-right {padding-bottom: 36px;}
+
+/* ===== @media screen and (max-width: 479px) ===== */
+.hero.hide-on-scroll.demo {min-height: 0; padding-bottom: 0;}
+.white-text.hero-home.demo {margin-top: -27px; margin-bottom: 80px;}
+.footer-logo, .bg-noise.book-demo-form-noise {display: none;}
+.book-demo-left {padding-bottom: 29px;}
+.book-demo-right {padding-top: 7px; padding-bottom: 38px;}
+.text-block-5 {margin-top: -60px; margin-bottom: -52px; margin-left: 34px; padding-top: 0; padding-bottom: 35px;}

@@ -1,0 +1,1965 @@
+{
+ "load-blog-index": {
+  "dcl": 1585,
+  "load": 3610,
+  "changes": [
+   {
+    "t": 1079,
+    ".preloader-wrap": "1 HID",
+    ".nav-menu": "1 HID",
+    ".bg-pixels-wrapper": "1 HID",
+    ".featured-post": "1 HID",
+    ".all-blogs-section": "1 HID",
+    "h1.hero-home": "1 HID"
+   },
+   {
+    "t": 2793,
+    ".preloader-wrap": "1",
+    ".nav-menu": "1",
+    ".bg-pixels-wrapper": "1",
+    ".featured-post": "1",
+    ".all-blogs-section": "1",
+    "h1.hero-home": "1"
+   },
+   {
+    "t": 3615,
+    ".preloader-wrap": "1",
+    ".nav-menu": "0",
+    ".bg-pixels-wrapper": "0",
+    ".featured-post": "0",
+    ".all-blogs-section": "0",
+    ".gsap_split_word1": "0 matrix(1, 0, 0, 1, 0, 47.2656)",
+    ".gsap_split_word4": "0 matrix(1, 0, 0, 1, 0, 47.2656)",
+    ".gsap_split_word8": "0 matrix(1, 0, 0, 1, 0, 47.2656)",
+    "h1.hero-home": "1"
+   },
+   {
+    "t": 3626,
+    ".preloader-wrap": "0.6724 matrix(1, 0, 0, 1, 0, 0)",
+    ".nav-menu": "0",
+    ".bg-pixels-wrapper": "0",
+    ".featured-post": "0",
+    ".all-blogs-section": "0",
+    ".gsap_split_word1": "0 matrix(1, 0, 0, 1, 0, 47.2656)",
+    ".gsap_split_word4": "0 matrix(1, 0, 0, 1, 0, 47.2656)",
+    ".gsap_split_word8": "0 matrix(1, 0, 0, 1, 0, 47.2656)",
+    "h1.hero-home": "1"
+   },
+   {
+    "t": 3642,
+    ".preloader-wrap": "0.5041 matrix(1, 0, 0, 1, 0, 0)",
+    ".nav-menu": "0",
+    ".bg-pixels-wrapper": "0.2123 matrix(1, 0, 0, 1, 0, 0)",
+    ".featured-post": "0",
+    ".all-blogs-section": "0",
+    ".gsap_split_word1": "0 matrix(1, 0, 0, 1, 0, 47.2656)",
+    ".gsap_split_word4": "0 matrix(1, 0, 0, 1, 0, 47.2656)",
+    ".gsap_split_word8": "0 matrix(1, 0, 0, 1, 0, 47.2656)",
+    "h1.hero-home": "1"
+   },
+   {
+    "t": 3660,
+    ".preloader-wrap": "0.3025 matrix(1, 0, 0, 1, 0, 0)",
+    ".nav-menu": "0",
+    ".bg-pixels-wrapper": "0.5273 matrix(1, 0, 0, 1, 0, 0)",
+    ".featured-post": "0",
+    ".all-blogs-section": "0",
+    ".gsap_split_word1": "0 matrix(1, 0, 0, 1, 0, 47.2656)",
+    ".gsap_split_word4": "0 matrix(1, 0, 0, 1, 0, 47.2656)",
+    ".gsap_split_word8": "0 matrix(1, 0, 0, 1, 0, 47.2656)",
+    "h1.hero-home": "1"
+   },
+   {
+    "t": 3676,
+    ".preloader-wrap": "0.1444 matrix(1, 0, 0, 1, 0, 0)",
+    ".nav-menu": "0",
+    ".bg-pixels-wrapper": "0.7744 matrix(1, 0, 0, 1, 0, 0)",
+    ".featured-post": "0",
+    ".all-blogs-section": "0",
+    ".gsap_split_word1": "0 matrix(1, 0, 0, 1, 0, 47.2656)",
+    ".gsap_split_word4": "0 matrix(1, 0, 0, 1, 0, 47.2656)",
+    ".gsap_split_word8": "0 matrix(1, 0, 0, 1, 0, 47.2656)",
+    "h1.hero-home": "1"
+   },
+   {
+    "t": 3693,
+    ".preloader-wrap": "0.0441 matrix(1, 0, 0, 1, 0, 0)",
+    ".nav-menu": "0",
+    ".bg-pixels-wrapper": "0.9311 matrix(1, 0, 0, 1, 0, 0)",
+    ".featured-post": "0",
+    ".all-blogs-section": "0",
+    ".gsap_split_word1": "0 matrix(1, 0, 0, 1, 0, 47.2656)",
+    ".gsap_split_word4": "0 matrix(1, 0, 0, 1, 0, 47.2656)",
+    ".gsap_split_word8": "0 matrix(1, 0, 0, 1, 0, 47.2656)",
+    "h1.hero-home": "1"
+   },
+   {
+    "t": 3710,
+    ".preloader-wrap": "0.0016 matrix(1, 0, 0, 1, 0, 0)",
+    ".nav-menu": "0",
+    ".bg-pixels-wrapper": "0.9975 matrix(1, 0, 0, 1, 0, 0)",
+    ".featured-post": "0",
+    ".all-blogs-section": "0",
+    ".gsap_split_word1": "0 matrix(1, 0, 0, 1, 0, 47.2656)",
+    ".gsap_split_word4": "0 matrix(1, 0, 0, 1, 0, 47.2656)",
+    ".gsap_split_word8": "0 matrix(1, 0, 0, 1, 0, 47.2656)",
+    "h1.hero-home": "1"
+   },
+   {
+    "t": 3726,
+    ".preloader-wrap": "0 matrix(1, 0, 0, 1, 0, 0)",
+    ".nav-menu": "0.0669 matrix(1, 0, 0, 1, 0, 0)",
+    ".bg-pixels-wrapper": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".featured-post": "0.0669 matrix(1, 0, 0, 1, 0, 0)",
+    ".all-blogs-section": "0.0669 matrix(1, 0, 0, 1, 0, 0)",
+    ".gsap_split_word1": "0.0797 matrix(1, 0, 0, 1, 0, 43.4988)",
+    ".gsap_split_word4": "0 matrix(1, 0, 0, 1, 0, 47.2656)",
+    ".gsap_split_word8": "0 matrix(1, 0, 0, 1, 0, 47.2656)",
+    "h1.hero-home": "1"
+   },
+   {
+    "t": 3743,
+    ".preloader-wrap": "0 matrix(1, 0, 0, 1, 0, 0)",
+    ".nav-menu": "0.1538 matrix(1, 0, 0, 1, 0, 0)",
+    ".bg-pixels-wrapper": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".featured-post": "0.1538 matrix(1, 0, 0, 1, 0, 0)",
+    ".all-blogs-section": "0.1538 matrix(1, 0, 0, 1, 0, 0)",
+    ".gsap_split_word1": "0.1815 matrix(1, 0, 0, 1, 0, 38.6863)",
+    ".gsap_split_word4": "0 matrix(1, 0, 0, 1, 0, 47.2656)",
+    ".gsap_split_word8": "0 matrix(1, 0, 0, 1, 0, 47.2656)",
+    "h1.hero-home": "1"
+   },
+   {
+    "t": 3759,
+    ".preloader-wrap": "0 matrix(1, 0, 0, 1, 0, 0)",
+    ".nav-menu": "0.228 matrix(1, 0, 0, 1, 0, 0)",
+    ".bg-pixels-wrapper": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".featured-post": "0.228 matrix(1, 0, 0, 1, 0, 0)",
+    ".all-blogs-section": "0.228 matrix(1, 0, 0, 1, 0, 0)",
+    ".gsap_split_word1": "0.2668 matrix(1, 0, 0, 1, 0, 34.657)",
+    ".gsap_split_word4": "0 matrix(1, 0, 0, 1, 0, 47.2656)",
+    ".gsap_split_word8": "0 matrix(1, 0, 0, 1, 0, 47.2656)",
+    "h1.hero-home": "1"
+   },
+   {
+    "t": 3776,
+    ".preloader-wrap": "0 matrix(1, 0, 0, 1, 0, 0)",
+    ".nav-menu": "0.2995 matrix(1, 0, 0, 1, 0, 0)",
+    ".bg-pixels-wrapper": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".featured-post": "0.2995 matrix(1, 0, 0, 1, 0, 0)",
+    ".all-blogs-section": "0.2995 matrix(1, 0, 0, 1, 0, 0)",
+    ".gsap_split_word1": "0.3474 matrix(1, 0, 0, 1, 0, 30.8436)",
+    ".gsap_split_word4": "0 matrix(1, 0, 0, 1, 0, 47.2656)",
+    ".gsap_split_word8": "0 matrix(1, 0, 0, 1, 0, 47.2656)",
+    "h1.hero-home": "1"
+   },
+   {
+    "t": 3793,
+    ".preloader-wrap": "0 matrix(1, 0, 0, 1, 0, 0)",
+    ".nav-menu": "0.3644 matrix(1, 0, 0, 1, 0, 0)",
+    ".bg-pixels-wrapper": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".featured-post": "0.3644 matrix(1, 0, 0, 1, 0, 0)",
+    ".all-blogs-section": "0.3644 matrix(1, 0, 0, 1, 0, 0)",
+    ".gsap_split_word1": "0.4191 matrix(1, 0, 0, 1, 0, 27.4552)",
+    ".gsap_split_word4": "0 matrix(1, 0, 0, 1, 0, 47.2656)",
+    ".gsap_split_word8": "0 matrix(1, 0, 0, 1, 0, 47.2656)",
+    "h1.hero-home": "1"
+   },
+   {
+    "t": 3809,
+    ".preloader-wrap": "0 matrix(1, 0, 0, 1, 0, 0)",
+    ".nav-menu": "0.4231 matrix(1, 0, 0, 1, 0, 0)",
+    ".bg-pixels-wrapper": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".featured-post": "0.4231 matrix(1, 0, 0, 1, 0, 0)",
+    ".all-blogs-section": "0.4231 matrix(1, 0, 0, 1, 0, 0)",
+    ".gsap_split_word1": "0.4829 matrix(1, 0, 0, 1, 0, 24.4412)",
+    ".gsap_split_word4": "0 matrix(1, 0, 0, 1, 0, 47.2656)",
+    ".gsap_split_word8": "0 matrix(1, 0, 0, 1, 0, 47.2656)",
+    "h1.hero-home": "1"
+   },
+   {
+    "t": 3826,
+    ".preloader-wrap": "0 matrix(1, 0, 0, 1, 0, 0)",
+    ".nav-menu": "0.4734 matrix(1, 0, 0, 1, 0, 0)",
+    ".bg-pixels-wrapper": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".featured-post": "0.4734 matrix(1, 0, 0, 1, 0, 0)",
+    ".all-blogs-section": "0.4734 matrix(1, 0, 0, 1, 0, 0)",
+    ".gsap_split_word1": "0.5365 matrix(1, 0, 0, 1, 0, 21.9066)",
+    ".gsap_split_word4": "0 matrix(1, 0, 0, 1, 0, 47.2656)",
+    ".gsap_split_word8": "0 matrix(1, 0, 0, 1, 0, 47.2656)",
+    "h1.hero-home": "1"
+   },
+   {
+    "t": 3843,
+    ".preloader-wrap": "0 matrix(1, 0, 0, 1, 0, 0)",
+    ".nav-menu": "0.522 matrix(1, 0, 0, 1, 0, 0)",
+    ".bg-pixels-wrapper": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".featured-post": "0.522 matrix(1, 0, 0, 1, 0, 0)",
+    ".all-blogs-section": "0.522 matrix(1, 0, 0, 1, 0, 0)",
+    ".gsap_split_word1": "0.5875 matrix(1, 0, 0, 1, 0, 19.4981)",
+    ".gsap_split_word4": "0 matrix(1, 0, 0, 1, 0, 47.2656)",
+    ".gsap_split_word8": "0 matrix(1, 0, 0, 1, 0, 47.2656)",
+    "h1.hero-home": "1"
+   },
+   {
+    "t": 3860,
+    ".preloader-wrap": "0 matrix(1, 0, 0, 1, 0, 0)",
+    ".nav-menu": "0.5637 matrix(1, 0, 0, 1, 0, 0)",
+    ".bg-pixels-wrapper": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".featured-post": "0.5637 matrix(1, 0, 0, 1, 0, 0)",
+    ".all-blogs-section": "0.5637 matrix(1, 0, 0, 1, 0, 0)",
+    ".gsap_split_word1": "0.6304 matrix(1, 0, 0, 1, 0, 17.4691)",
+    ".gsap_split_word4": "0 matrix(1, 0, 0, 1, 0, 47.2656)",
+    ".gsap_split_word8": "0 matrix(1, 0, 0, 1, 0, 47.2656)",
+    "h1.hero-home": "1"
+   },
+   {
+    "t": 3876,
+    ".preloader-wrap": "0 matrix(1, 0, 0, 1, 0, 0)",
+    ".nav-menu": "0.6064 matrix(1, 0, 0, 1, 0, 0)",
+    ".bg-pixels-wrapper": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".featured-post": "0.6064 matrix(1, 0, 0, 1, 0, 0)",
+    ".all-blogs-section": "0.6064 matrix(1, 0, 0, 1, 0, 0)",
+    ".gsap_split_word1": "0.6735 matrix(1, 0, 0, 1, 0, 15.4308)",
+    ".gsap_split_word4": "0 matrix(1, 0, 0, 1, 0, 47.2656)",
+    ".gsap_split_word8": "0 matrix(1, 0, 0, 1, 0, 47.2656)",
+    "h1.hero-home": "1"
+   },
+   {
+    "t": 3893,
+    ".preloader-wrap": "0 matrix(1, 0, 0, 1, 0, 0)",
+    ".nav-menu": "0.6409 matrix(1, 0, 0, 1, 0, 0)",
+    ".bg-pixels-wrapper": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".featured-post": "0.6409 matrix(1, 0, 0, 1, 0, 0)",
+    ".all-blogs-section": "0.6409 matrix(1, 0, 0, 1, 0, 0)",
+    ".gsap_split_word1": "0.7078 matrix(1, 0, 0, 1, 0, 13.8122)",
+    ".gsap_split_word4": "0 matrix(1, 0, 0, 1, 0, 47.2656)",
+    ".gsap_split_word8": "0 matrix(1, 0, 0, 1, 0, 47.2656)",
+    "h1.hero-home": "1"
+   },
+   {
+    "t": 3909,
+    ".preloader-wrap": "0 matrix(1, 0, 0, 1, 0, 0)",
+    ".nav-menu": "0.6743 matrix(1, 0, 0, 1, 0, 0)",
+    ".bg-pixels-wrapper": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".featured-post": "0.6743 matrix(1, 0, 0, 1, 0, 0)",
+    ".all-blogs-section": "0.6743 matrix(1, 0, 0, 1, 0, 0)",
+    ".gsap_split_word1": "0.7404 matrix(1, 0, 0, 1, 0, 12.2698)",
+    ".gsap_split_word4": "0 matrix(1, 0, 0, 1, 0, 47.2656)",
+    ".gsap_split_word8": "0 matrix(1, 0, 0, 1, 0, 47.2656)",
+    "h1.hero-home": "1"
+   },
+   {
+    "t": 3926,
+    ".preloader-wrap": "0 matrix(1, 0, 0, 1, 0, 0)",
+    ".nav-menu": "0.703 matrix(1, 0, 0, 1, 0, 0)",
+    ".bg-pixels-wrapper": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".featured-post": "0.703 matrix(1, 0, 0, 1, 0, 0)",
+    ".all-blogs-section": "0.703 matrix(1, 0, 0, 1, 0, 0)",
+    ".gsap_split_word1": "0.768 matrix(1, 0, 0, 1, 0, 10.9672)",
+    ".gsap_split_word4": "0 matrix(1, 0, 0, 1, 0, 47.2656)",
+    ".gsap_split_word8": "0 matrix(1, 0, 0, 1, 0, 47.2656)",
+    "h1.hero-home": "1"
+   },
+   {
+    "t": 3942,
+    ".preloader-wrap": "0 matrix(1, 0, 0, 1, 0, 0)",
+    ".nav-menu": "0.7309 matrix(1, 0, 0, 1, 0, 0)",
+    ".bg-pixels-wrapper": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".featured-post": "0.7309 matrix(1, 0, 0, 1, 0, 0)",
+    ".all-blogs-section": "0.7309 matrix(1, 0, 0, 1, 0, 0)",
+    ".gsap_split_word1": "0.7942 matrix(1, 0, 0, 1, 0, 9.725)",
+    ".gsap_split_word4": "0 matrix(1, 0, 0, 1, 0, 47.2656)",
+    ".gsap_split_word8": "0 matrix(1, 0, 0, 1, 0, 47.2656)",
+    "h1.hero-home": "1"
+   },
+   {
+    "t": 3960,
+    ".preloader-wrap": "0 matrix(1, 0, 0, 1, 0, 0)",
+    ".nav-menu": "0.7548 matrix(1, 0, 0, 1, 0, 0)",
+    ".bg-pixels-wrapper": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".featured-post": "0.7548 matrix(1, 0, 0, 1, 0, 0)",
+    ".all-blogs-section": "0.7548 matrix(1, 0, 0, 1, 0, 0)",
+    ".gsap_split_word1": "0.8164 matrix(1, 0, 0, 1, 0, 8.6757)",
+    ".gsap_split_word4": "0 matrix(1, 0, 0, 1, 0, 47.2656)",
+    ".gsap_split_word8": "0 matrix(1, 0, 0, 1, 0, 47.2656)",
+    "h1.hero-home": "1"
+   },
+   {
+    "t": 3976,
+    ".preloader-wrap": "0 matrix(1, 0, 0, 1, 0, 0)",
+    ".nav-menu": "0.7781 matrix(1, 0, 0, 1, 0, 0)",
+    ".bg-pixels-wrapper": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".featured-post": "0.7781 matrix(1, 0, 0, 1, 0, 0)",
+    ".all-blogs-section": "0.7781 matrix(1, 0, 0, 1, 0, 0)",
+    ".gsap_split_word1": "0.8376 matrix(1, 0, 0, 1, 0, 7.6749)",
+    ".gsap_split_word4": "0 matrix(1, 0, 0, 1, 0, 47.2656)",
+    ".gsap_split_word8": "0 matrix(1, 0, 0, 1, 0, 47.2656)",
+    "h1.hero-home": "1"
+   },
+   {
+    "t": 3993,
+    ".preloader-wrap": "0 matrix(1, 0, 0, 1, 0, 0)",
+    ".nav-menu": "0.7981 matrix(1, 0, 0, 1, 0, 0)",
+    ".bg-pixels-wrapper": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".featured-post": "0.7981 matrix(1, 0, 0, 1, 0, 0)",
+    ".all-blogs-section": "0.7981 matrix(1, 0, 0, 1, 0, 0)",
+    ".gsap_split_word1": "0.8555 matrix(1, 0, 0, 1, 0, 6.82969)",
+    ".gsap_split_word4": "0 matrix(1, 0, 0, 1, 0, 47.2656)",
+    ".gsap_split_word8": "0 matrix(1, 0, 0, 1, 0, 47.2656)",
+    "h1.hero-home": "1"
+   },
+   {
+    "t": 4009,
+    ".preloader-wrap": "0 matrix(1, 0, 0, 1, 0, 0)",
+    ".nav-menu": "0.8186 matrix(1, 0, 0, 1, 0, 0)",
+    ".bg-pixels-wrapper": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".featured-post": "0.8186 matrix(1, 0, 0, 1, 0, 0)",
+    ".all-blogs-section": "0.8186 matrix(1, 0, 0, 1, 0, 0)",
+    ".gsap_split_word1": "0.8735 matrix(1, 0, 0, 1, 0, 5.97957)",
+    ".gsap_split_word4": "0 matrix(1, 0, 0, 1, 0, 47.2656)",
+    ".gsap_split_word8": "0 matrix(1, 0, 0, 1, 0, 47.2656)",
+    "h1.hero-home": "1"
+   },
+   {
+    "t": 4026,
+    ".preloader-wrap": "0 matrix(1, 0, 0, 1, 0, 0)",
+    ".nav-menu": "0.8353 matrix(1, 0, 0, 1, 0, 0)",
+    ".bg-pixels-wrapper": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".featured-post": "0.8353 matrix(1, 0, 0, 1, 0, 0)",
+    ".all-blogs-section": "0.8353 matrix(1, 0, 0, 1, 0, 0)",
+    ".gsap_split_word1": "0.8878 matrix(1, 0, 0, 1, 0, 5.30443)",
+    ".gsap_split_word4": "0.0797 matrix(1, 0, 0, 1, 0, 43.4988)",
+    ".gsap_split_word8": "0 matrix(1, 0, 0, 1, 0, 47.2656)",
+    "h1.hero-home": "1"
+   },
+   {
+    "t": 4042,
+    ".preloader-wrap": "0 matrix(1, 0, 0, 1, 0, 0)",
+    ".nav-menu": "0.8514 matrix(1, 0, 0, 1, 0, 0)",
+    ".bg-pixels-wrapper": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".featured-post": "0.8514 matrix(1, 0, 0, 1, 0, 0)",
+    ".all-blogs-section": "0.8514 matrix(1, 0, 0, 1, 0, 0)",
+    ".gsap_split_word1": "0.9014 matrix(1, 0, 0, 1, 0, 4.66181)",
+    ".gsap_split_word4": "0.1815 matrix(1, 0, 0, 1, 0, 38.6863)",
+    ".gsap_split_word8": "0 matrix(1, 0, 0, 1, 0, 47.2656)",
+    "h1.hero-home": "1"
+   },
+   {
+    "t": 4059,
+    ".preloader-wrap": "0 matrix(1, 0, 0, 1, 0, 0)",
+    ".nav-menu": "0.8653 matrix(1, 0, 0, 1, 0, 0)",
+    ".bg-pixels-wrapper": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".featured-post": "0.8653 matrix(1, 0, 0, 1, 0, 0)",
+    ".all-blogs-section": "0.8653 matrix(1, 0, 0, 1, 0, 0)",
+    ".gsap_split_word1": "0.9128 matrix(1, 0, 0, 1, 0, 4.12062)",
+    ".gsap_split_word4": "0.2668 matrix(1, 0, 0, 1, 0, 34.657)",
+    ".gsap_split_word8": "0 matrix(1, 0, 0, 1, 0, 47.2656)",
+    "h1.hero-home": "1"
+   },
+   {
+    "t": 4076,
+    ".preloader-wrap": "0 matrix(1, 0, 0, 1, 0, 0)",
+    ".nav-menu": "0.8787 matrix(1, 0, 0, 1, 0, 0)",
+    ".bg-pixels-wrapper": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".featured-post": "0.8787 matrix(1, 0, 0, 1, 0, 0)",
+    ".all-blogs-section": "0.8787 matrix(1, 0, 0, 1, 0, 0)",
+    ".gsap_split_word1": "0.9237 matrix(1, 0, 0, 1, 0, 3.60656)",
+    ".gsap_split_word4": "0.3474 matrix(1, 0, 0, 1, 0, 30.8436)",
+    ".gsap_split_word8": "0 matrix(1, 0, 0, 1, 0, 47.2656)",
+    "h1.hero-home": "1"
+   },
+   {
+    "t": 4092,
+    ".preloader-wrap": "0 matrix(1, 0, 0, 1, 0, 0)",
+    ".nav-menu": "0.891 matrix(1, 0, 0, 1, 0, 0)",
+    ".bg-pixels-wrapper": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".featured-post": "0.891 matrix(1, 0, 0, 1, 0, 0)",
+    ".all-blogs-section": "0.891 matrix(1, 0, 0, 1, 0, 0)",
+    ".gsap_split_word1": "0.9334 matrix(1, 0, 0, 1, 0, 3.14931)",
+    ".gsap_split_word4": "0.4191 matrix(1, 0, 0, 1, 0, 27.4552)",
+    ".gsap_split_word8": "0 matrix(1, 0, 0, 1, 0, 47.2656)",
+    "h1.hero-home": "1"
+   },
+   {
+    "t": 4109,
+    ".preloader-wrap": "0 matrix(1, 0, 0, 1, 0, 0)",
+    ".nav-menu": "0.9015 matrix(1, 0, 0, 1, 0, 0)",
+    ".bg-pixels-wrapper": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".featured-post": "0.9015 matrix(1, 0, 0, 1, 0, 0)",
+    ".all-blogs-section": "0.9015 matrix(1, 0, 0, 1, 0, 0)",
+    ".gsap_split_word1": "0.9415 matrix(1, 0, 0, 1, 0, 2.7658)",
+    ".gsap_split_word4": "0.4793 matrix(1, 0, 0, 1, 0, 24.6088)",
+    ".gsap_split_word8": "0 matrix(1, 0, 0, 1, 0, 47.2656)",
+    "h1.hero-home": "1"
+   },
+   {
+    "t": 4126,
+    ".preloader-wrap": "0 matrix(1, 0, 0, 1, 0, 0)",
+    ".nav-menu": "0.9117 matrix(1, 0, 0, 1, 0, 0)",
+    ".bg-pixels-wrapper": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".featured-post": "0.9117 matrix(1, 0, 0, 1, 0, 0)",
+    ".all-blogs-section": "0.9117 matrix(1, 0, 0, 1, 0, 0)",
+    ".gsap_split_word1": "0.9492 matrix(1, 0, 0, 1, 0, 2.40317)",
+    ".gsap_split_word4": "0.5365 matrix(1, 0, 0, 1, 0, 21.9066)",
+    ".gsap_split_word8": "0 matrix(1, 0, 0, 1, 0, 47.2656)",
+    "h1.hero-home": "1"
+   },
+   {
+    "t": 4143,
+    ".preloader-wrap": "0 matrix(1, 0, 0, 1, 0, 0)",
+    ".nav-menu": "0.9209 matrix(1, 0, 0, 1, 0, 0)",
+    ".bg-pixels-wrapper": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".featured-post": "0.9209 matrix(1, 0, 0, 1, 0, 0)",
+    ".all-blogs-section": "0.9209 matrix(1, 0, 0, 1, 0, 0)",
+    ".gsap_split_word1": "0.9559 matrix(1, 0, 0, 1, 0, 2.08243)",
+    ".gsap_split_word4": "0.5875 matrix(1, 0, 0, 1, 0, 19.4981)",
+    ".gsap_split_word8": "0 matrix(1, 0, 0, 1, 0, 47.2656)",
+    "h1.hero-home": "1"
+   },
+   {
+    "t": 4159,
+    ".preloader-wrap": "0 matrix(1, 0, 0, 1, 0, 0)",
+    ".nav-menu": "0.9289 matrix(1, 0, 0, 1, 0, 0)",
+    ".bg-pixels-wrapper": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".featured-post": "0.9289 matrix(1, 0, 0, 1, 0, 0)",
+    ".all-blogs-section": "0.9289 matrix(1, 0, 0, 1, 0, 0)",
+    ".gsap_split_word1": "0.9616 matrix(1, 0, 0, 1, 0, 1.81491)",
+    ".gsap_split_word4": "0.6304 matrix(1, 0, 0, 1, 0, 17.4691)",
+    ".gsap_split_word8": "0 matrix(1, 0, 0, 1, 0, 47.2656)",
+    "h1.hero-home": "1"
+   },
+   {
+    "t": 4176,
+    ".preloader-wrap": "0 matrix(1, 0, 0, 1, 0, 0)",
+    ".nav-menu": "0.9365 matrix(1, 0, 0, 1, 0, 0)",
+    ".bg-pixels-wrapper": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".featured-post": "0.9365 matrix(1, 0, 0, 1, 0, 0)",
+    ".all-blogs-section": "0.9365 matrix(1, 0, 0, 1, 0, 0)",
+    ".gsap_split_word1": "0.9669 matrix(1, 0, 0, 1, 0, 1.56364)",
+    ".gsap_split_word4": "0.6713 matrix(1, 0, 0, 1, 0, 15.5378)",
+    ".gsap_split_word8": "0 matrix(1, 0, 0, 1, 0, 47.2656)",
+    "h1.hero-home": "1"
+   },
+   {
+    "t": 4193,
+    ".preloader-wrap": "0 matrix(1, 0, 0, 1, 0, 0)",
+    ".nav-menu": "0.9431 matrix(1, 0, 0, 1, 0, 0)",
+    ".bg-pixels-wrapper": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".featured-post": "0.9431 matrix(1, 0, 0, 1, 0, 0)",
+    ".all-blogs-section": "0.9431 matrix(1, 0, 0, 1, 0, 0)",
+    ".gsap_split_word1": "0.9713 matrix(1, 0, 0, 1, 0, 1.35511)",
+    ".gsap_split_word4": "0.7057 matrix(1, 0, 0, 1, 0, 13.9085)",
+    ".gsap_split_word8": "0 matrix(1, 0, 0, 1, 0, 47.2656)",
+    "h1.hero-home": "1"
+   },
+   {
+    "t": 4209,
+    ".preloader-wrap": "0 matrix(1, 0, 0, 1, 0, 0)",
+    ".nav-menu": "0.9497 matrix(1, 0, 0, 1, 0, 0)",
+    ".bg-pixels-wrapper": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".featured-post": "0.9497 matrix(1, 0, 0, 1, 0, 0)",
+    ".all-blogs-section": "0.9497 matrix(1, 0, 0, 1, 0, 0)",
+    ".gsap_split_word1": "0.9757 matrix(1, 0, 0, 1, 0, 1.14959)",
+    ".gsap_split_word4": "0.7404 matrix(1, 0, 0, 1, 0, 12.2698)",
+    ".gsap_split_word8": "0 matrix(1, 0, 0, 1, 0, 47.2656)",
+    "h1.hero-home": "1"
+   },
+   {
+    "t": 4226,
+    ".preloader-wrap": "0 matrix(1, 0, 0, 1, 0, 0)",
+    ".nav-menu": "0.9551 matrix(1, 0, 0, 1, 0, 0)",
+    ".bg-pixels-wrapper": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".featured-post": "0.9551 matrix(1, 0, 0, 1, 0, 0)",
+    ".all-blogs-section": "0.9551 matrix(1, 0, 0, 1, 0, 0)",
+    ".gsap_split_word1": "0.9791 matrix(1, 0, 0, 1, 0, 0.99012)",
+    ".gsap_split_word4": "0.768 matrix(1, 0, 0, 1, 0, 10.9672)",
+    ".gsap_split_word8": "0 matrix(1, 0, 0, 1, 0, 47.2656)",
+    "h1.hero-home": "1"
+   },
+   {
+    "t": 4243,
+    ".preloader-wrap": "0 matrix(1, 0, 0, 1, 0, 0)",
+    ".nav-menu": "0.9602 matrix(1, 0, 0, 1, 0, 0)",
+    ".bg-pixels-wrapper": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".featured-post": "0.9602 matrix(1, 0, 0, 1, 0, 0)",
+    ".all-blogs-section": "0.9602 matrix(1, 0, 0, 1, 0, 0)",
+    ".gsap_split_word1": "0.9822 matrix(1, 0, 0, 1, 0, 0.84199)",
+    ".gsap_split_word4": "0.7942 matrix(1, 0, 0, 1, 0, 9.725)",
+    ".gsap_split_word8": "0 matrix(1, 0, 0, 1, 0, 47.2656)",
+    "h1.hero-home": "1"
+   },
+   {
+    "t": 4260,
+    ".preloader-wrap": "0 matrix(1, 0, 0, 1, 0, 0)",
+    ".nav-menu": "0.9646 matrix(1, 0, 0, 1, 0, 0)",
+    ".bg-pixels-wrapper": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".featured-post": "0.9646 matrix(1, 0, 0, 1, 0, 0)",
+    ".all-blogs-section": "0.9646 matrix(1, 0, 0, 1, 0, 0)",
+    ".gsap_split_word1": "0.9848 matrix(1, 0, 0, 1, 0, 0.720517)",
+    ".gsap_split_word4": "0.8164 matrix(1, 0, 0, 1, 0, 8.6757)",
+    ".gsap_split_word8": "0 matrix(1, 0, 0, 1, 0, 47.2656)",
+    "h1.hero-home": "1"
+   },
+   {
+    "t": 4276,
+    ".preloader-wrap": "0 matrix(1, 0, 0, 1, 0, 0)",
+    ".nav-menu": "0.9687 matrix(1, 0, 0, 1, 0, 0)",
+    ".bg-pixels-wrapper": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".featured-post": "0.9687 matrix(1, 0, 0, 1, 0, 0)",
+    ".all-blogs-section": "0.9687 matrix(1, 0, 0, 1, 0, 0)",
+    ".gsap_split_word1": "0.9871 matrix(1, 0, 0, 1, 0, 0.608498)",
+    ".gsap_split_word4": "0.8376 matrix(1, 0, 0, 1, 0, 7.6749)",
+    ".gsap_split_word8": "0 matrix(1, 0, 0, 1, 0, 47.2656)",
+    "h1.hero-home": "1"
+   },
+   {
+    "t": 4293,
+    ".preloader-wrap": "0 matrix(1, 0, 0, 1, 0, 0)",
+    ".nav-menu": "0.9725 matrix(1, 0, 0, 1, 0, 0)",
+    ".bg-pixels-wrapper": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".featured-post": "0.9725 matrix(1, 0, 0, 1, 0, 0)",
+    ".all-blogs-section": "0.9725 matrix(1, 0, 0, 1, 0, 0)",
+    ".gsap_split_word1": "0.9892 matrix(1, 0, 0, 1, 0, 0.511981)",
+    ".gsap_split_word4": "0.8566 matrix(1, 0, 0, 1, 0, 6.77978)",
+    ".gsap_split_word8": "0 matrix(1, 0, 0, 1, 0, 47.2656)",
+    "h1.hero-home": "1"
+   },
+   {
+    "t": 4309,
+    ".preloader-wrap": "0 matrix(1, 0, 0, 1, 0, 0)",
+    ".nav-menu": "0.9758 matrix(1, 0, 0, 1, 0, 0)",
+    ".bg-pixels-wrapper": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".featured-post": "0.9758 matrix(1, 0, 0, 1, 0, 0)",
+    ".all-blogs-section": "0.9758 matrix(1, 0, 0, 1, 0, 0)",
+    ".gsap_split_word1": "0.9909 matrix(1, 0, 0, 1, 0, 0.429266)",
+    ".gsap_split_word4": "0.8735 matrix(1, 0, 0, 1, 0, 5.97957)",
+    ".gsap_split_word8": "0 matrix(1, 0, 0, 1, 0, 47.2656)",
+    "h1.hero-home": "1"
+   },
+   {
+    "t": 4326,
+    ".preloader-wrap": "0 matrix(1, 0, 0, 1, 0, 0)",
+    ".nav-menu": "0.9787 matrix(1, 0, 0, 1, 0, 0)",
+    ".bg-pixels-wrapper": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".featured-post": "0.9787 matrix(1, 0, 0, 1, 0, 0)",
+    ".all-blogs-section": "0.9787 matrix(1, 0, 0, 1, 0, 0)",
+    ".gsap_split_word1": "0.9923 matrix(1, 0, 0, 1, 0, 0.362338)",
+    ".gsap_split_word4": "0.8878 matrix(1, 0, 0, 1, 0, 5.30443)",
+    ".gsap_split_word8": "0 matrix(1, 0, 0, 1, 0, 47.2656)",
+    "h1.hero-home": "1"
+   },
+   {
+    "t": 4343,
+    ".preloader-wrap": "0 matrix(1, 0, 0, 1, 0, 0)",
+    ".nav-menu": "0.9813 matrix(1, 0, 0, 1, 0, 0)",
+    ".bg-pixels-wrapper": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".featured-post": "0.9813 matrix(1, 0, 0, 1, 0, 0)",
+    ".all-blogs-section": "0.9813 matrix(1, 0, 0, 1, 0, 0)",
+    ".gsap_split_word1": "0.9936 matrix(1, 0, 0, 1, 0, 0.301649)",
+    ".gsap_split_word4": "0.9014 matrix(1, 0, 0, 1, 0, 4.66181)",
+    ".gsap_split_word8": "0 matrix(1, 0, 0, 1, 0, 47.2656)",
+    "h1.hero-home": "1"
+   },
+   {
+    "t": 4359,
+    ".preloader-wrap": "0 matrix(1, 0, 0, 1, 0, 0)",
+    ".nav-menu": "0.9836 matrix(1, 0, 0, 1, 0, 0)",
+    ".bg-pixels-wrapper": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".featured-post": "0.9836 matrix(1, 0, 0, 1, 0, 0)",
+    ".all-blogs-section": "0.9836 matrix(1, 0, 0, 1, 0, 0)",
+    ".gsap_split_word1": "0.9946 matrix(1, 0, 0, 1, 0, 0.252966)",
+    ".gsap_split_word4": "0.9128 matrix(1, 0, 0, 1, 0, 4.12062)",
+    ".gsap_split_word8": "0 matrix(1, 0, 0, 1, 0, 47.2656)",
+    "h1.hero-home": "1"
+   },
+   {
+    "t": 4376,
+    ".preloader-wrap": "0 matrix(1, 0, 0, 1, 0, 0)",
+    ".nav-menu": "0.9857 matrix(1, 0, 0, 1, 0, 0)",
+    ".bg-pixels-wrapper": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".featured-post": "0.9857 matrix(1, 0, 0, 1, 0, 0)",
+    ".all-blogs-section": "0.9857 matrix(1, 0, 0, 1, 0, 0)",
+    ".gsap_split_word1": "0.9956 matrix(1, 0, 0, 1, 0, 0.209103)",
+    ".gsap_split_word4": "0.9237 matrix(1, 0, 0, 1, 0, 3.60656)",
+    ".gsap_split_word8": "0 matrix(1, 0, 0, 1, 0, 47.2656)",
+    "h1.hero-home": "1"
+   },
+   {
+    "t": 4392,
+    ".preloader-wrap": "0 matrix(1, 0, 0, 1, 0, 0)",
+    ".nav-menu": "0.9875 matrix(1, 0, 0, 1, 0, 0)",
+    ".bg-pixels-wrapper": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".featured-post": "0.9875 matrix(1, 0, 0, 1, 0, 0)",
+    ".all-blogs-section": "0.9875 matrix(1, 0, 0, 1, 0, 0)",
+    ".gsap_split_word1": "0.9963 matrix(1, 0, 0, 1, 0, 0.174221)",
+    ".gsap_split_word4": "0.9328 matrix(1, 0, 0, 1, 0, 3.17474)",
+    ".gsap_split_word8": "0 matrix(1, 0, 0, 1, 0, 47.2656)",
+    "h1.hero-home": "1"
+   },
+   {
+    "t": 4410,
+    ".preloader-wrap": "0 matrix(1, 0, 0, 1, 0, 0)",
+    ".nav-menu": "0.9892 matrix(1, 0, 0, 1, 0, 0)",
+    ".bg-pixels-wrapper": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".featured-post": "0.9892 matrix(1, 0, 0, 1, 0, 0)",
+    ".all-blogs-section": "0.9892 matrix(1, 0, 0, 1, 0, 0)",
+    ".gsap_split_word1": "0.997 matrix(1, 0, 0, 1, 0, 0.143026)",
+    ".gsap_split_word4": "0.9415 matrix(1, 0, 0, 1, 0, 2.7658)",
+    ".gsap_split_word8": "0 matrix(1, 0, 0, 1, 0, 47.2656)",
+    "h1.hero-home": "1"
+   },
+   {
+    "t": 4426,
+    ".preloader-wrap": "0 matrix(1, 0, 0, 1, 0, 0)",
+    ".nav-menu": "0.9907 matrix(1, 0, 0, 1, 0, 0)",
+    ".bg-pixels-wrapper": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".featured-post": "0.9907 matrix(1, 0, 0, 1, 0, 0)",
+    ".all-blogs-section": "0.9907 matrix(1, 0, 0, 1, 0, 0)",
+    ".gsap_split_word1": "0.9975 matrix(1, 0, 0, 1, 0, 0.11703)",
+    ".gsap_split_word4": "0.9492 matrix(1, 0, 0, 1, 0, 2.40317)",
+    ".gsap_split_word8": "0.0797 matrix(1, 0, 0, 1, 0, 43.4988)",
+    "h1.hero-home": "1"
+   },
+   {
+    "t": 4443,
+    ".preloader-wrap": "0 matrix(1, 0, 0, 1, 0, 0)",
+    ".nav-menu": "0.992 matrix(1, 0, 0, 1, 0, 0)",
+    ".bg-pixels-wrapper": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".featured-post": "0.992 matrix(1, 0, 0, 1, 0, 0)",
+    ".all-blogs-section": "0.992 matrix(1, 0, 0, 1, 0, 0)",
+    ".gsap_split_word1": "0.998 matrix(1, 0, 0, 1, 0, 0.0954766)",
+    ".gsap_split_word4": "0.9559 matrix(1, 0, 0, 1, 0, 2.08243)",
+    ".gsap_split_word8": "0.1815 matrix(1, 0, 0, 1, 0, 38.6863)",
+    "h1.hero-home": "1"
+   },
+   {
+    "t": 4460,
+    ".preloader-wrap": "0 matrix(1, 0, 0, 1, 0, 0)",
+    ".nav-menu": "0.993 matrix(1, 0, 0, 1, 0, 0)",
+    ".bg-pixels-wrapper": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".featured-post": "0.993 matrix(1, 0, 0, 1, 0, 0)",
+    ".all-blogs-section": "0.993 matrix(1, 0, 0, 1, 0, 0)",
+    ".gsap_split_word1": "0.9983 matrix(1, 0, 0, 1, 0, 0.07865)",
+    ".gsap_split_word4": "0.9616 matrix(1, 0, 0, 1, 0, 1.81491)",
+    ".gsap_split_word8": "0.2668 matrix(1, 0, 0, 1, 0, 34.657)",
+    "h1.hero-home": "1"
+   },
+   {
+    "t": 4476,
+    ".preloader-wrap": "0 matrix(1, 0, 0, 1, 0, 0)",
+    ".nav-menu": "0.994 matrix(1, 0, 0, 1, 0, 0)",
+    ".bg-pixels-wrapper": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".featured-post": "0.994 matrix(1, 0, 0, 1, 0, 0)",
+    ".all-blogs-section": "0.994 matrix(1, 0, 0, 1, 0, 0)",
+    ".gsap_split_word1": "0.9987 matrix(1, 0, 0, 1, 0, 0.0637141)",
+    ".gsap_split_word4": "0.9669 matrix(1, 0, 0, 1, 0, 1.56364)",
+    ".gsap_split_word8": "0.3474 matrix(1, 0, 0, 1, 0, 30.8436)",
+    "h1.hero-home": "1"
+   },
+   {
+    "t": 4493,
+    ".preloader-wrap": "0 matrix(1, 0, 0, 1, 0, 0)",
+    ".nav-menu": "0.9949 matrix(1, 0, 0, 1, 0, 0)",
+    ".bg-pixels-wrapper": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".featured-post": "0.9949 matrix(1, 0, 0, 1, 0, 0)",
+    ".all-blogs-section": "0.9949 matrix(1, 0, 0, 1, 0, 0)",
+    ".gsap_split_word1": "0.9989 matrix(1, 0, 0, 1, 0, 0.0515195)",
+    ".gsap_split_word4": "0.9716 matrix(1, 0, 0, 1, 0, 1.34291)",
+    ".gsap_split_word8": "0.4191 matrix(1, 0, 0, 1, 0, 27.4552)",
+    "h1.hero-home": "1"
+   },
+   {
+    "t": 4509,
+    ".preloader-wrap": "0 matrix(1, 0, 0, 1, 0, 0)",
+    ".nav-menu": "0.9956 matrix(1, 0, 0, 1, 0, 0)",
+    ".bg-pixels-wrapper": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".featured-post": "0.9956 matrix(1, 0, 0, 1, 0, 0)",
+    ".all-blogs-section": "0.9956 matrix(1, 0, 0, 1, 0, 0)",
+    ".gsap_split_word1": "0.9991 matrix(1, 0, 0, 1, 0, 0.0414047)",
+    ".gsap_split_word4": "0.9757 matrix(1, 0, 0, 1, 0, 1.14959)",
+    ".gsap_split_word8": "0.4829 matrix(1, 0, 0, 1, 0, 24.4412)",
+    "h1.hero-home": "1"
+   },
+   {
+    "t": 4526,
+    ".preloader-wrap": "0 matrix(1, 0, 0, 1, 0, 0)",
+    ".nav-menu": "0.9963 matrix(1, 0, 0, 1, 0, 0)",
+    ".bg-pixels-wrapper": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".featured-post": "0.9963 matrix(1, 0, 0, 1, 0, 0)",
+    ".all-blogs-section": "0.9963 matrix(1, 0, 0, 1, 0, 0)",
+    ".gsap_split_word1": "0.9993 matrix(1, 0, 0, 1, 0, 0.0336531)",
+    ".gsap_split_word4": "0.9791 matrix(1, 0, 0, 1, 0, 0.99012)",
+    ".gsap_split_word8": "0.5365 matrix(1, 0, 0, 1, 0, 21.9066)",
+    "h1.hero-home": "1"
+   },
+   {
+    "t": 4543,
+    ".preloader-wrap": "0 matrix(1, 0, 0, 1, 0, 0)",
+    ".nav-menu": "0.9968 matrix(1, 0, 0, 1, 0, 0)",
+    ".bg-pixels-wrapper": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".featured-post": "0.9968 matrix(1, 0, 0, 1, 0, 0)",
+    ".all-blogs-section": "0.9968 matrix(1, 0, 0, 1, 0, 0)",
+    ".gsap_split_word1": "0.9994 matrix(1, 0, 0, 1, 0, 0.0268469)",
+    ".gsap_split_word4": "0.9822 matrix(1, 0, 0, 1, 0, 0.84199)",
+    ".gsap_split_word8": "0.5875 matrix(1, 0, 0, 1, 0, 19.4981)",
+    "h1.hero-home": "1"
+   },
+   {
+    "t": 4559,
+    ".preloader-wrap": "0 matrix(1, 0, 0, 1, 0, 0)",
+    ".nav-menu": "0.9973 matrix(1, 0, 0, 1, 0, 0)",
+    ".bg-pixels-wrapper": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".featured-post": "0.9973 matrix(1, 0, 0, 1, 0, 0)",
+    ".all-blogs-section": "0.9973 matrix(1, 0, 0, 1, 0, 0)",
+    ".gsap_split_word1": "0.9995 matrix(1, 0, 0, 1, 0, 0.0214586)",
+    ".gsap_split_word4": "0.9848 matrix(1, 0, 0, 1, 0, 0.720517)",
+    ".gsap_split_word8": "0.6304 matrix(1, 0, 0, 1, 0, 17.4691)",
+    "h1.hero-home": "1"
+   },
+   {
+    "t": 4576,
+    ".preloader-wrap": "0 matrix(1, 0, 0, 1, 0, 0)",
+    ".nav-menu": "0.9977 matrix(1, 0, 0, 1, 0, 0)",
+    ".bg-pixels-wrapper": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".featured-post": "0.9977 matrix(1, 0, 0, 1, 0, 0)",
+    ".all-blogs-section": "0.9977 matrix(1, 0, 0, 1, 0, 0)",
+    ".gsap_split_word1": "0.9996 matrix(1, 0, 0, 1, 0, 0.0168266)",
+    ".gsap_split_word4": "0.9871 matrix(1, 0, 0, 1, 0, 0.608498)",
+    ".gsap_split_word8": "0.6713 matrix(1, 0, 0, 1, 0, 15.5378)",
+    "h1.hero-home": "1"
+   },
+   {
+    "t": 4593,
+    ".preloader-wrap": "0 matrix(1, 0, 0, 1, 0, 0)",
+    ".nav-menu": "0.998 matrix(1, 0, 0, 1, 0, 0)",
+    ".bg-pixels-wrapper": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".featured-post": "0.998 matrix(1, 0, 0, 1, 0, 0)",
+    ".all-blogs-section": "0.998 matrix(1, 0, 0, 1, 0, 0)",
+    ".gsap_split_word1": "0.9997 matrix(1, 0, 0, 1, 0, 0.0132344)",
+    ".gsap_split_word4": "0.9891 matrix(1, 0, 0, 1, 0, 0.517275)",
+    ".gsap_split_word8": "0.7057 matrix(1, 0, 0, 1, 0, 13.9085)",
+    "h1.hero-home": "1"
+   },
+   {
+    "t": 4609,
+    ".preloader-wrap": "0 matrix(1, 0, 0, 1, 0, 0)",
+    ".nav-menu": "0.9984 matrix(1, 0, 0, 1, 0, 0)",
+    ".bg-pixels-wrapper": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".featured-post": "0.9984 matrix(1, 0, 0, 1, 0, 0)",
+    ".all-blogs-section": "0.9984 matrix(1, 0, 0, 1, 0, 0)",
+    ".gsap_split_word1": "0.9998 matrix(1, 0, 0, 1, 0, 0.00992578)",
+    ".gsap_split_word4": "0.9909 matrix(1, 0, 0, 1, 0, 0.429266)",
+    ".gsap_split_word8": "0.7404 matrix(1, 0, 0, 1, 0, 12.2698)",
+    "h1.hero-home": "1"
+   },
+   {
+    "t": 4626,
+    ".preloader-wrap": "0 matrix(1, 0, 0, 1, 0, 0)",
+    ".nav-menu": "0.9986 matrix(1, 0, 0, 1, 0, 0)",
+    ".bg-pixels-wrapper": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".featured-post": "0.9986 matrix(1, 0, 0, 1, 0, 0)",
+    ".all-blogs-section": "0.9986 matrix(1, 0, 0, 1, 0, 0)",
+    ".gsap_split_word1": "0.9998 matrix(1, 0, 0, 1, 0, 0.00746797)",
+    ".gsap_split_word4": "0.9923 matrix(1, 0, 0, 1, 0, 0.362338)",
+    ".gsap_split_word8": "0.768 matrix(1, 0, 0, 1, 0, 10.9672)",
+    "h1.hero-home": "1"
+   },
+   {
+    "t": 4642,
+    ".preloader-wrap": "0 matrix(1, 0, 0, 1, 0, 0)",
+    ".nav-menu": "0.9988 matrix(1, 0, 0, 1, 0, 0)",
+    ".bg-pixels-wrapper": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".featured-post": "0.9988 matrix(1, 0, 0, 1, 0, 0)",
+    ".all-blogs-section": "0.9988 matrix(1, 0, 0, 1, 0, 0)",
+    ".gsap_split_word1": "0.9999 matrix(1, 0, 0, 1, 0, 0.00538828)",
+    ".gsap_split_word4": "0.9936 matrix(1, 0, 0, 1, 0, 0.301649)",
+    ".gsap_split_word8": "0.7942 matrix(1, 0, 0, 1, 0, 9.725)",
+    "h1.hero-home": "1"
+   },
+   {
+    "t": 4660,
+    ".preloader-wrap": "0 matrix(1, 0, 0, 1, 0, 0)",
+    ".nav-menu": "0.999 matrix(1, 0, 0, 1, 0, 0)",
+    ".bg-pixels-wrapper": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".featured-post": "0.999 matrix(1, 0, 0, 1, 0, 0)",
+    ".all-blogs-section": "0.999 matrix(1, 0, 0, 1, 0, 0)",
+    ".gsap_split_word1": "0.9999 matrix(1, 0, 0, 1, 0, 0.00368672)",
+    ".gsap_split_word4": "0.9946 matrix(1, 0, 0, 1, 0, 0.252966)",
+    ".gsap_split_word8": "0.8164 matrix(1, 0, 0, 1, 0, 8.6757)",
+    "h1.hero-home": "1"
+   },
+   {
+    "t": 4676,
+    ".preloader-wrap": "0 matrix(1, 0, 0, 1, 0, 0)",
+    ".nav-menu": "0.9992 matrix(1, 0, 0, 1, 0, 0)",
+    ".bg-pixels-wrapper": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".featured-post": "0.9992 matrix(1, 0, 0, 1, 0, 0)",
+    ".all-blogs-section": "0.9992 matrix(1, 0, 0, 1, 0, 0)",
+    ".gsap_split_word1": "1 matrix(1, 0, 0, 1, 0, 0.00226875)",
+    ".gsap_split_word4": "0.9956 matrix(1, 0, 0, 1, 0, 0.209103)",
+    ".gsap_split_word8": "0.8376 matrix(1, 0, 0, 1, 0, 7.6749)",
+    "h1.hero-home": "1"
+   },
+   {
+    "t": 4693,
+    ".preloader-wrap": "0 matrix(1, 0, 0, 1, 0, 0)",
+    ".nav-menu": "0.9993 matrix(1, 0, 0, 1, 0, 0)",
+    ".bg-pixels-wrapper": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".featured-post": "0.9993 matrix(1, 0, 0, 1, 0, 0)",
+    ".all-blogs-section": "0.9993 matrix(1, 0, 0, 1, 0, 0)",
+    ".gsap_split_word1": "1 matrix(1, 0, 0, 1, 0, 0.00113437)",
+    ".gsap_split_word4": "0.9964 matrix(1, 0, 0, 1, 0, 0.172236)",
+    ".gsap_split_word8": "0.8566 matrix(1, 0, 0, 1, 0, 6.77978)",
+    "h1.hero-home": "1"
+   },
+   {
+    "t": 4709,
+    ".preloader-wrap": "0 matrix(1, 0, 0, 1, 0, 0)",
+    ".nav-menu": "0.9994 matrix(1, 0, 0, 1, 0, 0)",
+    ".bg-pixels-wrapper": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".featured-post": "0.9994 matrix(1, 0, 0, 1, 0, 0)",
+    ".all-blogs-section": "0.9994 matrix(1, 0, 0, 1, 0, 0)",
+    ".gsap_split_word1": "1 matrix(1, 0, 0, 1, 0, 0.000189062)",
+    ".gsap_split_word4": "0.997 matrix(1, 0, 0, 1, 0, 0.141419)",
+    ".gsap_split_word8": "0.8735 matrix(1, 0, 0, 1, 0, 5.97957)",
+    "h1.hero-home": "1"
+   },
+   {
+    "t": 4727,
+    ".preloader-wrap": "0 matrix(1, 0, 0, 1, 0, 0)",
+    ".nav-menu": "0.9995 matrix(1, 0, 0, 1, 0, 0)",
+    ".bg-pixels-wrapper": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".featured-post": "0.9995 matrix(1, 0, 0, 1, 0, 0)",
+    ".all-blogs-section": "0.9995 matrix(1, 0, 0, 1, 0, 0)",
+    ".gsap_split_word1": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".gsap_split_word4": "0.9975 matrix(1, 0, 0, 1, 0, 0.118448)",
+    ".gsap_split_word8": "0.8869 matrix(1, 0, 0, 1, 0, 5.34451)",
+    "h1.hero-home": "1"
+   },
+   {
+    "t": 4742,
+    ".preloader-wrap": "0 matrix(1, 0, 0, 1, 0, 0)",
+    ".nav-menu": "0.9996 matrix(1, 0, 0, 1, 0, 0)",
+    ".bg-pixels-wrapper": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".featured-post": "0.9996 matrix(1, 0, 0, 1, 0, 0)",
+    ".all-blogs-section": "0.9996 matrix(1, 0, 0, 1, 0, 0)",
+    ".gsap_split_word1": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".gsap_split_word4": "0.998 matrix(1, 0, 0, 1, 0, 0.0943422)",
+    ".gsap_split_word8": "0.9021 matrix(1, 0, 0, 1, 0, 4.62626)",
+    "h1.hero-home": "1"
+   },
+   {
+    "t": 4759,
+    ".preloader-wrap": "0 matrix(1, 0, 0, 1, 0, 0)",
+    ".nav-menu": "0.9997 matrix(1, 0, 0, 1, 0, 0)",
+    ".bg-pixels-wrapper": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".featured-post": "0.9997 matrix(1, 0, 0, 1, 0, 0)",
+    ".all-blogs-section": "0.9997 matrix(1, 0, 0, 1, 0, 0)",
+    ".gsap_split_word1": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".gsap_split_word4": "0.9983 matrix(1, 0, 0, 1, 0, 0.07865)",
+    ".gsap_split_word8": "0.9128 matrix(1, 0, 0, 1, 0, 4.12062)",
+    "h1.hero-home": "1"
+   },
+   {
+    "t": 4776,
+    ".preloader-wrap": "0 matrix(1, 0, 0, 1, 0, 0)",
+    ".nav-menu": "0.9997 matrix(1, 0, 0, 1, 0, 0)",
+    ".bg-pixels-wrapper": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".featured-post": "0.9997 matrix(1, 0, 0, 1, 0, 0)",
+    ".all-blogs-section": "0.9997 matrix(1, 0, 0, 1, 0, 0)",
+    ".gsap_split_word1": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".gsap_split_word4": "0.9987 matrix(1, 0, 0, 1, 0, 0.0637141)",
+    ".gsap_split_word8": "0.9237 matrix(1, 0, 0, 1, 0, 3.60656)",
+    "h1.hero-home": "1"
+   },
+   {
+    "t": 4793,
+    ".preloader-wrap": "0 matrix(1, 0, 0, 1, 0, 0)",
+    ".nav-menu": "0.9998 matrix(1, 0, 0, 1, 0, 0)",
+    ".bg-pixels-wrapper": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".featured-post": "0.9998 matrix(1, 0, 0, 1, 0, 0)",
+    ".all-blogs-section": "0.9998 matrix(1, 0, 0, 1, 0, 0)",
+    ".gsap_split_word1": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".gsap_split_word4": "0.9989 matrix(1, 0, 0, 1, 0, 0.0515195)",
+    ".gsap_split_word8": "0.9334 matrix(1, 0, 0, 1, 0, 3.14931)",
+    "h1.hero-home": "1"
+   },
+   {
+    "t": 4809,
+    ".preloader-wrap": "0 matrix(1, 0, 0, 1, 0, 0)",
+    ".nav-menu": "0.9998 matrix(1, 0, 0, 1, 0, 0)",
+    ".bg-pixels-wrapper": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".featured-post": "0.9998 matrix(1, 0, 0, 1, 0, 0)",
+    ".all-blogs-section": "0.9998 matrix(1, 0, 0, 1, 0, 0)",
+    ".gsap_split_word1": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".gsap_split_word4": "0.9991 matrix(1, 0, 0, 1, 0, 0.0414047)",
+    ".gsap_split_word8": "0.942 matrix(1, 0, 0, 1, 0, 2.7432)",
+    "h1.hero-home": "1"
+   },
+   {
+    "t": 4826,
+    ".preloader-wrap": "0 matrix(1, 0, 0, 1, 0, 0)",
+    ".nav-menu": "0.9999 matrix(1, 0, 0, 1, 0, 0)",
+    ".bg-pixels-wrapper": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".featured-post": "0.9999 matrix(1, 0, 0, 1, 0, 0)",
+    ".all-blogs-section": "0.9999 matrix(1, 0, 0, 1, 0, 0)",
+    ".gsap_split_word1": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".gsap_split_word4": "0.9993 matrix(1, 0, 0, 1, 0, 0.0336531)",
+    ".gsap_split_word8": "0.9492 matrix(1, 0, 0, 1, 0, 2.40317)",
+    "h1.hero-home": "1"
+   },
+   {
+    "t": 4842,
+    ".preloader-wrap": "0 matrix(1, 0, 0, 1, 0, 0)",
+    ".nav-menu": "0.9999 matrix(1, 0, 0, 1, 0, 0)",
+    ".bg-pixels-wrapper": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".featured-post": "0.9999 matrix(1, 0, 0, 1, 0, 0)",
+    ".all-blogs-section": "0.9999 matrix(1, 0, 0, 1, 0, 0)",
+    ".gsap_split_word1": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".gsap_split_word4": "0.9994 matrix(1, 0, 0, 1, 0, 0.0268469)",
+    ".gsap_split_word8": "0.9559 matrix(1, 0, 0, 1, 0, 2.08243)",
+    "h1.hero-home": "1"
+   },
+   {
+    "t": 4860,
+    ".preloader-wrap": "0 matrix(1, 0, 0, 1, 0, 0)",
+    ".nav-menu": "0.9999 matrix(1, 0, 0, 1, 0, 0)",
+    ".bg-pixels-wrapper": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".featured-post": "0.9999 matrix(1, 0, 0, 1, 0, 0)",
+    ".all-blogs-section": "0.9999 matrix(1, 0, 0, 1, 0, 0)",
+    ".gsap_split_word1": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".gsap_split_word4": "0.9995 matrix(1, 0, 0, 1, 0, 0.0214586)",
+    ".gsap_split_word8": "0.9616 matrix(1, 0, 0, 1, 0, 1.81491)",
+    "h1.hero-home": "1"
+   },
+   {
+    "t": 4876,
+    ".preloader-wrap": "0 matrix(1, 0, 0, 1, 0, 0)",
+    ".nav-menu": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".bg-pixels-wrapper": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".featured-post": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".all-blogs-section": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".gsap_split_word1": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".gsap_split_word4": "0.9996 matrix(1, 0, 0, 1, 0, 0.0168266)",
+    ".gsap_split_word8": "0.9669 matrix(1, 0, 0, 1, 0, 1.56364)",
+    "h1.hero-home": "1"
+   },
+   {
+    "t": 4893,
+    ".preloader-wrap": "0 matrix(1, 0, 0, 1, 0, 0)",
+    ".nav-menu": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".bg-pixels-wrapper": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".featured-post": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".all-blogs-section": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".gsap_split_word1": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".gsap_split_word4": "0.9997 matrix(1, 0, 0, 1, 0, 0.0132344)",
+    ".gsap_split_word8": "0.9713 matrix(1, 0, 0, 1, 0, 1.35511)",
+    "h1.hero-home": "1"
+   },
+   {
+    "t": 4909,
+    ".preloader-wrap": "0 matrix(1, 0, 0, 1, 0, 0)",
+    ".nav-menu": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".bg-pixels-wrapper": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".featured-post": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".all-blogs-section": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".gsap_split_word1": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".gsap_split_word4": "0.9998 matrix(1, 0, 0, 1, 0, 0.00992578)",
+    ".gsap_split_word8": "0.9757 matrix(1, 0, 0, 1, 0, 1.14959)",
+    "h1.hero-home": "1"
+   },
+   {
+    "t": 4926,
+    ".preloader-wrap": "0 matrix(1, 0, 0, 1, 0, 0)",
+    ".nav-menu": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".bg-pixels-wrapper": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".featured-post": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".all-blogs-section": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".gsap_split_word1": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".gsap_split_word4": "0.9998 matrix(1, 0, 0, 1, 0, 0.00746797)",
+    ".gsap_split_word8": "0.9791 matrix(1, 0, 0, 1, 0, 0.99012)",
+    "h1.hero-home": "1"
+   },
+   {
+    "t": 4942,
+    ".preloader-wrap": "0 matrix(1, 0, 0, 1, 0, 0)",
+    ".nav-menu": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".bg-pixels-wrapper": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".featured-post": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".all-blogs-section": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".gsap_split_word1": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".gsap_split_word4": "0.9999 matrix(1, 0, 0, 1, 0, 0.00538828)",
+    ".gsap_split_word8": "0.9822 matrix(1, 0, 0, 1, 0, 0.84199)",
+    "h1.hero-home": "1"
+   },
+   {
+    "t": 4959,
+    ".preloader-wrap": "0 matrix(1, 0, 0, 1, 0, 0)",
+    ".nav-menu": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".bg-pixels-wrapper": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".featured-post": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".all-blogs-section": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".gsap_split_word1": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".gsap_split_word4": "0.9999 matrix(1, 0, 0, 1, 0, 0.00368672)",
+    ".gsap_split_word8": "0.9848 matrix(1, 0, 0, 1, 0, 0.720517)",
+    "h1.hero-home": "1"
+   },
+   {
+    "t": 4976,
+    ".preloader-wrap": "0 matrix(1, 0, 0, 1, 0, 0)",
+    ".nav-menu": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".bg-pixels-wrapper": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".featured-post": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".all-blogs-section": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".gsap_split_word1": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".gsap_split_word4": "1 matrix(1, 0, 0, 1, 0, 0.00236328)",
+    ".gsap_split_word8": "0.987 matrix(1, 0, 0, 1, 0, 0.614642)",
+    "h1.hero-home": "1"
+   },
+   {
+    "t": 4993,
+    ".preloader-wrap": "0 matrix(1, 0, 0, 1, 0, 0)",
+    ".nav-menu": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".bg-pixels-wrapper": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".featured-post": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".all-blogs-section": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".gsap_split_word1": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".gsap_split_word4": "1 matrix(1, 0, 0, 1, 0, 0.00122891)",
+    ".gsap_split_word8": "0.9891 matrix(1, 0, 0, 1, 0, 0.517275)",
+    "h1.hero-home": "1"
+   },
+   {
+    "t": 5009,
+    ".preloader-wrap": "0 matrix(1, 0, 0, 1, 0, 0)",
+    ".nav-menu": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".bg-pixels-wrapper": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".featured-post": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".all-blogs-section": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".gsap_split_word1": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".gsap_split_word4": "1 matrix(1, 0, 0, 1, 0, 0.000189062)",
+    ".gsap_split_word8": "0.9909 matrix(1, 0, 0, 1, 0, 0.429266)",
+    "h1.hero-home": "1"
+   },
+   {
+    "t": 5026,
+    ".preloader-wrap": "0 matrix(1, 0, 0, 1, 0, 0)",
+    ".nav-menu": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".bg-pixels-wrapper": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".featured-post": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".all-blogs-section": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".gsap_split_word1": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".gsap_split_word4": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".gsap_split_word8": "0.9923 matrix(1, 0, 0, 1, 0, 0.362338)",
+    "h1.hero-home": "1"
+   },
+   {
+    "t": 5042,
+    ".preloader-wrap": "0 matrix(1, 0, 0, 1, 0, 0)",
+    ".nav-menu": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".bg-pixels-wrapper": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".featured-post": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".all-blogs-section": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".gsap_split_word1": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".gsap_split_word4": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".gsap_split_word8": "0.9936 matrix(1, 0, 0, 1, 0, 0.301649)",
+    "h1.hero-home": "1"
+   },
+   {
+    "t": 5060,
+    ".preloader-wrap": "0 matrix(1, 0, 0, 1, 0, 0)",
+    ".nav-menu": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".bg-pixels-wrapper": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".featured-post": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".all-blogs-section": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".gsap_split_word1": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".gsap_split_word4": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".gsap_split_word8": "0.9946 matrix(1, 0, 0, 1, 0, 0.252966)",
+    "h1.hero-home": "1"
+   },
+   {
+    "t": 5076,
+    ".preloader-wrap": "0 matrix(1, 0, 0, 1, 0, 0)",
+    ".nav-menu": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".bg-pixels-wrapper": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".featured-post": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".all-blogs-section": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".gsap_split_word1": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".gsap_split_word4": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".gsap_split_word8": "0.9956 matrix(1, 0, 0, 1, 0, 0.209103)",
+    "h1.hero-home": "1"
+   },
+   {
+    "t": 5093,
+    ".preloader-wrap": "0 matrix(1, 0, 0, 1, 0, 0)",
+    ".nav-menu": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".bg-pixels-wrapper": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".featured-post": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".all-blogs-section": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".gsap_split_word1": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".gsap_split_word4": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".gsap_split_word8": "0.9963 matrix(1, 0, 0, 1, 0, 0.174221)",
+    "h1.hero-home": "1"
+   },
+   {
+    "t": 5109,
+    ".preloader-wrap": "0 matrix(1, 0, 0, 1, 0, 0)",
+    ".nav-menu": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".bg-pixels-wrapper": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".featured-post": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".all-blogs-section": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".gsap_split_word1": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".gsap_split_word4": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".gsap_split_word8": "0.997 matrix(1, 0, 0, 1, 0, 0.141419)",
+    "h1.hero-home": "1"
+   },
+   {
+    "t": 5126,
+    ".preloader-wrap": "0 matrix(1, 0, 0, 1, 0, 0)",
+    ".nav-menu": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".bg-pixels-wrapper": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".featured-post": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".all-blogs-section": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".gsap_split_word1": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".gsap_split_word4": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".gsap_split_word8": "0.9975 matrix(1, 0, 0, 1, 0, 0.11703)",
+    "h1.hero-home": "1"
+   },
+   {
+    "t": 5142,
+    ".preloader-wrap": "0 matrix(1, 0, 0, 1, 0, 0)",
+    ".nav-menu": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".bg-pixels-wrapper": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".featured-post": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".all-blogs-section": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".gsap_split_word1": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".gsap_split_word4": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".gsap_split_word8": "0.998 matrix(1, 0, 0, 1, 0, 0.0966109)",
+    "h1.hero-home": "1"
+   },
+   {
+    "t": 5160,
+    ".preloader-wrap": "0 matrix(1, 0, 0, 1, 0, 0)",
+    ".nav-menu": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".bg-pixels-wrapper": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".featured-post": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".all-blogs-section": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".gsap_split_word1": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".gsap_split_word4": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".gsap_split_word8": "0.9983 matrix(1, 0, 0, 1, 0, 0.07865)",
+    "h1.hero-home": "1"
+   },
+   {
+    "t": 5176,
+    ".preloader-wrap": "0 matrix(1, 0, 0, 1, 0, 0)",
+    ".nav-menu": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".bg-pixels-wrapper": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".featured-post": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".all-blogs-section": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".gsap_split_word1": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".gsap_split_word4": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".gsap_split_word8": "0.9987 matrix(1, 0, 0, 1, 0, 0.0637141)",
+    "h1.hero-home": "1"
+   },
+   {
+    "t": 5193,
+    ".preloader-wrap": "0 matrix(1, 0, 0, 1, 0, 0)",
+    ".nav-menu": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".bg-pixels-wrapper": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".featured-post": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".all-blogs-section": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".gsap_split_word1": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".gsap_split_word4": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".gsap_split_word8": "0.9989 matrix(1, 0, 0, 1, 0, 0.0521812)",
+    "h1.hero-home": "1"
+   },
+   {
+    "t": 5209,
+    ".preloader-wrap": "0 matrix(1, 0, 0, 1, 0, 0)",
+    ".nav-menu": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".bg-pixels-wrapper": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".featured-post": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".all-blogs-section": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".gsap_split_word1": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".gsap_split_word4": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".gsap_split_word8": "0.9991 matrix(1, 0, 0, 1, 0, 0.0419719)",
+    "h1.hero-home": "1"
+   },
+   {
+    "t": 5226,
+    ".preloader-wrap": "0 matrix(1, 0, 0, 1, 0, 0)",
+    ".nav-menu": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".bg-pixels-wrapper": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".featured-post": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".all-blogs-section": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".gsap_split_word1": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".gsap_split_word4": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".gsap_split_word8": "0.9993 matrix(1, 0, 0, 1, 0, 0.0336531)",
+    "h1.hero-home": "1"
+   },
+   {
+    "t": 5242,
+    ".preloader-wrap": "0 matrix(1, 0, 0, 1, 0, 0)",
+    ".nav-menu": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".bg-pixels-wrapper": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".featured-post": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".all-blogs-section": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".gsap_split_word1": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".gsap_split_word4": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".gsap_split_word8": "0.9994 matrix(1, 0, 0, 1, 0, 0.0268469)",
+    "h1.hero-home": "1"
+   },
+   {
+    "t": 5259,
+    ".preloader-wrap": "0 matrix(1, 0, 0, 1, 0, 0)",
+    ".nav-menu": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".bg-pixels-wrapper": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".featured-post": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".all-blogs-section": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".gsap_split_word1": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".gsap_split_word4": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".gsap_split_word8": "0.9995 matrix(1, 0, 0, 1, 0, 0.0214586)",
+    "h1.hero-home": "1"
+   },
+   {
+    "t": 5276,
+    ".preloader-wrap": "0 matrix(1, 0, 0, 1, 0, 0)",
+    ".nav-menu": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".bg-pixels-wrapper": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".featured-post": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".all-blogs-section": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".gsap_split_word1": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".gsap_split_word4": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".gsap_split_word8": "0.9996 matrix(1, 0, 0, 1, 0, 0.0171102)",
+    "h1.hero-home": "1"
+   },
+   {
+    "t": 5293,
+    ".preloader-wrap": "0 matrix(1, 0, 0, 1, 0, 0)",
+    ".nav-menu": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".bg-pixels-wrapper": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".featured-post": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".all-blogs-section": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".gsap_split_word1": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".gsap_split_word4": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".gsap_split_word8": "0.9997 matrix(1, 0, 0, 1, 0, 0.0132344)",
+    "h1.hero-home": "1"
+   },
+   {
+    "t": 5309,
+    ".preloader-wrap": "0 matrix(1, 0, 0, 1, 0, 0)",
+    ".nav-menu": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".bg-pixels-wrapper": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".featured-post": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".all-blogs-section": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".gsap_split_word1": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".gsap_split_word4": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".gsap_split_word8": "0.9998 matrix(1, 0, 0, 1, 0, 0.00992578)",
+    "h1.hero-home": "1"
+   },
+   {
+    "t": 5326,
+    ".preloader-wrap": "0 matrix(1, 0, 0, 1, 0, 0)",
+    ".nav-menu": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".bg-pixels-wrapper": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".featured-post": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".all-blogs-section": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".gsap_split_word1": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".gsap_split_word4": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".gsap_split_word8": "0.9998 matrix(1, 0, 0, 1, 0, 0.00746797)",
+    "h1.hero-home": "1"
+   },
+   {
+    "t": 5342,
+    ".preloader-wrap": "0 matrix(1, 0, 0, 1, 0, 0)",
+    ".nav-menu": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".bg-pixels-wrapper": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".featured-post": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".all-blogs-section": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".gsap_split_word1": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".gsap_split_word4": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".gsap_split_word8": "0.9999 matrix(1, 0, 0, 1, 0, 0.00538828)",
+    "h1.hero-home": "1"
+   },
+   {
+    "t": 5360,
+    ".preloader-wrap": "0 matrix(1, 0, 0, 1, 0, 0)",
+    ".nav-menu": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".bg-pixels-wrapper": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".featured-post": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".all-blogs-section": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".gsap_split_word1": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".gsap_split_word4": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".gsap_split_word8": "0.9999 matrix(1, 0, 0, 1, 0, 0.00368672)",
+    "h1.hero-home": "1"
+   },
+   {
+    "t": 5376,
+    ".preloader-wrap": "0 matrix(1, 0, 0, 1, 0, 0)",
+    ".nav-menu": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".bg-pixels-wrapper": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".featured-post": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".all-blogs-section": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".gsap_split_word1": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".gsap_split_word4": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".gsap_split_word8": "1 matrix(1, 0, 0, 1, 0, 0.00226875)",
+    "h1.hero-home": "1"
+   },
+   {
+    "t": 5393,
+    ".preloader-wrap": "0 matrix(1, 0, 0, 1, 0, 0)",
+    ".nav-menu": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".bg-pixels-wrapper": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".featured-post": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".all-blogs-section": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".gsap_split_word1": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".gsap_split_word4": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".gsap_split_word8": "1 matrix(1, 0, 0, 1, 0, 0.00122891)",
+    "h1.hero-home": "1"
+   },
+   {
+    "t": 5409,
+    ".preloader-wrap": "0 matrix(1, 0, 0, 1, 0, 0)",
+    ".nav-menu": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".bg-pixels-wrapper": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".featured-post": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".all-blogs-section": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".gsap_split_word1": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".gsap_split_word4": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".gsap_split_word8": "1 matrix(1, 0, 0, 1, 0, 0.000283594)",
+    "h1.hero-home": "1"
+   },
+   {
+    "t": 5426,
+    ".preloader-wrap": "0 matrix(1, 0, 0, 1, 0, 0)",
+    ".nav-menu": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".bg-pixels-wrapper": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".featured-post": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".all-blogs-section": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".gsap_split_word1": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".gsap_split_word4": "1 matrix(1, 0, 0, 1, 0, 0)",
+    ".gsap_split_word8": "1 matrix(1, 0, 0, 1, 0, 0)",
+    "h1.hero-home": "1"
+   }
+  ]
+ },
+ "load-blog-post": {
+  "dcl": 1429,
+  "load": 50442,
+  "changes": [
+   {
+    "t": 758,
+    ".preloader-wrap": "1 HID",
+    ".nav-menu": "1 HID",
+    ".bg-pixels": "0 HID",
+    ".bg-pixels-overlay": "0 HID",
+    ".blog-top-header": "1 HID",
+    ".post-body-section": "1 HID"
+   },
+   {
+    "t": 2773,
+    ".preloader-wrap": "1",
+    ".nav-menu": "1",
+    ".bg-pixels": "0",
+    ".bg-pixels-overlay": "0",
+    ".blog-top-header": "1",
+    ".post-body-section": "1"
+   }
+  ]
+ },
+ "navCurrent": [
+  {
+   "cls": "nav-link-block _1st w-inline-block",
+   "text": "CompareCompare",
+   "color": "rgba(255, 255, 255, 0.7)",
+   "textColor": "rgba(255, 255, 255, 0.7)"
+  },
+  {
+   "cls": "nav-link-block w-inline-block w--current",
+   "text": "BlogBlog",
+   "color": "rgba(255, 255, 255, 0.7)",
+   "textColor": "rgba(255, 255, 255, 0.7)"
+  },
+  {
+   "cls": "nav-link-block w-inline-block",
+   "text": "Case StudiesCase Studies",
+   "color": "rgba(255, 255, 255, 0.7)",
+   "textColor": "rgba(255, 255, 255, 0.7)"
+  },
+  {
+   "cls": "nav-link-block w-inline-block",
+   "text": "CareersCareers",
+   "color": "rgba(255, 255, 255, 0.7)",
+   "textColor": "rgba(255, 255, 255, 0.7)"
+  },
+  {
+   "cls": "nav-link-block login w-inline-block",
+   "text": "LoginLogin",
+   "color": "rgba(255, 255, 255, 0.7)",
+   "textColor": "rgba(255, 255, 255, 0.7)"
+  },
+  {
+   "cls": "nav-link-block cta w-inline-block",
+   "text": "Book a Demo",
+   "color": "rgb(2, 8, 1)",
+   "textColor": "rgb(2, 8, 1)"
+  },
+  {
+   "cls": "nav-link-block cta mobil-top-cta w-inline-block",
+   "text": "Book a Demo",
+   "color": "rgb(2, 8, 1)",
+   "textColor": "rgb(2, 8, 1)"
+  }
+ ],
+ "blogCardRest": {
+  "bottomBg": {
+   "background-color": "rgba(0, 0, 0, 0)"
+  },
+  "title": {
+   "color": "rgb(255, 255, 255)"
+  },
+  "meta": {
+   "color": "rgb(255, 255, 255)"
+  },
+  "cell": {
+   "border-left-color": "rgb(162, 250, 142)"
+  },
+  "img": {
+   "transform": "none"
+  },
+  "arrow": {
+   "opacity": "0"
+  }
+ },
+ "blogCardHover150": {
+  "bottomBg": {
+   "background-color": "rgba(216, 216, 216, 0.847)"
+  },
+  "title": {
+   "color": "rgb(40, 45, 39)"
+  },
+  "meta": {
+   "color": "rgb(30, 36, 29)"
+  },
+  "cell": {
+   "border-left-color": "rgb(0, 46, 181)"
+  },
+  "img": {
+   "transform": "matrix(1.08887, 0, 0, 1.08887, 0, 0)"
+  },
+  "arrow": {
+   "opacity": "0.88866"
+  }
+ },
+ "blogCardHover": {
+  "bottomBg": {
+   "background-color": "rgb(255, 255, 255)"
+  },
+  "title": {
+   "color": "rgb(2, 8, 1)"
+  },
+  "meta": {
+   "color": "rgb(2, 8, 1)"
+  },
+  "cell": {
+   "border-left-color": "rgb(0, 51, 204)"
+  },
+  "img": {
+   "transform": "matrix(1.1, 0, 0, 1.1, 0, 0)"
+  },
+  "arrow": {
+   "opacity": "1"
+  }
+ },
+ "blogCardOut": {
+  "bottomBg": {
+   "background-color": "rgba(255, 255, 255, 0)"
+  },
+  "title": {
+   "color": "rgb(255, 255, 255)"
+  },
+  "meta": {
+   "color": "rgb(255, 255, 255)"
+  },
+  "cell": {
+   "border-left-color": "rgb(162, 250, 142)"
+  },
+  "img": {
+   "transform": "matrix(1.01, 0, 0, 1.01, 0, 0)"
+  },
+  "arrow": {
+   "opacity": "0"
+  }
+ },
+ "featRest": {
+  "img": {
+   "transform": "none"
+  },
+  "head": {
+   "opacity": "1",
+   "color": "rgb(255, 255, 255)"
+  },
+  "ul1": {
+   "width": "166.516px"
+  },
+  "ul2": {
+   "width": "0px"
+  }
+ },
+ "featHover": {
+  "img": {
+   "transform": "matrix(1.1, 0, 0, 1.1, 0, 0)"
+  },
+  "head": {
+   "opacity": "1",
+   "color": "rgb(255, 255, 255)"
+  },
+  "ul1": {
+   "width": "166.516px"
+  },
+  "ul2": {
+   "width": "0px"
+  }
+ },
+ "featOut": {
+  "img": {
+   "transform": "matrix(1, 0, 0, 1, 0, 0)"
+  },
+  "head": {
+   "opacity": "1",
+   "color": "rgb(255, 255, 255)"
+  },
+  "ul1": {
+   "width": "166.516px"
+  },
+  "ul2": {
+   "width": "0px"
+  }
+ },
+ "bgFade": [
+  {
+   "y": 0,
+   "wrapper": {
+    "opacity": "1"
+   }
+  },
+  {
+   "y": 60,
+   "wrapper": {
+    "opacity": "1"
+   }
+  },
+  {
+   "y": 100,
+   "wrapper": {
+    "opacity": "0"
+   }
+  },
+  {
+   "y": 300,
+   "wrapper": {
+    "opacity": "0"
+   }
+  }
+ ],
+ "loadMoreBefore": {
+  "items": 4,
+  "url": "https://www.transform9.com/blog",
+  "pag": [
+   [
+    "w-pagination-previous",
+    "none"
+   ],
+   [
+    "_16px-text white-text blogs-descr",
+    "block"
+   ],
+   [
+    "w-pagination-next _30px-text white _w-underline load-more",
+    "block"
+   ],
+   [
+    "",
+    "none"
+   ],
+   [
+    "w-page-count page-count",
+    "none"
+   ]
+  ]
+ },
+ "loadMoreHover": {
+  "ul1": {
+   "width": "0px"
+  },
+  "ul2": {
+   "width": "144.672px"
+  }
+ },
+ "loadMoreAfter": {
+  "items": [
+   "/blog/ai-voice-agents-for-athenahealth-7-questions-to-ask-before-choosing-a-platform",
+   "/blog/medical-practice-call-volume-january",
+   "/blog/ent-reimbursement-in-2027-what-medicare-s-proposed-cuts-mean-for-otolaryngology-practices",
+   "/blog/orthopedic-ai-answering-service",
+   "/blog/why-generic-ai-virtual-assistants-fail-specialty-medical-practices-and-what-actually-works",
+   "/blog/why-traditional-ivr-is-failing-your-practice-and-how-ai-voice-agents-fix-the-press-0-trap",
+   "/blog/the-12-month-shift-why-voice-ai-agents-are-now-a-financial-imperative-for-specialty-practices",
+   "/blog/redefining-healthcare-ai"
+  ],
+  "url": "https://www.transform9.com/blog",
+  "pag": [
+   [
+    "w-pagination-previous",
+    "none",
+    0
+   ],
+   [
+    "_16px-text white-text blogs-descr",
+    "block",
+    67.171875
+   ],
+   [
+    "w-pagination-next _30px-text white _w-underline load-more",
+    "none",
+    0
+   ],
+   [
+    "",
+    "none",
+    0
+   ],
+   [
+    "w-page-count page-count",
+    "none",
+    0
+   ]
+  ],
+  "listRect": 2461.5625,
+  "docH": 6971
+ },
+ "loadMoreTrace": [
+  {
+   "n": 8,
+   "op": "1 none"
+  },
+  {
+   "n": 8,
+   "op": "1 none"
+  },
+  {
+   "n": 8,
+   "op": "1 none"
+  },
+  {
+   "n": 8,
+   "op": "1 none"
+  },
+  {
+   "n": 8,
+   "op": "1 none"
+  },
+  {
+   "n": 8,
+   "op": "1 none"
+  },
+  {
+   "n": 8,
+   "op": "1 none"
+  },
+  {
+   "n": 8,
+   "op": "1 none"
+  },
+  {
+   "n": 8,
+   "op": "1 none"
+  },
+  {
+   "n": 8,
+   "op": "1 none"
+  },
+  {
+   "n": 8,
+   "op": "1 none"
+  },
+  {
+   "n": 8,
+   "op": "1 none"
+  },
+  {
+   "n": 8,
+   "op": "1 none"
+  },
+  {
+   "n": 8,
+   "op": "1 none"
+  },
+  {
+   "n": 8,
+   "op": "1 none"
+  },
+  {
+   "n": 8,
+   "op": "1 none"
+  },
+  {
+   "n": 8,
+   "op": "1 none"
+  },
+  {
+   "n": 8,
+   "op": "1 none"
+  },
+  {
+   "n": 8,
+   "op": "1 none"
+  },
+  {
+   "n": 8,
+   "op": "1 none"
+  }
+ ],
+ "loadMoreRequests": [],
+ "loadedCardHover": {
+  "bottomBg": "rgb(255, 255, 255)",
+  "img": "matrix(1.1, 0, 0, 1.1, 0, 0)"
+ },
+ "backRest": {
+  "link": {
+   "opacity": "0.5"
+  },
+  "a1": {
+   "transform": "matrix(1, 0, 0, 1, 0, 0)"
+  },
+  "a2": {
+   "transform": "matrix(1, 0, 0, 1, 0, 0)"
+  }
+ },
+ "backHover250": {
+  "link": {
+   "opacity": "0.99384"
+  },
+  "a1": {
+   "transform": "matrix(1, 0, 0, 1, -27.655, 0)"
+  },
+  "a2": {
+   "transform": "matrix(1, 0, 0, 1, -27.655, 0)"
+  }
+ },
+ "backHover": {
+  "link": {
+   "opacity": "1"
+  },
+  "a1": {
+   "transform": "matrix(1, 0, 0, 1, -28, 0)"
+  },
+  "a2": {
+   "transform": "matrix(1, 0, 0, 1, -28, 0)"
+  }
+ },
+ "backOut": {
+  "link": {
+   "opacity": "0.5"
+  },
+  "a1": {
+   "transform": "matrix(1, 0, 0, 1, 0, 0)"
+  },
+  "a2": {
+   "transform": "matrix(1, 0, 0, 1, 0, 0)"
+  }
+ },
+ "shareRest": {
+  "opacity": "0.5",
+  "transition": "opacity 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94)"
+ },
+ "shareHover": {
+  "opacity": "1"
+ },
+ "shareHrefs": [
+  {
+   "href": "#",
+   "target": null,
+   "net": "x"
+  },
+  {
+   "href": "#",
+   "target": null,
+   "net": "facebook"
+  },
+  {
+   "href": "#",
+   "target": null,
+   "net": "linkedin"
+  }
+ ],
+ "stickyShare": [
+  {
+   "y": 0,
+   "top": 542,
+   "nav": {
+    "background-color": "rgba(2, 8, 1, 0.5)"
+   }
+  },
+  {
+   "y": 800,
+   "top": 60,
+   "nav": {
+    "background-color": "rgba(2, 8, 1, 0.5)"
+   }
+  },
+  {
+   "y": 1600,
+   "top": 60,
+   "nav": {
+    "background-color": "rgba(2, 8, 1, 0.5)"
+   }
+  }
+ ],
+ "bgPixelsPost": {
+  "opacity": "0",
+  "background-image": "none",
+  "display": "flex"
+ },
+ "richLinkHover": null,
+ "csRest": {
+  "imgWrap": {
+   "background-color": "rgba(255, 255, 255, 0.01)"
+  },
+  "wh": {
+   "opacity": "1"
+  },
+  "bl": {
+   "opacity": "0"
+  },
+  "bottom": {
+   "background-color": "rgba(0, 0, 0, 0)"
+  },
+  "title": {
+   "color": "rgb(255, 255, 255)"
+  },
+  "stat": {
+   "color": "rgb(255, 255, 255)"
+  },
+  "num": {
+   "color": "rgb(255, 255, 255)"
+  },
+  "cell": {
+   "border-left-color": "rgb(162, 250, 142)"
+  },
+  "arrow": {
+   "opacity": "0"
+  }
+ },
+ "csHover": {
+  "imgWrap": {
+   "background-color": "rgb(241, 243, 243)"
+  },
+  "wh": {
+   "opacity": "0"
+  },
+  "bl": {
+   "opacity": "1"
+  },
+  "bottom": {
+   "background-color": "rgb(255, 255, 255)"
+  },
+  "title": {
+   "color": "rgb(2, 8, 1)"
+  },
+  "stat": {
+   "color": "rgb(2, 8, 1)"
+  },
+  "num": {
+   "color": "rgb(2, 8, 1)"
+  },
+  "cell": {
+   "border-left-color": "rgb(0, 51, 204)"
+  },
+  "arrow": {
+   "opacity": "1"
+  }
+ },
+ "csOut": {
+  "imgWrap": {
+   "background-color": "rgba(255, 255, 255, 0.01)"
+  },
+  "wh": {
+   "opacity": "1"
+  },
+  "bl": {
+   "opacity": "0"
+  },
+  "bottom": {
+   "background-color": "rgba(255, 255, 255, 0)"
+  },
+  "title": {
+   "color": "rgb(255, 255, 255)"
+  },
+  "stat": {
+   "color": "rgb(255, 255, 255)"
+  },
+  "num": {
+   "color": "rgb(255, 255, 255)"
+  },
+  "cell": {
+   "border-left-color": "rgb(162, 250, 142)"
+  },
+  "arrow": {
+   "opacity": "0"
+  }
+ },
+ "csHover1": {
+  "highlight": {
+   "color": "rgb(2, 8, 1)"
+  },
+  "bottom": {
+   "background-color": "rgb(255, 255, 255)"
+  }
+ },
+ "csReadNextRest": {
+  "imgWrap": {
+   "background-color": "rgba(255, 255, 255, 0.01)"
+  },
+  "wh": {
+   "opacity": "1"
+  },
+  "bottom": {
+   "background-color": "rgba(0, 0, 0, 0)"
+  },
+  "title": {
+   "color": "rgb(255, 255, 255)"
+  },
+  "arrow": {
+   "opacity": "0"
+  }
+ },
+ "csReadNextHover": {
+  "imgWrap": {
+   "background-color": "rgb(241, 243, 243)"
+  },
+  "wh": {
+   "opacity": "0"
+  },
+  "bottom": {
+   "background-color": "rgb(255, 255, 255)"
+  },
+  "title": {
+   "color": "rgb(2, 8, 1)"
+  },
+  "arrow": {
+   "opacity": "1"
+  }
+ },
+ "csBackRest": {
+  "opacity": "0.5"
+ },
+ "csBackHover": {
+  "link": {
+   "opacity": "1"
+  },
+  "a1": {
+   "transform": "matrix(1, 0, 0, 1, -28, 0)"
+  }
+ }
+}

@@ -1,4 +1,3 @@
-import PageLayers from '../components/PageLayers'
 import Hero from '../components/Hero'
 import ClientLogos from '../components/ClientLogos'
 import ClientSpotlight from '../components/ClientSpotlight'
@@ -16,7 +15,6 @@ import Cta from '../components/Cta'
 export default function HomePage() {
   return (
     <>
-      <PageLayers />
       <Hero />
       <ClientLogos />
       <ClientSpotlight />

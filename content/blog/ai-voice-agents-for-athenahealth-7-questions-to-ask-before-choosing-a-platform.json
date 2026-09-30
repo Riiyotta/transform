@@ -1,0 +1,1151 @@
+{
+ "slug": "ai-voice-agents-for-athenahealth-7-questions-to-ask-before-choosing-a-platform",
+ "url": "https://www.transform9.com/blog/ai-voice-agents-for-athenahealth-7-questions-to-ask-before-choosing-a-platform",
+ "template": "blog-post (wf page 6961001f74e092b614cb17b7)",
+ "meta": {
+  "title": "AI Voice Agents for athenahealth: 7 Questions to Ask Before Choosing a Platform",
+  "description": "Choosing an AI voice agent for athenahealth? Ask 7 questions about integration, specialty workflows, security, patient experience, and measurable results.",
+  "ogTitle": "AI Voice Agents for athenahealth: 7 Questions to Ask Before Choosing a Platform",
+  "ogDescription": "Choosing an AI voice agent for athenahealth? Ask 7 questions about integration, specialty workflows, security, patient experience, and measurable results.",
+  "ogImage": "https://cdn.prod.website-files.com/6961001f1082da89878fcb00/6aac50cd7d67b3ee047d814c_featured-compressed.jpeg",
+  "twitterTitle": "AI Voice Agents for athenahealth: 7 Questions to Ask Before Choosing a Platform",
+  "twitterImage": "https://cdn.prod.website-files.com/6961001f1082da89878fcb00/6aac50cd7d67b3ee047d814c_featured-compressed.jpeg",
+  "jsonLd": {
+   "@context": "https://schema.org",
+   "@type": "BlogPosting",
+   "headline": "AI Voice Agents for athenahealth: 7 Questions to Ask Before Choosing a Platform",
+   "description": "Choosing an AI voice agent for athenahealth? Ask 7 questions about integration, specialty workflows, security, patient experience, and measurable results.",
+   "image": "https://cdn.prod.website-files.com/6961001f1082da89878fcb00/6aac50cd7d67b3ee047d814c_featured-compressed.jpeg",
+   "author": {
+    "@type": "Organization",
+    "name": "Transform9",
+    "url": "https://www.transform9.com"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "name": "Transform9"
+   },
+   "datePublished": "2026-09-17",
+   "dateModified": "2026-09-17"
+  },
+  "wfPage": "6961001f74e092b614cb17b7",
+  "wfCollection": "6961001f74e092b614cb179f",
+  "wfItemSlug": "ai-voice-agents-for-athenahealth-7-questions-to-ask-before-choosing-a-platform"
+ },
+ "title": "AI Voice Agents for athenahealth: 7 Questions to Ask Before Choosing a Platform",
+ "author": "Transorm9",
+ "date": "September 17, 2026",
+ "heroImage": "https://cdn.prod.website-files.com/6961001f1082da89878fcb00/6aac50cd7d67b3ee047d814c_featured-compressed.jpeg",
+ "backLink": {
+  "href": "/blog",
+  "text": "Back to Blog"
+ },
+ "shareLabel": "Found this useful? Share it",
+ "share": [
+  {
+   "network": "x",
+   "href": "#",
+   "icon": "https://cdn.prod.website-files.com/684a82e3294991569082d379/696e6fc3c1ef2e8dba004c36_x-icon.svg"
+  },
+  {
+   "network": "facebook",
+   "href": "#",
+   "icon": "https://cdn.prod.website-files.com/684a82e3294991569082d379/696e6fc3ae5b9aa0a271a803_fb-icon.svg"
+  },
+  {
+   "network": "linkedin",
+   "href": "#",
+   "icon": "https://cdn.prod.website-files.com/684a82e3294991569082d379/696e6fc3101115fca7e234e0_in-icon.svg"
+  }
+ ],
+ "slots": [
+  {
+   "slot": "1st",
+   "visible": true,
+   "empty": false,
+   "blockCount": 70
+  },
+  {
+   "slot": "bl-2",
+   "visible": false,
+   "empty": true,
+   "blockCount": 0
+  },
+  {
+   "slot": "bl-3",
+   "visible": false,
+   "empty": true,
+   "blockCount": 0
+  },
+  {
+   "slot": "bl-4",
+   "visible": false,
+   "empty": true,
+   "blockCount": 0
+  },
+  {
+   "slot": "bl-5",
+   "visible": false,
+   "empty": true,
+   "blockCount": 0
+  }
+ ],
+ "readNext": {
+  "sectionClass": "read-next-section read-next hide",
+  "visible": false,
+  "eyebrow": "Keep exploring",
+  "heading": "Read Next",
+  "items": [
+   {
+    "order": 1,
+    "href": "/blog/redefining-healthcare-ai",
+    "linkClass": "post-link-block w-inline-block",
+    "title": "Redefining Healthcare AI: The Future Of Medicine",
+    "image": "https://cdn.prod.website-files.com/6961001f1082da89878fcb00/6970b17878db95b46a287768_5.webp",
+    "logoWhite": null,
+    "logoBlack": null,
+    "highlight": null,
+    "meta": [
+     "Transform9",
+     "January 15, 2026"
+    ],
+    "stats": [],
+    "hiddenConditional": []
+   },
+   {
+    "order": 2,
+    "href": "/blog/the-12-month-shift-why-voice-ai-agents-are-now-a-financial-imperative-for-specialty-practices",
+    "linkClass": "post-link-block w-inline-block",
+    "title": "The 12-Month Shift: Why Voice AI Agents Are Now a Financial Imperative for Specialty Practices",
+    "image": "https://cdn.prod.website-files.com/6961001f1082da89878fcb00/6a74a84e37d8d93140d6c51a_Screenshot%202026-08-06%20at%2010.29.05%E2%80%AFAM.png",
+    "logoWhite": null,
+    "logoBlack": null,
+    "highlight": null,
+    "meta": [
+     "Transform9",
+     "August 6, 2026"
+    ],
+    "stats": [],
+    "hiddenConditional": []
+   }
+  ]
+ },
+ "summary": "Choosing an AI voice agent for athenahealth? Ask 7 questions about integration, specialty workflows, security, patient experience, and measurable results.",
+ "category": null,
+ "tags": [],
+ "body": [
+  {
+   "slot": "1st",
+   "type": "p",
+   "text": "AI voice technology is moving quickly from an emerging idea to a practical part of patient access. For practices using athenahealth, that creates both an opportunity and a challenge.",
+   "inlines": [
+    {
+     "text": "AI voice technology is moving quickly from an emerging idea to a practical part of patient access. For practices using athenahealth, that creates both an opportunity and a challenge."
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "p",
+   "text": "The opportunity is significant: answer every call immediately, reduce hold times, relieve staff burden, and give patients a faster path to scheduling, referrals, prescription refills, and other common needs.",
+   "inlines": [
+    {
+     "text": "The opportunity is significant: answer every call immediately, reduce hold times, relieve staff burden, and give patients a faster path to scheduling, referrals, prescription refills, and other common needs."
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "p",
+   "text": "The challenge is that many solutions sound similar at first. Nearly every vendor can demonstrate an AI agent answering a phone call. Far fewer can show how that interaction fits into the real workflows of a specialty physician practice.",
+   "inlines": [
+    {
+     "text": "The challenge is that many solutions sound similar at first. Nearly every vendor can demonstrate an AI agent answering a phone call. Far fewer can show how that interaction fits into the real workflows of a specialty physician practice."
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "p",
+   "text": "Transform9 has delivered native athenahealth integration for AI voice agents since 2023. That experience has helped us build the deepest athenahealth partnership focused specifically on voice AI—and a practical understanding of what it takes to move beyond answering calls to completing work inside the practice.",
+   "inlines": [
+    {
+     "text": "Transform9 has delivered native athenahealth integration for AI voice agents since 2023. That experience has helped us build the deepest athenahealth partnership focused specifically on voice AI—and a practical understanding of what it takes to move beyond answering calls to completing work inside the practice."
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "p",
+   "text": "The most important question is not simply, “Can the AI answer our calls?” It is:",
+   "inlines": [
+    {
+     "text": "The most important question is not simply, “Can the AI answer our calls?” It is:"
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "p",
+   "text": "Can the AI complete the work accurately, securely, and within the way our practice already operates?",
+   "inlines": [
+    {
+     "text": "Can the AI complete the work accurately, securely, and within the way our practice already operates?",
+     "bold": true
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "p",
+   "text": "If your organization is evaluating AI voice agents for athenahealth, these seven questions can help separate a compelling demonstration from a platform capable of delivering meaningful operational results.",
+   "inlines": [
+    {
+     "text": "If your organization is "
+    },
+    {
+     "text": "evaluating AI voice agents",
+     "link": {
+      "href": "https://www.transform9.com/compare",
+      "target": "_blank",
+      "rel": "noopener noreferrer"
+     }
+    },
+    {
+     "text": " for athenahealth, these seven questions can help separate a compelling demonstration from a platform capable of delivering meaningful operational results."
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "h2",
+   "text": "1. How deeply does the AI voice agent work with athenahealth?",
+   "inlines": [
+    {
+     "text": "1. How deeply does the AI voice agent work with athenahealth?"
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "p",
+   "text": "“Integrated with athenahealth” can mean very different things.",
+   "inlines": [
+    {
+     "text": "“Integrated with athenahealth” can mean very different things."
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "p",
+   "text": "It can also be difficult to distinguish a recently added connection from a platform that has spent years developing, deploying, and refining voice workflows within the athenahealth ecosystem. That history matters because effective integration is not a single technical connection; it is an ongoing understanding of how patient conversations, practice rules, EHR data, staff actions, and exceptions work together.",
+   "inlines": [
+    {
+     "text": "It can also be difficult to distinguish a recently added connection from a platform that has spent years developing, deploying, and refining voice workflows within the athenahealth ecosystem. That history matters because effective integration is not a single technical connection; it is an ongoing understanding of how patient conversations, practice rules, EHR data, staff actions, and exceptions work together."
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "p",
+   "text": "At one end of the spectrum, an AI agent may collect information and deliver it to staff as a message. That can reduce voicemail, but it may still leave employees responsible for finding the patient, interpreting the request, updating the record, and completing the next step.",
+   "inlines": [
+    {
+     "text": "At one end of the spectrum, an AI agent may collect information and deliver it to staff as a message. That can reduce voicemail, but it may still leave employees responsible for finding the patient, interpreting the request, updating the record, and completing the next step."
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "p",
+   "text": "A deeper workflow should allow the agent to use the information and processes required to move the patient’s request forward. Depending on the use case, that may include identifying the patient, accessing appropriate information, applying scheduling rules, routing the request correctly, and documenting the interaction.",
+   "inlines": [
+    {
+     "text": "A deeper workflow should allow the agent to use the information and processes required to move the patient’s request forward. Depending on the use case, that may include identifying the patient, accessing appropriate information, applying scheduling rules, routing the request correctly, and documenting the interaction."
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "p",
+   "text": "Ask every potential partner to show (not simply describe) what happens inside athenahealth after a call ends.",
+   "inlines": [
+    {
+     "text": "Ask every potential partner to show (not simply describe) what happens inside athenahealth after a call ends."
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "p",
+   "text": "Questions to ask include:",
+   "inlines": [
+    {
+     "text": "Questions to ask include:"
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "ul",
+   "items": [
+    {
+     "text": "What information can the agent access?",
+     "inlines": [
+      {
+       "text": "What information can the agent access?"
+      }
+     ]
+    },
+    {
+     "text": "What information can it update or document?",
+     "inlines": [
+      {
+       "text": "What information can it update or document?"
+      }
+     ]
+    },
+    {
+     "text": "Which actions can it complete without staff intervention?",
+     "inlines": [
+      {
+       "text": "Which actions can it complete without staff intervention?"
+      }
+     ]
+    },
+    {
+     "text": "Where does staff need to step in?",
+     "inlines": [
+      {
+       "text": "Where does staff need to step in?"
+      }
+     ]
+    },
+    {
+     "text": "How are exceptions and failed transactions handled?",
+     "inlines": [
+      {
+       "text": "How are exceptions and failed transactions handled?"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "p",
+   "text": "The value of AI is not measured by how naturally it speaks. It is measured by how much work it completes safely and correctly.",
+   "inlines": [
+    {
+     "text": "The value of AI is not measured by how naturally it speaks. It is measured by how much work it completes safely and correctly."
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "h2",
+   "text": "2. Was the platform designed for specialty workflows?",
+   "inlines": [
+    {
+     "text": "2. Was the platform designed for specialty workflows?"
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "p",
+   "text": "A general medical office and a specialty practice do not handle patient calls in the same way. An orthopedic group, ophthalmology practice, dermatology group, gastroenterology practice, urology group, and neurology practice each have different scheduling protocols, clinical terminology, routing rules, and urgency criteria.",
+   "inlines": [
+    {
+     "text": "A general medical office and a specialty practice do not handle patient calls in the same way. An orthopedic group, ophthalmology practice, dermatology group, gastroenterology practice, urology group, and neurology practice each have different scheduling protocols, clinical terminology, routing rules, and urgency criteria."
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "p",
+   "text": "Even within one specialty, workflows can vary by provider, location, appointment type, insurance plan, or clinical circumstance.",
+   "inlines": [
+    {
+     "text": "Even within one specialty, workflows can vary by provider, location, appointment type, insurance plan, or clinical circumstance."
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "p",
+   "text": "Consider scheduling alone. A request that sounds simple may depend on:",
+   "inlines": [
+    {
+     "text": "Consider scheduling alone. A request that sounds simple may depend on:"
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "ul",
+   "items": [
+    {
+     "text": "The patient’s symptoms or reason for the visit",
+     "inlines": [
+      {
+       "text": "The patient’s symptoms or reason for the visit"
+      }
+     ]
+    },
+    {
+     "text": "Whether the patient is new or established",
+     "inlines": [
+      {
+       "text": "Whether the patient is new or established"
+      }
+     ]
+    },
+    {
+     "text": "The appropriate subspecialty or provider",
+     "inlines": [
+      {
+       "text": "The appropriate subspecialty or provider"
+      }
+     ]
+    },
+    {
+     "text": "Referral and authorization requirements",
+     "inlines": [
+      {
+       "text": "Referral and authorization requirements"
+      }
+     ]
+    },
+    {
+     "text": "Body part, diagnosis, or procedure history",
+     "inlines": [
+      {
+       "text": "Body part, diagnosis, or procedure history"
+      }
+     ]
+    },
+    {
+     "text": "Location and appointment availability",
+     "inlines": [
+      {
+       "text": "Location and appointment availability"
+      }
+     ]
+    },
+    {
+     "text": "Rules established by the practice",
+     "inlines": [
+      {
+       "text": "Rules established by the practice"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "p",
+   "text": "An AI agent that only recognizes the words “I need an appointment” has identified the request. It has not necessarily completed the workflow.",
+   "inlines": [
+    {
+     "text": "An AI agent that only recognizes the words “I need an appointment” has identified the request. It has not necessarily completed the workflow."
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "p",
+   "text": "Ask vendors to demonstrate scenarios from your specialty using your actual rules. The system should adapt to the practice, not force the practice into a generic workflow.",
+   "inlines": [
+    {
+     "text": "Ask vendors to demonstrate scenarios from your specialty using your actual rules. The system should adapt to the practice, not force the practice into a generic workflow."
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "h2",
+   "text": "3. Can it handle the entire call journey, or only one task?",
+   "inlines": [
+    {
+     "text": "3. Can it handle the entire call journey, or only one task?"
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "p",
+   "text": "Scheduling is important, but it is only one reason patients call a physician practice.",
+   "inlines": [
+    {
+     "text": "Scheduling is important, but it is only one reason patients call a physician practice."
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "p",
+   "text": "Your call mix may also include referrals, prescription refill requests, insurance questions, test results, medical records, clinical messages, directions, appointment preparation, billing questions, and requests that require urgent routing.",
+   "inlines": [
+    {
+     "text": "Your call mix may also include referrals, prescription refill requests, insurance questions, test results, medical records, clinical messages, directions, appointment preparation, billing questions, and requests that require urgent routing."
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "p",
+   "text": "A narrow tool may automate a high-volume use case while sending everything else back to the same staff members who are already overloaded. That can still create value, but practices should understand the difference between automating one transaction and improving the broader patient-access operation.",
+   "inlines": [
+    {
+     "text": "A narrow tool may automate a high-volume use case while sending everything else back to the same staff members who are already overloaded. That can still create value, but practices should understand the difference between automating one transaction and improving the broader patient-access operation."
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "p",
+   "text": "Before selecting a platform, map your most common call types and ask:",
+   "inlines": [
+    {
+     "text": "Before selecting a platform, map your most common call types and ask:"
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "ul",
+   "items": [
+    {
+     "text": "Which requests can the AI resolve from beginning to end?",
+     "inlines": [
+      {
+       "text": "Which requests can the AI resolve from beginning to end?"
+      }
+     ]
+    },
+    {
+     "text": "Which requests can it partially automate?",
+     "inlines": [
+      {
+       "text": "Which requests can it partially automate?"
+      }
+     ]
+    },
+    {
+     "text": "Which requests must be transferred or escalated?\n Can the platform expand into additional workflows over time?",
+     "inlines": [
+      {
+       "text": "Which requests must be transferred or escalated?\n Can the platform expand into additional workflows over time?"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "p",
+   "text": "The right starting point may be one carefully selected workflow. The right long-term platform should not become a limitation when your automation strategy grows.",
+   "inlines": [
+    {
+     "text": "The right starting point may be one carefully selected workflow. The right long-term platform should not become a limitation when your automation strategy grows."
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "h2",
+   "text": "4. What does the patient experience feel like?",
+   "inlines": [
+    {
+     "text": "4. What does the patient experience feel like?"
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "p",
+   "text": "Operational efficiency matters, but not at the expense of patient trust.",
+   "inlines": [
+    {
+     "text": "Operational efficiency matters, but not at the expense of patient trust."
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "p",
+   "text": "Patients should not have to learn special commands, navigate a frustrating phone tree, or repeat the same information after an escalation. A well-designed AI voice agent should communicate clearly, understand natural patient language, move the interaction forward efficiently, and know when a human should become involved.",
+   "inlines": [
+    {
+     "text": "Patients should not have to learn special commands, navigate a frustrating phone tree, or repeat the same information after an escalation. A well-designed AI voice agent should communicate clearly, understand natural patient language, move the interaction forward efficiently, and know when a human should become involved."
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "p",
+   "text": "Evaluate the experience as a patient would:",
+   "inlines": [
+    {
+     "text": "Evaluate the experience as a patient would:"
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "ul",
+   "items": [
+    {
+     "text": "How quickly is the call answered?",
+     "inlines": [
+      {
+       "text": "How quickly is the call answered?"
+      }
+     ]
+    },
+    {
+     "text": "Does the voice sound clear and easy to understand?\n Can patients speak naturally?",
+     "inlines": [
+      {
+       "text": "Does the voice sound clear and easy to understand?\n Can patients speak naturally?"
+      }
+     ]
+    },
+    {
+     "text": "How does the agent recover when it misunderstands something?\n Can a patient reach a person when necessary? Is context preserved during a transfer or escalation?",
+     "inlines": [
+      {
+       "text": "How does the agent recover when it misunderstands something?\n Can a patient reach a person when necessary? Is context preserved during a transfer or escalation?"
+      }
+     ]
+    },
+    {
+     "text": "How long does it take to complete a typical request?",
+     "inlines": [
+      {
+       "text": "How long does it take to complete a typical request?"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "p",
+   "text": "A polished scripted demonstration is not enough. Test interruptions, background noise, incomplete information, unusual requests, and the ambiguity found in real patient conversations.",
+   "inlines": [
+    {
+     "text": "A polished scripted demonstration is not enough. Test interruptions, background noise, incomplete information, unusual requests, and the ambiguity found in real patient conversations."
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "h2",
+   "text": "5. How are clinical routing, exceptions, and safety handled?",
+   "inlines": [
+    {
+     "text": "5. How are clinical routing, exceptions, and safety handled?"
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "p",
+   "text": "Healthcare calls are not ordinary customer-service interactions. A routine-sounding request can contain information that changes its urgency or destination.",
+   "inlines": [
+    {
+     "text": "Healthcare calls are not ordinary customer-service interactions. A routine-sounding request can contain information that changes its urgency or destination."
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "p",
+   "text": "Practices should retain control over how the AI responds to clinical language and operational exceptions. The platform should follow rules established with the organization and route patients appropriately when a request falls outside the approved workflow.",
+   "inlines": [
+    {
+     "text": "Practices should retain control over how the AI responds to clinical language and operational exceptions. The platform should follow rules established with the organization and route patients appropriately when a request falls outside the approved workflow."
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "p",
+   "text": "Ask potential partners:",
+   "inlines": [
+    {
+     "text": "Ask potential partners:"
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "ul",
+   "items": [
+    {
+     "text": "How are urgent phrases or symptoms identified and handled?\n Can routing rules vary by specialty, provider, office, and time of day?",
+     "inlines": [
+      {
+       "text": "How are urgent phrases or symptoms identified and handled?\n Can routing rules vary by specialty, provider, office, and time of day?"
+      }
+     ]
+    },
+    {
+     "text": "What happens when the agent is uncertain?",
+     "inlines": [
+      {
+       "text": "What happens when the agent is uncertain?"
+      }
+     ]
+    },
+    {
+     "text": "How are after-hours requests treated differently?\n Can the practice review and adjust the rules? Is there a clear audit trail for each interaction?",
+     "inlines": [
+      {
+       "text": "How are after-hours requests treated differently?\n Can the practice review and adjust the rules? Is there a clear audit trail for each interaction?"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "p",
+   "text": "The goal is not to make AI act independently in every situation. The goal is to automate the right work while maintaining clear boundaries, escalation paths, and organizational control.",
+   "inlines": [
+    {
+     "text": "The goal is not to make AI act independently in every situation. The goal is to automate the right work while maintaining clear boundaries, escalation paths, and organizational control."
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "h2",
+   "text": "6. Does the platform meet enterprise healthcare security requirements?",
+   "inlines": [
+    {
+     "text": "6. Does the platform meet enterprise healthcare security requirements?"
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "p",
+   "text": "An AI voice agent may interact with protected health information, scheduling data, call recordings, transcripts, and EHR workflows. Security cannot be treated as a feature to examine after the product demonstration.",
+   "inlines": [
+    {
+     "text": "An AI voice agent may interact with protected health information, scheduling data, call recordings, transcripts, and EHR workflows. Security cannot be treated as a feature to examine after the product demonstration."
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "p",
+   "text": "Your evaluation should address:",
+   "inlines": [
+    {
+     "text": "Your evaluation should address:"
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "ul",
+   "items": [
+    {
+     "text": "HIPAA compliance and willingness to sign a business associate agreement",
+     "inlines": [
+      {
+       "text": "HIPAA compliance and willingness to sign a business associate agreement"
+      }
+     ]
+    },
+    {
+     "text": "Encryption of data in transit and at rest",
+     "inlines": [
+      {
+       "text": "Encryption of data in transit and at rest"
+      }
+     ]
+    },
+    {
+     "text": "Access controls and role-based permissions",
+     "inlines": [
+      {
+       "text": "Access controls and role-based permissions"
+      }
+     ]
+    },
+    {
+     "text": "Audit logging and monitoring capabilities",
+     "inlines": [
+      {
+       "text": "Audit logging and monitoring capabilities"
+      }
+     ]
+    },
+    {
+     "text": "Data retention, deletion, and secure disposal policies",
+     "inlines": [
+      {
+       "text": "Data retention, deletion, and secure disposal policies"
+      }
+     ]
+    },
+    {
+     "text": "Subprocessors and third-party model usage",
+     "inlines": [
+      {
+       "text": "Subprocessors and third-party model usage"
+      }
+     ]
+    },
+    {
+     "text": "Security testing and incident-response procedures",
+     "inlines": [
+      {
+       "text": "Security testing and incident-response procedures"
+      }
+     ]
+    },
+    {
+     "text": "The boundaries around how customer data is used",
+     "inlines": [
+      {
+       "text": "The boundaries around how customer data is used"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "p",
+   "text": "Security claims should be supported by documentation your compliance and technology teams can evaluate. The depth of the technical and operational review should match the sensitivity and scope of the proposed deployment.",
+   "inlines": [
+    {
+     "text": "Security claims should be supported by documentation your compliance and technology teams can evaluate. The depth of the technical and operational review should match the sensitivity and scope of the proposed deployment."
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "h2",
+   "text": "7. How will success be measured?",
+   "inlines": [
+    {
+     "text": "7. How will success be measured?"
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "p",
+   "text": "AI adoption should begin with a defined operational problem and a measurable result.",
+   "inlines": [
+    {
+     "text": "AI adoption should begin with a defined operational problem and a measurable result."
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "p",
+   "text": "Possible measures include:",
+   "inlines": [
+    {
+     "text": "Possible measures include:"
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "ul",
+   "items": [
+    {
+     "text": "Percentage of calls answered immediately",
+     "inlines": [
+      {
+       "text": "Percentage of calls answered immediately"
+      }
+     ]
+    },
+    {
+     "text": "Average patient wait time",
+     "inlines": [
+      {
+       "text": "Average patient wait time"
+      }
+     ]
+    },
+    {
+     "text": "Call-abandonment rate",
+     "inlines": [
+      {
+       "text": "Call-abandonment rate"
+      }
+     ]
+    },
+    {
+     "text": "Percentage of requests completed without staff intervention",
+     "inlines": [
+      {
+       "text": "Percentage of requests completed without staff intervention"
+      }
+     ]
+    },
+    {
+     "text": "Scheduling conversion rate",
+     "inlines": [
+      {
+       "text": "Scheduling conversion rate"
+      }
+     ]
+    },
+    {
+     "text": "Staff time returned to higher-value work",
+     "inlines": [
+      {
+       "text": "Staff time returned to higher-value work"
+      }
+     ]
+    },
+    {
+     "text": "Accuracy of routing and documentation",
+     "inlines": [
+      {
+       "text": "Accuracy of routing and documentation"
+      }
+     ]
+    },
+    {
+     "text": "Patient satisfaction",
+     "inlines": [
+      {
+       "text": "Patient satisfaction"
+      }
+     ]
+    },
+    {
+     "text": "Cost per completed interaction",
+     "inlines": [
+      {
+       "text": "Cost per completed interaction"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "p",
+   "text": "Be careful with broad automation percentages that combine completed transactions, routed messages, and transferred calls. Ask vendors to define exactly what they count as “automated” or “resolved.”",
+   "inlines": [
+    {
+     "text": "Be careful with broad automation percentages that combine completed transactions, routed messages, and transferred calls. Ask vendors to define exactly what they count as “automated” or “resolved.”"
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "p",
+   "text": "A successful implementation also requires a baseline. If you do not know today’s call volume, hold time, abandonment rate, or staff workload, it will be difficult to quantify the improvement tomorrow.",
+   "inlines": [
+    {
+     "text": "A successful implementation also requires a baseline. If you do not know today’s call volume, hold time, abandonment rate, or staff workload, it will be difficult to quantify the improvement tomorrow."
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "h2",
+   "text": "Key Takeaway: Start with the workflow, not the technology",
+   "inlines": [
+    {
+     "text": "Key Takeaway: Start with the workflow, not the technology"
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "p",
+   "text": "The best AI voice strategy does not begin by asking how many calls a bot can answer. It begins by identifying where patients encounter friction, where staff lose time, and which workflows can be improved without compromising accuracy, security, or the quality of care.",
+   "inlines": [
+    {
+     "text": "The best AI voice strategy does not begin by asking how many calls a bot can answer. It begins by identifying where patients encounter friction, where staff lose time, and which workflows can be improved without compromising accuracy, security, or the quality of care."
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "p",
+   "text": "For athenahealth practices, particularly complex specialty and multi-location groups, the strongest solution will combine natural patient conversations with deep workflow design. It will understand that appointment scheduling, clinical routing, referrals, prescription requests, and insurance questions are not isolated call types. They are connected parts of the patient journey.",
+   "inlines": [
+    {
+     "text": "For athenahealth practices, particularly complex specialty and multi-location groups, the strongest solution will combine natural patient conversations with deep workflow design. It will understand that appointment scheduling, clinical routing, referrals, prescription requests, and insurance questions are not isolated call types. They are connected parts of the patient journey."
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "p",
+   "text": "That is the standard practices should bring to every product evaluation.",
+   "inlines": [
+    {
+     "text": "That is the standard practices should bring to every product evaluation."
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "h2",
+   "text": "Frequently Asked Questions",
+   "inlines": [
+    {
+     "text": "Frequently Asked Questions"
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "h3",
+   "text": "What is an AI voice agent for athenahealth?",
+   "inlines": [
+    {
+     "text": "What is an AI voice agent for athenahealth?"
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "p",
+   "text": "An AI voice agent answers patient calls, understands the reason for each call, and helps complete approved workflows within the practice’s athenahealth environment. Depending on its capabilities, it may support scheduling, referrals, prescription requests, insurance questions, documentation, and routing.",
+   "inlines": [
+    {
+     "text": "An AI voice agent answers patient calls, understands the reason for each call, and helps complete approved workflows within the practice’s athenahealth environment. Depending on its capabilities, it may support scheduling, referrals, prescription requests, insurance questions, documentation, and routing."
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "h3",
+   "text": "How is an AI voice agent different from an answering service?",
+   "inlines": [
+    {
+     "text": "How is an AI voice agent different from an answering service?"
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "p",
+   "text": "An answering service typically records a message or transfers the caller. A deeply integrated AI voice agent can identify the patient, follow practice-specific rules, complete appropriate tasks, document the interaction, and escalate exceptions to the right team.",
+   "inlines": [
+    {
+     "text": "An answering service typically records a message or transfers the caller. A deeply integrated AI voice agent can identify the patient, follow practice-specific rules, complete appropriate tasks, document the interaction, and escalate exceptions to the right team."
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "h3",
+   "text": "Can an AI voice agent support specialty-specific workflows?",
+   "inlines": [
+    {
+     "text": "Can an AI voice agent support specialty-specific workflows?"
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "p",
+   "text": "Yes—but only if the platform is designed to accommodate the specialty’s scheduling protocols, clinical terminology, routing rules, locations, providers, and appointment types. Practices should ask vendors to demonstrate their own real-world workflows rather than a generic scheduling call.",
+   "inlines": [
+    {
+     "text": "Yes—but only if the platform is designed to accommodate the specialty’s scheduling protocols, clinical terminology, routing rules, locations, providers, and appointment types. Practices should ask vendors to demonstrate their own real-world workflows rather than a generic scheduling call."
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "h3",
+   "text": "How does Transform9 integrate with athenahealth?",
+   "inlines": [
+    {
+     "text": "How does Transform9 integrate with athenahealth?"
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "p",
+   "text": "Transform9 has delivered native athenahealth integration for AI voice agents since 2023. Its enterprise-secure agents are designed to support the complex patient-access, administrative, and clinical workflows of specialty physician practices.",
+   "inlines": [
+    {
+     "text": "Transform9 has delivered native athenahealth integration for AI voice agents since 2023. Its enterprise-secure agents are designed to support the complex patient-access, administrative, and clinical workflows of specialty physician practices."
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "h2",
+   "text": "Meet Transform9 at Thrive Summit 2026",
+   "inlines": [
+    {
+     "text": "Meet Transform9 at Thrive Summit 2026"
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "p",
+   "text": "Transform9 builds enterprise-secure AI voice agents for specialty physician practices. Backed by native athenahealth integration for voice agents since 2023, our agents are designed around the workflows, integrations, and routing complexity that specialty groups manage every day, from front-office patient access through administrative and clinical workflows.",
+   "inlines": [
+    {
+     "text": "Transform9 builds enterprise-secure AI voice agents for specialty physician practices. Backed by native athenahealth integration for voice agents since 2023, our agents are designed around the workflows, integrations, and routing complexity that specialty groups manage every day, from front-office patient access through administrative and clinical workflows."
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "p",
+   "text": "Transform9 is a sponsor of athenahealth Thrive Summit 2026 in Nashville. If your practice is exploring AI voice automation, we would welcome the opportunity to discuss your patient-access challenges and show what a specialty-first approach looks like in practice.",
+   "inlines": [
+    {
+     "text": "Transform9 is a sponsor of athenahealth Thrive Summit 2026 in Nashville. If your practice is exploring AI voice automation, we would welcome the opportunity to discuss your patient-access challenges and show what a specialty-first approach looks like in practice."
+    }
+   ]
+  },
+  {
+   "slot": "1st",
+   "type": "p",
+   "text": "Meet Transform9 at Thrive Summit 2026 or book a demo.",
+   "inlines": [
+    {
+     "text": "Meet Transform9 at Thrive Summit 2026 or",
+     "bold": true
+    },
+    {
+     "text": " "
+    },
+    {
+     "text": "book a demo",
+     "link": {
+      "href": "https://www.transform9.com/book-a-demo",
+      "target": "_blank",
+      "rel": "noopener noreferrer"
+     },
+     "bold": true
+    },
+    {
+     "text": ".",
+     "bold": true
+    }
+   ]
+  }
+ ]
+}

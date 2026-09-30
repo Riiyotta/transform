@@ -1,6 +1,8 @@
 import { useLayoutEffect } from 'react'
 import Navbar from './components/Navbar'
 import CallAlexModal from './components/CallAlexModal'
+import PageLayers from './components/PageLayers'
+import Preloader from './components/Preloader'
 import { FooterBottom, FooterTop } from './components/Footer'
 import { SiteProvider } from './components/ui/SiteContext'
 import { useSmoothScroll } from './motion/smoothScroll'
@@ -10,7 +12,8 @@ const route = resolveRoute(window.location.pathname)
 
 // Page shell — CLONE_SPEC §2: body > .nav-menu, .modal-wrap, .page-wrap (z 2),
 // .footer-bottom-wrap (z 1, sticky reveal). The page inside .page-wrap comes from the route
-// table (src/routes.jsx); `data-page` on <html> names the template family for QA and IA.
+// table (src/routes.jsx), which also sets the per-route shell flags (footer variant, popup,
+// preloader). `data-page` on <html> names the template family for QA and IA.
 export default function App() {
   // M22: Lenis smooth scroll + ScrollTrigger sync/refresh (src/motion/smoothScroll.js).
   useSmoothScroll()
@@ -21,10 +24,12 @@ export default function App() {
   return (
     <SiteProvider>
       <Navbar />
-      <CallAlexModal />
+      {route.preloader && <Preloader />}
+      {route.modal && <CallAlexModal />}
       <div className="page-wrap">
+        <PageLayers />
         {route.page(route.params)}
-        <FooterTop />
+        {route.footer === 'full' && <FooterTop />}
       </div>
       <FooterBottom />
     </SiteProvider>

@@ -1,0 +1,191 @@
+## div.bg-noise-wrap
+  1440: n=1 rect=[0, 0, 1440, 900] position=fixed top=0px ff="Polysans Neutral", Arial, san
+  1024: n=1 rect=[0, 0, 1024, 900] position=fixed top=0px
+  768: n=1 rect=[0, 0, 768, 1024] position=fixed top=0px
+  390: n=1 rect=[0, 0, 390, 844] position=fixed top=0px
+## div.bg-noise
+  1440: n=2 rect=[0, 0, 1440, 900] display=flex opacity=0.5 flex-direction=column position=absolute top=0px background-size=200px auto background-position=0px 0px ff="Polysans Neutral", Arial, san
+  1024: n=2 rect=[0, 0, 1024, 900] display=flex opacity=0.5 flex-direction=column position=absolute top=0px background-size=200px auto background-position=0px 0px
+  768: n=2 rect=[0, 0, 768, 1024] display=flex opacity=0.3 flex-direction=column position=absolute top=0px background-size=200px auto background-position=0px 0px
+  390: n=2 rect=[0, 0, 390, 844] display=flex opacity=0.3 flex-direction=column position=absolute top=0px background-size=200px auto background-position=0px 0px
+## div.bg-pixels-wrapper
+  1440: n=1 rect=[0, 0, 1438.5, 900] max-width=1438.56px position=fixed top=0px transform=matrix(1, 0, 0, 1, 0, 0) ff="Polysans Neutral", Arial, san
+  1024: n=1 rect=[0, 0, 1023, 900] max-width=1022.98px position=fixed top=0px transform=matrix(1, 0, 0, 1, 0, 0)
+  768: n=1 rect=[0, 0, 767.2, 1024] max-width=767.232px flex-direction=column position=fixed top=0px transform=matrix(1, 0, 0, 1, 0, 0)
+  390: n=1 rect=[0, 0, 389.6, 844] max-width=389.61px flex-direction=column position=fixed top=0px transform=matrix(1, 0, 0, 1, 0, 0)
+## div.bg-video-pixels.w-background-video.w-background-video-atom
+  1440: n=1 rect=[0, 0, 1438.5, 900] position=relative top=0px ff="Polysans Neutral", Arial, san
+  1024: n=1 rect=[0, 0, 1023, 900] position=relative top=0px
+  768: n=1 rect=[0, 0, 767.2, 1024] position=relative top=0px
+  390: n=1 rect=[0, 0, 389.6, 844] position=relative top=0px
+## video
+  1440: n=1 rect=[0, 0, 1438.5, 900] margin-top=900px margin-bottom=900px margin-left=1438.55px position=absolute top=-900px background-size=cover background-position=50% 50% ff="Polysans Neutral", Arial, san
+  1024: n=1 rect=[0, 0, 1023, 900] margin-top=900px margin-bottom=900px margin-left=1022.97px position=absolute top=-900px background-size=cover background-position=50% 50%
+  768: n=1 rect=[0, 0, 767.2, 1024] margin-top=1024px margin-bottom=1024px margin-left=767.219px position=absolute top=-1024px background-size=cover background-position=50% 50%
+  390: n=1 rect=[0, 0, 389.6, 844] margin-top=844px margin-bottom=844px margin-left=389.609px position=absolute top=-844px background-size=cover background-position=50% 50%
+## div.bg-pic-pixels
+  1440: n=1 rect=[0, 0, 0, 0] display=none background-size=cover background-position=50% 50% ff="Polysans Neutral", Arial, san
+  1024: n=1 rect=[0, 0, 0, 0] display=none background-size=cover background-position=50% 50%
+  768: n=1 rect=[0, 0, 0, 0] display=none background-size=cover background-position=50% 50%
+  390: n=1 rect=[0, 0, 0, 0] display=none background-size=cover background-position=50% 50%
+## div.page-wrap-solid-bg
+  1440: n=1 rect=[0, 0, 1440, 4274.5] background-color=rgb(2, 8, 1) position=absolute top=0px ff="Polysans Neutral", Arial, san
+  1024: n=1 rect=[0, 0, 1024, 3366.4] background-color=rgb(2, 8, 1) position=absolute top=0px
+  768: n=1 rect=[0, 0, 768, 3489.5] background-color=rgb(2, 8, 1) position=absolute top=0px
+  390: n=1 rect=[0, 0, 390, 3817.7] background-color=rgb(2, 8, 1) position=absolute top=0px
+## section.hero.blog.hide-on-scroll.cs
+  1440: n=1 rect=[0, 0, 1440, 528.9] display=flex padding-top=110px padding-bottom=100.8px row-gap=100.8px column-gap=100.8px flex-direction=column position=relative top=0px ff="Polysans Neutral", Arial, san
+  1024: n=1 rect=[0, 0, 1024, 445.1] display=flex padding-top=110px padding-bottom=71.68px row-gap=71.68px column-gap=71.68px flex-direction=column position=relative top=0px
+  768: n=1 rect=[0, 0, 768, 496.3] display=flex padding-top=110px padding-bottom=30px row-gap=30px column-gap=30px flex-direction=column position=relative top=0px
+  390: n=1 rect=[0, 0, 390, 408.1] display=flex padding-top=90px padding-bottom=30px row-gap=30px column-gap=30px flex-direction=column position=relative top=0px
+## h1.white-text.hero-home.blog
+  1440: n=1 rect=[76, 230, 1198.1, 189.1] margin-top=120px margin-bottom=9px margin-left=76px max-width=1198.08px ff="Polysans Neutral", Arial, san
+  1024: n=1 rect=[76, 230, 834, 134.4] margin-top=120px margin-bottom=9px margin-left=76px max-width=851.968px
+  768: n=1 rect=[47, 230, 607, 227.3] margin-top=120px margin-bottom=9px margin-left=47px max-width=672px
+  390: n=1 rect=[34, 102, 242, 252.1] margin-top=12px margin-bottom=24px margin-left=34px max-width=287.539px
+## span.gsap_split_word.gsap_split_word1
+  1440: n=1 rect=[76, 230, 217.2, 94.5] display=inline-block font-size=93.6px line-height=94.536px color=rgb(255, 255, 255) position=relative top=0px transform=matrix(1, 0, 0, 1, 0, 0) ff="Polysans Neutral", Arial, san "Case"
+  1024: n=1 rect=[76, 230, 154.4, 67.2] display=inline-block font-size=66.56px line-height=67.2256px color=rgb(255, 255, 255) position=relative top=0px transform=matrix(1, 0, 0, 1, 0, 0)
+  768: n=1 rect=[47, 230, 174, 75.8] display=inline-block font-size=75px line-height=75.75px color=rgb(255, 255, 255) position=relative top=0px transform=matrix(1, 0, 0, 1, 0, 0)
+  390: n=1 rect=[34, 102, 115.8, 50.4] display=inline-block font-size=49.92px line-height=50.4192px color=rgb(255, 255, 255) position=relative top=0px transform=matrix(1, 0, 0, 1, 0, 0)
+## span.gsap_split_word.gsap_split_word2
+  1440: n=1 rect=[320.1, 230, 320.5, 94.5] display=inline-block font-size=93.6px line-height=94.536px color=rgb(255, 255, 255) position=relative top=0px transform=matrix(1, 0, 0, 1, 0, 0) ff="Polysans Neutral", Arial, san "Studies"
+  1024: n=1 rect=[249.6, 230, 227.9, 67.2] display=inline-block font-size=66.56px line-height=67.2256px color=rgb(255, 255, 255) position=relative top=0px transform=matrix(1, 0, 0, 1, 0, 0)
+  768: n=1 rect=[242.6, 230, 256.8, 75.8] display=inline-block font-size=75px line-height=75.75px color=rgb(255, 255, 255) position=relative top=0px transform=matrix(1, 0, 0, 1, 0, 0)
+  390: n=1 rect=[34, 152.4, 170.9, 50.4] display=inline-block font-size=49.92px line-height=50.4192px color=rgb(255, 255, 255) position=relative top=0px transform=matrix(1, 0, 0, 1, 0, 0)
+## span.gsap_split_word.gsap_split_word3
+  1440: n=1 rect=[667.6, 230, 18, 94.5] display=inline-block font-size=93.6px line-height=94.536px color=rgb(255, 255, 255) position=relative top=0px transform=matrix(1, 0, 0, 1, 0, 0) ff="Polysans Neutral", Arial, san "|"
+  1024: n=1 rect=[496.7, 230, 12.8, 67.2] display=inline-block font-size=66.56px line-height=67.2256px color=rgb(255, 255, 255) position=relative top=0px transform=matrix(1, 0, 0, 1, 0, 0)
+  768: n=1 rect=[521, 230, 14.4, 75.8] display=inline-block font-size=75px line-height=75.75px color=rgb(255, 255, 255) position=relative top=0px transform=matrix(1, 0, 0, 1, 0, 0)
+  390: n=1 rect=[219.3, 152.4, 9.6, 50.4] display=inline-block font-size=49.92px line-height=50.4192px color=rgb(255, 255, 255) position=relative top=0px transform=matrix(1, 0, 0, 1, 0, 0)
+## span.gsap_split_word.gsap_split_word4
+  1440: n=1 rect=[712.5, 230, 290.5, 94.5] display=inline-block font-size=93.6px line-height=94.536px color=rgb(255, 255, 255) position=relative top=0px transform=matrix(1, 0, 0, 1, 0, 0) ff="Polysans Neutral", Arial, san "Proven"
+  1024: n=1 rect=[528.6, 230, 206.6, 67.2] display=inline-block font-size=66.56px line-height=67.2256px color=rgb(255, 255, 255) position=relative top=0px transform=matrix(1, 0, 0, 1, 0, 0)
+  768: n=1 rect=[47, 305.8, 232.8, 75.8] display=inline-block font-size=75px line-height=75.75px color=rgb(255, 255, 255) position=relative top=0px transform=matrix(1, 0, 0, 1, 0, 0)
+  390: n=1 rect=[34, 202.8, 155, 50.4] display=inline-block font-size=49.92px line-height=50.4192px color=rgb(255, 255, 255) position=relative top=0px transform=matrix(1, 0, 0, 1, 0, 0)
+## span.gsap_split_word.gsap_split_word5
+  1440: n=1 rect=[76, 324.5, 359.4, 94.5] display=inline-block font-size=93.6px line-height=94.536px color=rgb(255, 255, 255) position=relative top=0px transform=matrix(1, 0, 0, 1, 0, 0) ff="Polysans Neutral", Arial, san "Success"
+  1024: n=1 rect=[76, 297.2, 255.6, 67.2] display=inline-block font-size=66.56px line-height=67.2256px color=rgb(255, 255, 255) position=relative top=0px transform=matrix(1, 0, 0, 1, 0, 0)
+  768: n=1 rect=[301.4, 305.8, 288, 75.8] display=inline-block font-size=75px line-height=75.75px color=rgb(255, 255, 255) position=relative top=0px transform=matrix(1, 0, 0, 1, 0, 0)
+  390: n=1 rect=[34, 253.3, 191.7, 50.4] display=inline-block font-size=49.92px line-height=50.4192px color=rgb(255, 255, 255) position=relative top=0px transform=matrix(1, 0, 0, 1, 0, 0)
+## span.gsap_split_word.gsap_split_word6
+  1440: n=1 rect=[462.4, 324.5, 296.5, 94.5] display=inline-block font-size=93.6px line-height=94.536px color=rgb(255, 255, 255) position=relative top=0px transform=matrix(1, 0, 0, 1, 0, 0) ff="Polysans Neutral", Arial, san "Stories"
+  1024: n=1 rect=[350.8, 297.2, 210.9, 67.2] display=inline-block font-size=66.56px line-height=67.2256px color=rgb(255, 255, 255) position=relative top=0px transform=matrix(1, 0, 0, 1, 0, 0)
+  768: n=1 rect=[47, 381.5, 237.6, 75.8] display=inline-block font-size=75px line-height=75.75px color=rgb(255, 255, 255) position=relative top=0px transform=matrix(1, 0, 0, 1, 0, 0)
+  390: n=1 rect=[34, 303.7, 158.2, 50.4] display=inline-block font-size=49.92px line-height=50.4192px color=rgb(255, 255, 255) position=relative top=0px transform=matrix(1, 0, 0, 1, 0, 0)
+## section.all-blogs-section.cs
+  1440: n=1 rect=[0, 528.9, 1440, 1345.5] background-color=rgb(2, 8, 1) margin-bottom=144px border-bottom=1px solid rgba(255, 255, 255, 0.2) position=relative top=0px transform=matrix(1, 0, 0, 1, 0, 0) ff="Polysans Neutral", Arial, san
+  1024: n=1 rect=[0, 445.1, 1024, 1064.2] background-color=rgb(2, 8, 1) margin-bottom=102.4px border-bottom=1px solid rgba(255, 255, 255, 0.2) position=relative top=0px transform=matrix(1, 0, 0, 1, 0, 0)
+  768: n=1 rect=[0, 496.3, 768, 1051.2] background-color=rgb(2, 8, 1) margin-bottom=76.8px position=relative top=0px transform=matrix(1, 0, 0, 1, 0, 0)
+  390: n=1 rect=[0, 408.1, 390, 1017.9] background-color=rgb(2, 8, 1) margin-bottom=39px position=relative top=0px transform=matrix(1, 0, 0, 1, 0, 0)
+## div.blogs-list-wrap
+  1440: n=1 rect=[0, 528.9, 1440, 1344.5] border-top=1px solid rgba(255, 255, 255, 0.2) position=relative top=0px ff="Polysans Neutral", Arial, san
+  1024: n=1 rect=[0, 445.1, 1024, 1063.2] border-top=1px solid rgba(255, 255, 255, 0.2) position=relative top=0px
+  768: n=1 rect=[0, 496.3, 768, 1051.2] border-top=1px solid rgba(255, 255, 255, 0.2) position=relative top=0px
+  390: n=1 rect=[0, 408.1, 390, 1017.9] border-top=1px solid rgba(255, 255, 255, 0.2) position=relative top=0px
+## div.left-sticky-wrap.blogs
+  1440: n=1 rect=[0, 529.9, 385, 1343.5] position=absolute top=0px ff="Polysans Neutral", Arial, san
+  1024: n=1 rect=[0, 446.1, 273.8, 1062.2] position=absolute top=0px
+  768: n=1 rect=[0, 0, 0, 0] display=none position=relative
+  390: n=1 rect=[0, 0, 0, 0] display=none position=relative
+## div.left-sticky-block.blogs
+  1440: n=1 rect=[0, 529.9, 385, 94.4] display=flex padding-top=36px padding-right=36px padding-bottom=36px padding-left=36px row-gap=24px column-gap=24px flex-direction=column position=sticky top=60px ff="Polysans Neutral", Arial, san
+  1024: n=1 rect=[0, 446.1, 273.8, 94.4] display=flex padding-top=36px padding-right=36px padding-bottom=36px padding-left=36px row-gap=24px column-gap=24px flex-direction=column position=sticky top=60px
+  768: n=1 rect=[0, 0, 0, 0] display=flex padding-top=36px padding-right=20px padding-bottom=36px padding-left=20px row-gap=24px column-gap=24px flex-direction=column position=relative
+  390: n=1 rect=[0, 0, 0, 0] display=flex padding-top=36px padding-right=20px padding-bottom=36px padding-left=20px row-gap=24px column-gap=24px flex-direction=column position=relative
+## div._16px-text.white-text
+  1440: n=1 rect=[79, 565.9, 270, 22.4] font-size=16px line-height=22.4px color=rgb(255, 255, 255) margin-left=43px ff="Polysans Neutral", Arial, san "Insights & Stories"
+  1024: n=1 rect=[79, 482.1, 158.8, 22.4] font-size=16px line-height=22.4px color=rgb(255, 255, 255) margin-left=43px
+  768: n=1 rect=[0, 0, 0, 0] font-size=14px line-height=19.6px color=rgb(255, 255, 255) margin-left=43px
+  390: n=1 rect=[0, 0, 0, 0] font-size=16px line-height=22.4px color=rgb(255, 255, 255)
+## div.blog-list-right
+  1440: n=1 rect=[385, 529.9, 1055, 1343.5] display=flex margin-left=385px row-gap=144px column-gap=144px border-left=1px solid rgba(255, 255, 255, 0.2) flex-direction=column position=relative top=0px ff="Polysans Neutral", Arial, san
+  1024: n=1 rect=[273.8, 446.1, 750.2, 1062.2] display=flex margin-left=273.778px row-gap=102.4px column-gap=102.4px border-left=1px solid rgba(255, 255, 255, 0.2) flex-direction=column position=relative top=0px
+  768: n=1 rect=[0, 497.3, 768, 1050.2] display=flex row-gap=76.8px column-gap=76.8px flex-direction=column position=relative top=0px
+  390: n=1 rect=[0, 409.1, 390, 1016.9] display=flex row-gap=39px column-gap=39px flex-direction=column position=relative top=0px
+## div.posts-wrap.cs
+  1440: n=1 rect=[386, 529.9, 1054, 1343.5] padding-top=36px padding-bottom=36px ff="Polysans Neutral", Arial, san
+  1024: n=1 rect=[274.8, 446.1, 749.2, 1062.2] padding-top=36px padding-bottom=36px
+  768: n=1 rect=[0, 497.3, 768, 1050.2] padding-top=20px padding-bottom=20px
+  390: n=1 rect=[0, 409.1, 390, 1016.9] padding-top=20px padding-bottom=20px
+## div.blogs-wrapper.cs.w-dyn-list
+  1440: n=1 rect=[386, 565.9, 1054, 1271.5]  ff="Polysans Neutral", Arial, san
+  1024: n=1 rect=[274.8, 482.1, 749.2, 990.2] 
+  768: n=1 rect=[0, 517.3, 768, 1010.2] 
+  390: n=1 rect=[0, 429.1, 390, 976.9] 
+## div.blogs-list.cs.w-dyn-items
+  1440: n=1 rect=[386, 565.9, 1054, 1271.5] display=flex padding-right=36px padding-left=36px row-gap=36px column-gap=36px flex-direction=column grid-template-columns=1fr 1fr position=relative top=0px ff="Polysans Neutral", Arial, san
+  1024: n=1 rect=[274.8, 482.1, 749.2, 990.2] display=flex padding-right=36px padding-left=36px row-gap=36px column-gap=36px flex-direction=column grid-template-columns=1fr 1fr position=relative top=0px
+  768: n=1 rect=[0, 517.3, 768, 1010.2] display=flex padding-right=20px padding-left=20px row-gap=20px column-gap=20px flex-direction=column grid-template-columns=1fr 1fr position=relative top=0px
+  390: n=1 rect=[0, 429.1, 390, 976.9] display=flex padding-right=20px padding-left=20px row-gap=20px column-gap=20px flex-direction=column grid-template-columns=1fr 1fr position=relative top=0px
+## div.blogs-item.cs.w-dyn-item
+  1440: n=2 rect=[422, 565.9, 982, 576.6]  ff="Polysans Neutral", Arial, san
+  1024: n=2 rect=[310.8, 482.1, 677.2, 444.6] 
+  768: n=2 rect=[20, 517.3, 728, 468.7] 
+  390: n=2 rect=[20, 429.1, 350, 431.2] 
+## a.post-link-block.cs.w-inline-block
+  1440: n=2 rect=[422, 565.9, 982, 576.6] display=flex border-top=1px solid rgba(255, 255, 255, 0.2) border-left=1px solid rgba(255, 255, 255, 0.2) border-bottom=1px solid rgba(255, 255, 255, 0.2) border-right=1px solid rgba(255, 255, 255, 0.2) max-width=100% flex-direction=column position=relative top=0px ff="Polysans Neutral", Arial, san
+  1024: n=2 rect=[310.8, 482.1, 677.2, 444.6] display=flex border-top=1px solid rgba(255, 255, 255, 0.2) border-left=1px solid rgba(255, 255, 255, 0.2) border-bottom=1px solid rgba(255, 255, 255, 0.2) border-right=1px solid rgba(255, 255, 255, 0.2) max-width=100% flex-direction=column position=relative top=0px
+  768: n=2 rect=[20, 517.3, 728, 468.7] display=flex border-top=1px solid rgba(255, 255, 255, 0.2) border-left=1px solid rgba(255, 255, 255, 0.2) border-bottom=1px solid rgba(255, 255, 255, 0.2) border-right=1px solid rgba(255, 255, 255, 0.2) max-width=100% flex-direction=column position=relative top=0px
+  390: n=2 rect=[20, 429.1, 350, 431.2] display=flex border-top=1px solid rgba(255, 255, 255, 0.2) border-left=1px solid rgba(255, 255, 255, 0.2) border-bottom=1px solid rgba(255, 255, 255, 0.2) border-right=1px solid rgba(255, 255, 255, 0.2) max-width=100% flex-direction=column position=relative top=0px
+## div.post-img-wrap.cs
+  1440: n=2 rect=[423, 566.9, 980, 320] display=flex background-color=rgba(255, 255, 255, 0.01) position=relative top=0px ff="Polysans Neutral", Arial, san
+  1024: n=2 rect=[311.8, 483.1, 675.2, 227.5] display=flex background-color=rgba(255, 255, 255, 0.01) position=relative top=0px
+  768: n=2 rect=[21, 518.3, 726, 230.4] display=flex background-color=rgba(255, 255, 255, 0.01) position=relative top=0px
+  390: n=2 rect=[21, 430.1, 348, 187.2] display=flex background-color=rgba(255, 255, 255, 0.01) position=relative top=0px
+## img.cl-wh-logo-on-cell
+  1440: n=2 rect=[764.4, 646.9, 297.1, 160] max-width=100% ff="Polysans Neutral", Arial, san
+  1024: n=2 rect=[543.8, 540, 211.3, 113.8] max-width=100%
+  768: n=2 rect=[277, 575.8, 213.9, 115.2] max-width=100%
+  390: n=2 rect=[108, 476.9, 174, 93.6] max-width=100%
+## img.cl-bl-logo-on-cell
+  1440: n=2 rect=[764.4, 646.8, 297.1, 160] opacity=0 max-width=100% position=absolute top=79.9844px ff="Polysans Neutral", Arial, san
+  1024: n=2 rect=[543.7, 540, 211.3, 113.8] opacity=0 max-width=100% position=absolute top=56.875px
+  768: n=2 rect=[277, 575.8, 213.9, 115.2] opacity=0 max-width=100% position=absolute top=57.5938px
+  390: n=2 rect=[108, 476.9, 174, 93.6] opacity=0 max-width=100% position=absolute top=46.7969px
+## div.post-bottom-wrap.cs
+  1440: n=2 rect=[423, 886.8, 980, 254.6] display=flex padding-top=36px padding-right=36px padding-bottom=36px padding-left=36px row-gap=100.8px column-gap=100.8px border-top=1px solid rgba(255, 255, 255, 0.2) flex-direction=column position=relative top=0px ff="Polysans Neutral", Arial, san
+  1024: n=2 rect=[311.8, 710.7, 675.2, 215] display=flex padding-top=36px padding-right=36px padding-bottom=36px padding-left=36px row-gap=71.68px column-gap=71.68px border-top=1px solid rgba(255, 255, 255, 0.2) flex-direction=column position=relative top=0px
+  768: n=2 rect=[21, 748.6, 726, 236.3] display=flex padding-top=20px padding-right=20px padding-bottom=20px padding-left=20px row-gap=92.16px column-gap=92.16px border-top=1px solid rgba(255, 255, 255, 0.2) flex-direction=column position=relative top=0px
+  390: n=2 rect=[21, 617.3, 348, 242] display=flex padding-top=20px padding-right=20px padding-bottom=20px padding-left=20px row-gap=70.2px column-gap=70.2px border-top=1px solid rgba(255, 255, 255, 0.2) flex-direction=column position=relative top=0px
+## div._30px-text.white.cs-title
+  1440: n=2 rect=[459, 923.8, 310.5, 36] font-size=29.9952px line-height=35.9942px color=rgb(255, 255, 255) position=relative top=0px ff="Polysans Neutral", Arial, san "Southern Bone & Joint"
+  1024: n=2 rect=[347.8, 747.7, 220.7, 25.6] font-size=21.3299px line-height=25.5959px color=rgb(255, 255, 255) position=relative top=0px
+  768: n=2 rect=[41, 769.6, 310.6, 36] font-size=30px line-height=36px color=rgb(255, 255, 255) position=relative top=0px
+  390: n=2 rect=[41, 638.3, 308, 72] font-size=30px line-height=36px color=rgb(255, 255, 255) position=relative top=0px
+## div.post-arrow-wrap
+  1440: n=2 rect=[1303, 1041.4, 100, 100] display=flex background-color=rgb(0, 51, 204) opacity=0 position=absolute top=153.578px ff="Polysans Neutral", Arial, san
+  1024: n=2 rect=[887, 825.7, 100, 100] display=flex background-color=rgb(0, 51, 204) opacity=0 position=absolute top=114.047px
+  768: n=2 rect=[0, 0, 0, 0] display=none background-color=rgb(0, 51, 204) opacity=0 position=absolute
+  390: n=2 rect=[0, 0, 0, 0] display=none background-color=rgb(0, 51, 204) opacity=0 position=absolute
+## img.arrow.white.post-arrow
+  1440: n=2 rect=[1339, 1077.4, 28, 28] max-width=100% position=relative top=0px ff="Polysans Neutral", Arial, san
+  1024: n=2 rect=[923, 861.7, 28, 28] max-width=100% position=relative top=0px
+  768: n=2 rect=[0, 0, 0, 0] display=inline-block max-width=100% position=relative
+  390: n=2 rect=[0, 0, 0, 0] display=inline-block max-width=100% position=relative
+## div._16px-text.white-text.highlight-text-alt
+  1440: n=1 rect=[502, 1060.6, 505, 44.8] font-size=16px line-height=22.4px color=rgb(255, 255, 255) margin-left=43px max-width=512px white-space=pre-wrap ff="Polysans Neutral", Arial, san "A Partnership Built on Trust:
+How Southe"
+  1024: n=1 rect=[390.8, 844.9, 505, 44.8] font-size=16px line-height=22.4px color=rgb(255, 255, 255) margin-left=43px max-width=512px white-space=pre-wrap
+  768: n=1 rect=[84, 897.8, 480.2, 67.2] font-size=16px line-height=22.4px color=rgb(255, 255, 255) margin-left=43px max-width=70% white-space=pre-wrap
+  390: n=1 rect=[41, 780.5, 277.2, 58.8] font-size=14px line-height=19.6px color=rgb(255, 255, 255) max-width=90% white-space=pre-wrap
+## div.testim-bottom-cont.blog.cs
+  1440: n=1 rect=[459, 1673.2, 622.1, 127.2] display=flex row-gap=72px column-gap=72px position=relative top=0px ff="Polysans Neutral", Arial, san
+  1024: n=1 rect=[347.8, 1325.5, 601.3, 109.8] display=flex row-gap=51.2px column-gap=51.2px position=relative top=0px
+  768: n=1 rect=[41, 1386.5, 384, 120] display=flex row-gap=38.4px column-gap=38.4px max-width=384px position=relative top=0px
+  390: n=1 rect=[41, 1231.6, 308, 153.4] display=flex row-gap=24px column-gap=24px flex-direction=column position=relative top=0px
+## div.testim-point-wrap.blog.cs
+  1440: n=2 rect=[459, 1673.2, 275, 127.2] display=flex padding-left=16px row-gap=24.0048px column-gap=24.0048px border-left=1px solid rgb(162, 250, 142) flex-direction=column ff="Polysans Neutral", Arial, san
+  1024: n=2 rect=[347.8, 1325.5, 275, 109.8] display=flex padding-left=16px row-gap=17.0701px column-gap=17.0701px border-left=1px solid rgb(162, 250, 142) flex-direction=column
+  768: n=2 rect=[41, 1386.5, 172.8, 120] display=flex padding-left=16px row-gap=12.8026px column-gap=12.8026px border-left=1px solid rgb(162, 250, 142) flex-direction=column
+  390: n=2 rect=[41, 1231.6, 308, 74.5] display=flex padding-left=16px row-gap=6.5013px column-gap=6.5013px border-left=1px solid rgb(162, 250, 142) flex-direction=column
+## div._30px-text.white.testim-num.cs
+  1440: n=2 rect=[476, 1673.2, 62.4, 36] font-size=29.9952px line-height=35.9942px color=rgb(255, 255, 255) position=relative top=0px ff="Polysans Neutral", Arial, san "80%"
+  1024: n=2 rect=[364.8, 1325.5, 44.4, 25.6] font-size=21.3299px line-height=25.5959px color=rgb(255, 255, 255) position=relative top=0px
+  768: n=2 rect=[58, 1386.5, 49.9, 28.8] font-size=24px line-height=28.8px color=rgb(255, 255, 255) position=relative top=0px
+  390: n=2 rect=[58, 1231.6, 49.9, 28.8] font-size=24px line-height=28.8px color=rgb(255, 255, 255) position=relative top=0px
+## div._16px-text.white-text.blog-point.cs
+  1440: n=2 rect=[519, 1733.2, 215, 67.2] font-size=16px line-height=22.4px color=rgb(255, 255, 255) margin-left=43px max-width=215.04px ff="Polysans Neutral", Arial, san "reduction in call abandonment rate — fro"
+  1024: n=2 rect=[407.8, 1368.2, 215, 67.2] font-size=16px line-height=22.4px color=rgb(255, 255, 255) margin-left=43px max-width=215.04px
+  768: n=2 rect=[101, 1428.1, 112.8, 78.4] font-size=14px line-height=19.6px color=rgb(255, 255, 255) margin-left=43px max-width=188.16px
+  390: n=2 rect=[58, 1266.9, 291, 39.2] font-size=14px line-height=19.6px color=rgb(255, 255, 255)

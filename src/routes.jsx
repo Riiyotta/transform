@@ -1,19 +1,31 @@
 import HomePage from './pages/HomePage'
 import PageStub from './pages/PageStub'
+import ComparePage from './pages/ComparePage'
+import BookDemoPage from './pages/BookDemoPage'
+import LegalPage from './pages/LegalPage'
+import BlogIndexPage from './pages/BlogIndexPage'
+import BlogPostPage from './pages/BlogPostPage'
+import CaseStudiesIndexPage from './pages/CaseStudiesIndexPage'
+import CaseStudyPage from './pages/CaseStudyPage'
 
 // Route table (ROUTES.md). The original is a multi-page Webflow site: every internal link is a
 // full page load, so the clone keeps plain <a href> links and picks the page from the URL at
 // load time instead of using client-side navigation. `family` is the IA template family.
 // Detail routes take their slug from the path; unknown slugs fall through to NotFound.
+// Shell flags (specs/*.md §1 "shell differences"; defaults = homepage shell):
+//   footer: 'full' (FooterTop + FooterBottom) | 'bottom' (FooterBottom only, /book-a-demo)
+//   modal: render the Call Alex popup (homepage + /compare only)
+//   preloader: render `.preloader-wrap` for the load intro (/compare + legal)
+const SHELL = { footer: 'full', modal: false, preloader: false }
 export const ROUTES = [
-  { family: 'home', match: /^\/$/, title: 'Transform9 — Maximize Every Call with a Custom AI Agent', page: () => <HomePage /> },
-  { family: 'compare', match: /^\/compare$/, title: 'Compare', page: () => <PageStub family="compare" /> },
-  { family: 'book-a-demo', match: /^\/book-a-demo$/, title: 'Book a Demo', page: () => <PageStub family="book-a-demo" /> },
-  { family: 'blog-index', match: /^\/blog$/, title: 'Blog', page: () => <PageStub family="blog-index" /> },
-  { family: 'blog-post', match: /^\/blog\/([^/]+)$/, title: 'Blog', page: () => <PageStub family="blog-post" /> },
-  { family: 'case-studies-index', match: /^\/case-studies$/, title: 'Case Studies', page: () => <PageStub family="case-studies-index" /> },
-  { family: 'case-study', match: /^\/case-studies\/([^/]+)$/, title: 'Case Studies', page: () => <PageStub family="case-study" /> },
-  { family: 'legal', match: /^\/(terms-of-use|privacy-policy|hipaa)$/, title: 'Legal', page: () => <PageStub family="legal" /> },
+  { ...SHELL, modal: true, family: 'home', match: /^\/$/, title: 'Transform9 — Maximize Every Call with a Custom AI Agent', page: (params) => <HomePage /> },
+  { ...SHELL, modal: true, preloader: true, family: 'compare', match: /^\/compare$/, title: 'Compare', page: (params) => <ComparePage params={params} /> },
+  { ...SHELL, footer: 'bottom', family: 'book-a-demo', match: /^\/book-a-demo$/, title: 'Book a Demo', page: (params) => <BookDemoPage params={params} /> },
+  { ...SHELL, family: 'blog-index', match: /^\/blog$/, title: 'Blog', page: (params) => <BlogIndexPage params={params} /> },
+  { ...SHELL, family: 'blog-post', match: /^\/blog\/([^/]+)$/, title: 'Blog', page: (params) => <BlogPostPage params={params} /> },
+  { ...SHELL, family: 'case-studies-index', match: /^\/case-studies$/, title: 'Case Studies', page: (params) => <CaseStudiesIndexPage params={params} /> },
+  { ...SHELL, family: 'case-study', match: /^\/case-studies\/([^/]+)$/, title: 'Case Studies', page: (params) => <CaseStudyPage params={params} /> },
+  { ...SHELL, preloader: true, family: 'legal', match: /^\/(terms-of-use|privacy-policy|hipaa)$/, title: 'Legal', page: (params) => <LegalPage params={params} /> },
 ]
 
 export function resolveRoute(pathname) {
@@ -22,5 +34,5 @@ export function resolveRoute(pathname) {
     const m = path.match(r.match)
     if (m) return { ...r, params: m.slice(1) }
   }
-  return { family: 'not-found', title: 'Page Not Found', params: [], page: () => <PageStub family="not-found" /> }
+  return { ...SHELL, family: 'not-found', title: 'Page Not Found', params: [], page: (params) => <PageStub family="not-found" /> }
 }

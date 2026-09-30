@@ -1,0 +1,266 @@
+{
+  "url": "https://www.transform9.com/blog",
+  "template": "blog index (wf page 69664f533e7e9450caa2aa30)",
+  "paginationParam": "523ae0d4_page",
+  "pageSize": 4,
+  "page1": {
+    "meta": {
+      "title": "Blog",
+      "description": "Our blog is regularly updated with insights, tips, and success stories to help you improve patient experience and stay ahead in healthcare.",
+      "ogTitle": "Blog",
+      "ogDescription": "Our blog is regularly updated with insights, tips, and success stories to help you improve patient experience and stay ahead in healthcare.",
+      "ogImage": "https://cdn.prod.website-files.com/684a82e3294991569082d379/68b191f59984678d1bd51942_Open%20Graph-opt.png",
+      "twitterTitle": "Blog",
+      "twitterImage": null,
+      "jsonLd": null,
+      "wfPage": "69664f533e7e9450caa2aa30",
+      "wfCollection": null,
+      "wfItemSlug": null
+    },
+    "heroHeading": "Transform 9 Blog: Expert Insights & Growth Strategies",
+    "featured": [
+      {
+        "order": 1,
+        "href": "/blog/ai-voice-agents-for-athenahealth-7-questions-to-ask-before-choosing-a-platform",
+        "linkClass": "post-hor-wrap featured w-inline-block",
+        "title": "AI Voice Agents for athenahealth: 7 Questions to Ask Before Choosing a Platform",
+        "image": "https://cdn.prod.website-files.com/6961001f1082da89878fcb00/6aac50cd7d67b3ee047d814c_featured-compressed.jpeg",
+        "logoWhite": null,
+        "logoBlack": null,
+        "highlight": null,
+        "meta": [
+          "Transorm9",
+          "September 17, 2026"
+        ],
+        "stats": [],
+        "hiddenConditional": []
+      }
+    ],
+    "list": [
+      {
+        "order": 1,
+        "href": "/blog/ai-voice-agents-for-athenahealth-7-questions-to-ask-before-choosing-a-platform",
+        "linkClass": "post-link-block bl w-inline-block",
+        "title": "AI Voice Agents for athenahealth: 7 Questions to Ask Before Choosing a Platform",
+        "image": "https://cdn.prod.website-files.com/6961001f1082da89878fcb00/6aac50cd7d67b3ee047d814c_featured-compressed.jpeg",
+        "logoWhite": null,
+        "logoBlack": null,
+        "highlight": null,
+        "meta": [
+          "Transorm9",
+          "September 17, 2026"
+        ],
+        "stats": [],
+        "hiddenConditional": []
+      },
+      {
+        "order": 2,
+        "href": "/blog/medical-practice-call-volume-january",
+        "linkClass": "post-link-block bl w-inline-block",
+        "title": "Your Practice's January Call Surge Starts Being a Problem in October",
+        "image": "https://cdn.prod.website-files.com/6961001f1082da89878fcb00/6aaaeb672e1e0997bba4a0a0_featured-compressed.jpeg",
+        "logoWhite": null,
+        "logoBlack": null,
+        "highlight": null,
+        "meta": [
+          "Transform9",
+          "September 16, 2026"
+        ],
+        "stats": [],
+        "hiddenConditional": []
+      },
+      {
+        "order": 3,
+        "href": "/blog/ent-reimbursement-in-2027-what-medicare-s-proposed-cuts-mean-for-otolaryngology-practices",
+        "linkClass": "post-link-block bl w-inline-block",
+        "title": "ENT Reimbursement in 2027: What Medicare's Proposed Cuts Mean for Otolaryngology Practices",
+        "image": "https://cdn.prod.website-files.com/6961001f1082da89878fcb00/6a9620058ff8e8731722e05d_featured.png",
+        "logoWhite": null,
+        "logoBlack": null,
+        "highlight": null,
+        "meta": [
+          "Transform9",
+          "August 31, 2026"
+        ],
+        "stats": [],
+        "hiddenConditional": []
+      },
+      {
+        "order": 4,
+        "href": "/blog/orthopedic-ai-answering-service",
+        "linkClass": "post-link-block bl w-inline-block",
+        "title": "The Orthopedic Bottleneck: Why Traditional Answering Services Are Failing Your Practice",
+        "image": "https://cdn.prod.website-files.com/6961001f1082da89878fcb00/6a84b734cfe28e9a4355d574_featured-compressed.jpeg",
+        "logoWhite": null,
+        "logoBlack": null,
+        "highlight": null,
+        "meta": [
+          "Transform9",
+          "August 18, 2026"
+        ],
+        "stats": [],
+        "hiddenConditional": []
+      }
+    ],
+    "listHeading": "All Articles",
+    "leftLabel": "Thoughts & Notes",
+    "pagination": [
+      {
+        "cls": "_16px-text white-text blogs-descr",
+        "href": null,
+        "text": "Our blog is regularly updated with insights, tips, and success stories to help you improve patient experience and stay ahead in healthcare.",
+        "aria": null
+      },
+      {
+        "cls": "w-pagination-next _30px-text white _w-underline load-more",
+        "href": "?523ae0d4_page=2",
+        "text": "Load More",
+        "aria": "Next Page"
+      },
+      {
+        "cls": "",
+        "href": "?523ae0d4_page=2",
+        "text": "",
+        "aria": null
+      },
+      {
+        "cls": "w-page-count page-count",
+        "href": null,
+        "text": "1 / 2",
+        "aria": "Page 1 of 2"
+      }
+    ],
+    "fsList": {
+      "fs-list-resetix": "true",
+      "fs-list-element": "list",
+      "fs-list-load": "more"
+    }
+  },
+  "page2": {
+    "meta": {
+      "title": "Blog",
+      "description": "Our blog is regularly updated with insights, tips, and success stories to help you improve patient experience and stay ahead in healthcare.",
+      "ogTitle": "Blog",
+      "ogDescription": "Our blog is regularly updated with insights, tips, and success stories to help you improve patient experience and stay ahead in healthcare.",
+      "ogImage": "https://cdn.prod.website-files.com/684a82e3294991569082d379/68b191f59984678d1bd51942_Open%20Graph-opt.png",
+      "twitterTitle": "Blog",
+      "twitterImage": null,
+      "jsonLd": null,
+      "wfPage": "69664f533e7e9450caa2aa30",
+      "wfCollection": null,
+      "wfItemSlug": null
+    },
+    "heroHeading": "Transform 9 Blog: Expert Insights & Growth Strategies",
+    "featured": [
+      {
+        "order": 1,
+        "href": "/blog/ai-voice-agents-for-athenahealth-7-questions-to-ask-before-choosing-a-platform",
+        "linkClass": "post-hor-wrap featured w-inline-block",
+        "title": "AI Voice Agents for athenahealth: 7 Questions to Ask Before Choosing a Platform",
+        "image": "https://cdn.prod.website-files.com/6961001f1082da89878fcb00/6aac50cd7d67b3ee047d814c_featured-compressed.jpeg",
+        "logoWhite": null,
+        "logoBlack": null,
+        "highlight": null,
+        "meta": [
+          "Transorm9",
+          "September 17, 2026"
+        ],
+        "stats": [],
+        "hiddenConditional": []
+      }
+    ],
+    "list": [
+      {
+        "order": 1,
+        "href": "/blog/why-generic-ai-virtual-assistants-fail-specialty-medical-practices-and-what-actually-works",
+        "linkClass": "post-link-block bl w-inline-block",
+        "title": "Why Generic AI Virtual Assistants Fail Specialty Medical Practices (and What Actually Works)",
+        "image": "https://cdn.prod.website-files.com/6961001f1082da89878fcb00/6a7a5062d71f1eb2d1d87d96_front%20desk%20image.jpg",
+        "logoWhite": null,
+        "logoBlack": null,
+        "highlight": null,
+        "meta": [
+          "Transform9",
+          "August 10, 2026"
+        ],
+        "stats": [],
+        "hiddenConditional": []
+      },
+      {
+        "order": 2,
+        "href": "/blog/why-traditional-ivr-is-failing-your-practice-and-how-ai-voice-agents-fix-the-press-0-trap",
+        "linkClass": "post-link-block bl w-inline-block",
+        "title": "Why Traditional IVR is Failing Your Practice—and How AI Voice Agents Fix the 'Press 0' Trap",
+        "image": "https://cdn.prod.website-files.com/6961001f1082da89878fcb00/6a76262bcb74f74bb12693ea_Screenshot%202026-08-07%20at%201.38.27%E2%80%AFPM.png",
+        "logoWhite": null,
+        "logoBlack": null,
+        "highlight": null,
+        "meta": [
+          "Transform9",
+          "August 7, 2026"
+        ],
+        "stats": [],
+        "hiddenConditional": []
+      },
+      {
+        "order": 3,
+        "href": "/blog/the-12-month-shift-why-voice-ai-agents-are-now-a-financial-imperative-for-specialty-practices",
+        "linkClass": "post-link-block bl w-inline-block",
+        "title": "The 12-Month Shift: Why Voice AI Agents Are Now a Financial Imperative for Specialty Practices",
+        "image": "https://cdn.prod.website-files.com/6961001f1082da89878fcb00/6a74a84e37d8d93140d6c51a_Screenshot%202026-08-06%20at%2010.29.05%E2%80%AFAM.png",
+        "logoWhite": null,
+        "logoBlack": null,
+        "highlight": null,
+        "meta": [
+          "Transform9",
+          "August 6, 2026"
+        ],
+        "stats": [],
+        "hiddenConditional": []
+      },
+      {
+        "order": 4,
+        "href": "/blog/redefining-healthcare-ai",
+        "linkClass": "post-link-block bl w-inline-block",
+        "title": "Redefining Healthcare AI: The Future Of Medicine",
+        "image": "https://cdn.prod.website-files.com/6961001f1082da89878fcb00/6970b17878db95b46a287768_5.webp",
+        "logoWhite": null,
+        "logoBlack": null,
+        "highlight": null,
+        "meta": [
+          "Transform9",
+          "January 15, 2026"
+        ],
+        "stats": [],
+        "hiddenConditional": []
+      }
+    ],
+    "listHeading": "All Articles",
+    "leftLabel": "Thoughts & Notes",
+    "pagination": [
+      {
+        "cls": "_16px-text white-text blogs-descr",
+        "href": null,
+        "text": "Our blog is regularly updated with insights, tips, and success stories to help you improve patient experience and stay ahead in healthcare.",
+        "aria": null
+      },
+      {
+        "cls": "w-pagination-previous",
+        "href": "?523ae0d4_page=1",
+        "text": "Previous",
+        "aria": "Previous Page"
+      },
+      {
+        "cls": "w-page-count page-count",
+        "href": null,
+        "text": "2 / 2",
+        "aria": "Page 2 of 2"
+      }
+    ],
+    "fsList": {
+      "fs-list-resetix": "true",
+      "fs-list-element": "list",
+      "fs-list-load": "more"
+    }
+  }
+}

@@ -1,0 +1,467 @@
+<body .body > {0,0 1440x8142}
+  <div .nav-menu.w-nav #book-demo-btn role=banner> {0,0 1440x60}
+    <div .nav-container > {0,0 1440x60}
+      <a .logo-wrap.w-nav-brand href=/ aria-label=home> {0,0 176x60}
+        <img .logo-white src=https://cdn.prod.website-files.com/684a82e3294991569082d379/68639bb30a93107837363b04_logo-2.svg loading=eager alt=transform9 logo> {23,11 130x38}
+        <img .logo-black src=https://cdn.prod.website-files.com/684a82e3294991569082d379/68906575d051bc5b61776ed5_logo-black.svg loading=eager alt=transform9 logo> {23,11 130x38}
+      <nav .nav-links.w-nav-menu role=navigation> {176,0 1264x60}
+        <div .nav-links-cont > {176,0 1264x60}
+          <div .nav-links-left > {176,0 360x60}
+            <a .nav-link-block._1st.w-inline-block href=/compare> {176,0 77x60}
+              <div .nav-text-wrap > {176,20 57x20}
+                <div .nav-text > {176,20 57x20}
+                  "Compare"
+                <div .nav-text.hiden > {176,40 57x20}
+                  "Compare"
+            <a .nav-link-block.w-inline-block href=/blog> {253,0 68x60}
+              <div .nav-text-wrap > {273,20 28x20}
+                <div .nav-text > {273,20 28x20}
+                  "Blog"
+                <div .nav-text.hiden > {273,40 28x20}
+                  "Blog"
+            <a .nav-link-block.w-inline-block href=/case-studies> {321,0 124x60}
+              <div .nav-text-wrap > {341,20 84x20}
+                <div .nav-text > {341,20 84x20}
+                  "Case Studies"
+                <div .nav-text.hiden > {341,40 84x20}
+                  "Case Studies"
+            <a .nav-link-block.w-inline-block href=https://apply.workable.com/transform9/ target=_blank> {446,0 90x60}
+              <div .nav-text-wrap > {466,20 50x20}
+                <div .nav-text > {466,20 50x20}
+                  "Careers"
+                <div .nav-text.hiden > {466,40 50x20}
+                  "Careers"
+          <div .nav-links-right > {1225,0 215x60}
+            <a .nav-link-block.login.w-inline-block href=https://portal.transform9.com/> {1225,0 83x60}
+              <div .nav-text-wrap > {1249,20 35x20}
+                <div .nav-text > {1249,20 35x20}
+                  "Login"
+                <div .nav-text.hiden > {1249,40 35x20}
+                  "Login"
+            <a .nav-link-block.cta.w-inline-block href=/book-a-demo> {1308,0 132x60}
+              <div .nav-text-wrap > {1332,20 84x20}
+                <div .cta > {1332,20 84x20}
+                  "Book a Demo"
+          <div .bg-noise.nav-tabet > [display:none] {0,0 0x0}
+      <a .nav-link-block.cta.mobil-top-cta.w-inline-block href=/book-a-demo> [display:none] {0,0 0x0}
+        <div .nav-text-wrap > {0,0 0x0}
+          <div .cta > {0,0 0x0}
+            "Book a Demo"
+      <div .menu-btn.w-nav-button role=button aria-label=menu> [display:none] {0,0 0x0}
+        <div .menu-btn-wrap > {0,0 0x0}
+          <img .burger-white src=https://cdn.prod.website-files.com/684a82e3294991569082d379/68a300503634463bc8a25527_menu-burger.svg loading=eager alt=menu icon> {0,0 0x0}
+          <img .nav-cross-white src=https://cdn.prod.website-files.com/684a82e3294991569082d379/689caa3e67c8dbd2e70dc1bc_close-icon-white.svg loading=eager alt=close icon> {0,0 0x0}
+          <img .burger-black src=https://cdn.prod.website-files.com/684a82e3294991569082d379/68a5a50307e780f41451718b_menu-burger-close.svg loading=eager alt=> {0,0 0x0}
+      <div .nav-border-on-white > {0,59 1440x1}
+    <div .w-nav-overlay #w-nav-overlay-0> [display:none] {0,0 0x0}
+  <div .preloader-wrap > {0,0 1440x900}
+  <div .page-wrap > {0,0 1440x7777}
+    <div .bg-noise-wrap > {0,0 1440x900}
+      <div .bg-noise.test-home > {0,0 1440x900}
+    <div .bg-pixels-wrapper > {0,0 1439x900}
+      <div .bg-video-pixels.w-background-video.w-background-video-atom > {0,0 1439x900}
+        <video #a7474c60-9259-2d1f-d197-47b7cabab9e7-video> {0,0 1439x900}
+          <source src=https://cdn.prod.website-files.com/684a82e3294991569082d379%2F6aae963300a522b95e867d73_Tablet-Final_mp4.mp4> {0,0 0x0}
+          <source src=https://cdn.prod.website-files.com/684a82e3294991569082d379%2F6aae963300a522b95e867d73_Tablet-Final_webm.webm> {0,0 0x0}
+      <div .bg-pic-pixels > [display:none] {0,0 0x0}
+    <div .page-wrap-solid-bg > {0,0 1440x7777}
+    <section .hero.hide-on-scroll > {0,0 1440x900}
+      <h1 .white-text.hero-home.legal > {76,230 1198x189}
+        "How We Protect Your Data: Privacy Policy | Transform9"
+      <div .hero-home-bottom.legal > {0,597 1440x303}
+        <div .hero-bottom-block.full-width > {0,597 1440x302}
+          <div ._16px-text.white-text > {79,633 1325x22}
+            "About Page"
+          <p ._30px-text.home-hero-text.white.legal-privacy > {79,719 729x144}
+            "This Privacy Policy explains what Personally Identifiable Information (“PII”) is, as defined by US privacy law, and how we collect, use, protect, or otherwise handle it in connection with our website."
+        <div .line-hor.on-hero > {0,597 1440x1}
+      <div .bg-circle-wrap.home-hero.legal > {1440,-1080 0x864}
+        <div .bg-circle.home-hero-circle > [display:none] {0,0 0x0}
+    <section .legal-section > {0,900 1440x6126}
+      <div .legal-cont > {360,980 720x6046}
+        <div .legal-block > {360,980 720x206}
+          <h2 ._30px-text.white > {360,980 720x72}
+            "What personal information do we collect from the people that visit our blog, website or app?"
+          <div .legal-text-wrap > {360,1082 720x67}
+            <p ._16px-text.white-text.transp > {403,1082 677x67}
+              "When ordering or registering on our site, as appropriate, you may be asked to enter your name, email address, mailing address, phone number or other details to help you with your experience."
+        <div .legal-block > {360,1222 720x148}
+          <h2 ._30px-text.white > {360,1222 720x36}
+            "When do we collect information?"
+          <div .legal-text-wrap > {360,1288 720x45}
+            <p ._16px-text.white-text.transp > {403,1288 677x45}
+              "We collect information from you when you subscribe to a newsletter, fill out a form, Use Live Chat or enter information on our site."
+        <div .legal-block > {360,1406 720x261}
+          <h2 ._30px-text.white > {360,1406 720x36}
+            "How do we use your information?"
+          <div .legal-text-wrap > {360,1472 720x158}
+            <p ._16px-text.white-text.transp > {403,1472 677x67}
+              "We may use the information we collect from you when you register, make a purchase, sign up for our newsletter, respond to a survey or marketing communication, surf the website, or use certain other site features in the following ways:"
+            <ul .list-white.transp role=list> {360,1563 720x67}
+              <li .list-item > {400,1563 680x22}
+                <p ._16px-text.white-text.transp > {443,1563 637x22}
+                  "To improve our website in order to better serve you."
+              <li .list-item > {400,1586 680x22}
+                <p ._16px-text.white-text.transp > {443,1586 637x22}
+                  "To send periodic emails regarding your order or other products and services."
+              <li .list-item > {400,1608 680x22}
+                <p ._16px-text.white-text.transp > {443,1608 637x22}
+                  "To follow up with them after correspondence (live chat, email or phone inquiries)."
+        <div .legal-block > {360,1703 720x416}
+          <h2 ._30px-text.white > {360,1703 720x36}
+            "How do we protect your information?"
+          <div .legal-text-wrap > {360,1769 720x313}
+            <p ._16px-text.white-text.transp > {403,1769 677x313}
+              "We do not use vulnerability scanning and/or scanning to PCI standards."
+              <br > {924,1772 0x16}
+              "We only provide articles and information. We never ask for credit card numbers."
+              <br > {978,1795 0x16}
+              "We use regular Malware Scanning."
+              <br > {658,1817 0x16}
+              <br > {403,1839 0x16}
+              "Your personal information is contained behind secured networks and is only accessible by a limited number of persons who have special access rights to such systems, and are required to keep the information confidential. In addition, all sensitive/credit information you supply is encrypted via Secure Socket Layer (SSL) technology."
+              <br > {787,1929 0x16}
+              <br > {403,1951 0x16}
+              "We implement a variety of security measures when a user places an order enters, submits, or accesses their information to maintain the safety of your personal information."
+              <br > {973,1996 0x16}
+              <br > {403,2019 0x16}
+              "All transactions are processed through a gateway provider and are not stored or processed on our servers."
+        <div .legal-block > {360,2156 720x647}
+          <h2 ._30px-text.white > {360,2156 720x36}
+            "Do we use ‘cookies’?"
+          <div .legal-text-wrap > {360,2222 720x544}
+            <p ._16px-text.white-text.transp > {403,2222 677x179}
+              "Yes. Cookies are small files that a site or its service provider transfers to your computer’s hard drive through your Web browser (if you allow) that enables the site’s or service provider’s systems to recognize your browser and capture and remember certain information. For instance, we use cookies to help us remember and process the items in your shopping cart. They are also used to help us understand your preferences based on previous or current site activity, which enables us to provide you with improved services. We also use cookies to help us compile aggregate data about site traffic and site interaction so that we can offer better site experiences and tools in the future."
+            <p ._16px-text.white-text.transp > {403,2425 677x22}
+              "We use cookies to:"
+            <ul .list-white.transp role=list> {360,2471 720x90}
+              <li .list-item > {400,2471 680x22}
+                <p ._16px-text.white-text.transp > {443,2471 637x22}
+                  "Keep track of advertisements."
+              <li .list-item > {400,2494 680x67}
+                <p ._16px-text.white-text.transp > {443,2494 637x67}
+                  "Compile aggregate data about site traffic and site interactions in order to offer better site experiences and tools in the future. We may also use trusted third-party services that track this information on our behalf."
+            <p ._16px-text.white-text.transp > {403,2585 677x90}
+              "You can choose to have your computer warn you each time a cookie is being sent, or you can choose to turn off all cookies. You do this through your browser settings. Since browser is a little different, look at your browser’s Help Menu to learn the correct way to modify your cookies."
+            <p ._16px-text.white-text.transp > {403,2698 677x67}
+              "If you turn cookies off, Some of the features that make your site experience more efficient may not function properly. It won’t affect the user’s experience that make your site experience more efficient and may not function properly."
+        <div .legal-block > {360,2839 720x148}
+          <h2 ._30px-text.white > {360,2839 720x36}
+            "Third-party disclosure"
+          <div .legal-text-wrap > {360,2905 720x45}
+            <p ._16px-text.white-text.transp > {403,2905 677x45}
+              "We do not sell, trade, or otherwise transfer to outside parties your Personally Identifiable Information."
+        <div .legal-block > {360,3022 720x125}
+          <h2 ._30px-text.white > {360,3022 720x36}
+            "Third-party links"
+          <div .legal-text-wrap > {360,3088 720x22}
+            <p ._16px-text.white-text.transp > {403,3088 677x22}
+              "We do not include or offer third-party products or services on our website."
+        <div .legal-block > {360,3184 720x193}
+          <h2 ._30px-text.white > {360,3184 720x36}
+            "Google"
+          <div .legal-text-wrap > {360,3250 720x90}
+            <p ._16px-text.white-text.transp > {403,3250 677x90}
+              "Google’s advertising requirements can be summed up by Google’s Advertising Principles. They are put in place to provide a positive experience for users."
+              <br > {864,3275 0x16}
+              "‍"
+              <br > {403,3298 0x16}
+              <a .link-transp href=https://support.google.com/adwordspolicy/answer/1316548?hl=en target=_blank> {403,3320 489x16}
+                "https://support.google.com/adwordspolicy/answer/1316548?hl=en"
+        <div .legal-block > {360,3412 720x578}
+          <h2 ._30px-text.white > {360,3412 720x36}
+            "We use Google AdSense Advertising on our website"
+          <div .legal-text-wrap > {360,3478 720x475}
+            <p ._16px-text.white-text.transp > {403,3478 677x90}
+              "Google, as a third-party vendor, uses cookies to serve ads on our site. Google’s use of the DART cookie enables it to serve ads to our users based on previous visits to our site and other sites on the Internet. Users may opt-out of the use of the DART cookie by visiting the Google Ad and Content Network privacy policy."
+            <p ._16px-text.white-text.transp > {403,3592 677x22}
+              "We have implemented the following:"
+            <ul .list-white.transp role=list> {360,3638 720x67}
+              <li .list-item > {400,3638 680x22}
+                <p ._16px-text.white-text.transp > {443,3638 637x22}
+                  "Remarketing with Google AdSense"
+              <li .list-item > {400,3661 680x22}
+                <p ._16px-text.white-text.transp > {443,3661 637x22}
+                  "Google Display Network Impression Reporting"
+              <li .list-item > {400,3683 680x22}
+                <p ._16px-text.white-text.transp > {443,3683 637x22}
+                  "Demographics and Interests Reporting"
+            <p ._16px-text.white-text.transp > {403,3729 677x224}
+              "We, along with third-party vendors such as Google use first-party cookies (such as the Google Analytics cookies) and third-party cookies (such as the DoubleClick cookie) or other third-party identifiers together to compile data regarding user interactions with ad impressions and other ad service functions as they relate to our website."
+              <br > {931,3800 0x16}
+              <br > {403,3822 0x16}
+              "Opting out:"
+              <br > {485,3844 0x16}
+              <br > {403,3867 0x16}
+              "Users can set preferences for how Google advertises to you using the Google Ad Settings page. Alternatively, you can opt out by visiting the Network Advertising Initiative Opt Out page or by using the Google Analytics Opt Out Browser add on."
+        <div .legal-block > {360,4026 720x764}
+          <h2 ._30px-text.white > {360,4026 720x36}
+            "California Online Privacy Protection Act"
+          <div .legal-text-wrap > {360,4092 720x661}
+            <p ._16px-text.white-text.transp > {403,4092 677x134}
+              "CalOPPA is the first state law in the nation to require commercial websites and online services to post a privacy policy. The law’s reach stretches well beyond California to require any person or company in the United States (and conceivably the world) that operates websites collecting Personally Identifiable Information from California consumers to post a conspicuous privacy policy on its website stating exactly the information being collected and those individuals or companies with whom it is being shared."
+            <p ._16px-text.white-text.transp > {403,4251 677x67}
+              "See more at:"
+              <br > {503,4254 0x16}
+              <a .link-transp href=http://consumercal.org/california-online-privacy-protection-act-caloppa/#sthash.0FdRbT51.dpuf target=_blank> {403,4276 463x38}
+                "http://consumercal.org/california-online-privacy-protection-act-caloppa/#sthash.0FdRbT51.dpuf"
+            <p ._16px-text.white-text.transp > {403,4342 677x22}
+              "According to CalOPPA, we agree to the following:"
+            <ul .list-white.transp role=list> {360,4388 720x112}
+              <li .list-item > {400,4388 680x22}
+                <p ._16px-text.white-text.transp > {443,4388 637x22}
+                  "Users can visit our site anonymously."
+              <li .list-item > {400,4411 680x45}
+                <p ._16px-text.white-text.transp > {443,4411 637x45}
+                  "Once this privacy policy is created, we will add a link to it on our home page or as a minimum, on the first significant page after entering our website."
+              <li .list-item > {400,4455 680x45}
+                <p ._16px-text.white-text.transp > {443,4455 637x45}
+                  "Our Privacy Policy link includes the word ‘Privacy’ and can easily be found on the page specified above."
+            <p ._16px-text.white-text.transp > {403,4524 677x22}
+              "You will be notified of any Privacy Policy changes:"
+            <ul .list-white.transp role=list> {360,4571 720x22}
+              <li .list-item > {400,4571 680x22}
+                <p ._16px-text.white-text.transp > {443,4571 637x22}
+                  "On our Privacy Policy Page"
+            <p ._16px-text.white-text.transp > {403,4617 677x22}
+              "Can change your personal information:"
+            <ul .list-white.transp role=list> {360,4663 720x90}
+              <li .list-item > {400,4663 680x22}
+                <p ._16px-text.white-text.transp > {443,4663 637x22}
+                  "By emailing us"
+              <li .list-item > {400,4686 680x22}
+                <p ._16px-text.white-text.transp > {443,4686 637x22}
+                  "By calling us"
+              <li .list-item > {400,4708 680x22}
+                <p ._16px-text.white-text.transp > {443,4708 637x22}
+                  "By logging in to your account"
+              <li .list-item > {400,4731 680x22}
+                <p ._16px-text.white-text.transp > {443,4731 637x22}
+                  "By chatting with us or by sending us a support ticket"
+        <div .legal-block > {360,4826 720x148}
+          <h2 ._30px-text.white > {360,4826 720x36}
+            "How does our site handle Do Not Track signals?"
+          <div .legal-text-wrap > {360,4892 720x45}
+            <p ._16px-text.white-text.transp > {403,4892 677x45}
+              "We honor Do Not Track signals and Do Not Track, plant cookies, or use advertising when a Do Not Track (DNT) browser mechanism is in place."
+        <div .legal-block > {360,5010 720x125}
+          <h2 ._30px-text.white > {360,5010 720x36}
+            "Does our site allow third-party behavioral tracking?"
+          <div .legal-text-wrap > {360,5076 720x22}
+            <p ._16px-text.white-text.transp > {403,5076 677x22}
+              "It’s also important to note that we allow third-party behavioral tracking."
+        <div .legal-block > {360,5171 720x305}
+          <h2 ._30px-text.white > {360,5171 720x36}
+            "COPPA (Children Online Privacy Protection Act)"
+          <div .legal-text-wrap > {360,5237 720x202}
+            <p ._16px-text.white-text.transp > {403,5237 677x202}
+              "When it comes to the collection of personal information from children under the age of 13 years old, the Children’s Online Privacy Protection Act (COPPA) puts parents in control. The Federal Trade Commission, United States’ consumer protection agency, enforces the COPPA Rule, which spells out what operators of websites and online services must do to protect children’s privacy and safety online."
+              <br > {661,5330 0x16}
+              <br > {403,5352 0x16}
+              "Do we let third-parties, including ad networks or plug-ins collect PII from children under 13?"
+              <br > {1066,5374 0x16}
+              <br > {403,5397 0x16}
+              "We do not specifically market to children under the age of 13 years old."
+        <div .legal-block > {360,5512 720x461}
+          <h2 ._30px-text.white > {360,5512 720x36}
+            "Fair Information Practices"
+          <div .legal-text-wrap > {360,5578 720x358}
+            <p ._16px-text.white-text.transp > {403,5578 677x358}
+              "The Fair Information Practices Principles form the backbone of privacy law in the United States and the concepts they include have played a significant role in the development of data protection laws around the globe. Understanding the Fair Information Practice Principles and how they should be implemented is critical to comply with the various privacy laws that protect personal information."
+              <br > {684,5670 0x16}
+              <br > {403,5693 0x16}
+              "In order to be in line with Fair Information Practices we will take the following responsive action, should a data breach occur:"
+              <br > {659,5737 0x16}
+              <br > {403,5760 0x16}
+              "We will notify you via email within 7 business days."
+              <br > {771,5782 0x16}
+              <br > {403,5805 0x16}
+              "We also agree to the Individual Redress Principle which requires that individuals have the right to legally pursue enforceable rights against data collectors and processors who fail to adhere to the law. This principle requires not only that individuals have enforceable rights against data users, but also that individuals have recourse to courts or government agencies to investigate and/or prosecute non-compliance by data processors."
+        <div .legal-block > {360,6009 720x647}
+          <h2 ._30px-text.white > {360,6009 720x36}
+            "CAN SPAM Act"
+          <div .legal-text-wrap > {360,6075 720x544}
+            <p ._16px-text.white-text.transp > {403,6075 677x112}
+              "The CAN-SPAM Act is a law that sets the rules for commercial email, establishes requirements for commercial messages, gives recipients the right to have emails stopped from being sent to them, and spells out tough penalties for violations."
+              <br > {908,6123 0x16}
+              <br > {403,6145 0x16}
+              "We collect your email address in order to:"
+            <ul .list-white.transp role=list> {360,6211 720x67}
+              <li .list-item > {400,6211 680x22}
+                <p ._16px-text.white-text.transp > {443,6211 637x22}
+                  "Send information, respond to inquiries, and/or other requests or questions"
+              <li .list-item > {400,6233 680x45}
+                <p ._16px-text.white-text.transp > {443,6233 637x45}
+                  "Market to our mailing list or continue to send emails to our clients after the original transaction has occurred."
+            <p ._16px-text.white-text.transp > {403,6302 677x22}
+              "To be in accordance with CANSPAM, we agree to the following:"
+            <ul .list-white.transp role=list> {360,6348 720x134}
+              <li .list-item > {400,6348 680x22}
+                <p ._16px-text.white-text.transp > {443,6348 637x22}
+                  "Not use false or misleading subjects or email addresses."
+              <li .list-item > {400,6371 680x22}
+                <p ._16px-text.white-text.transp > {443,6371 637x22}
+                  "Identify the message as an advertisement in some reasonable way."
+              <li .list-item > {400,6393 680x22}
+                <p ._16px-text.white-text.transp > {443,6393 637x22}
+                  "Include the physical address of our business or site headquarters."
+              <li .list-item > {400,6416 680x22}
+                <p ._16px-text.white-text.transp > {443,6416 637x22}
+                  "Monitor third-party email marketing services for compliance, if one is used."
+              <li .list-item > {400,6438 680x22}
+                <p ._16px-text.white-text.transp > {443,6438 637x22}
+                  "Honor opt-out/unsubscribe requests quickly."
+              <li .list-item > {400,6460 680x22}
+                <p ._16px-text.white-text.transp > {443,6460 637x22}
+                  "Allow users to unsubscribe by using the link at the bottom of each email."
+            <p ._16px-text.white-text.transp > {403,6507 677x112}
+              "If at any time you would like to unsubscribe from receiving future emails, you can email us at support@transform9.com"
+              <br > {591,6532 0x16}
+              <br > {403,6555 0x16}
+              "Follow the instructions at the bottom of each email and we will promptly remove you from ALL correspondence."
+        <div .legal-block.last > {360,6692 720x335}
+          <h2 ._30px-text.white > {360,6692 720x36}
+            "Contacting Us"
+          <div .legal-text-wrap > {360,6758 720x269}
+            <p ._16px-text.white-text.transp > {403,6758 677x269}
+              "If there are any questions regarding this privacy policy, you may contact us using the information below."
+              <br > {535,6783 0x16}
+              <br > {403,6805 0x16}
+              "www.transform9.com"
+              <br > {561,6828 0x16}
+              "2101 Highland Avenue South"
+              <br > {610,6850 0x16}
+              "Suite 700"
+              <br > {475,6873 0x16}
+              "Birmingham, AL 35205"
+              <br > {572,6895 0x16}
+              "United States"
+              <br > {502,6917 0x16}
+              <br > {403,6940 0x16}
+              "(205) 908-3709"
+              <br > {525,6962 0x16}
+              <br > {403,6985 0x16}
+              "Last Edited on 4.12.2024"
+    <section .footer.section > {0,7026 1440x750}
+      <div .footer-top-wrap > {0,7026 1440x749}
+        <div .bg-noise > {0,7026 1440x748}
+        <div .footer-top-row > {0,7256 1440x247}
+          <div .footer-top-left > {0,7257 385x246}
+            <div ._14px-text.white-text.footer-transp.left > {36,7293 251x59}
+              "Transform9 improves access, generates savings, and increases efficiency for practices and patients."
+          <div .right-side.footer-top-right > {385,7257 1055x246}
+            <div .footer-columns-wrap > {421,7293 465x174}
+              <div .footer-column > {421,7293 84x174}
+                <div ._14px-text.white-text.footer-transp > {421,7293 84x20}
+                  "Navigate"
+                <div .footer-column-links > {421,7339 84x128}
+                  <a .footer-link-wrap.w-inline-block href=/> {421,7339 37x26}
+                    <div ._14px-text.white-text.footer-link > {421,7339 37x26}
+                      "Home"
+                    <div .underline-small._1 > {421,7358 0x1}
+                    <div .underline-small._2 > {458,7358 0x1}
+                  <a .footer-link-wrap.w-inline-block href=/compare> {421,7365 57x26}
+                    <div ._14px-text.white-text.footer-link > {421,7365 57x26}
+                      "Compare"
+                    <div .underline-small._1 > {421,7383 0x1}
+                    <div .underline-small._2 > {478,7383 0x1}
+                  <a .footer-link-wrap.w-inline-block href=/blog> {421,7390 28x26}
+                    <div ._14px-text.white-text.footer-link > {421,7390 28x26}
+                      "Blog"
+                    <div .underline-small._1 > {421,7409 0x1}
+                    <div .underline-small._2 > {449,7409 0x1}
+                  <a .footer-link-wrap.w-inline-block href=/case-studies> {421,7416 84x26}
+                    <div ._14px-text.white-text.footer-link > {421,7416 84x26}
+                      "Case Studies"
+                    <div .underline-small._1 > {421,7434 0x1}
+                    <div .underline-small._2 > {505,7434 0x1}
+                  <a .footer-link-wrap.w-inline-block href=https://apply.workable.com/transform9/ target=_blank> {421,7441 50x26}
+                    <div ._14px-text.white-text.footer-link > {421,7441 50x26}
+                      "Careers"
+                    <div .underline-small._1 > {421,7460 0x1}
+                    <div .underline-small._2 > {471,7460 0x1}
+              <div .footer-column > {625,7293 86x174}
+                <div ._14px-text.white-text.footer-transp > {625,7293 86x20}
+                  "Integrate"
+                <div .footer-column-links > {625,7339 86x77}
+                  <a .footer-link-wrap.w-inline-block href=https://marketplace.athenahealth.com/product/transform9 target=_blank> {625,7339 86x26}
+                    <div ._14px-text.white-text.footer-link > {625,7339 86x26}
+                      "Athenahealth"
+                    <div .underline-small._1 > {625,7358 0x1}
+                    <div .underline-small._2 > {711,7358 0x1}
+                  <a .footer-link-wrap.w-inline-block href=https://synapsys.modmed.com/s/partner-app/a9YVV00000003lt2AA/transform9 target=_blank> {625,7365 56x26}
+                    <div ._14px-text.white-text.footer-link > {625,7365 56x26}
+                      "ModMed"
+                    <div .underline-small._1 > {625,7383 0x1}
+                    <div .underline-small._2 > {682,7383 0x1}
+                  <a .footer-link-wrap.w-inline-block href=https://www.nextgen.com/solutions/marketplace/transform9 target=_blank> {625,7390 56x26}
+                    <div ._14px-text.white-text.footer-link > {625,7390 56x26}
+                      "NextGen"
+                    <div .underline-small._1 > {625,7409 0x1}
+                    <div .underline-small._2 > {681,7409 0x1}
+              <div .footer-column > {831,7293 55x174}
+                <div ._14px-text.white-text.footer-transp > {831,7293 55x20}
+                  "Follow"
+                <div .footer-column-links > {831,7339 55x51}
+                  <a .footer-link-wrap.w-inline-block href=https://www.linkedin.com/company/transform9 target=_blank> {831,7339 53x26}
+                    <div ._14px-text.white-text.footer-link > {831,7339 53x26}
+                      "LinkedIn"
+                    <div .underline-small._1 > {831,7358 0x1}
+                    <div .underline-small._2 > {884,7358 0x1}
+                  <a .footer-link-wrap.w-inline-block href=https://www.youtube.com/@Transform9 target=_blank> {831,7365 55x26}
+                    <div ._14px-text.white-text.footer-link > {831,7365 55x26}
+                      "YouTube"
+                    <div .underline-small._1 > {831,7383 0x1}
+                    <div .underline-small._2 > {886,7383 0x1}
+            <div .footer-top-right > {1257,7293 147x26}
+              <a .footer-link-wrap.w-inline-block href=https://portal.transform9.com/> {1257,7293 35x26}
+                <div ._14px-text.white-text.footer-link > {1257,7293 35x26}
+                  "Login"
+                <div .underline-small._1 > {1257,7312 0x1}
+                <div .underline-small._2 > {1292,7312 0x1}
+              <a .footer-link-wrap.w-inline-block href=/book-a-demo> {1320,7293 84x26}
+                <div ._14px-text.white-text.footer-link > {1320,7293 84x26}
+                  "Book a Demo"
+                <div .underline-small._1 > {1320,7312 0x1}
+                <div .underline-small._2 > {1404,7312 0x1}
+        <div .footer-subs-wrap > {0,7503 1440x272}
+          <div .subs-lefr-wrap > {0,7503 409x272}
+            <div .left-side.footer-subs.hide > [display:none] {0,0 0x0}
+              <div .footer-bottom-left > {0,0 0x0}
+                <div ._14px-text.white-text.footer-transp > {0,0 0x0}
+                  "Call Us"
+                <a ._30px-text.white._w-underline.w-inline-block href=tel:+12059083709> {0,0 0x0}
+                  <div > {0,0 0x0}
+                    "(205) 908-3709"
+                  <div .underline._1 > {0,0 0x0}
+                  <div .underline._2 > {0,0 0x0}
+            <div .footer-bottom-center > {42,7503 367x272}
+              <div ._14px-text.white-text.footer-transp > {78,7539 72x20}
+                "Contact Us"
+              <a ._30px-text.white._w-underline.w-inline-block href=mailto:info@transform9.com> {78,7658 295x81}
+                <div .text-block-4 > {78,7658 295x45}
+                  "(205) 892-2888"
+                <div > {78,7703 295x36}
+                  "info@transform9.com"
+                <div .underline._1 > {78,7736 295x3}
+                <div .underline._2 > {78,7736 0x3}
+          <div .footer-bottom-right > {994,7503 372x272}
+            <div ._14px-text.white-text.footer-transp > {1030,7539 300x20}
+              "Stay Updated"
+            <div .w-embed.w-script > {1030,7585 300x154}
+              <div .hbspt-form #hbspt-form-7175bac6-0ba2-4a44-b0c6-151c08ac1df8> {1030,7585 300x154}
+                <iframe .hs-form-iframe #hs-form-iframe-0> {1030,7585 300x154}
+  <div .footer-bottom-wrap > {0,535 1440x365}
+    <div .footer-logo-wrap > {0,535 1440x306}
+      <img .footer-logo src=https://cdn.prod.website-files.com/684a82e3294991569082d379/68920b38695cade17f6e41a0_logo-footer.svg loading=lazy alt=> {36,571 1368x233}
+    <div .footer-bottom-row > {0,840 1440x60}
+      <div ._14px-text.white-text.footer-transp.bottom > {36,860 263x20}
+        "© 2026 Transform9. All Rights Reserved."
+      <div .footer-bottom-row-right > {1122,860 282x20}
+        <a ._14px-text.white-text.footer-transp.bottom-links href=/hipaa> {1122,860 40x20}
+          "HIPAA"
+        <a ._14px-text.white-text.footer-transp.bottom-links href=/terms-of-use> {1198,860 83x20}
+          "Terms of Use"
+        <a ._14px-text.white-text.footer-transp.bottom-links.w--current href=/privacy-policy> {1317,860 87x20}
+          "Privacy Policy"
+  <iframe > [display:none] {0,0 0x0}
