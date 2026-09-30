@@ -1,0 +1,72 @@
+390 hero COUNT 9/7
+   live-only section.hero hide-on-scroll 390x844 flex/1
+   live-only h1.white-text hero-home legal 287.5x252.1 block/1
+   live-only div._16px-text white-text 350x22.4 block/1
+   live-only p._30px-text home-hero-text white legal-terms 350x117 block/1
+   live-only div.bg-circle-wrap home-hero legal 0x234 block/1
+   live-only div.bg-circle home-hero-circle 0x0 none/0.15
+   clone-only section.hero hide-on-scroll legal-hero 390x844 flex/1
+   clone-only h1.hero-heading legal 287.5x252.1 block/1
+   clone-only div.label-16 350x22.4 block/1
+   clone-only p.home-hero-text legal-terms 350x117 block/1
+390 content total-diff-els 0/96
+600 hero COUNT 9/7
+   live-only section.hero hide-on-scroll 600x900 flex/1
+   live-only h1.white-text hero-home legal 451x387.8 block/1
+   live-only div._16px-text white-text 517x22.4 block/1
+   live-only p._30px-text home-hero-text white legal-terms 476.2x115.2 block/1
+   live-only div.bg-circle-wrap home-hero legal 0x360 block/1
+   live-only div.bg-circle home-hero-circle 0x0 none/0.15
+   clone-only section.hero hide-on-scroll legal-hero 600x900 flex/1
+   clone-only h1.hero-heading legal 451x387.8 block/1
+   clone-only div.label-16 517x22.4 block/1
+   clone-only p.home-hero-text legal-terms 476.2x115.2 block/1
+600 content total-diff-els 0/96
+768 hero COUNT 9/7
+   live-only section.hero hide-on-scroll 768x1024 flex/1
+   live-only h1.white-text hero-home legal 602x303 block/1
+   live-only div._16px-text white-text 685x19.6 block/1
+   live-only p._30px-text home-hero-text white legal-terms 357.1x86.4 block/1
+   live-only div.bg-circle-wrap home-hero legal 0x460.8 block/1
+   live-only div.bg-circle home-hero-circle 0x0 none/0.15
+   clone-only section.hero hide-on-scroll legal-hero 768x1024 flex/1
+   clone-only h1.hero-heading legal 602x303 block/1
+   clone-only div.label-16 685x19.6 block/1
+   clone-only p.home-hero-text legal-terms 357.1x86.4 block/1
+768 content total-diff-els 0/96
+1024 hero COUNT 9/7
+   live-only section.hero hide-on-scroll 1024x900 flex/1
+   live-only h1.white-text hero-home legal 829x134.4 block/1
+   live-only div._16px-text white-text 909x22.4 block/1
+   live-only p._30px-text home-hero-text white legal-terms 423x102.4 block/1
+   live-only div.bg-circle-wrap home-hero legal 0x614.4 block/1
+   live-only div.bg-circle home-hero-circle 0x0 none/0.15
+   clone-only section.hero hide-on-scroll legal-hero 1024x900 flex/1
+   clone-only h1.hero-heading legal 829x134.4 block/1
+   clone-only div.label-16 909x22.4 block/1
+   clone-only p.home-hero-text legal-terms 423x102.4 block/1
+1024 content total-diff-els 0/96
+1200 hero COUNT 9/7
+   live-only section.hero hide-on-scroll 1200x900 flex/1
+   live-only h1.white-text hero-home legal 998.4x157.6 block/1
+   live-only div._16px-text white-text 1085x22.4 block/1
+   live-only p._30px-text home-hero-text white legal-terms 495.8x120 block/1
+   live-only div.bg-circle-wrap home-hero legal 0x720 block/1
+   live-only div.bg-circle home-hero-circle 0x0 none/0.15
+   clone-only section.hero hide-on-scroll legal-hero 1200x900 flex/1
+   clone-only h1.hero-heading legal 998.4x157.6 block/1
+   clone-only div.label-16 1085x22.4 block/1
+   clone-only p.home-hero-text legal-terms 495.8x120 block/1
+1200 content total-diff-els 0/96
+1440 hero COUNT 9/7
+   live-only section.hero hide-on-scroll 1440x900 flex/1
+   live-only h1.white-text hero-home legal 1198.1x189.1 block/1
+   live-only div._16px-text white-text 1325x22.4 block/1
+   live-only p._30px-text home-hero-text white legal-terms 595x144 block/1
+   live-only div.bg-circle-wrap home-hero legal 0x864 block/1
+   live-only div.bg-circle home-hero-circle 0x0 none/0.15
+   clone-only section.hero hide-on-scroll legal-hero 1440x900 flex/1
+   clone-only h1.hero-heading legal 1198.1x189.1 block/1
+   clone-only div.label-16 1325x22.4 block/1
+   clone-only p.home-hero-text legal-terms 595x144 block/1
+1440 content total-diff-els 0/96

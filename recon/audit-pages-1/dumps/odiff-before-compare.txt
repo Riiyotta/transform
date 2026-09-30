@@ -1,0 +1,340 @@
+390 hero COUNT 17/15
+   live-only h1.white-text hero-home compare 346x151.3 block/1
+   live-only div._16px-text white-text 350x22.4 block/1
+   live-only p._30px-text home-hero-text white 312x163.7 block/1
+   live-only div._16px-text white-text full-width 350x22.4 block/1
+   live-only a.hero-cta-link compare-demo w-inline-block 243.4x30.8 flex/1
+   live-only div._56-px-text footer-cta 243.4x30 block/1
+   live-only div.bg-circle-wrap home-hero 0x234 block/1
+   live-only div.bg-circle home-hero-circle 0x0 none/0.15
+   clone-only h1.hero-heading compare 346x151.3 block/1
+   clone-only div.label-16 350x22.4 block/1
+   clone-only p.home-hero-text 312x163.7 block/1
+   clone-only div.label-16 full-width 350x22.4 block/1
+   clone-only a.hero-cta-link compare-demo has-underline 243.4x30.8 flex/1
+   clone-only div.text-56 footer-cta 243.4x30 block/1
+390 generic #5 h2.h1-text white-text generic | h1-text generic "Call Center AI": transform matrix(1, 0, 0, 1, 0, 0)→none
+390 generic total-diff-els 1/8
+390 table #2 h2.h1-text white-text table-head | h1-text table-head "How Transform9": transform matrix(1, 0, 0, 1, 0, 0)→none
+390 table total-diff-els 1/110
+390 access #5 h2.h1-text white-text access | h1-text access "Built for Real": transform matrix(1, 0, 0, 1, 0, 0)→none
+390 access total-diff-els 1/14
+390 white #255 div.bg-noise specialty-noise | bg-noise specialty-noise "": top 0%→0px
+390 white #259 div.bg-noise specialty-noise | bg-noise specialty-noise "": top 0%→0px
+390 white #263 div.bg-noise specialty-noise | bg-noise specialty-noise "": top 0%→0px
+390 white #267 div.bg-noise specialty-noise | bg-noise specialty-noise "": top 0%→0px
+390 white #271 div.bg-noise specialty-noise | bg-noise specialty-noise "": top 0%→0px
+390 white #275 div.bg-noise specialty-noise | bg-noise specialty-noise "": top 0%→0px
+390 white #279 div.bg-noise specialty-noise | bg-noise specialty-noise "": top 0%→0px
+390 white #283 div.bg-noise specialty-noise | bg-noise specialty-noise "": top 0%→0px
+390 white #287 div.bg-noise specialty-noise | bg-noise specialty-noise "": top 0%→0px
+390 white #291 div.bg-noise specialty-noise | bg-noise specialty-noise "": top 0%→0px
+390 white #295 div.bg-noise specialty-noise | bg-noise specialty-noise "": top 0%→0px
+390 white #299 div.bg-noise specialty-noise | bg-noise specialty-noise "": top 0%→0px
+390 white #303 div.bg-noise specialty-noise | bg-noise specialty-noise "": top 0%→0px
+390 white total-diff-els 13/355
+390 trans-w2b #24 div.bg-noise b-to-w | bg-noise b-to-w "": top 0%→0px
+390 trans-w2b #26 div.bg-noise b-to-w | bg-noise b-to-w "": top 0%→0px
+390 trans-w2b #28 div.bg-noise b-to-w | bg-noise b-to-w "": top 0%→0px
+390 trans-w2b #30 div.bg-noise b-to-w | bg-noise b-to-w "": top 0%→0px
+390 trans-w2b #32 div.bg-noise b-to-w | bg-noise b-to-w "": top 0%→0px
+390 trans-w2b #34 div.bg-noise b-to-w | bg-noise b-to-w "": top 0%→0px
+390 trans-w2b #36 div.bg-noise b-to-w | bg-noise b-to-w "": top 0%→0px
+390 trans-w2b #38 div.bg-noise b-to-w | bg-noise b-to-w "": top 0%→0px
+390 trans-w2b #40 div.bg-noise b-to-w | bg-noise b-to-w "": top 0%→0px
+390 trans-w2b #42 div.bg-noise b-to-w | bg-noise b-to-w "": top 0%→0px
+390 trans-w2b #65 div.bg-noise b-to-w | bg-noise b-to-w "": top 0%→0px
+390 trans-w2b #67 div.bg-noise b-to-w | bg-noise b-to-w "": top 0%→0px
+390 trans-w2b #69 div.bg-noise b-to-w | bg-noise b-to-w "": top 0%→0px
+390 trans-w2b #71 div.bg-noise b-to-w | bg-noise b-to-w "": top 0%→0px
+390 trans-w2b #73 div.bg-noise b-to-w | bg-noise b-to-w "": top 0%→0px
+390 trans-w2b #75 div.bg-noise b-to-w | bg-noise b-to-w "": top 0%→0px
+390 trans-w2b #77 div.bg-noise b-to-w | bg-noise b-to-w "": top 0%→0px
+390 trans-w2b #79 div.bg-noise b-to-w | bg-noise b-to-w "": top 0%→0px
+390 trans-w2b #81 div.bg-noise b-to-w | bg-noise b-to-w "": top 0%→0px
+390 trans-w2b #83 div.bg-noise b-to-w | bg-noise b-to-w "": top 0%→0px
+390 trans-w2b #106 div.bg-noise b-to-w | bg-noise b-to-w "": top 0%→0px
+390 trans-w2b #108 div.bg-noise b-to-w | bg-noise b-to-w "": top 0%→0px
+390 trans-w2b #110 div.bg-noise b-to-w | bg-noise b-to-w "": top 0%→0px
+390 trans-w2b #112 div.bg-noise b-to-w | bg-noise b-to-w "": top 0%→0px
+390 trans-w2b #114 div.bg-noise b-to-w | bg-noise b-to-w "": top 0%→0px
+390 trans-w2b total-diff-els 50/313
+390 privacy #2 h2.h1-text white-text privacy | h1-text privacy "": transform matrix(1, 0, 0, 1, 0, 0)→none
+390 privacy total-diff-els 1/21
+390 ev #5 h2.h1-text white-text ev | h1-text ev "Healthcare AI Evalua": transform matrix(1, 0, 0, 1, 0, 0)→none
+390 ev #21 div.ev-tabs-content w-tab-content | ev-tabs-content "": position relative→static | overflow hidden→visible
+390 ev #22 div.w-tab-pane w--tab-active | w-tab-pane is-active "": position relative→static
+390 ev #23 div.w-tab-pane | w-tab-pane "": display none→block | position relative→static
+390 ev #24 div.w-tab-pane | w-tab-pane "": display none→block | position relative→static
+390 ev #25 div.w-tab-pane | w-tab-pane "": display none→block | position relative→static
+390 ev total-diff-els 6/26
+390 cta #240 div._56-px-text footer-cta | underline _1 "Call Alex": y 963.2→993.2 | h 30→0.8 | position static→absolute | fontSize 30px→14px | lineHeight 30px→19.6px | backgroundColor rgba(0, 0, 0, 0)→rgb(255, 255, 255) | whiteSpace nowrap→normal | top auto→30px
+390 cta #241 div.underline _1 | underline _2 "": w 118.3→0
+390 cta #242 div.underline _2 | text-56 footer-cta "": y 993.2→963.2 | w 0→118.3 | h 0.8→30 | position absolute→static | fontSize 14px→30px | lineHeight 19.6px→30px | backgroundColor rgb(255, 255, 255)→rgba(0, 0, 0, 0) | whiteSpace normal→nowrap | top 30px→auto
+390 cta total-diff-els 3/253
+600 hero COUNT 17/15
+   live-only h1.white-text hero-home compare 451x387.8 block/1
+   live-only div._16px-text white-text 517x22.4 block/1
+   live-only p._30px-text home-hero-text white 445.4x172.8 block/1
+   live-only div._16px-text white-text full-width 560x22.4 block/1
+   live-only a.hero-cta-link compare-demo w-inline-block 243.4x31.2 flex/1
+   live-only div._56-px-text footer-cta 243.4x30 block/1
+   live-only div.bg-circle-wrap home-hero 0x360 block/1
+   live-only div.bg-circle home-hero-circle 0x0 none/0.15
+   clone-only h1.hero-heading compare 451x387.8 block/1
+   clone-only div.label-16 517x22.4 block/1
+   clone-only p.home-hero-text 445.4x172.8 block/1
+   clone-only div.label-16 full-width 560x22.4 block/1
+   clone-only a.hero-cta-link compare-demo has-underline 243.4x31.2 flex/1
+   clone-only div.text-56 footer-cta 243.4x30 block/1
+600 generic #5 h2.h1-text white-text generic | h1-text generic "Call Center AI": transform matrix(1, 0, 0, 1, 0, 0)→none
+600 generic total-diff-els 1/8
+600 table #2 h2.h1-text white-text table-head | h1-text table-head "How Transform9": transform matrix(1, 0, 0, 1, 0, 0)→none
+600 table total-diff-els 1/110
+600 access #5 h2.h1-text white-text access | h1-text access "Built for Real": transform matrix(1, 0, 0, 1, 0, 0)→none
+600 access total-diff-els 1/14
+600 white #255 div.bg-noise specialty-noise | bg-noise specialty-noise "": top 0%→0px
+600 white #259 div.bg-noise specialty-noise | bg-noise specialty-noise "": top 0%→0px
+600 white #263 div.bg-noise specialty-noise | bg-noise specialty-noise "": top 0%→0px
+600 white #267 div.bg-noise specialty-noise | bg-noise specialty-noise "": top 0%→0px
+600 white #271 div.bg-noise specialty-noise | bg-noise specialty-noise "": top 0%→0px
+600 white #275 div.bg-noise specialty-noise | bg-noise specialty-noise "": top 0%→0px
+600 white #279 div.bg-noise specialty-noise | bg-noise specialty-noise "": top 0%→0px
+600 white #283 div.bg-noise specialty-noise | bg-noise specialty-noise "": top 0%→0px
+600 white #287 div.bg-noise specialty-noise | bg-noise specialty-noise "": top 0%→0px
+600 white #291 div.bg-noise specialty-noise | bg-noise specialty-noise "": top 0%→0px
+600 white #295 div.bg-noise specialty-noise | bg-noise specialty-noise "": top 0%→0px
+600 white #299 div.bg-noise specialty-noise | bg-noise specialty-noise "": top 0%→0px
+600 white #303 div.bg-noise specialty-noise | bg-noise specialty-noise "": top 0%→0px
+600 white total-diff-els 13/355
+600 trans-w2b #24 div.bg-noise b-to-w | bg-noise b-to-w "": top 0%→0px
+600 trans-w2b #26 div.bg-noise b-to-w | bg-noise b-to-w "": top 0%→0px
+600 trans-w2b #28 div.bg-noise b-to-w | bg-noise b-to-w "": top 0%→0px
+600 trans-w2b #30 div.bg-noise b-to-w | bg-noise b-to-w "": top 0%→0px
+600 trans-w2b #32 div.bg-noise b-to-w | bg-noise b-to-w "": top 0%→0px
+600 trans-w2b #34 div.bg-noise b-to-w | bg-noise b-to-w "": top 0%→0px
+600 trans-w2b #36 div.bg-noise b-to-w | bg-noise b-to-w "": top 0%→0px
+600 trans-w2b #38 div.bg-noise b-to-w | bg-noise b-to-w "": top 0%→0px
+600 trans-w2b #40 div.bg-noise b-to-w | bg-noise b-to-w "": top 0%→0px
+600 trans-w2b #42 div.bg-noise b-to-w | bg-noise b-to-w "": top 0%→0px
+600 trans-w2b #65 div.bg-noise b-to-w | bg-noise b-to-w "": top 0%→0px
+600 trans-w2b #67 div.bg-noise b-to-w | bg-noise b-to-w "": top 0%→0px
+600 trans-w2b #69 div.bg-noise b-to-w | bg-noise b-to-w "": top 0%→0px
+600 trans-w2b #71 div.bg-noise b-to-w | bg-noise b-to-w "": top 0%→0px
+600 trans-w2b #73 div.bg-noise b-to-w | bg-noise b-to-w "": top 0%→0px
+600 trans-w2b #75 div.bg-noise b-to-w | bg-noise b-to-w "": top 0%→0px
+600 trans-w2b #77 div.bg-noise b-to-w | bg-noise b-to-w "": top 0%→0px
+600 trans-w2b #79 div.bg-noise b-to-w | bg-noise b-to-w "": top 0%→0px
+600 trans-w2b #81 div.bg-noise b-to-w | bg-noise b-to-w "": top 0%→0px
+600 trans-w2b #83 div.bg-noise b-to-w | bg-noise b-to-w "": top 0%→0px
+600 trans-w2b #106 div.bg-noise b-to-w | bg-noise b-to-w "": top 0%→0px
+600 trans-w2b #108 div.bg-noise b-to-w | bg-noise b-to-w "": top 0%→0px
+600 trans-w2b #110 div.bg-noise b-to-w | bg-noise b-to-w "": top 0%→0px
+600 trans-w2b #112 div.bg-noise b-to-w | bg-noise b-to-w "": top 0%→0px
+600 trans-w2b #114 div.bg-noise b-to-w | bg-noise b-to-w "": top 0%→0px
+600 trans-w2b total-diff-els 50/313
+600 privacy #2 h2.h1-text white-text privacy | h1-text privacy "": transform matrix(1, 0, 0, 1, 0, 0)→none
+600 privacy total-diff-els 1/21
+600 ev #5 h2.h1-text white-text ev | h1-text ev "Healthcare AI Evalua": transform matrix(1, 0, 0, 1, 0, 0)→none
+600 ev #21 div.ev-tabs-content w-tab-content | ev-tabs-content "": position relative→static | overflow hidden→visible
+600 ev #22 div.w-tab-pane w--tab-active | w-tab-pane is-active "": position relative→static
+600 ev #23 div.w-tab-pane | w-tab-pane "": display none→block | position relative→static
+600 ev #24 div.w-tab-pane | w-tab-pane "": display none→block | position relative→static
+600 ev #25 div.w-tab-pane | w-tab-pane "": display none→block | position relative→static
+600 ev total-diff-els 6/26
+600 cta #240 div._56-px-text footer-cta | underline _1 "Call Alex": y 1327.8→1357.8 | h 30→1.2 | position static→absolute | fontSize 30px→14px | lineHeight 30px→19.6px | backgroundColor rgba(0, 0, 0, 0)→rgb(255, 255, 255) | whiteSpace nowrap→normal | top auto→30px
+600 cta #241 div.underline _1 | underline _2 "": w 118.3→0
+600 cta #242 div.underline _2 | text-56 footer-cta "": y 1357.8→1327.8 | w 0→118.3 | h 1.2→30 | position absolute→static | fontSize 14px→30px | lineHeight 19.6px→30px | backgroundColor rgb(255, 255, 255)→rgba(0, 0, 0, 0) | whiteSpace normal→nowrap | top 30px→auto
+600 cta total-diff-els 3/253
+768 hero COUNT 17/15
+   live-only h1.white-text hero-home compare 602x227.3 block/1
+   live-only div._16px-text white-text 301x19.6 block/1
+   live-only p._30px-text home-hero-text white 334.1x129.6 block/1
+   live-only div._16px-text white-text full-width 344x19.6 block/1
+   live-only a.hero-cta-link compare-demo w-inline-block 243.4x31.5 flex/1
+   live-only div._56-px-text footer-cta 243.4x30 block/1
+   live-only div.bg-circle-wrap home-hero 0x460.8 block/1
+   live-only div.bg-circle home-hero-circle 0x0 none/0.15
+   clone-only h1.hero-heading compare 602x227.3 block/1
+   clone-only div.label-16 301x19.6 block/1
+   clone-only p.home-hero-text 334.1x129.6 block/1
+   clone-only div.label-16 full-width 344x19.6 block/1
+   clone-only a.hero-cta-link compare-demo has-underline 243.4x31.5 flex/1
+   clone-only div.text-56 footer-cta 243.4x30 block/1
+768 generic #5 h2.h1-text white-text generic | h1-text generic "Call Center AI": transform matrix(1, 0, 0, 1, 0, 0)→none
+768 generic total-diff-els 1/8
+768 table #2 h2.h1-text white-text table-head | h1-text table-head "How Transform9": transform matrix(1, 0, 0, 1, 0, 0)→none
+768 table total-diff-els 1/110
+768 access #5 h2.h1-text white-text access | h1-text access "Built for Real": transform matrix(1, 0, 0, 1, 0, 0)→none
+768 access total-diff-els 1/14
+768 white #259 div.bg-noise specialty-noise | bg-noise specialty-noise "": top 0%→0px
+768 white #263 div.bg-noise specialty-noise | bg-noise specialty-noise "": top 0%→0px
+768 white #267 div.bg-noise specialty-noise | bg-noise specialty-noise "": top 0%→0px
+768 white #271 div.bg-noise specialty-noise | bg-noise specialty-noise "": top 0%→0px
+768 white #275 div.bg-noise specialty-noise | bg-noise specialty-noise "": top 0%→0px
+768 white #279 div.bg-noise specialty-noise | bg-noise specialty-noise "": top 0%→0px
+768 white #283 div.bg-noise specialty-noise | bg-noise specialty-noise "": top 0%→0px
+768 white #287 div.bg-noise specialty-noise | bg-noise specialty-noise "": top 0%→0px
+768 white #291 div.bg-noise specialty-noise | bg-noise specialty-noise "": top 0%→0px
+768 white #295 div.bg-noise specialty-noise | bg-noise specialty-noise "": top 0%→0px
+768 white #299 div.bg-noise specialty-noise | bg-noise specialty-noise "": top 0%→0px
+768 white #303 div.bg-noise specialty-noise | bg-noise specialty-noise "": top 0%→0px
+768 white total-diff-els 12/355
+768 trans-w2b total-diff-els 0/313
+768 privacy #2 h2.h1-text white-text privacy | h1-text privacy "": transform matrix(1, 0, 0, 1, 0, 0)→none
+768 privacy total-diff-els 1/21
+768 ev #5 h2.h1-text white-text ev | h1-text ev "Healthcare AI Evalua": transform matrix(1, 0, 0, 1, 0, 0)→none
+768 ev #21 div.ev-tabs-content w-tab-content | ev-tabs-content "": position relative→static | overflow hidden→visible
+768 ev #22 div.w-tab-pane w--tab-active | w-tab-pane is-active "": position relative→static
+768 ev #23 div.w-tab-pane | w-tab-pane "": display none→block | position relative→static
+768 ev #24 div.w-tab-pane | w-tab-pane "": display none→block | position relative→static
+768 ev #25 div.w-tab-pane | w-tab-pane "": display none→block | position relative→static
+768 ev total-diff-els 6/26
+768 cta #240 div._56-px-text footer-cta | underline _1 "Call Alex": y 1099.5→1129.5 | h 30→1.5 | position static→absolute | fontSize 30px→14px | lineHeight 30px→19.6px | backgroundColor rgba(0, 0, 0, 0)→rgb(255, 255, 255) | whiteSpace nowrap→normal | top auto→30px
+768 cta #241 div.underline _1 | underline _2 "": w 118.3→0
+768 cta #242 div.underline _2 | text-56 footer-cta "": y 1129.5→1099.5 | w 0→118.3 | h 1.5→30 | position absolute→static | fontSize 14px→30px | lineHeight 19.6px→30px | backgroundColor rgb(255, 255, 255)→rgba(0, 0, 0, 0) | whiteSpace normal→nowrap | top 30px→auto
+768 cta total-diff-els 3/253
+1024 hero COUNT 17/15
+   live-only h1.white-text hero-home compare 829x134.4 block/1
+   live-only div._16px-text white-text 397x22.4 block/1
+   live-only p._30px-text home-hero-text white 395.7x153.6 block/1
+   live-only div._16px-text white-text full-width 440x22.4 block/1
+   live-only a.hero-cta-link compare-demo w-inline-block 323x41.9 flex/1
+   live-only div._56-px-text footer-cta 323x39.8 block/1
+   live-only div.bg-circle-wrap home-hero 0x614.4 block/1
+   live-only div.bg-circle home-hero-circle 0x0 none/0.15
+   clone-only h1.hero-heading compare 829x134.4 block/1
+   clone-only div.label-16 397x22.4 block/1
+   clone-only p.home-hero-text 395.7x153.6 block/1
+   clone-only div.label-16 full-width 440x22.4 block/1
+   clone-only a.hero-cta-link compare-demo has-underline 323x41.9 flex/1
+   clone-only div.text-56 footer-cta 323x39.8 block/1
+1024 generic #5 h2.h1-text white-text generic | h1-text generic "Call Center AI": transform matrix(1, 0, 0, 1, 0, 0)→none
+1024 generic total-diff-els 1/8
+1024 table #2 h2.h1-text white-text table-head | h1-text table-head "How Transform9": transform matrix(1, 0, 0, 1, 0, 0)→none
+1024 table total-diff-els 1/110
+1024 access #5 h2.h1-text white-text access | h1-text access "Built for Real": transform matrix(1, 0, 0, 1, 0, 0)→none
+1024 access total-diff-els 1/14
+1024 white #259 div.bg-noise specialty-noise | bg-noise specialty-noise "": top 0%→0px
+1024 white #263 div.bg-noise specialty-noise | bg-noise specialty-noise "": top 0%→0px
+1024 white #267 div.bg-noise specialty-noise | bg-noise specialty-noise "": top 0%→0px
+1024 white #271 div.bg-noise specialty-noise | bg-noise specialty-noise "": top 0%→0px
+1024 white #275 div.bg-noise specialty-noise | bg-noise specialty-noise "": top 0%→0px
+1024 white #279 div.bg-noise specialty-noise | bg-noise specialty-noise "": top 0%→0px
+1024 white #283 div.bg-noise specialty-noise | bg-noise specialty-noise "": top 0%→0px
+1024 white #287 div.bg-noise specialty-noise | bg-noise specialty-noise "": top 0%→0px
+1024 white #291 div.bg-noise specialty-noise | bg-noise specialty-noise "": top 0%→0px
+1024 white #295 div.bg-noise specialty-noise | bg-noise specialty-noise "": top 0%→0px
+1024 white #299 div.bg-noise specialty-noise | bg-noise specialty-noise "": top 0%→0px
+1024 white #303 div.bg-noise specialty-noise | bg-noise specialty-noise "": top 0%→0px
+1024 white total-diff-els 12/355
+1024 trans-w2b total-diff-els 0/313
+1024 privacy #2 h2.h1-text white-text privacy | h1-text privacy "": transform matrix(1, 0, 0, 1, 0, 0)→none
+1024 privacy total-diff-els 1/21
+1024 ev #5 h2.h1-text white-text ev | h1-text ev "Healthcare AI Evalua": transform matrix(1, 0, 0, 1, 0, 0)→none
+1024 ev #21 div.ev-tabs-content w-tab-content | ev-tabs-content "": position relative→static | overflow hidden→visible
+1024 ev #22 div.w-tab-pane w--tab-active | w-tab-pane is-active "": position relative→static
+1024 ev #23 div.w-tab-pane | w-tab-pane "": display none→block | position relative→static
+1024 ev #24 div.w-tab-pane | w-tab-pane "": display none→block | position relative→static
+1024 ev #25 div.w-tab-pane | w-tab-pane "": display none→block | position relative→static
+1024 ev total-diff-els 6/26
+1024 cta #240 div._56-px-text footer-cta | underline _1 "Call Alex": y 991.3→1031.1 | h 39.8→2 | position static→absolute | fontSize 39.8234px→14px | lineHeight 39.8234px→19.6px | backgroundColor rgba(0, 0, 0, 0)→rgb(255, 255, 255) | whiteSpace nowrap→normal | top auto→39.8281px
+1024 cta #241 div.underline _1 | underline _2 "": w 157.1→0
+1024 cta #242 div.underline _2 | text-56 footer-cta "": y 1031.1→991.3 | w 0→157.1 | h 2→39.8 | position absolute→static | fontSize 14px→39.8234px | lineHeight 19.6px→39.8234px | backgroundColor rgb(255, 255, 255)→rgba(0, 0, 0, 0) | whiteSpace normal→nowrap | top 39.8281px→auto
+1024 cta total-diff-els 3/253
+1200 hero COUNT 17/15
+   live-only h1.white-text hero-home compare 998.4x157.6 block/1
+   live-only div._16px-text white-text 485x22.4 block/1
+   live-only p._30px-text home-hero-text white 463.8x180 block/1
+   live-only div._16px-text white-text full-width 528x22.4 block/1
+   live-only a.hero-cta-link compare-demo w-inline-block 378.5x49.1 flex/1
+   live-only div._56-px-text footer-cta 378.5x46.7 block/1
+   live-only div.bg-circle-wrap home-hero 0x720 block/1
+   live-only div.bg-circle home-hero-circle 0x0 none/0.15
+   clone-only h1.hero-heading compare 998.4x157.6 block/1
+   clone-only div.label-16 485x22.4 block/1
+   clone-only p.home-hero-text 463.8x180 block/1
+   clone-only div.label-16 full-width 528x22.4 block/1
+   clone-only a.hero-cta-link compare-demo has-underline 378.5x49.1 flex/1
+   clone-only div.text-56 footer-cta 378.5x46.7 block/1
+1200 generic #5 h2.h1-text white-text generic | h1-text generic "Call Center AI": transform matrix(1, 0, 0, 1, 0, 0)→none
+1200 generic total-diff-els 1/8
+1200 table #2 h2.h1-text white-text table-head | h1-text table-head "How Transform9": transform matrix(1, 0, 0, 1, 0, 0)→none
+1200 table total-diff-els 1/110
+1200 access #5 h2.h1-text white-text access | h1-text access "Built for Real": transform matrix(1, 0, 0, 1, 0, 0)→none
+1200 access total-diff-els 1/14
+1200 white #259 div.bg-noise specialty-noise | bg-noise specialty-noise "": top 0%→0px
+1200 white #263 div.bg-noise specialty-noise | bg-noise specialty-noise "": top 0%→0px
+1200 white #267 div.bg-noise specialty-noise | bg-noise specialty-noise "": top 0%→0px
+1200 white #271 div.bg-noise specialty-noise | bg-noise specialty-noise "": top 0%→0px
+1200 white #275 div.bg-noise specialty-noise | bg-noise specialty-noise "": top 0%→0px
+1200 white #279 div.bg-noise specialty-noise | bg-noise specialty-noise "": top 0%→0px
+1200 white #283 div.bg-noise specialty-noise | bg-noise specialty-noise "": top 0%→0px
+1200 white #287 div.bg-noise specialty-noise | bg-noise specialty-noise "": top 0%→0px
+1200 white #291 div.bg-noise specialty-noise | bg-noise specialty-noise "": top 0%→0px
+1200 white #295 div.bg-noise specialty-noise | bg-noise specialty-noise "": top 0%→0px
+1200 white #299 div.bg-noise specialty-noise | bg-noise specialty-noise "": top 0%→0px
+1200 white #303 div.bg-noise specialty-noise | bg-noise specialty-noise "": top 0%→0px
+1200 white total-diff-els 12/355
+1200 trans-w2b total-diff-els 0/313
+1200 privacy #2 h2.h1-text white-text privacy | h1-text privacy "": transform matrix(1, 0, 0, 1, 0, 0)→none
+1200 privacy total-diff-els 1/21
+1200 ev #5 h2.h1-text white-text ev | h1-text ev "Healthcare AI Evalua": transform matrix(1, 0, 0, 1, 0, 0)→none
+1200 ev #21 div.ev-tabs-content w-tab-content | ev-tabs-content "": position relative→static | overflow hidden→visible
+1200 ev #22 div.w-tab-pane w--tab-active | w-tab-pane is-active "": position relative→static
+1200 ev #23 div.w-tab-pane | w-tab-pane "": display none→block | position relative→static
+1200 ev #24 div.w-tab-pane | w-tab-pane "": display none→block | position relative→static
+1200 ev #25 div.w-tab-pane | w-tab-pane "": display none→block | position relative→static
+1200 ev total-diff-els 6/26
+1200 cta #240 div._56-px-text footer-cta | underline _1 "Call Alex": y 1168→1214.7 | h 46.7→2.4 | position static→absolute | fontSize 46.668px→14px | lineHeight 46.668px→19.6px | backgroundColor rgba(0, 0, 0, 0)→rgb(255, 255, 255) | whiteSpace nowrap→normal | top auto→46.6719px
+1200 cta #241 div.underline _1 | underline _2 "": w 184→0
+1200 cta #242 div.underline _2 | text-56 footer-cta "": y 1214.7→1168 | w 0→184 | h 2.4→46.7 | position absolute→static | fontSize 14px→46.668px | lineHeight 19.6px→46.668px | backgroundColor rgb(255, 255, 255)→rgba(0, 0, 0, 0) | whiteSpace normal→nowrap | top 46.6719px→auto
+1200 cta total-diff-els 3/253
+1440 hero COUNT 17/15
+   live-only h1.white-text hero-home compare 1198.1x189.1 block/1
+   live-only div._16px-text white-text 605x22.4 block/1
+   live-only p._30px-text home-hero-text white 556.6x216 block/1
+   live-only div._16px-text white-text full-width 648x22.4 block/1
+   live-only a.hero-cta-link compare-demo w-inline-block 454.3x58.9 flex/1
+   live-only div._56-px-text footer-cta 454.3x56 block/1
+   live-only div.bg-circle-wrap home-hero 0x864 block/1
+   live-only div.bg-circle home-hero-circle 0x0 none/0.15
+   clone-only h1.hero-heading compare 1198.1x189.1 block/1
+   clone-only div.label-16 605x22.4 block/1
+   clone-only p.home-hero-text 556.6x216 block/1
+   clone-only div.label-16 full-width 648x22.4 block/1
+   clone-only a.hero-cta-link compare-demo has-underline 454.3x58.9 flex/1
+   clone-only div.text-56 footer-cta 454.3x56 block/1
+1440 generic #5 h2.h1-text white-text generic | h1-text generic "Call Center AI": transform matrix(1, 0, 0, 1, 0, 0)→none
+1440 generic total-diff-els 1/8
+1440 table #2 h2.h1-text white-text table-head | h1-text table-head "How Transform9": transform matrix(1, 0, 0, 1, 0, 0)→none
+1440 table total-diff-els 1/110
+1440 access #5 h2.h1-text white-text access | h1-text access "Built for Real": transform matrix(1, 0, 0, 1, 0, 0)→none
+1440 access total-diff-els 1/14
+1440 white #259 div.bg-noise specialty-noise | bg-noise specialty-noise "": top 0%→0px
+1440 white #263 div.bg-noise specialty-noise | bg-noise specialty-noise "": top 0%→0px
+1440 white #267 div.bg-noise specialty-noise | bg-noise specialty-noise "": top 0%→0px
+1440 white #271 div.bg-noise specialty-noise | bg-noise specialty-noise "": top 0%→0px
+1440 white #275 div.bg-noise specialty-noise | bg-noise specialty-noise "": top 0%→0px
+1440 white #279 div.bg-noise specialty-noise | bg-noise specialty-noise "": top 0%→0px
+1440 white #283 div.bg-noise specialty-noise | bg-noise specialty-noise "": top 0%→0px
+1440 white #287 div.bg-noise specialty-noise | bg-noise specialty-noise "": top 0%→0px
+1440 white #291 div.bg-noise specialty-noise | bg-noise specialty-noise "": top 0%→0px
+1440 white #295 div.bg-noise specialty-noise | bg-noise specialty-noise "": top 0%→0px
+1440 white #299 div.bg-noise specialty-noise | bg-noise specialty-noise "": top 0%→0px
+1440 white #303 div.bg-noise specialty-noise | bg-noise specialty-noise "": top 0%→0px
+1440 white total-diff-els 12/355
+1440 trans-w2b total-diff-els 0/313
+1440 privacy #2 h2.h1-text white-text privacy | h1-text privacy "": transform matrix(1, 0, 0, 1, 0, 0)→none
+1440 privacy total-diff-els 1/21
+1440 ev #5 h2.h1-text white-text ev | h1-text ev "Healthcare AI Evalua": transform matrix(1, 0, 0, 1, 0, 0)→none
+1440 ev #21 div.ev-tabs-content w-tab-content | ev-tabs-content "": position relative→static | overflow hidden→visible
+1440 ev #22 div.w-tab-pane w--tab-active | w-tab-pane is-active "": position relative→static
+1440 ev #23 div.w-tab-pane | w-tab-pane "": display none→block | position relative→static
+1440 ev #24 div.w-tab-pane | w-tab-pane "": display none→block | position relative→static
+1440 ev #25 div.w-tab-pane | w-tab-pane "": display none→block | position relative→static
+1440 ev total-diff-els 6/26
+1440 cta #240 div._56-px-text footer-cta | underline _1 "Call Alex": y 1409→1465 | h 56→2.9 | position static→absolute | fontSize 56.0016px→14px | lineHeight 56.0016px→19.6px | backgroundColor rgba(0, 0, 0, 0)→rgb(255, 255, 255) | whiteSpace nowrap→normal | top auto→56px
+1440 cta #241 div.underline _1 | underline _2 "": w 220.9→0
+1440 cta #242 div.underline _2 | text-56 footer-cta "": y 1465→1409 | w 0→220.9 | h 2.9→56 | position absolute→static | fontSize 14px→56.0016px | lineHeight 19.6px→56.0016px | backgroundColor rgb(255, 255, 255)→rgba(0, 0, 0, 0) | whiteSpace normal→nowrap | top 56px→auto
+1440 cta total-diff-els 3/253

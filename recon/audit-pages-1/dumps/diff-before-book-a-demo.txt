@@ -1,0 +1,59 @@
+
+######## 390  docH live 1085 clone 1085  docW 390/390
+--- hero (6)
+  txt:First Name#1 [|]: color (2, 8, 1)→(255, 255, 255)
+  txt:Last Name#1 [|]: color (2, 8, 1)→(255, 255, 255)
+  txt:Email Address#1 [|]: color (2, 8, 1)→(255, 255, 255)
+  txt:Practice Name#1 [|]: color (2, 8, 1)→(255, 255, 255)
+  txt:EMR/PMS#1 [|]: color (2, 8, 1)→(255, 255, 255)
+  only-live input:website_url#1 [-9999,805.2 171x20]
+
+######## 600  docH live 1584 clone 1584  docW 600/600
+--- hero (7)
+  txt:First Name#1 [|]: color (2, 8, 1)→(255, 255, 255)
+  txt:Last Name#1 [|]: color (2, 8, 1)→(255, 255, 255)
+  txt:Email Address#1 [|]: color (2, 8, 1)→(255, 255, 255)
+  txt:Practice Name#1 [|]: color (2, 8, 1)→(255, 255, 255)
+  txt:EMR/PMS#1 [|]: color (2, 8, 1)→(255, 255, 255)
+  only-live input:website_url#1 [-9999,1205.6 171x20]
+  cls:bg-noise book-demo-form-noise#1 [bg-noise book-demo-form-noise|bg-noise book-demo-form-noise]: backgroundImage url(7f73b64enoise.webp)→url(noise.webp)
+
+######## 768  docH live 1468 clone 1468  docW 768/768
+--- hero (7)
+  txt:First Name#1 [|]: color (2, 8, 1)→(255, 255, 255)
+  txt:Last Name#1 [|]: color (2, 8, 1)→(255, 255, 255)
+  txt:Email Address#1 [|]: color (2, 8, 1)→(255, 255, 255)
+  txt:Practice Name#1 [|]: color (2, 8, 1)→(255, 255, 255)
+  txt:EMR/PMS#1 [|]: color (2, 8, 1)→(255, 255, 255)
+  only-live input:website_url#1 [-9999,1103 171x20]
+  cls:bg-noise book-demo-form-noise#1 [bg-noise book-demo-form-noise|bg-noise book-demo-form-noise]: backgroundImage url(7f73b64enoise.webp)→url(noise.webp)
+
+######## 1024  docH live 1194 clone 1194  docW 1024/1024
+--- hero (7)
+  txt:First Name#1 [|]: color (2, 8, 1)→(255, 255, 255)
+  txt:Last Name#1 [|]: color (2, 8, 1)→(255, 255, 255)
+  txt:Email Address#1 [|]: color (2, 8, 1)→(255, 255, 255)
+  txt:Practice Name#1 [|]: color (2, 8, 1)→(255, 255, 255)
+  txt:EMR/PMS#1 [|]: color (2, 8, 1)→(255, 255, 255)
+  only-live input:website_url#1 [-9504.9,483 171x20]
+  cls:bg-noise book-demo-form-noise#1 [bg-noise book-demo-form-noise|bg-noise book-demo-form-noise]: backgroundImage url(7f73b64enoise.webp)→url(noise.webp)
+
+######## 1200  docH live 1224 clone 1224  docW 1200/1200
+--- hero (7)
+  txt:First Name#1 [|]: color (2, 8, 1)→(255, 255, 255)
+  txt:Last Name#1 [|]: color (2, 8, 1)→(255, 255, 255)
+  txt:Email Address#1 [|]: color (2, 8, 1)→(255, 255, 255)
+  txt:Practice Name#1 [|]: color (2, 8, 1)→(255, 255, 255)
+  txt:EMR/PMS#1 [|]: color (2, 8, 1)→(255, 255, 255)
+  only-live input:website_url#1 [-9416.8,483 171x20]
+  cls:bg-noise book-demo-form-noise#1 [bg-noise book-demo-form-noise|bg-noise book-demo-form-noise]: backgroundImage url(7f73b64enoise.webp)→url(noise.webp)
+
+######## 1440  docH live 1265 clone 1265  docW 1440/1440
+--- hero (7)
+  txt:First Name#1 [|]: color (2, 8, 1)→(255, 255, 255)
+  txt:Last Name#1 [|]: color (2, 8, 1)→(255, 255, 255)
+  txt:Email Address#1 [|]: color (2, 8, 1)→(255, 255, 255)
+  txt:Practice Name#1 [|]: color (2, 8, 1)→(255, 255, 255)
+  txt:EMR/PMS#1 [|]: color (2, 8, 1)→(255, 255, 255)
+  only-live input:website_url#1 [-9296.7,483 171x20]
+  cls:bg-noise book-demo-form-noise#1 [bg-noise book-demo-form-noise|bg-noise book-demo-form-noise]: backgroundImage url(7f73b64enoise.webp)→url(noise.webp)

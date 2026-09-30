@@ -1,0 +1,24 @@
+
+######## 390  docH live 25968 clone 25968  docW 390/390
+--- hero (0)
+--- content (0)
+
+######## 600  docH live 19982 clone 19982  docW 600/600
+--- hero (0)
+--- content (0)
+
+######## 768  docH live 13883 clone 13883  docW 768/768
+--- hero (0)
+--- content (0)
+
+######## 1024  docH live 16458 clone 16458  docW 1024/1024
+--- hero (0)
+--- content (0)
+
+######## 1200  docH live 16639 clone 16639  docW 1200/1200
+--- hero (0)
+--- content (0)
+
+######## 1440  docH live 16886 clone 16886  docW 1440/1440
+--- hero (0)
+--- content (0)

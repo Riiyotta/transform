@@ -1,0 +1,48 @@
+390 hero COUNT 24/23
+   live-only section.hero hide-on-scroll demo 390x896.8 flex/1
+   live-only h1.white-text hero-home demo 287.5x201.7 block/1
+   live-only form. 350x400.6 block/1
+   live-only input. 171x20 block/1
+   clone-only section.hero hide-on-scroll demo book-demo-hero 390x896.8 flex/1
+   clone-only h1.hero-heading demo 287.5x201.7 block/1
+   clone-only form.demo-form 350x400.6 block/1
+600 hero COUNT 24/23
+   live-only section.hero hide-on-scroll demo 600x1295.2 flex/1
+   live-only h1.white-text hero-home demo 540.7x310.3 block/1
+   live-only form. 560x400.6 block/1
+   live-only input. 171x20 block/1
+   clone-only section.hero hide-on-scroll demo book-demo-hero 600x1295.2 flex/1
+   clone-only h1.hero-heading demo 540.7x310.3 block/1
+   clone-only form.demo-form 560x400.6 block/1
+768 hero COUNT 24/23
+   live-only section.hero hide-on-scroll demo 768x1187.3 flex/1
+   live-only h1.white-text hero-home demo 672x227.3 block/1
+   live-only form. 728x400.6 block/1
+   live-only input. 171x20 block/1
+   clone-only section.hero hide-on-scroll demo book-demo-hero 768x1187.3 flex/1
+   clone-only h1.hero-heading demo 672x227.3 block/1
+   clone-only form.demo-form 728x400.6 block/1
+1024 hero COUNT 24/23
+   live-only section.hero hide-on-scroll demo 1024x900 flex/1
+   live-only h1.white-text hero-home demo 405.1x268.9 block/1
+   live-only form. 457.9x400.6 block/1
+   live-only input. 171x20 block/1
+   clone-only section.hero hide-on-scroll demo book-demo-hero 1024x900 flex/1
+   clone-only h1.hero-heading demo 405.1x268.9 block/1
+   clone-only form.demo-form 457.9x400.6 block/1
+1200 hero COUNT 24/23
+   live-only section.hero hide-on-scroll demo 1200x900 flex/1
+   live-only h1.white-text hero-home demo 493.2x315.1 block/1
+   live-only form. 545.8x400.6 block/1
+   live-only input. 171x20 block/1
+   clone-only section.hero hide-on-scroll demo book-demo-hero 1200x900 flex/1
+   clone-only h1.hero-heading demo 493.2x315.1 block/1
+   clone-only form.demo-form 545.8x400.6 block/1
+1440 hero COUNT 24/23
+   live-only section.hero hide-on-scroll demo 1440x900 flex/1
+   live-only h1.white-text hero-home demo 613.3x378.1 block/1
+   live-only form. 665.7x400.6 block/1
+   live-only input. 171x20 block/1
+   clone-only section.hero hide-on-scroll demo book-demo-hero 1440x900 flex/1
+   clone-only h1.hero-heading demo 613.3x378.1 block/1
+   clone-only form.demo-form 665.7x400.6 block/1
