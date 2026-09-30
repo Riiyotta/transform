@@ -1,0 +1,58 @@
+{
+ "reduceCardIn": [
+  [
+   "0.3952",
+   "matrix(1.0395, 0, 0, 1.0395, 0, 0)"
+  ],
+  [
+   "0.8026",
+   "matrix(1.0803, 0, 0, 1.0803, 0, 0)"
+  ],
+  [
+   "1",
+   "matrix(1.1, 0, 0, 1.1, 0, 0)"
+  ]
+ ],
+ "hovered1440": {
+  "ix": true,
+  "op": "1",
+  "inlineOp": "1",
+  "a1": "matrix(1, 0, 0, 1, -28, 0)",
+  "inlineA1": "translate(-100%, 0%)"
+ },
+ "resized900": {
+  "ix": false,
+  "op": "0.5",
+  "inlineOp": "",
+  "a1": "none",
+  "inlineA1": ""
+ },
+ "hover900": {
+  "ix": false,
+  "op": "0.5",
+  "inlineOp": "",
+  "a1": "none",
+  "inlineA1": ""
+ },
+ "back1440": {
+  "ix": true,
+  "op": "0.5",
+  "inlineOp": "",
+  "a1": "matrix(1, 0, 0, 1, 0, 0)",
+  "inlineA1": "translate(0px, 0px)"
+ },
+ "rehover1440_150ms": {
+  "ix": true,
+  "op": "0.9013",
+  "inlineOp": "0.9013",
+  "a1": "matrix(1, 0, 0, 1, -22.4719, 0)",
+  "inlineA1": "translate(-80.2568%, 0%) translate3d(0px, 0px, 0px)"
+ },
+ "rehover1440_550ms": {
+  "ix": true,
+  "op": "1",
+  "inlineOp": "1",
+  "a1": "matrix(1, 0, 0, 1, -28, 0)",
+  "inlineA1": "translate(-100%, 0%)"
+ }
+}

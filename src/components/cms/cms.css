@@ -234,12 +234,13 @@
   position: relative;
   overflow: hidden;
 }
-/* MOTION: BLOG-M8 — static END state of IX2 a-46 (>=992 only): opacity 1, arrows -100%. */
+/* MOTION: BLOG-M8 — static END state of IX2 a-46 (>=992 only): opacity 1, arrows -100%.
+   Applies only while unbound; with JS the tween (cmsHover.js) owns it ([data-ix]). */
 @media screen and (min-width: 992px) {
-  .icon-w-text:hover {
+  .icon-w-text:not([data-ix]):hover {
     opacity: 1;
   }
-  .icon-w-text:hover .arrow {
+  .icon-w-text:not([data-ix]):hover .arrow {
     transform: translateX(-100%);
   }
 }
@@ -512,48 +513,47 @@
   opacity: 0;
 }
 
-/* MOTION: BLOG-M6 — static END state of IX2 a-48 (blog card mouseover). */
-.post-link-block.bl:hover .post-bottom-wrap {
+/* MOTION: BLOG-M6 / M7 / CS-M1 — static END states of IX2 a-48 / a-50 / a-52. They apply only
+   while the link is unbound; the tweens in cmsHover.js set [data-ix] on the link and own them. */
+.post-link-block.bl:not([data-ix]):hover .post-bottom-wrap {
   background-color: var(--color-white);
 }
-.post-link-block.bl:hover .blog-title,
-.post-link-block.bl:hover .blog-data {
+.post-link-block.bl:not([data-ix]):hover .blog-title,
+.post-link-block.bl:not([data-ix]):hover .blog-data {
   color: var(--color-black);
 }
-.post-link-block.bl:hover .testim-point-wrap.post-cell {
+.post-link-block.bl:not([data-ix]):hover .testim-point-wrap.post-cell {
   border-left-color: var(--color-blue-dark);
 }
-.post-link-block.bl:hover .post-img-hor {
+.post-link-block.bl:not([data-ix]):hover .post-img-hor {
   transform: scale(1.1);
 }
-.post-link-block:hover .post-arrow-wrap {
+.post-link-block:not([data-ix]):hover .post-arrow-wrap {
   opacity: 1;
 }
-/* MOTION: BLOG-M7 — static END state of IX2 a-50 (featured mouseover). */
-.post-hor-wrap.featured:hover .blog-img-vert {
+.post-hor-wrap.featured:not([data-ix]):hover .blog-img-vert {
   transform: scale(1.1);
 }
-/* MOTION: CS-M1 — static END state of IX2 a-52 (case-study card mouseover). */
-.post-link-block.cs:hover .post-img-wrap.cs {
+.post-link-block.cs:not([data-ix]):hover .post-img-wrap.cs {
   background-color: var(--color-gray);
 }
-.post-link-block.cs:hover .cl-wh-logo-on-cell {
+.post-link-block.cs:not([data-ix]):hover .cl-wh-logo-on-cell {
   opacity: 0;
 }
-.post-link-block.cs:hover .cl-bl-logo-on-cell {
+.post-link-block.cs:not([data-ix]):hover .cl-bl-logo-on-cell {
   opacity: 1;
 }
-.post-link-block.cs:hover .post-bottom-wrap {
+.post-link-block.cs:not([data-ix]):hover .post-bottom-wrap {
   background-color: var(--color-white);
 }
-.post-link-block.cs:hover .cs-title,
-.post-link-block.cs:hover .rn-title,
-.post-link-block.cs:hover .testim-num,
-.post-link-block.cs:hover .blog-point,
-.post-link-block.cs:hover .highlight-text-alt {
+.post-link-block.cs:not([data-ix]):hover .cs-title,
+.post-link-block.cs:not([data-ix]):hover .rn-title,
+.post-link-block.cs:not([data-ix]):hover .testim-num,
+.post-link-block.cs:not([data-ix]):hover .blog-point,
+.post-link-block.cs:not([data-ix]):hover .highlight-text-alt {
   color: var(--color-black);
 }
-.post-link-block.cs:hover .testim-point-wrap.blog.cs {
+.post-link-block.cs:not([data-ix]):hover .testim-point-wrap.blog.cs {
   border-left-color: var(--color-blue-dark);
 }
 

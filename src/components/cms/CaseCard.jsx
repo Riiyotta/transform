@@ -1,10 +1,12 @@
+import { useLayoutEffect, useRef } from 'react'
 import CaseVariant from './CaseVariant'
+import { bindCaseCardHover } from './cmsHover'
 import { CMS_ICONS, localAsset, localAssetVariant } from '../../data/cms'
 
 // Case-study card — `div.blogs-item.cs > a.post-link-block.cs` (specs/case-studies.md §3.3).
 // `readNext` renders the detail-page read-next variant (§4.4): the bottom is `.post-bottom-wrap`
 // without `.cs` and the title is plain `._30px-text.white` (clone: `.rn-title`), and the logo
-// imgs use sizes="100vw". Static rest state; hover END state is static CSS in cms.css.
+// imgs use sizes="100vw". Static rest state; hover is tweened by bindCaseCardHover (cmsHover.js).
 // MOTION: CS-M1 — IX2 e-62 / e-63 -> a-52 / a-53 (mouseover / mouseout, all breakpoints):
 //   group 1 (instant-ish): arrow -> 0, black logo -> 0 (500ms linear), img-wrap -> rgba(255,255,255,.01);
 //   group 2 (300ms outQuad): .post-img-wrap.cs bg -> #f1f3f3, .cl-wh-logo-on-cell opacity -> 0,
@@ -25,10 +27,12 @@ function Logo({ url, className, sizes }) {
 }
 
 export default function CaseCard({ item, readNext = false }) {
+  const ref = useRef(null)
+  useLayoutEffect(() => bindCaseCardHover(ref.current), [])
   const sizes = readNext ? '100vw' : '(max-width: 991px) 100vw, 780px'
   return (
     <div className="blogs-item cs" role="listitem">
-      <a href={item.href} className="post-link-block cs" data-component="case-card">
+      <a ref={ref} href={item.href} className="post-link-block cs" data-component="case-card">
         <div className="post-img-wrap cs">
           <Logo url={item.logoWhite} className="cl-wh-logo-on-cell" sizes={sizes} />
           <Logo url={item.logoBlack} className="cl-bl-logo-on-cell" sizes={sizes} />

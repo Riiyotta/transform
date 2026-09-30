@@ -1,0 +1,134 @@
+{
+ "/blog": [
+  {
+   "f": 1,
+   "topPct": 0.999,
+   "opaque": 1,
+   "n": 200
+  },
+  {
+   "f": 0.8,
+   "topPct": 0.799,
+   "opaque": 0.92,
+   "n": 200
+  },
+  {
+   "f": 0.6,
+   "topPct": 0.599,
+   "opaque": 0.76,
+   "n": 200
+  },
+  {
+   "f": 0.4,
+   "topPct": 0.399,
+   "opaque": 0.5,
+   "n": 200
+  },
+  {
+   "f": 0.2,
+   "topPct": 0.199,
+   "opaque": 0.24,
+   "n": 200
+  },
+  {
+   "f": 0,
+   "topPct": -0.001,
+   "opaque": 0.08,
+   "n": 200
+  },
+  {
+   "f": -0.2,
+   "topPct": -0.201,
+   "opaque": 0,
+   "n": 200
+  }
+ ],
+ "/blog/redefining-healthcare-ai": [
+  {
+   "f": 1,
+   "topPct": 1,
+   "opaque": 1,
+   "n": 200
+  },
+  {
+   "f": 0.8,
+   "topPct": 0.8,
+   "opaque": 0.92,
+   "n": 200
+  },
+  {
+   "f": 0.6,
+   "topPct": 0.6,
+   "opaque": 0.76,
+   "n": 200
+  },
+  {
+   "f": 0.4,
+   "topPct": 0.4,
+   "opaque": 0.5,
+   "n": 200
+  },
+  {
+   "f": 0.2,
+   "topPct": 0.2,
+   "opaque": 0.24,
+   "n": 200
+  },
+  {
+   "f": 0,
+   "topPct": 0,
+   "opaque": 0.08,
+   "n": 200
+  },
+  {
+   "f": -0.2,
+   "topPct": -0.2,
+   "opaque": 0,
+   "n": 200
+  }
+ ],
+ "/case-studies/southern-bone-joint": [
+  {
+   "f": 1,
+   "topPct": 1,
+   "opaque": 1,
+   "n": 200
+  },
+  {
+   "f": 0.8,
+   "topPct": 0.8,
+   "opaque": 0.92,
+   "n": 200
+  },
+  {
+   "f": 0.6,
+   "topPct": 0.6,
+   "opaque": 0.76,
+   "n": 200
+  },
+  {
+   "f": 0.4,
+   "topPct": 0.4,
+   "opaque": 0.5,
+   "n": 200
+  },
+  {
+   "f": 0.2,
+   "topPct": 0.2,
+   "opaque": 0.24,
+   "n": 200
+  },
+  {
+   "f": 0,
+   "topPct": 0,
+   "opaque": 0.08,
+   "n": 200
+  },
+  {
+   "f": -0.2,
+   "topPct": -0.2,
+   "opaque": 0,
+   "n": 200
+  }
+ ]
+}
