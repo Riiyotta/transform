@@ -1,0 +1,200 @@
+
+## a-14 stats-IN (w-img) DESKTOP [firstGroupInitial]
+  g0 TRANSFORM_MOVE tgt=.h1-text.white-text useEvt=CHILDREN dur=500 delay=0 ease= yValue=100 xUnit="PX" yUnit="%" zUnit="PX"
+  g0 TRANSFORM_MOVE tgt=._16px-text.white-text.stat-descr useEvt=CHILDREN dur=500 delay=0 ease= yValue=100 xUnit="PX" yUnit="%" zUnit="PX"
+  g0 STYLE_OPACITY tgt=.stats-img-wrap useEvt=CHILDREN dur=500 delay=0 ease= value=0 unit=""
+  g1 TRANSFORM_MOVE tgt=._16px-text.white-text.stat-descr useEvt=CHILDREN dur=500 delay=0 ease=outCubic yValue=0 xUnit="PX" yUnit="%" zUnit="PX"
+  g1 TRANSFORM_MOVE tgt=.h1-text.white-text useEvt=CHILDREN dur=500 delay=0 ease=outCubic yValue=0 xUnit="PX" yUnit="%" zUnit="PX"
+  g1 STYLE_OPACITY tgt=.stats-img-wrap useEvt=CHILDREN dur=200 delay=0 ease=easeOut value=1 unit=""
+
+## a-15 stats-OUT (w-img) DESKTOP
+  g0 TRANSFORM_MOVE tgt=.h1-text.white-text useEvt=CHILDREN dur=500 delay=0 ease=outCubic yValue=100 xUnit="PX" yUnit="%" zUnit="PX"
+  g0 TRANSFORM_MOVE tgt=._16px-text.white-text.stat-descr useEvt=CHILDREN dur=500 delay=0 ease=outCubic yValue=100 xUnit="PX" yUnit="%" zUnit="PX"
+  g0 STYLE_OPACITY tgt=.stats-img-wrap useEvt=CHILDREN dur=200 delay=0 ease=easeOut value=0 unit=""
+
+## a-4 tab-progress-vert-IN (DESKTOP) [firstGroupInitial]
+  g0 STYLE_SIZE tgt=.tab-progress-vert useEvt=CHILDREN dur=5000 delay=0 ease=bouncePast heightValue=0 widthUnit="PX" heightUnit="%"
+  g1 STYLE_SIZE tgt=.tab-progress-vert useEvt=CHILDREN dur=4000 delay=0 ease= heightValue=100 widthUnit="PX" heightUnit="%"
+
+## a-5 tab-progress-vert-OUT  (DESKTOP)
+  g0 STYLE_SIZE tgt=.tab-progress-vert useEvt=CHILDREN dur=0 delay=0 ease= heightValue=0 widthUnit="PX" heightUnit="%"
+
+## a-10 Integration-IN (bl)
+  g0 STYLE_BACKGROUND_COLOR tgt=684a82e4294991569082d382|ecac4162-de04-8fca-d3be-987824c510a3 useEvt=true dur=200 delay=0 ease=easeOut globalSwatchId="--white" rValue=255 bValue=255 gValue=255 aValue=1
+  g0 STYLE_OPACITY tgt=.integration-logo.white useEvt=CHILDREN dur=0 delay=0 ease=easeOut value=0 unit=""
+  g0 STYLE_OPACITY tgt=.integration-logo.black useEvt=CHILDREN dur=0 delay=0 ease=easeOut value=1 unit=""
+
+## a-11 Integration-OUT (bl)
+  g0 STYLE_BACKGROUND_COLOR tgt=684a82e4294991569082d382|ecac4162-de04-8fca-d3be-987824c510a3 useEvt=true dur=200 delay=0 ease=easeOut globalSwatchId="" rValue=2 bValue=1 gValue=8 aValue=0
+  g0 STYLE_OPACITY tgt=.integration-logo.black useEvt=CHILDREN dur=0 delay=0 ease=easeOut value=0 unit=""
+  g0 STYLE_OPACITY tgt=.integration-logo.white useEvt=CHILDREN dur=0 delay=0 ease=easeOut value=1 unit=""
+
+## a-12 secure-IN
+  g0 STYLE_BACKGROUND_COLOR tgt=684a82e4294991569082d382|ecac4162-de04-8fca-d3be-987824c510a3 useEvt=true dur=200 delay=0 ease=easeOut globalSwatchId="--white" rValue=255 bValue=255 gValue=255 aValue=1
+  g0 STYLE_OPACITY tgt=.secure-logo.white useEvt=CHILDREN dur=0 delay=0 ease=easeOut value=0 unit=""
+  g0 STYLE_OPACITY tgt=.secure-logo.black useEvt=CHILDREN dur=0 delay=0 ease=easeOut value=1 unit=""
+
+## a-13 secure-OUT
+  g0 STYLE_BACKGROUND_COLOR tgt=684a82e4294991569082d382|ecac4162-de04-8fca-d3be-987824c510a3 useEvt=true dur=200 delay=0 ease=easeOut globalSwatchId="" rValue=2 bValue=1 gValue=8 aValue=0
+  g0 STYLE_OPACITY tgt=.secure-logo.black useEvt=CHILDREN dur=0 delay=0 ease=easeOut value=0 unit=""
+  g0 STYLE_OPACITY tgt=.secure-logo.white useEvt=CHILDREN dur=0 delay=0 ease=easeOut value=1 unit=""
+
+## a-17 stats-IN (w-img) TABLET [firstGroupInitial]
+  g0 STYLE_OPACITY tgt=.stats-img-wrap useEvt=CHILDREN dur=500 delay=0 ease= value=0 unit=""
+  g0 STYLE_SIZE tgt=6899dffb096a12112e48e34f|59f77f26-6438-5e5f-bf4c-b22a74822236 useEvt=true dur=200 delay=0 ease=easeOut widthValue=25 widthUnit="%" heightUnit="PX"
+  g0 STYLE_SIZE tgt=.stats-block useEvt=SIBLINGS dur=200 delay=0 ease=easeOut widthValue=25 widthUnit="%" heightUnit="PX"
+  g0 STYLE_OPACITY tgt=.stats-img-wrap  dur=500 delay=0 ease= value=1 unit=""
+  g0 TRANSFORM_MOVE tgt=.h1-text.white-text.stat-head  dur=500 delay=0 ease= yValue=0 xUnit="PX" yUnit="%" zUnit="PX"
+  g0 TRANSFORM_MOVE tgt=._16px-text.white-text.stat-descr  dur=500 delay=0 ease= yValue=0 xUnit="PX" yUnit="%" zUnit="PX"
+  g0 TRANSFORM_MOVE tgt=.h1-text.white-text.stat-head useEvt=CHILDREN dur=500 delay=0 ease= yValue=100 xUnit="PX" yUnit="%" zUnit="PX"
+  g0 TRANSFORM_MOVE tgt=._16px-text.white-text.stat-descr useEvt=CHILDREN dur=500 delay=0 ease= yValue=100 xUnit="PX" yUnit="%" zUnit="PX"
+  g1 STYLE_SIZE tgt=.stats-block useEvt=SIBLINGS dur=500 delay=0 ease=easeOut widthValue=10 widthUnit="%" heightUnit="PX"
+  g1 STYLE_SIZE tgt=6899dffb096a12112e48e34f|59f77f26-6438-5e5f-bf4c-b22a74822236 useEvt=true dur=500 delay=0 ease=easeOut widthValue=70 widthUnit="%" heightUnit="PX"
+  g1 STYLE_OPACITY tgt=.stats-img-wrap  dur=200 delay=0 ease=easeOut value=0 unit=""
+  g1 STYLE_OPACITY tgt=.stats-img-wrap useEvt=CHILDREN dur=200 delay=0 ease=easeOut value=1 unit=""
+  g1 TRANSFORM_MOVE tgt=.h1-text.white-text.stat-head  dur=200 delay=0 ease=outCubic yValue=100 xUnit="PX" yUnit="%" zUnit="PX"
+  g1 TRANSFORM_MOVE tgt=._16px-text.white-text.stat-descr  dur=200 delay=0 ease=outCubic yValue=100 xUnit="PX" yUnit="%" zUnit="PX"
+  g1 TRANSFORM_MOVE tgt=.h1-text.white-text.stat-head useEvt=CHILDREN dur=500 delay=0 ease=outCubic yValue=0 xUnit="PX" yUnit="%" zUnit="PX"
+  g1 TRANSFORM_MOVE tgt=._16px-text.white-text.stat-descr useEvt=CHILDREN dur=500 delay=0 ease=outCubic yValue=0 xUnit="PX" yUnit="%" zUnit="PX"
+
+## a-29 tab-progress-vert-IN (TABLET) UPD [firstGroupInitial]
+  g0 GENERAL_DISPLAY tgt=._14px-text.white-text.task-text-row useEvt=CHILDREN dur=0 delay=0 ease= value="none"
+  g1 GENERAL_DISPLAY tgt=._14px-text.white-text.task-text-row useEvt=CHILDREN dur=0 delay=0 ease= value="block"
+
+## a-19 tab-progress-vert-OUT  (TABLET)
+  g0 STYLE_SIZE tgt=.tab-progress-vert useEvt=CHILDREN dur=0 delay=0 ease= heightValue=0 widthUnit="PX" heightUnit="%"
+  g0 GENERAL_DISPLAY tgt=._14px-text.white-text.task-text-row useEvt=CHILDREN dur=0 delay=0 ease= value="none"
+
+## a-20 nav-menu-OPEN [firstGroupInitial]
+  g0 GENERAL_DISPLAY tgt=.nav-links useEvt=CHILDREN dur=0 delay=0 ease= value="none"
+  g0 STYLE_OPACITY tgt=.nav-links useEvt=CHILDREN dur=500 delay=0 ease= value=0 unit=""
+  g1 GENERAL_DISPLAY tgt=.nav-links useEvt=CHILDREN dur=0 delay=0 ease= value="block"
+  g1 STYLE_OPACITY tgt=.nav-links useEvt=CHILDREN dur=200 delay=0 ease= value=1 unit=""
+
+## a-21 nav-menu-CLOSE
+  g0 STYLE_OPACITY tgt=.nav-links useEvt=CHILDREN dur=200 delay=0 ease= value=0 unit=""
+  g1 GENERAL_DISPLAY tgt=.nav-links useEvt=CHILDREN dur=0 delay=0 ease= value="none"
+
+## a-22 nav-menu-OPEN 2 [firstGroupInitial]
+  g0 GENERAL_DISPLAY tgt=.nav-links useEvt=CHILDREN dur=0 delay=0 ease= value="none"
+  g0 STYLE_OPACITY tgt=.nav-links useEvt=CHILDREN dur=500 delay=0 ease= value=0 unit=""
+  g1 GENERAL_DISPLAY tgt=.nav-links useEvt=CHILDREN dur=0 delay=0 ease= value="block"
+  g1 STYLE_OPACITY tgt=.nav-links useEvt=CHILDREN dur=200 delay=0 ease= value=1 unit=""
+
+## a-23 nav-menu-CLOSE 2
+  g0 STYLE_OPACITY tgt=.nav-links useEvt=CHILDREN dur=200 delay=0 ease= value=0 unit=""
+  g1 GENERAL_DISPLAY tgt=.nav-links useEvt=CHILDREN dur=0 delay=0 ease= value="none"
+
+## a-28 Nav Opens UPD (Tablet) [firstGroupInitial]
+  g0 STYLE_BORDER tgt=.menu-btn-wrap useEvt=CHILDREN dur=200 delay=0 ease=easeOut globalSwatchId="" rValue=255 bValue=255 gValue=255 aValue=0
+  g1 STYLE_TEXT_COLOR tgt=.nav-link-block useEvt=CHILDREN dur=200 delay=0 ease=easeOut globalSwatchId="--white" rValue=255 bValue=255 gValue=255 aValue=1
+  g1 GENERAL_DISPLAY tgt=.burger-black useEvt=CHILDREN dur=0 delay=0 ease= value="none"
+  g1 GENERAL_DISPLAY tgt=.burger-white useEvt=CHILDREN dur=0 delay=0 ease= value="none"
+  g1 STYLE_BORDER tgt=.menu-btn-wrap useEvt=CHILDREN dur=200 delay=0 ease=easeOut globalSwatchId="--white-0-2" rValue=255 bValue=255 gValue=255 aValue=0.2
+  g1 STYLE_OPACITY tgt=.nav-cross-white useEvt=CHILDREN dur=100 delay=100 ease=easeOut value=1 unit=""
+
+## a-30 Nav Closes UPD (Tablet)
+  g0 STYLE_BORDER tgt=.menu-btn-wrap useEvt=CHILDREN dur=200 delay=0 ease=easeOut globalSwatchId="" rValue=255 bValue=255 gValue=255 aValue=0
+  g0 STYLE_OPACITY tgt=.nav-cross-white useEvt=CHILDREN dur=100 delay=0 ease=easeOut value=0 unit=""
+  g0 GENERAL_DISPLAY tgt=.burger-black useEvt=CHILDREN dur=0 delay=100 ease= value="block"
+  g0 GENERAL_DISPLAY tgt=.burger-white useEvt=CHILDREN dur=0 delay=100 ease= value="block"
+
+## a-31 stats-IN (w-img) MOB [firstGroupInitial]
+  g0 STYLE_OPACITY tgt=.stats-img-wrap useEvt=CHILDREN dur=500 delay=0 ease= value=0 unit=""
+  g0 STYLE_SIZE tgt=6899dffb096a12112e48e34f|59f77f26-6438-5e5f-bf4c-b22a74822236 useEvt=true dur=200 delay=0 ease=easeOut widthValue=100 widthUnit="%" heightUnit="AUTO"
+  g0 STYLE_SIZE tgt=.stats-block useEvt=SIBLINGS dur=200 delay=0 ease=easeOut widthUnit="%" heightUnit="PX"
+  g0 STYLE_OPACITY tgt=.stats-img-wrap  dur=500 delay=0 ease= value=1 unit=""
+  g0 TRANSFORM_MOVE tgt=.h1-text.white-text.stat-head  dur=500 delay=0 ease= yValue=0 xUnit="PX" yUnit="%" zUnit="PX"
+  g0 TRANSFORM_MOVE tgt=._16px-text.white-text.stat-descr  dur=500 delay=0 ease= yValue=0 xUnit="PX" yUnit="%" zUnit="PX"
+  g0 TRANSFORM_MOVE tgt=.h1-text.white-text.stat-head useEvt=CHILDREN dur=500 delay=0 ease= yValue=100 xUnit="PX" yUnit="%" zUnit="PX"
+  g0 TRANSFORM_MOVE tgt=._16px-text.white-text.stat-descr useEvt=CHILDREN dur=500 delay=0 ease= yValue=100 xUnit="PX" yUnit="%" zUnit="PX"
+  g1 STYLE_SIZE tgt=.stats-block useEvt=SIBLINGS dur=500 delay=0 ease=easeOut widthUnit="%" heightUnit="AUTO"
+  g1 STYLE_SIZE tgt=6899dffb096a12112e48e34f|59f77f26-6438-5e5f-bf4c-b22a74822236 useEvt=true dur=500 delay=0 ease=easeOut widthValue=100 heightValue=260 widthUnit="%" heightUnit="px"
+  g1 STYLE_OPACITY tgt=.stats-img-wrap  dur=200 delay=0 ease=easeOut value=0 unit=""
+  g1 STYLE_OPACITY tgt=.stats-img-wrap useEvt=CHILDREN dur=200 delay=0 ease=easeOut value=1 unit=""
+  g1 TRANSFORM_MOVE tgt=.h1-text.white-text.stat-head  dur=200 delay=0 ease=outCubic yValue=100 xUnit="PX" yUnit="%" zUnit="PX"
+  g1 TRANSFORM_MOVE tgt=._16px-text.white-text.stat-descr  dur=200 delay=0 ease=outCubic yValue=100 xUnit="PX" yUnit="%" zUnit="PX"
+  g1 TRANSFORM_MOVE tgt=.h1-text.white-text.stat-head useEvt=CHILDREN dur=500 delay=0 ease=outCubic yValue=0 xUnit="PX" yUnit="%" zUnit="PX"
+  g1 TRANSFORM_MOVE tgt=._16px-text.white-text.stat-descr useEvt=CHILDREN dur=500 delay=0 ease=outCubic yValue=0 xUnit="PX" yUnit="%" zUnit="PX"
+
+## a-32 underline-IN [firstGroupInitial]
+  g0 STYLE_SIZE tgt=.underline._1 useEvt=CHILDREN dur=500 delay=0 ease= widthValue=100 widthUnit="%" heightUnit="PX"
+  g1 STYLE_SIZE tgt=.underline._1 useEvt=CHILDREN dur=250 delay=0 ease=inOutQuad widthValue=0 widthUnit="%" heightUnit="PX"
+  g2 STYLE_SIZE tgt=.underline._2 useEvt=CHILDREN dur=250 delay=0 ease=inOutQuad widthValue=100 widthUnit="%" heightUnit="PX"
+
+## a-33 underline-OUT
+  g0 STYLE_SIZE tgt=.underline._1 useEvt=CHILDREN dur=0 delay=0 ease=outCubic widthValue=100 widthUnit="%" heightUnit="PX"
+  g0 STYLE_SIZE tgt=.underline._2 useEvt=CHILDREN dur=0 delay=0 ease=outCubic widthValue=0 widthUnit="%" heightUnit="PX"
+
+## a-34 arrow-right-IN [firstGroupInitial]
+  g0 TRANSFORM_MOVE tgt=.arrow.black useEvt=CHILDREN dur=500 delay=0 ease= xValue=-250 xUnit="%" yUnit="PX" zUnit="PX"
+  g0 STYLE_BACKGROUND_COLOR tgt=6899dffb096a12112e48e34f|bba85f29-2b2b-ce05-638a-9d7acc65d173 useEvt=true dur=500 delay=0 ease= globalSwatchId="" rValue=255 bValue=255 gValue=255 aValue=0
+  g1 TRANSFORM_MOVE tgt=.arrow.white useEvt=CHILDREN dur=250 delay=0 ease=outQuad xValue=250 xUnit="%" yUnit="PX" zUnit="PX"
+  g1 STYLE_BACKGROUND_COLOR tgt=6899dffb096a12112e48e34f|bba85f29-2b2b-ce05-638a-9d7acc65d173 useEvt=true dur=250 delay=0 ease=outQuad globalSwatchId="--white" rValue=255 bValue=255 gValue=255 aValue=1
+  g1 TRANSFORM_MOVE tgt=.arrow.black useEvt=CHILDREN dur=250 delay=0 ease=outQuad xValue=0 xUnit="%" yUnit="PX" zUnit="PX"
+
+## a-35 arrow-right-OUT
+  g0 TRANSFORM_MOVE tgt=.arrow.white useEvt=CHILDREN dur=250 delay=0 ease=outQuad xValue=0 xUnit="%" yUnit="PX" zUnit="PX"
+  g0 STYLE_BACKGROUND_COLOR tgt=6899dffb096a12112e48e34f|bba85f29-2b2b-ce05-638a-9d7acc65d173 useEvt=true dur=250 delay=0 ease=outQuad globalSwatchId="" rValue=255 bValue=255 gValue=255 aValue=0
+  g0 TRANSFORM_MOVE tgt=.arrow.black useEvt=CHILDREN dur=250 delay=0 ease=outQuad xValue=-250 xUnit="%" yUnit="PX" zUnit="PX"
+
+## a-36 arrow-left-IN [firstGroupInitial]
+  g0 TRANSFORM_MOVE tgt=.arrow.black useEvt=CHILDREN dur=500 delay=0 ease= xValue=250 xUnit="%" yUnit="PX" zUnit="PX"
+  g0 STYLE_BACKGROUND_COLOR tgt=6899dffb096a12112e48e34f|bba85f29-2b2b-ce05-638a-9d7acc65d173 useEvt=true dur=500 delay=0 ease= globalSwatchId="" rValue=255 bValue=255 gValue=255 aValue=0
+  g1 TRANSFORM_MOVE tgt=.arrow.white useEvt=CHILDREN dur=250 delay=0 ease=outQuad xValue=-250 xUnit="%" yUnit="PX" zUnit="PX"
+  g1 STYLE_BACKGROUND_COLOR tgt=6899dffb096a12112e48e34f|bba85f29-2b2b-ce05-638a-9d7acc65d173 useEvt=true dur=250 delay=0 ease=outQuad globalSwatchId="--white" rValue=255 bValue=255 gValue=255 aValue=1
+  g1 TRANSFORM_MOVE tgt=.arrow.black useEvt=CHILDREN dur=250 delay=0 ease=outQuad xValue=0 xUnit="%" yUnit="PX" zUnit="PX"
+
+## a-37 arrow-left-OUT
+  g0 TRANSFORM_MOVE tgt=.arrow.white useEvt=CHILDREN dur=250 delay=0 ease=outQuad xValue=0 xUnit="%" yUnit="PX" zUnit="PX"
+  g0 STYLE_BACKGROUND_COLOR tgt=6899dffb096a12112e48e34f|bba85f29-2b2b-ce05-638a-9d7acc65d173 useEvt=true dur=250 delay=0 ease=outQuad globalSwatchId="" rValue=255 bValue=255 gValue=255 aValue=0
+  g0 TRANSFORM_MOVE tgt=.arrow.black useEvt=CHILDREN dur=250 delay=0 ease=outQuad xValue=250 xUnit="%" yUnit="PX" zUnit="PX"
+
+## a-38 close-hover-IN
+  g0 STYLE_BACKGROUND_COLOR tgt=f8506a98-d7bf-28c6-d2cd-03b028e81b2b useEvt=true dur=250 delay=0 ease=outQuad globalSwatchId="--white" rValue=255 bValue=255 gValue=255 aValue=1
+  g0 STYLE_OPACITY tgt=.close-icon.white useEvt=CHILDREN dur=250 delay=0 ease=outQuad value=0 unit=""
+  g0 STYLE_OPACITY tgt=.close-icon.black useEvt=CHILDREN dur=250 delay=0 ease=outQuad value=1 unit=""
+
+## a-39 close-hover-OUT
+  g0 STYLE_BACKGROUND_COLOR tgt=f8506a98-d7bf-28c6-d2cd-03b028e81b2b useEvt=true dur=250 delay=0 ease=outQuad globalSwatchId="" rValue=255 bValue=255 gValue=255 aValue=0
+  g0 STYLE_OPACITY tgt=.close-icon.white useEvt=CHILDREN dur=250 delay=0 ease=outQuad value=1 unit=""
+  g0 STYLE_OPACITY tgt=.close-icon.black useEvt=CHILDREN dur=250 delay=0 ease=outQuad value=0 unit=""
+
+## a-40 nav-link-hover-IN
+  g0 TRANSFORM_MOVE tgt=.nav-text useEvt=CHILDREN dur=250 delay=0 ease=outQuad yValue=-100 xUnit="PX" yUnit="%" zUnit="PX"
+
+## a-41 nav-link-hover-OUT
+  g0 TRANSFORM_MOVE tgt=.nav-text useEvt=CHILDREN dur=250 delay=0 ease=outQuad yValue=0 xUnit="PX" yUnit="%" zUnit="PX"
+
+## a-44 underline-small-IN [firstGroupInitial]
+  g0 STYLE_SIZE tgt=.underline-small._1 useEvt=CHILDREN dur=250 delay=0 ease=inOutQuad widthValue=0 widthUnit="%" heightUnit="PX"
+  g0 STYLE_OPACITY tgt=.underline-small._1 useEvt=CHILDREN dur=500 delay=0 ease= value=1 unit=""
+  g1 STYLE_SIZE tgt=.underline-small._1 useEvt=CHILDREN dur=250 delay=0 ease=inOutQuad widthValue=100 widthUnit="%" heightUnit="PX"
+  g2 STYLE_SIZE tgt=.underline-small._2 useEvt=CHILDREN dur=0 delay=0 ease= widthValue=100 widthUnit="%" heightUnit="PX"
+  g3 STYLE_OPACITY tgt=.underline-small._1 useEvt=CHILDREN dur=0 delay=0 ease= value=0 unit=""
+
+## a-45 underline-small-OUT
+  g0 STYLE_SIZE tgt=.underline-small._2 useEvt=CHILDREN dur=250 delay=0 ease=inOutQuad widthValue=0 widthUnit="%" heightUnit="PX"
+  g0 STYLE_SIZE tgt=.underline-small._1 useEvt=CHILDREN dur=250 delay=0 ease=inOutQuad widthValue=0 widthUnit="%" heightUnit="PX"
+  g1 STYLE_OPACITY tgt=.underline-small._1 useEvt=CHILDREN dur=0 delay=0 ease= value=1 unit=""
+
+## a-54 underline-small-IN 2 [firstGroupInitial]
+  g0 STYLE_SIZE tgt=.underline-small-2._1 useEvt=CHILDREN dur=250 delay=0 ease=inOutQuad widthValue=0 widthUnit="%" heightUnit="PX"
+  g0 STYLE_OPACITY tgt=.underline-small-2._1 useEvt=CHILDREN dur=500 delay=0 ease= value=1 unit=""
+  g1 STYLE_SIZE tgt=.underline-small-2._1 useEvt=CHILDREN dur=250 delay=0 ease=inOutQuad widthValue=100 widthUnit="%" heightUnit="PX"
+  g2 STYLE_SIZE tgt=.underline-small-2._2 useEvt=CHILDREN dur=0 delay=0 ease= widthValue=100 widthUnit="%" heightUnit="PX"
+  g3 STYLE_OPACITY tgt=.underline-small-2._1 useEvt=CHILDREN dur=0 delay=0 ease= value=0 unit=""
+
+## a-55 underline-small-OUT 2
+  g0 STYLE_SIZE tgt=.underline-small-2._2 useEvt=CHILDREN dur=250 delay=0 ease=inOutQuad widthValue=0 widthUnit="%" heightUnit="PX"
+  g0 STYLE_SIZE tgt=.underline-small-2._1 useEvt=CHILDREN dur=250 delay=0 ease=inOutQuad widthValue=0 widthUnit="%" heightUnit="PX"
+  g1 STYLE_OPACITY tgt=.underline-small-2._1 useEvt=CHILDREN dur=0 delay=0 ease= value=1 unit=""
+
+## a-56 underline-IN 2 [firstGroupInitial]
+  g0 STYLE_SIZE tgt=.underline-2._1 useEvt=CHILDREN dur=500 delay=0 ease= widthValue=100 widthUnit="%" heightUnit="PX"
+  g1 STYLE_SIZE tgt=.underline-2._1 useEvt=CHILDREN dur=250 delay=0 ease=inOutQuad widthValue=0 widthUnit="%" heightUnit="PX"
+  g2 STYLE_SIZE tgt=.underline-2._2 useEvt=CHILDREN dur=250 delay=0 ease=inOutQuad widthValue=100 widthUnit="%" heightUnit="PX"
+
+## a-57 underline-OUT 2
+  g0 STYLE_SIZE tgt=.underline-2._1 useEvt=CHILDREN dur=0 delay=0 ease=outCubic widthValue=100 widthUnit="%" heightUnit="PX"
+  g0 STYLE_SIZE tgt=.underline-2._2 useEvt=CHILDREN dur=0 delay=0 ease=outCubic widthValue=0 widthUnit="%" heightUnit="PX"

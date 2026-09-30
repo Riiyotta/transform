@@ -1,0 +1,1113 @@
+[
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/68639bb30a93107837363b04_logo-2.svg",
+  "file": "68639bb30a93107837363b04_logo-2.svg",
+  "ctx": [
+   "img.logo-white",
+   "img.logo-white.popup"
+  ],
+  "local": "68639bb30a93107837363b04_logo-2.svg",
+  "loaded_live": true,
+  "dims": "130x38 vb(0 0 130 38)"
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/68906575d051bc5b61776ed5_logo-black.svg",
+  "file": "68906575d051bc5b61776ed5_logo-black.svg",
+  "ctx": [
+   "img.logo-black"
+  ],
+  "local": "68906575d051bc5b61776ed5_logo-black.svg",
+  "loaded_live": true,
+  "dims": "130x38 vb(0 0 130 38)"
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/68a300503634463bc8a25527_menu-burger.svg",
+  "file": "68a300503634463bc8a25527_menu-burger.svg",
+  "ctx": [
+   "img.burger-white"
+  ],
+  "local": "68a300503634463bc8a25527_menu-burger.svg",
+  "loaded_live": true,
+  "dims": "24x24 vb(0 0 24 24)"
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/689caa3e67c8dbd2e70dc1bc_close-icon-white.svg",
+  "file": "689caa3e67c8dbd2e70dc1bc_close-icon-white.svg",
+  "ctx": [
+   "img.nav-cross-white"
+  ],
+  "local": "689caa3e67c8dbd2e70dc1bc_close-icon-white.svg",
+  "loaded_live": true,
+  "dims": "24x24 vb(0 0 24 24)"
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/68a5a50307e780f41451718b_menu-burger-close.svg",
+  "file": "68a5a50307e780f41451718b_menu-burger-close.svg",
+  "ctx": [
+   "img.burger-black"
+  ],
+  "local": "68a5a50307e780f41451718b_menu-burger-close.svg",
+  "loaded_live": true,
+  "dims": "24x24 vb(0 0 24 24)"
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/689caa792a4b35f0e9aba831_close-icon-white-28.svg",
+  "file": "689caa792a4b35f0e9aba831_close-icon-white-28.svg",
+  "ctx": [
+   "img.close-icon.white"
+  ],
+  "local": "689caa792a4b35f0e9aba831_close-icon-white-28.svg",
+  "loaded_live": false,
+  "dims": "28x28 vb(0 0 28 28)"
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/68af7e1deaff18ed0b98d8fb_close-icon-black-28.svg",
+  "file": "68af7e1deaff18ed0b98d8fb_close-icon-black-28.svg",
+  "ctx": [
+   "img.close-icon.black"
+  ],
+  "local": "68af7e1deaff18ed0b98d8fb_close-icon-black-28.svg",
+  "loaded_live": false,
+  "dims": "28x28 vb(0 0 28 28)"
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/687f56b54ba0d2c838ec91b8_The%20Orthopaedic%20Center.webp",
+  "file": "687f56b54ba0d2c838ec91b8_The Orthopaedic Center.webp",
+  "ctx": [
+   "img.client-logo",
+   "img.testim-logo"
+  ],
+  "local": "687f56b54ba0d2c838ec91b8_The Orthopaedic Center.webp",
+  "loaded_live": true,
+  "dims": "443x200"
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/687f56b5ced9a9f759250276_Resurgens%20Orthopaedics.webp",
+  "file": "687f56b5ced9a9f759250276_Resurgens Orthopaedics.webp",
+  "ctx": [
+   "img.client-logo"
+  ],
+  "local": "687f56b5ced9a9f759250276_Resurgens Orthopaedics.webp",
+  "loaded_live": true,
+  "dims": "492x200"
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/687f56b5fdd0b924dce2982f_North%20Florida%20Surgeons.webp",
+  "file": "687f56b5fdd0b924dce2982f_North Florida Surgeons.webp",
+  "ctx": [
+   "img.client-logo"
+  ],
+  "local": "687f56b5fdd0b924dce2982f_North Florida Surgeons.webp",
+  "loaded_live": true,
+  "dims": "463x200"
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/687f56a9ad410e39b817c66b_Semmes%20Murphey.svg",
+  "file": "687f56a9ad410e39b817c66b_Semmes Murphey.svg",
+  "ctx": [
+   "img.client-logo"
+  ],
+  "local": "687f56a9ad410e39b817c66b_Semmes Murphey.svg",
+  "loaded_live": true,
+  "dims": "82x50 vb(0 0 82 50)"
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/6a75e93f1d775f54a21ef4a2_SBJ_Logo_upscaled_200h.png",
+  "file": "6a75e93f1d775f54a21ef4a2_SBJ_Logo_upscaled_200h.png",
+  "ctx": [
+   "img.client-logo.sbj",
+   "srcset img.client-logo.sbj"
+  ],
+  "local": "6a75e93f1d775f54a21ef4a2_SBJ_Logo_upscaled_200h.png",
+  "loaded_live": true,
+  "dims": "1212x200"
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/6a75e93f1d775f54a21ef4a2_SBJ_Logo_upscaled_200h-p-500.png",
+  "file": "6a75e93f1d775f54a21ef4a2_SBJ_Logo_upscaled_200h-p-500.png",
+  "ctx": [
+   "srcset img.client-logo.sbj"
+  ],
+  "local": null,
+  "loaded_live": false,
+  "dims": ""
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/6a75e93f1d775f54a21ef4a2_SBJ_Logo_upscaled_200h-p-800.png",
+  "file": "6a75e93f1d775f54a21ef4a2_SBJ_Logo_upscaled_200h-p-800.png",
+  "ctx": [
+   "srcset img.client-logo.sbj"
+  ],
+  "local": null,
+  "loaded_live": false,
+  "dims": ""
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/6a75e93f1d775f54a21ef4a2_SBJ_Logo_upscaled_200h-p-1080.png",
+  "file": "6a75e93f1d775f54a21ef4a2_SBJ_Logo_upscaled_200h-p-1080.png",
+  "ctx": [
+   "srcset img.client-logo.sbj"
+  ],
+  "local": null,
+  "loaded_live": false,
+  "dims": ""
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/687f56b51adbdc9b529bd051_Andrews%20Sports%20Medicine%20%26%20Orthopaedic%20Center.webp",
+  "file": "687f56b51adbdc9b529bd051_Andrews Sports Medicine & Orthopaedic Center.webp",
+  "ctx": [
+   "img.client-logo"
+  ],
+  "local": "687f56b51adbdc9b529bd051_Andrews Sports Medicine & Orthopaedic Center.webp",
+  "loaded_live": true,
+  "dims": "447x200"
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/687f56b5d3a2aac73ec14171_TOC.webp",
+  "file": "687f56b5d3a2aac73ec14171_TOC.webp",
+  "ctx": [
+   "img.client-logo"
+  ],
+  "local": "687f56b5d3a2aac73ec14171_TOC.webp",
+  "loaded_live": true,
+  "dims": "280x200"
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/687f56a9063daee4443e46c2_Florida%20Orthopaedic%20Institute.svg",
+  "file": "687f56a9063daee4443e46c2_Florida Orthopaedic Institute.svg",
+  "ctx": [
+   "img.client-logo"
+  ],
+  "local": "687f56a9063daee4443e46c2_Florida Orthopaedic Institute.svg",
+  "loaded_live": true,
+  "dims": "107x50 vb(0 0 107 50)"
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/687f56a9e6245c0ab953f7e4_Hughston%20Clinic.svg",
+  "file": "687f56a9e6245c0ab953f7e4_Hughston Clinic.svg",
+  "ctx": [
+   "img.client-logo"
+  ],
+  "local": "687f56a9e6245c0ab953f7e4_Hughston Clinic.svg",
+  "loaded_live": true,
+  "dims": "103x50 vb(0 0 103 50)"
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/689498e0f5c437f5bddc9fb7_USOP.webp",
+  "file": "689498e0f5c437f5bddc9fb7_USOP.webp",
+  "ctx": [
+   "img.client-logo"
+  ],
+  "local": "689498e0f5c437f5bddc9fb7_USOP.webp",
+  "loaded_live": true,
+  "dims": "297x200"
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/689498e037cd46c41ab29712_UMP.svg",
+  "file": "689498e037cd46c41ab29712_UMP.svg",
+  "ctx": [
+   "img.client-logo"
+  ],
+  "local": "689498e037cd46c41ab29712_UMP.svg",
+  "loaded_live": true,
+  "dims": "114x50 vb(0 0 114 50)"
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/689498e05d8d1f8f3b3cdf22_OSM.svg",
+  "file": "689498e05d8d1f8f3b3cdf22_OSM.svg",
+  "ctx": [
+   "img.client-logo"
+  ],
+  "local": "689498e05d8d1f8f3b3cdf22_OSM.svg",
+  "loaded_live": true,
+  "dims": "132x50 vb(0 0 132 50)"
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/689498e02915466ba0586e2f_c368d18a994e282d7dfe5cf55a05a981_CDC.webp",
+  "file": "689498e02915466ba0586e2f_c368d18a994e282d7dfe5cf55a05a981_CDC.webp",
+  "ctx": [
+   "img.client-logo"
+  ],
+  "local": "689498e02915466ba0586e2f_c368d18a994e282d7dfe5cf55a05a981_CDC.webp",
+  "loaded_live": true,
+  "dims": "425x200"
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/689498e077a9e597323c706d_Eye%20Doctors.webp",
+  "file": "689498e077a9e597323c706d_Eye Doctors.webp",
+  "ctx": [
+   "img.client-logo.hide",
+   "srcset img.client-logo.hide"
+  ],
+  "local": "689498e077a9e597323c706d_Eye Doctors.webp",
+  "loaded_live": false,
+  "dims": "757x200"
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/689498e077a9e597323c706d_Eye%20Doctors-p-500.webp",
+  "file": "689498e077a9e597323c706d_Eye Doctors-p-500.webp",
+  "ctx": [
+   "srcset img.client-logo.hide"
+  ],
+  "local": null,
+  "loaded_live": false,
+  "dims": ""
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/689498e0742068939dc61f59_Armina.webp",
+  "file": "689498e0742068939dc61f59_Armina.webp",
+  "ctx": [
+   "img.client-logo.hide"
+  ],
+  "local": "689498e0742068939dc61f59_Armina.webp",
+  "loaded_live": false,
+  "dims": "378x200"
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/689498e0dcb8e3e1e573aa42_UCA.svg",
+  "file": "689498e0dcb8e3e1e573aa42_UCA.svg",
+  "ctx": [
+   "img.client-logo.hide"
+  ],
+  "local": "689498e0dcb8e3e1e573aa42_UCA.svg",
+  "loaded_live": false,
+  "dims": "187x50 vb(0 0 187 50)"
+ },
+ {
+  "url": "https://i.ytimg.com/vi/yG3PtcRGQLc/maxresdefault.jpg",
+  "file": "maxresdefault.jpg",
+  "ctx": [
+   "img.yt-facade__thumb",
+   "srcset img.yt-facade__thumb"
+  ],
+  "local": null,
+  "loaded_live": true,
+  "dims": ""
+ },
+ {
+  "url": "https://i.ytimg.com/vi/yG3PtcRGQLc/mqdefault.jpg",
+  "file": "mqdefault.jpg",
+  "ctx": [
+   "srcset img.yt-facade__thumb"
+  ],
+  "local": null,
+  "loaded_live": false,
+  "dims": ""
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/6894e2b1ef0879a32ffdc2a5_gr-bl.webp",
+  "file": "6894e2b1ef0879a32ffdc2a5_gr-bl.webp",
+  "ctx": [
+   "img.img-stats",
+   "srcset img.img-stats"
+  ],
+  "local": "6894e2b1ef0879a32ffdc2a5_gr-bl.webp",
+  "loaded_live": true,
+  "dims": "770x527"
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/6894e2b1ef0879a32ffdc2a5_gr-bl-p-500.webp",
+  "file": "6894e2b1ef0879a32ffdc2a5_gr-bl-p-500.webp",
+  "ctx": [
+   "srcset img.img-stats"
+  ],
+  "local": null,
+  "loaded_live": false,
+  "dims": ""
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/687f914b39717f558eb082e8_Tammy%20Jackson.webp",
+  "file": "687f914b39717f558eb082e8_Tammy Jackson.webp",
+  "ctx": [
+   "img.testim-photo",
+   "srcset img.testim-photo"
+  ],
+  "local": "687f914b39717f558eb082e8_Tammy Jackson.webp",
+  "loaded_live": true,
+  "dims": "770x1198"
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/687f914b39717f558eb082e8_Tammy%20Jackson-p-500.webp",
+  "file": "687f914b39717f558eb082e8_Tammy Jackson-p-500.webp",
+  "ctx": [
+   "srcset img.testim-photo"
+  ],
+  "local": null,
+  "loaded_live": false,
+  "dims": ""
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/68b03d1ff7bab6dbf46fb416_Scott%20Griffin.webp",
+  "file": "68b03d1ff7bab6dbf46fb416_Scott Griffin.webp",
+  "ctx": [
+   "img.testim-photo",
+   "srcset img.testim-photo"
+  ],
+  "local": "68b03d1ff7bab6dbf46fb416_Scott Griffin.webp",
+  "loaded_live": false,
+  "dims": "770x1198"
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/68b03d1ff7bab6dbf46fb416_Scott%20Griffin-p-500.webp",
+  "file": "68b03d1ff7bab6dbf46fb416_Scott Griffin-p-500.webp",
+  "ctx": [
+   "srcset img.testim-photo"
+  ],
+  "local": null,
+  "loaded_live": true,
+  "dims": ""
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/68b03e7aa72891aa77fb17bf_Southern%20Bone%20and%20Joint%20Specialists.webp",
+  "file": "68b03e7aa72891aa77fb17bf_Southern Bone and Joint Specialists.webp",
+  "ctx": [
+   "img.testim-logo",
+   "srcset img.testim-logo"
+  ],
+  "local": "68b03e7aa72891aa77fb17bf_Southern Bone and Joint Specialists.webp",
+  "loaded_live": false,
+  "dims": "821x200"
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/68b03e7aa72891aa77fb17bf_Southern%20Bone%20and%20Joint%20Specialists-p-500.webp",
+  "file": "68b03e7aa72891aa77fb17bf_Southern Bone and Joint Specialists-p-500.webp",
+  "ctx": [
+   "srcset img.testim-logo"
+  ],
+  "local": null,
+  "loaded_live": true,
+  "dims": ""
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/68af375b6ed817d8303e6d01_arrow-white-left.svg",
+  "file": "68af375b6ed817d8303e6d01_arrow-white-left.svg",
+  "ctx": [
+   "img.arrow.white"
+  ],
+  "local": "68af375b6ed817d8303e6d01_arrow-white-left.svg",
+  "loaded_live": true,
+  "dims": "28x28 vb(0 0 28 28)"
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/68af375bd94b22d7288ceba1_arrow-black-left.svg",
+  "file": "68af375bd94b22d7288ceba1_arrow-black-left.svg",
+  "ctx": [
+   "img.arrow.black"
+  ],
+  "local": "68af375bd94b22d7288ceba1_arrow-black-left.svg",
+  "loaded_live": true,
+  "dims": "28x28 vb(0 0 28 28)"
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/687f9e315c0a9b7f071b0a0c_arrow.svg",
+  "file": "687f9e315c0a9b7f071b0a0c_arrow.svg",
+  "ctx": [
+   "img.arrow.white"
+  ],
+  "local": "687f9e315c0a9b7f071b0a0c_arrow.svg",
+  "loaded_live": true,
+  "dims": "28x28 vb(0 0 28 28)"
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/68af321214fa5cc11e7994c7_arrow-black.svg",
+  "file": "68af321214fa5cc11e7994c7_arrow-black.svg",
+  "ctx": [
+   "img.arrow.black"
+  ],
+  "local": "68af321214fa5cc11e7994c7_arrow-black.svg",
+  "loaded_live": true,
+  "dims": "28x28 vb(0 0 28 28)"
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/6895b5254b12f4e9385d2b64_cb862a86e82892dd803115dfaf743bfe_sch-img-1.avif",
+  "file": "6895b5254b12f4e9385d2b64_cb862a86e82892dd803115dfaf743bfe_sch-img-1.avif",
+  "ctx": [
+   "img.sch-img._1"
+  ],
+  "local": "6895b5254b12f4e9385d2b64_cb862a86e82892dd803115dfaf743bfe_sch-img-1.avif",
+  "loaded_live": true,
+  "dims": "1200x1014"
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/6895b52599b0bc61961ff546_d5924aa3dfe7c5f576623788a8ab5825_sch-img-2.avif",
+  "file": "6895b52599b0bc61961ff546_d5924aa3dfe7c5f576623788a8ab5825_sch-img-2.avif",
+  "ctx": [
+   "img.sch-img._2"
+  ],
+  "local": "6895b52599b0bc61961ff546_d5924aa3dfe7c5f576623788a8ab5825_sch-img-2.avif",
+  "loaded_live": true,
+  "dims": "1200x1014"
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/6895b5252492c7e65980a91c_6da87d9d094dc249ee70d2f8f5118203_sch-img-3.avif",
+  "file": "6895b5252492c7e65980a91c_6da87d9d094dc249ee70d2f8f5118203_sch-img-3.avif",
+  "ctx": [
+   "img.sch-img._3"
+  ],
+  "local": "6895b5252492c7e65980a91c_6da87d9d094dc249ee70d2f8f5118203_sch-img-3.avif",
+  "loaded_live": true,
+  "dims": "1200x1014"
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/6895b525dc871b1f5fe7bedd_721d1e1a3e576f29f09b75ccf4d7db9e_sch-img-4.avif",
+  "file": "6895b525dc871b1f5fe7bedd_721d1e1a3e576f29f09b75ccf4d7db9e_sch-img-4.avif",
+  "ctx": [
+   "img.sch-img._4"
+  ],
+  "local": "6895b525dc871b1f5fe7bedd_721d1e1a3e576f29f09b75ccf4d7db9e_sch-img-4.avif",
+  "loaded_live": true,
+  "dims": "1200x1014"
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/6895ba258eb91995c9cabdf4_task-img-1.avif",
+  "file": "6895ba258eb91995c9cabdf4_task-img-1.avif",
+  "ctx": [
+   "img.task-img"
+  ],
+  "local": "6895ba258eb91995c9cabdf4_task-img-1.avif",
+  "loaded_live": false,
+  "dims": "1440x1408"
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/6895ba251b4a95b1e73b23cb_task-img-2.avif",
+  "file": "6895ba251b4a95b1e73b23cb_task-img-2.avif",
+  "ctx": [
+   "img.task-img"
+  ],
+  "local": "6895ba251b4a95b1e73b23cb_task-img-2.avif",
+  "loaded_live": true,
+  "dims": "1440x1408"
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/6895ba252384e22761c55270_task-img-3.avif",
+  "file": "6895ba252384e22761c55270_task-img-3.avif",
+  "ctx": [
+   "img.task-img"
+  ],
+  "local": "6895ba252384e22761c55270_task-img-3.avif",
+  "loaded_live": true,
+  "dims": "1440x1408"
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/6895c0e0cf1da44572715af5_nav-img-1.avif",
+  "file": "6895c0e0cf1da44572715af5_nav-img-1.avif",
+  "ctx": [
+   "img.nav-agent-img"
+  ],
+  "local": "6895c0e0cf1da44572715af5_nav-img-1.avif",
+  "loaded_live": true,
+  "dims": "1155x1383"
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/6895c0e0319951151e3843a6_nav-img-2.avif",
+  "file": "6895c0e0319951151e3843a6_nav-img-2.avif",
+  "ctx": [
+   "img.nav-agent-img"
+  ],
+  "local": "6895c0e0319951151e3843a6_nav-img-2.avif",
+  "loaded_live": true,
+  "dims": "1155x1383"
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/6895c0e06a401a644cf830cf_nav-img-3.avif",
+  "file": "6895c0e06a401a644cf830cf_nav-img-3.avif",
+  "ctx": [
+   "img.nav-agent-img"
+  ],
+  "local": "6895c0e06a401a644cf830cf_nav-img-3.avif",
+  "loaded_live": true,
+  "dims": "1155x1383"
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/6895c0e0cf1da44572715af8_nav-img-4.avif",
+  "file": "6895c0e0cf1da44572715af8_nav-img-4.avif",
+  "ctx": [
+   "img.nav-agent-img"
+  ],
+  "local": "6895c0e0cf1da44572715af8_nav-img-4.avif",
+  "loaded_live": true,
+  "dims": "1155x1383"
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/6883f34c4e63a9b69a4e5d84_out-icon-01.webp",
+  "file": "6883f34c4e63a9b69a4e5d84_out-icon-01.webp",
+  "ctx": [
+   "img.out-icon"
+  ],
+  "local": "6883f34c4e63a9b69a4e5d84_out-icon-01.webp",
+  "loaded_live": true,
+  "dims": "402x400"
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/6883f34c4175e5ba20591b09_out-icon-02.webp",
+  "file": "6883f34c4175e5ba20591b09_out-icon-02.webp",
+  "ctx": [
+   "img.out-icon"
+  ],
+  "local": "6883f34c4175e5ba20591b09_out-icon-02.webp",
+  "loaded_live": true,
+  "dims": "401x400"
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/6883f34c5f69d9e9448db9e1_out-icon-03.webp",
+  "file": "6883f34c5f69d9e9448db9e1_out-icon-03.webp",
+  "ctx": [
+   "img.out-icon"
+  ],
+  "local": "6883f34c5f69d9e9448db9e1_out-icon-03.webp",
+  "loaded_live": true,
+  "dims": "400x400"
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/6883f1f3db0dc1ce3dd77736_out-icon-04.webp",
+  "file": "6883f1f3db0dc1ce3dd77736_out-icon-04.webp",
+  "ctx": [
+   "img.out-icon"
+  ],
+  "local": "6883f1f3db0dc1ce3dd77736_out-icon-04.webp",
+  "loaded_live": true,
+  "dims": "400x400"
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/6883f34cf8d4db106318440c_out-icon-05.webp",
+  "file": "6883f34cf8d4db106318440c_out-icon-05.webp",
+  "ctx": [
+   "img.out-icon"
+  ],
+  "local": "6883f34cf8d4db106318440c_out-icon-05.webp",
+  "loaded_live": true,
+  "dims": "400x400"
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/6895c81333b865db4669b970_Orthopedics%20%26%20physical%20therapy.avif",
+  "file": "6895c81333b865db4669b970_Orthopedics & physical therapy.avif",
+  "ctx": [
+   "img.specialty-img"
+  ],
+  "local": "6895c81333b865db4669b970_Orthopedics & physical therapy.avif",
+  "loaded_live": true,
+  "dims": "1155x1389"
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/6895c814b7be66777d210654_Neurology.avif",
+  "file": "6895c814b7be66777d210654_Neurology.avif",
+  "ctx": [
+   "img.specialty-img"
+  ],
+  "local": "6895c814b7be66777d210654_Neurology.avif",
+  "loaded_live": false,
+  "dims": "1155x1389"
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/6895c813f36a7703449637e1_Ophthalmology%20%26%20optometry.avif",
+  "file": "6895c813f36a7703449637e1_Ophthalmology & optometry.avif",
+  "ctx": [
+   "img.specialty-img"
+  ],
+  "local": "6895c813f36a7703449637e1_Ophthalmology & optometry.avif",
+  "loaded_live": false,
+  "dims": "1155x1389"
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/6895c8130aef8550f8914df1_Podiatry.avif",
+  "file": "6895c8130aef8550f8914df1_Podiatry.avif",
+  "ctx": [
+   "img.specialty-img"
+  ],
+  "local": "6895c8130aef8550f8914df1_Podiatry.avif",
+  "loaded_live": false,
+  "dims": "1155x1389"
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/6895c81395c7a4301f713ac0_Gastroenterology.avif",
+  "file": "6895c81395c7a4301f713ac0_Gastroenterology.avif",
+  "ctx": [
+   "img.specialty-img"
+  ],
+  "local": "6895c81395c7a4301f713ac0_Gastroenterology.avif",
+  "loaded_live": false,
+  "dims": "1155x1389"
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/6895c8137ad378e38fa08ace_Dermatology.avif",
+  "file": "6895c8137ad378e38fa08ace_Dermatology.avif",
+  "ctx": [
+   "img.specialty-img"
+  ],
+  "local": "6895c8137ad378e38fa08ace_Dermatology.avif",
+  "loaded_live": false,
+  "dims": "1155x1389"
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/6895c81330d7de744c894d94_Cardiology.avif",
+  "file": "6895c81330d7de744c894d94_Cardiology.avif",
+  "ctx": [
+   "img.specialty-img"
+  ],
+  "local": "6895c81330d7de744c894d94_Cardiology.avif",
+  "loaded_live": false,
+  "dims": "1155x1389"
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/6895c81360d11952e57f20a5_Dentistry%20%26%20oral%20surgery.avif",
+  "file": "6895c81360d11952e57f20a5_Dentistry & oral surgery.avif",
+  "ctx": [
+   "img.specialty-img"
+  ],
+  "local": "6895c81360d11952e57f20a5_Dentistry & oral surgery.avif",
+  "loaded_live": false,
+  "dims": "1155x1389"
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/6895c8143c4bf61fa13f7d9d_Urology.avif",
+  "file": "6895c8143c4bf61fa13f7d9d_Urology.avif",
+  "ctx": [
+   "img.specialty-img"
+  ],
+  "local": "6895c8143c4bf61fa13f7d9d_Urology.avif",
+  "loaded_live": false,
+  "dims": "1155x1389"
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/6895c8149164418542e6e22f_OBGYN.avif",
+  "file": "6895c8149164418542e6e22f_OBGYN.avif",
+  "ctx": [
+   "img.specialty-img"
+  ],
+  "local": "6895c8149164418542e6e22f_OBGYN.avif",
+  "loaded_live": false,
+  "dims": "1155x1389"
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/6895c813e0cffd29d16ce36b_ENT.avif",
+  "file": "6895c813e0cffd29d16ce36b_ENT.avif",
+  "ctx": [
+   "img.specialty-img"
+  ],
+  "local": "6895c813e0cffd29d16ce36b_ENT.avif",
+  "loaded_live": false,
+  "dims": "1155x1389"
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/6895c814d78925820018cebe_Primary%20care.avif",
+  "file": "6895c814d78925820018cebe_Primary care.avif",
+  "ctx": [
+   "img.specialty-img"
+  ],
+  "local": "6895c814d78925820018cebe_Primary care.avif",
+  "loaded_live": false,
+  "dims": "1155x1389"
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/6895c814821090042466ce03_Pediatrics.avif",
+  "file": "6895c814821090042466ce03_Pediatrics.avif",
+  "ctx": [
+   "img.specialty-img"
+  ],
+  "local": "6895c814821090042466ce03_Pediatrics.avif",
+  "loaded_live": false,
+  "dims": "1155x1389"
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/6891ba123690a20e001bdb40_athena.webp",
+  "file": "6891ba123690a20e001bdb40_athena.webp",
+  "ctx": [
+   "img.integration-logo.white",
+   "srcset img.integration-logo.white"
+  ],
+  "local": "6891ba123690a20e001bdb40_athena.webp",
+  "loaded_live": true,
+  "dims": "840x203"
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/6891ba123690a20e001bdb40_athena-p-500.webp",
+  "file": "6891ba123690a20e001bdb40_athena-p-500.webp",
+  "ctx": [
+   "srcset img.integration-logo.white"
+  ],
+  "local": null,
+  "loaded_live": false,
+  "dims": ""
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/6891ca03471a3b7540d45c51_athena-black.webp",
+  "file": "6891ca03471a3b7540d45c51_athena-black.webp",
+  "ctx": [
+   "img.integration-logo.black",
+   "srcset img.integration-logo.black"
+  ],
+  "local": "6891ca03471a3b7540d45c51_athena-black.webp",
+  "loaded_live": true,
+  "dims": "840x201"
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/6891ca03471a3b7540d45c51_athena-black-p-500.webp",
+  "file": "6891ca03471a3b7540d45c51_athena-black-p-500.webp",
+  "ctx": [
+   "srcset img.integration-logo.black"
+  ],
+  "local": null,
+  "loaded_live": false,
+  "dims": ""
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/6899bf693aec41d6d19e938b_nextgen%20white.webp",
+  "file": "6899bf693aec41d6d19e938b_nextgen white.webp",
+  "ctx": [
+   "img.integration-logo.white"
+  ],
+  "local": "6899bf693aec41d6d19e938b_nextgen white.webp",
+  "loaded_live": true,
+  "dims": "386x203"
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/6899bf6d4e77eb1b7da9da53_nextgen%20black.webp",
+  "file": "6899bf6d4e77eb1b7da9da53_nextgen black.webp",
+  "ctx": [
+   "img.integration-logo.black"
+  ],
+  "local": "6899bf6d4e77eb1b7da9da53_nextgen black.webp",
+  "loaded_live": true,
+  "dims": "386x202"
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/6891ba294f620244fffc46c9_Frame-4.svg",
+  "file": "6891ba294f620244fffc46c9_Frame-4.svg",
+  "ctx": [
+   "img.integration-logo.white"
+  ],
+  "local": "6891ba294f620244fffc46c9_Frame-4.svg",
+  "loaded_live": true,
+  "dims": "152x52 vb(0 0 152 52)"
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/6891ca15ec2bbcfee664f148_modmed-black.svg",
+  "file": "6891ca15ec2bbcfee664f148_modmed-black.svg",
+  "ctx": [
+   "img.integration-logo.black"
+  ],
+  "local": "6891ca15ec2bbcfee664f148_modmed-black.svg",
+  "loaded_live": true,
+  "dims": "152x51 vb(0 0 152 51)"
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/6891ba297394dd666fa1e80f_Frame-5.svg",
+  "file": "6891ba297394dd666fa1e80f_Frame-5.svg",
+  "ctx": [
+   "img.integration-logo.white"
+  ],
+  "local": "6891ba297394dd666fa1e80f_Frame-5.svg",
+  "loaded_live": true,
+  "dims": "130x52 vb(0 0 130 52)"
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/6891ca1486c64ec6dcfdbd93_epic-black.svg",
+  "file": "6891ca1486c64ec6dcfdbd93_epic-black.svg",
+  "ctx": [
+   "img.integration-logo.black"
+  ],
+  "local": "6891ca1486c64ec6dcfdbd93_epic-black.svg",
+  "loaded_live": true,
+  "dims": "130x51 vb(0 0 130 51)"
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/6891bbbe34bdaeb7aad82ea6_GreenHealth-upd.svg",
+  "file": "6891bbbe34bdaeb7aad82ea6_GreenHealth-upd.svg",
+  "ctx": [
+   "img.integration-logo.white"
+  ],
+  "local": "6891bbbe34bdaeb7aad82ea6_GreenHealth-upd.svg",
+  "loaded_live": true,
+  "dims": "160x52 vb(0 0 160 52)"
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/6891ca151d6544e08918728b_greenway-black.svg",
+  "file": "6891ca151d6544e08918728b_greenway-black.svg",
+  "ctx": [
+   "img.integration-logo.black"
+  ],
+  "local": "6891ca151d6544e08918728b_greenway-black.svg",
+  "loaded_live": true,
+  "dims": "160x51 vb(0 0 160 51)"
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/6891ba29fbf92e334355779b_Frame.svg",
+  "file": "6891ba29fbf92e334355779b_Frame.svg",
+  "ctx": [
+   "img.integration-logo.white"
+  ],
+  "local": "6891ba29fbf92e334355779b_Frame.svg",
+  "loaded_live": true,
+  "dims": "180x52 vb(0 0 180 52)"
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/6891ca15287e4bd5ad5fcd73_nextech-black.svg",
+  "file": "6891ca15287e4bd5ad5fcd73_nextech-black.svg",
+  "ctx": [
+   "img.integration-logo.black"
+  ],
+  "local": "6891ca15287e4bd5ad5fcd73_nextech-black.svg",
+  "loaded_live": true,
+  "dims": "180x51 vb(0 0 180 51)"
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/6891ba297ca39dde65c0c5ec_Frame-1.svg",
+  "file": "6891ba297ca39dde65c0c5ec_Frame-1.svg",
+  "ctx": [
+   "img.integration-logo.white"
+  ],
+  "local": "6891ba297ca39dde65c0c5ec_Frame-1.svg",
+  "loaded_live": true,
+  "dims": "198x52 vb(0 0 198 52)"
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/6891ca15f5c11a916ba8c8b6_veradigm-black.svg",
+  "file": "6891ca15f5c11a916ba8c8b6_veradigm-black.svg",
+  "ctx": [
+   "img.integration-logo.black"
+  ],
+  "local": "6891ca15f5c11a916ba8c8b6_veradigm-black.svg",
+  "loaded_live": true,
+  "dims": "198x51 vb(0 0 198 51)"
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/6891ba29d55c22cffb383bb7_Frame-2.svg",
+  "file": "6891ba29d55c22cffb383bb7_Frame-2.svg",
+  "ctx": [
+   "img.integration-logo.white"
+  ],
+  "local": "6891ba29d55c22cffb383bb7_Frame-2.svg",
+  "loaded_live": true,
+  "dims": "188x52 vb(0 0 188 52)"
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/6891ca150e6e639c350e5305_eclinic-black.svg",
+  "file": "6891ca150e6e639c350e5305_eclinic-black.svg",
+  "ctx": [
+   "img.integration-logo.black"
+  ],
+  "local": "6891ca150e6e639c350e5305_eclinic-black.svg",
+  "loaded_live": true,
+  "dims": "188x51 vb(0 0 188 51)"
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/6899beea881eb22496bfec6f_systemedx%20logo%20white.svg",
+  "file": "6899beea881eb22496bfec6f_systemedx logo white.svg",
+  "ctx": [
+   "img.integration-logo.white"
+  ],
+  "local": "6899beea881eb22496bfec6f_systemedx logo white.svg",
+  "loaded_live": true,
+  "dims": "230x52 vb(0 0 230 52)"
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/6899beee48af30a928765264_systemedx%20logo%20black.svg",
+  "file": "6899beee48af30a928765264_systemedx logo black.svg",
+  "ctx": [
+   "img.integration-logo.black"
+  ],
+  "local": "6899beee48af30a928765264_systemedx logo black.svg",
+  "loaded_live": true,
+  "dims": "230x52 vb(0 0 230 52)"
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/6891ebdb0ad3ebb68fe6d694_nist-white.svg",
+  "file": "6891ebdb0ad3ebb68fe6d694_nist-white.svg",
+  "ctx": [
+   "img.secure-logo.white.sm"
+  ],
+  "local": "6891ebdb0ad3ebb68fe6d694_nist-white.svg",
+  "loaded_live": true,
+  "dims": "235x132 vb(0 0 235 132)"
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/6891ebdb7394dd666fb56b4e_nist-white-1.svg",
+  "file": "6891ebdb7394dd666fb56b4e_nist-white-1.svg",
+  "ctx": [
+   "img.secure-logo.black.sm"
+  ],
+  "local": "6891ebdb7394dd666fb56b4e_nist-white-1.svg",
+  "loaded_live": true,
+  "dims": "235x132 vb(0 0 235 132)"
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/698db856fcc2fd567ffa01fe_nist-2-white-1.svg",
+  "file": "698db856fcc2fd567ffa01fe_nist-2-white-1.svg",
+  "ctx": [
+   "img.secure-logo.black.sm"
+  ],
+  "local": "698db856fcc2fd567ffa01fe_nist-2-white-1.svg",
+  "loaded_live": true,
+  "dims": "234x132 vb(0 0 234 132)"
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/698db856e06a92021fdfd2d6_nist-2-white.svg",
+  "file": "698db856e06a92021fdfd2d6_nist-2-white.svg",
+  "ctx": [
+   "img.secure-logo.white.sm"
+  ],
+  "local": "698db856e06a92021fdfd2d6_nist-2-white.svg",
+  "loaded_live": true,
+  "dims": "234x132 vb(0 0 234 132)"
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/6891ebdb9f4ab9a258d517a7_soc-white-1.svg",
+  "file": "6891ebdb9f4ab9a258d517a7_soc-white-1.svg",
+  "ctx": [
+   "img.secure-logo.black"
+  ],
+  "local": "6891ebdb9f4ab9a258d517a7_soc-white-1.svg",
+  "loaded_live": true,
+  "dims": "149x132 vb(0 0 149 132)"
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/6891ebdb97d9bef9310d4f85_soc-white.svg",
+  "file": "6891ebdb97d9bef9310d4f85_soc-white.svg",
+  "ctx": [
+   "img.secure-logo.white"
+  ],
+  "local": "6891ebdb97d9bef9310d4f85_soc-white.svg",
+  "loaded_live": true,
+  "dims": "149x132 vb(0 0 149 132)"
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/68920b38695cade17f6e41a0_logo-footer.svg",
+  "file": "68920b38695cade17f6e41a0_logo-footer.svg",
+  "ctx": [
+   "img.footer-logo"
+  ],
+  "local": "68920b38695cade17f6e41a0_logo-footer.svg",
+  "loaded_live": true,
+  "dims": "400x68 vb(0 0 400 68)"
+ },
+ {
+  "url": "https://px.ads.linkedin.com/collect/?pid=8899442&fmt=gif",
+  "file": "?pid=8899442&fmt=gif",
+  "ctx": [
+   "img."
+  ],
+  "local": null,
+  "loaded_live": false,
+  "dims": ""
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/6895cdd22ca44eb25a439eb2_secure.avif",
+  "file": "6895cdd22ca44eb25a439eb2_secure.avif",
+  "ctx": [
+   "css-bg"
+  ],
+  "local": null,
+  "loaded_live": true,
+  "dims": ""
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/68947313a36aa178a65e0a40_cta-img-upd-2.webp",
+  "file": "68947313a36aa178a65e0a40_cta-img-upd-2.webp",
+  "ctx": [
+   "css-bg"
+  ],
+  "local": null,
+  "loaded_live": true,
+  "dims": ""
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/6894e8a532e53804a41a1ea0_stat-1.webp",
+  "file": "6894e8a532e53804a41a1ea0_stat-1.webp",
+  "ctx": [
+   "css-bg"
+  ],
+  "local": null,
+  "loaded_live": true,
+  "dims": ""
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/6894f7026eba00805615d1aa_stat-2.webp",
+  "file": "6894f7026eba00805615d1aa_stat-2.webp",
+  "ctx": [
+   "css-bg"
+  ],
+  "local": null,
+  "loaded_live": true,
+  "dims": ""
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/6894f7029b2ee246309b15bd_stat-3.webp",
+  "file": "6894f7029b2ee246309b15bd_stat-3.webp",
+  "ctx": [
+   "css-bg"
+  ],
+  "local": null,
+  "loaded_live": true,
+  "dims": ""
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/6894f7025b93ceead4351b6b_stat-4.webp",
+  "file": "6894f7025b93ceead4351b6b_stat-4.webp",
+  "ctx": [
+   "css-bg"
+  ],
+  "local": null,
+  "loaded_live": true,
+  "dims": ""
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/6894eeb12060be5400f13d15_7f73b64e03536ee2d541bb35d323241b_noise.webp",
+  "file": "6894eeb12060be5400f13d15_7f73b64e03536ee2d541bb35d323241b_noise.webp",
+  "ctx": [
+   "css-bg"
+  ],
+  "local": null,
+  "loaded_live": true,
+  "dims": ""
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/68aeb9fc729ad96012dc97f0_tablet-pixels.webp",
+  "file": "68aeb9fc729ad96012dc97f0_tablet-pixels.webp",
+  "ctx": [
+   "css-bg"
+  ],
+  "local": null,
+  "loaded_live": true,
+  "dims": ""
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379%2F6aae963300a522b95e867d73_Tablet-Final_mp4.mp4",
+  "file": "6aae963300a522b95e867d73_Tablet-Final_mp4.mp4",
+  "ctx": [
+   "video source"
+  ],
+  "local": null,
+  "loaded_live": true,
+  "dims": ""
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379%2F6aae963300a522b95e867d73_Tablet-Final_webm.webm",
+  "file": "6aae963300a522b95e867d73_Tablet-Final_webm.webm",
+  "ctx": [
+   "video source"
+  ],
+  "local": null,
+  "loaded_live": false,
+  "dims": ""
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379%2F6aae963300a522b95e867d73_Tablet-Final_poster.0000000.jpg",
+  "file": "6aae963300a522b95e867d73_Tablet-Final_poster.0000000.jpg",
+  "ctx": [
+   "video poster"
+  ],
+  "local": null,
+  "loaded_live": true,
+  "dims": ""
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/6883559817085db21b9e44bb_PolySans-Neutral.woff2",
+  "file": "6883559817085db21b9e44bb_PolySans-Neutral.woff2",
+  "ctx": [
+   "@font-face"
+  ],
+  "local": null,
+  "loaded_live": true,
+  "dims": ""
+ }
+]
