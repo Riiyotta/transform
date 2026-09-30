@@ -10,3 +10,5 @@
 | D6 | EMR marketplace links | `target="_blank"` without rel | Adds `rel="noopener"` | Security hygiene; no visual/behavioural change |
 | D7 | Keyboard focus | `:focus { outline: 0 }` on arrows, tabs, etc. | Visible `:focus-visible` ring (keyboard only); no change for mouse users | User decision 2026-09-30 (approved accessibility deviation). Implemented in src/index.css (FOCUS-VISIBLE block). |
 | D8 | Call Alex popup keyboard behaviour | Not measured / Webflow default | Focus moves into dialog on open, Escape closes, focus returns to opener on close | Accessibility; no visual change |
+| D9 | /book-a-demo form | Posts to HubSpot, may redirect to an unseen `redirectUri`; honeypot + 1500ms spam guard | Client-side validation → brief "Submitting..." → Webflow "Thank you!" block; no network; spam guards omitted; dead Finsweet/dropdown-redirect scripts and `#t9-hubspot-form` CSS stripped | D2 policy (no submission); redirect target unknown and off-site |
+| D10 | Privacy-policy inline links | `target=_blank` without rel | Adds `rel="noopener"` | Same as D6 |
