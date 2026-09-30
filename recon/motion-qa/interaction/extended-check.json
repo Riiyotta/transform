@@ -1,0 +1,92 @@
+{
+  "clone-dev": {
+    "M12b": {
+      "initial": {
+        "u1Width": "0px",
+        "u2Width": "0px"
+      },
+      "at250ms": {
+        "u1Width": "0px",
+        "u2Width": "0px"
+      }
+    },
+    "M13": {
+      "initial": "rgba(255, 255, 255, 0)",
+      "at250ms": "rgba(255, 255, 255, 0)"
+    },
+    "M14": {
+      "initial": "rgba(2, 8, 1, 0.01)",
+      "at200ms": "rgba(2, 8, 1, 0.01)"
+    },
+    "M16": {
+      "initial": "rgba(0, 0, 0, 0)",
+      "at250ms": "rgba(0, 0, 0, 0)"
+    },
+    "M18": {
+      "initial": "0",
+      "at200ms": "1"
+    },
+    "M19": {
+      "initialOpacities": [
+        "1",
+        "1"
+      ],
+      "at200ms": [
+        "1",
+        "1"
+      ],
+      "at400ms": [
+        "1",
+        "1"
+      ]
+    },
+    "M20": {
+      "error": "Navigator tabs not found"
+    }
+  },
+  "clone-prod": {
+    "M12b": {
+      "initial": {
+        "u1Width": "0px",
+        "u2Width": "0px"
+      },
+      "at250ms": {
+        "u1Width": "0px",
+        "u2Width": "0px"
+      }
+    },
+    "M13": {
+      "initial": "rgba(255, 255, 255, 0)",
+      "at250ms": "rgba(255, 255, 255, 0)"
+    },
+    "M14": {
+      "initial": "rgba(2, 8, 1, 0.01)",
+      "at200ms": "rgba(2, 8, 1, 0.01)"
+    },
+    "M16": {
+      "initial": "rgba(0, 0, 0, 0)",
+      "at250ms": "rgba(0, 0, 0, 0)"
+    },
+    "M18": {
+      "initial": "0",
+      "at200ms": "1"
+    },
+    "M19": {
+      "initialOpacities": [
+        "1",
+        "1"
+      ],
+      "at200ms": [
+        "1",
+        "1"
+      ],
+      "at400ms": [
+        "1",
+        "1"
+      ]
+    },
+    "M20": {
+      "error": "Navigator tabs not found"
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "dev": {
+    "m2": {
+      "isAnimating": true,
+      "transform_sample": "matrix(1, 0, 0, 1, -49.0162, 0)",
+      "width": 1800
+    },
+    "m7": {
+      "hasLeftBlock": true,
+      "hasColorText": true,
+      "text1Color": "rgb(162, 250, 142)"
+    },
+    "m8": {
+      "pixelCount": 200,
+      "firstPixelOpacity": "0"
+    },
+    "m9": {
+      "hasTransform": true,
+      "transform_sample": "matrix(1, 0, 0, 1, 0, 0)"
+    }
+  }
+}
