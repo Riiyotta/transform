@@ -1,5 +1,22 @@
-/* WhiteSection wrapper — section.white-section (CLONE_SPEC §10). */
+/* =============================================================================
+   WHITE SECTION wrapper (src/components/WhiteSection.jsx) — CLONE_SPEC §10
+   section.white-section: bg #fff, padding-bottom 10vw / 15vw (<=991) / 20vw (<=767).
+   Its bounds drive the navbar on-white state (M4) via [data-section="white-section"].
+   ============================================================================= */
 .white-section {
-  position: relative;
+  padding-top: 0;
+  padding-bottom: 10vw;
   background-color: var(--color-white);
+}
+
+@media screen and (max-width: 991px) {
+  .white-section {
+    padding-bottom: 15vw;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .white-section {
+    padding-bottom: 20vw;
+  }
 }

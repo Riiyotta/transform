@@ -1,1 +1,215 @@
-/* TaskingAgent — section styles (CLONE_SPEC). Owned by the builder assigned to this section. */
+/* =============================================================================
+   TASKING AGENT #2 (src/components/TaskingAgent.jsx) — CLONE_SPEC §10c
+   Source rules: recon/homepage-rules.css (.half-split-*, .tabs*, .tab-*, .task-*,
+   .half-head-text-wrap, Webflow .w-tabs/.w-tab-* base). Scoped under .half-split-wrap.
+   ============================================================================= */
+.half-split-wrap {
+  position: relative;
+  height: 200vh;
+}
+.half-split-wrap .half-split-section {
+  position: sticky;
+  top: 60px;
+  display: block;
+  height: calc(100vh - 60px);
+  margin-bottom: 17vw;
+}
+
+/* ---- Tabs (#pairTabs.tabs.w-tabs) ---- */
+.half-split-wrap .tabs {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  height: 100%;
+}
+.half-split-wrap .tabs-menu {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: stretch;
+  width: 100%;
+  border-top: 1px solid var(--color-stroke-light);
+}
+/* a.tab-link.w-inline-block.w-tab-link */
+.half-split-wrap .tab-link {
+  position: relative;
+  display: inline-block;
+  max-width: 100%;
+  padding: var(--pad);
+  border-bottom: 1px solid var(--color-stroke-light);
+  background-color: transparent;
+  color: var(--color-tab-inactive);
+  text-align: left;
+  text-decoration: none;
+  vertical-align: top;
+  cursor: pointer;
+}
+/* Original: .w-tab-link:focus { outline: 0 } */
+.half-split-wrap .tab-link:focus {
+  outline: 0;
+}
+.half-split-wrap .tab-link.w--current {
+  border-bottom-color: var(--color-gray);
+  background-color: var(--color-gray);
+  box-shadow: 0 -1px 0 0 var(--color-gray);
+}
+/* ._30px-text.black */
+.half-split-wrap .tab-title {
+  color: var(--color-black);
+  font-size: var(--fs-30);
+  line-height: var(--lh-30);
+}
+/* ._14px-text.white-text.task-text-row — hidden at >=992 */
+.half-split-wrap .task-text-row {
+  position: relative;
+  z-index: 1;
+  display: none;
+  color: var(--color-white);
+  font-size: var(--fs-14);
+  line-height: var(--lh-body);
+}
+/* MOTION: M10 — height 0% -> 100% linear 4000ms on the current tab (>=992 only). */
+.half-split-wrap .tab-progress-vert {
+  position: absolute;
+  inset: 0 auto auto 0;
+  width: 6px;
+  height: 0%;
+  background-color: var(--color-blue-dark);
+}
+
+/* ---- Panes (.tabs-content.w-tab-content) ---- */
+.half-split-wrap .tabs-content {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-black);
+  overflow: hidden;
+}
+/* .w-tab-pane: hidden unless .w--tab-active.
+   MOTION: M10 — pane fade 300ms in / 300ms out, ease-out. */
+.half-split-wrap .tab-pane {
+  position: relative;
+  display: none;
+  width: 100%;
+  height: 100%;
+}
+.half-split-wrap .tab-pane.w--tab-active {
+  display: block;
+}
+.half-split-wrap .tab-pane-wrap {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  width: 100%;
+  height: 100%;
+  padding-bottom: var(--pad);
+  background-color: var(--color-black);
+}
+.half-split-wrap .task-img-wrap {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  max-height: 90%;
+}
+.half-split-wrap .task-img {
+  max-width: none;
+  height: 100%;
+}
+.half-split-wrap .task-text {
+  max-width: 36ch;
+  margin-left: var(--pad);
+}
+
+/* ---- Heading (absolute top-left over the tabs) ---- */
+.half-split-wrap .half-head-text-wrap {
+  position: absolute;
+  inset: 0 auto auto 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 50%;
+  padding: var(--pad) var(--pad) 0;
+  border-top: 1px solid var(--color-stroke-light);
+}
+/* h2.h1-text.agent.task */
+.half-split-wrap .h1-text {
+  max-width: 43vw;
+  color: var(--color-black);
+  font-size: var(--fs-display);
+  line-height: var(--lh-display);
+}
+/* ._16px-text (black) */
+.half-split-wrap .text-16 {
+  font-size: var(--fs-16);
+  line-height: var(--lh-body);
+}
+
+/* ---- <= 991: no rotation, no progress bar; current tab shows its text row (M10b) ---- */
+@media screen and (max-width: 991px) {
+  .half-split-wrap {
+    height: auto;
+    margin-bottom: 25vw;
+  }
+  .half-split-wrap .half-split-section {
+    height: 80vw;
+    margin-bottom: 0;
+  }
+  .half-split-wrap .tab-link.w--current .task-text-row {
+    display: block;
+    margin-top: 38px;
+    color: var(--color-black);
+  }
+  .half-split-wrap .tab-pane-wrap {
+    padding-bottom: 0;
+  }
+  .half-split-wrap .task-img-wrap {
+    max-height: 100%;
+  }
+  .half-split-wrap .task-img {
+    height: 90%;
+  }
+  .half-split-wrap .task-text {
+    display: none;
+  }
+}
+
+/* ---- <= 767 ---- */
+@media screen and (max-width: 767px) {
+  .half-split-wrap .half-split-section {
+    display: flex;
+    flex-direction: column-reverse;
+    height: auto;
+  }
+  .half-split-wrap .tabs {
+    flex-direction: column-reverse;
+    height: auto;
+  }
+  .half-split-wrap .tabs-content {
+    height: 121vw;
+  }
+  .half-split-wrap .tab-link {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+  }
+  .half-split-wrap .half-head-text-wrap {
+    position: static;
+    width: 100%;
+    padding-bottom: 15vw;
+  }
+  .half-split-wrap .h1-text {
+    width: 100%;
+    max-width: 10ch;
+  }
+  .half-split-wrap .task-img {
+    height: 100%;
+  }
+}

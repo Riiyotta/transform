@@ -1,1 +1,293 @@
-/* SchedulingAgent — section styles (CLONE_SPEC). Owned by the builder assigned to this section. */
+/* =============================================================================
+   SCHEDULING AGENT #1 (src/components/SchedulingAgent.jsx) — CLONE_SPEC §10b
+   Source rules: recon/homepage-rules.css (.stacking-cards-section, .horizontal-wrap,
+   .left-side, .right-side.agent, .sheduling-top-space, .scheduling-cards,
+   .scheduling-card, .stack-card-*, .sch-img, .bg-noise.cards). Scoped under
+   .schudule-agent (Webflow spelling kept).
+   ============================================================================= */
+.schudule-agent {
+  margin-top: 5vw;
+  margin-bottom: 17vw; /* .stacking-cards-section */
+}
+
+/* ---- Heading row ---- */
+.schudule-agent .horizontal-wrap {
+  display: flex;
+  border-top: 1px solid var(--color-stroke-light);
+}
+.schudule-agent .left-side {
+  min-width: var(--rail);
+  padding: var(--pad);
+}
+.schudule-agent .left-side.empty-white {
+  width: var(--rail);
+  box-shadow: 1px 0 0 0 var(--color-stroke-light);
+}
+.schudule-agent .right-side {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  padding: var(--pad) var(--pad) 0;
+  border-left: 1px solid var(--color-stroke-light);
+}
+/* ._16px-text (black) */
+.schudule-agent .text-16 {
+  font-size: var(--fs-16);
+  line-height: var(--lh-body);
+}
+/* h2.h1-text.agent */
+.schudule-agent .h1-text {
+  max-width: 43vw;
+  color: var(--color-black);
+  font-size: var(--fs-display);
+  line-height: var(--lh-display);
+}
+.schudule-agent .sheduling-top-space {
+  position: sticky;
+  top: 0;
+  display: flex;
+  height: 10vw;
+}
+
+/* ---- Card deck ---- */
+.schudule-agent .scheduling-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 20vw;
+  height: 220vw;
+  padding: 0 var(--pad);
+}
+.schudule-agent .scheduling-card {
+  position: sticky;
+  top: 10vw;
+  height: 35.208vw;
+  border-top: 1px solid var(--color-stroke-dark);
+  background-color: var(--color-black);
+}
+/* ._30px-text.white.stack-card-left */
+.schudule-agent .stack-card-left {
+  position: absolute;
+  top: var(--pad);
+  left: var(--pad);
+  color: var(--color-white);
+  font-size: var(--fs-30-card-index);
+  line-height: var(--lh-30);
+}
+.schudule-agent .stack-card-text-wrap {
+  position: absolute;
+  left: var(--rail);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 100%;
+  padding-top: var(--pad);
+  padding-bottom: var(--pad);
+}
+/* ._30px-text.white.stack-card-head */
+.schudule-agent .stack-card-head {
+  position: relative;
+  max-width: 16ch;
+  color: var(--color-white);
+  font-size: var(--fs-30-card-head);
+  line-height: var(--lh-30);
+}
+.schudule-agent .stack-card-head._2 {
+  max-width: 12ch;
+}
+/* ._14px-text.white-text.stack-card-text */
+.schudule-agent .stack-card-text {
+  position: relative;
+  z-index: 1;
+  max-width: 35ch;
+  color: var(--color-white);
+  font-size: var(--fs-14);
+  line-height: var(--lh-body);
+}
+.schudule-agent .stack-card-text._2 {
+  max-width: 29ch;
+}
+.schudule-agent .stack-card-text._4 {
+  max-width: 30ch;
+}
+.schudule-agent .sch-img {
+  position: absolute;
+  inset: 0 0 auto auto;
+  height: 100%;
+  opacity: 1;
+}
+.schudule-agent .bg-noise.cards {
+  z-index: -1;
+}
+
+/* ---- Stacked-deck states (M9 end values, measured @1440: scales .97/.94/.91,
+   y -1.8vw/-3.6vw/-5.4vw). MOTION: M9 — scrubbed; owned by Animation. ---- */
+.schudule-agent .scheduling-card[data-depth='1'] {
+  transform: translateY(-1.8vw) scale(0.97);
+}
+.schudule-agent .scheduling-card[data-depth='2'] {
+  transform: translateY(-3.6vw) scale(0.94);
+}
+.schudule-agent .scheduling-card[data-depth='3'] {
+  transform: translateY(-5.4vw) scale(0.91);
+}
+.schudule-agent .scheduling-card._1.is-stacked {
+  background-color: var(--color-card-tint-1);
+}
+.schudule-agent .scheduling-card._2.is-stacked {
+  background-color: var(--color-card-tint-2);
+}
+.schudule-agent .scheduling-card._3.is-stacked {
+  background-color: var(--color-card-tint-3);
+}
+.schudule-agent[data-stack-step='3'] .sch-img._3 {
+  opacity: 0.2;
+}
+
+/* ---- <= 991 ---- */
+@media screen and (max-width: 991px) {
+  .schudule-agent {
+    position: relative;
+    padding-top: 10vw;
+  }
+  .schudule-agent .horizontal-wrap.scheduling {
+    position: sticky;
+    top: 59px;
+    height: 20vw;
+    margin-bottom: 50vw;
+  }
+  .schudule-agent .sheduling-top-space {
+    top: calc(20vw + 59px);
+    margin-top: -50vw;
+    margin-bottom: 40vw;
+  }
+  .schudule-agent .scheduling-cards {
+    gap: 10vw;
+    height: 200vw;
+    margin-top: -40vw;
+  }
+  .schudule-agent .scheduling-card {
+    top: calc(30vw + 59px);
+    height: 40vw;
+  }
+  .schudule-agent .stack-card-text-wrap {
+    left: 12vw;
+  }
+  .schudule-agent .stack-card-text {
+    max-width: 30ch;
+  }
+}
+
+/* ---- <= 767 ---- */
+@media screen and (max-width: 767px) {
+  .schudule-agent .horizontal-wrap.scheduling {
+    position: relative;
+    top: auto;
+    height: 40vw;
+    margin-bottom: 0;
+  }
+  .schudule-agent .left-side.our-products {
+    position: absolute;
+    min-width: auto;
+  }
+  .schudule-agent .left-side.empty-white {
+    display: none;
+  }
+  .schudule-agent .right-side.agent.schedule {
+    flex-flow: column-reverse wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border-left-style: none;
+  }
+  .schudule-agent .h1-text {
+    width: 100%;
+    max-width: 10ch;
+  }
+  .schudule-agent .num-agent-1 {
+    position: absolute;
+    top: var(--pad);
+    right: var(--pad);
+    bottom: auto;
+    left: auto;
+  }
+  .schudule-agent .sheduling-top-space {
+    position: relative;
+    top: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .schudule-agent .scheduling-cards {
+    height: 580vw;
+    margin-top: 0;
+  }
+  .schudule-agent .scheduling-card {
+    top: 79px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 120vw;
+    min-height: 120vw;
+    padding-top: var(--pad);
+    overflow: hidden;
+  }
+  .schudule-agent .stack-card-left {
+    top: 20px;
+    left: auto;
+    margin-left: var(--pad);
+  }
+  .schudule-agent .stack-card-text-wrap {
+    position: relative;
+    left: auto;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: auto;
+    margin-top: 12vw;
+    margin-bottom: 20px;
+    padding: 0 var(--pad);
+  }
+  .schudule-agent .stack-card-head,
+  .schudule-agent .stack-card-head._2 {
+    max-width: 20ch;
+    margin-bottom: var(--pad);
+  }
+  .schudule-agent .stack-card-text,
+  .schudule-agent .stack-card-text._2,
+  .schudule-agent .stack-card-text._4 {
+    max-width: 40ch;
+  }
+  .schudule-agent .sch-img {
+    position: absolute;
+    top: auto;
+    right: 0;
+    bottom: 0;
+    display: block;
+    max-width: 90%;
+    height: auto;
+  }
+}
+
+/* ---- <= 479 ---- */
+@media screen and (max-width: 479px) {
+  .schudule-agent .horizontal-wrap.scheduling {
+    height: 60vw;
+  }
+  .schudule-agent .scheduling-cards {
+    height: auto;
+  }
+  .schudule-agent .scheduling-card {
+    justify-content: flex-start;
+    align-items: flex-end;
+    height: auto;
+  }
+  .schudule-agent .stack-card-left {
+    left: 0;
+    opacity: 0.6;
+  }
+  .schudule-agent .stack-card-text {
+    opacity: 0.6;
+  }
+  .schudule-agent .sch-img {
+    position: relative;
+  }
+}

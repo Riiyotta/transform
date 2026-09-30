@@ -1,1 +1,188 @@
-/* HowItWorks — section styles (CLONE_SPEC). Owned by the builder assigned to this section. */
+/* =============================================================================
+   HOW IT WORKS (src/components/HowItWorks.jsx) — CLONE_SPEC §9
+   Source rules: recon/homepage-rules.css (.how-works-*, .hiw-*). Scoped under
+   .how-it-works. Background is transparent (the fixed page layers show through).
+   ============================================================================= */
+
+/* ---- Rail spacers (.how-works-right) ---- */
+.how-it-works .how-works-right {
+  height: 10vw;
+  margin-left: var(--rail);
+  border-left: 1px solid var(--color-stroke-dark);
+}
+.how-it-works .how-works-right.top {
+  height: 13vw;
+}
+/* Original: `border: 1px #000` with no style = no border. */
+.how-it-works .how-works-right.medium {
+  border: 0 none;
+}
+.how-it-works .how-works-right.full {
+  height: 100%;
+}
+
+/* ---- Label rows (.how-works-right-text) ---- */
+.how-it-works .how-works-right-text {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  height: 7.833vw;
+  margin-left: var(--rail);
+  padding: var(--pad);
+  border-left: 1px solid var(--color-stroke-dark);
+}
+.how-it-works .how-works-right-text.top {
+  height: calc(1.5vw + var(--pad) + var(--pad) + 60px);
+  border-left-style: none;
+}
+.how-it-works .how-works-right-text.bottom-w-text {
+  height: 7.36vw;
+  border-bottom: 1px solid var(--color-stroke-dark);
+}
+.how-it-works .hiw-bottom {
+  max-width: 38ch;
+}
+
+/* ---- Sticky block ---- */
+.how-it-works .how-works-sticky-cont {
+  position: relative;
+  height: 130vw;
+}
+.how-it-works .how-works-sticky {
+  position: sticky;
+  top: 0;
+}
+.how-it-works .how-works-heads-wrap {
+  display: flex;
+  border-top: 1px solid var(--color-stroke-dark);
+  border-bottom: 1px solid var(--color-stroke-dark);
+}
+.how-it-works .hiw-left-wrap {
+  width: 100%;
+  min-width: var(--rail);
+  max-width: var(--rail);
+}
+.how-it-works .hiw-right-wrap {
+  width: 100%;
+  padding-left: var(--pad);
+  border-left: 1px solid var(--color-black);
+}
+.how-it-works .hiw-text-block {
+  display: flex;
+  padding-top: 2.5vw;
+  padding-right: var(--pad);
+  padding-bottom: 2.5vw;
+  border-bottom: 1px solid var(--color-stroke-dark);
+}
+.how-it-works .hiw-text-block.last {
+  border-bottom-style: none;
+}
+.how-it-works .hiw-text-block.left {
+  padding-right: 0;
+  padding-left: var(--pad);
+  border-bottom-style: none;
+}
+.how-it-works .hiw-text-block.left-mob {
+  display: none;
+}
+
+/* .h1-text.white-text.hiw-text */
+.how-it-works .hiw-text {
+  margin-top: -0.8vw;
+  color: var(--color-hiw-inactive);
+  font-size: var(--fs-hiw);
+  line-height: var(--lh-display);
+}
+.how-it-works .hiw-text.left {
+  color: var(--color-white);
+  white-space: nowrap;
+}
+
+/* ---- Active step (M7 state). Row pitch = 12vw.
+   MOTION: M7 — colour power1.in 0.25s; "AI that" y power1.inOut 0.25s. ---- */
+.how-it-works .hiw-text.is-active {
+  color: var(--color-green);
+}
+.how-it-works[data-active='1'] .hiw-text-block.left {
+  transform: translateY(12vw);
+}
+.how-it-works[data-active='2'] .hiw-text-block.left {
+  transform: translateY(24vw);
+}
+
+/* ---- Scroll triggers (behind everything; draw the rail line) ---- */
+.how-it-works .hiw-triggers {
+  position: absolute;
+  inset: 0 auto auto 0;
+  z-index: -1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
+  height: 100%;
+}
+.how-it-works .hiw-trigger {
+  height: 100%;
+}
+
+/* ---- <= 991 ---- */
+@media screen and (max-width: 991px) {
+  .how-it-works .how-works-right-text.bottom {
+    height: 16vw;
+  }
+  .how-it-works .how-works-sticky-cont {
+    height: auto;
+  }
+}
+
+/* ---- <= 767 ---- */
+@media screen and (max-width: 767px) {
+  .how-it-works .how-works-right-text.bottom-w-text {
+    height: auto;
+    margin-left: 0;
+    padding-bottom: var(--pad);
+    border-left-style: none;
+  }
+  .how-it-works .how-works-right-text.bottom {
+    border-left-style: none;
+  }
+  .how-it-works .how-works-right-text.top {
+    justify-content: flex-start;
+    align-items: flex-end;
+    height: 160px;
+    margin-left: 0;
+    border-left-style: none;
+  }
+  .how-it-works .how-works-heads-wrap {
+    flex-direction: column;
+  }
+  .how-it-works .hiw-left-wrap {
+    min-width: 100%;
+    max-width: none;
+  }
+  .how-it-works .hiw-text-block {
+    padding-top: 4vw;
+    padding-bottom: 4vw;
+  }
+  .how-it-works .hiw-text-block.left {
+    display: none;
+  }
+  .how-it-works .hiw-text-block.left-mob {
+    display: flex;
+    padding-left: var(--pad);
+  }
+  .how-it-works .hiw-text.left {
+    margin-top: 0;
+    margin-bottom: 10vw;
+  }
+  .how-it-works .how-works-right.top {
+    display: none;
+  }
+  .how-it-works .how-works-right.medium {
+    height: 20vw;
+    margin-left: 0;
+  }
+  .how-it-works .how-works-right.full {
+    border-left-style: none;
+  }
+}

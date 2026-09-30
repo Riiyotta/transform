@@ -1,1 +1,401 @@
-/* Testimonials — section styles (CLONE_SPEC). Owned by the builder assigned to this section. */
+/* =============================================================================
+   TESTIMONIALS (src/components/Testimonials.jsx) — CLONE_SPEC §8
+   Source rules: recon/homepage-rules.css (.testimonials*, .testim-*, .w-slider*,
+   .test-arrow-wrap, .arrow, .sider-count). All rules are scoped under
+   .testimonials so they cannot leak into other sections.
+   ============================================================================= */
+.testimonials {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  border-top: 1px solid var(--color-stroke-dark);
+  overflow: hidden;
+}
+
+/* ---- Top row: label rail + heading ---- */
+.testimonials .testimonials-top {
+  display: flex;
+  height: 36vw;
+}
+.testimonials .testim-top-left {
+  min-width: var(--rail);
+  padding: var(--pad);
+  border-right: 1px solid var(--color-stroke-dark);
+}
+.testimonials .testim-top-right {
+  width: 100%;
+  padding: var(--pad);
+}
+/* h2.h1-text.white-text.testim-heading */
+.testimonials .h1-text {
+  color: var(--color-white);
+  font-size: var(--fs-display);
+  line-height: var(--lh-display);
+}
+.testimonials .testim-heading {
+  max-width: 55vw;
+}
+
+/* ---- Slider (.testimonials-slider.w-slider) ---- */
+.testimonials .testimonials-slider {
+  position: relative;
+  height: 41.667vw;
+  text-align: center;
+  background-color: transparent;
+  border-top: 1px solid var(--color-stroke-dark);
+  border-bottom: 1px solid var(--color-stroke-dark);
+  -webkit-tap-highlight-color: transparent;
+}
+/* .testim-slider-mask.w-slider-mask. Webflow lays slides inline and translates them;
+   with the "cross" animation both sit at the same spot, so they are stacked in one
+   grid cell here. */
+.testimonials .testim-slider-mask {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-rows: 100%;
+  grid-template-columns: 100%;
+  height: 100%;
+  white-space: nowrap;
+  overflow: visible;
+}
+/* .testim-slide.w-slide */
+.testimonials .testim-slide {
+  position: relative;
+  grid-area: 1 / 1;
+  width: 100%;
+  height: 100%;
+  text-align: left;
+  white-space: normal;
+  vertical-align: top;
+}
+/* Cross-fade END state (measured): outgoing slide keeps opacity 1 but is hidden.
+   MOTION: M19 — 400ms `ease` opacity cross-fade; owned by Animation. */
+.testimonials .testim-slide:not(.is-active) {
+  visibility: hidden;
+}
+.testimonials .testim-slide-wrap {
+  display: flex;
+  height: 100%;
+}
+
+/* ---- Photo block (left rail) ---- */
+.testimonials .testim-photo-block {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: var(--rail);
+  min-width: var(--rail);
+  background-color: var(--color-gray);
+  overflow: hidden;
+}
+.testimonials .testim-photo {
+  display: block;
+  max-width: none;
+  height: 103%;
+  padding-bottom: 0;
+}
+.testimonials .testim-author-info-wrap {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.testimonials .testim-author-name {
+  padding: 14px 24px;
+  background-color: var(--color-white);
+}
+.testimonials .testim-author-title {
+  padding: 14px 24px;
+  background-color: var(--color-green);
+}
+/* ._16px-text (black, no indent) */
+.testimonials .text-16 {
+  font-size: var(--fs-16);
+  line-height: var(--lh-body);
+}
+
+/* ---- Right side ---- */
+.testimonials .testim-right-side {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  padding: var(--pad);
+  border-left: 1px solid var(--color-stroke-dark);
+}
+/* p._30px-text.testimonial */
+.testimonials .testimonial {
+  display: block;
+  max-width: 50vw;
+  color: var(--color-white);
+  font-size: var(--fs-30-testimonial);
+  line-height: var(--lh-30);
+}
+.testimonials .testim-highlight {
+  display: inline-block;
+  color: var(--color-green);
+}
+.testimonials .testim-bottom-cont {
+  display: flex;
+  gap: 5vw;
+}
+.testimonials .testim-point-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 1.667vw;
+  padding-left: clamp(16px, 1.111vw, 24px);
+  border-left: 1px solid var(--color-green);
+}
+/* ._30px-text.white.testim-num (24px at <=991) */
+.testimonials .testim-num {
+  position: relative;
+  color: var(--color-white);
+  font-size: var(--fs-30-card-head);
+  line-height: var(--lh-30);
+}
+/* ._30px-text.white (slide 2's number has no .testim-num in the original) */
+.testimonials .testim-num-plain {
+  position: relative;
+  color: var(--color-white);
+  font-size: var(--fs-30);
+  line-height: var(--lh-30);
+}
+.testimonials .text-span-3,
+.testimonials .text-span-4 {
+  display: block;
+}
+.testimonials .testim-logo {
+  position: absolute;
+  right: 36px;
+  bottom: 24px;
+  max-width: none;
+  height: 4.167vw;
+}
+/* "01 / 02" counter, sits above the slide (bottom:100%) */
+.testimonials .sider-count {
+  position: absolute;
+  bottom: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: var(--pad);
+}
+.testimonials .slider-current {
+  position: relative;
+}
+.testimonials .slider-all {
+  position: absolute;
+  left: 26px;
+  display: flex;
+  opacity: 0.3;
+  white-space: nowrap;
+}
+
+/* ---- Arrows (.test-arrow-wrap.w-slider-arrow-left/right) ---- */
+.testimonials .test-arrow-wrap {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  padding: 0;
+  border-left: 1px solid var(--color-stroke-dark);
+  border-bottom: 1px solid var(--color-stroke-dark);
+  background-color: rgba(255, 255, 255, 0);
+  color: var(--color-white);
+  font-size: 40px; /* .w-slider-arrow-* base (inherited by the arrow imgs) */
+  line-height: 56px;
+  cursor: pointer;
+  overflow: hidden;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+.testimonials .test-arrow-wrap.left {
+  z-index: 3;
+  right: 100px;
+}
+.testimonials .test-arrow-wrap.right {
+  z-index: 4;
+}
+/* Original: .w-slider-arrow-left:focus, .w-slider-arrow-right:focus { outline: 0 } */
+.testimonials .test-arrow-wrap:focus {
+  outline: 0;
+}
+.testimonials .arrow {
+  display: block;
+  width: clamp(28px, 1.7vw, 36px);
+  max-width: 100%;
+}
+.testimonials .arrow.white {
+  position: relative;
+  z-index: 1;
+}
+.testimonials .arrow.black {
+  position: absolute;
+  z-index: 0;
+}
+.testimonials .test-arrow-wrap.left .arrow.black {
+  transform: translateX(250%);
+}
+.testimonials .test-arrow-wrap.right .arrow.black {
+  transform: translateX(-250%);
+}
+/* Hover END state (IX2 a-34..a-37, measured: bg #fff, black arrow at 0).
+   MOTION: M13 — bg + white-arrow-out + black-arrow-in, 250ms outQuad, reversed on
+   mouseout; owned by Animation. */
+.testimonials .test-arrow-wrap:hover {
+  background-color: var(--color-white);
+}
+.testimonials .test-arrow-wrap.left:hover .arrow.white {
+  transform: translateX(-250%);
+}
+.testimonials .test-arrow-wrap.right:hover .arrow.white {
+  transform: translateX(250%);
+}
+.testimonials .test-arrow-wrap:hover .arrow.black {
+  transform: translateX(0);
+}
+
+/* ---- <= 991 ---- */
+@media screen and (max-width: 991px) {
+  .testimonials .testimonials-top {
+    height: 40vw;
+  }
+  .testimonials .testimonials-slider {
+    height: 50vw;
+  }
+  .testimonials .testim-author-name,
+  .testimonials .testim-author-title {
+    padding: 12px 20px;
+  }
+  .testimonials .testim-highlight {
+    display: inline;
+  }
+  .testimonials .testim-bottom-cont {
+    max-width: 50vw;
+  }
+  .testimonials .testim-point-wrap {
+    width: 100%;
+  }
+  /* ._16px-text.white-text.testim-point is 14px from <=991 down (the <=767 16px rule
+     for ._16px-text has lower specificity and does not reach it; measured 14 @390). */
+  .testimonials .testim-point {
+    font-size: 14px;
+  }
+  .testimonials .text-span-3 {
+    display: inline;
+  }
+  .testimonials .test-arrow-wrap {
+    width: 60px;
+    height: 60px;
+  }
+  .testimonials .test-arrow-wrap.left {
+    right: 60px;
+  }
+  .testimonials .testim-logo {
+    right: 20px;
+    bottom: 20px;
+    height: 6vw;
+  }
+}
+
+/* ---- <= 767 ---- */
+@media screen and (max-width: 767px) {
+  .testimonials {
+    margin-bottom: 0;
+  }
+  .testimonials .testimonials-top {
+    flex-direction: column;
+    gap: 21.333vw;
+    height: auto;
+  }
+  .testimonials .testim-top-left {
+    padding-bottom: 0;
+    border-right-style: none;
+  }
+  .testimonials .testim-top-right {
+    padding-top: 0;
+  }
+  .testimonials .testimonials-slider {
+    height: auto;
+    border-bottom-style: none;
+  }
+  .testimonials .testim-slider-mask {
+    grid-template-rows: auto;
+  }
+  .testimonials .testim-slide {
+    border-bottom: 1px solid var(--color-stroke-dark);
+  }
+  .testimonials .testim-slide-wrap {
+    flex-direction: column;
+    height: auto;
+    padding-top: 60px;
+  }
+  .testimonials .testim-photo-block {
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    min-width: 100%;
+    height: 130vw;
+  }
+  .testimonials .testim-photo {
+    width: 100%;
+    height: auto;
+  }
+  .testimonials .testim-right-side {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    border-left: 0 none;
+  }
+  .testimonials .testimonial {
+    max-width: none;
+    margin-bottom: 60px;
+  }
+  .testimonials .testim-bottom-cont {
+    flex-direction: column;
+    max-width: 59vw;
+  }
+  .testimonials .text-span-4 {
+    display: inline;
+  }
+  .testimonials .testim-logo {
+    bottom: 30px;
+    height: 11vw;
+  }
+  .testimonials .sider-count {
+    margin-bottom: calc(130vw + 20px);
+  }
+}
+
+/* ---- <= 479 ---- */
+@media screen and (max-width: 479px) {
+  .testimonials .testim-heading {
+    max-width: 80vw;
+  }
+  .testimonials .testim-right-side {
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .testimonials .testim-bottom-cont {
+    max-width: none;
+    margin-bottom: 28px;
+  }
+  .testimonials .testim-logo {
+    position: static;
+    display: block;
+    right: auto;
+    bottom: auto;
+    height: 12vw;
+    margin-left: 0;
+  }
+}
