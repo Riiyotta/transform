@@ -1,1 +1,3 @@
-/* CaseStudyPage — page styles (case-study). Owned by the builder assigned to this family. */
+/* CaseStudyPage — page styles (/case-studies/<slug>). The template reuses the shared CMS
+   components (header `.cs` variant, post body, read-next); their styles and the PROMOTE tokens
+   live in src/components/cms/cms.css. No study-only overrides are needed (specs/case-studies.md §4). */

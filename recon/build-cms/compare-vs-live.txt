@@ -1,0 +1,315 @@
+== /blog @1440  docH live 5722 clone 5722  scrollW 1440 font true errs 0 ext 0
+  sections live: hero 0/1107.4 | all-blogs-section 1107.4/1849.1 | cta-section 3100.5/1506 | footer 4606.5/750.1 | footer-bottom-wrap 534.9/365.1
+  sections clone: hero 0/1107.4 | all-blogs-section 1107.4/1849.1 | cta-section 3100.5/1506 | footer 4606.5/750.1
+  STYLE video: top: -900px | 0px; z-index: -100 | auto; max-width: none | 100%; margin-top: 900px | 0px; margin-right: 1438.55px | 0px; margin-bottom: 900px | 0px; margin-left: 1438.55px | 0px
+  STYLE span.gsap_split_word.gsap_split_word1: transform: matrix(1, 0, 0, 1, 0, 0) | none
+  STYLE span.gsap_split_word.gsap_split_word2: transform: matrix(1, 0, 0, 1, 0, 0) | none
+  STYLE span.gsap_split_word.gsap_split_word3: transform: matrix(1, 0, 0, 1, 0, 0) | none
+  STYLE span.gsap_split_word.gsap_split_word4: transform: matrix(1, 0, 0, 1, 0, 0) | none
+  STYLE span.gsap_split_word.gsap_split_word5: transform: matrix(1, 0, 0, 1, 0, 0) | none
+  STYLE span.gsap_split_word.gsap_split_word6: transform: matrix(1, 0, 0, 1, 0, 0) | none
+  STYLE span.gsap_split_word.gsap_split_word7: transform: matrix(1, 0, 0, 1, 0, 0) | none
+  STYLE span.gsap_split_word.gsap_split_word8: transform: matrix(1, 0, 0, 1, 0, 0) | none
+  STYLE div.featured-post.w-dyn-list: transform: matrix(1, 0, 0, 1, 0, 0) | none
+  DIFF div n 3/2 live [1237.5,1034.4,166.5,36] clone [1237.5,1034.4,166.5,36]
+  STYLE section.all-blogs-section: transform: matrix(1, 0, 0, 1, 0, 0) | none
+  combos: 64 live, 12 diffs, 0 missing
+== /blog/the-12-month-shift-why-voice-ai-agents-are-now-a-financial-imperative-for-specialty-practices @1440  docH live 7304 clone 7304  scrollW 1440 font true errs 0 ext 0
+  sections live: blog-top-header 60/520.4 | post-body-section 580.4/4102.3 | cta-section 4682.7/1506 | footer 6188.7/750.1 | footer-bottom-wrap 534.9/365.1
+  sections clone: blog-top-header 60/520.4 | post-body-section 580.4/4102.3 | cta-section 4682.7/1506 | footer 6188.7/750.1
+  STYLE section.blog-top-header: transform: matrix(1, 0, 0, 1, 0, 0) | none
+  DIFF div.bg-noise.stat-img n 3/1 live [0,60,384,519.4] clone [0,60,384,519.4]
+  STYLE img.arrow.white.back-1: transform: matrix(1, 0, 0, 1, 0, 0) | none
+  STYLE img.arrow.white.back-2: transform: matrix(1, 0, 0, 1, 0, 0) | none
+  DIFF div._16px-text.white-text n 2/1 live [497.7,98.8,92.5,22.4] clone [497.7,98.8,92.5,22.4]
+  STYLE section.post-body-section: transform: matrix(1, 0, 0, 1, 0, 0) | none
+  combos: 64 live, 6 diffs, 0 missing
+== /blog/redefining-healthcare-ai @1440  docH live 5543 clone 5543  scrollW 1440 font true errs 0 ext 0
+  sections live: blog-top-header 60/481 | post-body-section 541/2380.4 | cta-section 2921.4/1506 | footer 4427.3/750.1 | footer-bottom-wrap 534.9/365.1
+  sections clone: blog-top-header 60/481 | post-body-section 541/2380.4 | cta-section 2921.4/1506 | footer 4427.3/750.1
+  STYLE section.blog-top-header: transform: matrix(1, 0, 0, 1, 0, 0) | none
+  DIFF div.bg-noise.stat-img n 3/1 live [0,60,384,480] clone [0,60,384,480]
+  STYLE img.arrow.white.back-1: transform: matrix(1, 0, 0, 1, 0, 0) | none
+  STYLE img.arrow.white.back-2: transform: matrix(1, 0, 0, 1, 0, 0) | none
+  DIFF div._16px-text.white-text n 2/1 live [497.7,98.8,92.5,22.4] clone [497.7,98.8,92.5,22.4]
+  STYLE section.post-body-section: transform: matrix(1, 0, 0, 1, 0, 0) | none
+  combos: 61 live, 6 diffs, 0 missing
+== /blog/ent-reimbursement-in-2027-what-medicare-s-proposed-cuts-mean-for-otolaryngology-practices @1440  docH live 7570 clone 7570  scrollW 1440 font true errs 0 ext 0
+  sections live: blog-top-header 60/520.4 | post-body-section 580.4/4368.4 | cta-section 4948.8/1506 | footer 6454.8/750.1 | footer-bottom-wrap 534.9/365.1
+  sections clone: blog-top-header 60/520.4 | post-body-section 580.4/4368.4 | cta-section 4948.8/1506 | footer 6454.8/750.1
+  STYLE section.blog-top-header: transform: matrix(1, 0, 0, 1, 0, 0) | none
+  DIFF div.bg-noise.stat-img n 3/1 live [0,60,384,519.4] clone [0,60,384,519.4]
+  STYLE img.arrow.white.back-1: transform: matrix(1, 0, 0, 1, 0, 0) | none
+  STYLE img.arrow.white.back-2: transform: matrix(1, 0, 0, 1, 0, 0) | none
+  DIFF div._16px-text.white-text n 2/1 live [497.7,98.8,92.5,22.4] clone [497.7,98.8,92.5,22.4]
+  STYLE section.post-body-section: transform: matrix(1, 0, 0, 1, 0, 0) | none
+  combos: 63 live, 6 diffs, 0 missing
+== /blog/ai-voice-agents-for-athenahealth-7-questions-to-ask-before-choosing-a-platform @1440  docH live 8037 clone 8037  scrollW 1440 font true errs 0 ext 0
+  sections live: blog-top-header 60/520.4 | post-body-section 580.4/4835.1 | cta-section 5415.5/1506 | footer 6921.5/750.1 | footer-bottom-wrap 534.9/365.1
+  sections clone: blog-top-header 60/520.4 | post-body-section 580.4/4835.1 | cta-section 5415.5/1506 | footer 6921.5/750.1
+  STYLE section.blog-top-header: transform: matrix(1, 0, 0, 1, 0, 0) | none
+  DIFF div.bg-noise.stat-img n 3/1 live [0,60,384,519.4] clone [0,60,384,519.4]
+  STYLE img.arrow.white.back-1: transform: matrix(1, 0, 0, 1, 0, 0) | none
+  STYLE img.arrow.white.back-2: transform: matrix(1, 0, 0, 1, 0, 0) | none
+  DIFF div._16px-text.white-text n 2/1 live [497.7,98.8,92.5,22.4] clone [497.7,98.8,92.5,22.4]
+  STYLE section.post-body-section: transform: matrix(1, 0, 0, 1, 0, 0) | none
+  combos: 63 live, 6 diffs, 0 missing
+== /case-studies @1440  docH live 4640 clone 4640  scrollW 1440 font true errs 0 ext 0
+  sections live: hero 0/528.9 | all-blogs-section 528.9/1345.5 | cta-section 2018.4/1506 | footer 3524.4/750.1 | footer-bottom-wrap 534.9/365.1
+  sections clone: hero 0/528.9 | all-blogs-section 528.9/1345.5 | cta-section 2018.4/1506 | footer 3524.4/750.1
+  STYLE video: top: -900px | 0px; z-index: -100 | auto; max-width: none | 100%; margin-top: 900px | 0px; margin-right: 1438.55px | 0px; margin-bottom: 900px | 0px; margin-left: 1438.55px | 0px
+  STYLE span.gsap_split_word.gsap_split_word1: transform: matrix(1, 0, 0, 1, 0, 0) | none
+  STYLE span.gsap_split_word.gsap_split_word2: transform: matrix(1, 0, 0, 1, 0, 0) | none
+  STYLE span.gsap_split_word.gsap_split_word3: transform: matrix(1, 0, 0, 1, 0, 0) | none
+  STYLE span.gsap_split_word.gsap_split_word4: transform: matrix(1, 0, 0, 1, 0, 0) | none
+  STYLE span.gsap_split_word.gsap_split_word5: transform: matrix(1, 0, 0, 1, 0, 0) | none
+  STYLE span.gsap_split_word.gsap_split_word6: transform: matrix(1, 0, 0, 1, 0, 0) | none
+  STYLE section.all-blogs-section.cs: transform: matrix(1, 0, 0, 1, 0, 0) | none
+  combos: 38 live, 8 diffs, 0 missing
+== /case-studies/southern-bone-joint @1440  docH live 7477 clone 7477  scrollW 1440 font true errs 0 ext 0
+  sections live: blog-top-header 60/481 | post-body-section 541/3071.8 | read-next-section 3612.8/1099.3 | cta-section 4856.2/1506 | footer 6362.2/750.1 | footer-bottom-wrap 534.9/365.1
+  sections clone: blog-top-header 60/481 | post-body-section 541/3071.8 | read-next-section 3612.8/1099.3 | cta-section 4856.2/1506 | footer 6362.2/750.1
+  STYLE section.blog-top-header: transform: matrix(1, 0, 0, 1, 0, 0) | none
+  STYLE img.arrow.white.back-1: transform: matrix(1, 0, 0, 1, 0, 0) | none
+  STYLE img.arrow.white.back-2: transform: matrix(1, 0, 0, 1, 0, 0) | none
+  STYLE section.post-body-section: transform: matrix(1, 0, 0, 1, 0, 0) | none
+  combos: 61 live, 4 diffs, 0 missing
+== /case-studies/the-orthopaedic-center @1440  docH live 5389 clone 5389  scrollW 1440 font true errs 0 ext 0
+  sections live: blog-top-header 60/481 | post-body-section 541/1065.7 | read-next-section 1606.7/1017 | cta-section 2767.6/1506 | footer 4273.6/750.1 | footer-bottom-wrap 534.9/365.1
+  sections clone: blog-top-header 60/481 | post-body-section 541/1065.7 | read-next-section 1606.7/1017 | cta-section 2767.6/1506 | footer 4273.6/750.1
+  STYLE section.blog-top-header: transform: matrix(1, 0, 0, 1, 0, 0) | none
+  STYLE img.arrow.white.back-1: transform: matrix(1, 0, 0, 1, 0, 0) | none
+  STYLE img.arrow.white.back-2: transform: matrix(1, 0, 0, 1, 0, 0) | none
+  STYLE section.post-body-section: transform: matrix(1, 0, 0, 1, 0, 0) | none
+  combos: 64 live, 4 diffs, 0 missing
+== /blog @1024  docH live 4569 clone 4569  scrollW 1024 font true errs 0 ext 0
+  sections live: hero 0/921.2 | all-blogs-section 921.2/1495.9 | cta-section 2519.5/1070.9 | footer 3590.4/683.7 | footer-bottom-wrap 605.6/294.4
+  sections clone: hero 0/921.2 | all-blogs-section 921.2/1495.9 | cta-section 2519.5/1070.9 | footer 3590.4/683.7
+  STYLE video: top: -900px | 0px; z-index: -100 | auto; max-width: none | 100%; margin-top: 900px | 0px; margin-right: 1022.97px | 0px; margin-bottom: 900px | 0px; margin-left: 1022.97px | 0px
+  STYLE span.gsap_split_word.gsap_split_word1: transform: matrix(1, 0, 0, 1, 0, 0) | none
+  STYLE span.gsap_split_word.gsap_split_word2: transform: matrix(1, 0, 0, 1, 0, 0) | none
+  STYLE span.gsap_split_word.gsap_split_word3: transform: matrix(1, 0, 0, 1, 0, 0) | none
+  STYLE span.gsap_split_word.gsap_split_word4: transform: matrix(1, 0, 0, 1, 0, 0) | none
+  STYLE span.gsap_split_word.gsap_split_word5: transform: matrix(1, 0, 0, 1, 0, 0) | none
+  STYLE span.gsap_split_word.gsap_split_word6: transform: matrix(1, 0, 0, 1, 0, 0) | none
+  STYLE span.gsap_split_word.gsap_split_word7: transform: matrix(1, 0, 0, 1, 0, 0) | none
+  STYLE span.gsap_split_word.gsap_split_word8: transform: matrix(1, 0, 0, 1, 0, 0) | none
+  STYLE div.featured-post.w-dyn-list: transform: matrix(1, 0, 0, 1, 0, 0) | none
+  DIFF div n 3/2 live [869.6,858.6,118.4,25.6] clone [869.6,858.6,118.4,25.6]
+  STYLE section.all-blogs-section: transform: matrix(1, 0, 0, 1, 0, 0) | none
+  combos: 64 live, 12 diffs, 0 missing
+== /blog/the-12-month-shift-why-voice-ai-agents-are-now-a-financial-imperative-for-specialty-practices @1024  docH live 7924 clone 7924  scrollW 1024 font true errs 0 ext 0
+  sections live: blog-top-header 60/448.8 | post-body-section 508.8/5365.8 | cta-section 5874.6/1070.9 | footer 6945.5/683.7 | footer-bottom-wrap 605.6/294.4
+  sections clone: blog-top-header 60/448.8 | post-body-section 508.8/5365.8 | cta-section 5874.6/1070.9 | footer 6945.5/683.7
+  STYLE section.blog-top-header: transform: matrix(1, 0, 0, 1, 0, 0) | none
+  DIFF div.bg-noise.stat-img n 3/1 live [0,60,272.8,447.8] clone [0,60,272.8,447.8]
+  STYLE img.arrow.white.back-1: transform: matrix(1, 0, 0, 1, 0, 0) | none
+  STYLE img.arrow.white.back-2: transform: matrix(1, 0, 0, 1, 0, 0) | none
+  DIFF div._16px-text.white-text n 2/1 live [384.9,98.8,92.5,22.4] clone [384.9,98.8,92.5,22.4]
+  STYLE section.post-body-section: transform: matrix(1, 0, 0, 1, 0, 0) | none
+  combos: 64 live, 6 diffs, 0 missing
+== /blog/redefining-healthcare-ai @1024  docH live 5339 clone 5339  scrollW 1024 font true errs 0 ext 0
+  sections live: blog-top-header 60/369.1 | post-body-section 429.1/2861 | cta-section 3290.2/1070.9 | footer 4361.1/683.7 | footer-bottom-wrap 605.6/294.4
+  sections clone: blog-top-header 60/369.1 | post-body-section 429.1/2861 | cta-section 3290.2/1070.9 | footer 4361.1/683.7
+  STYLE section.blog-top-header: transform: matrix(1, 0, 0, 1, 0, 0) | none
+  DIFF div.bg-noise.stat-img n 3/1 live [0,60,272.8,368.1] clone [0,60,272.8,368.1]
+  STYLE img.arrow.white.back-1: transform: matrix(1, 0, 0, 1, 0, 0) | none
+  STYLE img.arrow.white.back-2: transform: matrix(1, 0, 0, 1, 0, 0) | none
+  DIFF div._16px-text.white-text n 2/1 live [384.9,98.8,92.5,22.4] clone [384.9,98.8,92.5,22.4]
+  STYLE section.post-body-section: transform: matrix(1, 0, 0, 1, 0, 0) | none
+  combos: 61 live, 6 diffs, 0 missing
+== /blog/ent-reimbursement-in-2027-what-medicare-s-proposed-cuts-mean-for-otolaryngology-practices @1024  docH live 7837 clone 7837  scrollW 1024 font true errs 0 ext 0
+  sections live: blog-top-header 60/448.8 | post-body-section 508.8/5278.8 | cta-section 5787.5/1070.9 | footer 6858.5/683.7 | footer-bottom-wrap 605.6/294.4
+  sections clone: blog-top-header 60/448.8 | post-body-section 508.8/5278.8 | cta-section 5787.5/1070.9 | footer 6858.5/683.7
+  STYLE section.blog-top-header: transform: matrix(1, 0, 0, 1, 0, 0) | none
+  DIFF div.bg-noise.stat-img n 3/1 live [0,60,272.8,447.8] clone [0,60,272.8,447.8]
+  STYLE img.arrow.white.back-1: transform: matrix(1, 0, 0, 1, 0, 0) | none
+  STYLE img.arrow.white.back-2: transform: matrix(1, 0, 0, 1, 0, 0) | none
+  DIFF div._16px-text.white-text n 2/1 live [384.9,98.8,92.5,22.4] clone [384.9,98.8,92.5,22.4]
+  STYLE section.post-body-section: transform: matrix(1, 0, 0, 1, 0, 0) | none
+  combos: 63 live, 6 diffs, 0 missing
+== /blog/ai-voice-agents-for-athenahealth-7-questions-to-ask-before-choosing-a-platform @1024  docH live 8222 clone 8222  scrollW 1024 font true errs 0 ext 0
+  sections live: blog-top-header 60/448.8 | post-body-section 508.8/5664.5 | cta-section 6173.2/1070.9 | footer 7244.1/683.7 | footer-bottom-wrap 605.6/294.4
+  sections clone: blog-top-header 60/448.8 | post-body-section 508.8/5664.5 | cta-section 6173.2/1070.9 | footer 7244.1/683.7
+  STYLE section.blog-top-header: transform: matrix(1, 0, 0, 1, 0, 0) | none
+  DIFF div.bg-noise.stat-img n 3/1 live [0,60,272.8,447.8] clone [0,60,272.8,447.8]
+  STYLE img.arrow.white.back-1: transform: matrix(1, 0, 0, 1, 0, 0) | none
+  STYLE img.arrow.white.back-2: transform: matrix(1, 0, 0, 1, 0, 0) | none
+  DIFF div._16px-text.white-text n 2/1 live [384.9,98.8,92.5,22.4] clone [384.9,98.8,92.5,22.4]
+  STYLE section.post-body-section: transform: matrix(1, 0, 0, 1, 0, 0) | none
+  combos: 63 live, 6 diffs, 0 missing
+== /case-studies @1024  docH live 3661 clone 3661  scrollW 1024 font true errs 0 ext 0
+  sections live: hero 0/445.1 | all-blogs-section 445.1/1064.2 | cta-section 1611.7/1070.9 | footer 2682.7/683.7 | footer-bottom-wrap 605.6/294.4
+  sections clone: hero 0/445.1 | all-blogs-section 445.1/1064.2 | cta-section 1611.7/1070.9 | footer 2682.7/683.7
+  STYLE video: top: -900px | 0px; z-index: -100 | auto; max-width: none | 100%; margin-top: 900px | 0px; margin-right: 1022.97px | 0px; margin-bottom: 900px | 0px; margin-left: 1022.97px | 0px
+  STYLE span.gsap_split_word.gsap_split_word1: transform: matrix(1, 0, 0, 1, 0, 0) | none
+  STYLE span.gsap_split_word.gsap_split_word2: transform: matrix(1, 0, 0, 1, 0, 0) | none
+  STYLE span.gsap_split_word.gsap_split_word3: transform: matrix(1, 0, 0, 1, 0, 0) | none
+  STYLE span.gsap_split_word.gsap_split_word4: transform: matrix(1, 0, 0, 1, 0, 0) | none
+  STYLE span.gsap_split_word.gsap_split_word5: transform: matrix(1, 0, 0, 1, 0, 0) | none
+  STYLE span.gsap_split_word.gsap_split_word6: transform: matrix(1, 0, 0, 1, 0, 0) | none
+  STYLE section.all-blogs-section.cs: transform: matrix(1, 0, 0, 1, 0, 0) | none
+  combos: 38 live, 8 diffs, 0 missing
+== /case-studies/southern-bone-joint @1024  docH live 6976 clone 6976  scrollW 1024 font true errs 0 ext 0
+  sections live: blog-top-header 60/351.7 | post-body-section 411.7/3541.3 | read-next-section 3953/871.5 | cta-section 4926.8/1070.9 | footer 5997.7/683.7 | footer-bottom-wrap 605.6/294.4
+  sections clone: blog-top-header 60/351.7 | post-body-section 411.7/3541.3 | read-next-section 3953/871.5 | cta-section 4926.8/1070.9 | footer 5997.7/683.7
+  STYLE section.blog-top-header: transform: matrix(1, 0, 0, 1, 0, 0) | none
+  STYLE img.arrow.white.back-1: transform: matrix(1, 0, 0, 1, 0, 0) | none
+  STYLE img.arrow.white.back-2: transform: matrix(1, 0, 0, 1, 0, 0) | none
+  STYLE section.post-body-section: transform: matrix(1, 0, 0, 1, 0, 0) | none
+  combos: 61 live, 4 diffs, 0 missing
+== /case-studies/the-orthopaedic-center @1024  docH live 4649 clone 4649  scrollW 1024 font true errs 0 ext 0
+  sections live: blog-top-header 60/416.7 | post-body-section 476.7/1214.5 | read-next-section 1691.2/806.4 | cta-section 2600/1070.9 | footer 3670.9/683.7 | footer-bottom-wrap 605.6/294.4
+  sections clone: blog-top-header 60/416.7 | post-body-section 476.7/1214.5 | read-next-section 1691.2/806.4 | cta-section 2600/1070.9 | footer 3670.9/683.7
+  STYLE section.blog-top-header: transform: matrix(1, 0, 0, 1, 0, 0) | none
+  STYLE img.arrow.white.back-1: transform: matrix(1, 0, 0, 1, 0, 0) | none
+  STYLE img.arrow.white.back-2: transform: matrix(1, 0, 0, 1, 0, 0) | none
+  STYLE section.post-body-section: transform: matrix(1, 0, 0, 1, 0, 0) | none
+  combos: 64 live, 4 diffs, 0 missing
+== /blog @768  docH live 4416 clone 4416  scrollW 768 font true errs 0 ext 0
+  sections live: hero 0/917.6 | all-blogs-section 917.6/1275.5 | cta-section 2269.9/1152 | footer 3421.9/713.3 | footer-bottom-wrap 743.7/280.3
+  sections clone: hero 0/917.6 | all-blogs-section 917.6/1275.5 | cta-section 2269.9/1152 | footer 3421.9/713.3
+  STYLE div.bg-pixels-wrapper: flex-direction: column | row; justify-content: center | normal; align-items: center | normal
+  STYLE video: top: -1024px | 0px; z-index: -100 | auto; max-width: none | 100%; margin-top: 1024px | 0px; margin-right: 767.219px | 0px; margin-bottom: 1024px | 0px; margin-left: 767.219px | 0px
+  STYLE span.gsap_split_word.gsap_split_word1: transform: matrix(1, 0, 0, 1, 0, 0) | none
+  STYLE span.gsap_split_word.gsap_split_word2: transform: matrix(1, 0, 0, 1, 0, 0) | none
+  STYLE span.gsap_split_word.gsap_split_word3: transform: matrix(1, 0, 0, 1, 0, 0) | none
+  STYLE span.gsap_split_word.gsap_split_word4: transform: matrix(1, 0, 0, 1, 0, 0) | none
+  STYLE span.gsap_split_word.gsap_split_word5: transform: matrix(1, 0, 0, 1, 0, 0) | none
+  STYLE span.gsap_split_word.gsap_split_word6: transform: matrix(1, 0, 0, 1, 0, 0) | none
+  STYLE span.gsap_split_word.gsap_split_word7: transform: matrix(1, 0, 0, 1, 0, 0) | none
+  STYLE span.gsap_split_word.gsap_split_word8: transform: matrix(1, 0, 0, 1, 0, 0) | none
+  STYLE div.featured-post.w-dyn-list: transform: matrix(1, 0, 0, 1, 0, 0) | none
+  DIFF div n 3/2 live [648.1,875,99.9,21.6] clone [648.1,875,99.9,21.6]
+  STYLE section.all-blogs-section: transform: matrix(1, 0, 0, 1, 0, 0) | none
+  combos: 64 live, 13 diffs, 0 missing
+== /blog/the-12-month-shift-why-voice-ai-agents-are-now-a-financial-imperative-for-specialty-practices @768  docH live 7796 clone 7796  scrollW 768 font true errs 0 ext 0
+  sections live: blog-top-header 60/481.4 | post-body-section 541.4/5109.4 | cta-section 5650.8/1152 | footer 6802.8/713.3 | footer-bottom-wrap 743.7/280.3
+  sections clone: blog-top-header 60/481.4 | post-body-section 541.4/5109.4 | cta-section 5650.8/1152 | footer 6802.8/713.3
+  STYLE section.blog-top-header: transform: matrix(1, 0, 0, 1, 0, 0) | none
+  DIFF div.bg-noise.stat-img n 3/1 live [0,60,204.3,480.4] clone [0,60,204.3,480.4]
+  DIFF div._16px-text.white-text n 2/1 live [299.4,84.2,81,19.6] clone [299.4,84.2,81,19.6]
+  STYLE section.post-body-section: transform: matrix(1, 0, 0, 1, 0, 0) | none
+  combos: 64 live, 4 diffs, 0 missing
+== /blog/redefining-healthcare-ai @768  docH live 5274 clone 5274  scrollW 768 font true errs 0 ext 0
+  sections live: blog-top-header 60/389 | post-body-section 449/2679.8 | cta-section 3128.8/1152 | footer 4280.8/713.3 | footer-bottom-wrap 743.7/280.3
+  sections clone: blog-top-header 60/389 | post-body-section 449/2679.8 | cta-section 3128.8/1152 | footer 4280.8/713.3
+  STYLE section.blog-top-header: transform: matrix(1, 0, 0, 1, 0, 0) | none
+  DIFF div.bg-noise.stat-img n 3/1 live [0,60,204.3,388] clone [0,60,204.3,388]
+  DIFF div._16px-text.white-text n 2/1 live [299.4,84.2,81,19.6] clone [299.4,84.2,81,19.6]
+  STYLE section.post-body-section: transform: matrix(1, 0, 0, 1, 0, 0) | none
+  combos: 61 live, 4 diffs, 0 missing
+== /blog/ent-reimbursement-in-2027-what-medicare-s-proposed-cuts-mean-for-otolaryngology-practices @768  docH live 7707 clone 7707  scrollW 768 font true errs 0 ext 0
+  sections live: blog-top-header 60/481.4 | post-body-section 541.4/5019.7 | cta-section 5561.1/1152 | footer 6713.1/713.3 | footer-bottom-wrap 743.7/280.3
+  sections clone: blog-top-header 60/481.4 | post-body-section 541.4/5019.7 | cta-section 5561.1/1152 | footer 6713.1/713.3
+  STYLE section.blog-top-header: transform: matrix(1, 0, 0, 1, 0, 0) | none
+  DIFF div.bg-noise.stat-img n 3/1 live [0,60,204.3,480.4] clone [0,60,204.3,480.4]
+  DIFF div._16px-text.white-text n 2/1 live [299.4,84.2,81,19.6] clone [299.4,84.2,81,19.6]
+  STYLE section.post-body-section: transform: matrix(1, 0, 0, 1, 0, 0) | none
+  combos: 63 live, 4 diffs, 0 missing
+== /blog/ai-voice-agents-for-athenahealth-7-questions-to-ask-before-choosing-a-platform @768  docH live 8119 clone 8119  scrollW 768 font true errs 0 ext 0
+  sections live: blog-top-header 60/435.2 | post-body-section 495.2/5478.3 | cta-section 5973.5/1152 | footer 7125.5/713.3 | footer-bottom-wrap 743.7/280.3
+  sections clone: blog-top-header 60/435.2 | post-body-section 495.2/5478.3 | cta-section 5973.5/1152 | footer 7125.5/713.3
+  STYLE section.blog-top-header: transform: matrix(1, 0, 0, 1, 0, 0) | none
+  DIFF div.bg-noise.stat-img n 3/1 live [0,60,204.3,434.2] clone [0,60,204.3,434.2]
+  DIFF div._16px-text.white-text n 2/1 live [299.4,84.2,81,19.6] clone [299.4,84.2,81,19.6]
+  STYLE section.post-body-section: transform: matrix(1, 0, 0, 1, 0, 0) | none
+  combos: 63 live, 4 diffs, 0 missing
+== /case-studies @768  docH live 3770 clone 3770  scrollW 768 font true errs 0 ext 0
+  sections live: hero 0/496.3 | all-blogs-section 496.3/1051.2 | cta-section 1624.3/1152 | footer 2776.3/713.3 | footer-bottom-wrap 743.7/280.3
+  sections clone: hero 0/496.3 | all-blogs-section 496.3/1051.2 | cta-section 1624.3/1152 | footer 2776.3/713.3
+  STYLE div.bg-pixels-wrapper: flex-direction: column | row; justify-content: center | normal; align-items: center | normal
+  STYLE video: top: -1024px | 0px; z-index: -100 | auto; max-width: none | 100%; margin-top: 1024px | 0px; margin-right: 767.219px | 0px; margin-bottom: 1024px | 0px; margin-left: 767.219px | 0px
+  STYLE span.gsap_split_word.gsap_split_word1: transform: matrix(1, 0, 0, 1, 0, 0) | none
+  STYLE span.gsap_split_word.gsap_split_word2: transform: matrix(1, 0, 0, 1, 0, 0) | none
+  STYLE span.gsap_split_word.gsap_split_word3: transform: matrix(1, 0, 0, 1, 0, 0) | none
+  STYLE span.gsap_split_word.gsap_split_word4: transform: matrix(1, 0, 0, 1, 0, 0) | none
+  STYLE span.gsap_split_word.gsap_split_word5: transform: matrix(1, 0, 0, 1, 0, 0) | none
+  STYLE span.gsap_split_word.gsap_split_word6: transform: matrix(1, 0, 0, 1, 0, 0) | none
+  STYLE section.all-blogs-section.cs: transform: matrix(1, 0, 0, 1, 0, 0) | none
+  combos: 38 live, 9 diffs, 0 missing
+== /case-studies/southern-bone-joint @768  docH live 6814 clone 6814  scrollW 768 font true errs 0 ext 0
+  sections live: blog-top-header 60/344.2 | post-body-section 404.2/3442.4 | read-next-section 3846.6/745.2 | cta-section 4668.6/1152 | footer 5820.6/713.3 | footer-bottom-wrap 743.7/280.3
+  sections clone: blog-top-header 60/344.2 | post-body-section 404.2/3442.4 | read-next-section 3846.6/745.2 | cta-section 4668.6/1152 | footer 5820.6/713.3
+  STYLE section.blog-top-header: transform: matrix(1, 0, 0, 1, 0, 0) | none
+  STYLE section.post-body-section: transform: matrix(1, 0, 0, 1, 0, 0) | none
+  combos: 61 live, 2 diffs, 0 missing
+== /case-studies/the-orthopaedic-center @768  docH live 4659 clone 4659  scrollW 768 font true errs 0 ext 0
+  sections live: blog-top-header 60/397 | post-body-section 457/1286.8 | read-next-section 1743.8/692.4 | cta-section 2513/1152 | footer 3665/713.3 | footer-bottom-wrap 743.7/280.3
+  sections clone: blog-top-header 60/397 | post-body-section 457/1286.8 | read-next-section 1743.8/692.4 | cta-section 2513/1152 | footer 3665/713.3
+  STYLE section.blog-top-header: transform: matrix(1, 0, 0, 1, 0, 0) | none
+  STYLE section.post-body-section: transform: matrix(1, 0, 0, 1, 0, 0) | none
+  combos: 64 live, 2 diffs, 0 missing
+== /blog @390  docH live 5539 clone 5539  scrollW 390 font true errs 0 ext 0
+  sections live: hero 0/935.8 | all-blogs-section 935.8/2023.3 | cta-section 2998.1/1275 | footer 4273.1/1077.6 | footer-bottom-wrap 655.8/188.2
+  sections clone: hero 0/935.8 | all-blogs-section 935.8/2023.3 | cta-section 2998.1/1275 | footer 4273.1/1077.6
+  STYLE div.bg-pixels-wrapper: flex-direction: column | row; justify-content: center | normal; align-items: center | normal
+  STYLE video: top: -844px | 0px; z-index: -100 | auto; max-width: none | 100%; margin-top: 844px | 0px; margin-right: 389.609px | 0px; margin-bottom: 844px | 0px; margin-left: 389.609px | 0px
+  STYLE span.gsap_split_word.gsap_split_word1: transform: matrix(1, 0, 0, 1, 0, 0) | none
+  STYLE span.gsap_split_word.gsap_split_word2: transform: matrix(1, 0, 0, 1, 0, 0) | none
+  STYLE span.gsap_split_word.gsap_split_word3: transform: matrix(1, 0, 0, 1, 0, 0) | none
+  STYLE span.gsap_split_word.gsap_split_word4: transform: matrix(1, 0, 0, 1, 0, 0) | none
+  STYLE span.gsap_split_word.gsap_split_word5: transform: matrix(1, 0, 0, 1, 0, 0) | none
+  STYLE span.gsap_split_word.gsap_split_word6: transform: matrix(1, 0, 0, 1, 0, 0) | none
+  STYLE span.gsap_split_word.gsap_split_word7: transform: matrix(1, 0, 0, 1, 0, 0) | none
+  STYLE span.gsap_split_word.gsap_split_word8: transform: matrix(1, 0, 0, 1, 0, 0) | none
+  STYLE div.featured-post.w-dyn-list: transform: matrix(1, 0, 0, 1, 0, 0) | none
+  STYLE section.all-blogs-section: transform: matrix(1, 0, 0, 1, 0, 0) | none
+  combos: 64 live, 12 diffs, 0 missing
+== /blog/the-12-month-shift-why-voice-ai-agents-are-now-a-financial-imperative-for-specialty-practices @390  docH live 12656 clone 12656  scrollW 390 font true errs 0 ext 0
+  sections live: blog-top-header 60/542.3 | post-body-section 602.3/9512.8 | cta-section 10115.1/1275 | footer 11390.1/1077.6 | footer-bottom-wrap 655.8/188.2
+  sections clone: blog-top-header 60/542.3 | post-body-section 602.3/9512.8 | cta-section 10115.1/1275 | footer 11390.1/1077.6
+  STYLE section.blog-top-header: transform: matrix(1, 0, 0, 1, 0, 0) | none
+  DIFF div.bg-noise.stat-img n 3/1 live [0,60,389,205.7] clone [0,60,389,205.7]
+  DIFF div._16px-text.white-text n 2/1 live [49.5,289.5,92.5,22.4] clone [49.5,289.5,92.5,22.4]
+  STYLE section.post-body-section: transform: matrix(1, 0, 0, 1, 0, 0) | none
+  combos: 64 live, 4 diffs, 0 missing
+== /blog/redefining-healthcare-ai @390  docH live 7380 clone 7380  scrollW 390 font true errs 0 ext 0
+  sections live: blog-top-header 60/476.3 | post-body-section 536.3/4302.8 | cta-section 4839.1/1275 | footer 6114.1/1077.6 | footer-bottom-wrap 655.8/188.2
+  sections clone: blog-top-header 60/476.3 | post-body-section 536.3/4302.8 | cta-section 4839.1/1275 | footer 6114.1/1077.6
+  STYLE section.blog-top-header: transform: matrix(1, 0, 0, 1, 0, 0) | none
+  DIFF div.bg-noise.stat-img n 3/1 live [0,60,389,205.7] clone [0,60,389,205.7]
+  DIFF div._16px-text.white-text n 2/1 live [49.5,289.5,92.5,22.4] clone [49.5,289.5,92.5,22.4]
+  STYLE section.post-body-section: transform: matrix(1, 0, 0, 1, 0, 0) | none
+  combos: 61 live, 4 diffs, 0 missing
+== /blog/ent-reimbursement-in-2027-what-medicare-s-proposed-cuts-mean-for-otolaryngology-practices @390  docH live 11634 clone 11634  scrollW 390 font true errs 0 ext 0
+  sections live: blog-top-header 60/542.3 | post-body-section 602.3/8490.7 | cta-section 9092.9/1275 | footer 10367.9/1077.6 | footer-bottom-wrap 655.8/188.2
+  sections clone: blog-top-header 60/542.3 | post-body-section 602.3/8490.7 | cta-section 9092.9/1275 | footer 10367.9/1077.6
+  STYLE section.blog-top-header: transform: matrix(1, 0, 0, 1, 0, 0) | none
+  DIFF div.bg-noise.stat-img n 3/1 live [0,60,389,205.7] clone [0,60,389,205.7]
+  DIFF div._16px-text.white-text n 2/1 live [49.5,289.5,92.5,22.4] clone [49.5,289.5,92.5,22.4]
+  STYLE section.post-body-section: transform: matrix(1, 0, 0, 1, 0, 0) | none
+  combos: 63 live, 4 diffs, 0 missing
+== /blog/ai-voice-agents-for-athenahealth-7-questions-to-ask-before-choosing-a-platform @390  docH live 11921 clone 11921  scrollW 390 font true errs 0 ext 0
+  sections live: blog-top-header 60/542.3 | post-body-section 602.3/8777.4 | cta-section 9379.7/1275 | footer 10654.7/1077.6 | footer-bottom-wrap 655.8/188.2
+  sections clone: blog-top-header 60/542.3 | post-body-section 602.3/8777.4 | cta-section 9379.7/1275 | footer 10654.7/1077.6
+  STYLE section.blog-top-header: transform: matrix(1, 0, 0, 1, 0, 0) | none
+  DIFF div.bg-noise.stat-img n 3/1 live [0,60,389,205.7] clone [0,60,389,205.7]
+  DIFF div._16px-text.white-text n 2/1 live [49.5,289.5,92.5,22.4] clone [49.5,289.5,92.5,22.4]
+  STYLE section.post-body-section: transform: matrix(1, 0, 0, 1, 0, 0) | none
+  combos: 63 live, 4 diffs, 0 missing
+== /case-studies @390  docH live 4006 clone 4006  scrollW 390 font true errs 0 ext 0
+  sections live: hero 0/408.1 | all-blogs-section 408.1/1017.9 | cta-section 1465/1275 | footer 2740/1077.6 | footer-bottom-wrap 655.8/188.2
+  sections clone: hero 0/408.1 | all-blogs-section 408.1/1017.9 | cta-section 1465/1275 | footer 2740/1077.6
+  STYLE div.bg-pixels-wrapper: flex-direction: column | row; justify-content: center | normal; align-items: center | normal
+  STYLE video: top: -844px | 0px; z-index: -100 | auto; max-width: none | 100%; margin-top: 844px | 0px; margin-right: 389.609px | 0px; margin-bottom: 844px | 0px; margin-left: 389.609px | 0px
+  STYLE span.gsap_split_word.gsap_split_word1: transform: matrix(1, 0, 0, 1, 0, 0) | none
+  STYLE span.gsap_split_word.gsap_split_word2: transform: matrix(1, 0, 0, 1, 0, 0) | none
+  STYLE span.gsap_split_word.gsap_split_word3: transform: matrix(1, 0, 0, 1, 0, 0) | none
+  STYLE span.gsap_split_word.gsap_split_word4: transform: matrix(1, 0, 0, 1, 0, 0) | none
+  STYLE span.gsap_split_word.gsap_split_word5: transform: matrix(1, 0, 0, 1, 0, 0) | none
+  STYLE span.gsap_split_word.gsap_split_word6: transform: matrix(1, 0, 0, 1, 0, 0) | none
+  STYLE section.all-blogs-section.cs: transform: matrix(1, 0, 0, 1, 0, 0) | none
+  combos: 38 live, 9 diffs, 0 missing
+== /case-studies/southern-bone-joint @390  docH live 9373 clone 9373  scrollW 390 font true errs 0 ext 0
+  sections live: blog-top-header 60/463.5 | post-body-section 523.5/5533.8 | read-next-section 6057.3/735.9 | cta-section 6832.2/1275 | footer 8107.2/1077.6 | footer-bottom-wrap 655.8/188.2
+  sections clone: blog-top-header 60/463.5 | post-body-section 523.5/5533.8 | read-next-section 6057.3/735.9 | cta-section 6832.2/1275 | footer 8107.2/1077.6
+  STYLE section.blog-top-header: transform: matrix(1, 0, 0, 1, 0, 0) | none
+  STYLE section.post-body-section: transform: matrix(1, 0, 0, 1, 0, 0) | none
+  combos: 61 live, 2 diffs, 0 missing
+== /case-studies/the-orthopaedic-center @390  docH live 5806 clone 5806  scrollW 390 font true errs 0 ext 0
+  sections live: blog-top-header 60/558.1 | post-body-section 618.1/1967.1 | read-next-section 2585.1/641.3 | cta-section 3265.5/1275 | footer 4540.5/1077.6 | footer-bottom-wrap 655.8/188.2
+  sections clone: blog-top-header 60/558.1 | post-body-section 618.1/1967.1 | read-next-section 2585.1/641.3 | cta-section 3265.5/1275 | footer 4540.5/1077.6
+  STYLE section.blog-top-header: transform: matrix(1, 0, 0, 1, 0, 0) | none
+  STYLE section.post-body-section: transform: matrix(1, 0, 0, 1, 0, 0) | none
+  combos: 64 live, 2 diffs, 0 missing

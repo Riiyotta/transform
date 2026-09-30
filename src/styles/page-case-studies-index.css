@@ -1,1 +1,11 @@
-/* CaseStudiesIndexPage — page styles (case-studies-index). Owned by the builder assigned to this family. */
+/* CaseStudiesIndexPage — page styles (/case-studies). Shared CMS component styles:
+   src/components/cms/cms.css. Here: the `.cs` hero bottom padding (specs/case-studies.md §3.2). */
+.hero.blog.cs {
+  padding-bottom: 7vw;
+}
+
+@media screen and (max-width: 991px) {
+  .hero.blog.cs {
+    padding-bottom: 30px;
+  }
+}

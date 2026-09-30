@@ -10,7 +10,12 @@ const b = await chromium.launch(); let fail = 0
 async function measure(url, w, local) {
   const p = await b.newPage({ viewport: { width: w, height: H[w] || 900 } }); const errs = [], ext = []
   if (local) { p.on('pageerror', (e) => errs.push(e.message)); p.on('console', (m) => m.type() === 'error' && errs.push(m.text())); p.on('request', (r) => { const h = new URL(r.url()).hostname; if (!['127.0.0.1', 'localhost'].includes(h) && !r.url().startsWith('data:')) ext.push(r.url()) }) }
-  await p.goto(url, { waitUntil: local ? 'networkidle' : 'load', timeout: 90000 }); await p.evaluate(() => document.fonts.ready)
+  // Live occasionally times out on this network; retry before giving up.
+  for (let attempt = 1; ; attempt++) {
+    try { await p.goto(url, { waitUntil: local ? 'networkidle' : 'load', timeout: 90000 }); break }
+    catch (e) { if (attempt === 3) { await p.close(); return { h: NaN, ox: NaN, t: `goto failed: ${e.message.split('\n')[0]}`, errs: [], ext: [] } } }
+  }
+  await p.evaluate(() => document.fonts.ready)
   for (let y = 0; y < 40000; y += 500) { await p.evaluate((y) => scrollTo(0, y), y); await p.waitForTimeout(15) }
   await p.evaluate(() => scrollTo(0, 0)); await p.waitForTimeout(local ? 400 : 2500)
   const r = await p.evaluate(() => ({ h: document.documentElement.scrollHeight, ox: document.documentElement.scrollWidth - innerWidth, t: document.title.replace(/&amp;/g, '&') }))

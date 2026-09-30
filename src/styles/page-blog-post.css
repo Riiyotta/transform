@@ -1,1 +1,3 @@
-/* BlogPostPage — page styles (blog-post). Owned by the builder assigned to this family. */
+/* BlogPostPage — page styles (/blog/<slug>). The post template is built entirely from the shared
+   CMS components; their styles (header, rich text, share column) and the PROMOTE tokens live in
+   src/components/cms/cms.css. No post-only overrides are needed (specs/blog.md §4). */
