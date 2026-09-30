@@ -1,0 +1,18 @@
+/* =============================================================================
+   PRELOADER (src/components/Preloader.jsx) — specs/compare.md §0, specs/legal.md §1
+   Source: compare-rules.css `.preloader-wrap` + the page <head> style
+   `.preloader-wrap{display:block}`. Settled state (opacity 0) — measured computed
+   opacity after the intro is 0.
+   MOTION: CMP-M1 / LGL-M1 — opacity 1 -> 0 over 0.1s power1.out at intro start.
+   ============================================================================= */
+.preloader-wrap {
+  position: fixed;
+  inset: 0;
+  z-index: 4;
+  display: block;
+  width: 100vw;
+  height: 100dvh;
+  background-color: var(--color-black);
+  opacity: 0;
+  pointer-events: none;
+}

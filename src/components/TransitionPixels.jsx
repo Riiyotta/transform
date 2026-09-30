@@ -59,7 +59,8 @@ function Layer({ layer, rowSuffix }) {
   )
 }
 
-export default function TransitionPixels({ variant }) {
+// railLine: /compare's black-to-white transition has no `.right-side-w-line` (specs/compare.md §6).
+export default function TransitionPixels({ variant, railLine = true }) {
   const toWhite = variant === 'black-to-white'
   const rowSuffix = toWhite ? 'b-w' : '_w-b'
   const ref = useRef(null)
@@ -75,7 +76,7 @@ export default function TransitionPixels({ variant }) {
     >
       <Layer layer={toWhite ? 'white' : 'black'} rowSuffix={rowSuffix} />
       <Layer layer="mix" rowSuffix={rowSuffix} />
-      {toWhite && <div className="right-side-w-line" />}
+      {toWhite && railLine && <div className="right-side-w-line" />}
       {toWhite && <Noise />}
     </div>
   )

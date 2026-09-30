@@ -25,7 +25,8 @@ export const BOOK_LIVE_DEMO = { href: '/book-a-demo', label: 'Book a Live Demo' 
 export const GENERIC_TEXT =
   'Our AI voice agents are designed to handle real patient access workflows with precision, security, and consistency. Unlike general-purpose AI solutions, Transform9 is an expert in healthcare where accuracy and security matter most. Our knowledge and deep understanding of the industry separate us from our competition.'
 
-// §4 comparison table: [label, Transform9 cell, "Other AI Agents" cell]
+// §4 comparison table: [label, Transform9 cell, "Other AI Agents" cell]. The \u00a0 are
+// non-breaking spaces present in the live copy (raw.html); they change line wrapping.
 export const COMPARE_ROWS = [
   ['Purpose-built for healthcare', 'Designed specifically for healthcare access and front office workflows', 'Many platforms adapt generic call-center AI for healthcare use'],
   ['Specialty-specific experts', 'Industry experts across Orthopedics, Neurology, Urology, Gastroenterology, Ophthalmology and others', 'Varies by vendor. Many have broad reach with limited expertise'],
@@ -33,10 +34,10 @@ export const COMPARE_ROWS = [
   ['Hidden fees', 'None/no overages - transparent pricing', 'Additional costs can often appear as call volume grows'],
   ['Budget predictability', 'Easy to forecast monthly/annually', 'Costs may fluctuate month to month'],
   ['IT lift required', 'Minimal burden on internal IT teams - the T9 team works hand in hand with you throughout the process', 'Often requires deeper IT involvement. Internal teams left responsible with minimal guidance or support'],
-  ['Security & compliance', 'T9 is in the top-5% of most secure/compliant vendors in the industry with HIPAA, SOC 2: Type I/II, FedRAMP 20x, NIST 800-30, NIST 800-53 designations', "Most vendors are HIPAA 'aware' or HIPAA 'compliant' only - the lowest level of required security."],
+  ['Security & compliance', 'T9 is in the top-5% of most secure/compliant vendors in the industry with HIPAA, SOC\u00a02: Type I/II, FedRAMP\u00a020x, NIST 800-30, NIST 800-53 designations', "Most vendors are HIPAA\u00a0'aware' or HIPAA\u00a0'compliant' only - the lowest level of required security."],
   ['Customer support model', 'White-glove onboarding and ongoing partnership/customer support', 'Ticket-based or tiered support models - less involved following deployment'],
   ['Product focus', 'Our focus is on healthcare only and our technology is designed specifically for it', 'Voice AI is often one product across multiple verticals - not healthcare focused'],
-  ['Long-term fit', 'Designed to scale with growing practices - lower "Technical Debt" than other offerings', 'Risk of outgrowing the solution - future costs can occur as a result of necessary updates'],
+  ['Long-term fit', 'Designed to scale with growing practices - lower "Technical Debt"\u00a0than other offerings', 'Risk of outgrowing the solution - future costs can occur as a result of necessary updates'],
 ]
 
 export const TABLE_BOTTOM_TEXT =

@@ -158,3 +158,61 @@
     margin-top: 7vw;
   }
 }
+
+/* =============================================================================
+   WHITE VARIANT (Specialties variant="white") — specs/compare.md §6b, /compare only.
+   Source: live shared CSS `.specialty-section.white`, `.specialty-tabs.wh`,
+   `.specialty-tabs-menu.wh`, `.specialty-tab-link.wh(._1)(.w--current)`,
+   `.specialty-tabs-content.wh`, `.right-side.specialty-bottom.wh`,
+   `._16px-text.white-text.specialty-bottom.wh`. Every selector carries `.white` or
+   `.wh`, so the default (homepage) variant is unaffected. Each rule outranks the
+   matching default rule by specificity, so it holds inside the default's media blocks.
+   MOTION: M20 — same instant hover/click tab swap as the default variant.
+   ============================================================================= */
+.specialty-section.white {
+  margin-top: 0;
+}
+.specialty-section .specialty-tabs.wh {
+  flex-flow: row-reverse wrap;
+  width: 100%;
+}
+.specialty-section .specialty-tabs-menu.wh {
+  padding-left: var(--pad);
+  border-left: 1px solid var(--color-stroke-light);
+}
+.specialty-section .specialty-tab-link.wh {
+  border-bottom-color: var(--color-stroke-light);
+  color: var(--color-black);
+}
+.specialty-section .specialty-tab-link.wh._1 {
+  border-top: 1px solid var(--color-stroke-light);
+}
+/* Active: green, black text. padding-left max(20px, 1.389vw) comes from the default
+   .is-current rule (0 at <=767 from its media rule, as on live). */
+.specialty-section .specialty-tab-link.wh.is-current {
+  background-color: var(--color-green);
+  color: var(--color-black);
+}
+.specialty-section .specialty-tab-link.wh._1.is-current {
+  padding-top: max(12px, 0.833vw);
+}
+.specialty-section .specialty-tabs-content.wh {
+  top: 60px;
+  width: var(--rail);
+  min-width: var(--rail);
+}
+.specialty-section .right-side.specialty-bottom.wh {
+  border-left-color: var(--color-stroke-light);
+}
+.specialty-section .specialty-bottom-text.wh {
+  max-width: 50ch;
+  color: var(--color-black);
+  opacity: 0.5;
+}
+
+@media screen and (max-width: 479px) {
+  /* Live: only the FIRST tab loses its highlight at <=479. */
+  .specialty-section .specialty-tab-link.wh._1.is-current {
+    background-color: transparent;
+  }
+}

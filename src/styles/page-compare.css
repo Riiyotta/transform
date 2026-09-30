@@ -1,1 +1,705 @@
-/* ComparePage — page styles (compare). Owned by the builder assigned to this family. */
+/* =============================================================================
+   /compare — page styles (specs/compare.md). Source rules: recon/pages/compare/
+   compare-rules.css (new classes) + the live shared CSS for reused base classes
+   (.h1-text, ._30px-text, ._16px-text, .left-side, .right-side).
+   Every rule is scoped under a compare-only section class (or a compare-only modifier
+   such as .hero-heading.compare) because all page stylesheets share one bundle.
+   Class map (clone convention, see SELECTORS.md):
+     .h1-text            = .h1-text (display scale; colour set per section)
+     .text-30            = ._30px-text          .text-30.white = ._30px-text.white
+     .text-16            = ._16px-text          .text-16.half-white = ._16px-text.half-white
+     .label-16           = ._16px-text.white-text (global; white + 43px indent)
+   Breakpoints: base >=992 · <=991 · <=767 · <=479 (desktop-first, as Webflow).
+   ============================================================================= */
+
+/* ---- New tokens (specs/compare.md §10). Global names, compare-only use. ---- */
+:root {
+  /* PROMOTE: t9 column tint — .table-cell.right-cell.t9 bg (#168ae20f) */
+  --color-t9-tint: rgba(22, 138, 226, 0.06);
+  /* PROMOTE: 50% white text colour — .privacy-text (#ffffff80, opacity 1) */
+  --color-white-50: rgba(255, 255, 255, 0.5);
+  /* PROMOTE: half-white text opacity — ._16px-text.half-white (white at .5 opacity) */
+  --opacity-half-white: 0.5;
+  /* PROMOTE: table text size — clamp(1.25rem, 1.389vw, 1.375rem); 14px at <=991 */
+  --fs-table-text: clamp(1.25rem, 1.389vw, 1.375rem);
+  /* PROMOTE: access display size — 5vw at EVERY width (72 / 51.2 / 38.4 / 19.5) */
+  --fs-access: 5vw;
+  /* PROMOTE: table header logo width — 13.5vw; 170px <=767; 116px <=479 */
+  --w-logo-table: 13.5vw;
+}
+@media screen and (max-width: 991px) {
+  :root {
+    --fs-table-text: 14px;
+  }
+}
+@media screen and (max-width: 767px) {
+  :root {
+    --w-logo-table: 170px;
+  }
+}
+@media screen and (max-width: 479px) {
+  :root {
+    --w-logo-table: 116px;
+  }
+}
+
+/* ---- Page-scoped text roles ---- */
+:is(.generic-section, .table-section, .access-section, .specialty-white, .privacy-section, .ev-section) .h1-text {
+  font-size: var(--fs-display);
+  line-height: var(--lh-display);
+}
+:is(.generic-section, .table-section, .access-section, .privacy-section, .ev-section) .h1-text {
+  color: var(--color-white);
+}
+:is(.generic-section, .table-section, .access-section, .privacy-section, .ev-section) .text-30 {
+  font-size: var(--fs-30);
+  line-height: var(--lh-30);
+}
+:is(.generic-section, .table-section, .access-section, .privacy-section, .ev-section) .text-30.white {
+  position: relative;
+  color: var(--color-white);
+}
+:is(.table-section, .access-section, .specialty-white, .privacy-section, .ev-section) .text-16 {
+  font-size: var(--fs-16);
+  line-height: var(--lh-body);
+}
+:is(.table-section, .access-section, .ev-section) .text-16.half-white {
+  color: var(--color-white);
+  opacity: var(--opacity-half-white);
+}
+
+/* =============================================================================
+   §0 BG PIXELS OVERLAY (src/components/compare/BgPixelsOverlay.jsx)
+   Settled state (opacity 0). MOTION: CMP-M1 — opacity 1 -> 0 (0.7s power1.out, pos 1.1).
+   ============================================================================= */
+.bg-pixels-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: -2;
+  width: 100vw;
+  min-height: 100dvh;
+  background-color: var(--color-black);
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* =============================================================================
+   §2 HERO modifiers (base = HERO block in src/index.css)
+   ============================================================================= */
+/* .white-text.hero-home.compare — 20ch at every width (beats the 14ch/11ch/9ch media rules) */
+.hero-heading.compare {
+  max-width: 20ch;
+}
+.hero-heading.compare .compare-span-1 {
+  color: var(--color-green);
+}
+.hero-bottom-block.right.comparison-hero {
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.comparison-hero .label-16.full-width {
+  width: 100%;
+}
+.hero-cta-link.compare-demo {
+  height: auto;
+}
+
+/* =============================================================================
+   §3 "NOT GENERIC" (section.generic-section)
+   ============================================================================= */
+.generic-section {
+  display: flex;
+  margin-top: 13vw;
+  border-top: 1px solid var(--color-stroke-dark);
+  border-bottom: 1px solid var(--color-stroke-dark);
+}
+.generic-section .left-side.generic {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: var(--rail);
+  min-width: var(--rail);
+  padding: var(--pad);
+  background: var(--color-black) url('/assets/6992da8bade6530f1dab73f8-call-blue.avif') 50% / cover no-repeat;
+}
+.generic-section .right-side.generic {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 15vw;
+  width: 100%;
+  padding: var(--pad);
+  border-left: 1px solid var(--color-stroke-dark);
+}
+/* ._16px-text.white-text.why-text — sits above the section's top hairline */
+.generic-section .why-text {
+  position: absolute;
+  bottom: 100%;
+  margin-bottom: var(--pad);
+  opacity: 0.5;
+}
+.generic-section .gen-text-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 15vw;
+}
+.generic-section .h1-text.generic {
+  max-width: 11ch;
+}
+.generic-section .generic-span {
+  color: var(--color-blue-light);
+}
+.generic-section .text-30.generic-text {
+  max-width: 40ch;
+}
+
+/* =============================================================================
+   §4 COMPARISON TABLE (section.table-section)
+   ============================================================================= */
+.table-section .table-top-wrap {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding: 16vw var(--pad) var(--pad);
+}
+.table-section .table-span {
+  display: block;
+  color: var(--color-blue-light);
+}
+.table-section .table-wrap {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid var(--color-stroke-dark);
+}
+/* .table-row / .table-cell also exist as Tailwind display utilities; these scoped rules
+   outrank them. */
+.table-section .table-row {
+  display: flex;
+  border-bottom: 1px solid var(--color-stroke-dark);
+}
+.table-section .table-right {
+  display: flex;
+  width: 100%;
+}
+.table-section .table-cell {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+  padding: max(20px, 1.389vw) var(--pad);
+}
+.table-section .table-cell.left-cell {
+  width: var(--rail);
+  min-width: var(--rail);
+}
+.table-section .table-cell.right-cell {
+  width: 100%;
+  border-left: 1px solid var(--color-stroke-dark);
+}
+.table-section .table-cell.right-cell.head {
+  justify-content: center;
+  align-items: center;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+.table-section .table-cell.right-cell.t9 {
+  background-color: var(--color-t9-tint);
+}
+.table-section .logo-table {
+  display: inline-block;
+  width: var(--w-logo-table);
+}
+.table-section .tick-img {
+  display: inline-block;
+  width: 24px;
+}
+.table-section .text-30.table-head {
+  text-align: center;
+}
+.table-section .table-text {
+  font-size: var(--fs-table-text);
+}
+.table-section .table-bottom {
+  display: flex;
+  border-bottom: 1px solid var(--color-stroke-dark);
+}
+.table-section .table-bottom-left {
+  width: var(--rail);
+  min-width: var(--rail);
+  padding: 7vw var(--pad) var(--pad);
+}
+.table-section .table-bottom-left-text {
+  max-width: 33ch;
+}
+.table-section .table-bottom-right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  width: 100%;
+  padding: var(--pad);
+  border-left: 1px solid var(--color-stroke-dark);
+}
+
+/* =============================================================================
+   §5 PATIENT ACCESS (section.access-section)
+   ============================================================================= */
+.access-section {
+  display: flex;
+  margin-bottom: 12vw;
+  border-bottom: 1px solid var(--color-stroke-dark);
+}
+.access-section .access-left {
+  width: var(--rail);
+  min-width: var(--rail);
+}
+.access-section .access-right {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border-left: 1px solid var(--color-stroke-dark);
+}
+.access-section .access-right-top {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 14vw;
+  padding: var(--pad);
+  border-bottom: 1px solid var(--color-stroke-dark);
+}
+/* .h1-text.white-text.access — 5vw at every width (outranks the .h1-text scale) */
+.access-section .h1-text.access {
+  display: block;
+  max-width: 18ch;
+  margin: 11px 49px 0 81px;
+  padding: 0;
+  font-size: var(--fs-access);
+}
+.access-section .access-span {
+  color: var(--color-green);
+}
+.access-section .access-right-bottom {
+  display: flex;
+}
+.access-section .access-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 2vw;
+  width: 100%;
+  padding: 10vw var(--pad) var(--pad);
+}
+.access-section .access-block._2nd {
+  border-left: 1px solid var(--color-stroke-dark);
+}
+.access-section .access-block-head {
+  max-width: 20ch;
+}
+.access-section .access-block-text {
+  max-width: 40ch;
+}
+.access-section .access-block-text._2 {
+  max-width: 50ch;
+}
+
+/* =============================================================================
+   §6 WHITE SECTION (section.white-section[data-variant="compare"])
+   Base bg/padding = src/styles/white-section.css. Specialties/Integrations white
+   variants = specialties.css / integrations.css (`.white` / `.wh` blocks).
+   ============================================================================= */
+/* §6b div.specialty-white */
+.specialty-white {
+  margin-top: 5vw;
+  border-top: 1px solid var(--color-stroke-light);
+}
+.specialty-white .sp-wh-top {
+  display: flex;
+}
+.specialty-white .sp-top-left {
+  width: var(--rail);
+  min-width: var(--rail);
+}
+.specialty-white .sp-top-right {
+  position: relative;
+  width: 100%;
+  padding: var(--pad) var(--pad) 10vw;
+  border-left: 1px solid var(--color-stroke-light);
+}
+/* ._16px-text.sp-label — black (inherited), no indent; above the top hairline */
+.specialty-white .sp-label {
+  position: absolute;
+  bottom: 100%;
+  margin-bottom: var(--pad);
+}
+.specialty-white .h1-text.sp-wh {
+  max-width: 14ch;
+  color: var(--color-black);
+}
+
+/* =============================================================================
+   §7 PRIVACY & SECURITY (section.privacy-section)
+   ============================================================================= */
+.privacy-section {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3vw;
+  border-top: 1px solid var(--color-stroke-dark);
+}
+.privacy-section .privacy-top {
+  padding: var(--pad) var(--pad) 12vw;
+}
+.privacy-section .privacy-span {
+  display: block;
+  color: var(--color-green);
+}
+.privacy-section .privacy-bottom {
+  display: flex;
+  border-top: 1px solid var(--color-stroke-dark);
+  border-bottom: 1px solid var(--color-stroke-dark);
+}
+.privacy-section .privacy-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: var(--rail);
+  min-width: var(--rail);
+  background: var(--color-black) url('/assets/69946c2576805aff36fcf31a-privacy-green.avif') 50% / cover no-repeat;
+}
+.privacy-section .privacy-right {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.privacy-section .privacy-row {
+  display: flex;
+}
+.privacy-section .privacy-row._2 {
+  border-top: 1px solid var(--color-stroke-dark);
+}
+.privacy-section .privacy-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 7vw;
+  width: 100%;
+  padding: var(--pad);
+  border-left: 1px solid var(--color-stroke-dark);
+}
+.privacy-section .privacy-head {
+  max-width: 18ch;
+}
+/* ._16px-text.half-white.privacy-text — colour #ffffff80 with opacity 1 (overridden) */
+.privacy-section .privacy-text {
+  max-width: 40ch;
+  color: var(--color-white-50);
+  opacity: 1;
+}
+.privacy-section .privacy-text.long {
+  max-width: 44ch;
+}
+/* CMP-M2 hover END state. MOTION: CMP-M2 — 200ms ease-out tween owned by Animation;
+   mouseout returns bg rgba(255,255,255,0), head #fff, text rgba(255,255,255,.5). */
+.privacy-section .privacy-block:hover {
+  background-color: var(--color-white);
+}
+.privacy-section .privacy-block:hover .privacy-head,
+.privacy-section .privacy-block:hover .privacy-text {
+  color: var(--color-black);
+}
+
+/* =============================================================================
+   §8 HEALTHCARE AI EVALUATION (section.ev-section) — tabs used as an accordion
+   ============================================================================= */
+.ev-section {
+  display: flex;
+  margin-bottom: 10vw;
+  border-bottom: 1px solid var(--color-stroke-dark);
+}
+.ev-section .ev-left {
+  width: var(--rail);
+  min-width: var(--rail);
+}
+.ev-section .ev-right {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border-left: 1px solid var(--color-stroke-dark);
+}
+.ev-section .ev-top {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 14vw;
+  padding: var(--pad);
+  border-bottom: 1px solid var(--color-stroke-dark);
+}
+.ev-section .ev-bottom {
+  display: flex;
+  flex-direction: column;
+  padding: var(--pad);
+}
+.ev-section .ev-tabs {
+  position: relative;
+}
+.ev-section .ev-tab-menu {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.ev-section .ev-tabs-content {
+  display: none;
+}
+/* a.ev-tab.w-inline-block.w-tab-link */
+.ev-section .ev-tab {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 2.778vw;
+  max-width: 100%;
+  padding: max(20px, 1.389vw);
+  border-bottom: 1px solid var(--color-stroke-dark);
+  background-color: transparent;
+  color: var(--color-white);
+  text-align: left;
+  vertical-align: top;
+  text-decoration: none;
+  cursor: pointer;
+}
+.ev-section .ev-tab.last {
+  border-bottom-style: none;
+}
+/* Webflow .w-tab-link:focus { outline: 0 } (keyboard ring: D7, index.css) */
+.ev-section .ev-tab:focus {
+  outline: 0;
+}
+/* MOTION: CMP-M4 — instant; `.is-current` = Webflow .w--current */
+.ev-section .ev-tab.is-current {
+  background-color: var(--color-white);
+  color: var(--color-black);
+}
+.ev-section .ev-tab-text {
+  display: none;
+  max-width: 70ch;
+}
+.ev-section .ev-tab.is-current .ev-tab-text {
+  display: block;
+}
+
+/* =============================================================================
+   <= 991px
+   ============================================================================= */
+@media screen and (max-width: 991px) {
+  .privacy-section {
+    margin-top: 16vw;
+  }
+}
+
+/* =============================================================================
+   <= 767px
+   ============================================================================= */
+@media screen and (max-width: 767px) {
+  /* §3 */
+  .generic-section {
+    flex-direction: column;
+  }
+  .generic-section .left-side.generic {
+    width: 100%;
+    min-width: auto;
+    height: 80vw;
+  }
+  .generic-section .right-side.generic {
+    gap: 0;
+  }
+  .generic-section .why-text {
+    position: relative;
+  }
+  .generic-section .gen-text-wrap {
+    gap: 20vw;
+  }
+
+  /* §4 */
+  .table-section .table-top-wrap {
+    padding-top: 20vw;
+  }
+  .table-section .table-row {
+    flex-direction: column;
+  }
+  /* MOTION: CMP-M5 — sticky header (CSS only) */
+  .table-section .table-row.head {
+    position: sticky;
+    top: var(--nav-h);
+    z-index: 1;
+    background-color: var(--color-nav-bg);
+    -webkit-backdrop-filter: blur(80px);
+    backdrop-filter: blur(80px);
+  }
+  .table-section .table-cell.left-cell {
+    width: 100%;
+    min-width: auto;
+    padding-top: 24px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid var(--color-stroke-dark);
+  }
+  .table-section .table-cell.left-cell.head-left {
+    display: none;
+  }
+  .table-section .table-bottom {
+    flex-direction: column;
+  }
+  .table-section .table-bottom-left {
+    width: 100%;
+    padding-top: 36px;
+  }
+  .table-section .table-bottom-right {
+    padding-top: 56px;
+  }
+
+  /* §5 */
+  .access-section {
+    margin-bottom: 16vw;
+  }
+  .access-section .access-left {
+    display: none;
+  }
+  .access-section .access-right {
+    border-left-style: none;
+  }
+  .access-section .access-right-top {
+    gap: 25vw;
+  }
+  .access-section .access-right-bottom {
+    flex-direction: column;
+  }
+  .access-section .access-block {
+    gap: 24px;
+    padding-top: 80px;
+  }
+  .access-section .access-block._2nd {
+    padding-top: 40px;
+    border-left-style: none;
+  }
+
+  /* §6b */
+  .specialty-white {
+    margin-top: 16vw;
+  }
+  .specialty-white .sp-top-left {
+    display: none;
+  }
+  .specialty-white .sp-top-right {
+    border-left-style: none;
+  }
+  .specialty-white .sp-label {
+    position: static;
+  }
+
+  /* §7 */
+  .privacy-section .privacy-top {
+    padding-bottom: 20vw;
+  }
+  .privacy-section .privacy-bottom {
+    flex-direction: column;
+    border-top-style: none;
+    border-bottom-style: none;
+  }
+  .privacy-section .privacy-left {
+    width: 100%;
+    min-width: auto;
+    height: 80vw;
+  }
+  .privacy-section .privacy-row {
+    flex-direction: column;
+  }
+  .privacy-section .privacy-row._2 {
+    border-top-style: none;
+  }
+  .privacy-section .privacy-block {
+    border-bottom: 1px solid var(--color-stroke-dark);
+    border-left-style: none;
+  }
+
+  /* §8 */
+  .ev-section {
+    margin-bottom: 16vw;
+  }
+  .ev-section .ev-left {
+    display: none;
+  }
+  .ev-section .ev-right {
+    border-left-style: none;
+  }
+  .ev-section .ev-top {
+    gap: 20vw;
+  }
+}
+
+/* =============================================================================
+   <= 479px
+   ============================================================================= */
+@media screen and (max-width: 479px) {
+  /* §3 */
+  .generic-section .text-30.generic-text {
+    font-size: 5vw;
+  }
+  .generic-section .gen-text-wrap {
+    gap: 24vw;
+  }
+
+  /* §4 */
+  .table-section .table-top-wrap {
+    padding-top: 28vw;
+  }
+  .table-section .text-30.table-head {
+    font-size: 16px;
+  }
+  .table-section .table-cell.right-cell {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .table-section .table-cell.right-cell.t9 {
+    gap: 16px;
+  }
+  .table-section .tick-img {
+    width: 20px;
+  }
+  .table-section .table-bottom-right {
+    padding-top: 68px;
+  }
+
+  /* §5 */
+  .access-section .h1-text.access {
+    margin-left: 44px;
+  }
+  .access-section .access-right-top {
+    gap: 32vw;
+  }
+  .access-section .access-block {
+    padding-top: 64px;
+  }
+
+  /* §6b */
+  .specialty-white .sp-top-right {
+    padding-bottom: 20vw;
+  }
+
+  /* §8 */
+  .ev-section .ev-top {
+    gap: 16px;
+    padding-top: 32vw;
+  }
+  .ev-section .ev-tab {
+    gap: 20px;
+  }
+}

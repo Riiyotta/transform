@@ -168,3 +168,65 @@
     height: 32px;
   }
 }
+
+/* =============================================================================
+   WHITE VARIANT (Integrations variant="white") — specs/compare.md §6c, /compare only.
+   Source: live shared CSS `.integration-section.white`, `.integration-top-wrap.wh`,
+   `.h1-text.white-text.integration-head.wh`, `._16px-text.white-text.integration.wh-top`,
+   `.integration-bottom-wrap.wh`, `.intagrations-row._1.wh/._2.wh`,
+   `.integration-block.wh`, `.integration-logo.black.on-wh`, `.integ-span`.
+   Every selector carries `.white` / `.wh` / `.on-wh` / `.integ-span`, so the default
+   (homepage) variant is unaffected; each rule outranks the matching default rule by
+   specificity, so it also holds inside the default's media blocks.
+   MOTION: M2a/M2b — same tracks/classes as the default (marquee unchanged).
+   MOTION: CMP-M3 — block hover bg #fff -> #a2fa8e, 200ms ease-out (IX2 a-58/a-59). The
+   :hover END state below is applied instantly; Animation owns the tween.
+   ============================================================================= */
+.integration-section.white {
+  padding-bottom: 0;
+  border-top-color: var(--color-stroke-light);
+}
+.integration-section .integration-top-wrap.wh {
+  flex-direction: column;
+  gap: 10vw;
+  height: auto;
+  padding: var(--pad);
+}
+.integration-section .integration-head.wh {
+  max-width: 15ch;
+  margin-top: 0;
+  margin-left: 0;
+  color: var(--color-black);
+}
+.integration-section .integ-span {
+  color: var(--color-blue-light);
+}
+.integration-section .integration-text.wh-top {
+  max-width: 37ch;
+  color: var(--color-black);
+}
+.integration-section .integration-bottom-wrap.wh {
+  border-bottom-color: var(--color-stroke-light);
+}
+.integration-section .intagrations-row._1.wh,
+.integration-section .intagrations-row._2.wh {
+  border-top-color: var(--color-stroke-light);
+}
+.integration-section .integration-block.wh {
+  border-right: 1px solid var(--color-stroke-light);
+  background-color: var(--color-white);
+}
+.integration-section .integration-logo.black.on-wh {
+  position: static;
+  opacity: 1;
+}
+/* CMP-M3 hover END state (no logo swap on the white variant). */
+.integration-section .integration-block.wh:hover {
+  background-color: var(--color-green);
+}
+
+@media screen and (max-width: 767px) {
+  .integration-section .integration-top-wrap.wh {
+    gap: 16vw;
+  }
+}
