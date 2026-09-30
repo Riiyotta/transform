@@ -43,3 +43,8 @@ The user asked to move cleanup to the end or remove what isn't necessary. This d
 | Tidy-up only | #2, #6, #7, #8, #10, #13, #14, #15, R4 | Dropped. Rewriting QA-passed code risks regressions with no benefit to the deliverables. The extractor is told to treat stale comments (#8) and dead hooks (#2, #7) as non-authoritative. |
 
 The two cleanup agents dispatched at c223e50 were stopped before editing any source.
+
+## Added during full-site build
+| # | Location | Category | Evidence | Decision | Status |
+|---|---|---|---|---|---|
+| 18 | `src/pages/ComparePage.jsx` no-op `gsap.ticker` listener | Page-local workaround | GSAP's ticker sleeps when no GSAP tween runs (clone marquees are CSS; live's run on GSAP), so the first hover frame starts one frame late. Homepage M14 has the same one-frame wake-up (within measured tolerance). | Candidate to move into global motion setup together with R4 (drive Lenis from `gsap.ticker`), which keeps the ticker awake on every page. Deferred with R4. | deferred |
