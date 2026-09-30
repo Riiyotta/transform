@@ -1,0 +1,24 @@
+section,category,templates,routes,Homepage
+shell.navbar,SHELL,1,1,x
+shell.mobile-menu,SHELL,1,1,x
+shell.page-layers,SHELL,1,1,x
+shell.call-alex-modal,SHELL,1,1,x
+shell.footer,SHELL,1,1,x
+shell.footer-bottom-reveal,SHELL,1,1,x
+hero.home,HERO,1,1,x
+proof.client-logos,PROOF,1,1,x
+proof.client-spotlight,PROOF,1,1,x
+proof.stats,PROOF,1,1,x
+proof.testimonials,PROOF,1,1,x
+product.how-it-works,PRODUCT,1,1,x
+transition.black-to-white,TRANSITION,1,1,x
+product.scheduling-agent,PRODUCT,1,1,x
+product.tasking-agent,PRODUCT,1,1,x
+product.navigator-agent,PRODUCT,1,1,x
+product.outreach-agent,PRODUCT,1,1,x
+transition.white-to-black,TRANSITION,1,1,x
+fit.specialties,FIT,1,1,x
+fit.integrations,FIT,1,1,x
+fit.security,FIT,1,1,x
+conversion.cta,CONVERSION,1,1,x
+ROUTE COUNT,,,1,1
