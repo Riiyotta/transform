@@ -1,1 +1,225 @@
-/* BookDemoPage — page styles (book-a-demo). Owned by the builder assigned to this family. */
+/* =============================================================================
+   BookDemoPage — /book-a-demo (specs/book-a-demo.md).
+   Loaded before src/index.css (and Tailwind preflight) in the bundle, so every rule is
+   scoped under `.book-demo-hero` to win on specificity.
+   ============================================================================= */
+
+/* ---- Page tokens (specs/book-a-demo.md §5). Not in src/index.css yet. ---- */
+:root {
+  /* PROMOTE: text-muted-light (--_apps---sidebar--sidebar) — .text-block-5 */
+  --color-muted-light: #e0e0e0;
+  /* PROMOTE: Webflow default form placeholder */
+  --color-wform-placeholder: #999999;
+  /* PROMOTE: Webflow default button — same value as --color-input-focus (#3898ec) */
+  --color-wform-button: var(--color-input-focus);
+  --color-wform-button-text: var(--color-white);
+}
+
+/* =============================================================================
+   HERO — section.hero.hide-on-scroll.demo (§2)
+   ============================================================================= */
+.hero.book-demo-hero {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: auto;
+  min-height: 100dvh;
+  padding-top: 0;
+  padding-bottom: 0;
+  border-bottom: 1px solid var(--color-stroke-dark);
+  overflow: hidden;
+}
+
+/* --- Left column --- */
+.book-demo-hero .book-demo-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  padding-top: 110px;
+}
+/* h1.white-text.hero-home.demo — size, max-width and margin-left come from .hero-heading
+   (homepage scale); the demo modifier sets colour and top/right/bottom margins. */
+.book-demo-hero .hero-heading.demo {
+  margin-top: -4px;
+  margin-right: 12px;
+  margin-bottom: 32px;
+  color: var(--color-green);
+}
+/* div.text-block-5 — 14px / 19.6 body text in #e0e0e0. The source rule also sets
+   position:static; top:-70px, which has no effect and is omitted. */
+.book-demo-hero .text-block-5 {
+  margin: 0 43px 139px 76px;
+  padding: 0 41px 96px 0;
+  color: var(--color-muted-light);
+  font-weight: 400;
+  text-align: left;
+}
+
+/* --- Right column --- */
+.book-demo-hero .book-demo-right {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  padding: 120px var(--pad) var(--pad);
+  border-left: 1px solid var(--color-stroke-dark);
+  background-color: var(--color-black);
+}
+/* .bg-noise.book-demo-form-noise — base .bg-noise (absolute, full size, z 0, opacity .5/.3,
+   pointer-events none). It is positioned and the form is not, so it paints ABOVE the
+   fields (grain-tinted inputs on live). Keep the form unpositioned. */
+
+/* =============================================================================
+   DEMO FORM — Webflow default form styles (.w-form, label, .w-input, .w-button,
+   .w-form-done, .w-form-fail). §2 + §3.
+   ============================================================================= */
+.book-demo-hero .w-form {
+  margin: 0 0 15px;
+}
+.book-demo-hero .demo-form {
+  margin: 0;
+}
+
+/* LABEL COLOUR — isolated on purpose.
+   Live: `#020801` on the `#020801` column, i.e. invisible (spec §2, §9.2).
+   Clone: white, per approved accessibility deviation D12 (DEVIATIONS.md). To restore the
+   live look, set `color: var(--color-black)`. Size/weight/spacing below are the measured
+   Webflow label values and are unchanged. */
+.book-demo-hero .demo-form label {
+  color: var(--color-white);
+}
+.book-demo-hero .demo-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: var(--lh-body);
+  cursor: default;
+}
+
+.book-demo-hero .demo-form .w-input {
+  display: block;
+  width: 100%;
+  height: 38px;
+  margin: 0 0 10px;
+  padding: 8px 12px;
+  border: 1px solid var(--color-input-border);
+  border-radius: 0;
+  background-color: var(--color-input-bg);
+  color: var(--color-input-text);
+  font-family: var(--font-sans);
+  font-size: 14px;
+  line-height: 1.42857143;
+  vertical-align: middle;
+}
+.book-demo-hero .demo-form .w-input::placeholder {
+  color: var(--color-wform-placeholder);
+  opacity: 1;
+}
+/* MOTION: BAD-M2 — focus border swap, instant (Webflow CSS). */
+.book-demo-hero .demo-form .w-input:focus {
+  border-color: var(--color-input-focus);
+  outline: 0;
+}
+
+/* input.w-button "Book My Demo" — no hover change (measured). */
+.book-demo-hero .demo-form .w-button {
+  display: inline-block;
+  margin: 0;
+  padding: 9px 15px;
+  border: 0;
+  border-radius: 0;
+  background-color: var(--color-wform-button);
+  background-image: none;
+  color: var(--color-wform-button-text);
+  font-family: var(--font-sans);
+  font-size: 14px;
+  line-height: inherit;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  -webkit-appearance: button;
+  appearance: button;
+}
+/* "Submitting..." interim state (clone keeps the live label; disabled while shown). */
+.book-demo-hero .demo-form .w-button:disabled {
+  cursor: default;
+}
+
+.book-demo-hero .w-form-done,
+.book-demo-hero .w-form-fail {
+  display: none;
+  color: var(--color-black);
+}
+.book-demo-hero .w-form-done {
+  padding: 20px;
+  background-color: var(--color-wform-done-bg);
+  text-align: center;
+}
+.book-demo-hero .w-form-fail {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: var(--color-wform-fail-bg);
+}
+.book-demo-hero .w-form-done.is-shown,
+.book-demo-hero .w-form-fail.is-shown {
+  display: block;
+}
+/* The success block receives programmatic focus (as on live); no mouse ring. */
+.book-demo-hero .w-form-done:focus {
+  outline: 0;
+}
+
+/* =============================================================================
+   RESPONSIVE (Webflow breakpoints)
+   ============================================================================= */
+@media screen and (max-width: 991px) {
+  .hero.book-demo-hero {
+    flex-direction: column;
+    padding-bottom: 0;
+    border-bottom: 0;
+    overflow: visible;
+  }
+  .book-demo-hero .book-demo-left {
+    flex: 1;
+  }
+  .book-demo-hero .book-demo-right {
+    margin-bottom: 0;
+    padding-top: 80px;
+    padding-bottom: 3vh;
+    border-top: 1px solid var(--color-stroke-dark);
+    border-bottom: 1px solid var(--color-stroke-dark);
+    border-left: 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .book-demo-hero .book-demo-right {
+    padding-bottom: 36px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .hero.book-demo-hero {
+    min-height: 0;
+  }
+  .book-demo-hero .hero-heading.demo {
+    margin-top: -27px;
+    margin-bottom: 80px;
+  }
+  .book-demo-hero .book-demo-left {
+    padding-bottom: 29px;
+  }
+  .book-demo-hero .text-block-5 {
+    margin: -60px 43px -52px 34px;
+    padding: 0 41px 35px 0;
+  }
+  .book-demo-hero .book-demo-right {
+    padding-top: 7px;
+    padding-bottom: 38px;
+  }
+  .book-demo-hero .bg-noise.book-demo-form-noise {
+    display: none;
+  }
+}

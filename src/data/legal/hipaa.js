@@ -1,5 +1,5 @@
 // Legal page content: HIPAA (/hipaa). GENERATED from recon/pages/legal/hipaa-content.html
-// (verbatim server HTML, 2026-09-30) by a one-off converter; do not paraphrase. Invisible
+// (verbatim server HTML, 2026-09-30) by recon/build-demo-legal/legal2js.mjs; do not paraphrase. Invisible
 // characters from the source (U+00A0, U+200B, U+200D, U+2028) are kept as \u escapes.
 // Shape (specs/legal.md §0): { slug, title, h1, intro, introVariant: 'terms'|'privacy', blocks[] }
 //   block = { h2?, last?, items[] }; item = { type: 'wrap', items: (p|list)[] } | { type: 'green', text } | p

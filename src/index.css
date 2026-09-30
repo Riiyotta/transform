@@ -1923,7 +1923,10 @@
    it must beat the faithful section-scoped `:focus { outline: 0 }` rules.
    blue-light passes 3:1 non-text contrast on both black and white surfaces.
    ============================================================================= */
-:focus-visible {
+/* Text fields match :focus-visible on mouse focus too, and already show the original's own
+   focus border (#3898ec / white underline), so they are excluded to keep mouse behaviour
+   unchanged. */
+:focus-visible:not(input):not(textarea):not(select) {
   outline: 2px solid var(--color-blue-light) !important;
   outline-offset: 2px !important;
 }
