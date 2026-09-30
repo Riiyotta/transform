@@ -1,155 +1,284 @@
 {
-  "$comment": "Validated 2026-09-30 against the implemented clone at git c223e50 (source frozen for extraction; see CODE_HEALTH.md Schedule). Order = DOM order on the live homepage (CLONE_SPEC §1.6). implementedBy points at the rendering component; section roots carry data-section ids listed in SELECTORS*.md. The ?popup=open|success|error query hook is a QA-only affordance, not a route or product state.",
+  "$comment": "UPDATE PASS 2026-09-30, git 6837462. Supersedes the homepage-only IA (committed at 486e41d). Re-derived directly from src/routes.jsx, src/pages/*, src/components/**, content/blog/*.json and content/case-studies/*.json — every route and section id below is a real match/data-section attribute in the codebase, not a plan. Motion-4 (blog/case-study hover polish) and Phase 2 QA are still in progress at this revision; neither changes routes, sections, or templates, so this IA does not need to wait for them. Order = DOM order in each page component.",
   "meta": {
-    "source": "https://www.transform9.com/ (homepage only, per PROJECT_SCOPE.md)",
+    "source": "https://www.transform9.com/ (full site; see ROUTES.md). Pages on external domains are excluded per PROJECT_SCOPE.md.",
     "status": "validated",
     "productionApproved": true,
-    "totalRoutes": 1,
-    "totalTemplates": 1,
-    "sourceRevision": "c223e50",
-    "evidence": "CLONE_SPEC.md (live measurement 2026-09-30); QA_REPORT.md"
+    "sourceRevision": "6837462",
+    "evidence": "CLONE_SPEC.md + specs/*.md (live measurement, 2026-09-30); QA_REPORT.md, recon/audit-pages-1/AUDIT.md, recon/audit-pages-2/AUDIT.md",
+    "totalRoutes": 18,
+    "totalTemplates": 8
   },
   "categories": {
-    "SHELL": "Page chrome and page-level layers: fixed navigation, mobile menu, background layers, modal, footer.",
-    "HERO": "Page-opening statement with the primary call to action.",
-    "PROOF": "Social proof: client logos, case-study spotlight, metrics, testimonials.",
-    "PRODUCT": "Explanation of how the product works and its agent modules.",
-    "TRANSITION": "Decorative full-width blocks that change the page between dark and light surfaces.",
-    "FIT": "Why the product fits the buyer: specialties, EMR integrations, security/compliance.",
-    "CONVERSION": "Closing call-to-action block."
+    "SHELL": "Chrome present across many or all routes: navigation, mobile menu, background layers, preloader, popup, footer.",
+    "HERO": "Page-opening header block: a headline, and where the template has one, a primary call to action or form.",
+    "PROOF": "Homepage-only social proof: client logos, case-study spotlight, metrics, testimonials.",
+    "PRODUCT": "Homepage-only product explanation and its four agent modules.",
+    "TRANSITION": "Scroll-scrubbed pixel-grid transitions between dark and light surfaces, shared by templates that carry a dark/white split.",
+    "FIT": "Homepage-only buyer-fit content: specialties, EMR integrations, security/compliance.",
+    "CONVERSION": "Closing call-to-action block, reused across every marketing and content template.",
+    "COMPARE": "/compare-specific comparison-narrative content.",
+    "LEGAL": "Legal template content (Terms of Use, Privacy Policy, HIPAA).",
+    "CONTENT": "Blog and case-study index and detail content, data-driven from content/*.json."
   },
   "sections": {
+    "shell.page-layers": {
+      "category": "SHELL",
+      "description": "Fixed background layers behind page content: tiled noise overlay and solid background on every route, plus a looping hero video (with a still-image fallback under reduced motion) on templates that show one.",
+      "scope": "Present on all 18 routes; the video is omitted on the 10 blog-post and case-study routes.",
+      "implementedBy": "src/components/PageLayers.jsx"
+    },
     "shell.navbar": {
       "category": "SHELL",
-      "description": "Fixed 60px top bar with blurred translucent dark background: logo, Compare/Blog/Case Studies/Careers links, Login, green Book a Demo button; tweens to a white treatment while the white section is under it.",
-      "scope": "Present on the 1 in-scope route.",
+      "description": "Fixed 60px top bar with a blurred translucent dark background: logo, primary links, Login, green Book a Demo button. Tweens to a white treatment while a white section (home, /compare) is under it.",
+      "scope": "Present on all 18 routes.",
       "implementedBy": "src/components/Navbar.jsx"
     },
     "shell.mobile-menu": {
       "category": "SHELL",
       "description": "Full-screen overlay menu opened from the burger at ≤991px: large nav links, Login and Book a Demo bar; stops smooth scroll while open.",
-      "scope": "Present on the 1 in-scope route, visible at tablet/mobile widths only.",
+      "scope": "Present on all 18 routes (visible at tablet/mobile widths only).",
       "implementedBy": "src/components/Navbar.jsx (mobile menu)"
     },
-    "shell.page-layers": {
+    "shell.preloader": {
       "category": "SHELL",
-      "description": "Fixed hero background video (tablet render, still-image fallback under reduced motion) that fades out after the hero, plus the tiled noise overlay.",
-      "scope": "Present on the 1 in-scope route.",
-      "implementedBy": "src/components/PageLayers.jsx"
+      "description": "Fixed full-screen black overlay shown until the page-load intro fades it out.",
+      "scope": "Present on 16 routes: /compare, the 3 legal routes, /blog, the 8 blog posts, /case-studies, and the 2 case studies. Absent on home and /book-a-demo.",
+      "implementedBy": "src/components/Preloader.jsx"
+    },
+    "shell.bg-pixels-overlay": {
+      "category": "SHELL",
+      "description": "Fixed full-screen overlay that dims and undims the background video during the /compare page-load intro.",
+      "scope": "Present only on /compare (1 route).",
+      "implementedBy": "src/components/compare/BgPixelsOverlay.jsx"
     },
     "shell.call-alex-modal": {
       "category": "SHELL",
-      "description": "Hidden fixed 'Call Alex' popup with name/email/phone form, client-side validation and success/error states (no network); opened from the hero and CTA 'Call Alex' links.",
-      "scope": "Present on the 1 in-scope route.",
+      "description": "Hidden fixed 'Call Alex' popup with name/email/phone form, client-side validation and success/error states (no network); opened from a page's 'Call Alex' link(s).",
+      "scope": "Present on home and /compare (2 routes).",
       "implementedBy": "src/components/CallAlexModal.jsx"
     },
     "shell.footer": {
       "category": "SHELL",
       "description": "Footer top: rail with company description, Navigate/Legal/Social link columns and an email signup form (static, no network).",
-      "scope": "Present on the 1 in-scope route.",
+      "scope": "Present on 17 routes; /book-a-demo shows only shell.footer-bottom-reveal (no top footer, no email form).",
       "implementedBy": "src/components/Footer.jsx > FooterTop"
     },
     "shell.footer-bottom-reveal": {
       "category": "SHELL",
-      "description": "Sticky bottom bar revealed beneath the page as it scrolls away: oversized wordmark and legal row.",
-      "scope": "Present on the 1 in-scope route.",
+      "description": "Sticky bottom bar revealed beneath the page as it scrolls away: oversized wordmark and legal link row.",
+      "scope": "Present on all 18 routes.",
       "implementedBy": "src/components/Footer.jsx > FooterBottom"
     },
     "hero.home": {
       "category": "HERO",
-      "description": "Full-viewport dark hero over the fixed video: 6.5vw headline 'Maximize Every Call with a Custom AI Agent' and a bottom row with 'Who We Are' statement and 'Test Our AI Agent' phone input plus 'Call Alex' link.",
-      "scope": "Present on the 1 in-scope route.",
+      "description": "Full-viewport dark hero over the fixed video: 6.5vw headline 'Maximize Every Call with a Custom AI Agent', a 'Who We Are' statement, and a 'Test Our AI Agent' phone input plus 'Call Alex' link.",
+      "scope": "Present only on the homepage (1 route).",
       "implementedBy": "src/components/Hero.jsx"
+    },
+    "hero.compare": {
+      "category": "HERO",
+      "description": "Full-viewport dark hero for /compare: headline, supporting paragraph and the same 'Call Alex' / phone-input CTA row pattern as the homepage hero.",
+      "scope": "Present only on /compare (1 route).",
+      "implementedBy": "src/components/compare/CompareHero.jsx"
+    },
+    "hero.legal": {
+      "category": "HERO",
+      "description": "Hero for the legal template: H1 plus an intro paragraph over the fixed video, shared verbatim by all three legal routes with only the H1/intro content varying.",
+      "scope": "Present on the 3 legal routes (Terms of Use, Privacy Policy, HIPAA).",
+      "implementedBy": "src/components/legal/LegalHero.jsx"
+    },
+    "hero.book-a-demo": {
+      "category": "HERO",
+      "description": "Split hero for /book-a-demo: green H1 and supporting copy on the left; the 5-field booking form (visible white labels per D12, client-side validation, static success block, no network per D2/D9) on the right. This is the whole page.",
+      "scope": "Present only on /book-a-demo (1 route).",
+      "implementedBy": "src/components/demo/DemoHero.jsx"
+    },
+    "hero.blog-index": {
+      "category": "HERO",
+      "description": "Word-by-word animated H1 (8 words) plus the featured-post card, above the article list.",
+      "scope": "Present only on /blog (1 route).",
+      "implementedBy": "src/components/cms/IndexHero.jsx (+ FeaturedPost.jsx)"
+    },
+    "hero.case-studies-index": {
+      "category": "HERO",
+      "description": "Word-by-word animated H1 (6 words) for the case-studies index; no featured item.",
+      "scope": "Present only on /case-studies (1 route).",
+      "implementedBy": "src/components/cms/IndexHero.jsx"
     },
     "proof.client-logos": {
       "category": "PROOF",
       "description": "Continuously scrolling marquee of client practice logos between hairlines.",
-      "scope": "Present on the 1 in-scope route.",
+      "scope": "Present only on the homepage (1 route).",
       "implementedBy": "src/components/ClientLogos.jsx"
     },
     "proof.client-spotlight": {
       "category": "PROOF",
       "description": "Case-study spotlight heading ('Client Spotlight – Andrews Sports Medicine') with a click-to-load YouTube facade.",
-      "scope": "Present on the 1 in-scope route.",
+      "scope": "Present only on the homepage (1 route).",
       "implementedBy": "src/components/ClientSpotlight.jsx"
     },
     "proof.stats": {
       "category": "PROOF",
       "description": "Four metric blocks in blue tints: hover expands a block and reveals its image on desktop; click accordion at ≤991.",
-      "scope": "Present on the 1 in-scope route.",
+      "scope": "Present only on the homepage (1 route).",
       "implementedBy": "src/components/Stats.jsx"
     },
     "proof.testimonials": {
       "category": "PROOF",
       "description": "Testimonial slider: photo block, quote, author with green title badge, practice logo, numbered prev/next arrows with cross-fade.",
-      "scope": "Present on the 1 in-scope route.",
+      "scope": "Present only on the homepage (1 route).",
       "implementedBy": "src/components/Testimonials.jsx"
     },
     "product.how-it-works": {
       "category": "PRODUCT",
       "description": "Scroll-stepped 'How it works' sequence where three large phrases highlight one at a time.",
-      "scope": "Present on the 1 in-scope route.",
+      "scope": "Present only on the homepage (1 route).",
       "implementedBy": "src/components/HowItWorks.jsx"
-    },
-    "transition.black-to-white": {
-      "category": "TRANSITION",
-      "description": "Scroll-scrubbed pixel-grid transition from the dark page into the white section.",
-      "scope": "Present on the 1 in-scope route.",
-      "implementedBy": "src/components/TransitionPixels.jsx (variant black-to-white)"
     },
     "product.scheduling-agent": {
       "category": "PRODUCT",
       "description": "Agent #1 Scheduling: sticky card deck where earlier cards scale down, lift and tint as later cards scroll in.",
-      "scope": "Present on the 1 in-scope route.",
+      "scope": "Present only on the homepage (1 route).",
       "implementedBy": "src/components/SchedulingAgent.jsx"
     },
     "product.tasking-agent": {
       "category": "PRODUCT",
       "description": "Agent #2 Tasking: 200vh half-split with auto-rotating vertical tabs (4s progress bar) and fading image panes; click tabs at ≤991.",
-      "scope": "Present on the 1 in-scope route.",
+      "scope": "Present only on the homepage (1 route).",
       "implementedBy": "src/components/TaskingAgent.jsx"
     },
     "product.navigator-agent": {
       "category": "PRODUCT",
       "description": "Agent #3 Navigator: four row tabs activated on hover, with the matching image in the left rail.",
-      "scope": "Present on the 1 in-scope route.",
+      "scope": "Present only on the homepage (1 route).",
       "implementedBy": "src/components/NavigatorAgent.jsx"
     },
     "product.outreach-agent": {
       "category": "PRODUCT",
       "description": "Agent #4 Outreach: sticky left title panel with five sticky stacking cards in blue tints on the right.",
-      "scope": "Present on the 1 in-scope route.",
+      "scope": "Present only on the homepage (1 route).",
       "implementedBy": "src/components/OutreachAgent.jsx"
+    },
+    "transition.black-to-white": {
+      "category": "TRANSITION",
+      "description": "Scroll-scrubbed pixel-grid transition from the dark page into a white section.",
+      "scope": "Present on home and /compare (2 routes).",
+      "implementedBy": "src/components/TransitionPixels.jsx (variant black-to-white)"
     },
     "transition.white-to-black": {
       "category": "TRANSITION",
-      "description": "Scroll-scrubbed pixel-grid transition from the white section back to the dark page.",
-      "scope": "Present on the 1 in-scope route.",
+      "description": "Scroll-scrubbed pixel-grid transition from a white section back to the dark page.",
+      "scope": "Present on home and /compare (2 routes).",
       "implementedBy": "src/components/TransitionPixels.jsx (variant white-to-black)"
     },
     "fit.specialties": {
       "category": "FIT",
       "description": "'Designed for Your Specialty': 13 hover-activated specialty tabs with a matching image pane, plus 'And other specialties'.",
-      "scope": "Present on the 1 in-scope route.",
+      "scope": "Present only on the homepage (1 route).",
       "implementedBy": "src/components/Specialties.jsx"
     },
     "fit.integrations": {
       "category": "FIT",
       "description": "'Built to Connect': EMR/partner logos in two opposing marquee rows with hover background and logo swap; marketplace links open externally.",
-      "scope": "Present on the 1 in-scope route.",
+      "scope": "Present only on the homepage (1 route).",
       "implementedBy": "src/components/Integrations.jsx"
     },
     "fit.security": {
       "category": "FIT",
       "description": "'Secure. Compliant. Trusted.': image rail and a 2×2 grid of certification cells with hover background and logo swap.",
-      "scope": "Present on the 1 in-scope route.",
+      "scope": "Present only on the homepage (1 route).",
       "implementedBy": "src/components/Security.jsx"
     },
     "conversion.cta": {
       "category": "CONVERSION",
       "description": "Closing CTA over a background image revealed by a scroll-scrubbed pixel grid: agent list, 'Quick Start / Live in 60 Days', large headline, phone input with 'Call Alex' and 'Book a Demo'.",
-      "scope": "Present on the 1 in-scope route.",
+      "scope": "Present on 14 routes: home, /compare, /blog, the 8 blog posts, /case-studies and the 2 case studies. Absent on /book-a-demo and the 3 legal routes.",
       "implementedBy": "src/components/Cta.jsx"
+    },
+    "compare.generic": {
+      "category": "COMPARE",
+      "description": "'Not Generic Call Center AI' claim section: image rail plus a headline and body paragraph.",
+      "scope": "Present only on /compare (1 route).",
+      "implementedBy": "src/components/compare/GenericSection.jsx"
+    },
+    "compare.comparison-table": {
+      "category": "COMPARE",
+      "description": "Static 10-row feature-comparison table against competitors; the Transform9 column is tinted. Header row is sticky at ≤767 (top 60, blurred).",
+      "scope": "Present only on /compare (1 route).",
+      "implementedBy": "src/components/compare/ComparisonTable.jsx"
+    },
+    "compare.access": {
+      "category": "COMPARE",
+      "description": "'Built for Real Patient Access': a 5vw heading (fixed size at every width, including 390) over two workflow-claim blocks.",
+      "scope": "Present only on /compare (1 route).",
+      "implementedBy": "src/components/compare/AccessSection.jsx"
+    },
+    "compare.specialty-white": {
+      "category": "COMPARE",
+      "description": "White-background variant of the homepage specialty tabs (fit.specialties), reinforcing specialty fit inside the comparison narrative.",
+      "scope": "Present only on /compare (1 route).",
+      "implementedBy": "src/components/compare/CompareWhiteSection.jsx > Specialties (variant=\"white\")"
+    },
+    "compare.integrations-white": {
+      "category": "COMPARE",
+      "description": "White-background variant of the homepage integration marquees (fit.integrations), with a green (not black) hover treatment.",
+      "scope": "Present only on /compare (1 route).",
+      "implementedBy": "src/components/compare/CompareWhiteSection.jsx > Integrations (variant=\"white\")"
+    },
+    "compare.privacy": {
+      "category": "COMPARE",
+      "description": "Privacy & Security claim blocks with a hover state (background lightens on the hovered block only).",
+      "scope": "Present only on /compare (1 route).",
+      "implementedBy": "src/components/compare/PrivacySection.jsx"
+    },
+    "compare.evaluation": {
+      "category": "COMPARE",
+      "description": "'Healthcare AI Evaluation': a four-item accordion (Webflow tabs used as an accordion; click activates, exactly one item open, arrow/Home/End keyboard support).",
+      "scope": "Present only on /compare (1 route).",
+      "implementedBy": "src/components/compare/EvSection.jsx"
+    },
+    "legal.content": {
+      "category": "LEGAL",
+      "description": "Rich-text legal body: intro-paragraph style, green sub-heads, bullet lists and inline links (rel=\"noopener\" per D10). One component, three content variants (Terms of Use, Privacy Policy, HIPAA) driven by src/data/legal/*.js.",
+      "scope": "Present on the 3 legal routes.",
+      "implementedBy": "src/components/legal/LegalContent.jsx"
+    },
+    "content.blog-list": {
+      "category": "CONTENT",
+      "description": "Post-grid ('All Articles') list with a description line and a 'Load More' control that appends the remaining posts client-side, then hides itself; no network request (D14).",
+      "scope": "Present only on /blog (1 route).",
+      "implementedBy": "src/components/cms/ListSection.jsx (+ PostCard.jsx, Pagination in BlogIndexPage.jsx)"
+    },
+    "content.case-list": {
+      "category": "CONTENT",
+      "description": "Case-study card grid; no featured item and no pagination (all items shown at once).",
+      "scope": "Present only on /case-studies (1 route).",
+      "implementedBy": "src/components/cms/ListSection.jsx (+ CaseCard.jsx)"
+    },
+    "content.post-header": {
+      "category": "CONTENT",
+      "description": "Blog-post detail header: back link, hero image, title, and author/date meta points.",
+      "scope": "Present on the 8 blog-post routes.",
+      "implementedBy": "src/components/cms/DetailHeader.jsx (+ MetaPoints.jsx)"
+    },
+    "content.case-header": {
+      "category": "CONTENT",
+      "description": "Case-study detail header: back link, client-logo panel with a divider, title, and a data-driven highlight-quote or two-stat block (only the populated variant renders).",
+      "scope": "Present on the 2 case-study routes.",
+      "implementedBy": "src/components/cms/DetailHeader.jsx (+ CaseVariant.jsx)"
+    },
+    "content.post-body": {
+      "category": "CONTENT",
+      "description": "Rich-text article body rendered from structured content blocks (h1/h2/h3/p/ul/ol/blockquote, inline bold/italic/links), one hairline per body slot after the first, with a sticky share column (X/Facebook/LinkedIn icons, inert per D13).",
+      "scope": "Present on the 8 blog-post and 2 case-study routes.",
+      "implementedBy": "src/components/cms/PostBody.jsx (+ RichText.jsx)"
+    },
+    "content.read-next": {
+      "category": "CONTENT",
+      "description": "Single related-case-study card at the foot of a case study. The equivalent block on blog posts is hidden on the live site and is not rendered.",
+      "scope": "Present on the 2 case-study routes.",
+      "implementedBy": "src/components/cms/ReadNext.jsx"
     }
   },
   "templates": [
@@ -160,7 +289,9 @@
       "routes": [
         "/"
       ],
-      "chrome": "full",
+      "footer": "full",
+      "modal": true,
+      "preloader": false,
       "sections": [
         "shell.page-layers",
         "shell.navbar",
@@ -184,6 +315,176 @@
         "shell.footer",
         "shell.footer-bottom-reveal",
         "shell.call-alex-modal"
+      ]
+    },
+    {
+      "id": "template.compare",
+      "name": "Compare",
+      "routeCount": 1,
+      "routes": [
+        "/compare"
+      ],
+      "footer": "full",
+      "modal": true,
+      "preloader": true,
+      "sections": [
+        "shell.page-layers",
+        "shell.navbar",
+        "shell.mobile-menu",
+        "shell.preloader",
+        "shell.bg-pixels-overlay",
+        "hero.compare",
+        "compare.generic",
+        "compare.comparison-table",
+        "compare.access",
+        "transition.black-to-white",
+        "compare.specialty-white",
+        "compare.integrations-white",
+        "transition.white-to-black",
+        "compare.privacy",
+        "compare.evaluation",
+        "conversion.cta",
+        "shell.footer",
+        "shell.footer-bottom-reveal",
+        "shell.call-alex-modal"
+      ]
+    },
+    {
+      "id": "template.book-a-demo",
+      "name": "Book a Demo",
+      "routeCount": 1,
+      "routes": [
+        "/book-a-demo"
+      ],
+      "footer": "bottom",
+      "modal": false,
+      "preloader": false,
+      "sections": [
+        "shell.page-layers",
+        "shell.navbar",
+        "shell.mobile-menu",
+        "hero.book-a-demo",
+        "shell.footer-bottom-reveal"
+      ]
+    },
+    {
+      "id": "template.legal",
+      "name": "Legal",
+      "routeCount": 3,
+      "routes": [
+        "/terms-of-use",
+        "/privacy-policy",
+        "/hipaa"
+      ],
+      "footer": "full",
+      "modal": false,
+      "preloader": true,
+      "sections": [
+        "shell.page-layers",
+        "shell.navbar",
+        "shell.mobile-menu",
+        "shell.preloader",
+        "hero.legal",
+        "legal.content",
+        "shell.footer",
+        "shell.footer-bottom-reveal"
+      ]
+    },
+    {
+      "id": "template.blog-index",
+      "name": "Blog index",
+      "routeCount": 1,
+      "routes": [
+        "/blog"
+      ],
+      "footer": "full",
+      "modal": false,
+      "preloader": true,
+      "sections": [
+        "shell.page-layers",
+        "shell.navbar",
+        "shell.mobile-menu",
+        "shell.preloader",
+        "hero.blog-index",
+        "content.blog-list",
+        "conversion.cta",
+        "shell.footer",
+        "shell.footer-bottom-reveal"
+      ]
+    },
+    {
+      "id": "template.blog-post",
+      "name": "Blog post",
+      "routeCount": 8,
+      "routes": [
+        "/blog/ai-voice-agents-for-athenahealth-7-questions-to-ask-before-choosing-a-platform",
+        "/blog/medical-practice-call-volume-january",
+        "/blog/ent-reimbursement-in-2027-what-medicare-s-proposed-cuts-mean-for-otolaryngology-practices",
+        "/blog/orthopedic-ai-answering-service",
+        "/blog/redefining-healthcare-ai",
+        "/blog/the-12-month-shift-why-voice-ai-agents-are-now-a-financial-imperative-for-specialty-practices",
+        "/blog/why-traditional-ivr-is-failing-your-practice-and-how-ai-voice-agents-fix-the-press-0-trap",
+        "/blog/why-generic-ai-virtual-assistants-fail-specialty-medical-practices-and-what-actually-works"
+      ],
+      "footer": "full",
+      "modal": false,
+      "preloader": true,
+      "sections": [
+        "shell.page-layers",
+        "shell.navbar",
+        "shell.mobile-menu",
+        "shell.preloader",
+        "content.post-header",
+        "content.post-body",
+        "conversion.cta",
+        "shell.footer",
+        "shell.footer-bottom-reveal"
+      ]
+    },
+    {
+      "id": "template.case-studies-index",
+      "name": "Case studies index",
+      "routeCount": 1,
+      "routes": [
+        "/case-studies"
+      ],
+      "footer": "full",
+      "modal": false,
+      "preloader": true,
+      "sections": [
+        "shell.page-layers",
+        "shell.navbar",
+        "shell.mobile-menu",
+        "shell.preloader",
+        "hero.case-studies-index",
+        "content.case-list",
+        "conversion.cta",
+        "shell.footer",
+        "shell.footer-bottom-reveal"
+      ]
+    },
+    {
+      "id": "template.case-study",
+      "name": "Case study",
+      "routeCount": 2,
+      "routes": [
+        "/case-studies/southern-bone-joint",
+        "/case-studies/the-orthopaedic-center"
+      ],
+      "footer": "full",
+      "modal": false,
+      "preloader": true,
+      "sections": [
+        "shell.page-layers",
+        "shell.navbar",
+        "shell.mobile-menu",
+        "shell.preloader",
+        "content.case-header",
+        "content.post-body",
+        "content.read-next",
+        "conversion.cta",
+        "shell.footer",
+        "shell.footer-bottom-reveal"
       ]
     }
   ]
