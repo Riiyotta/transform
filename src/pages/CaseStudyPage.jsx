@@ -1,6 +1,5 @@
 import '../components/cms/cms.css'
 import '../styles/page-case-study.css'
-import DetailLayers from '../components/cms/DetailLayers'
 import DetailHeader from '../components/cms/DetailHeader'
 import CaseVariant from '../components/cms/CaseVariant'
 import PostBody from '../components/cms/PostBody'
@@ -21,7 +20,6 @@ export default function CaseStudyPage({ params }) {
   if (!study) return null
   return (
     <>
-      <DetailLayers />
       <DetailHeader
         cs
         media={

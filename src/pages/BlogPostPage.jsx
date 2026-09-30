@@ -1,6 +1,5 @@
 import '../components/cms/cms.css'
 import '../styles/page-blog-post.css'
-import DetailLayers from '../components/cms/DetailLayers'
 import DetailHeader from '../components/cms/DetailHeader'
 import MetaPoints from '../components/cms/MetaPoints'
 import PostBody from '../components/cms/PostBody'
@@ -19,7 +18,6 @@ export default function BlogPostPage({ params }) {
   if (!post) return null
   return (
     <>
-      <DetailLayers />
       <DetailHeader
         media={
           <div className="post-img-vert-wrap blog-post">

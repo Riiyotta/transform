@@ -84,7 +84,9 @@ function useVideoFade(ref) {
   }, [ref])
 }
 
-export default function PageLayers() {
+// video: blog-post and case-study pages have no background video on live (specs/blog.md §1:
+// replaced by invisible black-on-black layers, omitted here) but keep the noise + solid bg.
+export default function PageLayers({ video = true }) {
   const wrapRef = useRef(null)
   useVideoFade(wrapRef)
   return (
@@ -93,6 +95,7 @@ export default function PageLayers() {
         <Noise />
       </div>
       {/* MOTION: M3 — this wrapper fades out after the hero scrolls 10% (GSAP, above). */}
+      {video && (
       <div
         ref={wrapRef}
         className="bg-pixels-wrapper"
@@ -104,6 +107,7 @@ export default function PageLayers() {
         </div>
         <div className="bg-pic-pixels" />
       </div>
+      )}
       <div className="page-wrap-solid-bg" />
     </>
   )
