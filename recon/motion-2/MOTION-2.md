@@ -1,0 +1,37 @@
+# Motion-2 evidence (interaction, timer and load-marquee motion)
+
+Live = https://www.transform9.com/ · Clone = http://127.0.0.1:5179/ · headless Chromium (Playwright).
+Scripts: `scripts/*.mjs` (`node scripts/<name>.mjs live|clone [ids]`). rAF sampler; times in ms from the trigger event.
+Live and clone JSON sit side by side (`*-live*.json` / `*-clone*.json`). Clone console errors: 0 in every run. `node qa/smoke.mjs`: PASS at 1440/1024/768/390.
+
+| M-id | Route | Viewport | Trigger | Method (clone) | Expected (live, measured) | Observed (clone) | Status |
+|---|---|---|---|---|---|---|---|
+| M1 | / | 1440, 1024, 768, 390 | load | CSS keyframes `m2-marquee-left` 44.99s linear infinite | −54.44 / −38.80 / −47.33 / −48.27 px/s (track 2434.2/1748.4/2132.1/2158.9) | −54.00 / −39.13 / −47.70 / −47.91 px/s | PASS (marquee-*.json) |
+| M2a | / | 1440, 1024, 768, 390 | load | CSS keyframes 29.99s linear, 0 → −100% | −60.39 / −42.62 / −38.37 / −32.71 | −59.90 / −42.98 / −38.66 / −32.45 | PASS |
+| M2b | / | 1440, 1024, 768, 390 | load | CSS keyframes 29.99s linear, 0 → +100% | +48.31 / +34.09 / +30.69 / +26.16 | +47.92 / +34.38 / +30.93 / +25.96 | PASS |
+| M5 | / | 1440 | mouseenter/leave `.stats-block` (x3, incl. re-enter 150ms into leave) | GSAP, gsap.matchMedia ≥992; head/descr yPercent 500ms power2.out; img opacity 200ms ease-out; flex-basis stays CSS .6s | enter: head 102→52.3@100→0@500; img .68@100, 1@200; width 282@100, 664@600. Re-enter continues from current (71.8→64.8) | head 52.6@100, 0@500; img .68@100; width 282@100, 664@600; re-enter 71.1→63.7 | PASS (hover-*.json M5) |
+| M5 | / | 1440→768→390→1440 | resize | matchMedia revert | back at 1440: 263.8 ×4, head 102, img 0 | identical | PASS (extra-*.json M6resize) |
+| M6 | / | 768 | load auto-click + click blocks 3/2/4 | GSAP matchMedia 768–991: width 500ms ease-out, img 200ms ease-out, heads 500/200ms power2.out | load: 140.66×4 → 393.86/56.27 in ~500ms, other imgs →0 in 200ms, hd0 54.39→0; clicks: w 289.9@94ms, hd 27.9@94 | load 140.66 → 393.86/56.27, same curve; clicks w 289.8@87ms, hd 27.85 | PASS (misc-*-M6*.json) |
+| M6 | / | 390 | load auto-click + clicks | GSAP matchMedia ≤767: height 260px / auto, 500ms ease-out | h0 62.39→260; sibling →62.39 (auto); hd 49.92→0 | identical end values and curve | PASS |
+| M6 | / | 1440→768, →390 | resize (no auto-click) | matchMedia, initial group only | 768: 140.7 ×4, head 54.4, img 1 ×4; 390: 62.4 ×4, img 1 ×4 | identical | PASS (faithful to a live quirk, see deviations) |
+| M10 | / | 1440 | load, tab clicks, auto-rotation | setTimeout 4000 (restarted by any tab click, re-armed if `html[data-menu-open=true]`), GSAP bar height 0→100% linear 4s, panes: out 300ms ease-out then in 300ms ease-out | bar 27 px/s linear; advance 4017ms after click, then every 4000; pane out .51@+100, then in | bar 27 px/s; advance at +4000 and +8000 after click; pane out/in 300+300 | PASS (misc-*.json M10, extra-*.json M10load) |
+| M10 | / | 1440 | `data-menu-open="true"` for 9s | timer re-arms | no advance while open | no advance for 9s, advanced within 4.2s of closing | PASS (checks-clone.json) |
+| M10 | / | 1440→768→1440 | resize | matchMedia listener | 768: rotation stops, bars 0, all rows `none`; back at 1440 bars stay 0, next advance ~4s later | identical | PASS |
+| M10b | / | 768 | load + click tab 3 | CSS `.w--current .task-text-row` | row 1 `block` on load, no rotation, click shows row 3 instantly | identical | PASS |
+| M11 | / | 1440, 390 | click hero "Call Alex" | GSAP: display flex + opacity 0→1, 0.5s expo.out | .68@80ms, 1 by ~330ms | .68@~70ms, 1 by ~330ms | PASS (misc/checks) |
+| M11b | / | 1440, 390 | overlay / close click (x3, incl. mid-open and mid-close clicks) | GSAP opacity 1→0 0.5s expo.out, display none at 0.5s; each close click restarts from 1 | .79@16 .5@50 .25@100, none by 550; mid-close click jumps to .8 and restarts | .63@25 .25@93, none at 508; mid-close restart .63 | PASS |
+| M11 | /?popup=success | 1440 | load (QA hook) + Escape | instant open | – (clone hook) | opacity 1, flex on load; Escape closes | PASS |
+| M12 | / | 1440 | hover hero "Call Alex" (x3, leave at +115/+135, leave mid-_2) | GSAP (UnderlinePair, all breakpoints): _1 →0 250ms power1.inOut then _2 →100% 250ms; leave = instant reset and cancels the sequence | _1 150.19@100, 0@250; _2 17.66@300, 220.88@500; early leave → _2 never grows | _1 150.19@100, 0@250; _2 16.97@300, 220.88@500; early leave → _2 stays 0 | PASS (hover-*.json M12, M12x) |
+| M12b | / | 1440 | hover footer links (x3, re-enter mid-leave, leave mid-enter) | GSAP matchMedia ≥992; groups (a-44/a-45) that don't cancel each other | _1 11.67@100, 36.52@250, then _2=100%, _1 op 0; re-enter mid-leave: _1 32.45→32.69, _2 keeps retracting, _1 op 1 at leave+250 | _1 11.67@100; re-enter 31.86→32.06, _2 retracts, _1 op 1 at leave+250 | PASS (M12b, M12b2) |
+| M13 | / | 1440 | hover right/left arrow (x3) | GSAP 250ms power1.out; xPercent ±250; bg rgba(255,255,255,0)↔1 | bg .64@100; white 44.8@100, 70@250; black −25.2@100 | bg .64@100; white 44.8@100, 70@250; black −25.2@100 | PASS |
+| M14 | / | 1440 | hover integration block / secure cell (x3) | GSAP 200ms ease-out, channel-wise colour lerp; logo swap instant | integ: rgba(175,177,175,.686)@100, white@200; leave → rgba(2,8,1,0); secure from rgba(0,0,0,0): rgba(175,175,175,.686)@100 | integ rgba(178,180,178,.698)@100, white@200; secure rgba(175,175,175,.686)@100 | PASS (extra/hover M14, M14s) |
+| M16 | / (popup) | 1440 | hover close button (x2) + click | GSAP 250ms power1.out; first-hover black-icon quirk | bg rgba(33,33,33,.13)@11; white .54@61; black 1 at once on first hover, then tweens | bg rgba(35,35,35,.137)@13; white .54@62; black 1 at once, then tweens | PASS |
+| M17 | / | 1440 | CSS hover | existing CSS (verified) | legal/bottom links `opacity .2s cubic-bezier(.215,.61,.355,1)`; YT play `transform .18s cubic-bezier(.645,.045,.355,1)`; nav CTA `background-color .2s cubic-bezier(.215,.61,.355,1)`; stats `flex-basis .6s cubic-bezier(.645,.045,.355,1)` | identical computed `transition` strings | PASS |
+| M19 | / | 1440, 390 | arrow click (x3, incl. reverse click mid-fade, click at end) | GSAP opacity 400ms CSS `ease`, starts +30ms (tram latency), incoming z-index++, reset (opacity 1 + hidden) at 430ms | 1440: .78/.14@100, .5/.41@150, .08/.9@300, hidden by 450; mid-fade click: incoming restarts at 0, outgoing from current | .76/.24@100, .49/.51@150, .07/.93@300, hidden at 450; mid-fade same behaviour | PASS (checks/misc M19) |
+| M20 | / | 1440 | hover navigator/specialty tab | not mine; verified | instant swap (pane changes within 1 frame) | instant swap | PASS (extra M20) |
+
+## Known deviations / notes
+- M19: on live the incoming slide trails the outgoing one by about one frame. The clone starts both on the same frame, which is within 0.1 opacity.
+- Timer phase: live rotation starts when Webflow is ready (about 1–2s after load). The clone starts it on React mount, so which tab is current at a given wall-clock time differs by that offset. Period and bar rate are identical.
+- Faithful live quirks reproduced on purpose (and easy to remove): M6 resize into ≤991 shows the IX2 initial state (no block open, all 4 images visible). M10 resize into ≤991 hides every `.task-text-row` until the next tab change. M16 black close icon appears at once on the first hover. M11b a second overlay click during the close fade restarts it from opacity 1.
+- Headless sampling runs at about 30–60fps, so ±1 frame differences at matched offsets are sampling noise.

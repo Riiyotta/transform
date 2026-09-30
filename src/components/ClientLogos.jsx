@@ -1,8 +1,9 @@
+import '../styles/motion-interactions.css'
 import { CLIENT_LOGOS } from '../data/clientLogos'
 
 // Client logo marquee — CLONE_SPEC §5. Two identical tracks side by side.
-// MOTION: M1 — `.logos-wrapper` x2: translateX 0 -> -100% (44.99s linear, infinite).
-// Rendered static (translateX 0) until Animation wires it.
+// MOTION: M1 — `.logos-wrapper` x2: translateX 0 -> -100% (44.99s linear, infinite),
+// a CSS keyframe in src/styles/motion-interactions.css (imported here).
 export default function ClientLogos() {
   return (
     <div className="div-block-3" data-section="client-logos">

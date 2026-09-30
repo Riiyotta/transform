@@ -1,4 +1,6 @@
+import { useLayoutEffect, useRef } from 'react'
 import { ASSETS } from '../data/assets'
+import { EASE, bindHover, clearInline, gsap, runGroups } from './ui/ixMotion'
 import { useSite } from './ui/SiteContext'
 import Noise from './ui/Noise'
 import UnderlinePair from './ui/UnderlinePair'
@@ -8,7 +10,18 @@ import UnderlinePair from './ui/UnderlinePair'
 // error (w-form-fail). NO network submission: the original POST (hubspotonwebflow) and
 // the AWS webhook fetch are intentionally not reproduced; a valid submit shows success.
 // reCAPTCHA is stripped (an empty .captcha-popup box keeps its 304x78 footprint).
-// MOTION: M11 (open, 0.5s expo.out fade) / M11b (close) — rendered instantly here.
+// MOTION (measured on live, recon/motion-2/misc-live-*.json):
+// M11  open (IX3 i-75f1d5f3): display none -> flex instantly, opacity fromTo 0 -> 1, 0.5s
+//      expo.out (.68 at ~80ms).
+// M11b close (IX3 i-138c644f, close button or overlay): opacity fromTo 1 -> 0, 0.5s
+//      expo.out, display -> none at 0.5s. Each close click restarts it from opacity 1
+//      (measured: an overlay click during the close fade jumps back to .8 at +16ms).
+// M16  close button hover (IX2 a-38/a-39): bg -> #fff, white icon -> 0, black icon -> 1,
+//      250ms outQuad; mouseleave reverses. First hover only: IX2 has no stored opacity for
+//      the black icon and starts it from its default 1, so it appears at once (measured).
+// ?popup=… (QA hook) opens instantly at opacity 1 on load.
+// Focus: on open, focus moves to the dialog window; Escape closes; on close focus returns
+// to the element that opened it.
 
 function Field({ id, name, dataName, label, placeholder, type, value, onChange, autoFocus }) {
   return (
@@ -35,9 +48,96 @@ function Field({ id, name, dataName, label, placeholder, type, value, onChange, 
 export default function CallAlexModal() {
   const { popupOpen, closePopup, popupState, setPopupState, phone, setPhone } = useSite()
 
+  const wrapRef = useRef(null)
+  const tlRef = useRef(null)
+  const firstRef = useRef(true)
+  const returnFocusRef = useRef(null)
+
+  const play = (open) => {
+    const el = wrapRef.current
+    if (!el) return
+    tlRef.current?.kill()
+    if (open) {
+      gsap.set(el, { display: 'flex', opacity: 0 })
+      tlRef.current = gsap.to(el, { opacity: 1, duration: 0.5, ease: EASE.expoOut })
+    } else {
+      gsap.set(el, { opacity: 1 })
+      tlRef.current = gsap
+        .timeline()
+        .to(el, { opacity: 0, duration: 0.5, ease: EASE.expoOut })
+        .set(el, { display: 'none' }, 0.5)
+    }
+  }
+
+  useLayoutEffect(() => {
+    const el = wrapRef.current
+    if (!el) return
+    if (firstRef.current) {
+      firstRef.current = false
+      gsap.set(el, { display: popupOpen ? 'flex' : 'none', opacity: popupOpen ? 1 : 0 })
+      return
+    }
+    play(popupOpen)
+    if (popupOpen) {
+      returnFocusRef.current = document.activeElement
+      el.querySelector('.modal-window')?.focus({ preventScroll: true })
+    } else {
+      const back = returnFocusRef.current
+      returnFocusRef.current = null
+      if (back && typeof back.focus === 'function' && el.contains(document.activeElement)) back.focus({ preventScroll: true })
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [popupOpen])
+
+  useLayoutEffect(() => {
+    const el = wrapRef.current
+    return () => {
+      tlRef.current?.kill()
+      firstRef.current = true
+      if (el) clearInline([el], ['display', 'opacity'])
+    }
+  }, [])
+
+  useLayoutEffect(() => {
+    if (!popupOpen) return undefined
+    const onKey = (e) => e.key === 'Escape' && closePopup()
+    document.addEventListener('keydown', onKey)
+    return () => document.removeEventListener('keydown', onKey)
+  }, [popupOpen, closePopup])
+
+  // M16 close-button hover.
+  useLayoutEffect(() => {
+    const btn = wrapRef.current?.querySelector('.close-popup-wrap')
+    if (!btn) return undefined
+    const white = btn.querySelector('.close-icon.white')
+    const black = btn.querySelector('.close-icon.black')
+    gsap.set(btn, { backgroundColor: getComputedStyle(btn).backgroundColor })
+    gsap.set(white, { opacity: 1 })
+    const v = { duration: 0.25, ease: EASE.outQuad }
+    const off = bindHover(
+      btn,
+      () => {
+        if (!black.style.opacity) gsap.set(black, { opacity: 1 }) // IX2 default-origin quirk
+        runGroups([[[btn, { backgroundColor: 'rgba(255, 255, 255, 1)', ...v }], [white, { opacity: 0, ...v }], [black, { opacity: 1, ...v }]]])
+      },
+      () => runGroups([[[btn, { backgroundColor: 'rgba(255, 255, 255, 0)', ...v }], [white, { opacity: 1, ...v }], [black, { opacity: 0, ...v }]]]),
+    )
+    return () => {
+      off()
+      clearInline([btn], ['background-color'])
+      clearInline([white, black], ['opacity'])
+    }
+  }, [])
+
+  // A close click while already closing restarts the close fade (IX3 click: "each").
+  const requestClose = () => {
+    if (!popupOpen) play(false)
+    closePopup()
+  }
+
   const onClose = (e) => {
     e.preventDefault()
-    closePopup()
+    requestClose()
   }
 
   const onSubmit = (e) => {
@@ -51,6 +151,7 @@ export default function CallAlexModal() {
 
   return (
     <div
+      ref={wrapRef}
       className={`modal-wrap${popupOpen ? ' is-open' : ''}`}
       data-component="call-alex-modal"
       data-state={popupState}
@@ -59,8 +160,8 @@ export default function CallAlexModal() {
       aria-label="Get a Call Form"
       aria-hidden={popupOpen ? undefined : 'true'}
     >
-      <div className="modal-overlay" onClick={closePopup} />
-      <div className="modal-window">
+      <div className="modal-overlay" onClick={requestClose} />
+      <div className="modal-window" tabIndex={-1}>
         <div className="popup-top">
           <img src={ASSETS.logoWhite} loading="lazy" alt="transform9 logo" className="logo-white popup" />
         </div>

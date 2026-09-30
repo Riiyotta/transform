@@ -1,7 +1,70 @@
 import '../styles/testimonials.css'
-import { useState } from 'react'
+import { useLayoutEffect, useRef, useState } from 'react'
 import { TESTIMONIALS, TESTIM_ARROWS } from '../data/testimonials'
 import Noise from './ui/Noise'
+import { EASE, bindHover, clearInline, gsap, runGroups } from './ui/ixMotion'
+
+// MOTION M13 (IX2 a-34..a-37, all breakpoints): arrow mouseenter -> bg rgba(255,255,255,0)
+// -> #fff, `.arrow.white` xPercent 0 -> +/-250, `.arrow.black` -/+250 -> 0, all 250ms
+// outQuad from the current values; mouseleave reverses (measured 1:1 on live).
+function useArrowMotion(scopeRef) {
+  useLayoutEffect(() => {
+    const scope = scopeRef.current
+    if (!scope) return undefined
+    const unbinds = [...scope.querySelectorAll('.test-arrow-wrap')].map((wrap) => {
+      const dir = wrap.classList.contains('right') ? 1 : -1
+      const white = wrap.querySelector('.arrow.white')
+      const black = wrap.querySelector('.arrow.black')
+      const v = { duration: 0.25, ease: EASE.outQuad }
+      gsap.set(wrap, { backgroundColor: 'rgba(255, 255, 255, 0)' })
+      gsap.set(white, { x: 0, xPercent: 0 })
+      gsap.set(black, { x: 0, xPercent: -250 * dir })
+      const off = bindHover(
+        wrap,
+        () => runGroups([[[white, { xPercent: 250 * dir, ...v }], [wrap, { backgroundColor: 'rgba(255, 255, 255, 1)', ...v }], [black, { xPercent: 0, ...v }]]]),
+        () => runGroups([[[white, { xPercent: 0, ...v }], [wrap, { backgroundColor: 'rgba(255, 255, 255, 0)', ...v }], [black, { xPercent: -250 * dir, ...v }]]]),
+      )
+      return () => {
+        off()
+        clearInline([wrap], ['background-color'])
+        clearInline([white, black], ['transform', 'translate'])
+      }
+    })
+    return () => unbinds.forEach((u) => u())
+  }, [scopeRef])
+}
+
+// MOTION M19 (Webflow slider data-animation="cross", duration 400, easing "ease"):
+// outgoing slide opacity current -> 0 and incoming 0 -> 1, simultaneously, 400ms CSS
+// `ease`; the incoming slide is raised (z-index++). At 400ms the other slides are reset to
+// opacity 1 + visibility hidden. A click mid-fade restarts the incoming slide from 0 and
+// fades the slide being left from its current opacity (measured on live, 1440 and 390).
+function useSlideMotion(scopeRef, current) {
+  const prevRef = useRef(current)
+  const depthRef = useRef(1)
+  const resetRef = useRef(null)
+  useLayoutEffect(() => {
+    const prev = prevRef.current
+    prevRef.current = current
+    const slides = [...(scopeRef.current?.querySelectorAll('.testim-slide') || [])]
+    if (prev === current || !slides[current] || !slides[prev]) return
+    const inEl = slides[current]
+    const outEl = slides[prev]
+    resetRef.current?.kill()
+    gsap.killTweensOf(slides)
+    // Webflow/tram starts CSS transitions ~2 frames after the click (measured ~30ms).
+    const v = { duration: 0.4, ease: EASE.cssEase, delay: 0.03 }
+    gsap.set(outEl, { visibility: 'visible' })
+    gsap.to(outEl, { opacity: 0, ...v })
+    gsap.set(inEl, { visibility: 'visible', opacity: 0, zIndex: ++depthRef.current })
+    gsap.to(inEl, { opacity: 1, ...v })
+    resetRef.current = gsap.delayedCall(0.43, () => {
+      clearInline(slides.filter((s) => s !== inEl), ['opacity', 'visibility', 'z-index'])
+      clearInline([inEl], ['opacity', 'visibility'])
+    })
+  }, [scopeRef, current])
+  useLayoutEffect(() => () => resetRef.current?.kill(), [])
+}
 
 const pad2 = (n) => String(n).padStart(2, '0')
 
@@ -16,6 +79,9 @@ export default function Testimonials() {
   const [current, setCurrent] = useState(0)
   const total = TESTIMONIALS.length
   const go = (dir) => setCurrent((c) => Math.min(total - 1, Math.max(0, c + dir)))
+  const sliderRef = useRef(null)
+  useArrowMotion(sliderRef)
+  useSlideMotion(sliderRef, current)
 
   return (
     <section id="testimonials" className="testimonials" data-section="testimonials">
@@ -32,6 +98,7 @@ export default function Testimonials() {
       </div>
 
       <div
+        ref={sliderRef}
         className="testimonials-slider"
         role="region"
         aria-label="carousel"

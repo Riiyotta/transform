@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useLayoutEffect, useRef, useState } from 'react'
 import { ASSETS } from '../data/assets'
 import {
   FOOTER_BLURB,
@@ -10,6 +10,7 @@ import {
 } from '../data/footer'
 import Noise from './ui/Noise'
 import UnderlinePair from './ui/UnderlinePair'
+import { EASE, MQ, bindHover, clearInline, gsap, runGroups } from './ui/ixMotion'
 
 // Footer — CLONE_SPEC §17. Two parts:
 //   <FooterTop>    section.footer — last block INSIDE .page-wrap
@@ -106,9 +107,44 @@ function HubSpotForm() {
   )
 }
 
+// MOTION: M12b (IX2 a-44 / a-45), desktop >=992 only (IX2 mq 'main'):
+//   mouseenter: _1 (left-anchored) width -> 100% (250ms inOutQuad, from current), then
+//               _2 (right-anchored) width = 100% and _1 opacity = 0 (instant).
+//   mouseleave: _2 and _1 width -> 0 (250ms inOutQuad; _2 retracts to the right), then
+//               _1 opacity = 1. The two lists do not cancel each other (measured).
+// Below 992 the matchMedia context reverts every inline style (static CSS state).
+function useFooterLinkMotion(scopeRef) {
+  useLayoutEffect(() => {
+    const scope = scopeRef.current
+    if (!scope) return undefined
+    const mm = gsap.matchMedia()
+    mm.add(MQ.desktop, () => {
+      const unbinds = [...scope.querySelectorAll('.footer-link-wrap')].map((link) => {
+        const u1 = link.querySelector('.underline-small._1')
+        const u2 = link.querySelector('.underline-small._2')
+        gsap.set(u1, { width: '0%', opacity: 1 })
+        gsap.set(u2, { width: '0%' })
+        const ease = EASE.inOutQuad
+        return bindHover(
+          link,
+          () => runGroups([[[u1, { width: '100%', duration: 0.25, ease }]], [[u2, { width: '100%' }]], [[u1, { opacity: 0 }]]]),
+          () => runGroups([[[u2, { width: '0%', duration: 0.25, ease }], [u1, { width: '0%', duration: 0.25, ease }]], [[u1, { opacity: 1 }]]]),
+        )
+      })
+      return () => {
+        unbinds.forEach((u) => u())
+        clearInline(scope.querySelectorAll('.underline-small'), ['width', 'opacity'])
+      }
+    })
+    return () => mm.revert()
+  }, [scopeRef])
+}
+
 export function FooterTop() {
+  const ref = useRef(null)
+  useFooterLinkMotion(ref)
   return (
-    <section className="footer section" data-section="footer">
+    <section ref={ref} className="footer section" data-section="footer">
       <div className="footer-top-wrap">
         <Noise />
         <div className="footer-top-row">

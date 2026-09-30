@@ -1,0 +1,103 @@
+{
+  "M10_menuPause": {
+    "before": 0,
+    "after9sOpen": 0,
+    "after4sClosed": 1,
+    "pass": true
+  },
+  "M10_errors": [],
+  "M10b_768": {
+    "rowsOnLoad": [
+      "block",
+      "none",
+      "none"
+    ],
+    "currentOnLoad": 0,
+    "currentAfter4_5s": 0,
+    "rowsAfterClickTab3": [
+      "none",
+      "none",
+      "block"
+    ],
+    "pass": true
+  },
+  "M11_qaHook": {
+    "onLoad": {
+      "op": "1",
+      "disp": "flex",
+      "state": "success"
+    },
+    "afterEscape": "none",
+    "pass": true
+  },
+  "M11_390": {
+    "events": [
+      {
+        "type": "click",
+        "t": 0
+      },
+      {
+        "type": "click",
+        "t": 911
+      }
+    ],
+    "open": [
+      "0:undefined/undefined",
+      "50:0.5/flex",
+      "100:0.75/flex",
+      "250:0.98/flex",
+      "500:1/flex",
+      "800:1/flex"
+    ],
+    "close": [
+      "0:1/flex",
+      "50:0.5/flex",
+      "100:0.25/flex",
+      "250:0.02/flex",
+      "450:0/flex",
+      "600:0/none",
+      "800:0/none"
+    ],
+    "errors": []
+  },
+  "M19": {
+    "events": [
+      {
+        "type": "click",
+        "t": 0
+      }
+    ],
+    "at": [
+      "0:0.99v/0.01v",
+      "50:0.96v/0.04v",
+      "100:0.76v/0.24v",
+      "150:0.49v/0.51v",
+      "200:0.29v/0.71v",
+      "300:0.07v/0.93v",
+      "380:0.01v/0.99v",
+      "450:1h/1v",
+      "600:1h/1v"
+    ],
+    "errors": []
+  },
+  "M19_390": {
+    "events": [
+      {
+        "type": "click",
+        "t": 0
+      }
+    ],
+    "at": [
+      "0:0.99v/0.01v",
+      "50:0.97v/0.03v",
+      "100:0.76v/0.24v",
+      "150:0.49v/0.51v",
+      "200:0.28v/0.72v",
+      "300:0.07v/0.93v",
+      "380:0.01v/0.99v",
+      "450:1h/1v",
+      "600:1h/1v"
+    ],
+    "errors": []
+  }
+}

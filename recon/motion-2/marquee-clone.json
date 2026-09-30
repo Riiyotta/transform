@@ -1,0 +1,202 @@
+{
+  "390": {
+    "logos": [
+      {
+        "width": 2159.7,
+        "pxPerSec": -47.91,
+        "expected": -48,
+        "x0": -70.4,
+        "anim": "m2-marquee-left 44.99s linear"
+      },
+      {
+        "width": 2159.7,
+        "pxPerSec": -47.91,
+        "expected": -48,
+        "x0": -70.4,
+        "anim": "m2-marquee-left 44.99s linear"
+      }
+    ],
+    "r1": [
+      {
+        "width": 975,
+        "pxPerSec": -32.45,
+        "expected": -32.51,
+        "x0": -47.7,
+        "anim": "m2-marquee-left 29.99s linear"
+      },
+      {
+        "width": 975,
+        "pxPerSec": -32.45,
+        "expected": -32.51,
+        "x0": -47.7,
+        "anim": "m2-marquee-left 29.99s linear"
+      }
+    ],
+    "r2": [
+      {
+        "width": 780,
+        "pxPerSec": 25.96,
+        "expected": 26.01,
+        "x0": 38.1,
+        "anim": "m2-marquee-right 29.99s linear"
+      },
+      {
+        "width": 780,
+        "pxPerSec": 25.96,
+        "expected": 26.01,
+        "x0": 38.1,
+        "anim": "m2-marquee-right 29.99s linear"
+      }
+    ]
+  },
+  "768": {
+    "logos": [
+      {
+        "width": 2132.1,
+        "pxPerSec": -47.7,
+        "expected": -47.39,
+        "x0": -68.7,
+        "anim": "m2-marquee-left 44.99s linear"
+      },
+      {
+        "width": 2132.1,
+        "pxPerSec": -47.7,
+        "expected": -47.39,
+        "x0": -68.7,
+        "anim": "m2-marquee-left 44.99s linear"
+      }
+    ],
+    "r1": [
+      {
+        "width": 1152,
+        "pxPerSec": -38.66,
+        "expected": -38.41,
+        "x0": -55.7,
+        "anim": "m2-marquee-left 29.99s linear"
+      },
+      {
+        "width": 1152,
+        "pxPerSec": -38.66,
+        "expected": -38.41,
+        "x0": -55.7,
+        "anim": "m2-marquee-left 29.99s linear"
+      }
+    ],
+    "r2": [
+      {
+        "width": 921.6,
+        "pxPerSec": 30.93,
+        "expected": 30.73,
+        "x0": 44.6,
+        "anim": "m2-marquee-right 29.99s linear"
+      },
+      {
+        "width": 921.6,
+        "pxPerSec": 30.93,
+        "expected": 30.73,
+        "x0": 44.6,
+        "anim": "m2-marquee-right 29.99s linear"
+      }
+    ]
+  },
+  "1024": {
+    "logos": [
+      {
+        "width": 1748.3,
+        "pxPerSec": -39.13,
+        "expected": -38.86,
+        "x0": -56.3,
+        "anim": "m2-marquee-left 44.99s linear"
+      },
+      {
+        "width": 1748.3,
+        "pxPerSec": -39.13,
+        "expected": -38.86,
+        "x0": -56.3,
+        "anim": "m2-marquee-left 44.99s linear"
+      }
+    ],
+    "r1": [
+      {
+        "width": 1280,
+        "pxPerSec": -42.98,
+        "expected": -42.68,
+        "x0": -61.9,
+        "anim": "m2-marquee-left 29.99s linear"
+      },
+      {
+        "width": 1280,
+        "pxPerSec": -42.98,
+        "expected": -42.68,
+        "x0": -61.9,
+        "anim": "m2-marquee-left 29.99s linear"
+      }
+    ],
+    "r2": [
+      {
+        "width": 1024,
+        "pxPerSec": 34.38,
+        "expected": 34.14,
+        "x0": 49.5,
+        "anim": "m2-marquee-right 29.99s linear"
+      },
+      {
+        "width": 1024,
+        "pxPerSec": 34.38,
+        "expected": 34.14,
+        "x0": 49.5,
+        "anim": "m2-marquee-right 29.99s linear"
+      }
+    ]
+  },
+  "1440": {
+    "logos": [
+      {
+        "width": 2434.2,
+        "pxPerSec": -54,
+        "expected": -54.1,
+        "x0": -79.3,
+        "anim": "m2-marquee-left 44.99s linear"
+      },
+      {
+        "width": 2434.2,
+        "pxPerSec": -54,
+        "expected": -54.1,
+        "x0": -79.3,
+        "anim": "m2-marquee-left 44.99s linear"
+      }
+    ],
+    "r1": [
+      {
+        "width": 1800,
+        "pxPerSec": -59.9,
+        "expected": -60.02,
+        "x0": -88,
+        "anim": "m2-marquee-left 29.99s linear"
+      },
+      {
+        "width": 1800,
+        "pxPerSec": -59.9,
+        "expected": -60.02,
+        "x0": -88,
+        "anim": "m2-marquee-left 29.99s linear"
+      }
+    ],
+    "r2": [
+      {
+        "width": 1440,
+        "pxPerSec": 47.92,
+        "expected": 48.02,
+        "x0": 70.4,
+        "anim": "m2-marquee-right 29.99s linear"
+      },
+      {
+        "width": 1440,
+        "pxPerSec": 47.92,
+        "expected": 48.02,
+        "x0": 70.4,
+        "anim": "m2-marquee-right 29.99s linear"
+      }
+    ]
+  }
+}

@@ -1,12 +1,19 @@
 import '../styles/security.css'
+import { useLayoutEffect, useRef } from 'react'
 import { SECURITY_ROWS } from '../data/security'
+import { bindBlockHover } from './ui/ixMotion'
 
 // Security — CLONE_SPEC §14 (`section.secure-section#security`).
 // MOTION: M14 — `.secure-block` hover: bg -> #fff (200ms ease-out), logo swap white/black
 // (0ms). The hover END state is applied instantly by CSS :hover; Animation owns the tween.
 export default function Security() {
+  const ref = useRef(null)
+  useLayoutEffect(() => {
+    if (!ref.current) return undefined
+    return bindBlockHover(ref.current.querySelectorAll('.secure-block'), '.secure-logo.white', '.secure-logo.black')
+  }, [])
   return (
-    <section id="security" className="secure-section" data-section="security">
+    <section ref={ref} id="security" className="secure-section" data-section="security">
       <div className="left-side security" />
       <div className="right-side security">
         <div className="secure-right-top-wrap">

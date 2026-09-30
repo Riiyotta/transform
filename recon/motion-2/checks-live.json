@@ -1,0 +1,78 @@
+{
+  "M11_390": {
+    "events": [
+      {
+        "type": "click",
+        "t": 0
+      },
+      {
+        "type": "click",
+        "t": 915
+      }
+    ],
+    "open": [
+      "0:undefined/undefined",
+      "50:0.22/flex",
+      "100:0.75/flex",
+      "250:0.98/flex",
+      "500:1/flex",
+      "800:1/flex"
+    ],
+    "close": [
+      "0:1/flex",
+      "50:0.4/flex",
+      "100:0.26/flex",
+      "250:0.02/flex",
+      "450:0/flex",
+      "600:0/none",
+      "800:0/none"
+    ],
+    "errors": [
+      "requestStorageAccess: Permission denied."
+    ]
+  },
+  "M19": {
+    "events": [
+      {
+        "type": "click",
+        "t": 0
+      }
+    ],
+    "at": [
+      "0:1v/0v",
+      "50:0.97v/0v",
+      "100:0.78v/0.14v",
+      "150:0.5v/0.41v",
+      "200:0.29v/0.65v",
+      "300:0.08v/0.9v",
+      "380:0.01v/0.98v",
+      "450:1h/1v",
+      "600:1h/1v"
+    ],
+    "errors": [
+      "requestStorageAccess: Permission denied."
+    ]
+  },
+  "M19_390": {
+    "events": [
+      {
+        "type": "click",
+        "t": 0
+      }
+    ],
+    "at": [
+      "0:1v/0v",
+      "50:1v/0v",
+      "100:0.86v/0.07v",
+      "150:0.59v/0.31v",
+      "200:0.35v/0.58v",
+      "300:0.1v/0.87v",
+      "380:0.02v/0.97v",
+      "450:0v/1v",
+      "600:1h/1v"
+    ],
+    "errors": [
+      "requestStorageAccess: Permission denied."
+    ]
+  }
+}

@@ -1,0 +1,36 @@
+/* =============================================================================
+   MOTION-2 — interaction, timer and load-marquee motion (CLONE_SPEC §18).
+   Imported from ClientLogos.jsx. Values are the measured/IX-exported originals;
+   see recon/motion-2/MOTION-2.md. No reduced-motion guards (the original keeps
+   marquees and interactions running under prefers-reduced-motion: reduce).
+   IX2 ease map: outCubic cubic-bezier(.215,.61,.355,1) · outQuad (.25,.46,.45,.94)
+   · inOutQuad (.455,.03,.515,.955) · easeOut = ease-out.
+   Everything else (M5, M6, M10, M11, M12, M12b, M13, M14, M16, M19) is GSAP in the
+   owning components (helpers: src/components/ui/ixMotion.js). Those write the IX2 rest
+   values inline on mount, which pre-empts the static :hover END-state rules in
+   index.css / integrations.css / security.css / testimonials.css without editing them.
+   ============================================================================= */
+
+/* ---- M1: client logos. IX3 i-bbae69fc — both tracks x 0 -> -100% over 44.99s,
+   linear, repeat -1 (the 0.001s x:0% tween sits at position 0 = the loop reset).
+   Speed is proportional to track width (54.1 px/s @1440, 48.0 @390). ---- */
+@keyframes m2-marquee-left {
+  from { transform: translateX(0); }
+  to { transform: translateX(-100%); }
+}
+@keyframes m2-marquee-right {
+  from { transform: translateX(0); }
+  to { transform: translateX(100%); }
+}
+.client-logos .logos-wrapper {
+  animation: m2-marquee-left 44.99s linear infinite;
+}
+
+/* ---- M2a / M2b: integrations rows. IX3 i-d038c279 (_1 -> -100%) and
+   i-7beaf5de (_2 -> +100%), 29.99s linear, repeat -1. ---- */
+.integration-section .intagrations-row._1 {
+  animation: m2-marquee-left 29.99s linear infinite;
+}
+.integration-section .intagrations-row._2 {
+  animation: m2-marquee-right 29.99s linear infinite;
+}

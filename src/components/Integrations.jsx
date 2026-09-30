@@ -1,5 +1,7 @@
 import '../styles/integrations.css'
+import { useLayoutEffect, useRef } from 'react'
 import { INTEGRATIONS_ROW_1, INTEGRATIONS_ROW_2 } from '../data/integrations'
+import { bindBlockHover } from './ui/ixMotion'
 
 // One `.integration-block.bl`: white logo shown, black logo stacked at opacity 0.
 // Linked blocks are real external links (target _blank, as on live).
@@ -40,9 +42,16 @@ function Track({ items, variant }) {
 }
 
 // Integrations — CLONE_SPEC §13 (`section.integration-section#integrations`).
+// MOTION: M2a/M2b marquees are CSS keyframes in src/styles/motion-interactions.css;
+// M14 hover is bindBlockHover (src/components/ui/ixMotion.js), all breakpoints.
 export default function Integrations() {
+  const ref = useRef(null)
+  useLayoutEffect(() => {
+    if (!ref.current) return undefined
+    return bindBlockHover(ref.current.querySelectorAll('.integration-block.bl'), '.integration-logo.white', '.integration-logo.black')
+  }, [])
   return (
-    <section id="integrations" className="integration-section" data-section="integrations">
+    <section ref={ref} id="integrations" className="integration-section" data-section="integrations">
       <div className="integration-top-wrap">
         <h2 className="integration-head">
           Built to <span className="integration-head-span">Connect</span>
