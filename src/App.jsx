@@ -18,7 +18,7 @@ export default function App() {
   // M22: Lenis smooth scroll + ScrollTrigger sync/refresh (src/motion/smoothScroll.js).
   useSmoothScroll()
   useLayoutEffect(() => {
-    document.title = route.title
+    document.title = typeof route.title === 'function' ? route.title(route.params) : route.title
     document.documentElement.dataset.page = route.family
   }, [])
   return (

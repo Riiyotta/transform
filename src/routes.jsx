@@ -16,6 +16,7 @@ import CaseStudyPage from './pages/CaseStudyPage'
 //   footer: 'full' (FooterTop + FooterBottom) | 'bottom' (FooterBottom only, /book-a-demo)
 //   modal: render the Call Alex popup (homepage + /compare only)
 //   preloader: render `.preloader-wrap` for the load intro (/compare + legal)
+// `title` is a string or a function of the route params (detail pages set theirs from content).
 const SHELL = { footer: 'full', modal: false, preloader: false }
 export const ROUTES = [
   { ...SHELL, modal: true, family: 'home', match: /^\/$/, title: 'Transform9 — Maximize Every Call with a Custom AI Agent', page: (params) => <HomePage /> },
@@ -25,7 +26,7 @@ export const ROUTES = [
   { ...SHELL, family: 'blog-post', match: /^\/blog\/([^/]+)$/, title: 'Blog', page: (params) => <BlogPostPage params={params} /> },
   { ...SHELL, family: 'case-studies-index', match: /^\/case-studies$/, title: 'Case Studies', page: (params) => <CaseStudiesIndexPage params={params} /> },
   { ...SHELL, family: 'case-study', match: /^\/case-studies\/([^/]+)$/, title: 'Case Studies', page: (params) => <CaseStudyPage params={params} /> },
-  { ...SHELL, preloader: true, family: 'legal', match: /^\/(terms-of-use|privacy-policy|hipaa)$/, title: 'Legal', page: (params) => <LegalPage params={params} /> },
+  { ...SHELL, preloader: true, family: 'legal', match: /^\/(terms-of-use|privacy-policy|hipaa)$/, title: ([slug]) => ({ 'terms-of-use': 'Terms of Use', 'privacy-policy': 'Privacy Policy', hipaa: 'HIPAA' })[slug], page: (params) => <LegalPage params={params} /> },
 ]
 
 export function resolveRoute(pathname) {
