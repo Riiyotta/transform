@@ -5,7 +5,7 @@ Recorded 2026-09-30.
 ## Decisions
 | Topic | Decision |
 |---|---|
-| Target | https://www.transform9.com/ (homepage) |
+| Target | https://www.transform9.com/ (all same-domain pages; see ROUTES.md) |
 | Authority | **Live site** is authoritative. Saved snapshot (`Transform9 — Maximize Every Call with a Custom AI Agent.html` + `_files/`) is a source of assets and a cross-check. Drift between the two is recorded in CLONE_SPEC.md. |
 | Pages | **Full site on www.transform9.com** (user decision 2026-09-30, expanding the original homepage-only scope): 18 routes in 10 template families, see ROUTES.md. Pages on external domains are excluded and remain outbound links. |
 | Build path | Reconstruct: React + Vite + Tailwind v3 (clone skill stack). |
@@ -18,7 +18,7 @@ Recorded 2026-09-30.
 | Delivery | This folder. Local git only — no remote push, no publishing. |
 
 ## Required deliverables
-1. Working clone (homepage)
+1. Working clone (all 18 in-scope routes)
 2. IA: `ia.json`, generated `IA.md`, `matrix.csv`, passing validation
 3. `design-repo/` with tokens, contracts, schemas, validators, adversarial tests, manifest
 
