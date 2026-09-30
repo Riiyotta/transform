@@ -8,3 +8,4 @@
 | D4 | Client Spotlight YouTube | Facade figure has 0 width → empty 728px black area (headless Chromium, 2026-09-30) | Working facade: local thumbnail + play button; youtube-nocookie iframe only after click | User decision 2026-09-30 |
 | D5 | YouTube thumbnail | Hotlinked from i.ytimg.com | Local copy `/assets/yt-thumb.jpg` | Avoid third-party requests (ASSET_MANIFEST decisions) |
 | D6 | EMR marketplace links | `target="_blank"` without rel | Adds `rel="noopener"` | Security hygiene; no visual/behavioural change |
+| D7 | Keyboard focus | `:focus { outline: 0 }` on arrows, tabs, etc. | Visible `:focus-visible` ring (keyboard only); no change for mouse users | User decision 2026-09-30 (approved accessibility deviation). PENDING implementation after section audit. |
