@@ -1,0 +1,5 @@
+/* WhiteSection wrapper — section.white-section (CLONE_SPEC §10). */
+.white-section {
+  position: relative;
+  background-color: var(--color-white);
+}
