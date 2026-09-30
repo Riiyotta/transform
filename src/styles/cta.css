@@ -1,1 +1,198 @@
-/* Cta — section styles (CLONE_SPEC). Owned by the builder assigned to this section. */
+/* =============================================================================
+   CTA (src/components/Cta.jsx) — CLONE_SPEC §15
+   section.cta-section. All rules scoped to the section root. The bottom row reuses the
+   hero's .hero-home-bottom / .hero-bottom-block / .input-hero-wrap / .input-white rules
+   from index.css (HERO block); only the CTA variants (.bottom-left/.bottom-right) live here.
+   Class map: .cta-heading = h2.h1-text.white-text.cta-bottom
+   .label-16 = ._16px-text.white-text(.cta-bottom) · .bottom-cta-right = ._16px-text.bottom-cta-right
+   MOTION: M8c — .transition-cont.black-to-img pixels start at opacity 1 (rendered here) and
+   are scrubbed to 0 on scroll by Animation. MOTION: M11 (Call Alex popup), M12 (underlines).
+   ============================================================================= */
+.cta-section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: stretch;
+  height: 104.583vw;
+  overflow: hidden;
+  background-image: url('/assets/cta-img-upd-2.webp');
+  background-position: 40% 60%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* --- Pixel transition over the top of the image (.transition-cont.black-to-img) --- */
+.cta-section .transition-cont {
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width: 100vw;
+  background-color: transparent;
+  overflow: hidden;
+}
+.cta-section .transition-wrap {
+  position: relative;
+  z-index: 2;
+  max-width: 100%;
+}
+.cta-section .transition-wrap.black {
+  display: block;
+}
+.cta-section .transition-wrap.mix {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.cta-section .grid-row {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 0;
+  max-width: 100%;
+}
+.cta-section .pixel {
+  flex: 1;
+  width: 5vw;
+  height: 5vw;
+  background-color: var(--color-white);
+  opacity: 1; /* MOTION: M8c initial state */
+}
+.cta-section .pixel.blue {
+  background-color: var(--color-blue-dark);
+}
+.cta-section .pixel.green {
+  background-color: var(--color-green);
+}
+.cta-section .pixel.black {
+  position: relative;
+  background-color: var(--color-black);
+}
+
+/* --- Content --- */
+.cta-section .cta-content-wrap {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 79.583vw;
+}
+.cta-section .cta-top-wrap {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  height: 100%;
+}
+.cta-section .cta-text-top-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: var(--pad);
+  border-top: 1px solid var(--color-stroke-dark);
+}
+.cta-section .cta-top-text-left {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 108px;
+}
+.cta-section .cta-top-text-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.cta-section .cta-top-text-right {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 90px;
+}
+.cta-section .cta-heading {
+  margin-bottom: 5.65vw;
+  margin-left: var(--pad);
+  color: var(--color-white);
+  font-size: var(--fs-display);
+  line-height: 104%;
+  transform: translate(0);
+}
+.cta-section .cta-head-span {
+  display: block;
+  color: var(--color-green);
+}
+
+/* Bottom row: CTA variants of the hero bottom blocks */
+.cta-section .hero-bottom-block.bottom-left {
+  -webkit-backdrop-filter: blur(80px);
+  backdrop-filter: blur(80px);
+}
+.cta-section .hero-bottom-block.bottom-right {
+  justify-content: space-between;
+  align-items: flex-end;
+  background-color: var(--color-green);
+}
+.cta-section .bottom-cta-right {
+  width: 100%;
+  color: var(--color-black);
+  font-size: var(--fs-16);
+  line-height: var(--lh-body);
+}
+
+@media screen and (max-width: 991px) {
+  .cta-section {
+    height: 150vw;
+    background-position: 50%;
+  }
+  .cta-section .transition-cont {
+    height: 25vw;
+  }
+  .cta-section .cta-content-wrap {
+    height: 125vw;
+    padding-top: 5vw;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .cta-section {
+    height: auto;
+    background-position: 50% -10%;
+    background-size: 230%;
+  }
+  .cta-section .transition-cont {
+    height: 50vw;
+  }
+  .cta-section .pixel {
+    flex: 0 auto;
+    width: 10vw;
+    height: 10vw;
+  }
+  .cta-section .pixel.mob-hide {
+    display: none;
+  }
+  .cta-section .cta-content-wrap {
+    height: 240vw;
+    margin-top: 50vw;
+    padding-top: 10vw;
+  }
+  .cta-section .cta-top-text-left,
+  .cta-section .cta-top-text-right {
+    flex-direction: column;
+    gap: 16px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .cta-section {
+    background-position: 50% 0;
+    background-size: 250%;
+  }
+  .cta-section .cta-content-wrap {
+    height: 1080px;
+  }
+  .cta-section .cta-head-span {
+    display: inline;
+  }
+}

@@ -1,1 +1,200 @@
-/* NavigatorAgent — section styles (CLONE_SPEC). Owned by the builder assigned to this section. */
+/* =============================================================================
+   NAVIGATOR AGENT #3 (src/components/NavigatorAgent.jsx) — CLONE_SPEC §10d
+   div.row-tabs-section, rendered inside section.white-section (white background).
+   All rules scoped to the section root. Class map:
+   .agent-head = h2.h1-text.agent · .agent-num = ._16px-text ("#3")
+   .row-tab-head = ._30px-text.row-tab-head · .row-tab-text = ._16px-text.row-tab-text
+   .is-current / .is-active = Webflow .w--current / .w--tab-active.
+   MOTION: M20 — tab activation on mouseenter/click is an instant swap (no tween).
+   ============================================================================= */
+.row-tabs-section {
+  margin-bottom: 17vw;
+}
+
+/* Heading row (.horizontal-wrap.navigator) */
+.row-tabs-section .horizontal-wrap {
+  display: flex;
+  border-top: 1px solid var(--color-stroke-light);
+}
+.row-tabs-section .left-side {
+  min-width: var(--rail);
+  padding: var(--pad);
+}
+.row-tabs-section .left-side.with-line {
+  border-right: 1px solid var(--color-stroke-light);
+}
+.row-tabs-section .right-side {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  padding: var(--pad);
+  padding-bottom: 8.75vw;
+  border-left: none;
+}
+.row-tabs-section .agent-head {
+  max-width: 43vw;
+  color: var(--color-black);
+  font-size: var(--fs-display);
+  line-height: var(--lh-display);
+}
+.row-tabs-section .agent-num {
+  color: var(--color-black);
+  font-size: var(--fs-16);
+  line-height: var(--lh-body);
+}
+
+/* Tabs (.row-tabs.w-tabs): menu right, image rail left (row-reverse) */
+.row-tabs-section .row-tabs {
+  position: relative;
+  display: flex;
+  flex-direction: row-reverse;
+}
+.row-tabs-section .row-tabs-menu {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border-top: 1px solid var(--color-stroke-light);
+}
+/* a.row-tab-link.w-inline-block.w-tab-link */
+.row-tabs-section .row-tab-link {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  max-width: 100%;
+  padding: max(36px, 2.5vw) var(--pad) max(38px, 2.6vw) max(36px, 2.5vw);
+  border-bottom: 1px solid var(--color-stroke-light);
+  background-color: transparent;
+  color: var(--color-tab-inactive);
+  text-align: left;
+  vertical-align: top;
+  text-decoration: none;
+  cursor: pointer;
+}
+.row-tabs-section .row-tab-link:focus {
+  outline: 0; /* Webflow .w-tab-link:focus */
+}
+.row-tabs-section .row-tab-link.is-current {
+  background-color: var(--color-black);
+  color: var(--color-white);
+}
+.row-tabs-section .row-tab-head {
+  width: 36vw;
+  font-size: var(--fs-30);
+  line-height: var(--lh-30);
+}
+.row-tabs-section .row-tab-text {
+  max-width: 35ch;
+  font-size: var(--fs-16);
+  line-height: var(--lh-body);
+}
+
+/* Image rail (.row-tabs-content.w-tab-content) */
+.row-tabs-section .row-tabs-content {
+  position: relative;
+  display: block;
+  min-width: var(--rail);
+  border-top: 1px solid var(--color-stroke-light);
+  border-bottom: 1px solid var(--color-stroke-light);
+  background-color: var(--color-gray);
+  overflow: hidden;
+}
+.row-tabs-section .row-tab-pane {
+  position: relative;
+  display: none;
+  width: 100%;
+  height: 100%;
+}
+.row-tabs-section .row-tab-pane.is-active {
+  display: block;
+}
+.row-tabs-section .row-tab-pane-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.row-tabs-section .nav-agent-img-wrap {
+  position: absolute;
+  max-width: none;
+  height: 101%;
+}
+.row-tabs-section .nav-agent-img {
+  display: inline-block; /* Webflow img base */
+  max-width: 100%;
+}
+
+@media screen and (max-width: 991px) {
+  .row-tabs-section {
+    margin-bottom: 25vw;
+  }
+  .row-tabs-section .right-side {
+    padding-bottom: 15vw;
+  }
+  .row-tabs-section .row-tab-link {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+  .row-tabs-section .row-tab-head {
+    width: 33vw;
+  }
+  .row-tabs-section .row-tab-text {
+    max-width: 26ch;
+  }
+  .row-tabs-section .nav-agent-img-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 110%;
+    height: auto;
+    padding-top: 0;
+    padding-bottom: 0;
+    overflow: hidden;
+  }
+  .row-tabs-section .nav-agent-img {
+    height: 110%;
+    transform: scale(1.05);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .row-tabs-section .left-side.with-line {
+    display: none;
+  }
+  .row-tabs-section .agent-head {
+    width: 100%;
+    max-width: 10ch;
+  }
+  .row-tabs-section .row-tabs {
+    flex-direction: column-reverse;
+  }
+  .row-tabs-section .row-tabs-content {
+    height: 121vw;
+  }
+  .row-tabs-section .row-tab-link {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .row-tabs-section .row-tab-head {
+    width: auto;
+  }
+  .row-tabs-section .row-tab-text {
+    max-width: none;
+    margin-top: 38px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .row-tabs-section .row-tabs-content {
+    border-top-style: none;
+    border-top-width: 0;
+    border-bottom-style: none;
+    border-bottom-width: 0;
+  }
+}

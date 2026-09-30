@@ -1,1 +1,168 @@
-/* Integrations — section styles (CLONE_SPEC). Owned by the builder assigned to this section. */
+/* =============================================================================
+   INTEGRATIONS (src/components/Integrations.jsx) — CLONE_SPEC §13
+   section.integration-section#integrations. All rules scoped to the section root.
+   Class map: .integration-head = h2.h1-text.white-text.integration-head
+   .label-16.integration-text = ._16px-text.white-text.integration
+   .integration-label = ._30px-text.white.integration
+   MOTION: M2a/M2b — the .intagrations-row tracks sit at translateX(0) here.
+   MOTION: M14 — block hover bg tween (200ms ease-out) is owned by Animation; the
+   :hover END state below is applied instantly.
+   (.bg-circle-wrap.integr is omitted: its .bg-circle is display:none on live.)
+   ============================================================================= */
+.integration-section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 16.667vw;
+  border-top: 1px solid var(--color-stroke-dark);
+}
+
+/* Top: heading + copy */
+.integration-section .integration-top-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: max(480px, 33.333vw);
+}
+.integration-section .integration-head {
+  max-width: 8ch;
+  margin-top: var(--pad);
+  margin-left: var(--pad);
+  color: var(--color-white);
+  font-size: var(--fs-display);
+  line-height: var(--lh-display);
+  transform: translate(0);
+}
+.integration-section .integration-head-span {
+  color: var(--color-green);
+}
+.integration-section .integration-top-right-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 50%;
+  padding: var(--pad);
+}
+.integration-section .integration-text {
+  max-width: 30ch;
+}
+.integration-section .integration-label {
+  position: relative;
+  margin-top: -0.5vw;
+  color: var(--color-white);
+  font-size: var(--fs-30);
+  line-height: var(--lh-30);
+}
+
+/* Bottom: two marquee rows, each with a duplicated track */
+.integration-section .integration-bottom-wrap {
+  border-bottom: 1px solid var(--color-stroke-dark);
+}
+.integration-section .integ-row-cont {
+  display: flex;
+  overflow: hidden;
+}
+.integration-section .integ-row-cont._2 {
+  justify-content: flex-end;
+  align-items: stretch;
+}
+.integration-section .intagrations-row {
+  display: flex;
+  flex: none;
+  min-width: 100%;
+  border-top: 1px solid var(--color-stroke-dark);
+  transform: translateX(0); /* MOTION: M2a (_1, -> -100%) / M2b (_2, -> +100%) */
+}
+.integration-section .integration-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 25vw;
+  max-width: 100%;
+  height: max(160px, 11.111vw);
+  background-color: var(--color-block-bg);
+  box-shadow: 0 1px 0 0.5px var(--color-stroke-dark);
+  text-decoration: none;
+}
+.integration-section .integration-logo {
+  display: inline-block; /* Webflow img base */
+  max-width: 100%;
+  height: max(50px, 3.472vw);
+}
+.integration-section .integration-logo.black {
+  position: absolute;
+  opacity: 0;
+}
+/* M14 hover end state (IX2 a-10); mouseout (a-11) returns bg to rgba(2,8,1,0). */
+.integration-section .integration-block:hover {
+  background-color: var(--color-white);
+}
+.integration-section .integration-block:hover .integration-logo.white {
+  opacity: 0;
+}
+.integration-section .integration-block:hover .integration-logo.black {
+  opacity: 1;
+}
+
+@media screen and (max-width: 991px) {
+  .integration-section {
+    padding-bottom: 22vw;
+  }
+  .integration-section .integration-top-wrap {
+    height: 48vw;
+  }
+  .integration-section .integration-top-right-wrap {
+    gap: 6vw;
+    width: 56vw;
+    padding-right: 32px;
+  }
+  .integration-section .integration-text {
+    max-width: none;
+  }
+  .integration-section .integration-label {
+    margin-top: 0;
+  }
+  .integration-section .integration-block {
+    min-width: 30vw;
+    height: 16vw;
+  }
+  .integration-section .integration-logo {
+    height: 40px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .integration-section .integration-top-wrap {
+    flex-direction: column;
+    height: auto;
+  }
+  .integration-section .integration-top-right-wrap {
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    margin-top: 20vw;
+    padding-right: var(--pad);
+    padding-bottom: 8vw;
+  }
+  .integration-section .integration-block {
+    min-width: 48vw;
+    height: 24vw;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .integration-section .integration-top-right-wrap {
+    margin-top: 30vw;
+  }
+  .integration-section .integration-text {
+    opacity: 0.6;
+  }
+  .integration-section .integration-block {
+    min-width: 50vw;
+    height: 26vw;
+  }
+  .integration-section .integration-logo {
+    height: 32px;
+  }
+}

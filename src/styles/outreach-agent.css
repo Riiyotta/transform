@@ -1,1 +1,180 @@
-/* OutreachAgent — section styles (CLONE_SPEC). Owned by the builder assigned to this section. */
+/* =============================================================================
+   OUTREACH AGENT #4 (src/components/OutreachAgent.jsx) — CLONE_SPEC §10e
+   div.split-cards-section, rendered inside section.white-section (white background).
+   All rules scoped to the section root. Class map:
+   .agent-head = h2.h1-text.agent · .agent-num = ._16px-text ("#4")
+   .out-left-bottom = ._16px-text.out-left-bottom · .out-card-title = ._30px-text.white
+   .label-16.blue-card / .label-16.out-card-text-bottom = ._16px-text.white-text.*
+   Stacked deck = pure CSS (sticky top + fixed translateY per card), as in the original.
+   No scroll motion is specified for this section (§18).
+   ============================================================================= */
+.split-cards-section {
+  display: flex;
+  align-items: stretch;
+}
+
+/* Left column: sticky under the 60px nav */
+.split-cards-section .split-cards-left-wrap {
+  position: sticky;
+  top: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  width: 100%;
+  height: calc(100vh - 60px);
+  border-bottom: 1px solid var(--color-stroke-light);
+  box-shadow: 1px 0 0 0 var(--color-stroke-light);
+}
+/* .half-head-text-wrap.out-agent */
+.split-cards-section .half-head-text-wrap {
+  position: relative;
+  inset: 0 auto auto 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  padding: var(--pad) var(--pad) 0;
+  border-top: 1px solid var(--color-stroke-light);
+}
+.split-cards-section .agent-head {
+  max-width: 43vw;
+  color: var(--color-black);
+  font-size: var(--fs-display);
+  line-height: var(--lh-display);
+}
+.split-cards-section .agent-num,
+.split-cards-section .out-left-bottom {
+  color: var(--color-black);
+  font-size: var(--fs-16);
+  line-height: var(--lh-body);
+}
+.split-cards-section .out-left-bottom {
+  max-width: 22ch;
+  margin-bottom: var(--pad);
+  margin-left: var(--pad);
+}
+
+/* Right column: cards */
+.split-cards-section .split-cards-right-wrap {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: calc(100vh - 21vw - 60px);
+  width: 100%;
+  padding-top: calc(14vw + 144px);
+}
+.split-cards-section .out-card {
+  position: sticky;
+  top: calc(204px + 14vw);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  height: calc(100vh - 204px - 14vw);
+  min-height: 21vw;
+  padding: var(--pad);
+  background-color: var(--color-black);
+}
+.split-cards-section .out-card._1 {
+  background-color: var(--color-blue-dark);
+  transform: translate(0, -14vw) translate(0, -144px);
+}
+.split-cards-section .out-card._2 {
+  background-color: var(--color-blue-2);
+  transform: translate(0, -10.5vw) translate(0, -108px);
+}
+.split-cards-section .out-card._3 {
+  background-color: var(--color-blue-3);
+  transform: translate(0, -7vw) translate(0, -72px);
+}
+.split-cards-section .out-card._4 {
+  background-color: var(--color-blue-4);
+  transform: translate(0, -3.5vw) translate(0, -36px);
+}
+.split-cards-section .out-card.space {
+  background-color: transparent;
+  pointer-events: none;
+}
+.split-cards-section .out-card-top-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.split-cards-section .out-card-title {
+  position: relative;
+  color: var(--color-white);
+  font-size: var(--fs-30);
+  line-height: var(--lh-30);
+}
+.split-cards-section .out-card-text-bottom {
+  max-width: 33ch;
+}
+.split-cards-section .out-icon {
+  position: absolute;
+  right: 22px;
+  bottom: 24px;
+  width: 6.944vw;
+}
+
+@media screen and (max-width: 991px) {
+  .split-cards-section .split-cards-left-wrap {
+    top: 59px;
+    height: calc(60vh - 60px);
+  }
+  .split-cards-section .split-cards-right-wrap {
+    gap: 0;
+  }
+  .split-cards-section .out-card {
+    height: calc(60vh - 204px - 14vw);
+  }
+  .split-cards-section .out-card.space {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .split-cards-section {
+    flex-direction: column;
+  }
+  .split-cards-section .split-cards-left-wrap {
+    position: relative;
+    top: 0;
+    height: auto;
+  }
+  .split-cards-section .agent-head {
+    width: 100%;
+    max-width: 10ch;
+  }
+  .split-cards-section .out-left-bottom {
+    margin-top: 16vw;
+  }
+  .split-cards-section .out-card {
+    height: 60vw;
+  }
+  .split-cards-section .out-icon {
+    width: 16vw;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .split-cards-section .out-card {
+    height: 80vw;
+  }
+  .split-cards-section .out-card-top-wrap {
+    gap: 36px;
+  }
+  .split-cards-section .blue-card {
+    margin-top: 4px;
+    opacity: 0.6;
+  }
+  .split-cards-section .out-card-text-bottom {
+    max-width: 22ch;
+    opacity: 0.8;
+  }
+  .split-cards-section .out-icon {
+    right: 20px;
+    bottom: 20px;
+    width: 17vw;
+  }
+}

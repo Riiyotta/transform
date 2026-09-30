@@ -1,1 +1,173 @@
-/* Security — section styles (CLONE_SPEC). Owned by the builder assigned to this section. */
+/* =============================================================================
+   SECURITY (src/components/Security.jsx) — CLONE_SPEC §14
+   section.secure-section#security. All rules scoped to the section root.
+   Class map: .secure-head = h2.h1-text.white-text.secure
+   .label-16.secure-text = ._16px-text.white-text.secure
+   MOTION: M14 — cell hover bg tween (200ms ease-out) is owned by Animation; the
+   :hover END state below is applied instantly (all four cells, incl. the empty one).
+   ============================================================================= */
+.secure-section {
+  display: flex;
+  margin-bottom: 10vw;
+  border-top: 1px solid var(--color-stroke-dark);
+  border-bottom: 1px solid var(--color-stroke-dark);
+}
+
+/* Rail image (.left-side.security) */
+.secure-section .left-side {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: var(--rail);
+  padding: var(--pad);
+  background-color: var(--color-black);
+  background-image: url('/assets/secure.avif');
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Right side (.right-side.security) */
+.secure-section .right-side {
+  width: 100%;
+  padding: 0;
+  border-left-style: none;
+}
+.secure-section .secure-right-top-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: max(515px, 35.764vw);
+  padding: var(--pad);
+}
+.secure-section .secure-head {
+  color: var(--color-white);
+  font-size: var(--fs-display);
+  line-height: var(--lh-display);
+  transform: translate(0);
+}
+.secure-section .secure-head-span {
+  color: var(--color-blue-light);
+}
+.secure-section .secure-text {
+  max-width: 40ch;
+}
+.secure-section .secure-right-bottom-wrap {
+  display: flex;
+  border-top: 1px solid var(--color-stroke-dark);
+}
+.secure-section .security-row-of-2 {
+  display: flex;
+  width: 100%;
+}
+.secure-section .secure-block {
+  position: relative;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  height: max(325px, 22.569vw);
+  border-right: 1px solid var(--color-stroke-dark);
+}
+.secure-section .secure-block.right {
+  border-right-style: none;
+}
+.secure-section .secure-logo {
+  display: inline-block; /* Webflow img base */
+  max-width: 100%;
+  height: max(132px, 9.167vw);
+}
+.secure-section .secure-logo.sm {
+  height: max(90px, 6.25vw);
+}
+.secure-section .secure-logo.black {
+  position: absolute;
+  opacity: 0;
+}
+/* M14 hover end state (IX2 a-12); mouseout (a-13) returns bg to rgba(2,8,1,0). */
+.secure-section .secure-block:hover {
+  background-color: var(--color-white);
+}
+.secure-section .secure-block:hover .secure-logo.white {
+  opacity: 0;
+}
+.secure-section .secure-block:hover .secure-logo.black {
+  opacity: 1;
+}
+
+@media screen and (max-width: 991px) {
+  .secure-section .secure-right-top-wrap {
+    height: 44vw;
+  }
+  .secure-section .secure-right-bottom-wrap {
+    flex-direction: column;
+    gap: 0;
+  }
+  .secure-section .security-row-of-2._1 {
+    flex-flow: row-reverse wrap-reverse;
+    border-bottom: 1px solid var(--color-stroke-dark);
+  }
+  .secure-section .secure-block {
+    height: 20vw;
+  }
+  .secure-section .secure-block._2nd {
+    border-right-style: none;
+  }
+  .secure-section .secure-logo,
+  .secure-section .secure-logo.sm {
+    height: 10vw;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .secure-section {
+    flex-direction: column;
+    margin-bottom: 20vw;
+  }
+  .secure-section .left-side {
+    height: 80vw;
+    background-position: 50%;
+    background-size: cover;
+  }
+  .secure-section .right-side {
+    border-top: 1px solid var(--color-stroke-dark);
+    border-left-width: 0;
+  }
+  .secure-section .secure-right-top-wrap {
+    gap: 20vw;
+    height: auto;
+  }
+  .secure-section .secure-block {
+    height: 40vw;
+  }
+  .secure-section .secure-logo {
+    height: 20vw;
+  }
+  .secure-section .secure-logo.sm {
+    height: 16vw;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .secure-section {
+    border-top-style: none;
+    border-top-width: 0;
+  }
+  .secure-section .left-side {
+    height: 60vw;
+    background-size: 120%;
+  }
+  .secure-section .right-side {
+    border-top-style: none;
+    border-top-width: 0;
+  }
+  .secure-section .secure-right-top-wrap {
+    gap: 25vw;
+    padding-bottom: 8vw;
+  }
+  .secure-section .secure-text {
+    opacity: 0.6;
+  }
+}

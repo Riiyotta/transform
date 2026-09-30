@@ -1,1 +1,160 @@
-/* Specialties — section styles (CLONE_SPEC). Owned by the builder assigned to this section. */
+/* =============================================================================
+   SPECIALTIES (src/components/Specialties.jsx) — CLONE_SPEC §12
+   section.specialty-section#specialties. All rules scoped to the section root.
+   Class map: .specialty-title = ._16px-text.white-text.specialty,
+   .specialty-tab-text = ._30px-text, .specialty-bottom-text = ._16px-text.white-text.specialty-bottom,
+   .is-current / .is-active = Webflow .w--current / .w--tab-active.
+   MOTION: M20 — tab activation on mouseenter/click is an instant swap (no tween).
+   ============================================================================= */
+.specialty-section {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5vw;
+  border-top: 1px solid var(--color-stroke-dark);
+}
+.specialty-section .specialty-top-row,
+.specialty-section .specialty-bottom-row {
+  display: flex;
+}
+
+/* Left rail (.left-side.specialty) */
+.specialty-section .left-side {
+  min-width: var(--rail);
+  padding: var(--pad);
+  padding-bottom: 0;
+}
+.specialty-section .specialty-left-side-wrap {
+  position: sticky;
+  top: 96px;
+  height: 32.153vw;
+}
+.specialty-section .specialty-title {
+  max-width: 12ch;
+  font-size: var(--fs-16-specialty);
+}
+
+/* Right side (.right-side.specialty) */
+.specialty-section .right-side {
+  width: 100%;
+  padding: var(--pad);
+  border-left: 1px solid var(--color-stroke-dark);
+}
+.specialty-section .right-side.specialty {
+  position: relative;
+  padding-right: 0;
+  padding-bottom: 0;
+}
+.specialty-section .specialty-tabs {
+  position: static;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.specialty-section .specialty-tabs-menu {
+  position: relative;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  margin-right: var(--pad);
+}
+/* a.specialty-tab-link.w-inline-block.w-tab-link */
+.specialty-section .specialty-tab-link {
+  position: relative;
+  display: block;
+  max-width: 100%;
+  padding: max(12px, 0.833vw) 0;
+  border-bottom: 1px solid var(--color-stroke-dark);
+  background-color: transparent;
+  color: var(--color-white);
+  text-align: left;
+  vertical-align: top;
+  text-decoration: none;
+  cursor: auto;
+}
+.specialty-section .specialty-tab-link:focus {
+  outline: 0; /* Webflow .w-tab-link:focus */
+}
+.specialty-section .specialty-tab-link.is-current {
+  padding-left: max(20px, 1.389vw);
+  background-color: var(--color-white);
+  color: var(--color-black);
+}
+.specialty-section .specialty-tab-text {
+  font-size: var(--fs-30);
+  line-height: var(--lh-30);
+}
+
+/* Image column (.specialty-tabs-content.w-tab-content) */
+.specialty-section .specialty-tabs-content {
+  position: sticky;
+  top: 96px;
+  display: block;
+  width: 26.736vw;
+  overflow: hidden;
+}
+.specialty-section .specialty-tab-pane {
+  position: relative;
+  display: none;
+}
+.specialty-section .specialty-tab-pane.is-active {
+  display: block;
+}
+.specialty-section .specialty-tab-pane-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 32.153vw;
+}
+.specialty-section .specialty-img {
+  position: absolute;
+  max-width: 101%;
+}
+.specialty-section .bg-noise.specialty-noise {
+  opacity: 0.5;
+}
+
+/* Bottom row (.right-side.specialty-bottom) */
+.specialty-section .right-side.specialty-bottom {
+  margin-left: var(--rail);
+  padding-top: 0;
+  padding-bottom: 11.944vw;
+}
+.specialty-section .specialty-bottom-text {
+  margin-top: 30px;
+  opacity: 0.4;
+}
+
+@media screen and (max-width: 767px) {
+  .specialty-section {
+    margin-top: 20vw;
+  }
+  .specialty-section .specialty-top-row {
+    flex-direction: column;
+  }
+  .specialty-section .specialty-title {
+    line-height: 100%;
+  }
+  .specialty-section .text-span-13 {
+    color: var(--color-green);
+  }
+  .specialty-section .right-side.specialty {
+    border-left-style: none;
+    border-left-width: 0;
+  }
+  .specialty-section .specialty-tab-link.is-current {
+    padding-left: 0;
+    background-color: transparent;
+    color: var(--color-white);
+  }
+  .specialty-section .specialty-tabs-content {
+    display: none;
+  }
+  .specialty-section .right-side.specialty-bottom {
+    margin-left: 0;
+    padding-bottom: 20vw;
+    border-left-style: none;
+  }
+  .specialty-section .specialty-bottom-text {
+    margin-top: 7vw;
+  }
+}

@@ -7,3 +7,4 @@
 | D3 | reCAPTCHA widget in popup | Rendered widget | Empty 304×78 spacer keeps the measured popup height | D1 consequence |
 | D4 | Client Spotlight YouTube | Facade figure has 0 width → empty 728px black area (headless Chromium, 2026-09-30) | Working facade: local thumbnail + play button; youtube-nocookie iframe only after click | User decision 2026-09-30 |
 | D5 | YouTube thumbnail | Hotlinked from i.ytimg.com | Local copy `/assets/yt-thumb.jpg` | Avoid third-party requests (ASSET_MANIFEST decisions) |
+| D6 | EMR marketplace links | `target="_blank"` without rel | Adds `rel="noopener"` | Security hygiene; no visual/behavioural change |
