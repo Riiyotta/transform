@@ -3,7 +3,7 @@ import '../styles/integrations.css'
 import '../styles/motion-interactions.css'
 import { useLayoutEffect, useRef } from 'react'
 import { INTEGRATIONS_ROW_1, INTEGRATIONS_ROW_2 } from '../data/integrations'
-import { bindBlockHover } from './ui/ixMotion'
+import { bindBlockHover, bindHover, clearInline, EASE, gsap, runGroups } from './ui/ixMotion'
 
 // One `.integration-block.bl`: white logo shown, black logo stacked at opacity 0.
 // Linked blocks are real external links (target _blank, as on live).
@@ -13,7 +13,7 @@ import { bindBlockHover } from './ui/ixMotion'
 // White variant (`.integration-block.wh`, /compare): bg #fff, black logo only
 // (`img.integration-logo.black.on-wh`), no logo swap.
 // MOTION: CMP-M3 — white-variant hover: bg #fff -> #a2fa8e (200ms ease-out; out reverses).
-// Its END state is static :hover CSS in integrations.css; Animation owns the tween.
+// Its END state is static :hover CSS in integrations.css; the tween is bound below.
 function IntegrationBlock({ item, white }) {
   const logos = white ? (
     <img src={item.black} loading="lazy" alt="" className="integration-logo black on-wh" />
@@ -67,6 +67,26 @@ export default function Integrations({ variant = 'default', text }) {
     if (!ref.current) return undefined
     return bindBlockHover(ref.current.querySelectorAll('.integration-block.bl'), '.integration-logo.white', '.integration-logo.black')
   }, [])
+  // CMP-M3 (IX2 e-70/e-71 -> a-58/a-59, all breakpoints): `.integration-block.wh` bg
+  // #fff -> #a2fa8e / back to #fff, 200ms IX2 easeOut, no logo swap. White variant only;
+  // the default variant has no `.wh` blocks, so the homepage is unaffected.
+  useLayoutEffect(() => {
+    if (!white || !ref.current) return undefined
+    const v = { duration: 0.2, ease: EASE.easeOut }
+    const unbinds = [...ref.current.querySelectorAll('.integration-block.wh')].map((b) => {
+      gsap.set(b, { backgroundColor: getComputedStyle(b).backgroundColor })
+      const off = bindHover(
+        b,
+        () => runGroups([[[b, { backgroundColor: 'rgba(162, 250, 142, 1)', ...v }]]]),
+        () => runGroups([[[b, { backgroundColor: 'rgba(255, 255, 255, 1)', ...v }]]]),
+      )
+      return () => {
+        off()
+        clearInline([b], ['background-color'])
+      }
+    })
+    return () => unbinds.forEach((u) => u())
+  }, [white])
 
   const rows = (
     <div className={`integration-bottom-wrap${white ? ' wh' : ''}`}>

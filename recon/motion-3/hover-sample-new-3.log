@@ -1,0 +1,43 @@
+M5 stats block 2 [["0",[264,"0"]],[120,[298,"0.8382"]],[300,[576,"1"]],[700,[664,"1"]]]
+M12 hero Call Alex [["0",[221,0]],[120,[95,0]],[300,[0,32]],[700,[0,221]]]
+node:internal/modules/run_main:123
+    triggerUncaughtException(
+    ^
+
+locator.scrollIntoViewIfNeeded: Timeout 29988.153ms exceeded.
+Call log:
+  - attempting scroll into view action
+    2 × waiting for element to be stable
+      - element is not stable
+    - retrying scroll into view action
+    - waiting 20ms
+    2 × waiting for element to be stable
+      - element is not stable
+    - retrying scroll into view action
+      - waiting 100ms
+    52 × waiting for element to be stable
+       - element is not stable
+     - retrying scroll into view action
+       - waiting 500ms
+
+    at sample (/Users/riyaghosh/V3/transform/qa/hover-sample.mjs:10:52)
+    at /Users/riyaghosh/V3/transform/qa/hover-sample.mjs:21:7 {
+  log: [
+    '  - attempting scroll into view action',
+    '    2 × waiting for element to be stable',
+    '      - element is not stable',
+    '    - retrying scroll into view action',
+    '    - waiting 20ms',
+    '    2 × waiting for element to be stable',
+    '      - element is not stable',
+    '    - retrying scroll into view action',
+    '      - waiting 100ms',
+    '    52 × waiting for element to be stable',
+    '       - element is not stable',
+    '     - retrying scroll into view action',
+    '       - waiting 500ms'
+  ],
+  name: 'TimeoutError'
+}
+
+Node.js v20.20.2

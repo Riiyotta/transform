@@ -1,0 +1,723 @@
+{
+ "/compare": {
+  "counts": {
+   "pre": 1,
+   "nav": 1,
+   "px": 1,
+   "ov": 1,
+   "L": 1,
+   "R": 1,
+   "FW": 0,
+   "featured": 0,
+   "list": 0,
+   "header": 0,
+   "body": 0,
+   "lh": 1,
+   "lv": 1
+  },
+  "t0": 3335,
+  "how": "pre 0.1681 | nav-fit median of 30 (Δ 10ms vs single-sample)",
+  "mountToT0": null,
+  "firstFrame": {
+   "pre": 1,
+   "nav": 1,
+   "px": 1,
+   "L": 1,
+   "FW": null,
+   "lh": 1440,
+   "featured": null,
+   "list": null,
+   "header": null,
+   "w1o": null,
+   "w1y": null
+  },
+  "rows": [
+   {
+    "ms": 0,
+    "pre": 1,
+    "nav": 0,
+    "px": 0,
+    "ov": 1,
+    "L": 0,
+    "R": 0,
+    "lh": 0,
+    "lv": 0
+   },
+   {
+    "ms": 100,
+    "pre": 0,
+    "nav": 0.025,
+    "px": 1,
+    "ov": 1,
+    "L": 0,
+    "R": 0,
+    "lh": 0,
+    "lv": 0
+   },
+   {
+    "ms": 300,
+    "pre": 0,
+    "nav": 0.681,
+    "px": 1,
+    "ov": 1,
+    "L": 0,
+    "R": 0,
+    "lh": 0,
+    "lv": 0
+   },
+   {
+    "ms": 600,
+    "pre": 0,
+    "nav": 0.951,
+    "px": 1,
+    "ov": 1,
+    "L": 0.019,
+    "R": 0,
+    "lh": 33.348,
+    "lv": 0
+   },
+   {
+    "ms": 1000,
+    "pre": 0,
+    "nav": 0.998,
+    "px": 1,
+    "ov": 1,
+    "L": 0.904,
+    "R": 0,
+    "lh": 1358.432,
+    "lv": 0
+   },
+   {
+    "ms": 1500,
+    "pre": 0,
+    "nav": 1,
+    "px": 1,
+    "ov": 0.198,
+    "L": 0.998,
+    "R": 0.897,
+    "lh": 1439.634,
+    "lv": 351.251
+   },
+   {
+    "ms": 2500,
+    "pre": 0,
+    "nav": 1,
+    "px": 1,
+    "ov": 0,
+    "L": 1,
+    "R": 1,
+    "lh": 1440,
+    "lv": 374.4
+   }
+  ],
+  "words": 0
+ },
+ "/book-a-demo": {
+  "counts": {
+   "pre": 0,
+   "nav": 1,
+   "px": 1,
+   "ov": 0,
+   "L": 0,
+   "R": 0,
+   "FW": 0,
+   "featured": 0,
+   "list": 0,
+   "header": 0,
+   "body": 0,
+   "lh": 0,
+   "lv": 0
+  },
+  "t0": 3348,
+  "how": "px 0.0975 | nav-fit median of 27 (Δ -3ms vs single-sample)",
+  "mountToT0": null,
+  "firstFrame": {
+   "pre": null,
+   "nav": 1,
+   "px": 1,
+   "L": null,
+   "FW": null,
+   "lh": null,
+   "featured": null,
+   "list": null,
+   "header": null,
+   "w1o": null,
+   "w1y": null
+  },
+  "rows": [
+   {
+    "ms": 0,
+    "nav": 0,
+    "px": 0
+   },
+   {
+    "ms": 100,
+    "nav": 0.023,
+    "px": 0.995
+   },
+   {
+    "ms": 300,
+    "nav": 0.681,
+    "px": 1
+   },
+   {
+    "ms": 600,
+    "nav": 0.95,
+    "px": 1
+   },
+   {
+    "ms": 1000,
+    "nav": 0.998,
+    "px": 1
+   },
+   {
+    "ms": 1500,
+    "nav": 1,
+    "px": 1
+   },
+   {
+    "ms": 2500,
+    "nav": 1,
+    "px": 1
+   }
+  ],
+  "words": 0
+ },
+ "/terms-of-use": {
+  "counts": {
+   "pre": 1,
+   "nav": 1,
+   "px": 1,
+   "ov": 0,
+   "L": 0,
+   "R": 0,
+   "FW": 1,
+   "featured": 0,
+   "list": 0,
+   "header": 0,
+   "body": 0,
+   "lh": 1,
+   "lv": 0
+  },
+  "t0": 3087,
+  "how": "pre 0.6084 | nav-fit median of 21 (Δ 15ms vs single-sample)",
+  "mountToT0": null,
+  "firstFrame": {
+   "pre": 1,
+   "nav": 1,
+   "px": 1,
+   "L": null,
+   "FW": null,
+   "lh": null,
+   "featured": null,
+   "list": null,
+   "header": null,
+   "w1o": null,
+   "w1y": null
+  },
+  "rows": [
+   {
+    "ms": 0,
+    "pre": 1,
+    "nav": 0,
+    "px": 0,
+    "FW": 0,
+    "lh": 0
+   },
+   {
+    "ms": 100,
+    "pre": 0.001,
+    "nav": 0.037,
+    "px": 0.998,
+    "FW": 0,
+    "lh": 0
+   },
+   {
+    "ms": 300,
+    "pre": 0,
+    "nav": 0.665,
+    "px": 1,
+    "FW": 0,
+    "lh": 0
+   },
+   {
+    "ms": 600,
+    "pre": 0,
+    "nav": 0.952,
+    "px": 1,
+    "FW": 0.024,
+    "lh": 41.816
+   },
+   {
+    "ms": 1000,
+    "pre": 0,
+    "nav": 0.998,
+    "px": 1,
+    "FW": 0.9,
+    "lh": 1354.453
+   },
+   {
+    "ms": 1500,
+    "pre": 0,
+    "nav": 1,
+    "px": 1,
+    "FW": 0.999,
+    "lh": 1439.722
+   },
+   {
+    "ms": 2500,
+    "pre": 0,
+    "nav": 1,
+    "px": 1,
+    "FW": 1,
+    "lh": 1440
+   }
+  ],
+  "words": 0
+ },
+ "/blog": {
+  "counts": {
+   "pre": 1,
+   "nav": 1,
+   "px": 1,
+   "ov": 0,
+   "L": 0,
+   "R": 0,
+   "FW": 0,
+   "featured": 1,
+   "list": 1,
+   "header": 0,
+   "body": 0,
+   "lh": 0,
+   "lv": 0
+  },
+  "t0": 3687,
+  "how": "pre 0.3364 | nav-fit median of 20 (Δ 10ms vs single-sample)",
+  "mountToT0": null,
+  "firstFrame": {
+   "pre": 1,
+   "nav": 1,
+   "px": 1,
+   "L": null,
+   "FW": null,
+   "lh": null,
+   "featured": 1,
+   "list": 1,
+   "header": null,
+   "w1o": null,
+   "w1y": null
+  },
+  "rows": [
+   {
+    "ms": 0,
+    "pre": 1,
+    "nav": 0,
+    "px": 0,
+    "featured": 0,
+    "list": 0,
+    "w1o": 0,
+    "w1y": 47.27,
+    "w4o": 0,
+    "w4y": 47.27,
+    "wLo": 0,
+    "wLy": 47.27
+   },
+   {
+    "ms": 100,
+    "pre": 0,
+    "nav": 0.043,
+    "px": 1,
+    "featured": 0.043,
+    "list": 0.043,
+    "w1o": 0.051,
+    "w1y": 44.836,
+    "w4o": 0,
+    "w4y": 47.27,
+    "wLo": 0,
+    "wLy": 47.27
+   },
+   {
+    "ms": 300,
+    "pre": 0,
+    "nav": 0.683,
+    "px": 1,
+    "featured": 0.683,
+    "list": 0.683,
+    "w1o": 0.748,
+    "w1y": 11.891,
+    "w4o": 0,
+    "w4y": 47.27,
+    "wLo": 0,
+    "wLy": 47.27
+   },
+   {
+    "ms": 600,
+    "pre": 0,
+    "nav": 0.951,
+    "px": 1,
+    "featured": 0.951,
+    "list": 0.951,
+    "w1o": 0.976,
+    "w1y": 1.123,
+    "w4o": 0.745,
+    "w4y": 12.052,
+    "wLo": 0,
+    "wLy": 47.27
+   },
+   {
+    "ms": 1000,
+    "pre": 0,
+    "nav": 0.998,
+    "px": 1,
+    "featured": 0.998,
+    "list": 0.998,
+    "w1o": 1,
+    "w1y": 0.017,
+    "w4o": 0.987,
+    "w4y": 0.605,
+    "wLo": 0.678,
+    "wLy": 15.235
+   },
+   {
+    "ms": 1500,
+    "pre": 0,
+    "nav": 1,
+    "px": 1,
+    "featured": 1,
+    "list": 1,
+    "w1o": 1,
+    "w1y": 0,
+    "w4o": 1,
+    "w4y": 0,
+    "wLo": 0.997,
+    "wLy": 0.133
+   },
+   {
+    "ms": 2500,
+    "pre": 0,
+    "nav": 1,
+    "px": 1,
+    "featured": 1,
+    "list": 1,
+    "w1o": 1,
+    "w1y": 0,
+    "w4o": 1,
+    "w4y": 0,
+    "wLo": 1,
+    "wLy": 0
+   }
+  ],
+  "words": 8
+ },
+ "/case-studies": {
+  "counts": {
+   "pre": 1,
+   "nav": 1,
+   "px": 1,
+   "ov": 0,
+   "L": 0,
+   "R": 0,
+   "FW": 0,
+   "featured": 0,
+   "list": 1,
+   "header": 0,
+   "body": 0,
+   "lh": 0,
+   "lv": 0
+  },
+  "t0": 6010,
+  "how": "pre 0.3025 | nav-fit median of 20 (Δ 19ms vs single-sample)",
+  "mountToT0": null,
+  "firstFrame": {
+   "pre": 1,
+   "nav": 1,
+   "px": 1,
+   "L": null,
+   "FW": null,
+   "lh": null,
+   "featured": null,
+   "list": 1,
+   "header": null,
+   "w1o": null,
+   "w1y": null
+  },
+  "rows": [
+   {
+    "ms": 0,
+    "pre": 1,
+    "nav": 0,
+    "px": 0,
+    "list": 0,
+    "w1o": 0,
+    "w1y": 47.27,
+    "w4o": 0,
+    "w4y": 47.27,
+    "wLo": 0,
+    "wLy": 47.27
+   },
+   {
+    "ms": 100,
+    "pre": 0.006,
+    "nav": 0.007,
+    "px": 0.991,
+    "list": 0.007,
+    "w1o": 0.008,
+    "w1y": 46.873,
+    "w4o": 0,
+    "w4y": 47.27,
+    "wLo": 0,
+    "wLy": 47.27
+   },
+   {
+    "ms": 300,
+    "pre": 0,
+    "nav": 0.679,
+    "px": 1,
+    "list": 0.679,
+    "w1o": 0.745,
+    "w1y": 12.059,
+    "w4o": 0,
+    "w4y": 47.27,
+    "wLo": 0,
+    "wLy": 47.27
+   },
+   {
+    "ms": 600,
+    "pre": 0,
+    "nav": 0.948,
+    "px": 1,
+    "list": 0.948,
+    "w1o": 0.975,
+    "w1y": 1.205,
+    "w4o": 0.732,
+    "w4y": 12.676,
+    "wLo": 0.029,
+    "wLy": 45.92
+   },
+   {
+    "ms": 1000,
+    "pre": 0,
+    "nav": 0.998,
+    "px": 1,
+    "list": 0.998,
+    "w1o": 1,
+    "w1y": 0.01,
+    "w4o": 0.991,
+    "w4y": 0.419,
+    "wLo": 0.943,
+    "wLy": 2.686
+   },
+   {
+    "ms": 1500,
+    "pre": 0,
+    "nav": 1,
+    "px": 1,
+    "list": 1,
+    "w1o": 1,
+    "w1y": 0,
+    "w4o": 1,
+    "w4y": 0,
+    "wLo": 1,
+    "wLy": 0.01
+   },
+   {
+    "ms": 2500,
+    "pre": 0,
+    "nav": 1,
+    "px": 1,
+    "list": 1,
+    "w1o": 1,
+    "w1y": 0,
+    "w4o": 1,
+    "w4y": 0,
+    "wLo": 1,
+    "wLy": 0
+   }
+  ],
+  "words": 6
+ },
+ "/blog/ai-voice-agents-for-athenahealth-7-questions-to-ask-before-choosing-a-platform": {
+  "counts": {
+   "pre": 1,
+   "nav": 1,
+   "px": 0,
+   "ov": 1,
+   "L": 0,
+   "R": 0,
+   "FW": 0,
+   "featured": 0,
+   "list": 0,
+   "header": 1,
+   "body": 1,
+   "lh": 0,
+   "lv": 0
+  },
+  "t0": 3959,
+  "how": "pre 0.4624 | nav-fit median of 23 (Δ 16ms vs single-sample)",
+  "mountToT0": null,
+  "firstFrame": {
+   "pre": 1,
+   "nav": 1,
+   "px": null,
+   "L": null,
+   "FW": null,
+   "lh": null,
+   "featured": null,
+   "list": null,
+   "header": 1,
+   "w1o": null,
+   "w1y": null
+  },
+  "rows": [
+   {
+    "ms": 0,
+    "pre": 1,
+    "nav": 0,
+    "ov": 1,
+    "header": 0,
+    "body": 0
+   },
+   {
+    "ms": 100,
+    "pre": 0.001,
+    "nav": 0.043,
+    "ov": 1,
+    "header": 0.043,
+    "body": 0.043
+   },
+   {
+    "ms": 300,
+    "pre": 0,
+    "nav": 0.682,
+    "ov": 1,
+    "header": 0.682,
+    "body": 0.682
+   },
+   {
+    "ms": 600,
+    "pre": 0,
+    "nav": 0.951,
+    "ov": 0.983,
+    "header": 0.951,
+    "body": 0.951
+   },
+   {
+    "ms": 1000,
+    "pre": 0,
+    "nav": 0.998,
+    "ov": 0.184,
+    "header": 0.998,
+    "body": 0.998
+   },
+   {
+    "ms": 1500,
+    "pre": 0,
+    "nav": 1,
+    "ov": 0,
+    "header": 1,
+    "body": 1
+   },
+   {
+    "ms": 2500,
+    "pre": 0,
+    "nav": 1,
+    "ov": 0,
+    "header": 1,
+    "body": 1
+   }
+  ],
+  "words": 0
+ },
+ "/case-studies/southern-bone-joint": {
+  "counts": {
+   "pre": 1,
+   "nav": 1,
+   "px": 0,
+   "ov": 1,
+   "L": 0,
+   "R": 0,
+   "FW": 0,
+   "featured": 0,
+   "list": 0,
+   "header": 1,
+   "body": 1,
+   "lh": 0,
+   "lv": 0
+  },
+  "t0": 4871,
+  "how": "pre 0.3481 | nav-fit median of 20 (Δ 17ms vs single-sample)",
+  "mountToT0": null,
+  "firstFrame": {
+   "pre": 1,
+   "nav": 1,
+   "px": null,
+   "L": null,
+   "FW": null,
+   "lh": null,
+   "featured": null,
+   "list": null,
+   "header": 1,
+   "w1o": null,
+   "w1y": null
+  },
+  "rows": [
+   {
+    "ms": 0,
+    "pre": 1,
+    "nav": 0,
+    "ov": 1,
+    "header": 0,
+    "body": 0
+   },
+   {
+    "ms": 100,
+    "pre": 0,
+    "nav": 0.041,
+    "ov": 1,
+    "header": 0.041,
+    "body": 0.041
+   },
+   {
+    "ms": 300,
+    "pre": 0,
+    "nav": 0.679,
+    "ov": 1,
+    "header": 0.679,
+    "body": 0.679
+   },
+   {
+    "ms": 600,
+    "pre": 0,
+    "nav": 0.95,
+    "ov": 0.991,
+    "header": 0.95,
+    "body": 0.95
+   },
+   {
+    "ms": 1000,
+    "pre": 0,
+    "nav": 0.998,
+    "ov": 0.187,
+    "header": 0.998,
+    "body": 0.998
+   },
+   {
+    "ms": 1500,
+    "pre": 0,
+    "nav": 1,
+    "ov": 0,
+    "header": 1,
+    "body": 1
+   },
+   {
+    "ms": 2500,
+    "pre": 0,
+    "nav": 1,
+    "ov": 0,
+    "header": 1,
+    "body": 1
+   }
+  ],
+  "words": 0
+ }
+}

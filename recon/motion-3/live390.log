@@ -1,0 +1,7 @@
+/compare 390 pre 0.1521 | nav-fit median of 29 (Δ 10ms vs single-sample) 3314
+/book-a-demo 390 px 0.0736 | nav-fit median of 29 (Δ 13ms vs single-sample) 2688
+/terms-of-use 390 pre 0.5476 | nav-fit median of 30 (Δ 10ms vs single-sample) 3432
+/blog 390 pre 0.2809 | nav-fit median of 29 (Δ 13ms vs single-sample) 3488
+/case-studies 390 pre 0.3481 | nav-fit median of 28 (Δ 11ms vs single-sample) 3210
+/blog/ai-voice-agents-for-athenahealth-7-questions-to-ask-before-choosing-a-platform 390 pre 0.36 | nav-fit median of 29 (Δ 11ms vs single-sample) 4035
+/case-studies/southern-bone-joint 390 pre 0.3249 | nav-fit median of 30 (Δ 9ms vs single-sample) 5373

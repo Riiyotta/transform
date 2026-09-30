@@ -1,0 +1,99 @@
+{
+ "CMP-M4 1440": {
+  "before": [
+   "rgb(255, 255, 255) block",
+   "rgba(0, 0, 0, 0) none",
+   "rgba(0, 0, 0, 0) none",
+   "rgba(0, 0, 0, 0) none"
+  ],
+  "afterClickImmediate": [
+   "rgba(0, 0, 0, 0) none",
+   "rgba(0, 0, 0, 0) none",
+   "rgb(255, 255, 255) block",
+   "rgba(0, 0, 0, 0) none"
+  ],
+  "after300": [
+   "rgba(0, 0, 0, 0) none",
+   "rgba(0, 0, 0, 0) none",
+   "rgb(255, 255, 255) block",
+   "rgba(0, 0, 0, 0) none"
+  ]
+ },
+ "CMP-M4 390": {
+  "before": [
+   "rgb(255, 255, 255) block",
+   "rgba(0, 0, 0, 0) none",
+   "rgba(0, 0, 0, 0) none",
+   "rgba(0, 0, 0, 0) none"
+  ],
+  "afterClickImmediate": [
+   "rgba(0, 0, 0, 0) none",
+   "rgba(0, 0, 0, 0) none",
+   "rgb(255, 255, 255) block",
+   "rgba(0, 0, 0, 0) none"
+  ],
+  "after300": [
+   "rgba(0, 0, 0, 0) none",
+   "rgba(0, 0, 0, 0) none",
+   "rgb(255, 255, 255) block",
+   "rgba(0, 0, 0, 0) none"
+  ]
+ },
+ "CMP-M5 390": {
+  "cls": "table-row head",
+  "pos": "sticky",
+  "top": "60px",
+  "rectTop": 60,
+  "transition": "0s"
+ },
+ "BAD-M2 1440": {
+  "before": "rgb(204, 204, 204) 0s",
+  "focusImmediate": "rgb(56, 152, 236) 0s",
+  "focus300": "rgb(56, 152, 236) 0s"
+ },
+ "BAD-M2 390": {
+  "before": "rgb(204, 204, 204) 0s",
+  "focusImmediate": "rgb(56, 152, 236) 0s",
+  "focus300": "rgb(56, 152, 236) 0s"
+ },
+ "M3b /compare 1440": {
+  "top": 1,
+  "scrolled30vh": 0,
+  "backToTop": 1
+ },
+ "M3b /compare 390": {
+  "top": 1,
+  "scrolled30vh": 0,
+  "backToTop": 1
+ },
+ "M3b /book-a-demo 1440": {
+  "top": 1,
+  "scrolled30vh": 0,
+  "backToTop": 1
+ },
+ "M3b /book-a-demo 390": {
+  "top": 1,
+  "scrolled30vh": 0,
+  "backToTop": 1
+ },
+ "M3b /terms-of-use 1440": {
+  "top": 1,
+  "scrolled30vh": 0,
+  "backToTop": 1
+ },
+ "M3b /terms-of-use 390": {
+  "top": 1,
+  "scrolled30vh": 0,
+  "backToTop": 1
+ },
+ "M3b /blog 1440": {
+  "top": 1,
+  "scrolled30vh": 0,
+  "backToTop": 1
+ },
+ "M3b /blog 390": {
+  "top": 1,
+  "scrolled30vh": 0,
+  "backToTop": 1
+ }
+}

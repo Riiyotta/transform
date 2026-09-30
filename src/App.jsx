@@ -6,6 +6,7 @@ import Preloader from './components/Preloader'
 import { FooterBottom, FooterTop } from './components/Footer'
 import { SiteProvider } from './components/ui/SiteContext'
 import { useSmoothScroll } from './motion/smoothScroll'
+import { usePageIntro } from './motion/pageIntro'
 import { resolveRoute } from './routes'
 
 const route = resolveRoute(window.location.pathname)
@@ -17,6 +18,8 @@ const route = resolveRoute(window.location.pathname)
 export default function App() {
   // M22: Lenis smooth scroll + ScrollTrigger sync/refresh (src/motion/smoothScroll.js).
   useSmoothScroll()
+  // CMP-M1 / BAD-M1 / LGL-M1 / BLOG-M1..M4: page-load intro, started on mount (D11). No-op on home.
+  usePageIntro(route.family)
   useLayoutEffect(() => {
     document.title = typeof route.title === 'function' ? route.title(route.params) : route.title
     document.documentElement.dataset.page = route.family
