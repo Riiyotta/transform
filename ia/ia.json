@@ -1,11 +1,13 @@
 {
-  "$comment": "DRAFT 2026-09-30. Transcribed from CLONE_SPEC.md §1.6 (live measurement). implementedBy is added only after the build lands and is verified. Order = DOM order on the live homepage.",
+  "$comment": "Validated 2026-09-30 against the implemented clone at git c223e50 (source frozen for extraction; see CODE_HEALTH.md Schedule). Order = DOM order on the live homepage (CLONE_SPEC §1.6). implementedBy points at the rendering component; section roots carry data-section ids listed in SELECTORS*.md. The ?popup=open|success|error query hook is a QA-only affordance, not a route or product state.",
   "meta": {
     "source": "https://www.transform9.com/ (homepage only, per PROJECT_SCOPE.md)",
-    "status": "draft",
-    "productionApproved": false,
+    "status": "validated",
+    "productionApproved": true,
     "totalRoutes": 1,
-    "totalTemplates": 1
+    "totalTemplates": 1,
+    "sourceRevision": "c223e50",
+    "evidence": "CLONE_SPEC.md (live measurement 2026-09-30); QA_REPORT.md"
   },
   "categories": {
     "SHELL": "Page chrome and page-level layers: fixed navigation, mobile menu, background layers, modal, footer.",
@@ -17,43 +19,171 @@
     "CONVERSION": "Closing call-to-action block."
   },
   "sections": {
-    "shell.navbar": {"category": "SHELL", "description": "Fixed 60px top bar with blurred translucent dark background: logo, anchor links, Login, green Book a Demo button; switches to a light treatment over the white section.", "scope": "Present on the 1 in-scope route."},
-    "shell.mobile-menu": {"category": "SHELL", "description": "Full-screen overlay menu opened from the burger at ≤991px with large anchor links, Login and CTA.", "scope": "Present on the 1 in-scope route, visible at tablet/mobile widths only."},
-    "shell.page-layers": {"category": "SHELL", "description": "Fixed hero background video (tablet render) with pixel-still fallback and the tiled noise overlay behind page content.", "scope": "Present on the 1 in-scope route."},
-    "shell.call-alex-modal": {"category": "SHELL", "description": "Hidden fixed popup (\"Call Alex\") with name/email/phone form, validation and success/error states; opened from hero CTA.", "scope": "Present on the 1 in-scope route."},
-    "shell.footer": {"category": "SHELL", "description": "Footer top: rail with logo/description, link columns, email signup form, social links.", "scope": "Present on the 1 in-scope route."},
-    "shell.footer-bottom-reveal": {"category": "SHELL", "description": "Sticky bottom bar revealed beneath the page: oversized wordmark and legal row (HIPAA, Terms, Privacy).", "scope": "Present on the 1 in-scope route."},
-    "hero.home": {"category": "HERO", "description": "Full-viewport dark hero: 6.5vw headline, supporting paragraph, bottom CTA blocks (blurred left block and green right block) over the fixed video.", "scope": "Present on the 1 in-scope route."},
-    "proof.client-logos": {"category": "PROOF", "description": "Continuously scrolling marquee of client practice logos between hairlines.", "scope": "Present on the 1 in-scope route."},
-    "proof.client-spotlight": {"category": "PROOF", "description": "Case study spotlight (Andrews Sports Medicine) with headline and YouTube video facade.", "scope": "Present on the 1 in-scope route."},
-    "proof.stats": {"category": "PROOF", "description": "Four metric blocks in blue tints that expand on hover to reveal an image; left rail heading.", "scope": "Present on the 1 in-scope route."},
-    "proof.testimonials": {"category": "PROOF", "description": "Testimonial slider: photo block, quote, author with green title badge, practice logo, numbered prev/next controls.", "scope": "Present on the 1 in-scope route."},
-    "product.how-it-works": {"category": "PRODUCT", "description": "Scroll-driven 'How it works' sequence where large words highlight step by step.", "scope": "Present on the 1 in-scope route."},
-    "transition.black-to-white": {"category": "TRANSITION", "description": "Pixel-grid transition from the dark page into the white section.", "scope": "Present on the 1 in-scope route."},
-    "product.scheduling-agent": {"category": "PRODUCT", "description": "Agent #1 Scheduling: stacking cards that tint as they stack on scroll.", "scope": "Present on the 1 in-scope route."},
-    "product.tasking-agent": {"category": "PRODUCT", "description": "Agent #2 Tasking: 200vh half-split with auto-rotating tabs with progress bar and image panes.", "scope": "Present on the 1 in-scope route."},
-    "product.navigator-agent": {"category": "PRODUCT", "description": "Agent #3 Navigator: row tabs with hover-revealed image pane.", "scope": "Present on the 1 in-scope route."},
-    "product.outreach-agent": {"category": "PRODUCT", "description": "Agent #4 Outreach: split cards in four blue tints.", "scope": "Present on the 1 in-scope route."},
-    "transition.white-to-black": {"category": "TRANSITION", "description": "Pixel-grid transition from the white section back to the dark page.", "scope": "Present on the 1 in-scope route."},
-    "fit.specialties": {"category": "FIT", "description": "List of 14 medical specialties with hover-revealed specialty images.", "scope": "Present on the 1 in-scope route."},
-    "fit.integrations": {"category": "FIT", "description": "EMR integration logos in two opposing marquee rows with hover swap.", "scope": "Present on the 1 in-scope route."},
-    "fit.security": {"category": "FIT", "description": "Security/compliance section with image rail and certification items.", "scope": "Present on the 1 in-scope route."},
-    "conversion.cta": {"category": "CONVERSION", "description": "Closing CTA over background image with headline and demo actions.", "scope": "Present on the 1 in-scope route."}
+    "shell.navbar": {
+      "category": "SHELL",
+      "description": "Fixed 60px top bar with blurred translucent dark background: logo, Compare/Blog/Case Studies/Careers links, Login, green Book a Demo button; tweens to a white treatment while the white section is under it.",
+      "scope": "Present on the 1 in-scope route.",
+      "implementedBy": "src/components/Navbar.jsx"
+    },
+    "shell.mobile-menu": {
+      "category": "SHELL",
+      "description": "Full-screen overlay menu opened from the burger at ≤991px: large nav links, Login and Book a Demo bar; stops smooth scroll while open.",
+      "scope": "Present on the 1 in-scope route, visible at tablet/mobile widths only.",
+      "implementedBy": "src/components/Navbar.jsx (mobile menu)"
+    },
+    "shell.page-layers": {
+      "category": "SHELL",
+      "description": "Fixed hero background video (tablet render, still-image fallback under reduced motion) that fades out after the hero, plus the tiled noise overlay.",
+      "scope": "Present on the 1 in-scope route.",
+      "implementedBy": "src/components/PageLayers.jsx"
+    },
+    "shell.call-alex-modal": {
+      "category": "SHELL",
+      "description": "Hidden fixed 'Call Alex' popup with name/email/phone form, client-side validation and success/error states (no network); opened from the hero and CTA 'Call Alex' links.",
+      "scope": "Present on the 1 in-scope route.",
+      "implementedBy": "src/components/CallAlexModal.jsx"
+    },
+    "shell.footer": {
+      "category": "SHELL",
+      "description": "Footer top: rail with company description, Navigate/Legal/Social link columns and an email signup form (static, no network).",
+      "scope": "Present on the 1 in-scope route.",
+      "implementedBy": "src/components/Footer.jsx > FooterTop"
+    },
+    "shell.footer-bottom-reveal": {
+      "category": "SHELL",
+      "description": "Sticky bottom bar revealed beneath the page as it scrolls away: oversized wordmark and legal row.",
+      "scope": "Present on the 1 in-scope route.",
+      "implementedBy": "src/components/Footer.jsx > FooterBottom"
+    },
+    "hero.home": {
+      "category": "HERO",
+      "description": "Full-viewport dark hero over the fixed video: 6.5vw headline 'Maximize Every Call with a Custom AI Agent' and a bottom row with 'Who We Are' statement and 'Test Our AI Agent' phone input plus 'Call Alex' link.",
+      "scope": "Present on the 1 in-scope route.",
+      "implementedBy": "src/components/Hero.jsx"
+    },
+    "proof.client-logos": {
+      "category": "PROOF",
+      "description": "Continuously scrolling marquee of client practice logos between hairlines.",
+      "scope": "Present on the 1 in-scope route.",
+      "implementedBy": "src/components/ClientLogos.jsx"
+    },
+    "proof.client-spotlight": {
+      "category": "PROOF",
+      "description": "Case-study spotlight heading ('Client Spotlight – Andrews Sports Medicine') with a click-to-load YouTube facade.",
+      "scope": "Present on the 1 in-scope route.",
+      "implementedBy": "src/components/ClientSpotlight.jsx"
+    },
+    "proof.stats": {
+      "category": "PROOF",
+      "description": "Four metric blocks in blue tints: hover expands a block and reveals its image on desktop; click accordion at ≤991.",
+      "scope": "Present on the 1 in-scope route.",
+      "implementedBy": "src/components/Stats.jsx"
+    },
+    "proof.testimonials": {
+      "category": "PROOF",
+      "description": "Testimonial slider: photo block, quote, author with green title badge, practice logo, numbered prev/next arrows with cross-fade.",
+      "scope": "Present on the 1 in-scope route.",
+      "implementedBy": "src/components/Testimonials.jsx"
+    },
+    "product.how-it-works": {
+      "category": "PRODUCT",
+      "description": "Scroll-stepped 'How it works' sequence where three large phrases highlight one at a time.",
+      "scope": "Present on the 1 in-scope route.",
+      "implementedBy": "src/components/HowItWorks.jsx"
+    },
+    "transition.black-to-white": {
+      "category": "TRANSITION",
+      "description": "Scroll-scrubbed pixel-grid transition from the dark page into the white section.",
+      "scope": "Present on the 1 in-scope route.",
+      "implementedBy": "src/components/TransitionPixels.jsx (variant black-to-white)"
+    },
+    "product.scheduling-agent": {
+      "category": "PRODUCT",
+      "description": "Agent #1 Scheduling: sticky card deck where earlier cards scale down, lift and tint as later cards scroll in.",
+      "scope": "Present on the 1 in-scope route.",
+      "implementedBy": "src/components/SchedulingAgent.jsx"
+    },
+    "product.tasking-agent": {
+      "category": "PRODUCT",
+      "description": "Agent #2 Tasking: 200vh half-split with auto-rotating vertical tabs (4s progress bar) and fading image panes; click tabs at ≤991.",
+      "scope": "Present on the 1 in-scope route.",
+      "implementedBy": "src/components/TaskingAgent.jsx"
+    },
+    "product.navigator-agent": {
+      "category": "PRODUCT",
+      "description": "Agent #3 Navigator: four row tabs activated on hover, with the matching image in the left rail.",
+      "scope": "Present on the 1 in-scope route.",
+      "implementedBy": "src/components/NavigatorAgent.jsx"
+    },
+    "product.outreach-agent": {
+      "category": "PRODUCT",
+      "description": "Agent #4 Outreach: sticky left title panel with five sticky stacking cards in blue tints on the right.",
+      "scope": "Present on the 1 in-scope route.",
+      "implementedBy": "src/components/OutreachAgent.jsx"
+    },
+    "transition.white-to-black": {
+      "category": "TRANSITION",
+      "description": "Scroll-scrubbed pixel-grid transition from the white section back to the dark page.",
+      "scope": "Present on the 1 in-scope route.",
+      "implementedBy": "src/components/TransitionPixels.jsx (variant white-to-black)"
+    },
+    "fit.specialties": {
+      "category": "FIT",
+      "description": "'Designed for Your Specialty': 13 hover-activated specialty tabs with a matching image pane, plus 'And other specialties'.",
+      "scope": "Present on the 1 in-scope route.",
+      "implementedBy": "src/components/Specialties.jsx"
+    },
+    "fit.integrations": {
+      "category": "FIT",
+      "description": "'Built to Connect': EMR/partner logos in two opposing marquee rows with hover background and logo swap; marketplace links open externally.",
+      "scope": "Present on the 1 in-scope route.",
+      "implementedBy": "src/components/Integrations.jsx"
+    },
+    "fit.security": {
+      "category": "FIT",
+      "description": "'Secure. Compliant. Trusted.': image rail and a 2×2 grid of certification cells with hover background and logo swap.",
+      "scope": "Present on the 1 in-scope route.",
+      "implementedBy": "src/components/Security.jsx"
+    },
+    "conversion.cta": {
+      "category": "CONVERSION",
+      "description": "Closing CTA over a background image revealed by a scroll-scrubbed pixel grid: agent list, 'Quick Start / Live in 60 Days', large headline, phone input with 'Call Alex' and 'Book a Demo'.",
+      "scope": "Present on the 1 in-scope route.",
+      "implementedBy": "src/components/Cta.jsx"
+    }
   },
   "templates": [
     {
       "id": "template.home",
       "name": "Homepage",
       "routeCount": 1,
-      "routes": ["/"],
+      "routes": [
+        "/"
+      ],
       "chrome": "full",
       "sections": [
-        "shell.page-layers", "shell.navbar", "shell.mobile-menu",
-        "hero.home", "proof.client-logos", "proof.client-spotlight", "proof.stats", "proof.testimonials",
-        "product.how-it-works", "transition.black-to-white", "product.scheduling-agent", "product.tasking-agent",
-        "product.navigator-agent", "product.outreach-agent", "transition.white-to-black",
-        "fit.specialties", "fit.integrations", "fit.security", "conversion.cta",
-        "shell.footer", "shell.footer-bottom-reveal", "shell.call-alex-modal"
+        "shell.page-layers",
+        "shell.navbar",
+        "shell.mobile-menu",
+        "hero.home",
+        "proof.client-logos",
+        "proof.client-spotlight",
+        "proof.stats",
+        "proof.testimonials",
+        "product.how-it-works",
+        "transition.black-to-white",
+        "product.scheduling-agent",
+        "product.tasking-agent",
+        "product.navigator-agent",
+        "product.outreach-agent",
+        "transition.white-to-black",
+        "fit.specialties",
+        "fit.integrations",
+        "fit.security",
+        "conversion.cta",
+        "shell.footer",
+        "shell.footer-bottom-reveal",
+        "shell.call-alex-modal"
       ]
     }
   ]
