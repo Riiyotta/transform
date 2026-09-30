@@ -1,0 +1,278 @@
+{
+ "url": "https://www.transform9.com/",
+ "fresh": {
+  "390": {
+   "cards": [
+    "translate(0px, 0vw)",
+    "translate3d(0px, 0px, 0px)",
+    "translate3d(0px, 0px, 0px)"
+   ],
+   "scrollY": 0,
+   "n": 11,
+   "docH": 17777,
+   "sts": [
+    [
+     "hero home",
+     0,
+     84
+    ],
+    [
+     "hiw-trigger _1",
+     4025,
+     4025
+    ],
+    [
+     "hiw-trigger _2",
+     4186,
+     4186
+    ],
+    [
+     "transition-cont black-to-white",
+     4281,
+     5294
+    ],
+    [
+     "hiw-trigger space",
+     4932,
+     4932
+    ],
+    [
+     "white-section",
+     5065,
+     12195
+    ],
+    [
+     "scheduling-card _2",
+     5736,
+     5782
+    ],
+    [
+     "scheduling-card _3",
+     6243,
+     6289
+    ],
+    [
+     "scheduling-card _4",
+     6750,
+     6796
+    ],
+    [
+     "transition-cont white-to-black",
+     11411,
+     12424
+    ],
+    [
+     "transition-cont black-to-img",
+     14393,
+     15405
+    ]
+   ]
+  },
+  "1440": {
+   "cards": [
+    "translate(0px, 0vw)",
+    "translate3d(0px, 0px, 0px)",
+    "translate3d(0px, 0px, 0px)"
+   ],
+   "scrollY": 0,
+   "n": 11,
+   "docH": 25922,
+   "sts": [
+    [
+     "hero home",
+     0,
+     90
+    ],
+    [
+     "hiw-trigger _1",
+     4445,
+     4445
+    ],
+    [
+     "hiw-trigger _2",
+     4913,
+     4913
+    ],
+    [
+     "transition-cont black-to-white",
+     5617,
+     6697
+    ],
+    [
+     "hiw-trigger space",
+     6299,
+     6299
+    ],
+    [
+     "white-section",
+     6457,
+     19723
+    ],
+    [
+     "scheduling-card _2",
+     7679,
+     7736
+    ],
+    [
+     "scheduling-card _3",
+     8474,
+     8531
+    ],
+    [
+     "scheduling-card _4",
+     9269,
+     9326
+    ],
+    [
+     "transition-cont white-to-black",
+     18883,
+     19963
+    ],
+    [
+     "transition-cont black-to-img",
+     22400,
+     23480
+    ]
+   ]
+  }
+ },
+ "at390": {
+  "cards": [
+   "translate3d(0px, -5.4vw, 0px) scale(0.91, 0.91)",
+   "translate3d(0px, -3.6vw, 0px) scale(0.94, 0.94)",
+   "translate3d(0px, -1.8vw, 0px) scale(0.97, 0.97)"
+  ],
+  "scrollY": 8000,
+  "n": 11,
+  "docH": 17658,
+  "sts": [
+   [
+    "hero home",
+    0,
+    84
+   ],
+   [
+    "hiw-trigger _1",
+    3827,
+    3827
+   ],
+   [
+    "hiw-trigger _2",
+    3989,
+    3989
+   ],
+   [
+    "transition-cont black-to-white",
+    4083,
+    5096
+   ],
+   [
+    "hiw-trigger space",
+    4734,
+    4734
+   ],
+   [
+    "white-section",
+    4867,
+    12076
+   ],
+   [
+    "scheduling-card _2",
+    5586,
+    5662
+   ],
+   [
+    "scheduling-card _3",
+    6123,
+    6222
+   ],
+   [
+    "scheduling-card _4",
+    6683,
+    6760
+   ],
+   [
+    "transition-cont white-to-black",
+    11292,
+    12305
+   ],
+   [
+    "transition-cont black-to-img",
+    14273,
+    15286
+   ]
+  ]
+ },
+ "back1440": {
+  "cards": [
+   "translate3d(0px, -1.8vw, 0px) scale(0.97, 0.97)",
+   "translate3d(0px, 0px, 0px)",
+   "translate3d(0px, 0px, 0px)"
+  ],
+  "scrollY": 8000,
+  "n": 11,
+  "docH": 25922,
+  "sts": [
+   [
+    "hero home",
+    0,
+    90
+   ],
+   [
+    "hiw-trigger _1",
+    4445,
+    4445
+   ],
+   [
+    "hiw-trigger _2",
+    4913,
+    4913
+   ],
+   [
+    "transition-cont black-to-white",
+    5617,
+    6697
+   ],
+   [
+    "hiw-trigger space",
+    6299,
+    6299
+   ],
+   [
+    "white-section",
+    6457,
+    19723
+   ],
+   [
+    "scheduling-card _2",
+    7679,
+    7736
+   ],
+   [
+    "scheduling-card _3",
+    8474,
+    8531
+   ],
+   [
+    "scheduling-card _4",
+    9269,
+    9326
+   ],
+   [
+    "transition-cont white-to-black",
+    18883,
+    19963
+   ],
+   [
+    "transition-cont black-to-img",
+    22400,
+    23480
+   ]
+  ]
+ },
+ "match390": false,
+ "match1440": true,
+ "errors": [
+  "requestStorageAccess: Permission denied."
+ ]
+}

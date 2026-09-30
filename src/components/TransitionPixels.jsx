@@ -1,4 +1,7 @@
+import { useRef } from 'react'
 import '../styles/transition-pixels.css'
+import { createPixelTransition } from '../motion/pixelTransition'
+import { useGsapContext } from '../motion/useGsapContext'
 import Noise from './ui/Noise'
 
 // Pixel-grid transition — CLONE_SPEC §10a (black-to-white) and §11 (white-to-black).
@@ -13,11 +16,11 @@ import Noise from './ui/Noise'
 //
 // Static render = the SETTLED end state (every pixel opacity 1), so the page reads
 // correctly without motion.
-// MOTION: M8a (black-to-white) / M8b (white-to-black) — Animation sets every `.pixel`
-//   to opacity 0, then scrubs 0 -> 1 flips over the container's scroll range
-//   ("top bottom" -> "top -20%"): row `_1` at timeline 0, `_2` .2, `_3` .4, `_4` .6,
-//   `_5` .8; inside each row (both layers together, selector `.grid-row._N .pixel`)
-//   stagger {amount: 1, from: 'random', axis: 'x'}.
+// MOTION: M8a (black-to-white) / M8b (white-to-black) — src/motion/pixelTransition.js:
+//   every `.pixel` is set to opacity 0 on mount, then scrubbed 0 -> 1 (instant flips) over
+//   the container's scroll range ("clamp(top bottom)" -> "clamp(top -20%)", scrub 0):
+//   row `_1` at timeline 0, `_2` .2, `_3` .4, `_4` .6, `_5` .8; inside each row (both
+//   layers together) stagger {amount 1, from 'random', grid 'auto', axis 'x'}.
 // Hooks: `[data-row]` (1-5, = Webflow `_N`), `[data-col]` (0-19), `[data-index]`
 //   (deterministic per layer: (5 - row) * 20 + col, i.e. DOM order), `[data-layer]`.
 const ROWS = [5, 4, 3, 2, 1]
@@ -59,8 +62,11 @@ function Layer({ layer, rowSuffix }) {
 export default function TransitionPixels({ variant }) {
   const toWhite = variant === 'black-to-white'
   const rowSuffix = toWhite ? 'b-w' : '_w-b'
+  const ref = useRef(null)
+  useGsapContext(ref, (el) => createPixelTransition(el, { from: 0, to: 1 }))
   return (
     <div
+      ref={ref}
       data-section={`transition-${variant}`}
       data-component="transition-pixels"
       data-variant={variant}

@@ -1,4 +1,5 @@
-import { useEffect, useRef, useState } from 'react'
+import { useEffect, useLayoutEffect, useRef } from 'react'
+import { gsap, ScrollTrigger } from '../motion/gsap'
 import { ASSETS } from '../data/assets'
 import Noise from './ui/Noise'
 
@@ -48,36 +49,53 @@ function HeroVideo() {
   )
 }
 
-// M3 trigger: `.hero.home` start "top top" -> end "top -10%" (leave = fade out,
-// enterBack = fade in). The hero starts at y 0, so "past the end" == scrollY > 10vh.
-// TODO(Animation): replace with the ScrollTrigger tween (M3: 0.5s power1.out). This only
-// toggles the class so the static states (hero with video / rest of page without it,
-// incl. the footer reveal) are correct.
-function useVideoHidden() {
-  const [hidden, setHidden] = useState(false)
-  useEffect(() => {
-    const update = () => setHidden(window.scrollY > window.innerHeight * 0.1)
-    update()
-    window.addEventListener('scroll', update, { passive: true })
-    window.addEventListener('resize', update)
-    return () => {
-      window.removeEventListener('scroll', update)
-      window.removeEventListener('resize', update)
-    }
-  }, [])
-  return hidden
+// M3 — IX3 i-819b0df0 (measured on live via ScrollTrigger.getAll()/getTweensOf):
+// trigger `.hero.home`, start "clamp(top top)", end "clamp(top -10%)" (0 -> 90px @900h),
+// onLeave play / onEnterBack reverse of `opacity -> 0`, 0.5s power1.out, force3D.
+function useVideoFade(ref) {
+  useLayoutEffect(() => {
+    const el = ref.current
+    const hero = document.querySelector('[data-section="hero"]')
+    if (!el || !hero) return undefined
+    const ctx = gsap.context(() => {
+      // `.is-hidden` is kept as the QA state hook (SELECTORS.md). It is only added once the
+      // tween has initialised (onComplete) so it can never leak into the recorded start
+      // value; GSAP's inline opacity drives the visible value.
+      const tween = gsap.to(el, {
+        opacity: 0,
+        duration: 0.5,
+        ease: 'power1.out',
+        force3D: true,
+        paused: true,
+        onComplete: () => el.classList.add('is-hidden'),
+      })
+      ScrollTrigger.create({
+        trigger: hero,
+        start: 'clamp(top top)',
+        end: 'clamp(top -10%)',
+        onLeave: () => tween.play(),
+        onEnterBack: () => {
+          el.classList.remove('is-hidden')
+          tween.reverse()
+        },
+      })
+    })
+    return () => ctx.revert()
+  }, [ref])
 }
 
 export default function PageLayers() {
-  const videoHidden = useVideoHidden()
+  const wrapRef = useRef(null)
+  useVideoFade(wrapRef)
   return (
     <>
       <div className="bg-noise-wrap" data-component="page-noise">
         <Noise />
       </div>
-      {/* MOTION: M3 — this wrapper fades out after the hero scrolls 10% (see index.css). */}
+      {/* MOTION: M3 — this wrapper fades out after the hero scrolls 10% (GSAP, above). */}
       <div
-        className={`bg-pixels-wrapper${videoHidden ? ' is-hidden' : ''}`}
+        ref={wrapRef}
+        className="bg-pixels-wrapper"
         data-component="hero-bg-video"
         aria-hidden="true"
       >

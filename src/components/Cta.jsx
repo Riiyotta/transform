@@ -1,4 +1,7 @@
+import { useRef } from 'react'
 import '../styles/cta.css'
+import { createPixelTransition } from '../motion/pixelTransition'
+import { useGsapContext } from '../motion/useGsapContext'
 import { useSite } from './ui/SiteContext'
 import CallAlexLink from './ui/CallAlexLink'
 import UnderlinePair from './ui/UnderlinePair'
@@ -13,11 +16,14 @@ const mixColor = (row, col) => ((row % 2 === 1) === (col % 2 === 0) ? 'blue' : '
 
 // MOTION: M8c — scroll scrub (container "top bottom" -> "top -20%"): every `.pixel` in both
 // layers opacity 1 -> 0; row _1 at t0, _2 .2, _3 .4, _4 .6, _5 .8; random x-stagger (amount 1).
-// Rendered here at the SETTLED end state (all pixels opacity 0, see cta.css); Animation sets
-// the initial opacity 1 before scrubbing.
+// Rendered here at the SETTLED end state (all pixels opacity 0, see cta.css); the GSAP
+// timeline (src/motion/pixelTransition.js, measured IX3 i-967dd2ef values) sets opacity 1
+// on mount (immediateRender) and scrubs each pixel to 0.
 function BlackToImg() {
+  const ref = useRef(null)
+  useGsapContext(ref, (el) => createPixelTransition(el, { from: 1, to: 0 }))
   return (
-    <div className="transition-cont black-to-img" data-component="transition-black-to-img" aria-hidden="true">
+    <div ref={ref} className="transition-cont black-to-img" data-component="transition-black-to-img" aria-hidden="true">
       <div className="transition-wrap black">
         {ROWS.map((row) => (
           <div key={row} className={`grid-row _${row} b-i`}>

@@ -15,10 +15,13 @@ import Security from './components/Security'
 import Cta from './components/Cta'
 import { FooterBottom, FooterTop } from './components/Footer'
 import { SiteProvider } from './components/ui/SiteContext'
+import { useSmoothScroll } from './motion/smoothScroll'
 
 // Page shell — CLONE_SPEC §2: body > .nav-menu, .modal-wrap, .page-wrap (z 2),
 // .footer-bottom-wrap (z 1, sticky reveal). Section order follows CLONE_SPEC §1.6.
 export default function App() {
+  // M22: Lenis smooth scroll + ScrollTrigger sync/refresh (src/motion/smoothScroll.js).
+  useSmoothScroll()
   return (
     <SiteProvider>
       <Navbar />

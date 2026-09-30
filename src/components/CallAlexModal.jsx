@@ -161,7 +161,7 @@ export default function CallAlexModal() {
       aria-hidden={popupOpen ? undefined : 'true'}
     >
       <div className="modal-overlay" onClick={requestClose} />
-      <div className="modal-window" tabIndex={-1}>
+      <div className="modal-window" tabIndex={-1} data-lenis-prevent>
         <div className="popup-top">
           <img src={ASSETS.logoWhite} loading="lazy" alt="transform9 logo" className="logo-white popup" />
         </div>

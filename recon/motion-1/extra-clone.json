@@ -1,0 +1,69 @@
+{
+ "url": "http://127.0.0.1:5179/",
+ "onWhiteClosed": {
+  "navBg": "rgb(255, 255, 255)",
+  "burgerWhite": [
+   "0",
+   "block"
+  ],
+  "burgerBlack": [
+   "1",
+   "block"
+  ],
+  "cross": "0",
+  "link": "rgb(2, 8, 1)",
+  "menu": "none",
+  "scrollY": 6625
+ },
+ "onWhiteOpen": {
+  "navBg": "rgb(255, 255, 255)",
+  "burgerWhite": [
+   "0",
+   "none"
+  ],
+  "burgerBlack": [
+   "1",
+   "none"
+  ],
+  "cross": "1",
+  "link": "rgb(255, 255, 255)",
+  "menu": "block",
+  "scrollY": 6625
+ },
+ "onWhiteOpenAfterWheel": {
+  "navBg": "rgb(255, 255, 255)",
+  "burgerWhite": [
+   "0",
+   "none"
+  ],
+  "burgerBlack": [
+   "1",
+   "none"
+  ],
+  "cross": "1",
+  "link": "rgb(255, 255, 255)",
+  "menu": "block",
+  "scrollY": 6625
+ },
+ "onWhiteClosedAgain": {
+  "navBg": "rgb(255, 255, 255)",
+  "burgerWhite": [
+   "0",
+   "block"
+  ],
+  "burgerBlack": [
+   "1",
+   "block"
+  ],
+  "cross": "0",
+  "link": "rgb(255, 255, 255)",
+  "menu": "none",
+  "scrollY": 6625
+ },
+ "reducedMotion": {
+  "hasVideo": false,
+  "paused": true,
+  "pic": "block",
+  "lenis": true
+ }
+}
