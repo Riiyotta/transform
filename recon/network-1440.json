@@ -1,0 +1,1156 @@
+[
+ {
+  "url": "https://www.transform9.com/",
+  "status": 200,
+  "type": "document",
+  "ct": "text/html; charset=utf-8"
+ },
+ {
+  "url": "https://cdn.jsdelivr.net/npm/@finsweet/attributes@2/attributes.js",
+  "status": 200,
+  "type": "script",
+  "ct": "application/javascript; charset=utf-8"
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/68639bb30a93107837363b04_logo-2.svg",
+  "status": 200,
+  "type": "image",
+  "ct": "image/svg+xml"
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/css/transform9.webflow.shared.8b0b439cc.css",
+  "status": 200,
+  "type": "stylesheet",
+  "ct": "text/css"
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/68a300503634463bc8a25527_menu-burger.svg",
+  "status": 200,
+  "type": "image",
+  "ct": "image/svg+xml"
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/6883559817085db21b9e44bb_PolySans-Neutral.woff2",
+  "status": 200,
+  "type": "font",
+  "ct": "font/woff2"
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/689caa3e67c8dbd2e70dc1bc_close-icon-white.svg",
+  "status": 200,
+  "type": "image",
+  "ct": "image/svg+xml"
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379%2F66ba5a08efe71070f98dd10a%2F68b5c4bd5669afdcb8a361f9%2Fphx5m3xf-1.1.1.js",
+  "status": 200,
+  "type": "script",
+  "ct": "application/javascript"
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/68a5a50307e780f41451718b_menu-burger-close.svg",
+  "status": 200,
+  "type": "image",
+  "ct": "image/svg+xml"
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/68906575d051bc5b61776ed5_logo-black.svg",
+  "status": 200,
+  "type": "image",
+  "ct": "image/svg+xml"
+ },
+ {
+  "url": "https://cdn.intellimize.co/snippet/117158212.js",
+  "status": 200,
+  "type": "script",
+  "ct": "application/javascript;charset=utf-8"
+ },
+ {
+  "url": "https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=684a82e3294991569082d379",
+  "status": 200,
+  "type": "script",
+  "ct": "application/javascript"
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/js/webflow.schunk.36b8fb49256177c8.js",
+  "status": 200,
+  "type": "script",
+  "ct": "text/javascript"
+ },
+ {
+  "url": "https://js.hsforms.net/forms/embed/v2.js",
+  "status": 200,
+  "type": "script",
+  "ct": "application/javascript; charset=utf-8"
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/js/webflow.schunk.28523d8f2e4f6359.js",
+  "status": 200,
+  "type": "script",
+  "ct": "text/javascript"
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/js/webflow.schunk.121b0d7ff03e0f4a.js",
+  "status": 200,
+  "type": "script",
+  "ct": "text/javascript"
+ },
+ {
+  "url": "https://api.intellimize.co/context-v2/117158212",
+  "status": 200,
+  "type": "fetch",
+  "ct": "application/json"
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/gsap/3.15.0/gsap.min.js",
+  "status": 200,
+  "type": "script",
+  "ct": "text/javascript"
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/js/webflow.0d7405ad.f41d5fb637274587.js",
+  "status": 200,
+  "type": "script",
+  "ct": "text/javascript"
+ },
+ {
+  "url": "https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.23/bundled/lenis.min.js",
+  "status": 200,
+  "type": "script",
+  "ct": "application/javascript; charset=utf-8"
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/gsap/3.15.0/ScrollTrigger.min.js",
+  "status": 200,
+  "type": "script",
+  "ct": "text/javascript"
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379%2F6470f5217e03b0faa8a404de%2F68b5ca9255a2a7bb2f4c858e%2Fhs_trackcode_48695808-1.0.6.js",
+  "status": 200,
+  "type": "script",
+  "ct": "application/javascript"
+ },
+ {
+  "url": "https://www.google.com/recaptcha/api.js",
+  "status": 200,
+  "type": "script",
+  "ct": "text/javascript; charset=utf-8"
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/6895c0e06a401a644cf830cf_nav-img-3.avif",
+  "status": 200,
+  "type": "image",
+  "ct": "image/avif"
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/6895c0e0cf1da44572715af5_nav-img-1.avif",
+  "status": 200,
+  "type": "image",
+  "ct": "image/avif"
+ },
+ {
+  "url": "https://cdn.jsdelivr.net/npm/@finsweet/attributes@2/dist/chunk-J3PPETVR.js",
+  "status": 200,
+  "type": "script",
+  "ct": "application/javascript; charset=utf-8"
+ },
+ {
+  "url": "https://cdn.jsdelivr.net/npm/@finsweet/attributes@2/dist/chunk-VDEO3AAR.js",
+  "status": 200,
+  "type": "script",
+  "ct": "application/javascript; charset=utf-8"
+ },
+ {
+  "url": "https://cdn.jsdelivr.net/npm/@finsweet/attributes@2/dist/chunk-ADKL4AJZ.js",
+  "status": 200,
+  "type": "script",
+  "ct": "application/javascript; charset=utf-8"
+ },
+ {
+  "url": "https://cdn.jsdelivr.net/npm/@finsweet/attributes@2/dist/chunk-WIALCYDY.js",
+  "status": 200,
+  "type": "script",
+  "ct": "application/javascript; charset=utf-8"
+ },
+ {
+  "url": "https://cdn.jsdelivr.net/npm/@finsweet/attributes@2/dist/chunk-CB6LZ537.js",
+  "status": 200,
+  "type": "script",
+  "ct": "application/javascript; charset=utf-8"
+ },
+ {
+  "url": "https://cdn.jsdelivr.net/npm/@finsweet/attributes@2/dist/chunk-N2ZCN6XY.js",
+  "status": 200,
+  "type": "script",
+  "ct": "application/javascript; charset=utf-8"
+ },
+ {
+  "url": "https://cdn.jsdelivr.net/npm/@finsweet/attributes@2/dist/chunk-L4B2V5MO.js",
+  "status": 200,
+  "type": "script",
+  "ct": "application/javascript; charset=utf-8"
+ },
+ {
+  "url": "https://cdn.jsdelivr.net/npm/@finsweet/attributes@2/dist/chunk-XRTLPMPO.js",
+  "status": 200,
+  "type": "script",
+  "ct": "application/javascript; charset=utf-8"
+ },
+ {
+  "url": "https://cdn.jsdelivr.net/npm/@finsweet/attributes@2/dist/chunk-GGDEANQW.js",
+  "status": 200,
+  "type": "script",
+  "ct": "application/javascript; charset=utf-8"
+ },
+ {
+  "url": "https://cdn.jsdelivr.net/npm/@finsweet/attributes@2/dist/chunk-OF4NI3Y7.js",
+  "status": 200,
+  "type": "script",
+  "ct": "application/javascript; charset=utf-8"
+ },
+ {
+  "url": "https://cdn.jsdelivr.net/npm/@finsweet/attributes@2/dist/chunk-ZI7TAH2K.js",
+  "status": 200,
+  "type": "script",
+  "ct": "application/javascript; charset=utf-8"
+ },
+ {
+  "url": "https://cdn.jsdelivr.net/npm/@finsweet/attributes@2/dist/chunk-K46K3RI5.js",
+  "status": 200,
+  "type": "script",
+  "ct": "application/javascript; charset=utf-8"
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/6895c0e0319951151e3843a6_nav-img-2.avif",
+  "status": 200,
+  "type": "image",
+  "ct": "image/avif"
+ },
+ {
+  "url": "https://cdn.jsdelivr.net/npm/@finsweet/attributes@2/dist/src-54HM7DDM.js",
+  "status": 200,
+  "type": "script",
+  "ct": "application/javascript; charset=utf-8"
+ },
+ {
+  "url": "https://cdn.jsdelivr.net/npm/@finsweet/attributes@2/dist/src-T7SM3ONB.js",
+  "status": 200,
+  "type": "script",
+  "ct": "application/javascript; charset=utf-8"
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/68920b38695cade17f6e41a0_logo-footer.svg",
+  "status": 200,
+  "type": "image",
+  "ct": "image/svg+xml"
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/68aeb9fc729ad96012dc97f0_tablet-pixels.webp",
+  "status": 200,
+  "type": "image",
+  "ct": "image/webp"
+ },
+ {
+  "url": "https://cdn.jsdelivr.net/npm/@finsweet/attributes@2/dist/chunk-UAA7M346.js",
+  "status": 200,
+  "type": "script",
+  "ct": "application/javascript; charset=utf-8"
+ },
+ {
+  "url": "https://cdn.jsdelivr.net/npm/@finsweet/attributes@2/dist/chunk-WL5KIXHF.js",
+  "status": 200,
+  "type": "script",
+  "ct": "application/javascript; charset=utf-8"
+ },
+ {
+  "url": "https://cdn.jsdelivr.net/npm/@finsweet/attributes@2/dist/chunk-T2PNG2TC.js",
+  "status": 200,
+  "type": "script",
+  "ct": "application/javascript; charset=utf-8"
+ },
+ {
+  "url": "https://cdn.jsdelivr.net/npm/@finsweet/attributes@2/dist/chunk-7CAOOJVW.js",
+  "status": 200,
+  "type": "script",
+  "ct": "application/javascript; charset=utf-8"
+ },
+ {
+  "url": "https://cdn.jsdelivr.net/npm/@finsweet/attributes@2/dist/chunk-WO4GQJHX.js",
+  "status": 200,
+  "type": "script",
+  "ct": "application/javascript; charset=utf-8"
+ },
+ {
+  "url": "https://api.intellimize.co/prediction/117158212",
+  "status": 200,
+  "type": "fetch",
+  "ct": "application/json"
+ },
+ {
+  "url": "https://cdn.jsdelivr.net/npm/@finsweet/attributes@2/dist/chunk-ZZRTGM4V.js",
+  "status": 200,
+  "type": "script",
+  "ct": "application/javascript; charset=utf-8"
+ },
+ {
+  "url": "blob:https://www.transform9.com/48509e52-c051-48ae-a7bc-2befc570f91b",
+  "status": 200,
+  "type": "script",
+  "ct": "text/javascript"
+ },
+ {
+  "url": "blob:https://www.transform9.com/18199c7d-eaa3-47da-8e2d-b668c82095fa",
+  "status": 200,
+  "type": "script",
+  "ct": "text/javascript"
+ },
+ {
+  "url": "blob:https://www.transform9.com/fe788a19-c73a-4541-b6a8-cefe30b49cda",
+  "status": 200,
+  "type": "script",
+  "ct": "text/javascript"
+ },
+ {
+  "url": "blob:https://www.transform9.com/00e6dd8a-6d88-48f2-a37b-c66177b7b791",
+  "status": 200,
+  "type": "script",
+  "ct": "text/javascript"
+ },
+ {
+  "url": "blob:https://www.transform9.com/0a6cb51b-ee2a-4e73-ae97-a7a809573e64",
+  "status": 200,
+  "type": "script",
+  "ct": "text/javascript"
+ },
+ {
+  "url": "blob:https://www.transform9.com/c5c1e651-280f-4c92-9a6e-a0aab0ba74bd",
+  "status": 200,
+  "type": "script",
+  "ct": "text/javascript"
+ },
+ {
+  "url": "blob:https://www.transform9.com/c6d5b58e-9e40-43ed-a709-58bc0e94e34d",
+  "status": 200,
+  "type": "script",
+  "ct": "text/javascript"
+ },
+ {
+  "url": "blob:https://www.transform9.com/ab3f8111-8d46-4fcd-95af-c3e3dd823997",
+  "status": 200,
+  "type": "script",
+  "ct": "text/javascript"
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/6894f7029b2ee246309b15bd_stat-3.webp",
+  "status": 200,
+  "type": "image",
+  "ct": "image/webp"
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/6894e8a532e53804a41a1ea0_stat-1.webp",
+  "status": 200,
+  "type": "image",
+  "ct": "image/webp"
+ },
+ {
+  "url": "blob:https://www.transform9.com/147b8fcf-4dd4-4e54-a837-8a5adfdc8c9c",
+  "status": 200,
+  "type": "script",
+  "ct": "text/javascript"
+ },
+ {
+  "url": "blob:https://www.transform9.com/cc421a21-f32d-44cb-a1c5-e545e3d60ce4",
+  "status": 200,
+  "type": "script",
+  "ct": "text/javascript"
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/6895c0e0cf1da44572715af8_nav-img-4.avif",
+  "status": 200,
+  "type": "image",
+  "ct": "image/avif"
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/6894f7026eba00805615d1aa_stat-2.webp",
+  "status": 200,
+  "type": "image",
+  "ct": "image/webp"
+ },
+ {
+  "url": "https://snap.licdn.com/li.lms-analytics/insight.min.js",
+  "status": 200,
+  "type": "script",
+  "ct": "application/javascript;charset=utf-8"
+ },
+ {
+  "url": "https://hubspotonwebflow.com/assets/js/form-124.js",
+  "status": 200,
+  "type": "script",
+  "ct": "application/javascript; charset=UTF-8"
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/6894eeb12060be5400f13d15_7f73b64e03536ee2d541bb35d323241b_noise.webp",
+  "status": 200,
+  "type": "image",
+  "ct": "image/webp"
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/6894f7025b93ceead4351b6b_stat-4.webp",
+  "status": 200,
+  "type": "image",
+  "ct": "image/webp"
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/6895cdd22ca44eb25a439eb2_secure.avif",
+  "status": 200,
+  "type": "image",
+  "ct": "image/avif"
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/687f56b5ced9a9f759250276_Resurgens%20Orthopaedics.webp",
+  "status": 200,
+  "type": "image",
+  "ct": "image/webp"
+ },
+ {
+  "url": "https://www.googletagmanager.com/ns.html?id=GTM-PHX5M3XF",
+  "status": 200,
+  "type": "document",
+  "ct": "text/html; charset=UTF-8"
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/68947313a36aa178a65e0a40_cta-img-upd-2.webp",
+  "status": 200,
+  "type": "image",
+  "ct": "image/webp"
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/687f56b54ba0d2c838ec91b8_The%20Orthopaedic%20Center.webp",
+  "status": 200,
+  "type": "image",
+  "ct": "image/webp"
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/687f56b5fdd0b924dce2982f_North%20Florida%20Surgeons.webp",
+  "status": 200,
+  "type": "image",
+  "ct": "image/webp"
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/687f56a9ad410e39b817c66b_Semmes%20Murphey.svg",
+  "status": 200,
+  "type": "image",
+  "ct": "image/svg+xml"
+ },
+ {
+  "url": "https://forms.hsforms.com/embed/v3/form/48695808/f337fd1d-ba9c-494c-bca4-d3ea4891b0a8/json?hs_static_app=forms-embed&hs_static_app_version=1.11349&X-HubSpot-Static-App-Info=forms-embed-1.11349",
+  "status": 200,
+  "type": "xhr",
+  "ct": "application/json;charset=utf-8"
+ },
+ {
+  "url": "https://js.hsforms.net/forms/embed/v2.js",
+  "status": 200,
+  "type": "script",
+  "ct": "application/javascript; charset=utf-8"
+ },
+ {
+  "url": "https://www.googletagmanager.com/gtag/js?id=G-22T2YVQMMG",
+  "status": 200,
+  "type": "script",
+  "ct": "application/javascript; charset=UTF-8"
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/687f56b51adbdc9b529bd051_Andrews%20Sports%20Medicine%20%26%20Orthopaedic%20Center.webp",
+  "status": 200,
+  "type": "image",
+  "ct": "image/webp"
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/687f56b5d3a2aac73ec14171_TOC.webp",
+  "status": 200,
+  "type": "image",
+  "ct": "image/webp"
+ },
+ {
+  "url": "https://www.googletagmanager.com/gtm.js?id=GTM-NDPRKLX3",
+  "status": 200,
+  "type": "script",
+  "ct": "application/javascript; charset=UTF-8"
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/689498e0f5c437f5bddc9fb7_USOP.webp",
+  "status": 200,
+  "type": "image",
+  "ct": "image/webp"
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/687f56a9063daee4443e46c2_Florida%20Orthopaedic%20Institute.svg",
+  "status": 200,
+  "type": "image",
+  "ct": "image/svg+xml"
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/687f56a9e6245c0ab953f7e4_Hughston%20Clinic.svg",
+  "status": 200,
+  "type": "image",
+  "ct": "image/svg+xml"
+ },
+ {
+  "url": "https://snap.licdn.com/li.lms-analytics/insight.old.min.js",
+  "status": 200,
+  "type": "script",
+  "ct": "application/javascript;charset=utf-8"
+ },
+ {
+  "url": "https://www.gstatic.com/recaptcha/releases/kemdRjWFxNjgsGdhRslyEPwU/recaptcha__en.js",
+  "status": 200,
+  "type": "script",
+  "ct": "text/javascript"
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/689498e05d8d1f8f3b3cdf22_OSM.svg",
+  "status": 200,
+  "type": "image",
+  "ct": "image/svg+xml"
+ },
+ {
+  "url": "https://www.googletagmanager.com/gtm.js?id=GTM-PHX5M3XF",
+  "status": 200,
+  "type": "script",
+  "ct": "application/javascript; charset=UTF-8"
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/689498e037cd46c41ab29712_UMP.svg",
+  "status": 200,
+  "type": "image",
+  "ct": "image/svg+xml"
+ },
+ {
+  "url": "https://analytics.google.com/g/collect?v=2&tid=G-22T2YVQMMG&gtm=45je69s1v9244105823za200zd9244105823xf1&_p=1790749145567&_gaz=1&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAAACAC&cid=244324638.1790749146&frm=0&ibt=1&ngs=1&pscdl=noapi&rcb=9&sr=1440x900&uaa=arm&uab=64&uafvl=HeadlessChrome%3B153.0.8010.12%7CNot_A%2520Brand%3B8.0.0.0%7CChromium%3B153.0.8010.12&uam=&uamb=0&uap=macOS&uapv=27.0.1&uaw=0&ul=en-us&_s=1&tag_exp=115616986~115938465~115938469~118897920~118897930~120213116~120385422~120469145~120469153&sid=1790749146&sct=1&seg=0&dl=https%3A%2F%2Fwww.transform9.com%2F&dt=Transform9%20%E2%80%94%20Maximize%20Every%20Call%20with%20a%20Custom%20AI%20Agent&en=page_view&_fv=1&_nsi=1&_ss=1&_ee=1&tfd=2812",
+  "status": 204,
+  "type": "fetch",
+  "ct": "text/plain"
+ },
+ {
+  "url": "https://www.google.com/ccm/collect?rcb=9&frm=0&apvc=1&auid=382251975.1790749146&dt=Transform9%20%E2%80%94%20Maximize%20Every%20Call%20with%20a%20Custom%20AI%20Agent&tid=AW-18438861906&en=page_view&dl=https%3A%2F%2Fwww.transform9.com%2F&scrsrc=www.googletagmanager.com&rnd=1807999809.1790749146&navt=n&npa=0&gtm=45je69s1v9244105823za200zd9244105823xecxf1&gcd=13l3l3l3l1l1&dma=0&tag_exp=115616986~115938465~115938469~117776796~118897920~118897930~120213116~120385422~120469145~120469153&tft=1790749146186&tfd=2819&tids=AW-18438861906&fmt=8",
+  "status": 200,
+  "type": "fetch"
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/687f914b39717f558eb082e8_Tammy%20Jackson.webp",
+  "status": 200,
+  "type": "image",
+  "ct": "image/webp"
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/6894e2b1ef0879a32ffdc2a5_gr-bl.webp",
+  "status": 200,
+  "type": "image",
+  "ct": "image/webp"
+ },
+ {
+  "url": "https://ad.doubleclick.net/ccm/s/collect?auid=382251975.1790749146&gtm=45je69s1v9244105823za200zd9244105823xecxf1&fmt=8",
+  "status": 204,
+  "type": "fetch"
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/689498e02915466ba0586e2f_c368d18a994e282d7dfe5cf55a05a981_CDC.webp",
+  "status": 200,
+  "type": "image",
+  "ct": "image/webp"
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/6a75e93f1d775f54a21ef4a2_SBJ_Logo_upscaled_200h.png",
+  "status": 200,
+  "type": "image",
+  "ct": "image/png"
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/68b03d1ff7bab6dbf46fb416_Scott%20Griffin-p-500.webp",
+  "status": 200,
+  "type": "image",
+  "ct": "image/webp"
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/68af375b6ed817d8303e6d01_arrow-white-left.svg",
+  "status": 200,
+  "type": "image",
+  "ct": "image/svg+xml"
+ },
+ {
+  "url": "https://www.google.com/rmkt/collect/18438861906/?random=1790749146179&cv=11&fst=1790749146179&fmt=8&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45je69s1v9244105823za200zd9244105823xecxf1&gcd=13l3l3l3l1l1&dma=0&tag_exp=115616986~115938465~115938469~117776796~118897920~118897930~120213116~120385422~120469145~120469153&u_w=1440&u_h=900&url=https%3A%2F%2Fwww.transform9.com%2F&rcb=9&frm=0&tiba=Transform9%20%E2%80%94%20Maximize%20Every%20Call%20with%20a%20Custom%20AI%20Agent&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=382251975.1790749146&uaa=arm&uab=64&uafvl=HeadlessChrome%3B153.0.8010.12%7CNot_A%2520Brand%3B8.0.0.0%7CChromium%3B153.0.8010.12&uamb=0&uam=&uap=macOS&uapv=27.0.1&uaw=0&data=event%3Dgtag.config&ept=68&gcp=5",
+  "status": 200,
+  "type": "fetch"
+ },
+ {
+  "url": "https://www.google.com/recaptcha/api2/anchor?ar=1&k=6LeN4McrAAAAAHTVeuoChwTLlXRMj50W5mh2NT9v&co=aHR0cHM6Ly93d3cudHJhbnNmb3JtOS5jb206NDQz&hl=en&v=kemdRjWFxNjgsGdhRslyEPwU&size=normal&anchor-ms=20000&execute-ms=30000&cb=4kw8hamlxb5s",
+  "status": 200,
+  "type": "document",
+  "ct": "text/html; charset=utf-8"
+ },
+ {
+  "url": "https://www.gstatic.com/recaptcha/releases/kemdRjWFxNjgsGdhRslyEPwU/recaptcha__en.js",
+  "status": 200,
+  "type": "script",
+  "ct": "text/javascript"
+ },
+ {
+  "url": "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/18438861906/?random=1790749146179&cv=11&fst=1790749146179&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45je69s1v9244105823za200zd9244105823xecxf1&gcd=13l3l3l3l1l1&dma=0&tag_exp=115616986~115938465~115938469~117776796~118897920~118897930~120213116~120385422~120469145~120469153&u_w=1440&u_h=900&url=https%3A%2F%2Fwww.transform9.com%2F&rcb=9&frm=0&tiba=Transform9%20%E2%80%94%20Maximize%20Every%20Call%20with%20a%20Custom%20AI%20Agent&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=382251975.1790749146&uaa=arm&uab=64&uafvl=HeadlessChrome%3B153.0.8010.12%7CNot_A%2520Brand%3B8.0.0.0%7CChromium%3B153.0.8010.12&uamb=0&uam=&uap=macOS&uapv=27.0.1&uaw=0&data=event%3Dgtag.config&ept=9&rfmt=3&fmt=4",
+  "status": 200,
+  "type": "script",
+  "ct": "text/javascript; charset=UTF-8"
+ },
+ {
+  "url": "https://forms-na1.hsforms.com/embed/v3/counters.gif?key=forms-embed-v2-RENDER_SUCCESS&count=1",
+  "status": 200,
+  "type": "image",
+  "ct": "image/gif"
+ },
+ {
+  "url": "https://forms-na1.hsforms.com/embed/v3/counters.gif?key=forms-embed-v2-DEFINITION_SUCCESS&count=1",
+  "status": 200,
+  "type": "image",
+  "ct": "image/gif"
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/68af321214fa5cc11e7994c7_arrow-black.svg",
+  "status": 200,
+  "type": "image",
+  "ct": "image/svg+xml"
+ },
+ {
+  "url": "https://js.hs-scripts.com/48695808.js",
+  "status": 200,
+  "type": "script",
+  "ct": "application/javascript;charset=utf-8"
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/68af375bd94b22d7288ceba1_arrow-black-left.svg",
+  "status": 200,
+  "type": "image",
+  "ct": "image/svg+xml"
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379%2F6aae963300a522b95e867d73_Tablet-Final_mp4.mp4",
+  "status": 206,
+  "type": "media",
+  "ct": "video/mp4"
+ },
+ {
+  "url": "https://www.gstatic.com/recaptcha/releases/kemdRjWFxNjgsGdhRslyEPwU/styles__ltr.css",
+  "status": 200,
+  "type": "stylesheet",
+  "ct": "text/css"
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/687f9e315c0a9b7f071b0a0c_arrow.svg",
+  "status": 200,
+  "type": "image",
+  "ct": "image/svg+xml"
+ },
+ {
+  "url": "https://www.google.com/pagead/1p-user-list/18438861906/?random=1790749146179&cv=11&fst=1790748000000&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45je69s1v9244105823za200zd9244105823xecxf1&gcd=13l3l3l3l1l1&dma=0&tag_exp=115616986~115938465~115938469~117776796~118897920~118897930~120213116~120385422~120469145~120469153&u_w=1440&u_h=900&url=https%3A%2F%2Fwww.transform9.com%2F&rcb=9&frm=0&tiba=Transform9%20%E2%80%94%20Maximize%20Every%20Call%20with%20a%20Custom%20AI%20Agent&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=382251975.1790749146&uaa=arm&uab=64&uafvl=HeadlessChrome%3B153.0.8010.12%7CNot_A%2520Brand%3B8.0.0.0%7CChromium%3B153.0.8010.12&uamb=0&uam=&uap=macOS&uapv=27.0.1&uaw=0&data=event%3Dgtag.config&ept=9&rfmt=3&fmt=3&is_vtc=1&cid=CAQS0wEAQM4h3B5xF8MZvCMgfYhJgdoWFLaCNzHW4GcPiya2ZRUTiCOasVCApY-Bvr0p7HAZvEdf-SRXFogzTt1s6amuAGNmH4Wtu3j0UndwsoIdy9Z2PvqrXOZuUpidu0LuAzOuzKiZASnM2lJPaam9KDYPuCUrm5psJv6AOXS9MwxwE1rKACpD4EmtNE-6D5RckscikaijM069YXD_SANmZ5_MNnIz3JKNDIatfVL7NmT0wVbzF8B7C7xQbJSN-xPG4csiJmjuy3KeFJ8XbfIaXhFExA3y&random=3175575054&rmt_tld=0&ipr=y",
+  "status": 200,
+  "type": "image",
+  "ct": "image/gif"
+ },
+ {
+  "url": "https://www.google.co.in/pagead/1p-user-list/18438861906/?random=1790749146179&cv=11&fst=1790748000000&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45je69s1v9244105823za200zd9244105823xecxf1&gcd=13l3l3l3l1l1&dma=0&tag_exp=115616986~115938465~115938469~117776796~118897920~118897930~120213116~120385422~120469145~120469153&u_w=1440&u_h=900&url=https%3A%2F%2Fwww.transform9.com%2F&rcb=9&frm=0&tiba=Transform9%20%E2%80%94%20Maximize%20Every%20Call%20with%20a%20Custom%20AI%20Agent&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=382251975.1790749146&uaa=arm&uab=64&uafvl=HeadlessChrome%3B153.0.8010.12%7CNot_A%2520Brand%3B8.0.0.0%7CChromium%3B153.0.8010.12&uamb=0&uam=&uap=macOS&uapv=27.0.1&uaw=0&data=event%3Dgtag.config&ept=9&rfmt=3&fmt=3&is_vtc=1&cid=CAQS0wEAQM4h3B5xF8MZvCMgfYhJgdoWFLaCNzHW4GcPiya2ZRUTiCOasVCApY-Bvr0p7HAZvEdf-SRXFogzTt1s6amuAGNmH4Wtu3j0UndwsoIdy9Z2PvqrXOZuUpidu0LuAzOuzKiZASnM2lJPaam9KDYPuCUrm5psJv6AOXS9MwxwE1rKACpD4EmtNE-6D5RckscikaijM069YXD_SANmZ5_MNnIz3JKNDIatfVL7NmT0wVbzF8B7C7xQbJSN-xPG4csiJmjuy3KeFJ8XbfIaXhFExA3y&random=3175575054&rmt_tld=1&ipr=y",
+  "status": 200,
+  "type": "image",
+  "ct": "image/gif"
+ },
+ {
+  "url": "https://www.google.co.in/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&ngs=1&ibt=1&tid=G-22T2YVQMMG&cid=244324638.1790749146&gtm=45je69s1v9244105823za200zd9244105823xf1&rcb=9&aip=1&dma=0&gcd=13l3l3l3l1l1&npa=0&frm=0&tag_exp=115616986~115938465~115938469~118897920~118897930~120213116~120385422~120469145~120469153&z=338826834",
+  "status": 200,
+  "type": "image",
+  "ct": "image/gif"
+ },
+ {
+  "url": "https://bzrcdn.openai.com/sdk/oaiq.min.js",
+  "status": 200,
+  "type": "script",
+  "ct": "text/javascript"
+ },
+ {
+  "url": "https://www.gstatic.com/recaptcha/api2/logo_48.png",
+  "status": 200,
+  "type": "image",
+  "ct": "image/png"
+ },
+ {
+  "url": "https://js.hsadspixel.net/pixels.js",
+  "status": 200,
+  "type": "script",
+  "ct": "application/javascript; charset=utf-8"
+ },
+ {
+  "url": "https://fonts.gstatic.com/s/roboto/v48/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3yUBHMdazQ.woff2",
+  "status": 200,
+  "type": "font",
+  "ct": "font/woff2"
+ },
+ {
+  "url": "https://www.google.com/recaptcha/api2/webworker.js?hl=en&v=kemdRjWFxNjgsGdhRslyEPwU",
+  "status": 200,
+  "type": "script",
+  "ct": "text/javascript; charset=utf-8"
+ },
+ {
+  "url": "https://www.googletagmanager.com/gtag/js?id=AW-11239851886&cx=c&gtm=4e69s1",
+  "status": 200,
+  "type": "script",
+  "ct": "application/javascript; charset=UTF-8"
+ },
+ {
+  "url": "https://www.gstatic.com/recaptcha/releases/kemdRjWFxNjgsGdhRslyEPwU/recaptcha__en.js",
+  "status": 200,
+  "type": "other",
+  "ct": "text/javascript"
+ },
+ {
+  "url": "https://js.hs-banner.com/v2/48695808/banner.js",
+  "status": 200,
+  "type": "script",
+  "ct": "text/javascript; charset=UTF-8"
+ },
+ {
+  "url": "https://px.ads.linkedin.com/collect?v=2&fmt=js&pid=8899442&time=1790749146320&li_adsId=2f864499-9bab-451b-b1ff-678ab8a4987e&pageLoadId=d8908801-61e2-44cc-a485-56e916747420&url=https%3A%2F%2Fwww.transform9.com%2F",
+  "status": 302,
+  "type": "image"
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379%2F6aae963300a522b95e867d73_Tablet-Final_poster.0000000.jpg",
+  "status": 200,
+  "type": "image",
+  "ct": "image/jpeg"
+ },
+ {
+  "url": "https://js.hscollectedforms.net/collectedforms.js",
+  "status": 200,
+  "type": "script",
+  "ct": "application/javascript; charset=utf-8"
+ },
+ {
+  "url": "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/11239851886/?random=1790749147055&cv=11&fst=1790749147055&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be69s1v9131060194za200zb9244105823zd9244105823xecxf1&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938465~115938468~117776796~118897920~118897930~120213116~120385423~120469145~120469153~121246026~121246034&u_w=1440&u_h=900&url=https%3A%2F%2Fwww.transform9.com%2F&rcb=16&frm=0&tiba=Transform9%20%E2%80%94%20Maximize%20Every%20Call%20with%20a%20Custom%20AI%20Agent&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=382251975.1790749146&uaa=arm&uab=64&uafvl=HeadlessChrome%3B153.0.8010.12%7CNot_A%2520Brand%3B8.0.0.0%7CChromium%3B153.0.8010.12&uamb=0&uam=&uap=macOS&uapv=27.0.1&uaw=0&data=event%3Dgtag.config&ept=9&rfmt=3&fmt=4",
+  "status": 200,
+  "type": "script",
+  "ct": "text/javascript; charset=UTF-8"
+ },
+ {
+  "url": "https://www.google.com/rmkt/collect/11239851886/?random=1790749147055&cv=11&fst=1790749147055&fmt=8&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be69s1v9131060194za200zb9244105823zd9244105823xecxf1&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938465~115938468~117776796~118897920~118897930~120213116~120385423~120469145~120469153~121246026~121246034&u_w=1440&u_h=900&url=https%3A%2F%2Fwww.transform9.com%2F&rcb=16&frm=0&tiba=Transform9%20%E2%80%94%20Maximize%20Every%20Call%20with%20a%20Custom%20AI%20Agent&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=382251975.1790749146&uaa=arm&uab=64&uafvl=HeadlessChrome%3B153.0.8010.12%7CNot_A%2520Brand%3B8.0.0.0%7CChromium%3B153.0.8010.12&uamb=0&uam=&uap=macOS&uapv=27.0.1&uaw=0&data=event%3Dgtag.config&ept=68&gcp=5",
+  "status": 200,
+  "type": "fetch"
+ },
+ {
+  "url": "https://stats.g.doubleclick.net/g/collect?v=2&ngs=1&ibt=1&tid=G-22T2YVQMMG&cid=244324638.1790749146&gtm=45je69s1v9244105823za200zd9244105823xf1&rcb=9&aip=1&dma=0&gcd=13l3l3l3l1l1&npa=0&frm=0&tag_exp=115616986~115938465~115938469~118897920~118897930~120213116~120385422~120469145~120469153",
+  "status": 204,
+  "type": "ping",
+  "ct": "text/plain"
+ },
+ {
+  "url": "https://www.google.com/ccm/collect?rcb=16&frm=0&apvc=0&auid=382251975.1790749146&dt=Transform9%20%E2%80%94%20Maximize%20Every%20Call%20with%20a%20Custom%20AI%20Agent&tid=AW-11239851886&en=page_view&dl=https%3A%2F%2Fwww.transform9.com%2F&scrsrc=www.googletagmanager.com&rnd=1807999809.1790749146&navt=n&npa=0&gtm=45be69s1v9131060194za200zb9244105823zd9244105823xecxf1&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938465~115938468~117776796~118897920~118897930~120213116~120385423~120469145~120469153~121246026~121246034&tft=1790749147068&tfd=3701&tids=AW-11239851886&fmt=8",
+  "status": 200,
+  "type": "fetch"
+ },
+ {
+  "url": "https://www.google.com/recaptcha/api2/bframe?hl=en&v=kemdRjWFxNjgsGdhRslyEPwU&k=6LeN4McrAAAAAHTVeuoChwTLlXRMj50W5mh2NT9v&bft=0dAFcWeA7ym7btCgyphJH3zyAoE9J9qE7nGgI2ckbArOHFax_1aNiXw-dPD5ebWYRgSOjnRC5sDDtMNp7690MqIW7SYmNNH6hvGg",
+  "status": 200,
+  "type": "document",
+  "ct": "text/html; charset=utf-8"
+ },
+ {
+  "url": "https://www.gstatic.com/recaptcha/releases/kemdRjWFxNjgsGdhRslyEPwU/styles__ltr.css",
+  "status": 200,
+  "type": "stylesheet",
+  "ct": "text/css"
+ },
+ {
+  "url": "https://www.gstatic.com/recaptcha/releases/kemdRjWFxNjgsGdhRslyEPwU/recaptcha__en.js",
+  "status": 200,
+  "type": "script",
+  "ct": "text/javascript"
+ },
+ {
+  "url": "https://www.google.co.in/pagead/1p-user-list/11239851886/?random=1790749147055&cv=11&fst=1790748000000&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be69s1v9131060194za200zb9244105823zd9244105823xecxf1&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938465~115938468~117776796~118897920~118897930~120213116~120385423~120469145~120469153~121246026~121246034&u_w=1440&u_h=900&url=https%3A%2F%2Fwww.transform9.com%2F&rcb=16&frm=0&tiba=Transform9%20%E2%80%94%20Maximize%20Every%20Call%20with%20a%20Custom%20AI%20Agent&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=382251975.1790749146&uaa=arm&uab=64&uafvl=HeadlessChrome%3B153.0.8010.12%7CNot_A%2520Brand%3B8.0.0.0%7CChromium%3B153.0.8010.12&uamb=0&uam=&uap=macOS&uapv=27.0.1&uaw=0&data=event%3Dgtag.config&ept=9&rfmt=3&fmt=3&is_vtc=1&cid=CAQS4QEAQM4h3Bei_LNaRgOTlNLo4kbS132_-6N4V3ytkCueXoXMBh1W1uCvXJ16s5TJT0WcATfXvAKJrtzuAJsTPRvYnoN_r_SO0SRit5b6judNHi16L14_aam907MagYlfmEctDZ9khFumQQfL8cxr8yE8TNYmVha1yKwE2HCp5kM_2xs0fv5RIXX1E4EF8XKZEYIYKvJskTHInzcypUUfTjG_4cZvRqJH5r9kGpfBfQdKwbEG5zxnQAzlZTL18yni1XH9JIVL8wQHraBicxp5AMR0RVPC4qXfi3xrvEs0BKx0LHU&random=2738833901&rmt_tld=1&ipr=y",
+  "status": 200,
+  "type": "image",
+  "ct": "image/gif"
+ },
+ {
+  "url": "https://fonts.gstatic.com/s/roboto/v48/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3yUBHMdazQ.woff2",
+  "status": 200,
+  "type": "font",
+  "ct": "font/woff2"
+ },
+ {
+  "url": "https://bzrcdn.openai.com/pixel-config/v1/EEn1ZCUUpqUwhFfTpp9xkU.json",
+  "status": 200,
+  "type": "fetch",
+  "ct": "application/json"
+ },
+ {
+  "url": "https://js.hs-analytics.net/analytics/1790748900000/48695808.js",
+  "status": 200,
+  "type": "script",
+  "ct": "text/javascript"
+ },
+ {
+  "url": "https://www.google.com/pagead/1p-user-list/11239851886/?random=1790749147055&cv=11&fst=1790748000000&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be69s1v9131060194za200zb9244105823zd9244105823xecxf1&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938465~115938468~117776796~118897920~118897930~120213116~120385423~120469145~120469153~121246026~121246034&u_w=1440&u_h=900&url=https%3A%2F%2Fwww.transform9.com%2F&rcb=16&frm=0&tiba=Transform9%20%E2%80%94%20Maximize%20Every%20Call%20with%20a%20Custom%20AI%20Agent&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=382251975.1790749146&uaa=arm&uab=64&uafvl=HeadlessChrome%3B153.0.8010.12%7CNot_A%2520Brand%3B8.0.0.0%7CChromium%3B153.0.8010.12&uamb=0&uam=&uap=macOS&uapv=27.0.1&uaw=0&data=event%3Dgtag.config&ept=9&rfmt=3&fmt=3&is_vtc=1&cid=CAQS4QEAQM4h3Bei_LNaRgOTlNLo4kbS132_-6N4V3ytkCueXoXMBh1W1uCvXJ16s5TJT0WcATfXvAKJrtzuAJsTPRvYnoN_r_SO0SRit5b6judNHi16L14_aam907MagYlfmEctDZ9khFumQQfL8cxr8yE8TNYmVha1yKwE2HCp5kM_2xs0fv5RIXX1E4EF8XKZEYIYKvJskTHInzcypUUfTjG_4cZvRqJH5r9kGpfBfQdKwbEG5zxnQAzlZTL18yni1XH9JIVL8wQHraBicxp5AMR0RVPC4qXfi3xrvEs0BKx0LHU&random=2738833901&rmt_tld=0&ipr=y",
+  "status": 200,
+  "type": "image",
+  "ct": "image/gif"
+ },
+ {
+  "url": "https://px.ads.linkedin.com/collect?v=2&fmt=js&pid=8899442&time=1790749146320&li_adsId=2f864499-9bab-451b-b1ff-678ab8a4987e&pageLoadId=d8908801-61e2-44cc-a485-56e916747420&url=https%3A%2F%2Fwww.transform9.com%2F&cookiesTest=true",
+  "status": 302,
+  "type": "image"
+ },
+ {
+  "url": "https://forms.hscollectedforms.net/collected-forms/v1/config/json?portalId=48695808&utk=",
+  "status": 200,
+  "type": "xhr",
+  "ct": "application/json;charset=utf-8"
+ },
+ {
+  "url": "https://api.hubapi.com/hs-script-loader-public/v2/config/pixels-and-events/json?portalId=48695808",
+  "status": 200,
+  "type": "xhr",
+  "ct": "application/json;charset=utf-8"
+ },
+ {
+  "url": "https://log.intellimize.co/logger",
+  "status": 200,
+  "type": "ping",
+  "ct": "application/json"
+ },
+ {
+  "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-P10MKTBZNK&gtm=45be69s1v9131060194za200zb9244105823zd9244105823xf1&_p=1790749145567&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=244324638.1790749146&frm=0&ngs=1&pscdl=noapi&rcb=16&sr=1440x900&uaa=arm&uab=64&uafvl=HeadlessChrome%3B153.0.8010.12%7CNot_A%2520Brand%3B8.0.0.0%7CChromium%3B153.0.8010.12&uam=&uamb=0&uap=macOS&uapv=27.0.1&uaw=0&ul=en-us&_s=1&tag_exp=115938465~115938468~117776796~118897920~118897930~120213116~120385423~120469145~120469153~121246026~121246034&sid=1790749147&sct=1&seg=0&dl=https%3A%2F%2Fwww.transform9.com%2F&dt=Transform9%20%E2%80%94%20Maximize%20Every%20Call%20with%20a%20Custom%20AI%20Agent&en=page_view&_fv=1&_ss=1&_ee=1&tfd=3701",
+  "status": 204,
+  "type": "fetch",
+  "ct": "text/plain"
+ },
+ {
+  "url": "https://log.intellimize.co/logger",
+  "status": 200,
+  "type": "ping",
+  "ct": "application/json"
+ },
+ {
+  "url": "https://www.linkedin.com/px/li_sync?redirect=https%3A%2F%2Fpx.ads.linkedin.com%2Fcollect%3Fv%3D2%26fmt%3Djs%26pid%3D8899442%26time%3D1790749146320%26li_adsId%3D2f864499-9bab-451b-b1ff-678ab8a4987e%26pageLoadId%3Dd8908801-61e2-44cc-a485-56e916747420%26url%3Dhttps%253A%252F%252Fwww.transform9.com%252F%26cookiesTest%3Dtrue%26liSync%3Dtrue",
+  "status": 302,
+  "type": "image"
+ },
+ {
+  "url": "https://www.googletagmanager.com/gtag/js?id=AW-11239851886",
+  "status": 200,
+  "type": "script",
+  "ct": "application/javascript; charset=UTF-8"
+ },
+ {
+  "url": "https://forms.hsforms.com/embed/v3/counters.gif?key=collected-forms-embed-js-form-bind&count=3",
+  "status": 200,
+  "type": "image",
+  "ct": "image/gif"
+ },
+ {
+  "url": "https://px.ads.linkedin.com/collect?v=2&fmt=js&pid=8899442&time=1790749146320&li_adsId=2f864499-9bab-451b-b1ff-678ab8a4987e&pageLoadId=d8908801-61e2-44cc-a485-56e916747420&url=https%3A%2F%2Fwww.transform9.com%2F&cookiesTest=true&liSync=true",
+  "status": 200,
+  "type": "image",
+  "ct": "application/javascript"
+ },
+ {
+  "url": "https://px.ads.linkedin.com/wa/?medium=fetch&fmt=g",
+  "status": 204,
+  "type": "fetch"
+ },
+ {
+  "url": "https://hubspotonwebflow.com/api/forms/blockList?id=8ab5c64c-43b0-404b-84dd-915bea514c13",
+  "status": 200,
+  "type": "fetch",
+  "ct": "application/json"
+ },
+ {
+  "url": "https://track.hubspot.com/__ptq.gif?k=1&sd=1440x900&cd=24-bit&cs=UTF-8&ln=en-us&bfp=0ca4085275dabd03d53a38bdb86097b0&v=1.1&a=48695808&pu=https%3A%2F%2Fwww.transform9.com%2F&t=Transform9+%E2%80%94+Maximize+Every+Call+with+a+Custom+AI+Agent&cts=1790749148425&vi=a0a16093c5a604f00cd2346bf9e85917&nc=true&u=113540760.a0a16093c5a604f00cd2346bf9e85917.1790749148424.1790749148424.1790749148424.1&b=113540760.1.1790749148424&cc=15",
+  "status": 200,
+  "type": "image",
+  "ct": "image/gif"
+ },
+ {
+  "url": "https://track.hubspot.com/__ptq.gif?k=15&fi=f337fd1d-ba9c-494c-bca4-d3ea4891b0a8&fci=59ef2006-ac61-4469-a815-bfc36e338f32&ft=0&sd=1440x900&cd=24-bit&cs=UTF-8&ln=en-us&bfp=0ca4085275dabd03d53a38bdb86097b0&v=1.1&a=48695808&pu=https%3A%2F%2Fwww.transform9.com%2F&t=Transform9+%E2%80%94+Maximize+Every+Call+with+a+Custom+AI+Agent&cts=1790749148425&vi=a0a16093c5a604f00cd2346bf9e85917&nc=true&u=113540760.a0a16093c5a604f00cd2346bf9e85917.1790749148424.1790749148424.1790749148424.1&b=113540760.1.1790749148424&cc=15",
+  "status": 200,
+  "type": "image",
+  "ct": "image/gif"
+ },
+ {
+  "url": "https://js.zi-scripts.com/zi-tag.js",
+  "status": 200,
+  "type": "script",
+  "ct": "application/javascript"
+ },
+ {
+  "url": "https://bzr.openai.com/v1/sdk/events?pid=EEn1ZCUUpqUwhFfTpp9xkU&st=oaiq-web&sv=0.1.41&t=1790749148461&ec=2",
+  "status": 202,
+  "type": "fetch"
+ },
+ {
+  "url": "https://hubspotonwebflow.com/assets/js/blockedDomains.json",
+  "status": 200,
+  "type": "fetch",
+  "ct": "application/json; charset=UTF-8"
+ },
+ {
+  "url": "https://js.zi-scripts.com/unified/v1/master/getSubscriptions",
+  "status": 200,
+  "type": "fetch",
+  "ct": "application/json; charset=utf-8"
+ },
+ {
+  "url": "https://ws.zoominfo.com/pixel/677446bf12012cd5ddb7567c/?iszitag=true",
+  "status": 200,
+  "type": "fetch",
+  "ct": "text/javascript"
+ },
+ {
+  "url": "blob:https://www.transform9.com/63b970bb-1997-4855-a845-cea813bf26fc",
+  "status": 200,
+  "type": "script",
+  "ct": "text/javascript"
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/68b03e7aa72891aa77fb17bf_Southern%20Bone%20and%20Joint%20Specialists-p-500.webp",
+  "status": 200,
+  "type": "image",
+  "ct": "image/webp"
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/6895b5254b12f4e9385d2b64_cb862a86e82892dd803115dfaf743bfe_sch-img-1.avif",
+  "status": 200,
+  "type": "image",
+  "ct": "image/avif"
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/6895b52599b0bc61961ff546_d5924aa3dfe7c5f576623788a8ab5825_sch-img-2.avif",
+  "status": 200,
+  "type": "image",
+  "ct": "image/avif"
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/6895b5252492c7e65980a91c_6da87d9d094dc249ee70d2f8f5118203_sch-img-3.avif",
+  "status": 200,
+  "type": "image",
+  "ct": "image/avif"
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/6895b525dc871b1f5fe7bedd_721d1e1a3e576f29f09b75ccf4d7db9e_sch-img-4.avif",
+  "status": 200,
+  "type": "image",
+  "ct": "image/avif"
+ },
+ {
+  "url": "https://i.ytimg.com/vi/yG3PtcRGQLc/maxresdefault.jpg",
+  "status": 200,
+  "type": "image",
+  "ct": "image/jpeg"
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/6895ba251b4a95b1e73b23cb_task-img-2.avif",
+  "status": 200,
+  "type": "image",
+  "ct": "image/avif"
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/6895ba252384e22761c55270_task-img-3.avif",
+  "status": 200,
+  "type": "image",
+  "ct": "image/avif"
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/6883f34c4e63a9b69a4e5d84_out-icon-01.webp",
+  "status": 200,
+  "type": "image",
+  "ct": "image/webp"
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/6883f34c4175e5ba20591b09_out-icon-02.webp",
+  "status": 200,
+  "type": "image",
+  "ct": "image/webp"
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/6883f34c5f69d9e9448db9e1_out-icon-03.webp",
+  "status": 200,
+  "type": "image",
+  "ct": "image/webp"
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/6883f1f3db0dc1ce3dd77736_out-icon-04.webp",
+  "status": 200,
+  "type": "image",
+  "ct": "image/webp"
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/6883f34cf8d4db106318440c_out-icon-05.webp",
+  "status": 200,
+  "type": "image",
+  "ct": "image/webp"
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/6895c81333b865db4669b970_Orthopedics%20%26%20physical%20therapy.avif",
+  "status": 200,
+  "type": "image",
+  "ct": "image/avif"
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/6891ba123690a20e001bdb40_athena.webp",
+  "status": 200,
+  "type": "image",
+  "ct": "image/webp"
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/6891ba294f620244fffc46c9_Frame-4.svg",
+  "status": 200,
+  "type": "image",
+  "ct": "image/svg+xml"
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/6891ba297394dd666fa1e80f_Frame-5.svg",
+  "status": 200,
+  "type": "image",
+  "ct": "image/svg+xml"
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/6899bf693aec41d6d19e938b_nextgen%20white.webp",
+  "status": 200,
+  "type": "image",
+  "ct": "image/webp"
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/6891ca15ec2bbcfee664f148_modmed-black.svg",
+  "status": 200,
+  "type": "image",
+  "ct": "image/svg+xml"
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/6899bf6d4e77eb1b7da9da53_nextgen%20black.webp",
+  "status": 200,
+  "type": "image",
+  "ct": "image/webp"
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/6891bbbe34bdaeb7aad82ea6_GreenHealth-upd.svg",
+  "status": 200,
+  "type": "image",
+  "ct": "image/svg+xml"
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/6891ca03471a3b7540d45c51_athena-black.webp",
+  "status": 200,
+  "type": "image",
+  "ct": "image/webp"
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/6891ba29fbf92e334355779b_Frame.svg",
+  "status": 200,
+  "type": "image",
+  "ct": "image/svg+xml"
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/6891ca1486c64ec6dcfdbd93_epic-black.svg",
+  "status": 200,
+  "type": "image",
+  "ct": "image/svg+xml"
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/6891ba297ca39dde65c0c5ec_Frame-1.svg",
+  "status": 200,
+  "type": "image",
+  "ct": "image/svg+xml"
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/6899beea881eb22496bfec6f_systemedx%20logo%20white.svg",
+  "status": 200,
+  "type": "image",
+  "ct": "image/svg+xml"
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/6891ba29d55c22cffb383bb7_Frame-2.svg",
+  "status": 200,
+  "type": "image",
+  "ct": "image/svg+xml"
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/6891ca15f5c11a916ba8c8b6_veradigm-black.svg",
+  "status": 200,
+  "type": "image",
+  "ct": "image/svg+xml"
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/6891ebdb0ad3ebb68fe6d694_nist-white.svg",
+  "status": 200,
+  "type": "image",
+  "ct": "image/svg+xml"
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/6891ca150e6e639c350e5305_eclinic-black.svg",
+  "status": 200,
+  "type": "image",
+  "ct": "image/svg+xml"
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/6899beee48af30a928765264_systemedx%20logo%20black.svg",
+  "status": 200,
+  "type": "image",
+  "ct": "image/svg+xml"
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/698db856fcc2fd567ffa01fe_nist-2-white-1.svg",
+  "status": 200,
+  "type": "image",
+  "ct": "image/svg+xml"
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/6891ca15287e4bd5ad5fcd73_nextech-black.svg",
+  "status": 200,
+  "type": "image",
+  "ct": "image/svg+xml"
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/6891ebdb97d9bef9310d4f85_soc-white.svg",
+  "status": 200,
+  "type": "image",
+  "ct": "image/svg+xml"
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/6891ebdb7394dd666fb56b4e_nist-white-1.svg",
+  "status": 200,
+  "type": "image",
+  "ct": "image/svg+xml"
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/6891ca151d6544e08918728b_greenway-black.svg",
+  "status": 200,
+  "type": "image",
+  "ct": "image/svg+xml"
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/6891ebdb9f4ab9a258d517a7_soc-white-1.svg",
+  "status": 200,
+  "type": "image",
+  "ct": "image/svg+xml"
+ },
+ {
+  "url": "https://cdn.prod.website-files.com/684a82e3294991569082d379/698db856e06a92021fdfd2d6_nist-2-white.svg",
+  "status": 200,
+  "type": "image",
+  "ct": "image/svg+xml"
+ },
+ {
+  "url": "https://track.hubspot.com/__ptq.gif?k=17&fi=f337fd1d-ba9c-494c-bca4-d3ea4891b0a8&fci=59ef2006-ac61-4469-a815-bfc36e338f32&ft=0&sd=1440x900&cd=24-bit&cs=UTF-8&ln=en-us&bfp=0ca4085275dabd03d53a38bdb86097b0&v=1.1&a=48695808&pu=https%3A%2F%2Fwww.transform9.com%2F&t=Transform9+%E2%80%94+Maximize+Every+Call+with+a+Custom+AI+Agent&cts=1790749158429&vi=a0a16093c5a604f00cd2346bf9e85917&nc=true&u=113540760.a0a16093c5a604f00cd2346bf9e85917.1790749148424.1790749148424.1790749148424.1&b=113540760.1.1790749148424&cc=15",
+  "status": 200,
+  "type": "image",
+  "ct": "image/gif"
+ }
+]
