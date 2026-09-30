@@ -1,0 +1,279 @@
+{
+  "timestamp": "2026-09-30T09:41:23.748Z",
+  "tests": {
+    "desktop": {
+      "live": {
+        "m1_marquee_speed": [
+          {
+            "time": 0,
+            "x": 0
+          },
+          {
+            "time": 500,
+            "x": 0
+          },
+          {
+            "time": 1000,
+            "x": 0
+          },
+          {
+            "time": 1500,
+            "x": 0
+          },
+          {
+            "time": 2000,
+            "x": 0
+          }
+        ],
+        "m2_integration_scroll": [
+          {
+            "time": 0,
+            "x": 0
+          },
+          {
+            "time": 500,
+            "x": 0
+          },
+          {
+            "time": 1000,
+            "x": 0
+          },
+          {
+            "time": 1500,
+            "x": 0
+          },
+          {
+            "time": 2000,
+            "x": 0
+          }
+        ],
+        "m10_tasking_rotation": {
+          "tabSequence": [
+            {
+              "check": 0,
+              "tab": "Department-Specific Patient CasesSupports messaging any internal team such as billing or medical records via patient cases, email, phone messages, or internal tasking systems.",
+              "time": 0
+            },
+            {
+              "check": 1,
+              "tab": "Department-Specific Patient CasesSupports messaging any internal team such as billing or medical records via patient cases, email, phone messages, or internal tasking systems.",
+              "time": 1000
+            },
+            {
+              "check": 2,
+              "tab": "Patient-to-Provider MessagingRoutes patient inquiries to the appropriate provider or department.",
+              "time": 2000
+            }
+          ]
+        },
+        "m11_popup_validation": {
+          "beforeSubmit": {
+            "display": "flex",
+            "hasError": true
+          },
+          "afterSubmit": {
+            "hasError": true
+          }
+        }
+      },
+      "dev": {
+        "m1_marquee_speed": [
+          {
+            "time": 0,
+            "x": 0
+          },
+          {
+            "time": 500,
+            "x": 0
+          },
+          {
+            "time": 1000,
+            "x": 0
+          },
+          {
+            "time": 1500,
+            "x": 0
+          },
+          {
+            "time": 2000,
+            "x": 0
+          }
+        ],
+        "m2_integration_scroll": [
+          {
+            "time": 0,
+            "x": 0
+          },
+          {
+            "time": 500,
+            "x": 0
+          },
+          {
+            "time": 1000,
+            "x": 0
+          },
+          {
+            "time": 1500,
+            "x": 0
+          },
+          {
+            "time": 2000,
+            "x": 0
+          }
+        ],
+        "m10_tasking_rotation": {
+          "tabSequence": [
+            {
+              "check": 0,
+              "tab": "Prescription Refill ManagementAutomates prescription refill tasks and order creation, improving medication adherence.",
+              "time": 0
+            },
+            {
+              "check": 1,
+              "tab": "Prescription Refill ManagementAutomates prescription refill tasks and order creation, improving medication adherence.",
+              "time": 1000
+            },
+            {
+              "check": 2,
+              "tab": "Department-Specific Patient CasesSupports messaging any internal team such as billing or medical records via patient cases, email, phone messages, or internal tasking systems.",
+              "time": 2000
+            }
+          ]
+        },
+        "m11_popup_validation": {
+          "beforeSubmit": {
+            "display": "flex",
+            "hasError": false
+          },
+          "afterSubmit": {
+            "hasError": false
+          }
+        }
+      },
+      "prod": {
+        "m1_marquee_speed": [
+          {
+            "time": 0,
+            "x": 0
+          },
+          {
+            "time": 500,
+            "x": 0
+          },
+          {
+            "time": 1000,
+            "x": 0
+          },
+          {
+            "time": 1500,
+            "x": 0
+          },
+          {
+            "time": 2000,
+            "x": 0
+          }
+        ],
+        "m2_integration_scroll": [
+          {
+            "time": 0,
+            "x": 0
+          },
+          {
+            "time": 500,
+            "x": 0
+          },
+          {
+            "time": 1000,
+            "x": 0
+          },
+          {
+            "time": 1500,
+            "x": 0
+          },
+          {
+            "time": 2000,
+            "x": 0
+          }
+        ],
+        "m10_tasking_rotation": {
+          "tabSequence": [
+            {
+              "check": 0,
+              "tab": "Prescription Refill ManagementAutomates prescription refill tasks and order creation, improving medication adherence.",
+              "time": 0
+            },
+            {
+              "check": 1,
+              "tab": "Prescription Refill ManagementAutomates prescription refill tasks and order creation, improving medication adherence.",
+              "time": 1000
+            },
+            {
+              "check": 2,
+              "tab": "Department-Specific Patient CasesSupports messaging any internal team such as billing or medical records via patient cases, email, phone messages, or internal tasking systems.",
+              "time": 2000
+            }
+          ]
+        },
+        "m11_popup_validation": {
+          "beforeSubmit": {
+            "display": "flex",
+            "hasError": false
+          },
+          "afterSubmit": {
+            "hasError": false
+          }
+        }
+      }
+    },
+    "tablet": {
+      "live": {
+        "m6_stats_accordion": {
+          "initialActive": null,
+          "afterClick": null,
+          "changed": false
+        },
+        "m11_popup_validation": {
+          "beforeSubmit": {
+            "display": "flex",
+            "hasError": true
+          },
+          "afterSubmit": {
+            "hasError": true
+          }
+        }
+      },
+      "dev": {
+        "m6_stats_accordion": {
+          "initialActive": "012,000+Pr",
+          "afterClick": "0296%Patie",
+          "changed": true
+        },
+        "m11_popup_validation": {
+          "beforeSubmit": {
+            "display": "flex",
+            "hasError": false
+          },
+          "afterSubmit": {
+            "hasError": false
+          }
+        }
+      },
+      "prod": {
+        "m6_stats_accordion": {
+          "initialActive": "012,000+Pr",
+          "afterClick": "0296%Patie",
+          "changed": true
+        },
+        "m11_popup_validation": {
+          "beforeSubmit": {
+            "display": "flex",
+            "hasError": false
+          },
+          "afterSubmit": {
+            "hasError": false
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "timestamp": "2026-09-30T09:40:05.883Z",
+  "defects": [],
+  "deviations_verified": [
+    {
+      "id": "D4",
+      "check": "Facade visible before click",
+      "result": true
+    },
+    {
+      "id": "D7",
+      "check": "Focus visible ring",
+      "result": true
+    },
+    {
+      "id": "D4",
+      "check": "Facade visible before click",
+      "result": true
+    },
+    {
+      "id": "D7",
+      "check": "Focus visible ring",
+      "result": true
+    }
+  ],
+  "coverage": {},
+  "smoke_test": {
+    "dev": {
+      "envName": "DEV",
+      "errors": 0,
+      "trackers": 0,
+      "links": 56
+    },
+    "prod": {
+      "envName": "PROD",
+      "errors": 0,
+      "trackers": 0,
+      "links": 56
+    }
+  },
+  "summary": {
+    "defects_found": 0,
+    "deviations_verified": 4
+  }
+}

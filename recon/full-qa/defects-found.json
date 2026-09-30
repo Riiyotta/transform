@@ -1,0 +1,30 @@
+[
+  {
+    "env": "DEV",
+    "route": "/",
+    "section": "specialties",
+    "issue": "Specialty tab does not change content",
+    "severity": "high"
+  },
+  {
+    "env": "DEV",
+    "route": "/",
+    "section": "spotlight",
+    "issue": "YouTube iframe does not load after click (D4)",
+    "severity": "high"
+  },
+  {
+    "env": "PROD",
+    "route": "/",
+    "section": "specialties",
+    "issue": "Specialty tab does not change content",
+    "severity": "high"
+  },
+  {
+    "env": "PROD",
+    "route": "/",
+    "section": "spotlight",
+    "issue": "YouTube iframe does not load after click (D4)",
+    "severity": "high"
+  }
+]

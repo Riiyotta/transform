@@ -1,0 +1,160 @@
+{
+  "timestamp": "2026-09-30T09:45:23.702Z",
+  "tests": {
+    "desktop": {
+      "live": {
+        "console": {
+          "errorCount": 0
+        },
+        "lenis": [
+          {
+            "scrollY": 500,
+            "navOnWhite": false,
+            "videoOpacity": "0.1325"
+          },
+          {
+            "scrollY": 1000,
+            "navOnWhite": false,
+            "videoOpacity": "0"
+          },
+          {
+            "scrollY": 2000,
+            "navOnWhite": false,
+            "videoOpacity": "0"
+          },
+          {
+            "scrollY": 3000,
+            "navOnWhite": false,
+            "videoOpacity": "0"
+          }
+        ],
+        "popup": {
+          "open": {
+            "display": "flex",
+            "opacity": 1
+          },
+          "closed": {
+            "display": "none",
+            "opacity": 0
+          }
+        },
+        "reduced_motion": {
+          "videoPlaying": false,
+          "stillVisible": false,
+          "marqueeAnimating": true
+        },
+        "prod_checks": {
+          "isReact": false,
+          "hasMotionWindow": false,
+          "navElements": {
+            "navMenuExists": true,
+            "heroExists": true,
+            "popupExists": true
+          }
+        }
+      },
+      "dev": {
+        "console": {
+          "errorCount": 0
+        },
+        "lenis": [
+          {
+            "scrollY": 500,
+            "navOnWhite": false,
+            "videoOpacity": "0.1584"
+          },
+          {
+            "scrollY": 1000,
+            "navOnWhite": false,
+            "videoOpacity": "0"
+          },
+          {
+            "scrollY": 2000,
+            "navOnWhite": false,
+            "videoOpacity": "0"
+          },
+          {
+            "scrollY": 3000,
+            "navOnWhite": false,
+            "videoOpacity": "0"
+          }
+        ],
+        "popup": {
+          "open": {
+            "display": "flex",
+            "opacity": 1
+          },
+          "closed": {
+            "display": "none",
+            "opacity": 0
+          }
+        },
+        "reduced_motion": {
+          "videoPlaying": true,
+          "stillVisible": false,
+          "marqueeAnimating": true
+        },
+        "prod_checks": {
+          "isReact": true,
+          "hasMotionWindow": true,
+          "navElements": {
+            "navMenuExists": true,
+            "heroExists": true,
+            "popupExists": true
+          }
+        }
+      },
+      "prod": {
+        "console": {
+          "errorCount": 0
+        },
+        "lenis": [
+          {
+            "scrollY": 500,
+            "navOnWhite": false,
+            "videoOpacity": "0.16"
+          },
+          {
+            "scrollY": 1000,
+            "navOnWhite": false,
+            "videoOpacity": "0"
+          },
+          {
+            "scrollY": 2000,
+            "navOnWhite": false,
+            "videoOpacity": "0"
+          },
+          {
+            "scrollY": 3000,
+            "navOnWhite": false,
+            "videoOpacity": "0"
+          }
+        ],
+        "popup": {
+          "open": {
+            "display": "flex",
+            "opacity": 1
+          },
+          "closed": {
+            "display": "none",
+            "opacity": 0
+          }
+        },
+        "reduced_motion": {
+          "videoPlaying": true,
+          "stillVisible": false,
+          "marqueeAnimating": true
+        },
+        "prod_checks": {
+          "isReact": false,
+          "hasMotionWindow": false,
+          "navElements": {
+            "navMenuExists": true,
+            "heroExists": true,
+            "popupExists": true
+          }
+        }
+      }
+    }
+  }
+}

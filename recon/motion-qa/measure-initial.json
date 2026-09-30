@@ -1,0 +1,1705 @@
+{
+  "timestamp": "2026-09-30T09:36:27.053Z",
+  "sections": {
+    "desktop": {
+      "live": {
+        "m1_logo_marquee": {
+          "width": 2434,
+          "computedWidth": "2434.16px",
+          "transform": "matrix(1, 0, 0, 1, -214.958, 0)"
+        },
+        "m3_video_initial": {
+          "opacity": "1",
+          "display": "block",
+          "videoPlaying": true
+        },
+        "m4_nav_initial": {
+          "bg": "rgba(2, 8, 1, 0.5)",
+          "hasOnWhiteClass": false,
+          "logoWhiteOpacity": "1",
+          "logoBlackOpacity": "0"
+        },
+        "m5_stats": [
+          {
+            "index": 0,
+            "flexBasis": "16%",
+            "width": 264,
+            "headTransformY": "matrix(1, 0, 0, 1, 0, 102)",
+            "imgOpacity": "0"
+          },
+          {
+            "index": 1,
+            "flexBasis": "16%",
+            "width": 264,
+            "headTransformY": "matrix(1, 0, 0, 1, 0, 102)",
+            "imgOpacity": "0"
+          },
+          {
+            "index": 2,
+            "flexBasis": "16%",
+            "width": 264,
+            "headTransformY": "matrix(1, 0, 0, 1, 0, 102)",
+            "imgOpacity": "0"
+          },
+          {
+            "index": 3,
+            "flexBasis": "16%",
+            "width": 264,
+            "headTransformY": "matrix(1, 0, 0, 1, 0, 102)",
+            "imgOpacity": "0"
+          }
+        ],
+        "m7_hiw_initial": {
+          "leftY": "matrix(1, 0, 0, 1, 0, 0)",
+          "wordColors": [
+            {
+              "class": "h1-text white-text hiw-text _1",
+              "color": "rgb(162, 250, 142)"
+            },
+            {
+              "class": "h1-text white-text hiw-text _2",
+              "color": "rgb(76, 76, 76)"
+            },
+            {
+              "class": "h1-text white-text hiw-text _3",
+              "color": "rgb(76, 76, 76)"
+            }
+          ]
+        },
+        "m9_scheduling": [
+          {
+            "index": 1,
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "backgroundColor": "rgb(2, 8, 1)",
+            "imgOpacity": "1"
+          },
+          {
+            "index": 2,
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "backgroundColor": "rgb(2, 8, 1)",
+            "imgOpacity": "1"
+          },
+          {
+            "index": 3,
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "backgroundColor": "rgb(2, 8, 1)",
+            "imgOpacity": "1"
+          },
+          {
+            "index": 4,
+            "transform": "none",
+            "backgroundColor": "rgb(2, 8, 1)",
+            "imgOpacity": "1"
+          }
+        ],
+        "m10_tasking": {
+          "height": "0px",
+          "backgroundColor": "rgb(0, 51, 204)"
+        },
+        "m11_popup_initial": {
+          "display": "none",
+          "opacity": "0",
+          "isOpen": false
+        },
+        "m12_underline": {
+          "line1Width": "220.875px",
+          "line1Transform": "none",
+          "line2Width": "0px",
+          "line2Transform": "none"
+        },
+        "m13_arrow": {
+          "bg": "rgba(255, 255, 255, 0)",
+          "whiteTransform": "none",
+          "blackTransform": "matrix(1, 0, 0, 1, -70, 0)"
+        },
+        "m14_integration": {
+          "bg": "rgba(2, 8, 1, 0.01)",
+          "display": "flex"
+        },
+        "m15_nav_text": [
+          {
+            "transforms": [
+              "none",
+              "none"
+            ]
+          },
+          {
+            "transforms": [
+              "none",
+              "none"
+            ]
+          }
+        ],
+        "m16_close_btn": {
+          "bg": "rgba(0, 0, 0, 0)"
+        },
+        "m18_menu_btn": {
+          "display": "none",
+          "burgerDisplay": "inline-block"
+        },
+        "m21_video": {
+          "duration": 15.066667,
+          "currentTime": 6.340404,
+          "isPlaying": true
+        }
+      },
+      "dev": {
+        "m1_logo_marquee": {
+          "width": 2434,
+          "computedWidth": "2434.16px",
+          "transform": "matrix(1, 0, 0, 1, -55.0039, 0)"
+        },
+        "m3_video_initial": {
+          "opacity": "1",
+          "display": "block",
+          "videoPlaying": true
+        },
+        "m4_nav_initial": {
+          "bg": "rgba(2, 8, 1, 0.5)",
+          "hasOnWhiteClass": false,
+          "logoWhiteOpacity": "1",
+          "logoBlackOpacity": "0"
+        },
+        "m5_stats": [
+          {
+            "index": 0,
+            "flexBasis": "16%",
+            "width": 264,
+            "headTransformY": "matrix(1, 0, 0, 1, 0, 102)",
+            "imgOpacity": "0"
+          },
+          {
+            "index": 1,
+            "flexBasis": "16%",
+            "width": 264,
+            "headTransformY": "matrix(1, 0, 0, 1, 0, 102)",
+            "imgOpacity": "0"
+          },
+          {
+            "index": 2,
+            "flexBasis": "16%",
+            "width": 264,
+            "headTransformY": "matrix(1, 0, 0, 1, 0, 102)",
+            "imgOpacity": "0"
+          },
+          {
+            "index": 3,
+            "flexBasis": "16%",
+            "width": 264,
+            "headTransformY": "matrix(1, 0, 0, 1, 0, 102)",
+            "imgOpacity": "0"
+          }
+        ],
+        "m7_hiw_initial": {
+          "leftY": "matrix(1, 0, 0, 1, 0, 0)",
+          "wordColors": [
+            {
+              "class": "hiw-text _1 is-active",
+              "color": "rgb(162, 250, 142)"
+            },
+            {
+              "class": "hiw-text _2",
+              "color": "rgb(76, 76, 76)"
+            },
+            {
+              "class": "hiw-text _3",
+              "color": "rgb(76, 76, 76)"
+            }
+          ]
+        },
+        "m9_scheduling": [
+          {
+            "index": 1,
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "backgroundColor": "rgb(2, 8, 1)",
+            "imgOpacity": "1"
+          },
+          {
+            "index": 2,
+            "transform": "none",
+            "backgroundColor": "rgb(2, 8, 1)",
+            "imgOpacity": "1"
+          },
+          {
+            "index": 3,
+            "transform": "none",
+            "backgroundColor": "rgb(2, 8, 1)",
+            "imgOpacity": "1"
+          },
+          {
+            "index": 4,
+            "transform": "none",
+            "backgroundColor": "rgb(2, 8, 1)",
+            "imgOpacity": "1"
+          }
+        ],
+        "m10_tasking": {
+          "height": "27.9688px",
+          "backgroundColor": "rgb(0, 51, 204)"
+        },
+        "m11_popup_initial": {
+          "display": "none",
+          "opacity": "0",
+          "isOpen": false
+        },
+        "m12_underline": {
+          "line1Width": "220.875px",
+          "line1Transform": "none",
+          "line2Width": "0px",
+          "line2Transform": "none"
+        },
+        "m13_arrow": {
+          "bg": "rgba(255, 255, 255, 0)",
+          "whiteTransform": "matrix(1, 0, 0, 1, 0, 0)",
+          "blackTransform": "matrix(1, 0, 0, 1, -70, 0)"
+        },
+        "m14_integration": {
+          "bg": "rgba(2, 8, 1, 0.01)",
+          "display": "flex"
+        },
+        "m15_nav_text": [
+          {
+            "transforms": [
+              "matrix(1, 0, 0, 1, 0, 0)",
+              "matrix(1, 0, 0, 1, 0, 0)"
+            ]
+          },
+          {
+            "transforms": [
+              "matrix(1, 0, 0, 1, 0, 0)",
+              "matrix(1, 0, 0, 1, 0, 0)"
+            ]
+          }
+        ],
+        "m16_close_btn": {
+          "bg": "rgba(0, 0, 0, 0)"
+        },
+        "m18_menu_btn": {
+          "display": "none",
+          "burgerDisplay": "block"
+        },
+        "m21_video": {
+          "duration": 15.066667,
+          "currentTime": 1.004826,
+          "isPlaying": true
+        }
+      },
+      "prod": {
+        "m1_logo_marquee": {
+          "width": 2434,
+          "computedWidth": "2434.16px",
+          "transform": "matrix(1, 0, 0, 1, -55.0052, 0)"
+        },
+        "m3_video_initial": {
+          "opacity": "1",
+          "display": "block",
+          "videoPlaying": true
+        },
+        "m4_nav_initial": {
+          "bg": "rgba(2, 8, 1, 0.5)",
+          "hasOnWhiteClass": false,
+          "logoWhiteOpacity": "1",
+          "logoBlackOpacity": "0"
+        },
+        "m5_stats": [
+          {
+            "index": 0,
+            "flexBasis": "16%",
+            "width": 264,
+            "headTransformY": "matrix(1, 0, 0, 1, 0, 102)",
+            "imgOpacity": "0"
+          },
+          {
+            "index": 1,
+            "flexBasis": "16%",
+            "width": 264,
+            "headTransformY": "matrix(1, 0, 0, 1, 0, 102)",
+            "imgOpacity": "0"
+          },
+          {
+            "index": 2,
+            "flexBasis": "16%",
+            "width": 264,
+            "headTransformY": "matrix(1, 0, 0, 1, 0, 102)",
+            "imgOpacity": "0"
+          },
+          {
+            "index": 3,
+            "flexBasis": "16%",
+            "width": 264,
+            "headTransformY": "matrix(1, 0, 0, 1, 0, 102)",
+            "imgOpacity": "0"
+          }
+        ],
+        "m7_hiw_initial": {
+          "leftY": "matrix(1, 0, 0, 1, 0, 0)",
+          "wordColors": [
+            {
+              "class": "hiw-text _1 is-active",
+              "color": "rgb(162, 250, 142)"
+            },
+            {
+              "class": "hiw-text _2",
+              "color": "rgb(76, 76, 76)"
+            },
+            {
+              "class": "hiw-text _3",
+              "color": "rgb(76, 76, 76)"
+            }
+          ]
+        },
+        "m9_scheduling": [
+          {
+            "index": 1,
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "backgroundColor": "rgb(2, 8, 1)",
+            "imgOpacity": "1"
+          },
+          {
+            "index": 2,
+            "transform": "none",
+            "backgroundColor": "rgb(2, 8, 1)",
+            "imgOpacity": "1"
+          },
+          {
+            "index": 3,
+            "transform": "none",
+            "backgroundColor": "rgb(2, 8, 1)",
+            "imgOpacity": "1"
+          },
+          {
+            "index": 4,
+            "transform": "none",
+            "backgroundColor": "rgb(2, 8, 1)",
+            "imgOpacity": "1"
+          }
+        ],
+        "m10_tasking": {
+          "height": "28.4844px",
+          "backgroundColor": "rgb(0, 51, 204)"
+        },
+        "m11_popup_initial": {
+          "display": "none",
+          "opacity": "0",
+          "isOpen": false
+        },
+        "m12_underline": {
+          "line1Width": "220.875px",
+          "line1Transform": "none",
+          "line2Width": "0px",
+          "line2Transform": "none"
+        },
+        "m13_arrow": {
+          "bg": "rgba(255, 255, 255, 0)",
+          "whiteTransform": "matrix(1, 0, 0, 1, 0, 0)",
+          "blackTransform": "matrix(1, 0, 0, 1, -70, 0)"
+        },
+        "m14_integration": {
+          "bg": "rgba(2, 8, 1, 0.01)",
+          "display": "flex"
+        },
+        "m15_nav_text": [
+          {
+            "transforms": [
+              "matrix(1, 0, 0, 1, 0, 0)",
+              "matrix(1, 0, 0, 1, 0, 0)"
+            ]
+          },
+          {
+            "transforms": [
+              "matrix(1, 0, 0, 1, 0, 0)",
+              "matrix(1, 0, 0, 1, 0, 0)"
+            ]
+          }
+        ],
+        "m16_close_btn": {
+          "bg": "rgba(0, 0, 0, 0)"
+        },
+        "m18_menu_btn": {
+          "display": "none",
+          "burgerDisplay": "block"
+        },
+        "m21_video": {
+          "duration": 15.066667,
+          "currentTime": 1.00964,
+          "isPlaying": true
+        }
+      }
+    },
+    "tablet": {
+      "live": {
+        "m1_logo_marquee": {
+          "width": 1748,
+          "computedWidth": "1748.42px",
+          "transform": "matrix(1, 0, 0, 1, -128.479, 0)"
+        },
+        "m3_video_initial": {
+          "opacity": "1",
+          "display": "block",
+          "videoPlaying": true
+        },
+        "m4_nav_initial": {
+          "bg": "rgba(2, 8, 1, 0.5)",
+          "hasOnWhiteClass": false,
+          "logoWhiteOpacity": "1",
+          "logoBlackOpacity": "0"
+        },
+        "m5_stats": [
+          {
+            "index": 0,
+            "flexBasis": "16%",
+            "width": 188,
+            "headTransformY": "matrix(1, 0, 0, 1, 0, 72.5312)",
+            "imgOpacity": "0"
+          },
+          {
+            "index": 1,
+            "flexBasis": "16%",
+            "width": 188,
+            "headTransformY": "matrix(1, 0, 0, 1, 0, 72.5312)",
+            "imgOpacity": "0"
+          },
+          {
+            "index": 2,
+            "flexBasis": "16%",
+            "width": 188,
+            "headTransformY": "matrix(1, 0, 0, 1, 0, 72.5312)",
+            "imgOpacity": "0"
+          },
+          {
+            "index": 3,
+            "flexBasis": "16%",
+            "width": 188,
+            "headTransformY": "matrix(1, 0, 0, 1, 0, 72.5312)",
+            "imgOpacity": "0"
+          }
+        ],
+        "m7_hiw_initial": {
+          "leftY": "matrix(1, 0, 0, 1, 0, 0)",
+          "wordColors": [
+            {
+              "class": "h1-text white-text hiw-text _1",
+              "color": "rgb(162, 250, 142)"
+            },
+            {
+              "class": "h1-text white-text hiw-text _2",
+              "color": "rgb(76, 76, 76)"
+            },
+            {
+              "class": "h1-text white-text hiw-text _3",
+              "color": "rgb(76, 76, 76)"
+            }
+          ]
+        },
+        "m9_scheduling": [
+          {
+            "index": 1,
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "backgroundColor": "rgb(2, 8, 1)",
+            "imgOpacity": "1"
+          },
+          {
+            "index": 2,
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "backgroundColor": "rgb(2, 8, 1)",
+            "imgOpacity": "1"
+          },
+          {
+            "index": 3,
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "backgroundColor": "rgb(2, 8, 1)",
+            "imgOpacity": "1"
+          },
+          {
+            "index": 4,
+            "transform": "none",
+            "backgroundColor": "rgb(2, 8, 1)",
+            "imgOpacity": "1"
+          }
+        ],
+        "m10_tasking": {
+          "height": "0px",
+          "backgroundColor": "rgb(0, 51, 204)"
+        },
+        "m11_popup_initial": {
+          "display": "none",
+          "opacity": "0",
+          "isOpen": false
+        },
+        "m12_underline": {
+          "line1Width": "157.062px",
+          "line1Transform": "none",
+          "line2Width": "0px",
+          "line2Transform": "none"
+        },
+        "m13_arrow": {
+          "bg": "rgba(255, 255, 255, 0)",
+          "whiteTransform": "none",
+          "blackTransform": "matrix(1, 0, 0, 1, -70, 0)"
+        },
+        "m14_integration": {
+          "bg": "rgba(2, 8, 1, 0.01)",
+          "display": "flex"
+        },
+        "m15_nav_text": [
+          {
+            "transforms": [
+              "none",
+              "none"
+            ]
+          },
+          {
+            "transforms": [
+              "none",
+              "none"
+            ]
+          }
+        ],
+        "m16_close_btn": {
+          "bg": "rgba(0, 0, 0, 0)"
+        },
+        "m18_menu_btn": {
+          "display": "none",
+          "burgerDisplay": "inline-block"
+        },
+        "m21_video": {
+          "duration": 15.066667,
+          "currentTime": 6.100145,
+          "isPlaying": true
+        }
+      },
+      "dev": {
+        "m1_logo_marquee": {
+          "width": 1748,
+          "computedWidth": "1748.25px",
+          "transform": "matrix(1, 0, 0, 1, -38.8561, 0)"
+        },
+        "m3_video_initial": {
+          "opacity": "1",
+          "display": "block",
+          "videoPlaying": true
+        },
+        "m4_nav_initial": {
+          "bg": "rgba(2, 8, 1, 0.5)",
+          "hasOnWhiteClass": false,
+          "logoWhiteOpacity": "1",
+          "logoBlackOpacity": "0"
+        },
+        "m5_stats": [
+          {
+            "index": 0,
+            "flexBasis": "16%",
+            "width": 188,
+            "headTransformY": "matrix(1, 0, 0, 1, 0, 72.5312)",
+            "imgOpacity": "0"
+          },
+          {
+            "index": 1,
+            "flexBasis": "16%",
+            "width": 188,
+            "headTransformY": "matrix(1, 0, 0, 1, 0, 72.5312)",
+            "imgOpacity": "0"
+          },
+          {
+            "index": 2,
+            "flexBasis": "16%",
+            "width": 188,
+            "headTransformY": "matrix(1, 0, 0, 1, 0, 72.5312)",
+            "imgOpacity": "0"
+          },
+          {
+            "index": 3,
+            "flexBasis": "16%",
+            "width": 188,
+            "headTransformY": "matrix(1, 0, 0, 1, 0, 72.5312)",
+            "imgOpacity": "0"
+          }
+        ],
+        "m7_hiw_initial": {
+          "leftY": "matrix(1, 0, 0, 1, 0, 0)",
+          "wordColors": [
+            {
+              "class": "hiw-text _1 is-active",
+              "color": "rgb(162, 250, 142)"
+            },
+            {
+              "class": "hiw-text _2",
+              "color": "rgb(76, 76, 76)"
+            },
+            {
+              "class": "hiw-text _3",
+              "color": "rgb(76, 76, 76)"
+            }
+          ]
+        },
+        "m9_scheduling": [
+          {
+            "index": 1,
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "backgroundColor": "rgb(2, 8, 1)",
+            "imgOpacity": "1"
+          },
+          {
+            "index": 2,
+            "transform": "none",
+            "backgroundColor": "rgb(2, 8, 1)",
+            "imgOpacity": "1"
+          },
+          {
+            "index": 3,
+            "transform": "none",
+            "backgroundColor": "rgb(2, 8, 1)",
+            "imgOpacity": "1"
+          },
+          {
+            "index": 4,
+            "transform": "none",
+            "backgroundColor": "rgb(2, 8, 1)",
+            "imgOpacity": "1"
+          }
+        ],
+        "m10_tasking": {
+          "height": "25.2656px",
+          "backgroundColor": "rgb(0, 51, 204)"
+        },
+        "m11_popup_initial": {
+          "display": "none",
+          "opacity": "0",
+          "isOpen": false
+        },
+        "m12_underline": {
+          "line1Width": "157.062px",
+          "line1Transform": "none",
+          "line2Width": "0px",
+          "line2Transform": "none"
+        },
+        "m13_arrow": {
+          "bg": "rgba(255, 255, 255, 0)",
+          "whiteTransform": "matrix(1, 0, 0, 1, 0, 0)",
+          "blackTransform": "matrix(1, 0, 0, 1, -70, 0)"
+        },
+        "m14_integration": {
+          "bg": "rgba(2, 8, 1, 0.01)",
+          "display": "flex"
+        },
+        "m15_nav_text": [
+          {
+            "transforms": [
+              "matrix(1, 0, 0, 1, 0, 0)",
+              "matrix(1, 0, 0, 1, 0, 0)"
+            ]
+          },
+          {
+            "transforms": [
+              "matrix(1, 0, 0, 1, 0, 0)",
+              "matrix(1, 0, 0, 1, 0, 0)"
+            ]
+          }
+        ],
+        "m16_close_btn": {
+          "bg": "rgba(0, 0, 0, 0)"
+        },
+        "m18_menu_btn": {
+          "display": "none",
+          "burgerDisplay": "block"
+        },
+        "m21_video": {
+          "duration": 15.066667,
+          "currentTime": 1.004704,
+          "isPlaying": true
+        }
+      },
+      "prod": {
+        "m1_logo_marquee": {
+          "width": 1748,
+          "computedWidth": "1748.25px",
+          "transform": "matrix(1, 0, 0, 1, -39.5048, 0)"
+        },
+        "m3_video_initial": {
+          "opacity": "1",
+          "display": "block",
+          "videoPlaying": true
+        },
+        "m4_nav_initial": {
+          "bg": "rgba(2, 8, 1, 0.5)",
+          "hasOnWhiteClass": false,
+          "logoWhiteOpacity": "1",
+          "logoBlackOpacity": "0"
+        },
+        "m5_stats": [
+          {
+            "index": 0,
+            "flexBasis": "16%",
+            "width": 188,
+            "headTransformY": "matrix(1, 0, 0, 1, 0, 72.5312)",
+            "imgOpacity": "0"
+          },
+          {
+            "index": 1,
+            "flexBasis": "16%",
+            "width": 188,
+            "headTransformY": "matrix(1, 0, 0, 1, 0, 72.5312)",
+            "imgOpacity": "0"
+          },
+          {
+            "index": 2,
+            "flexBasis": "16%",
+            "width": 188,
+            "headTransformY": "matrix(1, 0, 0, 1, 0, 72.5312)",
+            "imgOpacity": "0"
+          },
+          {
+            "index": 3,
+            "flexBasis": "16%",
+            "width": 188,
+            "headTransformY": "matrix(1, 0, 0, 1, 0, 72.5312)",
+            "imgOpacity": "0"
+          }
+        ],
+        "m7_hiw_initial": {
+          "leftY": "matrix(1, 0, 0, 1, 0, 0)",
+          "wordColors": [
+            {
+              "class": "hiw-text _1 is-active",
+              "color": "rgb(162, 250, 142)"
+            },
+            {
+              "class": "hiw-text _2",
+              "color": "rgb(76, 76, 76)"
+            },
+            {
+              "class": "hiw-text _3",
+              "color": "rgb(76, 76, 76)"
+            }
+          ]
+        },
+        "m9_scheduling": [
+          {
+            "index": 1,
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "backgroundColor": "rgb(2, 8, 1)",
+            "imgOpacity": "1"
+          },
+          {
+            "index": 2,
+            "transform": "none",
+            "backgroundColor": "rgb(2, 8, 1)",
+            "imgOpacity": "1"
+          },
+          {
+            "index": 3,
+            "transform": "none",
+            "backgroundColor": "rgb(2, 8, 1)",
+            "imgOpacity": "1"
+          },
+          {
+            "index": 4,
+            "transform": "none",
+            "backgroundColor": "rgb(2, 8, 1)",
+            "imgOpacity": "1"
+          }
+        ],
+        "m10_tasking": {
+          "height": "25.8125px",
+          "backgroundColor": "rgb(0, 51, 204)"
+        },
+        "m11_popup_initial": {
+          "display": "none",
+          "opacity": "0",
+          "isOpen": false
+        },
+        "m12_underline": {
+          "line1Width": "157.062px",
+          "line1Transform": "none",
+          "line2Width": "0px",
+          "line2Transform": "none"
+        },
+        "m13_arrow": {
+          "bg": "rgba(255, 255, 255, 0)",
+          "whiteTransform": "matrix(1, 0, 0, 1, 0, 0)",
+          "blackTransform": "matrix(1, 0, 0, 1, -70, 0)"
+        },
+        "m14_integration": {
+          "bg": "rgba(2, 8, 1, 0.01)",
+          "display": "flex"
+        },
+        "m15_nav_text": [
+          {
+            "transforms": [
+              "matrix(1, 0, 0, 1, 0, 0)",
+              "matrix(1, 0, 0, 1, 0, 0)"
+            ]
+          },
+          {
+            "transforms": [
+              "matrix(1, 0, 0, 1, 0, 0)",
+              "matrix(1, 0, 0, 1, 0, 0)"
+            ]
+          }
+        ],
+        "m16_close_btn": {
+          "bg": "rgba(0, 0, 0, 0)"
+        },
+        "m18_menu_btn": {
+          "display": "none",
+          "burgerDisplay": "block"
+        },
+        "m21_video": {
+          "duration": 15.066667,
+          "currentTime": 1.022579,
+          "isPlaying": true
+        }
+      }
+    },
+    "tablet-768": {
+      "live": {
+        "m1_logo_marquee": {
+          "width": 2132,
+          "computedWidth": "2132.11px",
+          "transform": "matrix(1, 0, 0, 1, -149.469, 0)"
+        },
+        "m3_video_initial": {
+          "opacity": "1",
+          "display": "block",
+          "videoPlaying": true
+        },
+        "m4_nav_initial": {
+          "bg": "rgba(2, 8, 1, 0.5)",
+          "hasOnWhiteClass": false,
+          "logoWhiteOpacity": "1",
+          "logoBlackOpacity": "0"
+        },
+        "m5_stats": [
+          {
+            "index": 0,
+            "flexBasis": "auto",
+            "width": 394,
+            "headTransformY": "matrix(1, 0, 0, 1, 0, 0)",
+            "imgOpacity": "1"
+          },
+          {
+            "index": 1,
+            "flexBasis": "auto",
+            "width": 56,
+            "headTransformY": "matrix(1, 0, 0, 1, 0, 54.3906)",
+            "imgOpacity": "0"
+          },
+          {
+            "index": 2,
+            "flexBasis": "auto",
+            "width": 56,
+            "headTransformY": "matrix(1, 0, 0, 1, 0, 54.3906)",
+            "imgOpacity": "0"
+          },
+          {
+            "index": 3,
+            "flexBasis": "auto",
+            "width": 56,
+            "headTransformY": "matrix(1, 0, 0, 1, 0, 54.3906)",
+            "imgOpacity": "0"
+          }
+        ],
+        "m7_hiw_initial": {
+          "leftY": "matrix(1, 0, 0, 1, 0, 0)",
+          "wordColors": [
+            {
+              "class": "h1-text white-text hiw-text _1",
+              "color": "rgb(162, 250, 142)"
+            },
+            {
+              "class": "h1-text white-text hiw-text _2",
+              "color": "rgb(76, 76, 76)"
+            },
+            {
+              "class": "h1-text white-text hiw-text _3",
+              "color": "rgb(76, 76, 76)"
+            }
+          ]
+        },
+        "m9_scheduling": [
+          {
+            "index": 1,
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "backgroundColor": "rgb(2, 8, 1)",
+            "imgOpacity": "1"
+          },
+          {
+            "index": 2,
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "backgroundColor": "rgb(2, 8, 1)",
+            "imgOpacity": "1"
+          },
+          {
+            "index": 3,
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "backgroundColor": "rgb(2, 8, 1)",
+            "imgOpacity": "1"
+          },
+          {
+            "index": 4,
+            "transform": "none",
+            "backgroundColor": "rgb(2, 8, 1)",
+            "imgOpacity": "1"
+          }
+        ],
+        "m10_tasking": {
+          "height": "0px",
+          "backgroundColor": "rgb(0, 51, 204)"
+        },
+        "m11_popup_initial": {
+          "display": "none",
+          "opacity": "0",
+          "isOpen": false
+        },
+        "m12_underline": {
+          "line1Width": "118.328px",
+          "line1Transform": "none",
+          "line2Width": "0px",
+          "line2Transform": "none"
+        },
+        "m13_arrow": {
+          "bg": "rgba(255, 255, 255, 0)",
+          "whiteTransform": "none",
+          "blackTransform": "matrix(1, 0, 0, 1, -70, 0)"
+        },
+        "m14_integration": {
+          "bg": "rgba(2, 8, 1, 0.01)",
+          "display": "flex"
+        },
+        "m15_nav_text": [
+          {
+            "transforms": [
+              "none",
+              "none"
+            ]
+          },
+          {
+            "transforms": [
+              "none",
+              "none"
+            ]
+          }
+        ],
+        "m16_close_btn": {
+          "bg": "rgba(0, 0, 0, 0)"
+        },
+        "m18_menu_btn": {
+          "display": "block",
+          "burgerDisplay": "block"
+        },
+        "m21_video": {
+          "duration": 15.066667,
+          "currentTime": 4.881944,
+          "isPlaying": true
+        }
+      },
+      "dev": {
+        "m1_logo_marquee": {
+          "width": 2132,
+          "computedWidth": "2132.09px",
+          "transform": "matrix(1, 0, 0, 1, -48.1759, 0)"
+        },
+        "m3_video_initial": {
+          "opacity": "1",
+          "display": "block",
+          "videoPlaying": true
+        },
+        "m4_nav_initial": {
+          "bg": "rgba(2, 8, 1, 0.5)",
+          "hasOnWhiteClass": false,
+          "logoWhiteOpacity": "1",
+          "logoBlackOpacity": "0"
+        },
+        "m5_stats": [
+          {
+            "index": 0,
+            "flexBasis": "auto",
+            "width": 394,
+            "headTransformY": "matrix(1, 0, 0, 1, 0, 0)",
+            "imgOpacity": "1"
+          },
+          {
+            "index": 1,
+            "flexBasis": "auto",
+            "width": 56,
+            "headTransformY": "matrix(1, 0, 0, 1, 0, 54.3906)",
+            "imgOpacity": "0"
+          },
+          {
+            "index": 2,
+            "flexBasis": "auto",
+            "width": 56,
+            "headTransformY": "matrix(1, 0, 0, 1, 0, 54.3906)",
+            "imgOpacity": "0"
+          },
+          {
+            "index": 3,
+            "flexBasis": "auto",
+            "width": 56,
+            "headTransformY": "matrix(1, 0, 0, 1, 0, 54.3906)",
+            "imgOpacity": "0"
+          }
+        ],
+        "m7_hiw_initial": {
+          "leftY": "matrix(1, 0, 0, 1, 0, 0)",
+          "wordColors": [
+            {
+              "class": "hiw-text _1 is-active",
+              "color": "rgb(162, 250, 142)"
+            },
+            {
+              "class": "hiw-text _2",
+              "color": "rgb(76, 76, 76)"
+            },
+            {
+              "class": "hiw-text _3",
+              "color": "rgb(76, 76, 76)"
+            }
+          ]
+        },
+        "m9_scheduling": [
+          {
+            "index": 1,
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "backgroundColor": "rgb(2, 8, 1)",
+            "imgOpacity": "1"
+          },
+          {
+            "index": 2,
+            "transform": "none",
+            "backgroundColor": "rgb(2, 8, 1)",
+            "imgOpacity": "1"
+          },
+          {
+            "index": 3,
+            "transform": "none",
+            "backgroundColor": "rgb(2, 8, 1)",
+            "imgOpacity": "1"
+          },
+          {
+            "index": 4,
+            "transform": "none",
+            "backgroundColor": "rgb(2, 8, 1)",
+            "imgOpacity": "1"
+          }
+        ],
+        "m10_tasking": {
+          "height": "0px",
+          "backgroundColor": "rgb(0, 51, 204)"
+        },
+        "m11_popup_initial": {
+          "display": "none",
+          "opacity": "0",
+          "isOpen": false
+        },
+        "m12_underline": {
+          "line1Width": "118.328px",
+          "line1Transform": "none",
+          "line2Width": "0px",
+          "line2Transform": "none"
+        },
+        "m13_arrow": {
+          "bg": "rgba(255, 255, 255, 0)",
+          "whiteTransform": "matrix(1, 0, 0, 1, 0, 0)",
+          "blackTransform": "matrix(1, 0, 0, 1, -70, 0)"
+        },
+        "m14_integration": {
+          "bg": "rgba(2, 8, 1, 0.01)",
+          "display": "flex"
+        },
+        "m15_nav_text": [
+          {
+            "transforms": [
+              "none",
+              "none"
+            ]
+          },
+          {
+            "transforms": [
+              "none",
+              "none"
+            ]
+          }
+        ],
+        "m16_close_btn": {
+          "bg": "rgba(0, 0, 0, 0)"
+        },
+        "m18_menu_btn": {
+          "display": "block",
+          "burgerDisplay": "block"
+        },
+        "m21_video": {
+          "duration": 15.066667,
+          "currentTime": 1.007642,
+          "isPlaying": true
+        }
+      },
+      "prod": {
+        "m1_logo_marquee": {
+          "width": 2132,
+          "computedWidth": "2132.09px",
+          "transform": "matrix(1, 0, 0, 1, -48.181, 0)"
+        },
+        "m3_video_initial": {
+          "opacity": "1",
+          "display": "block",
+          "videoPlaying": true
+        },
+        "m4_nav_initial": {
+          "bg": "rgba(2, 8, 1, 0.5)",
+          "hasOnWhiteClass": false,
+          "logoWhiteOpacity": "1",
+          "logoBlackOpacity": "0"
+        },
+        "m5_stats": [
+          {
+            "index": 0,
+            "flexBasis": "auto",
+            "width": 394,
+            "headTransformY": "matrix(1, 0, 0, 1, 0, 0)",
+            "imgOpacity": "1"
+          },
+          {
+            "index": 1,
+            "flexBasis": "auto",
+            "width": 56,
+            "headTransformY": "matrix(1, 0, 0, 1, 0, 54.3906)",
+            "imgOpacity": "0"
+          },
+          {
+            "index": 2,
+            "flexBasis": "auto",
+            "width": 56,
+            "headTransformY": "matrix(1, 0, 0, 1, 0, 54.3906)",
+            "imgOpacity": "0"
+          },
+          {
+            "index": 3,
+            "flexBasis": "auto",
+            "width": 56,
+            "headTransformY": "matrix(1, 0, 0, 1, 0, 54.3906)",
+            "imgOpacity": "0"
+          }
+        ],
+        "m7_hiw_initial": {
+          "leftY": "matrix(1, 0, 0, 1, 0, 0)",
+          "wordColors": [
+            {
+              "class": "hiw-text _1 is-active",
+              "color": "rgb(162, 250, 142)"
+            },
+            {
+              "class": "hiw-text _2",
+              "color": "rgb(76, 76, 76)"
+            },
+            {
+              "class": "hiw-text _3",
+              "color": "rgb(76, 76, 76)"
+            }
+          ]
+        },
+        "m9_scheduling": [
+          {
+            "index": 1,
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "backgroundColor": "rgb(2, 8, 1)",
+            "imgOpacity": "1"
+          },
+          {
+            "index": 2,
+            "transform": "none",
+            "backgroundColor": "rgb(2, 8, 1)",
+            "imgOpacity": "1"
+          },
+          {
+            "index": 3,
+            "transform": "none",
+            "backgroundColor": "rgb(2, 8, 1)",
+            "imgOpacity": "1"
+          },
+          {
+            "index": 4,
+            "transform": "none",
+            "backgroundColor": "rgb(2, 8, 1)",
+            "imgOpacity": "1"
+          }
+        ],
+        "m10_tasking": {
+          "height": "0px",
+          "backgroundColor": "rgb(0, 51, 204)"
+        },
+        "m11_popup_initial": {
+          "display": "none",
+          "opacity": "0",
+          "isOpen": false
+        },
+        "m12_underline": {
+          "line1Width": "118.328px",
+          "line1Transform": "none",
+          "line2Width": "0px",
+          "line2Transform": "none"
+        },
+        "m13_arrow": {
+          "bg": "rgba(255, 255, 255, 0)",
+          "whiteTransform": "matrix(1, 0, 0, 1, 0, 0)",
+          "blackTransform": "matrix(1, 0, 0, 1, -70, 0)"
+        },
+        "m14_integration": {
+          "bg": "rgba(2, 8, 1, 0.01)",
+          "display": "flex"
+        },
+        "m15_nav_text": [
+          {
+            "transforms": [
+              "none",
+              "none"
+            ]
+          },
+          {
+            "transforms": [
+              "none",
+              "none"
+            ]
+          }
+        ],
+        "m16_close_btn": {
+          "bg": "rgba(0, 0, 0, 0)"
+        },
+        "m18_menu_btn": {
+          "display": "block",
+          "burgerDisplay": "block"
+        },
+        "m21_video": {
+          "duration": 15.066667,
+          "currentTime": 1.009744,
+          "isPlaying": true
+        }
+      }
+    },
+    "mobile": {
+      "live": {
+        "m1_logo_marquee": {
+          "width": 2159,
+          "computedWidth": "2158.89px",
+          "transform": "matrix(1, 0, 0, 1, -182.636, 0)"
+        },
+        "m3_video_initial": {
+          "opacity": "1",
+          "display": "block",
+          "videoPlaying": true
+        },
+        "m4_nav_initial": {
+          "bg": "rgba(2, 8, 1, 0.5)",
+          "hasOnWhiteClass": false,
+          "logoWhiteOpacity": "1",
+          "logoBlackOpacity": "0"
+        },
+        "m5_stats": [
+          {
+            "index": 0,
+            "flexBasis": "auto",
+            "width": 390,
+            "headTransformY": "matrix(1, 0, 0, 1, 0, 0)",
+            "imgOpacity": "1"
+          },
+          {
+            "index": 1,
+            "flexBasis": "auto",
+            "width": 390,
+            "headTransformY": "matrix(1, 0, 0, 1, 0, 49.9219)",
+            "imgOpacity": "0"
+          },
+          {
+            "index": 2,
+            "flexBasis": "auto",
+            "width": 390,
+            "headTransformY": "matrix(1, 0, 0, 1, 0, 49.9219)",
+            "imgOpacity": "0"
+          },
+          {
+            "index": 3,
+            "flexBasis": "auto",
+            "width": 390,
+            "headTransformY": "matrix(1, 0, 0, 1, 0, 49.9219)",
+            "imgOpacity": "0"
+          }
+        ],
+        "m7_hiw_initial": {
+          "leftY": "none",
+          "wordColors": [
+            {
+              "class": "h1-text white-text hiw-text _1",
+              "color": "rgb(162, 250, 142)"
+            },
+            {
+              "class": "h1-text white-text hiw-text _2",
+              "color": "rgb(76, 76, 76)"
+            },
+            {
+              "class": "h1-text white-text hiw-text _3",
+              "color": "rgb(76, 76, 76)"
+            }
+          ]
+        },
+        "m9_scheduling": [
+          {
+            "index": 1,
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "backgroundColor": "rgb(2, 8, 1)",
+            "imgOpacity": "1"
+          },
+          {
+            "index": 2,
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "backgroundColor": "rgb(2, 8, 1)",
+            "imgOpacity": "1"
+          },
+          {
+            "index": 3,
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "backgroundColor": "rgb(2, 8, 1)",
+            "imgOpacity": "1"
+          },
+          {
+            "index": 4,
+            "transform": "none",
+            "backgroundColor": "rgb(2, 8, 1)",
+            "imgOpacity": "1"
+          }
+        ],
+        "m10_tasking": {
+          "height": "0px",
+          "backgroundColor": "rgb(0, 51, 204)"
+        },
+        "m11_popup_initial": {
+          "display": "none",
+          "opacity": "0",
+          "isOpen": false
+        },
+        "m12_underline": {
+          "line1Width": "118.328px",
+          "line1Transform": "none",
+          "line2Width": "0px",
+          "line2Transform": "none"
+        },
+        "m13_arrow": {
+          "bg": "rgba(255, 255, 255, 0)",
+          "whiteTransform": "none",
+          "blackTransform": "matrix(1, 0, 0, 1, -70, 0)"
+        },
+        "m14_integration": {
+          "bg": "rgba(2, 8, 1, 0.01)",
+          "display": "flex"
+        },
+        "m15_nav_text": [
+          {
+            "transforms": [
+              "none",
+              "none"
+            ]
+          },
+          {
+            "transforms": [
+              "none",
+              "none"
+            ]
+          }
+        ],
+        "m16_close_btn": {
+          "bg": "rgba(0, 0, 0, 0)"
+        },
+        "m18_menu_btn": {
+          "display": "block",
+          "burgerDisplay": "block"
+        },
+        "m21_video": {
+          "duration": 15.066667,
+          "currentTime": 6.081957,
+          "isPlaying": true
+        }
+      },
+      "dev": {
+        "m1_logo_marquee": {
+          "width": 2160,
+          "computedWidth": "2159.66px",
+          "transform": "matrix(1, 0, 0, 1, -49.6029, 0)"
+        },
+        "m3_video_initial": {
+          "opacity": "1",
+          "display": "block",
+          "videoPlaying": true
+        },
+        "m4_nav_initial": {
+          "bg": "rgba(2, 8, 1, 0.5)",
+          "hasOnWhiteClass": false,
+          "logoWhiteOpacity": "1",
+          "logoBlackOpacity": "0"
+        },
+        "m5_stats": [
+          {
+            "index": 0,
+            "flexBasis": "auto",
+            "width": 390,
+            "headTransformY": "matrix(1, 0, 0, 1, 0, 0)",
+            "imgOpacity": "1"
+          },
+          {
+            "index": 1,
+            "flexBasis": "auto",
+            "width": 390,
+            "headTransformY": "matrix(1, 0, 0, 1, 0, 49.9219)",
+            "imgOpacity": "0"
+          },
+          {
+            "index": 2,
+            "flexBasis": "auto",
+            "width": 390,
+            "headTransformY": "matrix(1, 0, 0, 1, 0, 49.9219)",
+            "imgOpacity": "0"
+          },
+          {
+            "index": 3,
+            "flexBasis": "auto",
+            "width": 390,
+            "headTransformY": "matrix(1, 0, 0, 1, 0, 49.9219)",
+            "imgOpacity": "0"
+          }
+        ],
+        "m7_hiw_initial": {
+          "leftY": "none",
+          "wordColors": [
+            {
+              "class": "hiw-text _1 is-active",
+              "color": "rgb(162, 250, 142)"
+            },
+            {
+              "class": "hiw-text _2",
+              "color": "rgb(76, 76, 76)"
+            },
+            {
+              "class": "hiw-text _3",
+              "color": "rgb(76, 76, 76)"
+            }
+          ]
+        },
+        "m9_scheduling": [
+          {
+            "index": 1,
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "backgroundColor": "rgb(2, 8, 1)",
+            "imgOpacity": "1"
+          },
+          {
+            "index": 2,
+            "transform": "none",
+            "backgroundColor": "rgb(2, 8, 1)",
+            "imgOpacity": "1"
+          },
+          {
+            "index": 3,
+            "transform": "none",
+            "backgroundColor": "rgb(2, 8, 1)",
+            "imgOpacity": "1"
+          },
+          {
+            "index": 4,
+            "transform": "none",
+            "backgroundColor": "rgb(2, 8, 1)",
+            "imgOpacity": "1"
+          }
+        ],
+        "m10_tasking": {
+          "height": "0px",
+          "backgroundColor": "rgb(0, 51, 204)"
+        },
+        "m11_popup_initial": {
+          "display": "none",
+          "opacity": "0",
+          "isOpen": false
+        },
+        "m12_underline": {
+          "line1Width": "118.328px",
+          "line1Transform": "none",
+          "line2Width": "0px",
+          "line2Transform": "none"
+        },
+        "m13_arrow": {
+          "bg": "rgba(255, 255, 255, 0)",
+          "whiteTransform": "matrix(1, 0, 0, 1, 0, 0)",
+          "blackTransform": "matrix(1, 0, 0, 1, -70, 0)"
+        },
+        "m14_integration": {
+          "bg": "rgba(2, 8, 1, 0.01)",
+          "display": "flex"
+        },
+        "m15_nav_text": [
+          {
+            "transforms": [
+              "none",
+              "none"
+            ]
+          },
+          {
+            "transforms": [
+              "none",
+              "none"
+            ]
+          }
+        ],
+        "m16_close_btn": {
+          "bg": "rgba(0, 0, 0, 0)"
+        },
+        "m18_menu_btn": {
+          "display": "block",
+          "burgerDisplay": "block"
+        },
+        "m21_video": {
+          "duration": 15.066667,
+          "currentTime": 1.00772,
+          "isPlaying": true
+        }
+      },
+      "prod": {
+        "m1_logo_marquee": {
+          "width": 2160,
+          "computedWidth": "2159.66px",
+          "transform": "matrix(1, 0, 0, 1, -48.8036, 0)"
+        },
+        "m3_video_initial": {
+          "opacity": "1",
+          "display": "block",
+          "videoPlaying": true
+        },
+        "m4_nav_initial": {
+          "bg": "rgba(2, 8, 1, 0.5)",
+          "hasOnWhiteClass": false,
+          "logoWhiteOpacity": "1",
+          "logoBlackOpacity": "0"
+        },
+        "m5_stats": [
+          {
+            "index": 0,
+            "flexBasis": "auto",
+            "width": 390,
+            "headTransformY": "matrix(1, 0, 0, 1, 0, 0)",
+            "imgOpacity": "1"
+          },
+          {
+            "index": 1,
+            "flexBasis": "auto",
+            "width": 390,
+            "headTransformY": "matrix(1, 0, 0, 1, 0, 49.9219)",
+            "imgOpacity": "0"
+          },
+          {
+            "index": 2,
+            "flexBasis": "auto",
+            "width": 390,
+            "headTransformY": "matrix(1, 0, 0, 1, 0, 49.9219)",
+            "imgOpacity": "0"
+          },
+          {
+            "index": 3,
+            "flexBasis": "auto",
+            "width": 390,
+            "headTransformY": "matrix(1, 0, 0, 1, 0, 49.9219)",
+            "imgOpacity": "0"
+          }
+        ],
+        "m7_hiw_initial": {
+          "leftY": "none",
+          "wordColors": [
+            {
+              "class": "hiw-text _1 is-active",
+              "color": "rgb(162, 250, 142)"
+            },
+            {
+              "class": "hiw-text _2",
+              "color": "rgb(76, 76, 76)"
+            },
+            {
+              "class": "hiw-text _3",
+              "color": "rgb(76, 76, 76)"
+            }
+          ]
+        },
+        "m9_scheduling": [
+          {
+            "index": 1,
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "backgroundColor": "rgb(2, 8, 1)",
+            "imgOpacity": "1"
+          },
+          {
+            "index": 2,
+            "transform": "none",
+            "backgroundColor": "rgb(2, 8, 1)",
+            "imgOpacity": "1"
+          },
+          {
+            "index": 3,
+            "transform": "none",
+            "backgroundColor": "rgb(2, 8, 1)",
+            "imgOpacity": "1"
+          },
+          {
+            "index": 4,
+            "transform": "none",
+            "backgroundColor": "rgb(2, 8, 1)",
+            "imgOpacity": "1"
+          }
+        ],
+        "m10_tasking": {
+          "height": "0px",
+          "backgroundColor": "rgb(0, 51, 204)"
+        },
+        "m11_popup_initial": {
+          "display": "none",
+          "opacity": "0",
+          "isOpen": false
+        },
+        "m12_underline": {
+          "line1Width": "118.328px",
+          "line1Transform": "none",
+          "line2Width": "0px",
+          "line2Transform": "none"
+        },
+        "m13_arrow": {
+          "bg": "rgba(255, 255, 255, 0)",
+          "whiteTransform": "matrix(1, 0, 0, 1, 0, 0)",
+          "blackTransform": "matrix(1, 0, 0, 1, -70, 0)"
+        },
+        "m14_integration": {
+          "bg": "rgba(2, 8, 1, 0.01)",
+          "display": "flex"
+        },
+        "m15_nav_text": [
+          {
+            "transforms": [
+              "none",
+              "none"
+            ]
+          },
+          {
+            "transforms": [
+              "none",
+              "none"
+            ]
+          }
+        ],
+        "m16_close_btn": {
+          "bg": "rgba(0, 0, 0, 0)"
+        },
+        "m18_menu_btn": {
+          "display": "block",
+          "burgerDisplay": "block"
+        },
+        "m21_video": {
+          "duration": 15.066667,
+          "currentTime": 1.010158,
+          "isPlaying": true
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "sections": 19,
+  "links": {
+    "total": 56,
+    "external": 15,
+    "internal": 17,
+    "anchors": 23,
+    "mailto": 1,
+    "tel": 0
+  },
+  "lenis": false,
+  "video": {
+    "found": false
+  },
+  "forms": 4,
+  "nav": {
+    "fixed": true,
+    "height": 60,
+    "hasLogo": true,
+    "hasMenuBtn": true
+  },
+  "modal": {
+    "found": true,
+    "fixed": true,
+    "hidden": true,
+    "hasForm": true,
+    "hasClose": true
+  },
+  "images": {
+    "total": 116,
+    "broken": 72,
+    "srcs": [
+      "bb30a93107837363b04-logo-2.svg",
+      "051bc5b61776ed5-logo-black.svg",
+      "34463bc8a25527-menu-burger.svg",
+      "2e70dc1bc-close-icon-white.svg",
+      "1451718b-menu-burger-close.svg"
+    ]
+  }
+}

@@ -1,0 +1,20 @@
+[
+  {
+    "env": "DEV",
+    "title": "Transform9 — Maximize Every Call with a Custom AI Agent",
+    "h1": "Maximize Every Call with a Custom AI Agent",
+    "sections": 17,
+    "consoleErrors": 0,
+    "externalRequests": 0,
+    "badRequests": 0
+  },
+  {
+    "env": "PROD",
+    "title": "Transform9 — Maximize Every Call with a Custom AI Agent",
+    "h1": "Maximize Every Call with a Custom AI Agent",
+    "sections": 17,
+    "consoleErrors": 0,
+    "externalRequests": 0,
+    "badRequests": 0
+  }
+]

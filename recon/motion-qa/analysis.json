@@ -1,0 +1,86 @@
+{
+  "timestamp": "2026-09-30T09:40:53.431Z",
+  "verdict": {},
+  "mismatches": [
+    {
+      "mId": "M18",
+      "viewport": "mobile",
+      "selector": ".menu-btn",
+      "test": "Mobile menu open state",
+      "expected": "isOpen: false",
+      "devActual": "isOpen: true",
+      "prodActual": "isOpen: true",
+      "severity": "HIGH"
+    }
+  ],
+  "passes": [
+    {
+      "mId": "M1",
+      "viewport": "desktop",
+      "test": "Logo marquee has transform animation",
+      "verdict": "PASS"
+    },
+    {
+      "mId": "M1",
+      "viewport": "tablet",
+      "test": "Logo marquee has transform animation",
+      "verdict": "PASS"
+    },
+    {
+      "mId": "M1",
+      "viewport": "tablet-768",
+      "test": "Logo marquee has transform animation",
+      "verdict": "PASS"
+    },
+    {
+      "mId": "M1",
+      "viewport": "mobile",
+      "test": "Logo marquee has transform animation",
+      "verdict": "PASS"
+    },
+    {
+      "mId": "M3",
+      "viewport": "1440",
+      "test": "Video fade at scroll position",
+      "verdict": "PASS",
+      "details": "Live: 0.16, Dev: 0.16, Prod: 0.1584"
+    },
+    {
+      "mId": "M4",
+      "viewport": "1440",
+      "test": "Nav on-white state detection",
+      "verdict": "PASS"
+    },
+    {
+      "mId": "M4",
+      "viewport": "1440",
+      "test": "Nav on-white state detection",
+      "verdict": "PASS"
+    },
+    {
+      "mId": "M4",
+      "viewport": "1440",
+      "test": "Nav on-white state detection",
+      "verdict": "PASS"
+    },
+    {
+      "mId": "M11",
+      "viewport": "desktop",
+      "test": "Popup opens and becomes visible",
+      "verdict": "PASS"
+    },
+    {
+      "mId": "M11b",
+      "viewport": "desktop",
+      "test": "Popup closes and becomes hidden",
+      "verdict": "PASS"
+    },
+    {
+      "mId": "M15",
+      "viewport": "desktop",
+      "test": "Nav link text translateY on hover",
+      "verdict": "PASS"
+    }
+  ],
+  "untested": []
+}

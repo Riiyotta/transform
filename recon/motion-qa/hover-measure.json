@@ -1,0 +1,951 @@
+{
+  "timestamp": "2026-09-30T09:39:27.089Z",
+  "tests": {
+    "desktop": {
+      "live": {
+        "m12_underline": {
+          "description": "Hero CTA underline",
+          "selector": ".hero-cta-link.get-a-call",
+          "initial": {
+            "display": "flex",
+            "opacity": "1",
+            "transform": "none",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "children": [
+              {
+                "opacity": "1",
+                "transform": "none"
+              },
+              {
+                "opacity": "1",
+                "transform": "none"
+              },
+              {
+                "opacity": "1",
+                "transform": "none"
+              }
+            ]
+          },
+          "onHover": {
+            "display": "flex",
+            "opacity": "1",
+            "transform": "none",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "children": [
+              {
+                "opacity": "1",
+                "transform": "none"
+              },
+              {
+                "opacity": "1",
+                "transform": "none"
+              },
+              {
+                "opacity": "1",
+                "transform": "none"
+              }
+            ]
+          },
+          "onOut": {
+            "display": "flex",
+            "opacity": "1",
+            "transform": "none",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "children": [
+              {
+                "opacity": "1",
+                "transform": "none"
+              },
+              {
+                "opacity": "1",
+                "transform": "none"
+              },
+              {
+                "opacity": "1",
+                "transform": "none"
+              }
+            ]
+          }
+        },
+        "m11_popup": {
+          "description": "Popup open/close cycle",
+          "initial": {
+            "display": "none",
+            "opacity": "0",
+            "isOpen": false
+          },
+          "afterOpen": {
+            "display": "flex",
+            "opacity": "1",
+            "isOpen": false
+          },
+          "afterClose": {
+            "display": "none",
+            "opacity": "0",
+            "isOpen": false
+          }
+        },
+        "m18_mobile_menu": {
+          "skipped": "Desktop viewport"
+        },
+        "m5_stats_hover": {
+          "description": "Stats block hover",
+          "selector": ".stats-block",
+          "initial": {
+            "display": "flex",
+            "opacity": "1",
+            "transform": "none",
+            "backgroundColor": "rgb(22, 138, 226)",
+            "children": [
+              {
+                "opacity": "1",
+                "transform": "none"
+              },
+              {
+                "opacity": "1",
+                "transform": "none"
+              },
+              {
+                "opacity": "1",
+                "transform": "none"
+              }
+            ]
+          },
+          "onHover": {
+            "display": "flex",
+            "opacity": "1",
+            "transform": "none",
+            "backgroundColor": "rgb(22, 138, 226)",
+            "children": [
+              {
+                "opacity": "1",
+                "transform": "none"
+              },
+              {
+                "opacity": "1",
+                "transform": "none"
+              },
+              {
+                "opacity": "1",
+                "transform": "none"
+              }
+            ]
+          },
+          "onOut": {
+            "display": "flex",
+            "opacity": "1",
+            "transform": "none",
+            "backgroundColor": "rgb(22, 138, 226)",
+            "children": [
+              {
+                "opacity": "1",
+                "transform": "none"
+              },
+              {
+                "opacity": "1",
+                "transform": "none"
+              },
+              {
+                "opacity": "1",
+                "transform": "none"
+              }
+            ]
+          }
+        },
+        "m15_nav_link": {
+          "description": "Nav link hover",
+          "selector": ".nav-link-block._1st",
+          "initial": {
+            "display": "flex",
+            "opacity": "1",
+            "transform": "none",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "children": [
+              {
+                "opacity": "1",
+                "transform": "none"
+              },
+              {
+                "opacity": "1",
+                "transform": "none"
+              },
+              {
+                "opacity": "1",
+                "transform": "none"
+              }
+            ]
+          },
+          "onHover": {
+            "display": "flex",
+            "opacity": "1",
+            "transform": "none",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "children": [
+              {
+                "opacity": "1",
+                "transform": "none"
+              },
+              {
+                "opacity": "1",
+                "transform": "matrix(1, 0, 0, 1, 0, -19.5938)"
+              },
+              {
+                "opacity": "1",
+                "transform": "matrix(1, 0, 0, 1, 0, -19.5938)"
+              }
+            ]
+          },
+          "onOut": {
+            "display": "flex",
+            "opacity": "1",
+            "transform": "none",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "children": [
+              {
+                "opacity": "1",
+                "transform": "none"
+              },
+              {
+                "opacity": "1",
+                "transform": "matrix(1, 0, 0, 1, 0, 0)"
+              },
+              {
+                "opacity": "1",
+                "transform": "matrix(1, 0, 0, 1, 0, 0)"
+              }
+            ]
+          }
+        }
+      },
+      "dev": {
+        "m12_underline": {
+          "description": "Hero CTA underline",
+          "selector": ".hero-cta-link.get-a-call",
+          "initial": {
+            "display": "flex",
+            "opacity": "1",
+            "transform": "none",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "children": [
+              {
+                "opacity": "1",
+                "transform": "none"
+              },
+              {
+                "opacity": "1",
+                "transform": "none"
+              },
+              {
+                "opacity": "1",
+                "transform": "none"
+              }
+            ]
+          },
+          "onHover": {
+            "display": "flex",
+            "opacity": "1",
+            "transform": "none",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "children": [
+              {
+                "opacity": "1",
+                "transform": "none"
+              },
+              {
+                "opacity": "1",
+                "transform": "none"
+              },
+              {
+                "opacity": "1",
+                "transform": "none"
+              }
+            ]
+          },
+          "onOut": {
+            "display": "flex",
+            "opacity": "1",
+            "transform": "none",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "children": [
+              {
+                "opacity": "1",
+                "transform": "none"
+              },
+              {
+                "opacity": "1",
+                "transform": "none"
+              },
+              {
+                "opacity": "1",
+                "transform": "none"
+              }
+            ]
+          }
+        },
+        "m11_popup": {
+          "description": "Popup open/close cycle",
+          "initial": {
+            "display": "none",
+            "opacity": "0",
+            "isOpen": false
+          },
+          "afterOpen": {
+            "display": "flex",
+            "opacity": "1",
+            "isOpen": true
+          },
+          "afterClose": {
+            "display": "none",
+            "opacity": "0",
+            "isOpen": false
+          }
+        },
+        "m18_mobile_menu": {
+          "skipped": "Desktop viewport"
+        },
+        "m5_stats_hover": {
+          "description": "Stats block hover",
+          "selector": ".stats-block",
+          "initial": {
+            "display": "flex",
+            "opacity": "1",
+            "transform": "none",
+            "backgroundColor": "rgb(22, 138, 226)",
+            "children": [
+              {
+                "opacity": "1",
+                "transform": "none"
+              },
+              {
+                "opacity": "1",
+                "transform": "none"
+              },
+              {
+                "opacity": "1",
+                "transform": "none"
+              }
+            ]
+          },
+          "onHover": {
+            "display": "flex",
+            "opacity": "1",
+            "transform": "none",
+            "backgroundColor": "rgb(22, 138, 226)",
+            "children": [
+              {
+                "opacity": "1",
+                "transform": "none"
+              },
+              {
+                "opacity": "1",
+                "transform": "none"
+              },
+              {
+                "opacity": "1",
+                "transform": "none"
+              }
+            ]
+          },
+          "onOut": {
+            "display": "flex",
+            "opacity": "1",
+            "transform": "none",
+            "backgroundColor": "rgb(22, 138, 226)",
+            "children": [
+              {
+                "opacity": "1",
+                "transform": "none"
+              },
+              {
+                "opacity": "1",
+                "transform": "none"
+              },
+              {
+                "opacity": "1",
+                "transform": "none"
+              }
+            ]
+          }
+        },
+        "m15_nav_link": {
+          "description": "Nav link hover",
+          "selector": ".nav-link-block._1st",
+          "initial": {
+            "display": "flex",
+            "opacity": "1",
+            "transform": "none",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "children": [
+              {
+                "opacity": "1",
+                "transform": "none"
+              },
+              {
+                "opacity": "1",
+                "transform": "matrix(1, 0, 0, 1, 0, 0)"
+              },
+              {
+                "opacity": "1",
+                "transform": "matrix(1, 0, 0, 1, 0, 0)"
+              }
+            ]
+          },
+          "onHover": {
+            "display": "flex",
+            "opacity": "1",
+            "transform": "none",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "children": [
+              {
+                "opacity": "1",
+                "transform": "none"
+              },
+              {
+                "opacity": "1",
+                "transform": "matrix(1, 0, 0, 1, 0, -19.5938)"
+              },
+              {
+                "opacity": "1",
+                "transform": "matrix(1, 0, 0, 1, 0, -19.5938)"
+              }
+            ]
+          },
+          "onOut": {
+            "display": "flex",
+            "opacity": "1",
+            "transform": "none",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "children": [
+              {
+                "opacity": "1",
+                "transform": "none"
+              },
+              {
+                "opacity": "1",
+                "transform": "matrix(1, 0, 0, 1, 0, 0)"
+              },
+              {
+                "opacity": "1",
+                "transform": "matrix(1, 0, 0, 1, 0, 0)"
+              }
+            ]
+          }
+        }
+      },
+      "prod": {
+        "m12_underline": {
+          "description": "Hero CTA underline",
+          "selector": ".hero-cta-link.get-a-call",
+          "initial": {
+            "display": "flex",
+            "opacity": "1",
+            "transform": "none",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "children": [
+              {
+                "opacity": "1",
+                "transform": "none"
+              },
+              {
+                "opacity": "1",
+                "transform": "none"
+              },
+              {
+                "opacity": "1",
+                "transform": "none"
+              }
+            ]
+          },
+          "onHover": {
+            "display": "flex",
+            "opacity": "1",
+            "transform": "none",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "children": [
+              {
+                "opacity": "1",
+                "transform": "none"
+              },
+              {
+                "opacity": "1",
+                "transform": "none"
+              },
+              {
+                "opacity": "1",
+                "transform": "none"
+              }
+            ]
+          },
+          "onOut": {
+            "display": "flex",
+            "opacity": "1",
+            "transform": "none",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "children": [
+              {
+                "opacity": "1",
+                "transform": "none"
+              },
+              {
+                "opacity": "1",
+                "transform": "none"
+              },
+              {
+                "opacity": "1",
+                "transform": "none"
+              }
+            ]
+          }
+        },
+        "m11_popup": {
+          "description": "Popup open/close cycle",
+          "initial": {
+            "display": "none",
+            "opacity": "0",
+            "isOpen": false
+          },
+          "afterOpen": {
+            "display": "flex",
+            "opacity": "1",
+            "isOpen": true
+          },
+          "afterClose": {
+            "display": "none",
+            "opacity": "0",
+            "isOpen": false
+          }
+        },
+        "m18_mobile_menu": {
+          "skipped": "Desktop viewport"
+        },
+        "m5_stats_hover": {
+          "description": "Stats block hover",
+          "selector": ".stats-block",
+          "initial": {
+            "display": "flex",
+            "opacity": "1",
+            "transform": "none",
+            "backgroundColor": "rgb(22, 138, 226)",
+            "children": [
+              {
+                "opacity": "1",
+                "transform": "none"
+              },
+              {
+                "opacity": "1",
+                "transform": "none"
+              },
+              {
+                "opacity": "1",
+                "transform": "none"
+              }
+            ]
+          },
+          "onHover": {
+            "display": "flex",
+            "opacity": "1",
+            "transform": "none",
+            "backgroundColor": "rgb(22, 138, 226)",
+            "children": [
+              {
+                "opacity": "1",
+                "transform": "none"
+              },
+              {
+                "opacity": "1",
+                "transform": "none"
+              },
+              {
+                "opacity": "1",
+                "transform": "none"
+              }
+            ]
+          },
+          "onOut": {
+            "display": "flex",
+            "opacity": "1",
+            "transform": "none",
+            "backgroundColor": "rgb(22, 138, 226)",
+            "children": [
+              {
+                "opacity": "1",
+                "transform": "none"
+              },
+              {
+                "opacity": "1",
+                "transform": "none"
+              },
+              {
+                "opacity": "1",
+                "transform": "none"
+              }
+            ]
+          }
+        },
+        "m15_nav_link": {
+          "description": "Nav link hover",
+          "selector": ".nav-link-block._1st",
+          "initial": {
+            "display": "flex",
+            "opacity": "1",
+            "transform": "none",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "children": [
+              {
+                "opacity": "1",
+                "transform": "none"
+              },
+              {
+                "opacity": "1",
+                "transform": "matrix(1, 0, 0, 1, 0, 0)"
+              },
+              {
+                "opacity": "1",
+                "transform": "matrix(1, 0, 0, 1, 0, 0)"
+              }
+            ]
+          },
+          "onHover": {
+            "display": "flex",
+            "opacity": "1",
+            "transform": "none",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "children": [
+              {
+                "opacity": "1",
+                "transform": "none"
+              },
+              {
+                "opacity": "1",
+                "transform": "matrix(1, 0, 0, 1, 0, -19.5938)"
+              },
+              {
+                "opacity": "1",
+                "transform": "matrix(1, 0, 0, 1, 0, -19.5938)"
+              }
+            ]
+          },
+          "onOut": {
+            "display": "flex",
+            "opacity": "1",
+            "transform": "none",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "children": [
+              {
+                "opacity": "1",
+                "transform": "none"
+              },
+              {
+                "opacity": "1",
+                "transform": "matrix(1, 0, 0, 1, 0, 0)"
+              },
+              {
+                "opacity": "1",
+                "transform": "matrix(1, 0, 0, 1, 0, 0)"
+              }
+            ]
+          }
+        }
+      }
+    },
+    "mobile": {
+      "live": {
+        "m12_underline": {
+          "description": "Hero CTA underline",
+          "selector": ".hero-cta-link.get-a-call",
+          "initial": {
+            "display": "flex",
+            "opacity": "1",
+            "transform": "none",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "children": [
+              {
+                "opacity": "1",
+                "transform": "none"
+              },
+              {
+                "opacity": "1",
+                "transform": "none"
+              },
+              {
+                "opacity": "1",
+                "transform": "none"
+              }
+            ]
+          },
+          "onHover": {
+            "display": "flex",
+            "opacity": "1",
+            "transform": "none",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "children": [
+              {
+                "opacity": "1",
+                "transform": "none"
+              },
+              {
+                "opacity": "1",
+                "transform": "none"
+              },
+              {
+                "opacity": "1",
+                "transform": "none"
+              }
+            ]
+          },
+          "onOut": {
+            "display": "flex",
+            "opacity": "1",
+            "transform": "none",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "children": [
+              {
+                "opacity": "1",
+                "transform": "none"
+              },
+              {
+                "opacity": "1",
+                "transform": "none"
+              },
+              {
+                "opacity": "1",
+                "transform": "none"
+              }
+            ]
+          }
+        },
+        "m11_popup": {
+          "description": "Popup open/close cycle",
+          "initial": {
+            "display": "none",
+            "opacity": "0",
+            "isOpen": false
+          },
+          "afterOpen": {
+            "display": "flex",
+            "opacity": "1",
+            "isOpen": false
+          },
+          "afterClose": {
+            "display": "none",
+            "opacity": "0",
+            "isOpen": false
+          }
+        },
+        "m18_mobile_menu": {
+          "description": "Mobile menu toggle",
+          "initial": {
+            "navDisplay": "none",
+            "isOpen": false
+          },
+          "afterOpen": {
+            "navDisplay": "block",
+            "isOpen": false
+          },
+          "afterClose": {
+            "navDisplay": "none",
+            "isOpen": false
+          }
+        }
+      },
+      "dev": {
+        "m12_underline": {
+          "description": "Hero CTA underline",
+          "selector": ".hero-cta-link.get-a-call",
+          "initial": {
+            "display": "flex",
+            "opacity": "1",
+            "transform": "none",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "children": [
+              {
+                "opacity": "1",
+                "transform": "none"
+              },
+              {
+                "opacity": "1",
+                "transform": "none"
+              },
+              {
+                "opacity": "1",
+                "transform": "none"
+              }
+            ]
+          },
+          "onHover": {
+            "display": "flex",
+            "opacity": "1",
+            "transform": "none",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "children": [
+              {
+                "opacity": "1",
+                "transform": "none"
+              },
+              {
+                "opacity": "1",
+                "transform": "none"
+              },
+              {
+                "opacity": "1",
+                "transform": "none"
+              }
+            ]
+          },
+          "onOut": {
+            "display": "flex",
+            "opacity": "1",
+            "transform": "none",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "children": [
+              {
+                "opacity": "1",
+                "transform": "none"
+              },
+              {
+                "opacity": "1",
+                "transform": "none"
+              },
+              {
+                "opacity": "1",
+                "transform": "none"
+              }
+            ]
+          }
+        },
+        "m11_popup": {
+          "description": "Popup open/close cycle",
+          "initial": {
+            "display": "none",
+            "opacity": "0",
+            "isOpen": false
+          },
+          "afterOpen": {
+            "display": "flex",
+            "opacity": "1",
+            "isOpen": true
+          },
+          "afterClose": {
+            "display": "none",
+            "opacity": "0",
+            "isOpen": false
+          }
+        },
+        "m18_mobile_menu": {
+          "description": "Mobile menu toggle",
+          "initial": {
+            "navDisplay": "none",
+            "isOpen": false
+          },
+          "afterOpen": {
+            "navDisplay": "block",
+            "isOpen": true
+          },
+          "afterClose": {
+            "navDisplay": "none",
+            "isOpen": false
+          }
+        }
+      },
+      "prod": {
+        "m12_underline": {
+          "description": "Hero CTA underline",
+          "selector": ".hero-cta-link.get-a-call",
+          "initial": {
+            "display": "flex",
+            "opacity": "1",
+            "transform": "none",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "children": [
+              {
+                "opacity": "1",
+                "transform": "none"
+              },
+              {
+                "opacity": "1",
+                "transform": "none"
+              },
+              {
+                "opacity": "1",
+                "transform": "none"
+              }
+            ]
+          },
+          "onHover": {
+            "display": "flex",
+            "opacity": "1",
+            "transform": "none",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "children": [
+              {
+                "opacity": "1",
+                "transform": "none"
+              },
+              {
+                "opacity": "1",
+                "transform": "none"
+              },
+              {
+                "opacity": "1",
+                "transform": "none"
+              }
+            ]
+          },
+          "onOut": {
+            "display": "flex",
+            "opacity": "1",
+            "transform": "none",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "children": [
+              {
+                "opacity": "1",
+                "transform": "none"
+              },
+              {
+                "opacity": "1",
+                "transform": "none"
+              },
+              {
+                "opacity": "1",
+                "transform": "none"
+              }
+            ]
+          }
+        },
+        "m11_popup": {
+          "description": "Popup open/close cycle",
+          "initial": {
+            "display": "none",
+            "opacity": "0",
+            "isOpen": false
+          },
+          "afterOpen": {
+            "display": "flex",
+            "opacity": "1",
+            "isOpen": true
+          },
+          "afterClose": {
+            "display": "none",
+            "opacity": "0",
+            "isOpen": false
+          }
+        },
+        "m18_mobile_menu": {
+          "description": "Mobile menu toggle",
+          "initial": {
+            "navDisplay": "none",
+            "isOpen": false
+          },
+          "afterOpen": {
+            "navDisplay": "block",
+            "isOpen": true
+          },
+          "afterClose": {
+            "navDisplay": "none",
+            "isOpen": false
+          }
+        }
+      }
+    }
+  }
+}
