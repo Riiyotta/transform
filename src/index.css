@@ -1915,3 +1915,15 @@
 .section-stub--white {
   background-color: var(--color-white);
 }
+
+/* =============================================================================
+   FOCUS-VISIBLE (approved accessibility deviation D7, DEVIATIONS.md)
+   The original removes outlines on :focus. Keyboard focus gets a visible ring;
+   mouse/touch focus is unaffected (:focus-visible). !important is intentional:
+   it must beat the faithful section-scoped `:focus { outline: 0 }` rules.
+   blue-light passes 3:1 non-text contrast on both black and white surfaces.
+   ============================================================================= */
+:focus-visible {
+  outline: 2px solid var(--color-blue-light) !important;
+  outline-offset: 2px !important;
+}

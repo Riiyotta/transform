@@ -13,7 +13,8 @@ const mixColor = (row, col) => ((row % 2 === 1) === (col % 2 === 0) ? 'blue' : '
 
 // MOTION: M8c — scroll scrub (container "top bottom" -> "top -20%"): every `.pixel` in both
 // layers opacity 1 -> 0; row _1 at t0, _2 .2, _3 .4, _4 .6, _5 .8; random x-stagger (amount 1).
-// Rendered here at the initial state (all pixels opacity 1).
+// Rendered here at the SETTLED end state (all pixels opacity 0, see cta.css); Animation sets
+// the initial opacity 1 before scrubbing.
 function BlackToImg() {
   return (
     <div className="transition-cont black-to-img" data-component="transition-black-to-img" aria-hidden="true">

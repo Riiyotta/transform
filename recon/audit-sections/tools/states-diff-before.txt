@@ -1,0 +1,101 @@
+
+######## 390  docH live 0 clone 0  docW 0/0
+--- testim-arrow-hover/testimonials (1)
+  only-live txt:”#1 [139.3,1112.5 9.2x23]
+--- testim-slide2/testimonials (1)
+  only-live txt:Slide 2 of 2.#1 [-1,1461.5 1x1]
+--- stack-end/scheduling (0)
+--- tasking-tab1/tasking (0)
+--- tasking-tab2/tasking (0)
+--- tasking-tab3/tasking (0)
+--- navigator-hover3/navigator (0)
+--- specialty-hover5/specialties (0)
+--- integration-hover1/integrations (12)
+  cls:integration-block bl#1 [integration-block bl|integration-block bl]: x 585→0 | backgroundColor (2, 8, 1, 0.01)→(255, 255, 255) | maxWidth none→100%
+  cls:integration-block bl#2 [integration-block bl|integration-block bl]: x 780→195 | maxWidth none→100%
+  cls:integration-block bl#3 [integration-block bl|integration-block bl]: x 1560→390 | maxWidth none→100%
+  cls:integration-block bl#4 [integration-block bl|integration-block bl]: x 1755→585 | maxWidth none→100%
+  cls:integration-block bl#5 [integration-block bl|integration-block bl]: x -1170→780 | y 511.8→409.4 | maxWidth none→100%
+  cls:integration-block bl#6 [integration-block bl|integration-block bl]: x -975→975 | y 511.8→409.4 | maxWidth none→100%
+  cls:integration-block bl#7 [integration-block bl|integration-block bl]: x -780→1170 | y 511.8→409.4 | maxWidth none→100%
+  cls:integration-block bl#8 [integration-block bl|integration-block bl]: x -585→1365 | y 511.8→409.4 | maxWidth none→100%
+  cls:integration-block bl#9 [integration-block bl|integration-block bl]: x -390→1560 | y 511.8→409.4 | maxWidth none→100%
+  cls:integration-block bl#10 [integration-block bl|integration-block bl]: x -195→1755 | y 511.8→409.4 | maxWidth none→100%
+  cls:integration-block bl#11 [integration-block bl|integration-block bl]: x 0→-1170 | maxWidth none→100%
+  cls:integration-block bl#12 [integration-block bl|integration-block bl]: x 195→-975 | maxWidth none→100%
+--- secure-hover1/security (0)
+--- cta-demo-hover/cta (0)
+--- cta-callalex-hover/cta (0)
+--- cta-input-focus/cta (0)
+--- cta-input-typed/cta (0)
+--- onwhite-sched/nav (6)
+  img:logo-2#1 [logo-white|logo-white]: color (51, 51, 51)→(2, 8, 1)
+  img:logo-black#1 [logo-black|logo-black]: color (51, 51, 51)→(2, 8, 1)
+  img:menu-burger#1 [burger-white|burger-white]: fontSize 24px→14px | lineHeight 33.6px→19.6px
+  img:close-icon-white#1 [nav-cross-white|nav-cross-white]: fontSize 24px→14px | lineHeight 33.6px→19.6px
+  img:menu-burger-close#1 [burger-black|burger-black]: fontSize 24px→14px | lineHeight 33.6px→19.6px
+  cls:menu-btn-wrap#1 [menu-btn-wrap|menu-btn-wrap]: fontSize 24px→14px | lineHeight 33.6px→19.6px | borderBottomColor (255, 255, 255, 0)→(0, 0, 0, 0) | borderLeftColor (255, 255, 255, 0)→(0, 0, 0, 0)
+--- onwhite-nav/nav (6)
+  img:logo-2#1 [logo-white|logo-white]: color (51, 51, 51)→(2, 8, 1)
+  img:logo-black#1 [logo-black|logo-black]: color (51, 51, 51)→(2, 8, 1)
+  img:menu-burger#1 [burger-white|burger-white]: fontSize 24px→14px | lineHeight 33.6px→19.6px
+  img:close-icon-white#1 [nav-cross-white|nav-cross-white]: fontSize 24px→14px | lineHeight 33.6px→19.6px
+  img:menu-burger-close#1 [burger-black|burger-black]: fontSize 24px→14px | lineHeight 33.6px→19.6px
+  cls:menu-btn-wrap#1 [menu-btn-wrap|menu-btn-wrap]: fontSize 24px→14px | lineHeight 33.6px→19.6px | borderBottomColor (255, 255, 255, 0)→(0, 0, 0, 0) | borderLeftColor (255, 255, 255, 0)→(0, 0, 0, 0)
+--- onwhite-exit/nav (6)
+  img:logo-2#1 [logo-white|logo-white]: color (51, 51, 51)→(2, 8, 1)
+  img:logo-black#1 [logo-black|logo-black]: color (51, 51, 51)→(2, 8, 1)
+  img:menu-burger#1 [burger-white|burger-white]: fontSize 24px→14px | lineHeight 33.6px→19.6px
+  img:close-icon-white#1 [nav-cross-white|nav-cross-white]: fontSize 24px→14px | lineHeight 33.6px→19.6px
+  img:menu-burger-close#1 [burger-black|burger-black]: fontSize 24px→14px | lineHeight 33.6px→19.6px
+  cls:menu-btn-wrap#1 [menu-btn-wrap|menu-btn-wrap]: fontSize 24px→14px | lineHeight 33.6px→19.6px | borderBottomColor (255, 255, 255, 0)→(0, 0, 0, 0) | borderLeftColor (255, 255, 255, 0)→(0, 0, 0, 0)
+
+######## 1440  docH live 0 clone 0  docW 0/0
+--- testim-arrow-hover/testimonials (1)
+  only-live txt:”#1 [815.1,703.4 12.5x30]
+--- testim-slide2/testimonials (1)
+  only-live txt:Slide 2 of 2.#1 [-1,1117.4 1x1]
+--- hiw-step1/how-it-works (2)
+  txt:Supports Patients#1 [h1-text white-text hiw-text _3|hiw-text _3]: color (162, 250, 142)→(76, 76, 76)
+  cls:how-it-works#1 [how-it-works|how-it-works]: position relative→static | top 0px→auto
+--- hiw-step2/how-it-works (4)
+  txt:AI that#1 [h1-text white-text hiw-text left|hiw-text left]: y 1592→1764.8
+  txt:Schedules#1 [h1-text white-text hiw-text _2|hiw-text _2]: color (162, 250, 142)→(76, 76, 76)
+  cls:how-it-works#1 [how-it-works|how-it-works]: position relative→static | top 0px→auto
+  cls:hiw-text-block left#1 [hiw-text-block left|hiw-text-block left]: y 1567.5→1740.3 | transform matrix(1, 0, 0, 1, 0, 172.8)→matrix(1, 0, 0, 1, 0, 345.6)
+--- stack-end/scheduling (0)
+--- tasking-tab1/tasking (1)
+  VIS cls:tab-progress-vert#1: live true clone false (live block/visible/6x38.3 clone block/visible/6x0)
+--- tasking-tab2/tasking (1)
+  VIS cls:tab-progress-vert#2: live true clone false (live block/visible/6x49.9 clone block/visible/6x0)
+--- tasking-tab3/tasking (1)
+  VIS cls:tab-progress-vert#3: live true clone false (live block/visible/6x37.3 clone block/visible/6x0)
+--- navigator-hover3/navigator (0)
+--- specialty-hover5/specialties (0)
+--- integration-hover1/integrations (12)
+  cls:integration-block bl#1 [integration-block bl|integration-block bl]: x 1080→0 | backgroundColor (2, 8, 1, 0.01)→(255, 255, 255) | maxWidth none→100%
+  cls:integration-block bl#2 [integration-block bl|integration-block bl]: x 1440→360 | maxWidth none→100%
+  cls:integration-block bl#3 [integration-block bl|integration-block bl]: x 2880→720 | maxWidth none→100%
+  cls:integration-block bl#4 [integration-block bl|integration-block bl]: x 3240→1080 | maxWidth none→100%
+  cls:integration-block bl#5 [integration-block bl|integration-block bl]: x -1440→1440 | y 643→482 | maxWidth none→100%
+  cls:integration-block bl#6 [integration-block bl|integration-block bl]: x -1080→1800 | y 643→482 | maxWidth none→100%
+  cls:integration-block bl#7 [integration-block bl|integration-block bl]: x -720→2160 | y 643→482 | maxWidth none→100%
+  cls:integration-block bl#8 [integration-block bl|integration-block bl]: x -360→2520 | y 643→482 | maxWidth none→100%
+  cls:integration-block bl#9 [integration-block bl|integration-block bl]: x 0→2880 | y 643→482 | maxWidth none→100%
+  cls:integration-block bl#10 [integration-block bl|integration-block bl]: x 360→3240 | y 643→482 | maxWidth none→100%
+  cls:integration-block bl#11 [integration-block bl|integration-block bl]: x 720→-1440 | maxWidth none→100%
+  cls:integration-block bl#12 [integration-block bl|integration-block bl]: x 1080→-1080 | maxWidth none→100%
+--- secure-hover1/security (0)
+--- cta-demo-hover/cta (0)
+--- cta-callalex-hover/cta (0)
+--- cta-input-focus/cta (0)
+--- cta-input-typed/cta (0)
+--- onwhite-sched/nav (2)
+  img:logo-2#1 [logo-white|logo-white]: color (51, 51, 51)→(2, 8, 1)
+  img:logo-black#1 [logo-black|logo-black]: color (51, 51, 51)→(2, 8, 1)
+--- onwhite-nav/nav (2)
+  img:logo-2#1 [logo-white|logo-white]: color (51, 51, 51)→(2, 8, 1)
+  img:logo-black#1 [logo-black|logo-black]: color (51, 51, 51)→(2, 8, 1)
+--- onwhite-exit/nav (2)
+  img:logo-2#1 [logo-white|logo-white]: color (51, 51, 51)→(2, 8, 1)
+  img:logo-black#1 [logo-black|logo-black]: color (51, 51, 51)→(2, 8, 1)

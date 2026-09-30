@@ -1,0 +1,30 @@
+
+######## 600  docH live 23019 clone 23019  docW 2799/2799
+--- testimonials (1)
+  only-live txt:”#1 [139.3,1383.7 9.2x23]
+--- how-it-works (2)
+  txt:Speaks#1 [h1-text white-text hiw-text _1|hiw-text _1 is-active]: color (76, 76, 76)→(162, 250, 142)
+  txt:Supports Patients#1 [h1-text white-text hiw-text _3|hiw-text _3]: color (162, 250, 142)→(76, 76, 76)
+--- white-section (0)
+--- trans-b2w (0)
+--- scheduling (0)
+--- tasking (0)
+--- navigator (0)
+--- outreach (0)
+--- trans-w2b (0)
+--- specialties (0)
+--- integrations (12)
+  cls:integration-block bl#1 [integration-block bl|integration-block bl]: x 864→0 | maxWidth none→100%
+  cls:integration-block bl#2 [integration-block bl|integration-block bl]: x 1152→288 | maxWidth none→100%
+  cls:integration-block bl#3 [integration-block bl|integration-block bl]: x 2304→576 | maxWidth none→100%
+  cls:integration-block bl#4 [integration-block bl|integration-block bl]: x 2592→864
+  cls:integration-block bl#5 [integration-block bl|integration-block bl]: x -1704→1152 | y 586.2→441.2
+  cls:integration-block bl#6 [integration-block bl|integration-block bl]: x -1416→1440 | y 586.2→441.2 | maxWidth none→100%
+  cls:integration-block bl#7 [integration-block bl|integration-block bl]: x -1128→1728 | y 586.2→441.2 | maxWidth none→100%
+  cls:integration-block bl#8 [integration-block bl|integration-block bl]: x -840→2016 | y 586.2→441.2 | maxWidth none→100%
+  cls:integration-block bl#9 [integration-block bl|integration-block bl]: x -552→2304 | y 586.2→441.2
+  cls:integration-block bl#10 [integration-block bl|integration-block bl]: x -264→2592 | y 586.2→441.2
+  cls:integration-block bl#11 [integration-block bl|integration-block bl]: x 24→-1704
+  cls:integration-block bl#12 [integration-block bl|integration-block bl]: x 312→-1416
+--- security (0)
+--- cta (0)

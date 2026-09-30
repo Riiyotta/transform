@@ -1,0 +1,42 @@
+
+######## 1440  docH live 25922 clone 25922  docW 3498/3498
+--- testimonials (1)
+  only-live txt:”#1 [815.1,703.4 12.5x30]
+--- how-it-works (4)
+  txt:AI that#1 [h1-text white-text hiw-text left|hiw-text left]: y 711.9→366.3
+  txt:Speaks#1 [h1-text white-text hiw-text _1|hiw-text _1 is-active]: color (76, 76, 76)→(162, 250, 142)
+  txt:Supports Patients#1 [h1-text white-text hiw-text _3|hiw-text _3]: color (162, 250, 142)→(76, 76, 76)
+  cls:hiw-text-block left#1 [hiw-text-block left|hiw-text-block left]: y 687.4→341.8 | transform matrix(1, 0, 0, 1, 0, 345.6)→none
+--- white-section (0)
+--- trans-b2w (0)
+--- scheduling (0)
+--- tasking (10)
+  VIS img:task-img-1#1: live false clone true (live block/visible/0x0 clone block/visible/740x723.6)
+  VIS txt:Routes patient inquiries to the appropriate provid#2: live false clone true (live block/visible/0x0 clone block/visible/322.5x39.2)
+  VIS txt:Supports messaging any internal team such as billi#2: live true clone false (live block/visible/322.5x58.8 clone block/visible/0x0)
+  VIS cls:tab-progress-vert#3: live true clone false (live block/visible/6x96.3 clone block/visible/6x0)
+  VIS cls:tab-pane-wrap#1: live false clone true (live flex/visible/0x0 clone flex/visible/720x840)
+  VIS cls:task-img-wrap#1: live false clone true (live flex/visible/0x0 clone flex/visible/720x723.6)
+  VIS cls:bg-noise task-agent#1: live false clone true (live flex/visible/0x0 clone flex/visible/720x840)
+  VIS cls:tab-pane-wrap#3: live true clone false (live flex/visible/720x840 clone flex/visible/0x0)
+  VIS cls:task-img-wrap#3: live true clone false (live flex/visible/720x723.6 clone flex/visible/0x0)
+  VIS cls:bg-noise task-agent#3: live true clone false (live flex/visible/720x840 clone flex/visible/0x0)
+--- navigator (0)
+--- outreach (0)
+--- trans-w2b (0)
+--- specialties (0)
+--- integrations (12)
+  cls:integration-block bl#1 [integration-block bl|integration-block bl]: x 1080→0 | maxWidth none→100%
+  cls:integration-block bl#2 [integration-block bl|integration-block bl]: x 1440→360 | maxWidth none→100%
+  cls:integration-block bl#3 [integration-block bl|integration-block bl]: x 2880→720 | maxWidth none→100%
+  cls:integration-block bl#4 [integration-block bl|integration-block bl]: x 3240→1080
+  cls:integration-block bl#5 [integration-block bl|integration-block bl]: x -1440→1440 | y 643→482
+  cls:integration-block bl#6 [integration-block bl|integration-block bl]: x -1080→1800 | y 643→482 | maxWidth none→100%
+  cls:integration-block bl#7 [integration-block bl|integration-block bl]: x -720→2160 | y 643→482 | maxWidth none→100%
+  cls:integration-block bl#8 [integration-block bl|integration-block bl]: x -360→2520 | y 643→482 | maxWidth none→100%
+  cls:integration-block bl#9 [integration-block bl|integration-block bl]: x 0→2880 | y 643→482
+  cls:integration-block bl#10 [integration-block bl|integration-block bl]: x 360→3240 | y 643→482
+  cls:integration-block bl#11 [integration-block bl|integration-block bl]: x 720→-1440
+  cls:integration-block bl#12 [integration-block bl|integration-block bl]: x 1080→-1080
+--- security (0)
+--- cta (0)

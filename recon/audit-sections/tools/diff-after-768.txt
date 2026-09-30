@@ -1,0 +1,32 @@
+
+######## 768  docH live 14430 clone 14430  docW 2251/2251
+--- testimonials (1)
+  only-live txt:”#1 [324,438.2 7.5x18]
+--- how-it-works (4)
+  txt:AI that#1 [h1-text white-text hiw-text left|hiw-text left]: y 409.7→225.4
+  txt:Speaks#1 [h1-text white-text hiw-text _1|hiw-text _1 is-active]: color (76, 76, 76)→(162, 250, 142)
+  txt:Supports Patients#1 [h1-text white-text hiw-text _3|hiw-text _3]: color (162, 250, 142)→(76, 76, 76)
+  cls:hiw-text-block left#1 [hiw-text-block left|hiw-text-block left]: y 396.7→212.3 | transform matrix(1, 0, 0, 1, 0, 184.32)→none
+--- white-section (0)
+--- trans-b2w (0)
+--- scheduling (0)
+--- tasking (0)
+--- navigator (0)
+--- outreach (0)
+--- trans-w2b (0)
+--- specialties (0)
+--- integrations (12)
+  cls:integration-block bl#1 [integration-block bl|integration-block bl]: x 691.2→0 | maxWidth none→100%
+  cls:integration-block bl#2 [integration-block bl|integration-block bl]: x 921.6→230.4 | maxWidth none→100%
+  cls:integration-block bl#3 [integration-block bl|integration-block bl]: x 1843.1→460.8 | maxWidth none→100%
+  cls:integration-block bl#4 [integration-block bl|integration-block bl]: x 2073.5→691.2
+  cls:integration-block bl#5 [integration-block bl|integration-block bl]: x -1075.1→921.6 | y 494.5→370.6
+  cls:integration-block bl#6 [integration-block bl|integration-block bl]: x -844.7→1152 | y 494.5→370.6 | maxWidth none→100%
+  cls:integration-block bl#7 [integration-block bl|integration-block bl]: x -614.3→1382.3 | y 494.5→370.6 | maxWidth none→100%
+  cls:integration-block bl#8 [integration-block bl|integration-block bl]: x -384→1612.7 | y 494.5→370.6 | maxWidth none→100%
+  cls:integration-block bl#9 [integration-block bl|integration-block bl]: x -153.6→1843.1 | y 494.5→370.6
+  cls:integration-block bl#10 [integration-block bl|integration-block bl]: x 76.8→2073.5 | y 494.5→370.6
+  cls:integration-block bl#11 [integration-block bl|integration-block bl]: x 307.2→-1075.1
+  cls:integration-block bl#12 [integration-block bl|integration-block bl]: x 537.6→-844.7
+--- security (0)
+--- cta (0)

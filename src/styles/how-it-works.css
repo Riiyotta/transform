@@ -4,6 +4,11 @@
    .how-it-works. Background is transparent (the fixed page layers show through).
    ============================================================================= */
 
+/* Original: `.how-it-works { position: relative; }` */
+.how-it-works {
+  position: relative;
+}
+
 /* ---- Rail spacers (.how-works-right) ---- */
 .how-it-works .how-works-right {
   height: 10vw;

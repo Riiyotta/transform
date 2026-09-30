@@ -1,0 +1,31 @@
+
+######## 390  docH live 17939 clone 17939  docW 1903/1903
+--- testimonials (1)
+  only-live txt:”#1 [139.3,1112.5 9.2x23]
+--- how-it-works (3)
+  txt:Speaks#1 [h1-text white-text hiw-text _1|hiw-text _1 is-active]: color (76, 76, 76)→(162, 250, 142)
+  txt:Supports Patients#1 [h1-text white-text hiw-text _3|hiw-text _3]: color (162, 250, 142)→(76, 76, 76)
+  cls:how-it-works#1 [how-it-works|how-it-works]: position relative→static | top 0px→auto
+--- white-section (0)
+--- trans-b2w (0)
+--- scheduling (0)
+--- tasking (0)
+--- navigator (0)
+--- outreach (0)
+--- trans-w2b (0)
+--- specialties (0)
+--- integrations (12)
+  cls:integration-block bl#1 [integration-block bl|integration-block bl]: x 585→0 | maxWidth none→100%
+  cls:integration-block bl#2 [integration-block bl|integration-block bl]: x 780→195 | maxWidth none→100%
+  cls:integration-block bl#3 [integration-block bl|integration-block bl]: x 1560→390 | maxWidth none→100%
+  cls:integration-block bl#4 [integration-block bl|integration-block bl]: x 1755→585 | maxWidth none→100%
+  cls:integration-block bl#5 [integration-block bl|integration-block bl]: x -1170→780 | y 511.8→409.4 | maxWidth none→100%
+  cls:integration-block bl#6 [integration-block bl|integration-block bl]: x -975→975 | y 511.8→409.4 | maxWidth none→100%
+  cls:integration-block bl#7 [integration-block bl|integration-block bl]: x -780→1170 | y 511.8→409.4 | maxWidth none→100%
+  cls:integration-block bl#8 [integration-block bl|integration-block bl]: x -585→1365 | y 511.8→409.4 | maxWidth none→100%
+  cls:integration-block bl#9 [integration-block bl|integration-block bl]: x -390→1560 | y 511.8→409.4 | maxWidth none→100%
+  cls:integration-block bl#10 [integration-block bl|integration-block bl]: x -195→1755 | y 511.8→409.4 | maxWidth none→100%
+  cls:integration-block bl#11 [integration-block bl|integration-block bl]: x 0→-1170 | maxWidth none→100%
+  cls:integration-block bl#12 [integration-block bl|integration-block bl]: x 195→-975 | maxWidth none→100%
+--- security (0)
+--- cta (0)

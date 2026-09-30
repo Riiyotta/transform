@@ -78,11 +78,13 @@
   justify-content: center;
   align-items: center;
   min-width: 25vw;
-  max-width: 100%;
   height: max(160px, 11.111vw);
   background-color: var(--color-block-bg);
   box-shadow: 0 1px 0 0.5px var(--color-stroke-dark);
   text-decoration: none;
+}
+.integration-section a.integration-block {
+  max-width: 100%; /* Webflow .w-inline-block (linked blocks only) */
 }
 .integration-section .integration-logo {
   display: inline-block; /* Webflow img base */

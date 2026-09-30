@@ -5,8 +5,9 @@
    from index.css (HERO block); only the CTA variants (.bottom-left/.bottom-right) live here.
    Class map: .cta-heading = h2.h1-text.white-text.cta-bottom
    .label-16 = ._16px-text.white-text(.cta-bottom) · .bottom-cta-right = ._16px-text.bottom-cta-right
-   MOTION: M8c — .transition-cont.black-to-img pixels start at opacity 1 (rendered here) and
-   are scrubbed to 0 on scroll by Animation. MOTION: M11 (Call Alex popup), M12 (underlines).
+   MOTION: M8c — .transition-cont.black-to-img pixels start at opacity 1 and are scrubbed to 0
+   on scroll by Animation. Static render = the SETTLED end state (opacity 0, image visible),
+   matching live once scrolled past (pixel audit: live settled = 100/100 pixels opacity 0). MOTION: M11 (Call Alex popup), M12 (underlines).
    ============================================================================= */
 .cta-section {
   position: relative;
@@ -58,7 +59,7 @@
   width: 5vw;
   height: 5vw;
   background-color: var(--color-white);
-  opacity: 1; /* MOTION: M8c initial state */
+  opacity: 0; /* settled end state. MOTION: M8c — Animation sets 1, then scrubs 1 -> 0 */
 }
 .cta-section .pixel.blue {
   background-color: var(--color-blue-dark);
