@@ -1,0 +1,128 @@
+{
+  "id": "shell.call-alex-modal",
+  "kind": "section",
+  "category": "SHELL",
+  "surface": "dark",
+  "claimsPolicy": "none",
+  "purpose": "Collect name, email and phone for a callback from the AI agent; renders default, validation, success and error states and never submits.",
+  "description": "Hidden fixed 'Call Alex' popup with name/email/phone form, client-side validation and success/error states (no network); opened from a page's 'Call Alex' link(s).",
+  "implementedBy": "src/components/CallAlexModal.jsx",
+  "evidenceLevel": "measured",
+  "scope": {
+    "templates": [
+      "template.home",
+      "template.compare"
+    ],
+    "routes": [
+      "/",
+      "/compare"
+    ],
+    "routeCount": 2
+  },
+  "constraints": {
+    "onePerPage": true,
+    "maxPerPage": 1,
+    "allowedTemplates": [
+      "template.home",
+      "template.compare"
+    ],
+    "requiresAnyOf": [
+      "hero.home",
+      "conversion.cta"
+    ]
+  },
+  "variants": {},
+  "fixedChrome": true,
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [],
+    "properties": {}
+  },
+  "contentFields": [],
+  "assetRoles": [],
+  "composes": [
+    "form-block",
+    "text-field",
+    "submit-control",
+    "icon-button",
+    "wordmark",
+    "noise-overlay"
+  ],
+  "motion": {
+    "allowedPatterns": [
+      "M11",
+      "M11b",
+      "M12",
+      "M16",
+      "M17"
+    ],
+    "reducedMotionFallback": "parity-unchanged"
+  },
+  "responsive": [
+    {
+      "at": ">=992",
+      "target": "modal-window",
+      "property": "width",
+      "value": "39.306vw (min 566, max 860)"
+    },
+    {
+      "at": "<=991",
+      "target": "modal-window",
+      "property": "min-height",
+      "value": "auto"
+    },
+    {
+      "at": "<=767",
+      "target": "modal-window",
+      "property": "size",
+      "value": "full screen, width 100%, min-height 100dvh, no border"
+    },
+    {
+      "at": "<=767",
+      "target": "form-grid",
+      "property": "columns",
+      "value": "1 (gap 24)"
+    }
+  ],
+  "measuredFrom": [
+    "CLONE_SPEC.md:395-420",
+    "DEVIATIONS.md:6",
+    "DEVIATIONS.md:7",
+    "DEVIATIONS.md:12",
+    "ia/ia.json:55"
+  ],
+  "fixedContent": {
+    "heading": [
+      "A few details",
+      "before AI calls"
+    ],
+    "fields": [
+      {
+        "label": "First Name",
+        "placeholder": "John"
+      },
+      {
+        "label": "Last Name",
+        "placeholder": "Smith"
+      },
+      {
+        "label": "Phone Number",
+        "placeholder": "1234567890"
+      },
+      {
+        "label": "Email",
+        "placeholder": "john.smith@company.com"
+      }
+    ],
+    "disclaimer": "By continuing, you agree to our Terms of Use and Privacy Policy",
+    "submitLabel": "Call Me Now",
+    "successMessage": [
+      "AI Agent",
+      "is calling you...",
+      "You can close this window"
+    ],
+    "errorMessage": "Oops! Something went wrong while submitting the form."
+  },
+  "notes": "Only on home and /compare, opened by a Call Alex link. reCAPTCHA replaced by an empty 304x78 spacer (D3); no network (D2); focus moves in on open, Escape closes, focus returns (D8)."
+}

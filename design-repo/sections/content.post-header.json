@@ -1,0 +1,189 @@
+{
+  "id": "content.post-header",
+  "kind": "section",
+  "category": "CONTENT",
+  "surface": "dark",
+  "claimsPolicy": "none",
+  "purpose": "Orient a reader on an article: way back to the blog, hero image, headline, author and date.",
+  "description": "Blog-post detail header: back link, hero image, title, and author/date meta points.",
+  "implementedBy": "src/components/cms/DetailHeader.jsx",
+  "evidenceLevel": "measured",
+  "scope": {
+    "templates": [
+      "template.blog-post"
+    ],
+    "routes": [
+      "/blog/ai-voice-agents-for-athenahealth-7-questions-to-ask-before-choosing-a-platform",
+      "/blog/ent-reimbursement-in-2027-what-medicare-s-proposed-cuts-mean-for-otolaryngology-practices",
+      "/blog/medical-practice-call-volume-january",
+      "/blog/orthopedic-ai-answering-service",
+      "/blog/redefining-healthcare-ai",
+      "/blog/the-12-month-shift-why-voice-ai-agents-are-now-a-financial-imperative-for-specialty-practices",
+      "/blog/why-generic-ai-virtual-assistants-fail-specialty-medical-practices-and-what-actually-works",
+      "/blog/why-traditional-ivr-is-failing-your-practice-and-how-ai-voice-agents-fix-the-press-0-trap"
+    ],
+    "routeCount": 8
+  },
+  "constraints": {
+    "onePerPage": true,
+    "maxPerPage": 1,
+    "allowedTemplates": [
+      "template.blog-post"
+    ]
+  },
+  "variants": {},
+  "fixedChrome": false,
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "backLink",
+      "title",
+      "image",
+      "author",
+      "date"
+    ],
+    "properties": {
+      "backLink": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "text",
+          "href"
+        ],
+        "properties": {
+          "text": {
+            "type": "string",
+            "minLength": 1,
+            "maxWords": 5,
+            "observedMax": 3,
+            "examples": [
+              "Back to Blog"
+            ]
+          },
+          "href": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "^(/|https://|mailto:|#)",
+            "examples": [
+              "/blog"
+            ]
+          }
+        }
+      },
+      "title": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 20,
+        "observedMax": 16,
+        "examples": [
+          "Redefining Healthcare AI: The Future Of Medicine"
+        ]
+      },
+      "image": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "assetRole",
+          "assetRef"
+        ],
+        "properties": {
+          "assetRole": {
+            "allOf": [
+              {
+                "$ref": "#/definitions/assetRole"
+              },
+              {
+                "const": "editorial.hero-image"
+              }
+            ]
+          },
+          "assetRef": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "examples": [
+          {
+            "assetRole": "editorial.hero-image",
+            "assetRef": "/assets/6970b17878db95b46a287768-5.webp"
+          }
+        ]
+      },
+      "author": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 5,
+        "observedMax": 1,
+        "examples": [
+          "Transorm9"
+        ]
+      },
+      "date": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 5,
+        "observedMax": 3,
+        "examples": [
+          "August 6, 2026"
+        ]
+      }
+    }
+  },
+  "contentFields": [
+    "backLink",
+    "title",
+    "image",
+    "author",
+    "date"
+  ],
+  "assetRoles": [
+    "editorial.hero-image"
+  ],
+  "composes": [
+    "page-intro-header",
+    "media-cover",
+    "meta-point",
+    "icon"
+  ],
+  "motion": {
+    "allowedPatterns": [
+      "BLOG-M2",
+      "BLOG-M8"
+    ],
+    "reducedMotionFallback": "parity-unchanged"
+  },
+  "responsive": [
+    {
+      "at": ">=992",
+      "target": "blog-page-title",
+      "property": "font-size",
+      "value": "56px, max-width 70%"
+    },
+    {
+      "at": "<=991",
+      "target": "blog-page-title",
+      "property": "font-size",
+      "value": "42px at 768, 30px at 390; line-height 110%; max-width 90%"
+    },
+    {
+      "at": "<=767",
+      "target": "post-hor-wrap",
+      "property": "direction",
+      "value": "column; image 53vw tall"
+    },
+    {
+      "at": "<=991",
+      "target": "back-link",
+      "property": "hover",
+      "value": "no animation (static .5 opacity)"
+    }
+  ],
+  "measuredFrom": [
+    "specs/blog.md:144-153",
+    "src/components/cms/DetailHeader.jsx:8-24",
+    "src/pages/BlogPostPage.jsx:15-36",
+    "ia/ia.json:259"
+  ],
+  "notes": "60px top offset under the fixed nav. The CMS has no category, tag, read-time or avatar fields. The read-next block on posts is hidden on live and not rendered."
+}

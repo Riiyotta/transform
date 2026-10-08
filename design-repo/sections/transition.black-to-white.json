@@ -1,0 +1,77 @@
+{
+  "id": "transition.black-to-white",
+  "kind": "section",
+  "category": "TRANSITION",
+  "surface": "transition",
+  "claimsPolicy": "none",
+  "purpose": "Scroll-scrubbed pixel grid that dissolves the dark page into a white section.",
+  "description": "Scroll-scrubbed pixel-grid transition from the dark page into a white section.",
+  "implementedBy": "src/components/TransitionPixels.jsx",
+  "evidenceLevel": "measured",
+  "scope": {
+    "templates": [
+      "template.home",
+      "template.compare"
+    ],
+    "routes": [
+      "/",
+      "/compare"
+    ],
+    "routeCount": 2
+  },
+  "constraints": {
+    "onePerPage": true,
+    "maxPerPage": 1,
+    "allowedTemplates": [
+      "template.home",
+      "template.compare"
+    ]
+  },
+  "variants": {},
+  "fixedChrome": false,
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [],
+    "properties": {
+      "railLine": {
+        "type": "boolean"
+      }
+    }
+  },
+  "contentFields": [
+    "railLine"
+  ],
+  "assetRoles": [],
+  "composes": [
+    "pixel-cell",
+    "noise-overlay",
+    "hairline"
+  ],
+  "motion": {
+    "allowedPatterns": [
+      "M8a"
+    ],
+    "reducedMotionFallback": "parity-unchanged"
+  },
+  "responsive": [
+    {
+      "at": ">=992",
+      "target": "pixel",
+      "property": "size",
+      "value": "5vw x 5vw, 20 per row, 5 rows (360px tall at 1440)"
+    },
+    {
+      "at": "<=767",
+      "target": "pixel",
+      "property": "size",
+      "value": "10vw, 10 per row; .mob-hide pixels hidden"
+    }
+  ],
+  "measuredFrom": [
+    "CLONE_SPEC.md:264-269",
+    "src/components/TransitionPixels.jsx:63-83",
+    "ia/ia.json:163"
+  ],
+  "notes": "railLine=false on /compare (no .right-side-w-line there, specs/compare.md section 6a). Pixel order is random per load on live and clone; per-row counts are deterministic."
+}

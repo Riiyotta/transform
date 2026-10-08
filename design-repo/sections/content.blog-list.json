@@ -1,0 +1,231 @@
+{
+  "id": "content.blog-list",
+  "kind": "section",
+  "category": "CONTENT",
+  "surface": "dark",
+  "claimsPolicy": "none",
+  "purpose": "List every article as a two-column card grid; Load More appends the older posts in place.",
+  "description": "Post-grid ('All Articles') list with a description line and a 'Load More' control that appends the remaining posts client-side, then hides itself; no network request (D14).",
+  "implementedBy": "src/components/cms/ListSection.jsx",
+  "evidenceLevel": "measured",
+  "scope": {
+    "templates": [
+      "template.blog-index"
+    ],
+    "routes": [
+      "/blog"
+    ],
+    "routeCount": 1
+  },
+  "constraints": {
+    "onePerPage": true,
+    "maxPerPage": 1,
+    "allowedTemplates": [
+      "template.blog-index"
+    ],
+    "allowedRoutes": [
+      "/blog"
+    ],
+    "mustImmediatelyFollowAnyOf": [
+      "hero.blog-index"
+    ]
+  },
+  "variants": {},
+  "fixedChrome": false,
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "heading",
+      "label",
+      "description",
+      "loadMoreLabel",
+      "posts"
+    ],
+    "properties": {
+      "heading": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 5,
+        "observedMax": 2,
+        "examples": [
+          "All Articles"
+        ]
+      },
+      "label": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 5,
+        "observedMax": 3,
+        "examples": [
+          "Thoughts & Notes"
+        ]
+      },
+      "description": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 25,
+        "observedMax": 22,
+        "examples": [
+          "Our blog is regularly updated with insights, tips, and success stories to help you improve patient experience and stay ahead in healthcare."
+        ]
+      },
+      "loadMoreLabel": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 5,
+        "observedMax": 2,
+        "examples": [
+          "Load More"
+        ]
+      },
+      "posts": {
+        "type": "array",
+        "minItems": 4,
+        "maxItems": 8,
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "href",
+            "title",
+            "image",
+            "author",
+            "date"
+          ],
+          "properties": {
+            "href": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "^(/|https://|mailto:|#)",
+              "examples": [
+                "/blog/redefining-healthcare-ai"
+              ]
+            },
+            "title": {
+              "type": "string",
+              "minLength": 1,
+              "maxWords": 20,
+              "observedMax": 16,
+              "examples": [
+                "Redefining Healthcare AI: The Future Of Medicine"
+              ]
+            },
+            "image": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "assetRole",
+                "assetRef"
+              ],
+              "properties": {
+                "assetRole": {
+                  "allOf": [
+                    {
+                      "$ref": "#/definitions/assetRole"
+                    },
+                    {
+                      "const": "editorial.hero-image"
+                    }
+                  ]
+                },
+                "assetRef": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "examples": [
+                {
+                  "assetRole": "editorial.hero-image",
+                  "assetRef": "/assets/6970b17878db95b46a287768-5.webp"
+                }
+              ]
+            },
+            "author": {
+              "type": "string",
+              "minLength": 1,
+              "maxWords": 5,
+              "observedMax": 1,
+              "examples": [
+                "Transorm9"
+              ]
+            },
+            "date": {
+              "type": "string",
+              "minLength": 1,
+              "maxWords": 5,
+              "observedMax": 3,
+              "examples": [
+                "August 7, 2026"
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  "contentFields": [
+    "heading",
+    "label",
+    "description",
+    "loadMoreLabel",
+    "posts"
+  ],
+  "assetRoles": [
+    "editorial.hero-image"
+  ],
+  "composes": [
+    "post-card",
+    "media-cover",
+    "meta-point",
+    "underline-link",
+    "hairline"
+  ],
+  "motion": {
+    "allowedPatterns": [
+      "BLOG-M2",
+      "BLOG-M6",
+      "M12"
+    ],
+    "reducedMotionFallback": "parity-unchanged"
+  },
+  "responsive": [
+    {
+      "at": ">=992",
+      "target": "blogs-list",
+      "property": "layout",
+      "value": "grid, 2 equal columns, gap 36"
+    },
+    {
+      "at": "<=767",
+      "target": "blogs-list",
+      "property": "layout",
+      "value": "1 column"
+    },
+    {
+      "at": "<=991",
+      "target": "left-sticky-wrap",
+      "property": "display",
+      "value": "none"
+    },
+    {
+      "at": "<=991",
+      "target": "post-arrow-wrap",
+      "property": "display",
+      "value": "none"
+    },
+    {
+      "at": "<=479",
+      "target": "pagination",
+      "property": "direction",
+      "value": "column-reverse, gap 28"
+    }
+  ],
+  "measuredFrom": [
+    "specs/blog.md:94-112",
+    "src/components/cms/ListSection.jsx:10-39",
+    "DEVIATIONS.md:18",
+    "ia/ia.json:247"
+  ],
+  "notes": "D14: /blog?523ae0d4_page=2 renders the normal index; Load More appends posts 5-8 client-side with no network request, then hides itself. Initial render shows 4 posts; after Load More 8."
+}

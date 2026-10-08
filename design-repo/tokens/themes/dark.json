@@ -1,0 +1,35 @@
+{
+  "theme": "dark",
+  "default": true,
+  "appliesTo": "Page default: black page, white text",
+  "mappings": {
+    "surface.page": "{color.black}",
+    "surface.subtle": "{color.gray}",
+    "surface.nav": "{color.nav-bg}",
+    "surface.accent": "{color.green}",
+    "surface.overlay": "{color.overlay}",
+    "surface.hover": "{color.white}",
+    "text.primary": "{color.white}",
+    "text.secondary": "{color.nav-link}",
+    "text.on-accent": "{color.black}",
+    "text.on-hover": "{color.black}",
+    "text.accent-brand": "{color.green}",
+    "text.accent-info": "{color.blue-light}",
+    "text.inactive-step": "{color.hiw-inactive}",
+    "border.default": "{color.stroke-dark}",
+    "feedback.error-text": "{color.error}",
+    "feedback.error-surface": "{color.error-bg}",
+    "interactive.focus-border": "{color.input-focus}",
+    "text.muted": {
+      "color": "{color.white}",
+      "opacity": "{opacity.half-text}"
+    },
+    "text.faint": {
+      "color": "{color.white}",
+      "opacity": "{opacity.faint-text}"
+    }
+  },
+  "measuredFrom": [
+    "CLONE_SPEC.md:45-69"
+  ]
+}

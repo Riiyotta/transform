@@ -1,0 +1,32 @@
+{
+  "id": "quote-slide",
+  "kind": "component",
+  "purpose": "Testimonial slide: photo block with name/title tags, quote with green highlight, metric points, practice logo",
+  "props": {
+    "photo": "asset:person.photo",
+    "name": "string",
+    "title": "string",
+    "quote": "object",
+    "points": "array",
+    "logo": "asset:client.logo"
+  },
+  "additionalProps": false,
+  "composes": [
+    "badge-tag",
+    "meta-point",
+    "icon-button"
+  ],
+  "tokens": [
+    "semantic.surface.subtle"
+  ],
+  "motionPatterns": [
+    "M13",
+    "M19"
+  ],
+  "measuredFrom": [
+    "src/components/Testimonials.jsx:78"
+  ],
+  "usedBySections": [
+    "proof.testimonials"
+  ]
+}

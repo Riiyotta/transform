@@ -1,0 +1,36 @@
+{
+  "theme": "light",
+  "default": false,
+  "appliesTo": "The white-section surface (home white-section, /compare white-section); navbar flips while it is under the nav (M4)",
+  "mappings": {
+    "surface.page": "{color.white}",
+    "surface.subtle": "{color.gray}",
+    "surface.nav": "{color.white}",
+    "surface.accent": "{color.green}",
+    "surface.overlay": "{color.overlay}",
+    "surface.hover": "{color.green}",
+    "text.primary": "{color.black}",
+    "text.secondary": "{color.black}",
+    "text.on-accent": "{color.black}",
+    "text.on-hover": "{color.black}",
+    "text.accent-brand": "{color.green}",
+    "text.accent-info": "{color.blue-light}",
+    "text.inactive-step": "{color.hiw-inactive}",
+    "border.default": "{color.stroke-light}",
+    "feedback.error-text": "{color.error}",
+    "feedback.error-surface": "{color.error-bg}",
+    "interactive.focus-border": "{color.input-focus}",
+    "text.muted": {
+      "color": "{color.black}",
+      "opacity": "{opacity.half-text}"
+    },
+    "text.faint": {
+      "color": "{color.black}",
+      "opacity": "{opacity.faint-text}"
+    }
+  },
+  "measuredFrom": [
+    "CLONE_SPEC.md:262",
+    "CLONE_SPEC.md:160"
+  ]
+}

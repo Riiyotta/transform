@@ -1,0 +1,31 @@
+{
+  "id": "claim-block",
+  "kind": "component",
+  "purpose": "Heading + body claim block (access blocks, privacy blocks with hover fill, EV accordion items)",
+  "props": {
+    "head": "string",
+    "text": "string",
+    "hoverFill": "boolean"
+  },
+  "additionalProps": false,
+  "composes": [
+    "hairline",
+    "tab-link"
+  ],
+  "tokens": [
+    "semantic.surface.hover"
+  ],
+  "motionPatterns": [
+    "CMP-M2",
+    "CMP-M4"
+  ],
+  "measuredFrom": [
+    "src/components/compare/PrivacySection.jsx:40",
+    "src/components/compare/AccessSection.jsx:5"
+  ],
+  "usedBySections": [
+    "compare.access",
+    "compare.privacy",
+    "compare.evaluation"
+  ]
+}

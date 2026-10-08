@@ -1,0 +1,153 @@
+{
+  "description": "Rhythm rules JSON Schema cannot express. Each rule has a severity; error blocks, warn is a notice. Every rule id is implemented in schema/semantic_validate.py (RULES) and verify_all.py fails if the two sets drift.",
+  "rules": [
+    {
+      "id": "SHELL_ORDER",
+      "severity": "error",
+      "description": "shell.page-layers is first, shell.navbar second, shell.mobile-menu third; shell.preloader (when present) fourth and shell.bg-pixels-overlay immediately after it.",
+      "exceptions": [],
+      "measuredFrom": [
+        "CLONE_SPEC.md:129-149",
+        "src/App.jsx:29"
+      ]
+    },
+    {
+      "id": "ONE_HERO_PER_PAGE",
+      "severity": "error",
+      "description": "At most one HERO-category section per page; every template has exactly one except the named hero-less templates, which open with a content header (content.post-header / content.case-header) instead.",
+      "exceptions": [
+        {
+          "templates": [
+            "template.blog-post",
+            "template.case-study"
+          ],
+          "reason": "Detail pages open with a header block, not a hero (src/pages/BlogPostPage.jsx, CaseStudyPage.jsx)"
+        }
+      ],
+      "measuredFrom": [
+        "src/pages/BlogPostPage.jsx:11",
+        "src/pages/CaseStudyPage.jsx:12"
+      ]
+    },
+    {
+      "id": "FOOTER_BOTTOM_LAST",
+      "severity": "error",
+      "description": "shell.footer-bottom-reveal is the last node, except that shell.call-alex-modal may follow it; shell.footer (when present) immediately precedes it.",
+      "exceptions": [
+        {
+          "sections": [
+            "shell.call-alex-modal"
+          ],
+          "reason": "ia/ia.json lists the modal after the footer on home and /compare"
+        }
+      ],
+      "measuredFrom": [
+        "src/App.jsx:37"
+      ]
+    },
+    {
+      "id": "MODAL_NEEDS_CALL_LINK",
+      "severity": "error",
+      "description": "shell.call-alex-modal requires a section that exposes a Call Alex link: hero.home or conversion.cta (the /compare hero has no Call Alex link).",
+      "exceptions": [],
+      "measuredFrom": [
+        "specs/compare.md:31",
+        "src/components/ui/CallAlexLink.jsx:6"
+      ]
+    },
+    {
+      "id": "CTA_CALL_LINK_NEEDS_MODAL",
+      "severity": "warn",
+      "description": "conversion.cta contains a Call Alex link that opens the shell modal; without shell.call-alex-modal the link is inert. KNOWN GAP: the four CMS templates (blog index/post, case-studies index/study) are built without the modal although live renders it there (templates.json knownGaps LIVE_MODAL_ON_CMS_TEMPLATES).",
+      "exceptions": [],
+      "measuredFrom": [
+        "src/routes.jsx:29",
+        "recon/pages/blog/outline-_index-1440.txt:13"
+      ]
+    },
+    {
+      "id": "TRANSITION_PAIR_ORDER",
+      "severity": "error",
+      "description": "transition.black-to-white and transition.white-to-black appear together or not at all, black-to-white first.",
+      "exceptions": [],
+      "measuredFrom": [
+        "CLONE_SPEC.md:339-340",
+        "src/pages/ComparePage.jsx:41"
+      ]
+    },
+    {
+      "id": "NO_CONSECUTIVE_TRANSITIONS",
+      "severity": "error",
+      "description": "No two transition.* sections are adjacent (each pixel grid bridges real content).",
+      "exceptions": [],
+      "measuredFrom": [
+        "src/pages/HomePage.jsx:24"
+      ]
+    },
+    {
+      "id": "LIGHT_SURFACE_BRACKET",
+      "severity": "error",
+      "description": "Every section whose surface is \"light\" lies between transition.black-to-white and transition.white-to-black, and every section between that pair is \"light\" (the white-section surface).",
+      "exceptions": [],
+      "measuredFrom": [
+        "src/components/WhiteSection.jsx:11",
+        "src/components/compare/CompareWhiteSection.jsx:11"
+      ]
+    },
+    {
+      "id": "READ_NEXT_CASE_STUDY_ONLY",
+      "severity": "error",
+      "description": "content.read-next appears only with content.case-header (blog posts hide the equivalent block on live and it is not rendered).",
+      "exceptions": [],
+      "measuredFrom": [
+        "specs/blog.md:197",
+        "src/pages/CaseStudyPage.jsx:44"
+      ]
+    },
+    {
+      "id": "NO_CTA_ON_FORM_OR_LEGAL",
+      "severity": "warn",
+      "description": "conversion.cta does not accompany hero.book-a-demo or legal.content (observed absent on /book-a-demo and the 3 legal routes).",
+      "exceptions": [],
+      "measuredFrom": [
+        "src/pages/LegalPage.jsx:16",
+        "src/pages/BookDemoPage.jsx:8"
+      ]
+    },
+    {
+      "id": "NO_ADJACENT_SAME_CATEGORY",
+      "severity": "warn",
+      "description": "Adjacent sections should not share a category, for the categories where adjacency would mean redundancy.",
+      "exceptions": [
+        {
+          "categories": [
+            "SHELL",
+            "PROOF",
+            "PRODUCT",
+            "FIT",
+            "COMPARE",
+            "CONTENT",
+            "TRANSITION"
+          ],
+          "reason": "Real pages place several sections of these categories back to back by design (home: 4 PROOF, 4 PRODUCT, 3 FIT; /compare: COMPARE run; detail pages: CONTENT run; SHELL stack); TRANSITION adjacency is its own error rule"
+        }
+      ],
+      "measuredFrom": [
+        "src/pages/HomePage.jsx:18"
+      ]
+    }
+  ],
+  "keyingNote": "No section legitimately repeats on a page in this site (the white variants of specialties/integrations are separate section ids: compare.specialty-white, compare.integrations-white), so structural rules key on section id. If a section ever repeats with different variants, key the rules on (section, variant).",
+  "categories": {
+    "SHELL": "Chrome present across many or all routes: navigation, mobile menu, background layers, preloader, popup, footer.",
+    "HERO": "Page-opening header block: a headline, and where the template has one, a primary call to action or form.",
+    "PROOF": "Homepage-only social proof: client logos, case-study spotlight, metrics, testimonials.",
+    "PRODUCT": "Homepage-only product explanation and its four agent modules.",
+    "TRANSITION": "Scroll-scrubbed pixel-grid transitions between dark and light surfaces, shared by templates that carry a dark/white split.",
+    "FIT": "Homepage-only buyer-fit content: specialties, EMR integrations, security/compliance.",
+    "CONVERSION": "Closing call-to-action block, reused across every marketing and content template.",
+    "COMPARE": "/compare-specific comparison-narrative content.",
+    "LEGAL": "Legal template content (Terms of Use, Privacy Policy, HIPAA).",
+    "CONTENT": "Blog and case-study index and detail content, data-driven from content/*.json."
+  }
+}

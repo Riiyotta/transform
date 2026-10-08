@@ -1,0 +1,51 @@
+{
+  "id": "text-field",
+  "kind": "primitive",
+  "purpose": "Single-line inputs: hero phone input (white, 4.167vw tall), popup field (transparent, bottom border), Webflow default (demo form), HubSpot replica email field",
+  "props": {
+    "kind": [
+      "hero-phone",
+      "popup-field",
+      "webflow-default",
+      "hubspot-replica-email"
+    ],
+    "type": [
+      "text",
+      "email",
+      "tel"
+    ],
+    "placeholder": "string",
+    "required": "boolean",
+    "maxlength": "number"
+  },
+  "additionalProps": false,
+  "states": [
+    "default",
+    "focus",
+    "error",
+    "filled"
+  ],
+  "tokens": [
+    "component.hero-input",
+    "component.popup-input",
+    "component.webflow-form-default",
+    "component.hubspot-form-replica"
+  ],
+  "motionPatterns": [
+    "BAD-M2"
+  ],
+  "measuredFrom": [
+    "CLONE_SPEC.md:66",
+    "CLONE_SPEC.md:67",
+    "specs/book-a-demo.md:137"
+  ],
+  "a11y": "D12: /book-a-demo labels are white (visible) instead of live black-on-black; native required validation messages are used",
+  "notes": "Forms render all states and submit nowhere (PROJECT_SCOPE, DEVIATIONS D2/D9)",
+  "usedBySections": [
+    "shell.call-alex-modal",
+    "shell.footer",
+    "hero.home",
+    "hero.book-a-demo",
+    "conversion.cta"
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "id": "label-eyebrow",
+  "kind": "primitive",
+  "purpose": "Small 16px label with the 43px indent (._16px-text.white-text): section eyebrows and numbered labels",
+  "props": {
+    "text": "string",
+    "tone": [
+      "full",
+      "muted",
+      "faint"
+    ],
+    "indent": "boolean"
+  },
+  "additionalProps": false,
+  "states": [
+    "default"
+  ],
+  "tokens": [
+    "fontSize.16",
+    "spacing.indent-label",
+    "semantic.text.muted"
+  ],
+  "motionPatterns": [],
+  "measuredFrom": [
+    "CLONE_SPEC.md:100"
+  ],
+  "usedBySections": [
+    "hero.home",
+    "hero.compare",
+    "product.how-it-works",
+    "product.scheduling-agent",
+    "product.tasking-agent",
+    "product.navigator-agent",
+    "product.outreach-agent",
+    "fit.specialties",
+    "conversion.cta",
+    "compare.generic",
+    "compare.access",
+    "compare.specialty-white",
+    "compare.evaluation"
+  ]
+}

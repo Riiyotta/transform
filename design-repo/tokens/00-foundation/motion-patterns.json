@@ -1,0 +1,874 @@
+{
+  "motionPattern": {
+    "M1": {
+      "id": "M1",
+      "name": "client-logo-marquee",
+      "trigger": "page-load",
+      "summary": "Both tracks translateX 0 to -100%, instant reset; 54.05 px/s at 1440",
+      "breakpoints": "all",
+      "reducedMotionObserved": "not-honoured",
+      "evidenceLevel": "measured",
+      "measuredFrom": [
+        "CLONE_SPEC.md:465",
+        "CLONE_SPEC.md:461"
+      ],
+      "durationMs": 44990,
+      "easing": "linear",
+      "verifiedOnClone": [
+        "recon/motion-2/MOTION-2.md:9"
+      ]
+    },
+    "M2a": {
+      "id": "M2a",
+      "name": "integration-row-left",
+      "trigger": "page-load",
+      "summary": "Row 1 tracks translateX 0 to -100%; 59.96 px/s at 1440",
+      "breakpoints": "all",
+      "reducedMotionObserved": "not-honoured",
+      "evidenceLevel": "measured",
+      "measuredFrom": [
+        "CLONE_SPEC.md:466",
+        "CLONE_SPEC.md:461"
+      ],
+      "durationMs": 29990,
+      "easing": "linear",
+      "verifiedOnClone": [
+        "recon/motion-2/MOTION-2.md:10"
+      ]
+    },
+    "M2b": {
+      "id": "M2b",
+      "name": "integration-row-right",
+      "trigger": "page-load",
+      "summary": "Row 2 tracks translateX 0 to +100%; 47.97 px/s at 1440",
+      "breakpoints": "all",
+      "reducedMotionObserved": "not-honoured",
+      "evidenceLevel": "measured",
+      "measuredFrom": [
+        "CLONE_SPEC.md:467",
+        "CLONE_SPEC.md:461"
+      ],
+      "durationMs": 29990,
+      "easing": "linear",
+      "verifiedOnClone": [
+        "recon/motion-2/MOTION-2.md:11"
+      ]
+    },
+    "M3": {
+      "id": "M3",
+      "name": "video-fade-on-scroll",
+      "trigger": "scroll (.hero.home top top to top -10%)",
+      "summary": "Fixed background video wrapper opacity to 0 on leave, reverse on enterBack",
+      "breakpoints": "all",
+      "reducedMotionObserved": "not-honoured",
+      "evidenceLevel": "measured",
+      "measuredFrom": [
+        "CLONE_SPEC.md:468",
+        "CLONE_SPEC.md:461"
+      ],
+      "durationMs": 500,
+      "easing": "gsap-power1-out",
+      "verifiedOnClone": [
+        "recon/motion-1/MOTION-1.md:7"
+      ]
+    },
+    "M3b": {
+      "id": "M3b",
+      "name": "video-fade-on-scroll-hide-on-scroll",
+      "trigger": "scroll (.hero.hide-on-scroll top top to top -10%)",
+      "summary": "Same values as M3, triggered by the .hero.hide-on-scroll class used on book-a-demo, legal and blog/case-study index heroes",
+      "breakpoints": "all",
+      "reducedMotionObserved": "not-honoured",
+      "evidenceLevel": "measured",
+      "measuredFrom": [
+        "specs/book-a-demo.md:148",
+        "CLONE_SPEC.md:461"
+      ],
+      "durationMs": 500,
+      "easing": "gsap-power1-out",
+      "verifiedOnClone": [
+        "recon/motion-3/MOTION-3.md:39"
+      ]
+    },
+    "M4": {
+      "id": "M4",
+      "name": "nav-on-white-swap",
+      "trigger": "scroll (.white-section top 60 to bottom 60)",
+      "summary": "Nav bg to #fff, links #020801, hidden text #168ae2, logo/burger swap, border opacity 1",
+      "breakpoints": "all",
+      "reducedMotionObserved": "not-honoured",
+      "evidenceLevel": "measured",
+      "measuredFrom": [
+        "CLONE_SPEC.md:469",
+        "CLONE_SPEC.md:461"
+      ],
+      "durationMs": 50,
+      "easing": "gsap-power2-out",
+      "verifiedOnClone": [
+        "recon/motion-1/MOTION-1.md:8"
+      ]
+    },
+    "M5": {
+      "id": "M5",
+      "name": "stats-hover-expand",
+      "trigger": "hover (>=992)",
+      "summary": "Hovered block flex-basis 16% to 100% (.6s), heading/description slide up (500ms), image fades in (200ms)",
+      "breakpoints": ">=992",
+      "reducedMotionObserved": "not-honoured",
+      "evidenceLevel": "measured",
+      "measuredFrom": [
+        "CLONE_SPEC.md:470",
+        "CLONE_SPEC.md:461"
+      ],
+      "durationMs": 600,
+      "easing": "ease-in-out-cubic",
+      "verifiedOnClone": [
+        "recon/motion-2/MOTION-2.md:12"
+      ]
+    },
+    "M6": {
+      "id": "M6",
+      "name": "stats-accordion",
+      "trigger": "click (<=991)",
+      "summary": "768-991 width 70%/10%; <=767 height 260px; heading/description translateY; first block opens on load",
+      "breakpoints": "<=991",
+      "reducedMotionObserved": "not-honoured",
+      "evidenceLevel": "measured",
+      "measuredFrom": [
+        "CLONE_SPEC.md:474",
+        "CLONE_SPEC.md:461"
+      ],
+      "durationMs": 500,
+      "easing": "ease-out",
+      "verifiedOnClone": [
+        "recon/motion-2/MOTION-2.md:14"
+      ]
+    },
+    "M7": {
+      "id": "M7",
+      "name": "how-it-works-step",
+      "trigger": "scroll (hiw triggers)",
+      "summary": "Lead phrase y 0 to 12vw to 24vw; active word #a2fa8e, inactive #4c4c4c; resets after the section",
+      "breakpoints": "all",
+      "reducedMotionObserved": "not-honoured",
+      "evidenceLevel": "measured",
+      "measuredFrom": [
+        "CLONE_SPEC.md:475",
+        "CLONE_SPEC.md:461"
+      ],
+      "durationMs": 250,
+      "easing": "gsap-power1-in-out",
+      "verifiedOnClone": [
+        "recon/motion-1/MOTION-1.md:9"
+      ]
+    },
+    "M8a": {
+      "id": "M8a",
+      "name": "pixel-transition-black-to-white",
+      "trigger": "scroll scrub",
+      "summary": "Row-staggered random pixel flips opacity 0 to 1 over ~1.2 viewport heights",
+      "breakpoints": "all",
+      "reducedMotionObserved": "not-honoured",
+      "evidenceLevel": "measured",
+      "measuredFrom": [
+        "CLONE_SPEC.md:476",
+        "CLONE_SPEC.md:461"
+      ],
+      "durationMs": 0,
+      "verifiedOnClone": [
+        "recon/motion-1/MOTION-1.md:10"
+      ]
+    },
+    "M8b": {
+      "id": "M8b",
+      "name": "pixel-transition-white-to-black",
+      "trigger": "scroll scrub",
+      "summary": "Same scrub, white to black",
+      "breakpoints": "all",
+      "reducedMotionObserved": "not-honoured",
+      "evidenceLevel": "measured",
+      "measuredFrom": [
+        "CLONE_SPEC.md:477",
+        "CLONE_SPEC.md:461"
+      ],
+      "durationMs": 0,
+      "verifiedOnClone": [
+        "recon/motion-1/MOTION-1.md:11"
+      ]
+    },
+    "M8c": {
+      "id": "M8c",
+      "name": "pixel-transition-black-to-image",
+      "trigger": "scroll scrub",
+      "summary": "CTA: pixels opacity 1 to 0 revealing the background image; 200 opaque before start, 0 at end",
+      "breakpoints": "all",
+      "reducedMotionObserved": "not-honoured",
+      "evidenceLevel": "measured",
+      "measuredFrom": [
+        "CLONE_SPEC.md:478",
+        "CLONE_SPEC.md:461"
+      ],
+      "durationMs": 0,
+      "verifiedOnClone": [
+        "recon/motion-1/MOTION-1.md:12"
+      ]
+    },
+    "M9": {
+      "id": "M9",
+      "name": "scheduling-card-deck",
+      "trigger": "scroll scrub 0.5",
+      "summary": "Earlier cards scale .97/.94/.91, lift 1.8vw steps and tint #e9e9eb/#c1c0c7/#858391; sch-img 3 opacity .2",
+      "breakpoints": "all",
+      "reducedMotionObserved": "not-honoured",
+      "evidenceLevel": "measured",
+      "measuredFrom": [
+        "CLONE_SPEC.md:479",
+        "CLONE_SPEC.md:461"
+      ],
+      "durationMs": 250,
+      "easing": "gsap-power1-out",
+      "verifiedOnClone": [
+        "recon/motion-1/MOTION-1.md:13"
+      ]
+    },
+    "M10": {
+      "id": "M10",
+      "name": "tasking-auto-rotate",
+      "trigger": "timer 4000ms (>=992)",
+      "summary": "Active tab progress bar 0 to 100% linear over 4s; pane crossfade 300ms in/out; click restarts; paused while mobile menu open",
+      "breakpoints": ">=992",
+      "reducedMotionObserved": "not-honoured",
+      "evidenceLevel": "measured",
+      "measuredFrom": [
+        "CLONE_SPEC.md:480",
+        "CLONE_SPEC.md:461"
+      ],
+      "durationMs": 4000,
+      "easing": "linear",
+      "verifiedOnClone": [
+        "recon/motion-2/MOTION-2.md:17"
+      ]
+    },
+    "M10b": {
+      "id": "M10b",
+      "name": "tasking-tab-text-reveal",
+      "trigger": "click (<=991)",
+      "summary": "Active tab reveals its text row (display none to block); no rotation",
+      "breakpoints": "<=991",
+      "reducedMotionObserved": "not-honoured",
+      "evidenceLevel": "measured",
+      "measuredFrom": [
+        "CLONE_SPEC.md:481",
+        "CLONE_SPEC.md:461"
+      ],
+      "durationMs": 0,
+      "verifiedOnClone": [
+        "recon/motion-2/MOTION-2.md:20"
+      ]
+    },
+    "M11": {
+      "id": "M11",
+      "name": "modal-open",
+      "trigger": "click (Call Alex)",
+      "summary": "display none to flex, opacity 0 to 1 over 0.5s",
+      "breakpoints": "all",
+      "reducedMotionObserved": "not-honoured",
+      "evidenceLevel": "measured",
+      "measuredFrom": [
+        "CLONE_SPEC.md:482",
+        "CLONE_SPEC.md:461"
+      ],
+      "durationMs": 500,
+      "easing": "gsap-expo-out",
+      "verifiedOnClone": [
+        "recon/motion-2/MOTION-2.md:21"
+      ]
+    },
+    "M11b": {
+      "id": "M11b",
+      "name": "modal-close",
+      "trigger": "click (close/overlay)",
+      "summary": "opacity 1 to 0 then display none at 0.5s",
+      "breakpoints": "all",
+      "reducedMotionObserved": "not-honoured",
+      "evidenceLevel": "measured",
+      "measuredFrom": [
+        "CLONE_SPEC.md:483",
+        "CLONE_SPEC.md:461"
+      ],
+      "durationMs": 500,
+      "easing": "gsap-expo-out",
+      "verifiedOnClone": [
+        "recon/motion-2/MOTION-2.md:22"
+      ]
+    },
+    "M12": {
+      "id": "M12",
+      "name": "underline-pair-hover",
+      "trigger": "hover",
+      "summary": "Underline 1 shrinks to 0 (250ms) then underline 2 grows to 100% (250ms); mouseout resets instantly",
+      "breakpoints": "all",
+      "reducedMotionObserved": "not-honoured",
+      "evidenceLevel": "measured",
+      "measuredFrom": [
+        "CLONE_SPEC.md:484",
+        "CLONE_SPEC.md:461"
+      ],
+      "durationMs": 500,
+      "easing": "ease-in-out-quad",
+      "verifiedOnClone": [
+        "recon/motion-2/MOTION-2.md:24"
+      ]
+    },
+    "M12b": {
+      "id": "M12b",
+      "name": "footer-link-underline",
+      "trigger": "hover (>=992)",
+      "summary": "Small underline draws 0 to 100% (250ms), second line takes over; reverses on mouseout",
+      "breakpoints": ">=992",
+      "reducedMotionObserved": "not-honoured",
+      "evidenceLevel": "measured",
+      "measuredFrom": [
+        "CLONE_SPEC.md:486",
+        "CLONE_SPEC.md:461"
+      ],
+      "durationMs": 250,
+      "easing": "ease-in-out-quad",
+      "verifiedOnClone": [
+        "recon/motion-2/MOTION-2.md:25"
+      ]
+    },
+    "M13": {
+      "id": "M13",
+      "name": "testimonial-arrow-hover",
+      "trigger": "hover",
+      "summary": "bg to #fff; white arrow slides out 250%, black arrow slides in; 250ms",
+      "breakpoints": "all",
+      "reducedMotionObserved": "not-honoured",
+      "evidenceLevel": "measured",
+      "measuredFrom": [
+        "CLONE_SPEC.md:488",
+        "CLONE_SPEC.md:461"
+      ],
+      "durationMs": 250,
+      "easing": "ease-out-quad",
+      "verifiedOnClone": [
+        "recon/motion-2/MOTION-2.md:26"
+      ]
+    },
+    "M14": {
+      "id": "M14",
+      "name": "block-hover-swap",
+      "trigger": "hover",
+      "summary": "Integration/security block bg to #fff (200ms ease-out), logo swap white to black instantly",
+      "breakpoints": "all",
+      "reducedMotionObserved": "not-honoured",
+      "evidenceLevel": "measured",
+      "measuredFrom": [
+        "CLONE_SPEC.md:489",
+        "CLONE_SPEC.md:461"
+      ],
+      "durationMs": 200,
+      "easing": "ease-out",
+      "verifiedOnClone": [
+        "recon/motion-2/MOTION-2.md:27"
+      ]
+    },
+    "M15": {
+      "id": "M15",
+      "name": "nav-link-roll",
+      "trigger": "hover (>=992)",
+      "summary": "Both nav texts translateY 0 to -100% (-19.59px), 250ms",
+      "breakpoints": ">=992",
+      "reducedMotionObserved": "not-honoured",
+      "evidenceLevel": "measured",
+      "measuredFrom": [
+        "CLONE_SPEC.md:490",
+        "CLONE_SPEC.md:461"
+      ],
+      "durationMs": 250,
+      "easing": "ease-out-quad",
+      "verifiedOnClone": [
+        "recon/motion-1/MOTION-1.md:14"
+      ]
+    },
+    "M16": {
+      "id": "M16",
+      "name": "popup-close-hover",
+      "trigger": "hover",
+      "summary": "Close button bg to #fff; icon swap; 250ms",
+      "breakpoints": "all",
+      "reducedMotionObserved": "not-honoured",
+      "evidenceLevel": "measured",
+      "measuredFrom": [
+        "CLONE_SPEC.md:491",
+        "CLONE_SPEC.md:461"
+      ],
+      "durationMs": 250,
+      "easing": "ease-out-quad",
+      "verifiedOnClone": [
+        "recon/motion-2/MOTION-2.md:28"
+      ]
+    },
+    "M17": {
+      "id": "M17",
+      "name": "css-hover-misc",
+      "trigger": "hover (CSS)",
+      "summary": "Nav CTA bg to #f1f3f3 (.2s); legal links opacity .3 to 1 (.2s); YT play scale 1.07 (.18s)",
+      "breakpoints": "all",
+      "reducedMotionObserved": "not-honoured",
+      "evidenceLevel": "measured",
+      "measuredFrom": [
+        "CLONE_SPEC.md:492",
+        "CLONE_SPEC.md:461"
+      ],
+      "durationMs": 200,
+      "easing": "ease-out-cubic",
+      "verifiedOnClone": [
+        "recon/motion-2/MOTION-2.md:29"
+      ]
+    },
+    "M18": {
+      "id": "M18",
+      "name": "mobile-menu-icon-swap",
+      "trigger": "menu open/close (<=991)",
+      "summary": "Burger hides, close cross opacity 0 to 1 over 100ms after 100ms; border colour 200ms; menu itself instant",
+      "breakpoints": "<=991",
+      "reducedMotionObserved": "not-honoured",
+      "evidenceLevel": "measured",
+      "measuredFrom": [
+        "CLONE_SPEC.md:493",
+        "CLONE_SPEC.md:461"
+      ],
+      "durationMs": 200,
+      "easing": "ease-out",
+      "verifiedOnClone": [
+        "recon/motion-1/MOTION-1.md:15"
+      ]
+    },
+    "M19": {
+      "id": "M19",
+      "name": "testimonial-cross-fade",
+      "trigger": "arrow click",
+      "summary": "Cross-fade between slides over 400ms",
+      "breakpoints": "all",
+      "reducedMotionObserved": "not-honoured",
+      "evidenceLevel": "measured",
+      "measuredFrom": [
+        "CLONE_SPEC.md:494",
+        "CLONE_SPEC.md:461"
+      ],
+      "durationMs": 400,
+      "easing": "ease-out-quad",
+      "verifiedOnClone": [
+        "recon/motion-2/MOTION-2.md:30"
+      ]
+    },
+    "M20": {
+      "id": "M20",
+      "name": "hover-tab-activate",
+      "trigger": "hover (touch: tap)",
+      "summary": "Navigator and specialty tabs activate on hover; pane swap instant",
+      "breakpoints": "all",
+      "reducedMotionObserved": "not-honoured",
+      "evidenceLevel": "measured",
+      "measuredFrom": [
+        "CLONE_SPEC.md:495",
+        "CLONE_SPEC.md:461"
+      ],
+      "durationMs": 0,
+      "verifiedOnClone": [
+        "recon/motion-2/MOTION-2.md:31"
+      ]
+    },
+    "M21": {
+      "id": "M21",
+      "name": "bg-video-loop",
+      "trigger": "autoplay",
+      "summary": "15.07s loop, muted; skipped under prefers-reduced-motion, still image shown instead",
+      "breakpoints": "all",
+      "reducedMotionObserved": "honoured",
+      "evidenceLevel": "measured",
+      "measuredFrom": [
+        "CLONE_SPEC.md:496",
+        "CLONE_SPEC.md:461"
+      ],
+      "durationMs": 15070,
+      "verifiedOnClone": [
+        "recon/motion-1/MOTION-1.md:16"
+      ]
+    },
+    "M22": {
+      "id": "M22",
+      "name": "smooth-scroll",
+      "trigger": "wheel",
+      "summary": "Lenis lerp 0.1, wheelMultiplier 0.7; stopped while the mobile menu is open",
+      "breakpoints": "all",
+      "reducedMotionObserved": "not-honoured",
+      "evidenceLevel": "measured",
+      "measuredFrom": [
+        "CLONE_SPEC.md:497",
+        "CLONE_SPEC.md:461"
+      ],
+      "verifiedOnClone": [
+        "recon/motion-1/MOTION-1.md:17"
+      ]
+    },
+    "CMP-M1": {
+      "id": "CMP-M1",
+      "name": "compare-load-intro",
+      "trigger": "page-load (clone: mount, D11)",
+      "summary": "Preloader out .1s; nav 1.2s; hero blocks .6s/1.1s; lines draw; overlay 1 to 0 over .7s",
+      "breakpoints": "all",
+      "reducedMotionObserved": "not-honoured",
+      "evidenceLevel": "measured",
+      "measuredFrom": [
+        "specs/compare.md:318",
+        "CLONE_SPEC.md:461"
+      ],
+      "durationMs": 2300,
+      "easing": "gsap-expo-out",
+      "verifiedOnClone": [
+        "recon/motion-3/MOTION-3.md:10"
+      ]
+    },
+    "CMP-M2": {
+      "id": "CMP-M2",
+      "name": "privacy-block-hover",
+      "trigger": "hover",
+      "summary": "Block bg to #fff, head and text to #020801; 200ms ease-out",
+      "breakpoints": "all",
+      "reducedMotionObserved": "not-honoured",
+      "evidenceLevel": "measured",
+      "measuredFrom": [
+        "specs/compare.md:319",
+        "CLONE_SPEC.md:461"
+      ],
+      "durationMs": 200,
+      "easing": "ease-out",
+      "verifiedOnClone": [
+        "recon/motion-3/MOTION-3.md:26"
+      ]
+    },
+    "CMP-M3": {
+      "id": "CMP-M3",
+      "name": "integration-white-hover",
+      "trigger": "hover",
+      "summary": "White-variant integration block bg #fff to #a2fa8e; 200ms; no logo swap",
+      "breakpoints": "all",
+      "reducedMotionObserved": "not-honoured",
+      "evidenceLevel": "measured",
+      "measuredFrom": [
+        "specs/compare.md:320",
+        "CLONE_SPEC.md:461"
+      ],
+      "durationMs": 200,
+      "easing": "ease-out",
+      "verifiedOnClone": [
+        "recon/motion-3/MOTION-3.md:28"
+      ]
+    },
+    "CMP-M4": {
+      "id": "CMP-M4",
+      "name": "ev-accordion",
+      "trigger": "click",
+      "summary": "One tab open; bg #fff, text #020801; instant",
+      "breakpoints": "all",
+      "reducedMotionObserved": "not-honoured",
+      "evidenceLevel": "measured",
+      "measuredFrom": [
+        "specs/compare.md:321",
+        "CLONE_SPEC.md:461"
+      ],
+      "durationMs": 0,
+      "verifiedOnClone": [
+        "recon/motion-3/MOTION-3.md:34"
+      ]
+    },
+    "CMP-M5": {
+      "id": "CMP-M5",
+      "name": "sticky-table-header",
+      "trigger": "scroll (<=767)",
+      "summary": "position sticky top 60, bg rgba(2,8,1,.5) + blur 80px; CSS only",
+      "breakpoints": "<=767",
+      "reducedMotionObserved": "not-honoured",
+      "evidenceLevel": "measured",
+      "measuredFrom": [
+        "specs/compare.md:322",
+        "CLONE_SPEC.md:461"
+      ],
+      "verifiedOnClone": [
+        "recon/motion-3/MOTION-3.md:36"
+      ]
+    },
+    "BAD-M1": {
+      "id": "BAD-M1",
+      "name": "book-demo-load-intro",
+      "trigger": "page-load (clone: mount, D11)",
+      "summary": "bg pixels wrapper .08s; nav 1.2s expo.out; H1, paragraph and form have no entrance",
+      "breakpoints": "all",
+      "reducedMotionObserved": "not-honoured",
+      "evidenceLevel": "measured",
+      "measuredFrom": [
+        "specs/book-a-demo.md:160",
+        "CLONE_SPEC.md:461"
+      ],
+      "durationMs": 1200,
+      "easing": "gsap-expo-out",
+      "verifiedOnClone": [
+        "recon/motion-3/MOTION-3.md:11"
+      ]
+    },
+    "BAD-M2": {
+      "id": "BAD-M2",
+      "name": "input-focus",
+      "trigger": "focus",
+      "summary": "Input border #ccc to #3898ec, instant",
+      "breakpoints": "all",
+      "reducedMotionObserved": "not-honoured",
+      "evidenceLevel": "measured",
+      "measuredFrom": [
+        "specs/book-a-demo.md:161",
+        "CLONE_SPEC.md:461"
+      ],
+      "durationMs": 0,
+      "verifiedOnClone": [
+        "recon/motion-3/MOTION-3.md:37"
+      ]
+    },
+    "LGL-M1": {
+      "id": "LGL-M1",
+      "name": "legal-load-intro",
+      "trigger": "page-load (clone: mount, D11)",
+      "summary": "Preloader out; nav 1.2s; full-width hero block and hero line draw",
+      "breakpoints": "all",
+      "reducedMotionObserved": "not-honoured",
+      "evidenceLevel": "measured",
+      "measuredFrom": [
+        "recon/motion-3/MOTION-3.md:12",
+        "CLONE_SPEC.md:461"
+      ],
+      "durationMs": 1800,
+      "easing": "gsap-expo-out",
+      "verifiedOnClone": [
+        "recon/motion-3/MOTION-3.md:12"
+      ]
+    },
+    "BLOG-M1": {
+      "id": "BLOG-M1",
+      "name": "preloader-out",
+      "trigger": "page-load",
+      "summary": "Black preloader opacity 1 to 0 over 0.1s",
+      "breakpoints": "all",
+      "reducedMotionObserved": "not-honoured",
+      "evidenceLevel": "measured",
+      "measuredFrom": [
+        "specs/blog.md:208",
+        "CLONE_SPEC.md:461"
+      ],
+      "durationMs": 100,
+      "easing": "gsap-power1-out",
+      "verifiedOnClone": [
+        "recon/motion-3/MOTION-3.md:13"
+      ]
+    },
+    "BLOG-M2": {
+      "id": "BLOG-M2",
+      "name": "content-fade-in",
+      "trigger": "page-load",
+      "summary": "Nav, featured post, list / header, body opacity 0 to 1 over 1.2s at t 0.1",
+      "breakpoints": "all",
+      "reducedMotionObserved": "not-honoured",
+      "evidenceLevel": "measured",
+      "measuredFrom": [
+        "specs/blog.md:209",
+        "CLONE_SPEC.md:461"
+      ],
+      "durationMs": 1200,
+      "easing": "gsap-expo-out",
+      "verifiedOnClone": [
+        "recon/motion-3/MOTION-3.md:13"
+      ]
+    },
+    "BLOG-M3": {
+      "id": "BLOG-M3",
+      "name": "h1-word-reveal",
+      "trigger": "page-load",
+      "summary": "Index H1 words opacity 0 to 1 and y 50% to 0, 1s each, stagger 0.1s (8 words blog, 6 case studies)",
+      "breakpoints": "all",
+      "reducedMotionObserved": "not-honoured",
+      "evidenceLevel": "measured",
+      "measuredFrom": [
+        "specs/blog.md:210",
+        "CLONE_SPEC.md:461"
+      ],
+      "durationMs": 1000,
+      "easing": "gsap-expo-out",
+      "verifiedOnClone": [
+        "recon/motion-3/MOTION-3.md:13"
+      ]
+    },
+    "BLOG-M4": {
+      "id": "BLOG-M4",
+      "name": "bg-video-in",
+      "trigger": "page-load",
+      "summary": "Background video wrapper opacity 0 to 1 over 0.08s at t 0.02",
+      "breakpoints": "all",
+      "reducedMotionObserved": "not-honoured",
+      "evidenceLevel": "measured",
+      "measuredFrom": [
+        "specs/blog.md:211",
+        "CLONE_SPEC.md:461"
+      ],
+      "durationMs": 80,
+      "easing": "gsap-power1-out",
+      "verifiedOnClone": [
+        "recon/motion-3/MOTION-3.md:13"
+      ]
+    },
+    "BLOG-M6": {
+      "id": "BLOG-M6",
+      "name": "post-card-hover",
+      "trigger": "hover",
+      "summary": "Card bottom bg to #fff, text #020801, rule to #0033cc, image scale 1.1 (rest 1.01 after first out), arrow tile opacity 1; 300ms",
+      "breakpoints": "all",
+      "reducedMotionObserved": "not-honoured",
+      "evidenceLevel": "measured",
+      "measuredFrom": [
+        "specs/blog.md:213",
+        "CLONE_SPEC.md:461"
+      ],
+      "durationMs": 300,
+      "easing": "ease-out-quad",
+      "verifiedOnClone": [
+        "recon/motion-4/MOTION-4.md:11"
+      ]
+    },
+    "BLOG-M7": {
+      "id": "BLOG-M7",
+      "name": "featured-post-hover",
+      "trigger": "hover",
+      "summary": "Featured image scale 1 to 1.1; 300ms",
+      "breakpoints": "all",
+      "reducedMotionObserved": "not-honoured",
+      "evidenceLevel": "measured",
+      "measuredFrom": [
+        "specs/blog.md:214",
+        "CLONE_SPEC.md:461"
+      ],
+      "durationMs": 300,
+      "easing": "ease-out-quad",
+      "verifiedOnClone": [
+        "recon/motion-4/MOTION-4.md:20"
+      ]
+    },
+    "BLOG-M8": {
+      "id": "BLOG-M8",
+      "name": "back-link-hover",
+      "trigger": "hover (>=992)",
+      "summary": "Opacity .5 to 1; both arrows translateX 0 to -100%; 300ms",
+      "breakpoints": ">=992",
+      "reducedMotionObserved": "not-honoured",
+      "evidenceLevel": "measured",
+      "measuredFrom": [
+        "specs/blog.md:215",
+        "CLONE_SPEC.md:461"
+      ],
+      "durationMs": 300,
+      "easing": "ease-out-quad",
+      "verifiedOnClone": [
+        "recon/motion-4/MOTION-4.md:22"
+      ]
+    },
+    "BLOG-M9": {
+      "id": "BLOG-M9",
+      "name": "share-icon-hover",
+      "trigger": "hover",
+      "summary": "Share icon opacity .5 to 1, CSS .3s",
+      "breakpoints": "all",
+      "reducedMotionObserved": "not-honoured",
+      "evidenceLevel": "measured",
+      "measuredFrom": [
+        "specs/blog.md:216",
+        "CLONE_SPEC.md:461"
+      ],
+      "durationMs": 300,
+      "easing": "ease-out-quad",
+      "verifiedOnClone": [
+        "recon/motion-4/MOTION-4.md:27"
+      ]
+    },
+    "BLOG-M10": {
+      "id": "BLOG-M10",
+      "name": "sticky-share-column",
+      "trigger": "scroll (>=992)",
+      "summary": "Share column position sticky top 60; static <=991",
+      "breakpoints": ">=992",
+      "reducedMotionObserved": "not-honoured",
+      "evidenceLevel": "measured",
+      "measuredFrom": [
+        "specs/blog.md:217",
+        "CLONE_SPEC.md:461"
+      ],
+      "verifiedOnClone": [
+        "recon/motion-4/MOTION-4.md:29"
+      ]
+    },
+    "CS-M1": {
+      "id": "CS-M1",
+      "name": "case-card-hover",
+      "trigger": "hover",
+      "summary": "Logo cell bg to #f1f3f3 with white/black logo swap, bottom bg #fff, rule to #0033cc, arrow tile opacity 1; 300ms",
+      "breakpoints": "all",
+      "reducedMotionObserved": "not-honoured",
+      "evidenceLevel": "measured",
+      "measuredFrom": [
+        "specs/case-studies.md:106",
+        "CLONE_SPEC.md:461"
+      ],
+      "durationMs": 300,
+      "easing": "ease-out-quad",
+      "verifiedOnClone": [
+        "recon/motion-4/MOTION-4.md:30"
+      ]
+    },
+    "FOOTER-REVEAL": {
+      "id": "FOOTER-REVEAL",
+      "name": "footer-curtain-reveal",
+      "trigger": "scroll",
+      "summary": "Sticky .footer-bottom-wrap (z 1) revealed from under .page-wrap (z 2)",
+      "breakpoints": "all",
+      "reducedMotionObserved": "not-honoured",
+      "evidenceLevel": "measured",
+      "measuredFrom": [
+        "CLONE_SPEC.md:147",
+        "CLONE_SPEC.md:461"
+      ],
+      "verifiedOnCloneNote": "no clone-vs-live sampling row (CSS-only behaviour or covered by pixel audits at rest)"
+    }
+  },
+  "reducedMotionFallback": {
+    "video-still-image": {
+      "description": "Background video is not played under prefers-reduced-motion; the still image (.bg-pic-pixels) is shown instead. Measured on live and implemented in the clone.",
+      "measuredFrom": [
+        "CLONE_SPEC.md:138",
+        "src/components/PageLayers.jsx:21"
+      ]
+    },
+    "parity-unchanged": {
+      "description": "MEASURED PARITY, not an accessibility upgrade: the original honours prefers-reduced-motion only for the background video; marquees, IX2/IX3 interactions, intros and Lenis keep running, and the clone reproduces this on purpose (DEVIATIONS/ASSET_MANIFEST decision: faithful to original). A future human decision may replace this with a static settled state.",
+      "measuredFrom": [
+        "CLONE_SPEC.md:461",
+        "src/styles/motion-interactions.css:4",
+        "recon/motion-3/MOTION-3.md:25",
+        "src/motion/pageIntro.js:17"
+      ]
+    },
+    "static-no-motion": {
+      "description": "The section has no motion of its own (static or pure-CSS layout); nothing to reduce.",
+      "measuredFrom": [
+        "CLONE_SPEC.md:499"
+      ]
+    }
+  }
+}

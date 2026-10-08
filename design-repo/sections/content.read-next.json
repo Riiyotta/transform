@@ -1,0 +1,333 @@
+{
+  "id": "content.read-next",
+  "kind": "section",
+  "category": "CONTENT",
+  "surface": "dark",
+  "claimsPolicy": "must-not-fabricate",
+  "purpose": "Keep a case-study reader exploring with one related case card.",
+  "description": "Single related-case-study card at the foot of a case study. The equivalent block on blog posts is hidden on the live site and is not rendered.",
+  "implementedBy": "src/components/cms/ReadNext.jsx",
+  "evidenceLevel": "measured",
+  "scope": {
+    "templates": [
+      "template.case-study"
+    ],
+    "routes": [
+      "/case-studies/southern-bone-joint",
+      "/case-studies/the-orthopaedic-center"
+    ],
+    "routeCount": 2
+  },
+  "constraints": {
+    "onePerPage": true,
+    "maxPerPage": 1,
+    "allowedTemplates": [
+      "template.case-study"
+    ],
+    "mustImmediatelyFollowAnyOf": [
+      "content.post-body"
+    ]
+  },
+  "variants": {},
+  "fixedChrome": false,
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "eyebrow",
+      "heading",
+      "card"
+    ],
+    "properties": {
+      "eyebrow": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 5,
+        "observedMax": 2,
+        "examples": [
+          "Keep exploring"
+        ]
+      },
+      "heading": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 5,
+        "observedMax": 2,
+        "examples": [
+          "Read Next"
+        ]
+      },
+      "card": {
+        "oneOf": [
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "href",
+              "title",
+              "logoWhite",
+              "logoBlack",
+              "highlight"
+            ],
+            "properties": {
+              "href": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "^(/|https://|mailto:|#)",
+                "examples": [
+                  "/case-studies/southern-bone-joint"
+                ]
+              },
+              "title": {
+                "type": "string",
+                "minLength": 1,
+                "maxWords": 5,
+                "observedMax": 4,
+                "examples": [
+                  "Southern Bone & Joint"
+                ]
+              },
+              "logoWhite": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "assetRole",
+                  "assetRef"
+                ],
+                "properties": {
+                  "assetRole": {
+                    "allOf": [
+                      {
+                        "$ref": "#/definitions/assetRole"
+                      },
+                      {
+                        "const": "client.logo"
+                      }
+                    ]
+                  },
+                  "assetRef": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "examples": [
+                  {
+                    "assetRole": "client.logo",
+                    "assetRef": "/assets/698c60b11b32134b897d931c-sbj-wh.webp"
+                  }
+                ]
+              },
+              "logoBlack": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "assetRole",
+                  "assetRef"
+                ],
+                "properties": {
+                  "assetRole": {
+                    "allOf": [
+                      {
+                        "$ref": "#/definitions/assetRole"
+                      },
+                      {
+                        "const": "client.logo"
+                      }
+                    ]
+                  },
+                  "assetRef": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "examples": [
+                  {
+                    "assetRole": "client.logo",
+                    "assetRef": "/assets/698c60b597afd6b738f5589b-sbj-bl.webp"
+                  }
+                ]
+              },
+              "highlight": {
+                "type": "string",
+                "minLength": 1,
+                "maxWords": 15,
+                "observedMax": 15,
+                "examples": [
+                  "A Partnership Built on Trust:\nHow Southern Bone & Joint Humanized Patient Access with “Ronnie”"
+                ]
+              }
+            }
+          },
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "href",
+              "title",
+              "logoWhite",
+              "logoBlack",
+              "stats"
+            ],
+            "properties": {
+              "href": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "^(/|https://|mailto:|#)",
+                "examples": [
+                  "/case-studies/southern-bone-joint"
+                ]
+              },
+              "title": {
+                "type": "string",
+                "minLength": 1,
+                "maxWords": 5,
+                "observedMax": 4,
+                "examples": [
+                  "Southern Bone & Joint"
+                ]
+              },
+              "logoWhite": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "assetRole",
+                  "assetRef"
+                ],
+                "properties": {
+                  "assetRole": {
+                    "allOf": [
+                      {
+                        "$ref": "#/definitions/assetRole"
+                      },
+                      {
+                        "const": "client.logo"
+                      }
+                    ]
+                  },
+                  "assetRef": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "examples": [
+                  {
+                    "assetRole": "client.logo",
+                    "assetRef": "/assets/698c60b11b32134b897d931c-sbj-wh.webp"
+                  }
+                ]
+              },
+              "logoBlack": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "assetRole",
+                  "assetRef"
+                ],
+                "properties": {
+                  "assetRole": {
+                    "allOf": [
+                      {
+                        "$ref": "#/definitions/assetRole"
+                      },
+                      {
+                        "const": "client.logo"
+                      }
+                    ]
+                  },
+                  "assetRef": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "examples": [
+                  {
+                    "assetRole": "client.logo",
+                    "assetRef": "/assets/698c60b597afd6b738f5589b-sbj-bl.webp"
+                  }
+                ]
+              },
+              "stats": {
+                "type": "array",
+                "minItems": 2,
+                "maxItems": 2,
+                "items": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "value",
+                    "label"
+                  ],
+                  "properties": {
+                    "value": {
+                      "type": "string",
+                      "minLength": 1,
+                      "maxWords": 5,
+                      "observedMax": 1,
+                      "examples": [
+                        "80%"
+                      ]
+                    },
+                    "label": {
+                      "type": "string",
+                      "minLength": 1,
+                      "maxWords": 15,
+                      "observedMax": 11,
+                      "examples": [
+                        "decrease in average patient hold times"
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "contentFields": [
+    "eyebrow",
+    "heading",
+    "card"
+  ],
+  "assetRoles": [
+    "client.logo"
+  ],
+  "composes": [
+    "case-card",
+    "meta-point",
+    "hairline"
+  ],
+  "motion": {
+    "allowedPatterns": [
+      "CS-M1"
+    ],
+    "reducedMotionFallback": "parity-unchanged"
+  },
+  "responsive": [
+    {
+      "at": ">=992",
+      "target": "right-side-head-wrap",
+      "property": "gap",
+      "value": "15vw (216px at 1440)"
+    },
+    {
+      "at": "<=767",
+      "target": "right-side-head-wrap",
+      "property": "gap",
+      "value": "120px"
+    },
+    {
+      "at": "<=991",
+      "target": "read-next-section",
+      "property": "border-bottom",
+      "value": "none"
+    }
+  ],
+  "measuredFrom": [
+    "specs/case-studies.md:91-99",
+    "src/components/cms/ReadNext.jsx:7-27",
+    "ia/ia.json:277"
+  ],
+  "notes": "Case studies only. The equivalent block on blog posts is display:none on live and is not rendered (specs/blog.md 4.6)."
+}

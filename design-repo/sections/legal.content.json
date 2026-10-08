@@ -1,0 +1,377 @@
+{
+  "id": "legal.content",
+  "kind": "section",
+  "category": "LEGAL",
+  "surface": "dark",
+  "claimsPolicy": "must-not-fabricate",
+  "purpose": "Present a legal document as readable long-form text: optional heading, grouped paragraphs, bullet lists, green sub-heads and inline links.",
+  "description": "Rich-text legal body: intro-paragraph style, green sub-heads, bullet lists and inline links (rel=\"noopener\" per D10). One component, three content variants (Terms of Use, Privacy Policy, HIPAA) driven by src/data/legal/*.js.",
+  "implementedBy": "src/components/legal/LegalContent.jsx",
+  "evidenceLevel": "measured",
+  "scope": {
+    "templates": [
+      "template.legal"
+    ],
+    "routes": [
+      "/terms-of-use",
+      "/privacy-policy",
+      "/hipaa"
+    ],
+    "routeCount": 3
+  },
+  "constraints": {
+    "onePerPage": true,
+    "maxPerPage": 1,
+    "allowedTemplates": [
+      "template.legal"
+    ]
+  },
+  "variants": {},
+  "fixedChrome": false,
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "blocks"
+    ],
+    "properties": {
+      "blocks": {
+        "type": "array",
+        "minItems": 1,
+        "maxItems": 18,
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "items"
+          ],
+          "properties": {
+            "heading": {
+              "type": "string",
+              "minLength": 1,
+              "maxWords": 20,
+              "observedMax": 16,
+              "examples": [
+                "Google"
+              ]
+            },
+            "last": {
+              "type": "boolean"
+            },
+            "items": {
+              "type": "array",
+              "minItems": 1,
+              "maxItems": 16,
+              "items": {
+                "oneOf": [
+                  {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "required": [
+                      "type",
+                      "items"
+                    ],
+                    "properties": {
+                      "type": {
+                        "const": "group"
+                      },
+                      "items": {
+                        "type": "array",
+                        "minItems": 1,
+                        "maxItems": 8,
+                        "items": {
+                          "oneOf": [
+                            {
+                              "type": "object",
+                              "additionalProperties": false,
+                              "required": [
+                                "type",
+                                "lines"
+                              ],
+                              "properties": {
+                                "type": {
+                                  "const": "p"
+                                },
+                                "lines": {
+                                  "type": "array",
+                                  "minItems": 1,
+                                  "maxItems": 17,
+                                  "items": {
+                                    "oneOf": [
+                                      {
+                                        "type": "string"
+                                      },
+                                      {
+                                        "type": "array",
+                                        "minItems": 1,
+                                        "items": {
+                                          "oneOf": [
+                                            {
+                                              "type": "string"
+                                            },
+                                            {
+                                              "type": "object",
+                                              "additionalProperties": false,
+                                              "required": [
+                                                "text",
+                                                "href"
+                                              ],
+                                              "properties": {
+                                                "text": {
+                                                  "type": "string",
+                                                  "minLength": 1
+                                                },
+                                                "href": {
+                                                  "type": "string",
+                                                  "minLength": 1,
+                                                  "pattern": "^(/|https://|mailto:|#)",
+                                                  "examples": [
+                                                    "https://example.invalid/"
+                                                  ]
+                                                },
+                                                "target": {
+                                                  "enum": [
+                                                    "_blank"
+                                                  ]
+                                                }
+                                              }
+                                            }
+                                          ]
+                                        }
+                                      }
+                                    ],
+                                    "maxWords": 380,
+                                    "observedMax": 377
+                                  }
+                                }
+                              }
+                            },
+                            {
+                              "type": "object",
+                              "additionalProperties": false,
+                              "required": [
+                                "type",
+                                "items"
+                              ],
+                              "properties": {
+                                "type": {
+                                  "const": "list"
+                                },
+                                "items": {
+                                  "type": "array",
+                                  "minItems": 1,
+                                  "maxItems": 6,
+                                  "items": {
+                                    "type": "array",
+                                    "minItems": 1,
+                                    "maxItems": 1,
+                                    "items": {
+                                      "oneOf": [
+                                        {
+                                          "type": "string"
+                                        },
+                                        {
+                                          "type": "array",
+                                          "minItems": 1,
+                                          "items": {
+                                            "oneOf": [
+                                              {
+                                                "type": "string"
+                                              },
+                                              {
+                                                "type": "object",
+                                                "additionalProperties": false,
+                                                "required": [
+                                                  "text",
+                                                  "href"
+                                                ],
+                                                "properties": {
+                                                  "text": {
+                                                    "type": "string",
+                                                    "minLength": 1
+                                                  },
+                                                  "href": {
+                                                    "type": "string",
+                                                    "minLength": 1,
+                                                    "pattern": "^(/|https://|mailto:|#)",
+                                                    "examples": [
+                                                      "https://example.invalid/"
+                                                    ]
+                                                  },
+                                                  "target": {
+                                                    "enum": [
+                                                      "_blank"
+                                                    ]
+                                                  }
+                                                }
+                                              }
+                                            ]
+                                          }
+                                        }
+                                      ],
+                                      "maxWords": 380,
+                                      "observedMax": 377
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          ]
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "required": [
+                      "type",
+                      "lines"
+                    ],
+                    "properties": {
+                      "type": {
+                        "const": "p"
+                      },
+                      "lines": {
+                        "type": "array",
+                        "minItems": 1,
+                        "maxItems": 17,
+                        "items": {
+                          "oneOf": [
+                            {
+                              "type": "string"
+                            },
+                            {
+                              "type": "array",
+                              "minItems": 1,
+                              "items": {
+                                "oneOf": [
+                                  {
+                                    "type": "string"
+                                  },
+                                  {
+                                    "type": "object",
+                                    "additionalProperties": false,
+                                    "required": [
+                                      "text",
+                                      "href"
+                                    ],
+                                    "properties": {
+                                      "text": {
+                                        "type": "string",
+                                        "minLength": 1
+                                      },
+                                      "href": {
+                                        "type": "string",
+                                        "minLength": 1,
+                                        "pattern": "^(/|https://|mailto:|#)",
+                                        "examples": [
+                                          "https://example.invalid/"
+                                        ]
+                                      },
+                                      "target": {
+                                        "enum": [
+                                          "_blank"
+                                        ]
+                                      }
+                                    }
+                                  }
+                                ]
+                              }
+                            }
+                          ],
+                          "maxWords": 380,
+                          "observedMax": 377
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "required": [
+                      "type",
+                      "text"
+                    ],
+                    "properties": {
+                      "type": {
+                        "const": "subhead"
+                      },
+                      "text": {
+                        "type": "string",
+                        "minLength": 1,
+                        "maxWords": 25,
+                        "observedMax": 21,
+                        "examples": [
+                          "17.6 Headings"
+                        ]
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "examples": [
+            {
+              "heading": "Google",
+              "items": [
+                {
+                  "type": "p",
+                  "lines": [
+                    "Procedures/Products/Services:"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  },
+  "contentFields": [
+    "blocks"
+  ],
+  "assetRoles": [],
+  "composes": [
+    "text-link",
+    "hairline"
+  ],
+  "motion": {
+    "allowedPatterns": [],
+    "reducedMotionFallback": "static-no-motion"
+  },
+  "responsive": [
+    {
+      "at": ">=992",
+      "target": "legal-cont",
+      "property": "width",
+      "value": "50vw (min 720px, max 960px)"
+    },
+    {
+      "at": "<=991",
+      "target": "legal-cont",
+      "property": "width",
+      "value": "100%"
+    },
+    {
+      "at": "<=991",
+      "target": "legal-block",
+      "property": "gap",
+      "value": "20px (clamp(30px,2.083vw,40px) at >=992)"
+    },
+    {
+      "at": "all",
+      "target": "text-wrap",
+      "property": "gap",
+      "value": "24px"
+    }
+  ],
+  "measuredFrom": [
+    "specs/legal.md:106",
+    "src/components/legal/LegalContent.jsx:90-100",
+    "specs/legal.md:40",
+    "ia/ia.json:241"
+  ],
+  "notes": "Real legal text is the company's proprietary legal content (Terms, Privacy Policy, HIPAA authorization): never author legal terms with AI for a real entity. \"group\" = Webflow .legal-text-wrap (p/ul siblings, gap 24); sub-heads and loose paragraphs are direct block children (gap 30). Source invisibles (U+00A0, U+200B, U+200D, U+2028) are preserved in the clone data and counted as whitespace by the word counter."
+}

@@ -1,0 +1,482 @@
+{
+  "fontFamily": {
+    "sans": {
+      "$type": "fontFamily",
+      "$value": "'Polysans Neutral', Arial, sans-serif",
+      "$description": "The only text face; weight 400 only",
+      "cssVar": "--font-sans",
+      "measuredFrom": [
+        "src/index.css:73",
+        "CLONE_SPEC.md:72"
+      ]
+    },
+    "hubspot-replica": {
+      "$type": "fontFamily",
+      "$value": "'Helvetica Neue', Helvetica, Arial, sans-serif",
+      "$description": "Footer email-form replica only (measured inside the HubSpot iframe)",
+      "cssVar": "--font-hubspot",
+      "measuredFrom": [
+        "src/index.css:74",
+        "CLONE_SPEC.md:442"
+      ]
+    }
+  },
+  "fontWeight": {
+    "regular": {
+      "$type": "fontWeight",
+      "$value": 400,
+      "$description": "Weight 400 only everywhere; \"bold\" in rich text is expressed by colour (white vs .6 white)",
+      "measuredFrom": [
+        "CLONE_SPEC.md:72",
+        "specs/blog.md:64"
+      ]
+    }
+  },
+  "letterSpacing": {
+    "normal": {
+      "$type": "dimension",
+      "$value": "normal",
+      "$description": "Letter-spacing normal everywhere",
+      "measuredFrom": [
+        "CLONE_SPEC.md:72"
+      ]
+    }
+  },
+  "fontSize": {
+    "14": {
+      "$type": "dimension",
+      "cssVar": "--fs-14",
+      "$description": "14 text (._14px-text)",
+      "measuredFrom": [
+        "src/index.css:102",
+        "src/index.css:131",
+        "src/index.css:151"
+      ],
+      "$value": {
+        "base": "clamp(0.875rem, 0.972vw, 1rem)",
+        "<=991": "14px",
+        "<=767": "16px"
+      }
+    },
+    "16": {
+      "$type": "dimension",
+      "cssVar": "--fs-16",
+      "$description": "16 text (._16px-text)",
+      "measuredFrom": [
+        "src/index.css:100",
+        "src/index.css:129",
+        "src/index.css:149"
+      ],
+      "$value": {
+        "base": "clamp(1rem, 1.111vw, 1.125rem)",
+        "<=991": "14px",
+        "<=767": "16px"
+      }
+    },
+    "16-specialty": {
+      "$type": "dimension",
+      "cssVar": "--fs-16-specialty",
+      "$description": "\"Designed for Your Specialty\"",
+      "measuredFrom": [
+        "src/index.css:101",
+        "src/index.css:130",
+        "src/index.css:150"
+      ],
+      "$value": {
+        "base": "clamp(1rem, 1.111vw, 1.125rem)",
+        "<=991": "14px",
+        "<=767": "10.133vw"
+      }
+    },
+    "30": {
+      "$type": "dimension",
+      "cssVar": "--fs-30",
+      "$description": "30 text (._30px-text)",
+      "measuredFrom": [
+        "src/index.css:123",
+        "src/index.css:145",
+        "src/index.css:94"
+      ],
+      "$value": {
+        "base": "2.083vw",
+        "<=991": "18px",
+        "<=767": "24px"
+      }
+    },
+    "30-card-head": {
+      "$type": "dimension",
+      "cssVar": "--fs-30-card-head",
+      "$description": "Stack card head / testimonial number",
+      "measuredFrom": [
+        "src/index.css:126",
+        "src/index.css:97"
+      ],
+      "$value": {
+        "base": "2.083vw",
+        "<=991": "24px"
+      }
+    },
+    "30-card-index": {
+      "$type": "dimension",
+      "cssVar": "--fs-30-card-index",
+      "$description": "Stack card index",
+      "measuredFrom": [
+        "src/index.css:127",
+        "src/index.css:148",
+        "src/index.css:163",
+        "src/index.css:98"
+      ],
+      "$value": {
+        "base": "2.083vw",
+        "<=991": "18px",
+        "<=767": "24px",
+        "<=479": "16px"
+      }
+    },
+    "30-hero": {
+      "$type": "dimension",
+      "cssVar": "--fs-30-hero",
+      "$description": "Hero paragraph",
+      "measuredFrom": [
+        "src/index.css:124",
+        "src/index.css:146",
+        "src/index.css:162",
+        "src/index.css:95"
+      ],
+      "$value": {
+        "base": "2.083vw",
+        "<=991": "18px",
+        "<=767": "24px",
+        "<=479": "5vw"
+      }
+    },
+    "30-testimonial": {
+      "$type": "dimension",
+      "cssVar": "--fs-30-testimonial",
+      "$description": "Testimonial quote",
+      "measuredFrom": [
+        "src/index.css:125",
+        "src/index.css:147",
+        "src/index.css:96"
+      ],
+      "$value": {
+        "base": "2.083vw",
+        "<=991": "18px",
+        "<=767": "22px"
+      }
+    },
+    "56": {
+      "$type": "dimension",
+      "cssVar": "--fs-56",
+      "$description": "56 text (._56-px-text)",
+      "measuredFrom": [
+        "src/index.css:121",
+        "src/index.css:91"
+      ],
+      "$value": {
+        "base": "3.889vw",
+        "<=991": "30px"
+      }
+    },
+    "access": {
+      "$type": "dimension",
+      "cssVar": "--fs-access",
+      "$description": "Compare access H2 (5vw at every width)",
+      "measuredFrom": [
+        "src/styles/page-compare.css:26"
+      ],
+      "$value": {
+        "base": "5vw"
+      }
+    },
+    "clamp-16-18": {
+      "$type": "dimension",
+      "cssVar": "--fs-clamp-16-18",
+      "$description": "Rich-text p/li, case header highlight (does not step down)",
+      "measuredFrom": [
+        "src/components/cms/cms.css:17"
+      ],
+      "$value": {
+        "base": "clamp(1rem, 1.111vw, 1.125rem)"
+      }
+    },
+    "display": {
+      "$type": "dimension",
+      "cssVar": "--fs-display",
+      "$description": "Section display H2 (.h1-text)",
+      "measuredFrom": [
+        "src/index.css:142",
+        "src/index.css:159",
+        "src/index.css:89"
+      ],
+      "$value": {
+        "base": "7.083vw",
+        "<=767": "10.133vw",
+        "<=479": "12.8vw"
+      }
+    },
+    "form-input": {
+      "$type": "dimension",
+      "cssVar": "--fs-form-input",
+      "$description": "Popup input",
+      "measuredFrom": [
+        "src/index.css:106"
+      ],
+      "$value": {
+        "base": "clamp(1.125rem, 1.25vw, 1.25rem)"
+      }
+    },
+    "hero": {
+      "$type": "dimension",
+      "cssVar": "--fs-hero",
+      "$description": "Hero H1 / Spotlight H2 / legal, blog and demo H1 (.white-text.hero-home)",
+      "measuredFrom": [
+        "src/index.css:120",
+        "src/index.css:141",
+        "src/index.css:88"
+      ],
+      "$value": {
+        "base": "6.5vw",
+        "<=991": "75px",
+        "<=767": "12.8vw"
+      }
+    },
+    "hero-input": {
+      "$type": "dimension",
+      "cssVar": "--fs-hero-input",
+      "$description": "Hero phone input",
+      "measuredFrom": [
+        "src/index.css:107",
+        "src/index.css:135",
+        "src/index.css:153"
+      ],
+      "$value": {
+        "base": "1.25vw",
+        "<=991": "14px",
+        "<=767": "16px"
+      }
+    },
+    "hiw": {
+      "$type": "dimension",
+      "cssVar": "--fs-hiw",
+      "$description": "How-it-works words (.hiw-text)",
+      "measuredFrom": [
+        "src/index.css:143",
+        "src/index.css:90"
+      ],
+      "$value": {
+        "base": "7.778vw",
+        "<=767": "12.8vw"
+      }
+    },
+    "legal": {
+      "$type": "dimension",
+      "cssVar": "--fs-legal",
+      "$description": "Footer bottom legal row",
+      "measuredFrom": [
+        "src/index.css:103",
+        "src/index.css:132",
+        "src/index.css:152",
+        "src/index.css:164"
+      ],
+      "$value": {
+        "base": "clamp(0.875rem, 0.972vw, 1rem)",
+        "<=991": "14px",
+        "<=767": "16px",
+        "<=479": "14px"
+      }
+    },
+    "legal-subhead": {
+      "$type": "dimension",
+      "cssVar": "--fs-legal-subhead",
+      "$description": "Legal green sub-head",
+      "measuredFrom": [
+        "src/styles/page-legal.css:12"
+      ],
+      "$value": {
+        "base": "max(1.375rem, 1.528vw)"
+      }
+    },
+    "nav": {
+      "$type": "dimension",
+      "cssVar": "--fs-nav",
+      "$description": "Nav link",
+      "measuredFrom": [
+        "src/index.css:104",
+        "src/index.css:133"
+      ],
+      "$value": {
+        "base": "clamp(0.875rem, 0.972vw, 1rem)",
+        "<=991": "6.25vw"
+      }
+    },
+    "nav-cta": {
+      "$type": "dimension",
+      "cssVar": "--fs-nav-cta",
+      "$description": "Nav Login / Book a Demo",
+      "measuredFrom": [
+        "src/index.css:105",
+        "src/index.css:134",
+        "src/index.css:165"
+      ],
+      "$value": {
+        "base": "clamp(0.875rem, 0.972vw, 1rem)",
+        "<=991": "22px",
+        "<=479": "16px"
+      }
+    },
+    "popup-head": {
+      "$type": "dimension",
+      "cssVar": "--fs-popup-head",
+      "$description": "Call Alex popup heading",
+      "measuredFrom": [
+        "src/index.css:161",
+        "src/index.css:93"
+      ],
+      "$value": {
+        "base": "clamp(56px, 3.889vw, 6.222vh)",
+        "<=479": "12.8vw"
+      }
+    },
+    "stats-head": {
+      "$type": "dimension",
+      "cssVar": "--fs-stats-head",
+      "$description": "Stats heading",
+      "measuredFrom": [
+        "src/index.css:122",
+        "src/index.css:144",
+        "src/index.css:160",
+        "src/index.css:92"
+      ],
+      "$value": {
+        "base": "3.889vw",
+        "<=991": "30px",
+        "<=767": "10.133vw",
+        "<=479": "12.8vw"
+      }
+    },
+    "submit": {
+      "$type": "dimension",
+      "cssVar": "--fs-submit",
+      "$description": "Popup submit",
+      "measuredFrom": [
+        "src/index.css:128",
+        "src/index.css:99"
+      ],
+      "$value": {
+        "base": "2.083vw",
+        "<=991": "30px"
+      }
+    },
+    "table-text": {
+      "$type": "dimension",
+      "cssVar": "--fs-table-text",
+      "$description": "Compare table text",
+      "measuredFrom": [
+        "src/styles/page-compare.css:24",
+        "src/styles/page-compare.css:32"
+      ],
+      "$value": {
+        "base": "clamp(1.25rem, 1.389vw, 1.375rem)",
+        "<=991": "14px"
+      }
+    }
+  },
+  "lineHeight": {
+    "30": {
+      "$type": "lineHeight",
+      "$value": "1.2",
+      "$description": "line-height role",
+      "cssVar": "--lh-30",
+      "measuredFrom": [
+        "src/index.css:87"
+      ]
+    },
+    "body": {
+      "$type": "lineHeight",
+      "$value": "1.4",
+      "$description": "line-height role",
+      "cssVar": "--lh-body",
+      "measuredFrom": [
+        "src/index.css:84"
+      ]
+    },
+    "display": {
+      "$type": "lineHeight",
+      "$value": "100%",
+      "$description": "line-height role",
+      "cssVar": "--lh-display",
+      "measuredFrom": [
+        "src/index.css:86"
+      ]
+    },
+    "hero": {
+      "$type": "lineHeight",
+      "$value": "101%",
+      "$description": "line-height role",
+      "cssVar": "--lh-hero",
+      "measuredFrom": [
+        "src/index.css:85"
+      ]
+    }
+  },
+  "measuredPx": {
+    "$description": "Rendered px of the main roles at 1440/1024/768/390 (computed, CLONE_SPEC 1.4)",
+    "measuredFrom": [
+      "CLONE_SPEC.md:71-92"
+    ],
+    "roles": {
+      "hero": {
+        "1440": 93.6,
+        "1024": 66.56,
+        "768": 75,
+        "390": 49.92
+      },
+      "display": {
+        "1440": 102.0,
+        "1024": 72.53,
+        "768": 54.4,
+        "390": 49.92
+      },
+      "hiw": {
+        "1440": 112.0,
+        "1024": 79.65,
+        "768": 59.74,
+        "390": 49.92
+      },
+      "56": {
+        "1440": 56.0,
+        "1024": 39.82,
+        "768": 30,
+        "390": 30
+      },
+      "30": {
+        "1440": 30.0,
+        "1024": 21.33,
+        "768": 18,
+        "390": 24
+      },
+      "16": {
+        "1440": 16,
+        "1024": 16,
+        "768": 14,
+        "390": 16
+      },
+      "14": {
+        "1440": 14,
+        "1024": 14,
+        "768": 14,
+        "390": 16
+      }
+    }
+  },
+  "bodyBase": {
+    "$type": "dimension",
+    "$value": "0.875rem",
+    "$description": "Body base 14px, line-height 1.4, antialiased",
+    "measuredFrom": [
+      "src/index.css:183",
+      "CLONE_SPEC.md:72"
+    ]
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "version": "1.0.0",
+  "enforced": [
+    "Every semantic and component token alias resolves to a real foundation token (extraction/verify_all.py)",
+    "Every semantic token is mapped in every theme (extraction/verify_all.py)",
+    "Policy category names are real catalog keys (extraction/verify_all.py)"
+  ],
+  "convention": [
+    "Reference colours via semantic.* or color.*; do not write raw hex values",
+    "Use fontSize.* roles; do not invent px sizes",
+    "Weight is 400 only",
+    "Radius is 0 except the HubSpot replica input"
+  ],
+  "rawValueRestrictions": {
+    "color": "Never write raw hex/rgba; reference color.* or semantic.*",
+    "fontSize": "Never write raw px/vw; reference fontSize.*",
+    "fontFamily": "sans only (hubspot-replica only inside the footer email form)",
+    "fontWeight": "regular (400) only",
+    "radius": "none (0) only",
+    "elevation": "hairline-* shadows only; no drop shadows",
+    "spacing": "Reference spacing.* (pad, rail, nav-h, indent-label)"
+  },
+  "overrides": "GAP RECORDED, NOT INVENTED: PageSpec nodes carry no per-instance style or token-override field (node properties are only section, variant, content, motion). Styling is owned entirely by section/component contracts, so there is no PageSpec field to validate token overrides against; adversarial coverage for tokens therefore lives at the catalog/policy layer (extraction/prove_drift.py), not at the PageSpec layer."
+}

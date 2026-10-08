@@ -1,0 +1,39 @@
+{
+  "id": "submit-control",
+  "kind": "primitive",
+  "purpose": "Form submit controls: popup \"Call Me Now\" text link, demo \"Book My Demo\" Webflow button, HubSpot replica \"Submit\" button",
+  "props": {
+    "kind": [
+      "popup-text-submit",
+      "webflow-button",
+      "hubspot-replica-button"
+    ],
+    "label": "string",
+    "waitLabel": "string"
+  },
+  "additionalProps": false,
+  "states": [
+    "default",
+    "hover",
+    "submitting",
+    "success",
+    "error"
+  ],
+  "tokens": [
+    "component.webflow-form-default",
+    "component.hubspot-form-replica"
+  ],
+  "motionPatterns": [
+    "M12"
+  ],
+  "measuredFrom": [
+    "CLONE_SPEC.md:411",
+    "src/data/bookDemo.js:23"
+  ],
+  "notes": "No network request is ever made; success/error states are rendered client-side",
+  "usedBySections": [
+    "shell.call-alex-modal",
+    "shell.footer",
+    "hero.book-a-demo"
+  ]
+}

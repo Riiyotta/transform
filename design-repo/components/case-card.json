@@ -1,0 +1,31 @@
+{
+  "id": "case-card",
+  "kind": "component",
+  "purpose": "Case-study card: logo cell with white/black logo swap, name, highlight text or two stats, arrow tile",
+  "props": {
+    "href": "string",
+    "title": "string",
+    "logoWhite": "asset:client.logo",
+    "logoBlack": "asset:client.logo",
+    "highlight": "string?",
+    "stats": "array?"
+  },
+  "additionalProps": false,
+  "composes": [
+    "meta-point",
+    "icon"
+  ],
+  "tokens": [
+    "component.case-card"
+  ],
+  "motionPatterns": [
+    "CS-M1"
+  ],
+  "measuredFrom": [
+    "src/components/cms/CaseCard.jsx:29"
+  ],
+  "usedBySections": [
+    "content.case-list",
+    "content.read-next"
+  ]
+}

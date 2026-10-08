@@ -1,0 +1,374 @@
+{
+  "id": "content.post-body",
+  "kind": "section",
+  "category": "CONTENT",
+  "surface": "dark",
+  "claimsPolicy": "none",
+  "purpose": "Deliver the article or case study as structured rich text in up to five slots, with a sticky share rail.",
+  "description": "Rich-text article body rendered from structured content blocks (h1/h2/h3/p/ul/ol/blockquote, inline bold/italic/links), one hairline per body slot after the first, with a sticky share column (X/Facebook/LinkedIn icons, inert per D13).",
+  "implementedBy": "src/components/cms/PostBody.jsx",
+  "evidenceLevel": "measured",
+  "scope": {
+    "templates": [
+      "template.blog-post",
+      "template.case-study"
+    ],
+    "routes": [
+      "/blog/ai-voice-agents-for-athenahealth-7-questions-to-ask-before-choosing-a-platform",
+      "/blog/ent-reimbursement-in-2027-what-medicare-s-proposed-cuts-mean-for-otolaryngology-practices",
+      "/blog/medical-practice-call-volume-january",
+      "/blog/orthopedic-ai-answering-service",
+      "/blog/redefining-healthcare-ai",
+      "/blog/the-12-month-shift-why-voice-ai-agents-are-now-a-financial-imperative-for-specialty-practices",
+      "/blog/why-generic-ai-virtual-assistants-fail-specialty-medical-practices-and-what-actually-works",
+      "/blog/why-traditional-ivr-is-failing-your-practice-and-how-ai-voice-agents-fix-the-press-0-trap",
+      "/case-studies/southern-bone-joint",
+      "/case-studies/the-orthopaedic-center"
+    ],
+    "routeCount": 10
+  },
+  "constraints": {
+    "onePerPage": true,
+    "maxPerPage": 1,
+    "allowedTemplates": [
+      "template.blog-post",
+      "template.case-study"
+    ],
+    "mustImmediatelyFollowAnyOf": [
+      "content.post-header",
+      "content.case-header"
+    ]
+  },
+  "variants": {},
+  "fixedChrome": false,
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "slots",
+      "shareLabel",
+      "share"
+    ],
+    "properties": {
+      "slots": {
+        "type": "array",
+        "minItems": 1,
+        "maxItems": 5,
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "slot",
+            "blocks"
+          ],
+          "properties": {
+            "slot": {
+              "enum": [
+                "1st",
+                "bl-2",
+                "bl-3",
+                "bl-4",
+                "bl-5"
+              ]
+            },
+            "blocks": {
+              "type": "array",
+              "minItems": 1,
+              "maxItems": 70,
+              "items": {
+                "oneOf": [
+                  {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "required": [
+                      "type",
+                      "text"
+                    ],
+                    "properties": {
+                      "type": {
+                        "enum": [
+                          "h1",
+                          "h2",
+                          "h3",
+                          "p",
+                          "blockquote"
+                        ]
+                      },
+                      "text": {
+                        "type": "string",
+                        "minLength": 1,
+                        "maxWords": 125,
+                        "observedMax": 124,
+                        "examples": [
+                          "‍"
+                        ]
+                      },
+                      "inlines": {
+                        "type": "array",
+                        "minItems": 1,
+                        "maxItems": 5,
+                        "items": {
+                          "type": "object",
+                          "additionalProperties": false,
+                          "required": [
+                            "text"
+                          ],
+                          "properties": {
+                            "text": {
+                              "type": "string",
+                              "minLength": 1
+                            },
+                            "bold": {
+                              "type": "boolean"
+                            },
+                            "italic": {
+                              "type": "boolean"
+                            },
+                            "link": {
+                              "type": "object",
+                              "additionalProperties": false,
+                              "required": [
+                                "href"
+                              ],
+                              "properties": {
+                                "href": {
+                                  "type": "string",
+                                  "minLength": 1,
+                                  "pattern": "^(/|https://|mailto:|#)",
+                                  "examples": [
+                                    "https://example.invalid/"
+                                  ]
+                                },
+                                "target": {
+                                  "enum": [
+                                    "_blank"
+                                  ]
+                                }
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "spacer": {
+                        "type": "boolean"
+                      }
+                    }
+                  },
+                  {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "required": [
+                      "type",
+                      "items"
+                    ],
+                    "properties": {
+                      "type": {
+                        "enum": [
+                          "ul",
+                          "ol"
+                        ]
+                      },
+                      "items": {
+                        "type": "array",
+                        "minItems": 1,
+                        "maxItems": 9,
+                        "items": {
+                          "type": "object",
+                          "additionalProperties": false,
+                          "required": [
+                            "text"
+                          ],
+                          "properties": {
+                            "text": {
+                              "type": "string",
+                              "minLength": 1,
+                              "maxWords": 45,
+                              "observedMax": 44,
+                              "examples": [
+                                "Patient satisfaction"
+                              ]
+                            },
+                            "inlines": {
+                              "type": "array",
+                              "minItems": 1,
+                              "maxItems": 5,
+                              "items": {
+                                "type": "object",
+                                "additionalProperties": false,
+                                "required": [
+                                  "text"
+                                ],
+                                "properties": {
+                                  "text": {
+                                    "type": "string",
+                                    "minLength": 1
+                                  },
+                                  "bold": {
+                                    "type": "boolean"
+                                  },
+                                  "italic": {
+                                    "type": "boolean"
+                                  },
+                                  "link": {
+                                    "type": "object",
+                                    "additionalProperties": false,
+                                    "required": [
+                                      "href"
+                                    ],
+                                    "properties": {
+                                      "href": {
+                                        "type": "string",
+                                        "minLength": 1,
+                                        "pattern": "^(/|https://|mailto:|#)",
+                                        "examples": [
+                                          "https://example.invalid/"
+                                        ]
+                                      },
+                                      "target": {
+                                        "enum": [
+                                          "_blank"
+                                        ]
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        }
+      },
+      "shareLabel": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 5,
+        "observedMax": 5,
+        "examples": [
+          "Found this useful? Share it"
+        ]
+      },
+      "share": {
+        "type": "array",
+        "minItems": 3,
+        "maxItems": 3,
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "network",
+            "icon",
+            "href"
+          ],
+          "properties": {
+            "network": {
+              "enum": [
+                "x",
+                "facebook",
+                "linkedin"
+              ]
+            },
+            "icon": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "assetRole",
+                "assetRef"
+              ],
+              "properties": {
+                "assetRole": {
+                  "allOf": [
+                    {
+                      "$ref": "#/definitions/assetRole"
+                    },
+                    {
+                      "const": "ui.social-mark"
+                    }
+                  ]
+                },
+                "assetRef": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "examples": [
+                {
+                  "assetRole": "ui.social-mark",
+                  "assetRef": "/assets/696e6fc3c1ef2e8dba004c36-x-icon.svg"
+                }
+              ]
+            },
+            "href": {
+              "const": "#"
+            }
+          }
+        }
+      }
+    }
+  },
+  "contentFields": [
+    "slots",
+    "shareLabel",
+    "share"
+  ],
+  "assetRoles": [
+    "ui.social-mark"
+  ],
+  "composes": [
+    "rich-text-slot",
+    "share-column",
+    "text-link",
+    "hairline",
+    "noise-overlay",
+    "icon"
+  ],
+  "motion": {
+    "allowedPatterns": [
+      "BLOG-M2",
+      "BLOG-M9",
+      "BLOG-M10"
+    ],
+    "reducedMotionFallback": "parity-unchanged"
+  },
+  "responsive": [
+    {
+      "at": ">=992",
+      "target": "left-sticky-block",
+      "property": "position",
+      "value": "sticky top 60 in the rail"
+    },
+    {
+      "at": "<=991",
+      "target": "left-sticky-wrap",
+      "property": "position",
+      "value": "relative, after the body (share block below the text)"
+    },
+    {
+      "at": "<=991",
+      "target": "rich-text-post",
+      "property": "padding",
+      "value": "16px top and bottom"
+    },
+    {
+      "at": "<=991",
+      "target": "post-body-wrap",
+      "property": "margin-left",
+      "value": "0, no left border"
+    }
+  ],
+  "measuredFrom": [
+    "specs/blog.md:155-165",
+    "specs/blog.md:167-186",
+    "src/components/cms/PostBody.jsx:10-22",
+    "DEVIATIONS.md:17",
+    "DEVIATIONS.md:19",
+    "ia/ia.json:271"
+  ],
+  "notes": "Slots 1st, bl-2..bl-5; every slot after the first draws a full-width hairline. Share icons are inert (D13); the hidden style-guide block with Twitter/YouTube embeds is never rendered (D15). Source typos (\"Transorm9\", \"teamhas\") are preserved verbatim. strong renders white at weight 400; a paragraph consisting only of U+200D is a spacer."
+}

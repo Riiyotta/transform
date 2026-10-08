@@ -1,0 +1,164 @@
+{
+  "id": "shell.footer-bottom-reveal",
+  "kind": "section",
+  "category": "SHELL",
+  "surface": "dark",
+  "claimsPolicy": "none",
+  "purpose": "Oversized wordmark and legal link row revealed beneath the page like a curtain as it scrolls away.",
+  "description": "Sticky bottom bar revealed beneath the page as it scrolls away: oversized wordmark and legal link row.",
+  "implementedBy": "src/components/Footer.jsx",
+  "evidenceLevel": "measured",
+  "scope": {
+    "templates": [
+      "template.home",
+      "template.compare",
+      "template.book-a-demo",
+      "template.legal",
+      "template.blog-index",
+      "template.blog-post",
+      "template.case-studies-index",
+      "template.case-study"
+    ],
+    "routes": [
+      "/",
+      "/compare",
+      "/book-a-demo",
+      "/terms-of-use",
+      "/privacy-policy",
+      "/hipaa",
+      "/blog",
+      "/blog/ai-voice-agents-for-athenahealth-7-questions-to-ask-before-choosing-a-platform",
+      "/blog/ent-reimbursement-in-2027-what-medicare-s-proposed-cuts-mean-for-otolaryngology-practices",
+      "/blog/medical-practice-call-volume-january",
+      "/blog/orthopedic-ai-answering-service",
+      "/blog/redefining-healthcare-ai",
+      "/blog/the-12-month-shift-why-voice-ai-agents-are-now-a-financial-imperative-for-specialty-practices",
+      "/blog/why-generic-ai-virtual-assistants-fail-specialty-medical-practices-and-what-actually-works",
+      "/blog/why-traditional-ivr-is-failing-your-practice-and-how-ai-voice-agents-fix-the-press-0-trap",
+      "/case-studies",
+      "/case-studies/southern-bone-joint",
+      "/case-studies/the-orthopaedic-center"
+    ],
+    "routeCount": 18
+  },
+  "constraints": {
+    "onePerPage": true,
+    "maxPerPage": 1,
+    "allowedTemplates": [
+      "template.home",
+      "template.compare",
+      "template.book-a-demo",
+      "template.legal",
+      "template.blog-index",
+      "template.blog-post",
+      "template.case-studies-index",
+      "template.case-study"
+    ],
+    "mustFollowSectionAnyOf": [
+      "shell.footer",
+      "shell.mobile-menu"
+    ]
+  },
+  "variants": {},
+  "fixedChrome": false,
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "logo"
+    ],
+    "properties": {
+      "logo": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "assetRole",
+          "assetRef",
+          "alt"
+        ],
+        "properties": {
+          "assetRole": {
+            "allOf": [
+              {
+                "$ref": "#/definitions/assetRole"
+              },
+              {
+                "const": "brand.wordmark-footer"
+              }
+            ]
+          },
+          "assetRef": {
+            "type": "string",
+            "minLength": 1
+          },
+          "alt": {
+            "type": "string",
+            "maxWords": 5,
+            "observedMax": 2
+          }
+        },
+        "examples": [
+          {
+            "assetRole": "brand.wordmark-footer",
+            "assetRef": "/assets/68920b38695cade17f6e41a0-logo-footer.svg",
+            "alt": "Transform9 logo"
+          }
+        ]
+      }
+    }
+  },
+  "contentFields": [
+    "logo"
+  ],
+  "assetRoles": [
+    "brand.wordmark-footer"
+  ],
+  "composes": [
+    "wordmark",
+    "text-link",
+    "hairline"
+  ],
+  "motion": {
+    "allowedPatterns": [
+      "FOOTER-REVEAL",
+      "M17"
+    ],
+    "reducedMotionFallback": "parity-unchanged"
+  },
+  "responsive": [
+    {
+      "at": "<=479",
+      "target": "footer-logo",
+      "property": "display",
+      "value": "none (CLONE_SPEC 17b says <=767; the CSS and specs/book-a-demo.md say <=479 - the CSS is authoritative)"
+    },
+    {
+      "at": "<=767",
+      "target": "footer-bottom-row",
+      "property": "direction",
+      "value": "column-reverse"
+    },
+    {
+      "at": "<=991",
+      "target": "footer-bottom-row",
+      "property": "padding",
+      "value": "32px (max(20px,1.389vw) 36px at >=992)"
+    }
+  ],
+  "measuredFrom": [
+    "CLONE_SPEC.md:444",
+    "src/components/Footer.jsx:197-215",
+    "src/index.css:1906",
+    "specs/book-a-demo.md:33",
+    "ia/ia.json:67"
+  ],
+  "fixedContent": {
+    "copyright": "© 2026 Transform9. All Rights Reserved.",
+    "legalLinks": [
+      "HIPAA",
+      "Terms of Use",
+      "Privacy Policy"
+    ]
+  },
+  "notes": "On all 18 routes; on /book-a-demo it is the only footer."
+}

@@ -1,0 +1,31 @@
+{
+  "id": "stack-card",
+  "kind": "component",
+  "purpose": "Sticky stacking card: Scheduling (index, title, text, UI illustration) and Outreach (index, title, text, icon)",
+  "props": {
+    "index": "string",
+    "title": "string",
+    "text": "string",
+    "image": "asset:product.ui-illustration|product.outreach-icon"
+  },
+  "additionalProps": false,
+  "composes": [
+    "media-cover",
+    "noise-overlay"
+  ],
+  "tokens": [
+    "component.scheduling-card",
+    "component.outreach-card"
+  ],
+  "motionPatterns": [
+    "M9"
+  ],
+  "measuredFrom": [
+    "src/components/SchedulingAgent.jsx:72",
+    "src/components/OutreachAgent.jsx:8"
+  ],
+  "usedBySections": [
+    "product.scheduling-agent",
+    "product.outreach-agent"
+  ]
+}

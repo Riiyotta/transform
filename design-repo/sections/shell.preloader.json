@@ -1,0 +1,89 @@
+{
+  "id": "shell.preloader",
+  "kind": "section",
+  "category": "SHELL",
+  "surface": "dark",
+  "claimsPolicy": "none",
+  "purpose": "Black overlay that hides first paint until the page-load intro fades it out; absent on the homepage and /book-a-demo.",
+  "description": "Fixed full-screen black overlay shown until the page-load intro fades it out.",
+  "implementedBy": "src/components/Preloader.jsx",
+  "evidenceLevel": "measured",
+  "scope": {
+    "templates": [
+      "template.compare",
+      "template.legal",
+      "template.blog-index",
+      "template.blog-post",
+      "template.case-studies-index",
+      "template.case-study"
+    ],
+    "routes": [
+      "/compare",
+      "/terms-of-use",
+      "/privacy-policy",
+      "/hipaa",
+      "/blog",
+      "/blog/ai-voice-agents-for-athenahealth-7-questions-to-ask-before-choosing-a-platform",
+      "/blog/ent-reimbursement-in-2027-what-medicare-s-proposed-cuts-mean-for-otolaryngology-practices",
+      "/blog/medical-practice-call-volume-january",
+      "/blog/orthopedic-ai-answering-service",
+      "/blog/redefining-healthcare-ai",
+      "/blog/the-12-month-shift-why-voice-ai-agents-are-now-a-financial-imperative-for-specialty-practices",
+      "/blog/why-generic-ai-virtual-assistants-fail-specialty-medical-practices-and-what-actually-works",
+      "/blog/why-traditional-ivr-is-failing-your-practice-and-how-ai-voice-agents-fix-the-press-0-trap",
+      "/case-studies",
+      "/case-studies/southern-bone-joint",
+      "/case-studies/the-orthopaedic-center"
+    ],
+    "routeCount": 16
+  },
+  "constraints": {
+    "onePerPage": true,
+    "maxPerPage": 1,
+    "allowedTemplates": [
+      "template.compare",
+      "template.legal",
+      "template.blog-index",
+      "template.blog-post",
+      "template.case-studies-index",
+      "template.case-study"
+    ],
+    "mustImmediatelyFollowAnyOf": [
+      "shell.mobile-menu"
+    ]
+  },
+  "variants": {},
+  "fixedChrome": true,
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [],
+    "properties": {}
+  },
+  "contentFields": [],
+  "assetRoles": [],
+  "composes": [],
+  "motion": {
+    "allowedPatterns": [
+      "CMP-M1",
+      "LGL-M1",
+      "BLOG-M1"
+    ],
+    "reducedMotionFallback": "parity-unchanged"
+  },
+  "responsive": [
+    {
+      "at": "all",
+      "target": "preloader-wrap",
+      "property": "size",
+      "value": "fixed inset 0, 100vw x 100dvh, z 4, pointer-events none"
+    }
+  ],
+  "measuredFrom": [
+    "src/components/Preloader.jsx:9-11",
+    "specs/compare.md:28",
+    "ia/ia.json:43"
+  ],
+  "fixedContent": {},
+  "notes": "Static render is the settled state (opacity 0, display block). The intro starts on mount in the clone (DEVIATIONS D11)."
+}

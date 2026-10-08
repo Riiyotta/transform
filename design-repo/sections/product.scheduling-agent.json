@@ -1,0 +1,222 @@
+{
+  "id": "product.scheduling-agent",
+  "kind": "section",
+  "category": "PRODUCT",
+  "surface": "light",
+  "claimsPolicy": "none",
+  "purpose": "Present Agent #1 Scheduling through four sticky cards that stack, scale and tint as the next one arrives.",
+  "description": "Agent #1 Scheduling: sticky card deck where earlier cards scale down, lift and tint as later cards scroll in.",
+  "implementedBy": "src/components/SchedulingAgent.jsx",
+  "evidenceLevel": "measured",
+  "scope": {
+    "templates": [
+      "template.home"
+    ],
+    "routes": [
+      "/"
+    ],
+    "routeCount": 1
+  },
+  "constraints": {
+    "onePerPage": true,
+    "maxPerPage": 1,
+    "allowedTemplates": [
+      "template.home"
+    ],
+    "allowedRoutes": [
+      "/"
+    ]
+  },
+  "variants": {},
+  "fixedChrome": false,
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "eyebrow",
+      "title",
+      "agentNumber",
+      "cards"
+    ],
+    "properties": {
+      "eyebrow": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 5,
+        "observedMax": 2,
+        "examples": [
+          "Our Products"
+        ]
+      },
+      "title": {
+        "type": "array",
+        "minItems": 1,
+        "maxItems": 1,
+        "maxWords": 5,
+        "observedMax": 2,
+        "items": {
+          "type": "object",
+          "required": [
+            "text"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "text": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "^\\S(?:[\\s\\S]*\\S)?$"
+            },
+            "tone": {
+              "enum": [
+                "default",
+                "accent-green",
+                "accent-blue"
+              ]
+            },
+            "breakAfter": {
+              "type": "boolean"
+            }
+          }
+        },
+        "examples": [
+          [
+            {
+              "text": "Scheduling Agent"
+            }
+          ]
+        ]
+      },
+      "agentNumber": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 5,
+        "observedMax": 1,
+        "examples": [
+          "#1"
+        ]
+      },
+      "cards": {
+        "type": "array",
+        "minItems": 4,
+        "maxItems": 4,
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "index",
+            "title",
+            "text",
+            "image"
+          ],
+          "properties": {
+            "index": {
+              "type": "string",
+              "minLength": 1,
+              "maxWords": 5,
+              "observedMax": 1,
+              "examples": [
+                "01"
+              ]
+            },
+            "title": {
+              "type": "string",
+              "minLength": 1,
+              "maxWords": 10,
+              "observedMax": 6,
+              "examples": [
+                "Comprehensive Scheduling"
+              ]
+            },
+            "text": {
+              "type": "string",
+              "minLength": 1,
+              "maxWords": 25,
+              "observedMax": 23,
+              "examples": [
+                "Automatically fill physician schedules to desired capacity, preventing missed opportunities for appointments."
+              ]
+            },
+            "image": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "assetRole",
+                "assetRef"
+              ],
+              "properties": {
+                "assetRole": {
+                  "allOf": [
+                    {
+                      "$ref": "#/definitions/assetRole"
+                    },
+                    {
+                      "const": "product.ui-illustration"
+                    }
+                  ]
+                },
+                "assetRef": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "examples": [
+                {
+                  "assetRole": "product.ui-illustration",
+                  "assetRef": "/assets/6895b5254b12f4e9385d2b64-cb862a86e82892dd803115dfaf743bfe-sch-img-1.avif"
+                }
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  "contentFields": [
+    "eyebrow",
+    "title",
+    "agentNumber",
+    "cards"
+  ],
+  "assetRoles": [
+    "product.ui-illustration"
+  ],
+  "composes": [
+    "stack-card",
+    "media-cover",
+    "noise-overlay",
+    "label-eyebrow"
+  ],
+  "motion": {
+    "allowedPatterns": [
+      "M9"
+    ],
+    "reducedMotionFallback": "parity-unchanged"
+  },
+  "responsive": [
+    {
+      "at": ">=992",
+      "target": "scheduling-card",
+      "property": "sticky-top",
+      "value": "10vw; height 35.208vw"
+    },
+    {
+      "at": "<=991",
+      "target": "scheduling-card",
+      "property": "sticky-top",
+      "value": "calc(30vw + 59px); height 40vw"
+    },
+    {
+      "at": "<=767",
+      "target": "scheduling-card",
+      "property": "layout",
+      "value": "column, height 120vw (auto at <=479), image below"
+    }
+  ],
+  "measuredFrom": [
+    "CLONE_SPEC.md:271-289",
+    "src/components/SchedulingAgent.jsx:72-120",
+    "src/data/schedulingCards.js:6",
+    "ia/ia.json:139"
+  ],
+  "notes": "Lives inside the white section: dark cards on a white surface."
+}

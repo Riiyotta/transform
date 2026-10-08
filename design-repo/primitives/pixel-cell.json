@@ -1,0 +1,37 @@
+{
+  "id": "pixel-cell",
+  "kind": "primitive",
+  "purpose": "Square pixel (5vw; 10vw at <=767) used by the scroll-scrubbed pixel transitions in white, black, blue (#03c) and green (#a2fa8e)",
+  "props": {
+    "tone": [
+      "white",
+      "black",
+      "blue",
+      "green"
+    ]
+  },
+  "additionalProps": false,
+  "states": [
+    "hidden",
+    "visible"
+  ],
+  "tokens": [
+    "color.blue-dark",
+    "color.green",
+    "color.white",
+    "color.black"
+  ],
+  "motionPatterns": [
+    "M8a",
+    "M8b",
+    "M8c"
+  ],
+  "measuredFrom": [
+    "CLONE_SPEC.md:264"
+  ],
+  "usedBySections": [
+    "transition.black-to-white",
+    "transition.white-to-black",
+    "conversion.cta"
+  ]
+}

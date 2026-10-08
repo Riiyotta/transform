@@ -1,0 +1,233 @@
+{
+  "duration": {
+    "instant": {
+      "$type": "duration",
+      "$value": 0,
+      "$unit": "ms",
+      "$description": "tabs, accordion, pane swaps, ev tab",
+      "measuredFrom": [
+        "CLONE_SPEC.md:452-497"
+      ]
+    },
+    "intro-pixels": {
+      "$type": "duration",
+      "$value": 80,
+      "$unit": "ms",
+      "$description": "bg video in at load (0.08s)",
+      "measuredFrom": [
+        "CLONE_SPEC.md:452-497"
+      ]
+    },
+    "intro-preloader": {
+      "$type": "duration",
+      "$value": 100,
+      "$unit": "ms",
+      "$description": "preloader out (0.1s)",
+      "measuredFrom": [
+        "CLONE_SPEC.md:452-497"
+      ]
+    },
+    "nav-on-white": {
+      "$type": "duration",
+      "$value": 50,
+      "$unit": "ms",
+      "$description": "M4 nav colour swap (0.05s)",
+      "measuredFrom": [
+        "CLONE_SPEC.md:452-497"
+      ]
+    },
+    "hover-fast": {
+      "$type": "duration",
+      "$value": 200,
+      "$unit": "ms",
+      "$description": "M14 / CMP-M2 / CMP-M3 block hover, popup link opacity",
+      "measuredFrom": [
+        "CLONE_SPEC.md:452-497"
+      ]
+    },
+    "hover": {
+      "$type": "duration",
+      "$value": 250,
+      "$unit": "ms",
+      "$description": "M12 / M13 / M15 / M16 / M17-underline half",
+      "measuredFrom": [
+        "CLONE_SPEC.md:452-497"
+      ]
+    },
+    "hover-cms": {
+      "$type": "duration",
+      "$value": 300,
+      "$unit": "ms",
+      "$description": "IX2 CMS card / back-link hover (BLOG-M6..M8, CS-M1)",
+      "measuredFrom": [
+        "CLONE_SPEC.md:452-497"
+      ]
+    },
+    "slider-fade": {
+      "$type": "duration",
+      "$value": 400,
+      "$unit": "ms",
+      "$description": "M19 testimonial cross-fade",
+      "measuredFrom": [
+        "CLONE_SPEC.md:452-497"
+      ]
+    },
+    "default": {
+      "$type": "duration",
+      "$value": 500,
+      "$unit": "ms",
+      "$description": "IX3 default duration; M3, M5 text, M11",
+      "measuredFrom": [
+        "CLONE_SPEC.md:452-497"
+      ]
+    },
+    "flex-grow": {
+      "$type": "duration",
+      "$value": 600,
+      "$unit": "ms",
+      "$description": "M5 stats flex-basis",
+      "measuredFrom": [
+        "CLONE_SPEC.md:452-497"
+      ]
+    },
+    "intro-line": {
+      "$type": "duration",
+      "$value": 1000,
+      "$unit": "ms",
+      "$description": "load-intro line draws, blog word reveals",
+      "measuredFrom": [
+        "CLONE_SPEC.md:452-497"
+      ]
+    },
+    "intro-fade": {
+      "$type": "duration",
+      "$value": 1200,
+      "$unit": "ms",
+      "$description": "load-intro nav / block fades",
+      "measuredFrom": [
+        "CLONE_SPEC.md:452-497"
+      ]
+    },
+    "tab-rotate": {
+      "$type": "duration",
+      "$value": 4000,
+      "$unit": "ms",
+      "$description": "M10 tasking auto-rotation and progress bar",
+      "measuredFrom": [
+        "CLONE_SPEC.md:452-497"
+      ]
+    },
+    "marquee-logos": {
+      "$type": "duration",
+      "$value": 44990,
+      "$unit": "ms",
+      "$description": "M1 client logo marquee",
+      "measuredFrom": [
+        "CLONE_SPEC.md:465"
+      ]
+    },
+    "marquee-integrations": {
+      "$type": "duration",
+      "$value": 29990,
+      "$unit": "ms",
+      "$description": "M2a / M2b integration marquees",
+      "measuredFrom": [
+        "CLONE_SPEC.md:466"
+      ]
+    }
+  },
+  "easing": {
+    "out-cubic": {
+      "$type": "cubicBezier",
+      "$value": "cubic-bezier(0.215, 0.61, 0.355, 1)",
+      "$description": "IX2 outCubic",
+      "cssVar": "--ease-out-cubic",
+      "measuredFrom": [
+        "src/index.css:110"
+      ]
+    },
+    "out-quad": {
+      "$type": "cubicBezier",
+      "$value": "cubic-bezier(0.25, 0.46, 0.45, 0.94)",
+      "$description": "IX2 outQuad / power1.out",
+      "cssVar": "--ease-out-quad",
+      "measuredFrom": [
+        "src/index.css:111"
+      ]
+    },
+    "in-out-quad": {
+      "$type": "cubicBezier",
+      "$value": "cubic-bezier(0.455, 0.03, 0.515, 0.955)",
+      "$description": "IX2 inOutQuad",
+      "cssVar": "--ease-in-out-quad",
+      "measuredFrom": [
+        "src/index.css:112"
+      ]
+    },
+    "in-out-cubic": {
+      "$type": "cubicBezier",
+      "$value": "cubic-bezier(0.645, 0.045, 0.355, 1)",
+      "$description": "CSS stats flex-basis / YT play hover",
+      "cssVar": "--ease-in-out-cubic",
+      "measuredFrom": [
+        "src/index.css:113"
+      ]
+    },
+    "ease-out": {
+      "$type": "cubicBezier",
+      "$value": "cubic-bezier(0, 0, 0.58, 1)",
+      "$description": "IX2 easeOut (CMP-M2/M3, M13/M14 end states)",
+      "measuredFrom": [
+        "recon/motion-3/MOTION-3.md:70"
+      ]
+    },
+    "linear": {
+      "$type": "cubicBezier",
+      "$value": "linear",
+      "$description": "Marquees and tab progress bar",
+      "measuredFrom": [
+        "CLONE_SPEC.md:459"
+      ]
+    },
+    "gsap-power1-out": {
+      "$type": "gsapEase",
+      "$value": "power1.out",
+      "$description": "IX3 index 2 / default",
+      "measuredFrom": [
+        "CLONE_SPEC.md:456"
+      ]
+    },
+    "gsap-power1-in-out": {
+      "$type": "gsapEase",
+      "$value": "power1.inOut",
+      "$description": "IX3 index 3",
+      "measuredFrom": [
+        "CLONE_SPEC.md:456"
+      ]
+    },
+    "gsap-power1-in": {
+      "$type": "gsapEase",
+      "$value": "power1.in",
+      "$description": "IX3 index 1",
+      "measuredFrom": [
+        "CLONE_SPEC.md:456"
+      ]
+    },
+    "gsap-power2-out": {
+      "$type": "gsapEase",
+      "$value": "power2.out",
+      "$description": "IX3 index 5 (M4 nav swap)",
+      "measuredFrom": [
+        "CLONE_SPEC.md:456"
+      ]
+    },
+    "gsap-expo-out": {
+      "$type": "gsapEase",
+      "$value": "expo.out",
+      "$description": "IX3 index 26 (modal, load intros)",
+      "measuredFrom": [
+        "CLONE_SPEC.md:456"
+      ]
+    }
+  }
+}

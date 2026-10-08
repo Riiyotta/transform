@@ -1,0 +1,193 @@
+{
+  "id": "proof.client-spotlight",
+  "kind": "section",
+  "category": "PROOF",
+  "surface": "dark",
+  "claimsPolicy": "must-not-fabricate",
+  "purpose": "Show a named client story as video, loaded only on click.",
+  "description": "Case-study spotlight heading ('Client Spotlight – Andrews Sports Medicine') with a click-to-load YouTube facade.",
+  "implementedBy": "src/components/ClientSpotlight.jsx",
+  "evidenceLevel": "measured",
+  "scope": {
+    "templates": [
+      "template.home"
+    ],
+    "routes": [
+      "/"
+    ],
+    "routeCount": 1
+  },
+  "constraints": {
+    "onePerPage": true,
+    "maxPerPage": 1,
+    "allowedTemplates": [
+      "template.home"
+    ],
+    "allowedRoutes": [
+      "/"
+    ]
+  },
+  "variants": {},
+  "fixedChrome": false,
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "headline",
+      "video",
+      "thumbnail"
+    ],
+    "properties": {
+      "headline": {
+        "type": "array",
+        "minItems": 1,
+        "maxItems": 2,
+        "maxWords": 10,
+        "observedMax": 6,
+        "items": {
+          "type": "object",
+          "required": [
+            "text"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "text": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "^\\S(?:[\\s\\S]*\\S)?$"
+            },
+            "tone": {
+              "enum": [
+                "default",
+                "accent-green",
+                "accent-blue"
+              ]
+            },
+            "breakAfter": {
+              "type": "boolean"
+            }
+          }
+        },
+        "examples": [
+          [
+            {
+              "text": "Client Spotlight -",
+              "breakAfter": true
+            },
+            {
+              "text": "Andrews Sports Medicine",
+              "tone": "accent-green"
+            }
+          ]
+        ]
+      },
+      "video": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "assetRole",
+          "assetRef",
+          "alt"
+        ],
+        "properties": {
+          "assetRole": {
+            "allOf": [
+              {
+                "$ref": "#/definitions/assetRole"
+              },
+              {
+                "const": "embed.video"
+              }
+            ]
+          },
+          "assetRef": {
+            "type": "string",
+            "minLength": 1
+          },
+          "alt": {
+            "type": "string",
+            "maxWords": 10,
+            "observedMax": 8
+          }
+        },
+        "examples": [
+          {
+            "assetRole": "embed.video",
+            "assetRef": "yt:yG3PtcRGQLc",
+            "alt": "Play video: Client Spotlight - Andrews Sports Medicine"
+          }
+        ]
+      },
+      "thumbnail": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "assetRole",
+          "assetRef"
+        ],
+        "properties": {
+          "assetRole": {
+            "allOf": [
+              {
+                "$ref": "#/definitions/assetRole"
+              },
+              {
+                "const": "embed.video"
+              }
+            ]
+          },
+          "assetRef": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "examples": [
+          {
+            "assetRole": "embed.video",
+            "assetRef": "/assets/yt-thumb.jpg"
+          }
+        ]
+      }
+    }
+  },
+  "contentFields": [
+    "headline",
+    "video",
+    "thumbnail"
+  ],
+  "assetRoles": [
+    "embed.video"
+  ],
+  "composes": [
+    "media-cover",
+    "icon"
+  ],
+  "motion": {
+    "allowedPatterns": [
+      "M17"
+    ],
+    "reducedMotionFallback": "parity-unchanged"
+  },
+  "responsive": [
+    {
+      "at": "all",
+      "target": "yt-facade",
+      "property": "aspect",
+      "value": "padding-top 56.17%: 1296x728 / 921.6x517.7 / 691x388 / 351x197"
+    },
+    {
+      "at": "all",
+      "target": "yt-facade__play",
+      "property": "size",
+      "value": "84x84, centred"
+    }
+  ],
+  "measuredFrom": [
+    "CLONE_SPEC.md:203-209",
+    "DEVIATIONS.md:8",
+    "DEVIATIONS.md:9",
+    "src/components/ClientSpotlight.jsx:18-61",
+    "ia/ia.json:115"
+  ],
+  "notes": "D4/D5: working facade with a local thumbnail; the youtube-nocookie iframe is created only after a click. The video id is a live third-party endpoint (asset role embed.video is pinned must-not-reuse-live-endpoint)."
+}

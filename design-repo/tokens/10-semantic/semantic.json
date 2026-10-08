@@ -1,0 +1,182 @@
+{
+  "semantic": {
+    "surface": {
+      "page": {
+        "$type": "color",
+        "$value": "{color.black}",
+        "$description": "Page background (dark default; #fff inside the white section)",
+        "measuredFrom": [
+          "CLONE_SPEC.md:45-69",
+          "CLONE_SPEC.md:262"
+        ]
+      },
+      "subtle": {
+        "$type": "color",
+        "$value": "{color.gray}",
+        "$description": "Muted light panels: testimonial photo bg, active Tasking tab, Navigator image pane, case-card hover cell",
+        "measuredFrom": [
+          "CLONE_SPEC.md:45-69"
+        ]
+      },
+      "nav": {
+        "$type": "color",
+        "$value": "{color.nav-bg}",
+        "$description": "Navbar background; becomes white while a white section is under it (M4)",
+        "measuredFrom": [
+          "CLONE_SPEC.md:160",
+          "CLONE_SPEC.md:45-69"
+        ]
+      },
+      "accent": {
+        "$type": "color",
+        "$value": "{color.green}",
+        "$description": "Accent fills: nav CTA, CTA right block, author-title badge, specialty active tab on white",
+        "measuredFrom": [
+          "CLONE_SPEC.md:45-69"
+        ]
+      },
+      "overlay": {
+        "$type": "color",
+        "$value": "{color.overlay}",
+        "$description": "Call Alex modal overlay (always dark)",
+        "measuredFrom": [
+          "CLONE_SPEC.md:45-69"
+        ]
+      },
+      "hover": {
+        "$type": "color",
+        "$value": "{color.white}",
+        "$description": "Hover fill for integration / security / privacy blocks (white on dark, green on the white-variant integrations)",
+        "measuredFrom": [
+          "CLONE_SPEC.md:489",
+          "specs/compare.md:320"
+        ]
+      }
+    },
+    "text": {
+      "primary": {
+        "$type": "color",
+        "$value": "{color.white}",
+        "$description": "Primary text",
+        "measuredFrom": [
+          "CLONE_SPEC.md:45-69",
+          "CLONE_SPEC.md:160"
+        ]
+      },
+      "secondary": {
+        "$type": "color",
+        "$value": "{color.nav-link}",
+        "$description": "Nav link text (rgba(255,255,255,.7) on dark; #020801 on white)",
+        "measuredFrom": [
+          "CLONE_SPEC.md:160",
+          "CLONE_SPEC.md:45-69"
+        ]
+      },
+      "on-accent": {
+        "$type": "color",
+        "$value": "{color.black}",
+        "$description": "Text on green accent fills",
+        "measuredFrom": [
+          "CLONE_SPEC.md:45-69"
+        ]
+      },
+      "on-hover": {
+        "$type": "color",
+        "$value": "{color.black}",
+        "$description": "Text on hovered white / green blocks",
+        "measuredFrom": [
+          "CLONE_SPEC.md:489",
+          "specs/compare.md:320"
+        ]
+      },
+      "accent-brand": {
+        "$type": "color",
+        "$value": "{color.green}",
+        "$description": "Accent spans in green",
+        "measuredFrom": [
+          "CLONE_SPEC.md:45-69"
+        ]
+      },
+      "accent-info": {
+        "$type": "color",
+        "$value": "{color.blue-light}",
+        "$description": "Accent spans in blue",
+        "measuredFrom": [
+          "CLONE_SPEC.md:45-69"
+        ]
+      },
+      "inactive-step": {
+        "$type": "color",
+        "$value": "{color.hiw-inactive}",
+        "$description": "How-it-works inactive words",
+        "measuredFrom": [
+          "CLONE_SPEC.md:45-69"
+        ]
+      },
+      "muted": {
+        "$type": "composite",
+        "$value": {
+          "color": "{color.white}",
+          "opacity": "{opacity.half-text}"
+        },
+        "$description": "Muted text = text colour at .5 opacity (footer headings, table labels; #020801 at .5 on white)",
+        "measuredFrom": [
+          "CLONE_SPEC.md:45-69",
+          "specs/compare.md:281"
+        ]
+      },
+      "faint": {
+        "$type": "composite",
+        "$value": {
+          "color": "{color.white}",
+          "opacity": "{opacity.faint-text}"
+        },
+        "$description": "Faint text = .3 opacity (legal row, \"/ 02\", popup disclaimer)",
+        "measuredFrom": [
+          "CLONE_SPEC.md:45-69"
+        ]
+      }
+    },
+    "border": {
+      "default": {
+        "$type": "color",
+        "$value": "{color.stroke-dark}",
+        "$description": "Hairline rules (1px)",
+        "measuredFrom": [
+          "CLONE_SPEC.md:45-69",
+          "CLONE_SPEC.md:39"
+        ]
+      }
+    },
+    "feedback": {
+      "error-text": {
+        "$type": "color",
+        "$value": "{color.error}",
+        "$description": "Popup error text",
+        "measuredFrom": [
+          "CLONE_SPEC.md:45-69"
+        ]
+      },
+      "error-surface": {
+        "$type": "color",
+        "$value": "{color.error-bg}",
+        "$description": "Popup error background",
+        "measuredFrom": [
+          "CLONE_SPEC.md:45-69"
+        ]
+      }
+    },
+    "interactive": {
+      "focus-border": {
+        "$type": "color",
+        "$value": "{color.input-focus}",
+        "$description": "Text-field focus border (hero input and /book-a-demo)",
+        "measuredFrom": [
+          "CLONE_SPEC.md:45-69",
+          "specs/book-a-demo.md:161"
+        ]
+      }
+    }
+  },
+  "$resolution": "Default value = the dark theme alias. Themes (tokens/themes/*.json) must map every semantic path."
+}

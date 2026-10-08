@@ -1,0 +1,671 @@
+{
+  "description": "One entry per distinct page shape. nodes is the ordered, structured node list a PageSpec of that template must follow. Order of the shell nodes follows ia/ia.json (logical layer order), not the React DOM order in src/App.jsx (nav, preloader, modal, page-wrap, footer-bottom); see renderOrderNote.",
+  "renderOrderNote": "src/App.jsx renders: Navbar(+mobile menu), Preloader, CallAlexModal, .page-wrap[PageLayers, page, FooterTop], FooterBottom. The template node order places shell.page-layers first and shell.call-alex-modal last (ia.json order).",
+  "measuredFrom": [
+    "src/App.jsx:18-40",
+    "ia/ia.json:284"
+  ],
+  "templates": [
+    {
+      "id": "template.home",
+      "name": "Homepage",
+      "family": "home",
+      "shell": {
+        "footer": "full",
+        "modal": true,
+        "preloader": false,
+        "video": true
+      },
+      "nodes": [
+        {
+          "section": "shell.page-layers",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "shell.navbar",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "shell.mobile-menu",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "hero.home",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "proof.client-logos",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "proof.client-spotlight",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "proof.stats",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "proof.testimonials",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "product.how-it-works",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "transition.black-to-white",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "product.scheduling-agent",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "product.tasking-agent",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "product.navigator-agent",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "product.outreach-agent",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "transition.white-to-black",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "fit.specialties",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "fit.integrations",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "fit.security",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "conversion.cta",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "shell.footer",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "shell.footer-bottom-reveal",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "shell.call-alex-modal",
+          "required": true,
+          "repeatable": false
+        }
+      ],
+      "routes": [
+        "/"
+      ],
+      "measuredFrom": [
+        "src/routes.jsx:26",
+        "src/pages/HomePage.jsx:15-32"
+      ]
+    },
+    {
+      "id": "template.compare",
+      "name": "Compare",
+      "family": "compare",
+      "shell": {
+        "footer": "full",
+        "modal": true,
+        "preloader": true,
+        "video": true
+      },
+      "nodes": [
+        {
+          "section": "shell.page-layers",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "shell.navbar",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "shell.mobile-menu",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "shell.preloader",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "shell.bg-pixels-overlay",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "hero.compare",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "compare.generic",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "compare.comparison-table",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "compare.access",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "transition.black-to-white",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "compare.specialty-white",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "compare.integrations-white",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "transition.white-to-black",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "compare.privacy",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "compare.evaluation",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "conversion.cta",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "shell.footer",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "shell.footer-bottom-reveal",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "shell.call-alex-modal",
+          "required": true,
+          "repeatable": false
+        }
+      ],
+      "routes": [
+        "/compare"
+      ],
+      "measuredFrom": [
+        "src/routes.jsx:27",
+        "src/pages/ComparePage.jsx:30-48"
+      ]
+    },
+    {
+      "id": "template.book-a-demo",
+      "name": "Book a Demo",
+      "family": "book-a-demo",
+      "shell": {
+        "footer": "bottom",
+        "modal": false,
+        "preloader": false,
+        "video": true
+      },
+      "nodes": [
+        {
+          "section": "shell.page-layers",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "shell.navbar",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "shell.mobile-menu",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "hero.book-a-demo",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "shell.footer-bottom-reveal",
+          "required": true,
+          "repeatable": false
+        }
+      ],
+      "routes": [
+        "/book-a-demo"
+      ],
+      "measuredFrom": [
+        "src/routes.jsx:28",
+        "src/pages/BookDemoPage.jsx:8-10"
+      ]
+    },
+    {
+      "id": "template.legal",
+      "name": "Legal",
+      "family": "legal",
+      "shell": {
+        "footer": "full",
+        "modal": false,
+        "preloader": true,
+        "video": true
+      },
+      "nodes": [
+        {
+          "section": "shell.page-layers",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "shell.navbar",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "shell.mobile-menu",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "shell.preloader",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "hero.legal",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "legal.content",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "shell.footer",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "shell.footer-bottom-reveal",
+          "required": true,
+          "repeatable": false
+        }
+      ],
+      "routes": [
+        "/terms-of-use",
+        "/privacy-policy",
+        "/hipaa"
+      ],
+      "measuredFrom": [
+        "src/routes.jsx:33",
+        "src/pages/LegalPage.jsx:16-24",
+        "specs/legal.md:21"
+      ],
+      "dynamicRoutePattern": "/{terms-of-use|privacy-policy|hipaa}",
+      "notes": "One template for three routes (specs/legal.md section 0: identical class-key set at 1440)."
+    },
+    {
+      "id": "template.blog-index",
+      "name": "Blog index",
+      "family": "blog-index",
+      "shell": {
+        "footer": "full",
+        "modal": false,
+        "preloader": true,
+        "video": true
+      },
+      "nodes": [
+        {
+          "section": "shell.page-layers",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "shell.navbar",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "shell.mobile-menu",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "shell.preloader",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "hero.blog-index",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "content.blog-list",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "conversion.cta",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "shell.footer",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "shell.footer-bottom-reveal",
+          "required": true,
+          "repeatable": false
+        }
+      ],
+      "routes": [
+        "/blog"
+      ],
+      "measuredFrom": [
+        "src/routes.jsx:29",
+        "src/pages/BlogIndexPage.jsx:39-64"
+      ]
+    },
+    {
+      "id": "template.blog-post",
+      "name": "Blog post",
+      "family": "blog-post",
+      "shell": {
+        "footer": "full",
+        "modal": false,
+        "preloader": true,
+        "video": false
+      },
+      "nodes": [
+        {
+          "section": "shell.page-layers",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "shell.navbar",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "shell.mobile-menu",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "shell.preloader",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "content.post-header",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "content.post-body",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "conversion.cta",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "shell.footer",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "shell.footer-bottom-reveal",
+          "required": true,
+          "repeatable": false
+        }
+      ],
+      "routes": [
+        "/blog/ai-voice-agents-for-athenahealth-7-questions-to-ask-before-choosing-a-platform",
+        "/blog/ent-reimbursement-in-2027-what-medicare-s-proposed-cuts-mean-for-otolaryngology-practices",
+        "/blog/medical-practice-call-volume-january",
+        "/blog/orthopedic-ai-answering-service",
+        "/blog/redefining-healthcare-ai",
+        "/blog/the-12-month-shift-why-voice-ai-agents-are-now-a-financial-imperative-for-specialty-practices",
+        "/blog/why-generic-ai-virtual-assistants-fail-specialty-medical-practices-and-what-actually-works",
+        "/blog/why-traditional-ivr-is-failing-your-practice-and-how-ai-voice-agents-fix-the-press-0-trap"
+      ],
+      "measuredFrom": [
+        "src/routes.jsx:30",
+        "src/pages/BlogPostPage.jsx:15-36"
+      ],
+      "dynamicRoutePattern": "/blog/<slug>",
+      "notes": "Hero-less: the header block (content.post-header) opens the page. No background video (specs/blog.md section 1)."
+    },
+    {
+      "id": "template.case-studies-index",
+      "name": "Case studies index",
+      "family": "case-studies-index",
+      "shell": {
+        "footer": "full",
+        "modal": false,
+        "preloader": true,
+        "video": true
+      },
+      "nodes": [
+        {
+          "section": "shell.page-layers",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "shell.navbar",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "shell.mobile-menu",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "shell.preloader",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "hero.case-studies-index",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "content.case-list",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "conversion.cta",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "shell.footer",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "shell.footer-bottom-reveal",
+          "required": true,
+          "repeatable": false
+        }
+      ],
+      "routes": [
+        "/case-studies"
+      ],
+      "measuredFrom": [
+        "src/routes.jsx:31",
+        "src/pages/CaseStudiesIndexPage.jsx:12-24"
+      ]
+    },
+    {
+      "id": "template.case-study",
+      "name": "Case study",
+      "family": "case-study",
+      "shell": {
+        "footer": "full",
+        "modal": false,
+        "preloader": true,
+        "video": false
+      },
+      "nodes": [
+        {
+          "section": "shell.page-layers",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "shell.navbar",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "shell.mobile-menu",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "shell.preloader",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "content.case-header",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "content.post-body",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "content.read-next",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "conversion.cta",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "shell.footer",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "shell.footer-bottom-reveal",
+          "required": true,
+          "repeatable": false
+        }
+      ],
+      "routes": [
+        "/case-studies/southern-bone-joint",
+        "/case-studies/the-orthopaedic-center"
+      ],
+      "measuredFrom": [
+        "src/routes.jsx:32",
+        "src/pages/CaseStudyPage.jsx:17-48"
+      ],
+      "dynamicRoutePattern": "/case-studies/<slug>",
+      "notes": "Hero-less: the header block (content.case-header) opens the page. No background video."
+    }
+  ],
+  "knownGaps": [
+    {
+      "id": "LIVE_MODAL_ON_CMS_TEMPLATES",
+      "appliesTo": [
+        "template.blog-index",
+        "template.blog-post",
+        "template.case-studies-index",
+        "template.case-study"
+      ],
+      "description": "The live site renders the hidden Call Alex modal (div.modal-wrap) on blog index, blog post and case-study pages and their shared CTA exposes the Call Alex link; the clone sets modal:false for these routes (src/routes.jsx), so the CTA Call Alex link is inert there. The template node lists follow the built clone (and ia/ia.json); this is recorded, not normalised away.",
+      "measuredFrom": [
+        "src/routes.jsx:29",
+        "recon/pages/blog/outline-_index-1440.txt:13",
+        "specs/blog.md:24"
+      ]
+    }
+  ],
+  "excluded": [
+    {
+      "id": "not-found",
+      "family": "not-found",
+      "description": "Fallback for any path that matches no route (and for blog/case-study slugs that do not exist): the full shell around an EMPTY 100vh placeholder section. It is mounted (not dead) but is not part of the 18 in-scope routes, has no content, no template and no section contract, and was never measured against the live site (the live 404 page was not cloned). PageStub.jsx still carries a stale comment saying it is a placeholder for a family not built yet.",
+      "measuredFrom": [
+        "src/routes.jsx:42",
+        "src/pages/PageStub.jsx:2-4",
+        "src/pages/PageStub.jsx:1"
+      ]
+    }
+  ]
+}

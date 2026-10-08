@@ -1,0 +1,45 @@
+{
+  "elevation": {
+    "hairline-bottom-dark": {
+      "$type": "shadow",
+      "$value": "0 1px 0 0 rgba(255,255,255,.2)",
+      "$description": "Navbar bottom line (box-shadow used as a 1px line)",
+      "measuredFrom": [
+        "CLONE_SPEC.md:41"
+      ]
+    },
+    "hairline-right-light": {
+      "$type": "shadow",
+      "$value": "1px 0 0 0 rgba(2,8,1,.15)",
+      "$description": "Left-column rail line on white",
+      "measuredFrom": [
+        "CLONE_SPEC.md:41"
+      ]
+    },
+    "hairline-integration": {
+      "$type": "shadow",
+      "$value": "0 1px 0 .5px rgba(255,255,255,.2)",
+      "$description": "Integration blocks",
+      "measuredFrom": [
+        "CLONE_SPEC.md:41"
+      ]
+    },
+    "backdrop-blur-nav": {
+      "$type": "blur",
+      "$value": "80px",
+      "$description": "Backdrop blur on .nav-menu, CTA .hero-bottom-block.bottom-left and the sticky compare table header <=767",
+      "measuredFrom": [
+        "CLONE_SPEC.md:42",
+        "tailwind.config.js:99"
+      ]
+    },
+    "drop-shadow": {
+      "$type": "shadow",
+      "$value": "none",
+      "$description": "No drop shadows anywhere",
+      "measuredFrom": [
+        "CLONE_SPEC.md:41"
+      ]
+    }
+  }
+}

@@ -1,0 +1,126 @@
+{
+  "id": "proof.client-logos",
+  "kind": "section",
+  "category": "PROOF",
+  "surface": "dark",
+  "claimsPolicy": "must-not-fabricate",
+  "purpose": "Establish credibility at a glance with a continuously scrolling wall of real client practice logos.",
+  "description": "Continuously scrolling marquee of client practice logos between hairlines.",
+  "implementedBy": "src/components/ClientLogos.jsx",
+  "evidenceLevel": "measured",
+  "scope": {
+    "templates": [
+      "template.home"
+    ],
+    "routes": [
+      "/"
+    ],
+    "routeCount": 1
+  },
+  "constraints": {
+    "onePerPage": true,
+    "maxPerPage": 1,
+    "allowedTemplates": [
+      "template.home"
+    ],
+    "allowedRoutes": [
+      "/"
+    ]
+  },
+  "variants": {},
+  "fixedChrome": false,
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "logos"
+    ],
+    "properties": {
+      "logos": {
+        "type": "array",
+        "minItems": 13,
+        "maxItems": 13,
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "assetRole",
+            "assetRef",
+            "alt"
+          ],
+          "properties": {
+            "assetRole": {
+              "allOf": [
+                {
+                  "$ref": "#/definitions/assetRole"
+                },
+                {
+                  "const": "client.logo"
+                }
+              ]
+            },
+            "assetRef": {
+              "type": "string",
+              "minLength": 1
+            },
+            "alt": {
+              "type": "string",
+              "maxWords": 10,
+              "observedMax": 7
+            }
+          },
+          "examples": [
+            {
+              "assetRole": "client.logo",
+              "assetRef": "/assets/687f56b54ba0d2c838ec91b8-the-orthopaedic-center.webp",
+              "alt": "The Orthopaedic Center logo"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "contentFields": [
+    "logos"
+  ],
+  "assetRoles": [
+    "client.logo"
+  ],
+  "composes": [
+    "marquee-track",
+    "hairline"
+  ],
+  "motion": {
+    "allowedPatterns": [
+      "M1"
+    ],
+    "reducedMotionFallback": "parity-unchanged"
+  },
+  "responsive": [
+    {
+      "at": ">=992",
+      "target": "client-logo",
+      "property": "height",
+      "value": "3.472vw (50px at 1440)"
+    },
+    {
+      "at": "<=991",
+      "target": "client-logos",
+      "property": "padding",
+      "value": "80px top/bottom (max(110px,7.639vw) at >=992)"
+    },
+    {
+      "at": "<=991",
+      "target": "logos-wrapper",
+      "property": "gap",
+      "value": "60px (5.4vw at >=992)"
+    }
+  ],
+  "measuredFrom": [
+    "CLONE_SPEC.md:195-201",
+    "src/components/ClientLogos.jsx:7-27",
+    "src/data/clientLogos.js:6",
+    "ia/ia.json:109"
+  ],
+  "notes": "13 visible logos. Three more (Eye Doctors of Washington, Armina Health, Urology Centers of Alabama) are display:none on live and intentionally not rendered. The SBJ logo has an empty alt on live."
+}

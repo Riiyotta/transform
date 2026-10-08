@@ -1,0 +1,188 @@
+{
+  "id": "hero.compare",
+  "kind": "section",
+  "category": "HERO",
+  "surface": "dark",
+  "claimsPolicy": "none",
+  "purpose": "Frame /compare as a find-your-best-fit evaluation and route the visitor to a live demo.",
+  "description": "Full-viewport dark hero for /compare: headline, supporting paragraph and the same 'Call Alex' / phone-input CTA row pattern as the homepage hero.",
+  "implementedBy": "src/components/compare/CompareHero.jsx",
+  "evidenceLevel": "measured",
+  "scope": {
+    "templates": [
+      "template.compare"
+    ],
+    "routes": [
+      "/compare"
+    ],
+    "routeCount": 1
+  },
+  "constraints": {
+    "onePerPage": true,
+    "maxPerPage": 1,
+    "allowedTemplates": [
+      "template.compare"
+    ],
+    "allowedRoutes": [
+      "/compare"
+    ]
+  },
+  "variants": {},
+  "fixedChrome": false,
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "headline",
+      "introLabel",
+      "introText",
+      "testLabel",
+      "bookDemo"
+    ],
+    "properties": {
+      "headline": {
+        "type": "array",
+        "minItems": 1,
+        "maxItems": 2,
+        "maxWords": 10,
+        "observedMax": 8,
+        "items": {
+          "type": "object",
+          "required": [
+            "text"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "text": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "^\\S(?:[\\s\\S]*\\S)?$"
+            },
+            "tone": {
+              "enum": [
+                "default",
+                "accent-green",
+                "accent-blue"
+              ]
+            },
+            "breakAfter": {
+              "type": "boolean"
+            }
+          }
+        },
+        "examples": [
+          [
+            {
+              "text": "Compare",
+              "tone": "accent-green"
+            },
+            {
+              "text": "Our Solutions | Find Your Best Fit"
+            }
+          ]
+        ]
+      },
+      "introLabel": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 5,
+        "observedMax": 3,
+        "examples": [
+          "What We Do:"
+        ]
+      },
+      "introText": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 30,
+        "observedMax": 29,
+        "examples": [
+          "Transform9 builds AI voice agents for specialty physician practices. Our intentional focus enables us to be experts in the space - especially within Orthopedics, Urology, Neurology, GI and Ophthalmology."
+        ]
+      },
+      "testLabel": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 5,
+        "observedMax": 4,
+        "examples": [
+          "Test Our AI Agent"
+        ]
+      },
+      "bookDemo": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "label",
+          "href"
+        ],
+        "properties": {
+          "label": {
+            "type": "string",
+            "minLength": 1,
+            "maxWords": 5,
+            "observedMax": 4,
+            "examples": [
+              "Book a Live Demo"
+            ]
+          },
+          "href": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "^(/|https://|mailto:|#)",
+            "examples": [
+              "/book-a-demo"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "contentFields": [
+    "headline",
+    "introLabel",
+    "introText",
+    "testLabel",
+    "bookDemo"
+  ],
+  "assetRoles": [],
+  "composes": [
+    "underline-link",
+    "label-eyebrow",
+    "hairline"
+  ],
+  "motion": {
+    "allowedPatterns": [
+      "CMP-M1",
+      "M3",
+      "M12"
+    ],
+    "reducedMotionFallback": "parity-unchanged"
+  },
+  "responsive": [
+    {
+      "at": "all",
+      "target": "h1.compare",
+      "property": "max-width",
+      "value": "20ch at every breakpoint"
+    },
+    {
+      "at": "<=767",
+      "target": "hero-bottom-block.left",
+      "property": "position",
+      "value": "absolute top 100% (as home)"
+    },
+    {
+      "at": "<=479",
+      "target": "hero-bottom-block.right",
+      "property": "margin-bottom",
+      "value": "200px"
+    }
+  ],
+  "measuredFrom": [
+    "specs/compare.md:59-84",
+    "src/components/compare/CompareHero.jsx:11-38",
+    "ia/ia.json:79"
+  ],
+  "notes": "No phone input on this hero; the Call Alex popup is opened from the CTA section only."
+}

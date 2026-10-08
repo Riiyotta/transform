@@ -1,0 +1,144 @@
+{
+  "id": "shell.mobile-menu",
+  "kind": "section",
+  "category": "SHELL",
+  "surface": "dark",
+  "claimsPolicy": "none",
+  "purpose": "Full-screen menu for tablet/mobile: large links with Login and Book a Demo anchored at the bottom; locks scroll while open.",
+  "description": "Full-screen overlay menu opened from the burger at ≤991px: large nav links, Login and Book a Demo bar; stops smooth scroll while open.",
+  "implementedBy": "src/components/Navbar.jsx",
+  "evidenceLevel": "measured",
+  "scope": {
+    "templates": [
+      "template.home",
+      "template.compare",
+      "template.book-a-demo",
+      "template.legal",
+      "template.blog-index",
+      "template.blog-post",
+      "template.case-studies-index",
+      "template.case-study"
+    ],
+    "routes": [
+      "/",
+      "/compare",
+      "/book-a-demo",
+      "/terms-of-use",
+      "/privacy-policy",
+      "/hipaa",
+      "/blog",
+      "/blog/ai-voice-agents-for-athenahealth-7-questions-to-ask-before-choosing-a-platform",
+      "/blog/ent-reimbursement-in-2027-what-medicare-s-proposed-cuts-mean-for-otolaryngology-practices",
+      "/blog/medical-practice-call-volume-january",
+      "/blog/orthopedic-ai-answering-service",
+      "/blog/redefining-healthcare-ai",
+      "/blog/the-12-month-shift-why-voice-ai-agents-are-now-a-financial-imperative-for-specialty-practices",
+      "/blog/why-generic-ai-virtual-assistants-fail-specialty-medical-practices-and-what-actually-works",
+      "/blog/why-traditional-ivr-is-failing-your-practice-and-how-ai-voice-agents-fix-the-press-0-trap",
+      "/case-studies",
+      "/case-studies/southern-bone-joint",
+      "/case-studies/the-orthopaedic-center"
+    ],
+    "routeCount": 18
+  },
+  "constraints": {
+    "onePerPage": true,
+    "maxPerPage": 1,
+    "allowedTemplates": [
+      "template.home",
+      "template.compare",
+      "template.book-a-demo",
+      "template.legal",
+      "template.blog-index",
+      "template.blog-post",
+      "template.case-studies-index",
+      "template.case-study"
+    ],
+    "mustFollowNav": true,
+    "mustImmediatelyFollowAnyOf": [
+      "shell.navbar"
+    ]
+  },
+  "variants": {},
+  "fixedChrome": true,
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [],
+    "properties": {}
+  },
+  "contentFields": [],
+  "assetRoles": [],
+  "composes": [
+    "text-link",
+    "cta-button",
+    "icon",
+    "hairline"
+  ],
+  "motion": {
+    "allowedPatterns": [
+      "M18",
+      "M22"
+    ],
+    "reducedMotionFallback": "parity-unchanged"
+  },
+  "responsive": [
+    {
+      "at": "<=991",
+      "target": "nav-links",
+      "property": "position",
+      "value": "fixed inset 0, height 100dvh, bg #020801"
+    },
+    {
+      "at": "<=991",
+      "target": "nav-link",
+      "property": "font-size",
+      "value": "6.25vw (48px at 768, 24.375px at 390)"
+    },
+    {
+      "at": "<=991",
+      "target": "nav-links-right",
+      "property": "height",
+      "value": "80px (60px at <=479)"
+    }
+  ],
+  "measuredFrom": [
+    "CLONE_SPEC.md:163-171",
+    "src/components/Navbar.jsx:127-281",
+    "ia/ia.json:37"
+  ],
+  "fixedContent": {
+    "leftLinks": [
+      {
+        "label": "Compare",
+        "href": "/compare",
+        "external": false
+      },
+      {
+        "label": "Blog",
+        "href": "/blog",
+        "external": false
+      },
+      {
+        "label": "Case Studies",
+        "href": "/case-studies",
+        "external": false
+      },
+      {
+        "label": "Careers",
+        "href": "https://apply.workable.com/transform9/",
+        "external": true
+      }
+    ],
+    "login": {
+      "label": "Login",
+      "href": "https://portal.transform9.com/",
+      "external": true
+    },
+    "cta": {
+      "label": "Book a Demo",
+      "href": "/book-a-demo"
+    }
+  },
+  "notes": "Present on all routes but visible only at <=991."
+}

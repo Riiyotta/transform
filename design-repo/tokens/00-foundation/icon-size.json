@@ -1,0 +1,61 @@
+{
+  "iconSize": {
+    "menu-burger": {
+      "$type": "dimension",
+      "$value": "24px",
+      "$description": "Burger / close icons (menu-burger.svg 24x24, close-icon-white.svg 24)",
+      "measuredFrom": [
+        "CLONE_SPEC.md:161"
+      ]
+    },
+    "arrow": {
+      "$type": "dimension",
+      "$value": "28px",
+      "$description": "Testimonial / back / card arrows (28x28 svg); testimonial arrow clamp(28px,1.7vw,36px)",
+      "measuredFrom": [
+        "CLONE_SPEC.md:237",
+        "specs/blog.md:150"
+      ]
+    },
+    "share": {
+      "$type": "dimension",
+      "$value": "clamp(24px,1.667vw,32px)",
+      "$description": "Share icons (24 at <=1440)",
+      "measuredFrom": [
+        "specs/blog.md:164"
+      ]
+    },
+    "tick": {
+      "$type": "dimension",
+      "$value": "24px",
+      "$description": "Compare table tick (20 at <=479)",
+      "measuredFrom": [
+        "specs/compare.md:130"
+      ]
+    },
+    "yt-play": {
+      "$type": "dimension",
+      "$value": "84px",
+      "$description": "YouTube facade play button (square) with 24px glyph",
+      "measuredFrom": [
+        "CLONE_SPEC.md:207"
+      ]
+    },
+    "popup-close-box": {
+      "$type": "dimension",
+      "$value": "60px",
+      "$description": "Popup close button box (24px icon)",
+      "measuredFrom": [
+        "CLONE_SPEC.md:418"
+      ]
+    },
+    "post-arrow-tile": {
+      "$type": "dimension",
+      "$value": "100px",
+      "$description": "Blog/case card hover arrow tile 100x100 (28 icon); hidden <=991",
+      "measuredFrom": [
+        "specs/blog.md:107"
+      ]
+    }
+  }
+}

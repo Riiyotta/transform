@@ -1,0 +1,201 @@
+{
+  "id": "fit.specialties",
+  "kind": "section",
+  "category": "FIT",
+  "surface": "dark",
+  "claimsPolicy": "none",
+  "purpose": "Show specialty fit by letting a visitor hover through 13 specialties, each with its own image.",
+  "description": "'Designed for Your Specialty': 13 hover-activated specialty tabs with a matching image pane, plus 'And other specialties'.",
+  "implementedBy": "src/components/Specialties.jsx",
+  "evidenceLevel": "measured",
+  "scope": {
+    "templates": [
+      "template.home"
+    ],
+    "routes": [
+      "/"
+    ],
+    "routeCount": 1
+  },
+  "constraints": {
+    "onePerPage": true,
+    "maxPerPage": 1,
+    "allowedTemplates": [
+      "template.home"
+    ],
+    "allowedRoutes": [
+      "/"
+    ]
+  },
+  "variants": {},
+  "fixedChrome": false,
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "headline",
+      "items",
+      "bottomText"
+    ],
+    "properties": {
+      "headline": {
+        "type": "array",
+        "minItems": 1,
+        "maxItems": 2,
+        "maxWords": 5,
+        "observedMax": 4,
+        "items": {
+          "type": "object",
+          "required": [
+            "text"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "text": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "^\\S(?:[\\s\\S]*\\S)?$"
+            },
+            "tone": {
+              "enum": [
+                "default",
+                "accent-green",
+                "accent-blue"
+              ]
+            },
+            "breakAfter": {
+              "type": "boolean"
+            }
+          }
+        },
+        "examples": [
+          [
+            {
+              "text": "Designed for"
+            },
+            {
+              "text": "Your Specialty",
+              "tone": "accent-green"
+            }
+          ]
+        ]
+      },
+      "items": {
+        "type": "array",
+        "minItems": 13,
+        "maxItems": 13,
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "name",
+            "image"
+          ],
+          "properties": {
+            "name": {
+              "type": "string",
+              "minLength": 1,
+              "maxWords": 5,
+              "observedMax": 4,
+              "examples": [
+                "ENT"
+              ]
+            },
+            "image": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "assetRole",
+                "assetRef"
+              ],
+              "properties": {
+                "assetRole": {
+                  "allOf": [
+                    {
+                      "$ref": "#/definitions/assetRole"
+                    },
+                    {
+                      "const": "specialty.image"
+                    }
+                  ]
+                },
+                "assetRef": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "examples": [
+                {
+                  "assetRole": "specialty.image",
+                  "assetRef": "/assets/6895c81333b865db4669b970-orthopedics-physical-therapy.avif"
+                }
+              ]
+            }
+          }
+        }
+      },
+      "bottomText": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 5,
+        "observedMax": 3,
+        "examples": [
+          "And other specialties"
+        ]
+      }
+    }
+  },
+  "contentFields": [
+    "headline",
+    "items",
+    "bottomText"
+  ],
+  "assetRoles": [
+    "specialty.image"
+  ],
+  "composes": [
+    "tab-group",
+    "tab-link",
+    "media-cover",
+    "noise-overlay",
+    "label-eyebrow"
+  ],
+  "motion": {
+    "allowedPatterns": [
+      "M20"
+    ],
+    "reducedMotionFallback": "parity-unchanged"
+  },
+  "responsive": [
+    {
+      "at": ">=992",
+      "target": "specialty-tabs-content",
+      "property": "size",
+      "value": "sticky top 96, 385px wide, pane 32.153vw tall"
+    },
+    {
+      "at": "<=767",
+      "target": "specialty-tabs-content",
+      "property": "display",
+      "value": "none (image column hidden)"
+    },
+    {
+      "at": "<=767",
+      "target": "specialty-tab-link.is-current",
+      "property": "background",
+      "value": "transparent, no indent"
+    },
+    {
+      "at": "<=767",
+      "target": "heading",
+      "property": "font-size",
+      "value": "10.133vw display text, accent span green"
+    }
+  ],
+  "measuredFrom": [
+    "CLONE_SPEC.md:342-352",
+    "src/components/Specialties.jsx:17-112",
+    "src/data/specialties.js:4",
+    "ia/ia.json:175"
+  ]
+}

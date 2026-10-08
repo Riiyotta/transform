@@ -1,0 +1,36 @@
+{
+  "id": "cta-button",
+  "kind": "primitive",
+  "purpose": "Solid green call-to-action in the navbar and mobile menu (Book a Demo)",
+  "props": {
+    "label": "string",
+    "href": "string",
+    "size": [
+      "desktop-bar",
+      "mobile-top-bar",
+      "mobile-menu-bar"
+    ]
+  },
+  "additionalProps": false,
+  "states": [
+    "default",
+    "hover"
+  ],
+  "tokens": [
+    "semantic.surface.accent",
+    "semantic.text.on-accent",
+    "component.navbar.ctaHoverBackground"
+  ],
+  "motionPatterns": [
+    "M17"
+  ],
+  "measuredFrom": [
+    "CLONE_SPEC.md:158",
+    "CLONE_SPEC.md:162"
+  ],
+  "notes": "Hover bg #f1f3f3 over .2s; the rolling-text hover (M15) does not apply to the CTA",
+  "usedBySections": [
+    "shell.navbar",
+    "shell.mobile-menu"
+  ]
+}

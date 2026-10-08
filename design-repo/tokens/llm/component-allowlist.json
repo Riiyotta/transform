@@ -1,0 +1,1070 @@
+{
+  "version": "1.0.0",
+  "description": "Closed list of what an AI generator may set. Anything not listed here is not settable. Versioned: allowlistVersion in registry.manifest.json is machine-checked against this field.",
+  "pageSpecProperties": [
+    "metaDescription",
+    "nodes",
+    "pageSpecVersion",
+    "route",
+    "template",
+    "title",
+    "usage"
+  ],
+  "nodeProperties": [
+    "content",
+    "motion",
+    "section",
+    "variant"
+  ],
+  "motionProperties": [
+    "patterns",
+    "reducedMotionFallback"
+  ],
+  "assetRoles": [
+    "bg.noise-tile",
+    "bg.section-image",
+    "bg.still-fallback",
+    "bg.video-loop",
+    "brand.wordmark-black",
+    "brand.wordmark-footer",
+    "brand.wordmark-white",
+    "certification.badge",
+    "client.logo",
+    "editorial.hero-image",
+    "embed.video",
+    "partner.logo",
+    "person.photo",
+    "product.outreach-icon",
+    "product.ui-illustration",
+    "specialty.image",
+    "stat.hover-image",
+    "ui.icon",
+    "ui.social-mark"
+  ],
+  "usageContexts": [
+    "internal-clone",
+    "generated-derivative"
+  ],
+  "motionPatterns": [
+    "M1",
+    "M2a",
+    "M2b",
+    "M3",
+    "M3b",
+    "M4",
+    "M5",
+    "M6",
+    "M7",
+    "M8a",
+    "M8b",
+    "M8c",
+    "M9",
+    "M10",
+    "M10b",
+    "M11",
+    "M11b",
+    "M12",
+    "M12b",
+    "M13",
+    "M14",
+    "M15",
+    "M16",
+    "M17",
+    "M18",
+    "M19",
+    "M20",
+    "M21",
+    "M22",
+    "CMP-M1",
+    "CMP-M2",
+    "CMP-M3",
+    "CMP-M4",
+    "CMP-M5",
+    "BAD-M1",
+    "BAD-M2",
+    "LGL-M1",
+    "BLOG-M1",
+    "BLOG-M2",
+    "BLOG-M3",
+    "BLOG-M4",
+    "BLOG-M6",
+    "BLOG-M7",
+    "BLOG-M8",
+    "BLOG-M9",
+    "BLOG-M10",
+    "CS-M1",
+    "FOOTER-REVEAL"
+  ],
+  "reducedMotionFallbacks": [
+    "video-still-image",
+    "parity-unchanged",
+    "static-no-motion"
+  ],
+  "tokenOverrides": "none: PageSpec has no style or token-override field (tokens/llm/token-policy.json overrides)",
+  "entries": [
+    {
+      "id": "cta-button",
+      "kind": "primitive",
+      "file": "primitives/cta-button.json",
+      "overridable": [
+        "href",
+        "label",
+        "size"
+      ]
+    },
+    {
+      "id": "underline-link",
+      "kind": "primitive",
+      "file": "primitives/underline-link.json",
+      "overridable": [
+        "href",
+        "label",
+        "size",
+        "tone"
+      ]
+    },
+    {
+      "id": "text-link",
+      "kind": "primitive",
+      "file": "primitives/text-link.json",
+      "overridable": [
+        "external",
+        "href",
+        "label",
+        "role"
+      ]
+    },
+    {
+      "id": "icon-button",
+      "kind": "primitive",
+      "file": "primitives/icon-button.json",
+      "overridable": [
+        "icon",
+        "size"
+      ]
+    },
+    {
+      "id": "text-field",
+      "kind": "primitive",
+      "file": "primitives/text-field.json",
+      "overridable": [
+        "kind",
+        "maxlength",
+        "placeholder",
+        "required",
+        "type"
+      ]
+    },
+    {
+      "id": "submit-control",
+      "kind": "primitive",
+      "file": "primitives/submit-control.json",
+      "overridable": [
+        "kind",
+        "label",
+        "waitLabel"
+      ]
+    },
+    {
+      "id": "label-eyebrow",
+      "kind": "primitive",
+      "file": "primitives/label-eyebrow.json",
+      "overridable": [
+        "indent",
+        "text",
+        "tone"
+      ]
+    },
+    {
+      "id": "badge-tag",
+      "kind": "primitive",
+      "file": "primitives/badge-tag.json",
+      "overridable": [
+        "text",
+        "tone"
+      ]
+    },
+    {
+      "id": "hairline",
+      "kind": "primitive",
+      "file": "primitives/hairline.json",
+      "overridable": [
+        "orientation",
+        "surface"
+      ]
+    },
+    {
+      "id": "noise-overlay",
+      "kind": "primitive",
+      "file": "primitives/noise-overlay.json",
+      "overridable": [
+        "opacity"
+      ]
+    },
+    {
+      "id": "pixel-cell",
+      "kind": "primitive",
+      "file": "primitives/pixel-cell.json",
+      "overridable": [
+        "tone"
+      ]
+    },
+    {
+      "id": "icon",
+      "kind": "primitive",
+      "file": "primitives/icon.json",
+      "overridable": [
+        "glyph",
+        "tone"
+      ]
+    },
+    {
+      "id": "wordmark",
+      "kind": "primitive",
+      "file": "primitives/wordmark.json",
+      "overridable": [
+        "tone"
+      ]
+    },
+    {
+      "id": "media-cover",
+      "kind": "primitive",
+      "file": "primitives/media-cover.json",
+      "overridable": [
+        "noise",
+        "ratio"
+      ]
+    },
+    {
+      "id": "meta-point",
+      "kind": "primitive",
+      "file": "primitives/meta-point.json",
+      "overridable": [
+        "role",
+        "text"
+      ]
+    },
+    {
+      "id": "tab-link",
+      "kind": "primitive",
+      "file": "primitives/tab-link.json",
+      "overridable": [
+        "activateOn",
+        "family",
+        "text",
+        "title"
+      ]
+    },
+    {
+      "id": "post-card",
+      "kind": "component",
+      "file": "components/post-card.json",
+      "overridable": [
+        "author",
+        "date",
+        "href",
+        "image",
+        "title"
+      ]
+    },
+    {
+      "id": "featured-post",
+      "kind": "component",
+      "file": "components/featured-post.json",
+      "overridable": [
+        "author",
+        "date",
+        "href",
+        "image",
+        "title"
+      ]
+    },
+    {
+      "id": "case-card",
+      "kind": "component",
+      "file": "components/case-card.json",
+      "overridable": [
+        "highlight",
+        "href",
+        "logoBlack",
+        "logoWhite",
+        "stats",
+        "title"
+      ]
+    },
+    {
+      "id": "stat-block",
+      "kind": "component",
+      "file": "components/stat-block.json",
+      "overridable": [
+        "hoverImage",
+        "index",
+        "label",
+        "value"
+      ]
+    },
+    {
+      "id": "quote-slide",
+      "kind": "component",
+      "file": "components/quote-slide.json",
+      "overridable": [
+        "logo",
+        "name",
+        "photo",
+        "points",
+        "quote",
+        "title"
+      ]
+    },
+    {
+      "id": "stack-card",
+      "kind": "component",
+      "file": "components/stack-card.json",
+      "overridable": [
+        "image",
+        "index",
+        "text",
+        "title"
+      ]
+    },
+    {
+      "id": "tab-group",
+      "kind": "component",
+      "file": "components/tab-group.json",
+      "overridable": [
+        "image",
+        "tabs"
+      ]
+    },
+    {
+      "id": "marquee-track",
+      "kind": "component",
+      "file": "components/marquee-track.json",
+      "overridable": [
+        "direction",
+        "items",
+        "periodMs"
+      ]
+    },
+    {
+      "id": "logo-block",
+      "kind": "component",
+      "file": "components/logo-block.json",
+      "overridable": [
+        "href",
+        "logoBlack",
+        "logoWhite"
+      ]
+    },
+    {
+      "id": "table-row",
+      "kind": "component",
+      "file": "components/table-row.json",
+      "overridable": [
+        "label",
+        "other",
+        "t9"
+      ]
+    },
+    {
+      "id": "claim-block",
+      "kind": "component",
+      "file": "components/claim-block.json",
+      "overridable": [
+        "head",
+        "hoverFill",
+        "text"
+      ]
+    },
+    {
+      "id": "form-block",
+      "kind": "component",
+      "file": "components/form-block.json",
+      "overridable": [
+        "failMessage",
+        "fields",
+        "submitLabel",
+        "successMessage"
+      ]
+    },
+    {
+      "id": "rich-text-slot",
+      "kind": "component",
+      "file": "components/rich-text-slot.json",
+      "overridable": [
+        "blocks"
+      ]
+    },
+    {
+      "id": "share-column",
+      "kind": "component",
+      "file": "components/share-column.json",
+      "overridable": [
+        "label",
+        "share"
+      ]
+    },
+    {
+      "id": "page-intro-header",
+      "kind": "component",
+      "file": "components/page-intro-header.json",
+      "overridable": [
+        "backLink",
+        "bottom",
+        "media",
+        "title"
+      ]
+    },
+    {
+      "id": "shell.page-layers",
+      "kind": "section",
+      "file": "sections/shell.page-layers.json",
+      "overridable": [
+        "noiseTile",
+        "videoSource",
+        "stillFallback"
+      ],
+      "variants": [
+        "with-video",
+        "without-video"
+      ],
+      "motionPatterns": [
+        "M3",
+        "M3b",
+        "M21",
+        "BLOG-M4"
+      ]
+    },
+    {
+      "id": "shell.navbar",
+      "kind": "section",
+      "file": "sections/shell.navbar.json",
+      "overridable": [
+        "logoWhite",
+        "logoBlack"
+      ],
+      "variants": [],
+      "motionPatterns": [
+        "M4",
+        "M15",
+        "M17",
+        "CMP-M1",
+        "BAD-M1",
+        "LGL-M1",
+        "BLOG-M2"
+      ]
+    },
+    {
+      "id": "shell.mobile-menu",
+      "kind": "section",
+      "file": "sections/shell.mobile-menu.json",
+      "overridable": [],
+      "variants": [],
+      "motionPatterns": [
+        "M18",
+        "M22"
+      ]
+    },
+    {
+      "id": "shell.preloader",
+      "kind": "section",
+      "file": "sections/shell.preloader.json",
+      "overridable": [],
+      "variants": [],
+      "motionPatterns": [
+        "CMP-M1",
+        "LGL-M1",
+        "BLOG-M1"
+      ]
+    },
+    {
+      "id": "shell.bg-pixels-overlay",
+      "kind": "section",
+      "file": "sections/shell.bg-pixels-overlay.json",
+      "overridable": [],
+      "variants": [],
+      "motionPatterns": [
+        "CMP-M1"
+      ]
+    },
+    {
+      "id": "shell.call-alex-modal",
+      "kind": "section",
+      "file": "sections/shell.call-alex-modal.json",
+      "overridable": [],
+      "variants": [],
+      "motionPatterns": [
+        "M11",
+        "M11b",
+        "M12",
+        "M16",
+        "M17"
+      ]
+    },
+    {
+      "id": "shell.footer",
+      "kind": "section",
+      "file": "sections/shell.footer.json",
+      "overridable": [],
+      "variants": [],
+      "motionPatterns": [
+        "M12",
+        "M12b"
+      ]
+    },
+    {
+      "id": "shell.footer-bottom-reveal",
+      "kind": "section",
+      "file": "sections/shell.footer-bottom-reveal.json",
+      "overridable": [
+        "logo"
+      ],
+      "variants": [],
+      "motionPatterns": [
+        "FOOTER-REVEAL",
+        "M17"
+      ]
+    },
+    {
+      "id": "hero.home",
+      "kind": "section",
+      "file": "sections/hero.home.json",
+      "overridable": [
+        "headline",
+        "introLabel",
+        "introText",
+        "testLabel",
+        "phonePlaceholder",
+        "callLinkLabel"
+      ],
+      "variants": [],
+      "motionPatterns": [
+        "M3",
+        "M12",
+        "M11"
+      ]
+    },
+    {
+      "id": "hero.compare",
+      "kind": "section",
+      "file": "sections/hero.compare.json",
+      "overridable": [
+        "headline",
+        "introLabel",
+        "introText",
+        "testLabel",
+        "bookDemo"
+      ],
+      "variants": [],
+      "motionPatterns": [
+        "CMP-M1",
+        "M3",
+        "M12"
+      ]
+    },
+    {
+      "id": "hero.legal",
+      "kind": "section",
+      "file": "sections/hero.legal.json",
+      "overridable": [
+        "headline",
+        "intro"
+      ],
+      "variants": [
+        "terms",
+        "privacy"
+      ],
+      "motionPatterns": [
+        "LGL-M1",
+        "M3b"
+      ]
+    },
+    {
+      "id": "hero.book-a-demo",
+      "kind": "section",
+      "file": "sections/hero.book-a-demo.json",
+      "overridable": [
+        "headline",
+        "introText",
+        "fields",
+        "submitLabel",
+        "submittingLabel",
+        "successMessage",
+        "failMessage"
+      ],
+      "variants": [],
+      "motionPatterns": [
+        "BAD-M1",
+        "BAD-M2",
+        "M3b"
+      ]
+    },
+    {
+      "id": "hero.blog-index",
+      "kind": "section",
+      "file": "sections/hero.blog-index.json",
+      "overridable": [
+        "headline",
+        "featured"
+      ],
+      "variants": [],
+      "motionPatterns": [
+        "BLOG-M2",
+        "BLOG-M3",
+        "BLOG-M4",
+        "BLOG-M7",
+        "M12",
+        "M3b"
+      ]
+    },
+    {
+      "id": "hero.case-studies-index",
+      "kind": "section",
+      "file": "sections/hero.case-studies-index.json",
+      "overridable": [
+        "headline"
+      ],
+      "variants": [],
+      "motionPatterns": [
+        "BLOG-M2",
+        "BLOG-M3",
+        "BLOG-M4",
+        "M3b"
+      ]
+    },
+    {
+      "id": "proof.client-logos",
+      "kind": "section",
+      "file": "sections/proof.client-logos.json",
+      "overridable": [
+        "logos"
+      ],
+      "variants": [],
+      "motionPatterns": [
+        "M1"
+      ]
+    },
+    {
+      "id": "proof.client-spotlight",
+      "kind": "section",
+      "file": "sections/proof.client-spotlight.json",
+      "overridable": [
+        "headline",
+        "video",
+        "thumbnail"
+      ],
+      "variants": [],
+      "motionPatterns": [
+        "M17"
+      ]
+    },
+    {
+      "id": "proof.stats",
+      "kind": "section",
+      "file": "sections/proof.stats.json",
+      "overridable": [
+        "headline",
+        "railImage",
+        "blocks"
+      ],
+      "variants": [],
+      "motionPatterns": [
+        "M5",
+        "M6"
+      ]
+    },
+    {
+      "id": "proof.testimonials",
+      "kind": "section",
+      "file": "sections/proof.testimonials.json",
+      "overridable": [
+        "label",
+        "headline",
+        "slides"
+      ],
+      "variants": [],
+      "motionPatterns": [
+        "M13",
+        "M19"
+      ]
+    },
+    {
+      "id": "product.how-it-works",
+      "kind": "section",
+      "file": "sections/product.how-it-works.json",
+      "overridable": [
+        "label",
+        "lead",
+        "words",
+        "closing"
+      ],
+      "variants": [],
+      "motionPatterns": [
+        "M7"
+      ]
+    },
+    {
+      "id": "product.scheduling-agent",
+      "kind": "section",
+      "file": "sections/product.scheduling-agent.json",
+      "overridable": [
+        "eyebrow",
+        "title",
+        "agentNumber",
+        "cards"
+      ],
+      "variants": [],
+      "motionPatterns": [
+        "M9"
+      ]
+    },
+    {
+      "id": "product.tasking-agent",
+      "kind": "section",
+      "file": "sections/product.tasking-agent.json",
+      "overridable": [
+        "title",
+        "agentNumber",
+        "tabs"
+      ],
+      "variants": [],
+      "motionPatterns": [
+        "M10",
+        "M10b"
+      ]
+    },
+    {
+      "id": "product.navigator-agent",
+      "kind": "section",
+      "file": "sections/product.navigator-agent.json",
+      "overridable": [
+        "title",
+        "agentNumber",
+        "tabs"
+      ],
+      "variants": [],
+      "motionPatterns": [
+        "M20"
+      ]
+    },
+    {
+      "id": "product.outreach-agent",
+      "kind": "section",
+      "file": "sections/product.outreach-agent.json",
+      "overridable": [
+        "title",
+        "agentNumber",
+        "caption",
+        "cards"
+      ],
+      "variants": [],
+      "motionPatterns": []
+    },
+    {
+      "id": "transition.black-to-white",
+      "kind": "section",
+      "file": "sections/transition.black-to-white.json",
+      "overridable": [
+        "railLine"
+      ],
+      "variants": [],
+      "motionPatterns": [
+        "M8a"
+      ]
+    },
+    {
+      "id": "transition.white-to-black",
+      "kind": "section",
+      "file": "sections/transition.white-to-black.json",
+      "overridable": [],
+      "variants": [],
+      "motionPatterns": [
+        "M8b"
+      ]
+    },
+    {
+      "id": "fit.specialties",
+      "kind": "section",
+      "file": "sections/fit.specialties.json",
+      "overridable": [
+        "headline",
+        "items",
+        "bottomText"
+      ],
+      "variants": [],
+      "motionPatterns": [
+        "M20"
+      ]
+    },
+    {
+      "id": "fit.integrations",
+      "kind": "section",
+      "file": "sections/fit.integrations.json",
+      "overridable": [
+        "headline",
+        "introText",
+        "subhead",
+        "rowLeft",
+        "rowRight"
+      ],
+      "variants": [],
+      "motionPatterns": [
+        "M2a",
+        "M2b",
+        "M14"
+      ]
+    },
+    {
+      "id": "fit.security",
+      "kind": "section",
+      "file": "sections/fit.security.json",
+      "overridable": [
+        "headline",
+        "text",
+        "railImage",
+        "badges"
+      ],
+      "variants": [],
+      "motionPatterns": [
+        "M14"
+      ]
+    },
+    {
+      "id": "conversion.cta",
+      "kind": "section",
+      "file": "sections/conversion.cta.json",
+      "overridable": [
+        "agentsLabel",
+        "agents",
+        "quickStartLabel",
+        "quickStartValue",
+        "headline",
+        "testLabel",
+        "phonePlaceholder",
+        "callLinkLabel",
+        "bookDemoPrompt",
+        "bookDemo",
+        "backgroundImage"
+      ],
+      "variants": [],
+      "motionPatterns": [
+        "M8c",
+        "M12",
+        "M11"
+      ]
+    },
+    {
+      "id": "compare.generic",
+      "kind": "section",
+      "file": "sections/compare.generic.json",
+      "overridable": [
+        "label",
+        "headline",
+        "text",
+        "railImage"
+      ],
+      "variants": [],
+      "motionPatterns": []
+    },
+    {
+      "id": "compare.comparison-table",
+      "kind": "section",
+      "file": "sections/compare.comparison-table.json",
+      "overridable": [
+        "headline",
+        "headerLogo",
+        "otherColumnLabel",
+        "tick",
+        "rows",
+        "footnote",
+        "bookDemo"
+      ],
+      "variants": [],
+      "motionPatterns": [
+        "CMP-M5",
+        "M12"
+      ]
+    },
+    {
+      "id": "compare.access",
+      "kind": "section",
+      "file": "sections/compare.access.json",
+      "overridable": [
+        "label",
+        "headline",
+        "blocks"
+      ],
+      "variants": [],
+      "motionPatterns": []
+    },
+    {
+      "id": "compare.specialty-white",
+      "kind": "section",
+      "file": "sections/compare.specialty-white.json",
+      "overridable": [
+        "label",
+        "headline",
+        "items",
+        "bottomText"
+      ],
+      "variants": [],
+      "motionPatterns": [
+        "M20"
+      ]
+    },
+    {
+      "id": "compare.integrations-white",
+      "kind": "section",
+      "file": "sections/compare.integrations-white.json",
+      "overridable": [
+        "headline",
+        "introText",
+        "rowLeft",
+        "rowRight"
+      ],
+      "variants": [],
+      "motionPatterns": [
+        "M2a",
+        "M2b",
+        "CMP-M3"
+      ]
+    },
+    {
+      "id": "compare.privacy",
+      "kind": "section",
+      "file": "sections/compare.privacy.json",
+      "overridable": [
+        "headline",
+        "railImage",
+        "blocks"
+      ],
+      "variants": [],
+      "motionPatterns": [
+        "CMP-M2"
+      ]
+    },
+    {
+      "id": "compare.evaluation",
+      "kind": "section",
+      "file": "sections/compare.evaluation.json",
+      "overridable": [
+        "label",
+        "headline",
+        "tabs"
+      ],
+      "variants": [],
+      "motionPatterns": [
+        "CMP-M4"
+      ]
+    },
+    {
+      "id": "legal.content",
+      "kind": "section",
+      "file": "sections/legal.content.json",
+      "overridable": [
+        "blocks"
+      ],
+      "variants": [],
+      "motionPatterns": []
+    },
+    {
+      "id": "content.blog-list",
+      "kind": "section",
+      "file": "sections/content.blog-list.json",
+      "overridable": [
+        "heading",
+        "label",
+        "description",
+        "loadMoreLabel",
+        "posts"
+      ],
+      "variants": [],
+      "motionPatterns": [
+        "BLOG-M2",
+        "BLOG-M6",
+        "M12"
+      ]
+    },
+    {
+      "id": "content.case-list",
+      "kind": "section",
+      "file": "sections/content.case-list.json",
+      "overridable": [
+        "label",
+        "cards"
+      ],
+      "variants": [],
+      "motionPatterns": [
+        "BLOG-M2",
+        "CS-M1"
+      ]
+    },
+    {
+      "id": "content.post-header",
+      "kind": "section",
+      "file": "sections/content.post-header.json",
+      "overridable": [
+        "backLink",
+        "title",
+        "image",
+        "author",
+        "date"
+      ],
+      "variants": [],
+      "motionPatterns": [
+        "BLOG-M2",
+        "BLOG-M8"
+      ]
+    },
+    {
+      "id": "content.case-header",
+      "kind": "section",
+      "file": "sections/content.case-header.json",
+      "overridable": [
+        "backLink",
+        "title",
+        "logo",
+        "highlight",
+        "stats"
+      ],
+      "variants": [
+        "highlight",
+        "stats"
+      ],
+      "motionPatterns": [
+        "BLOG-M2",
+        "BLOG-M8"
+      ]
+    },
+    {
+      "id": "content.post-body",
+      "kind": "section",
+      "file": "sections/content.post-body.json",
+      "overridable": [
+        "slots",
+        "shareLabel",
+        "share"
+      ],
+      "variants": [],
+      "motionPatterns": [
+        "BLOG-M2",
+        "BLOG-M9",
+        "BLOG-M10"
+      ]
+    },
+    {
+      "id": "content.read-next",
+      "kind": "section",
+      "file": "sections/content.read-next.json",
+      "overridable": [
+        "eyebrow",
+        "heading",
+        "card"
+      ],
+      "variants": [],
+      "motionPatterns": [
+        "CS-M1"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "id": "page-intro-header",
+  "kind": "component",
+  "purpose": "Detail-page header: back link, hero image or logo cell, title and meta/stats bottom slot",
+  "props": {
+    "backLink": "object",
+    "title": "string",
+    "media": "object",
+    "bottom": "object"
+  },
+  "additionalProps": false,
+  "composes": [
+    "media-cover",
+    "meta-point",
+    "icon"
+  ],
+  "tokens": [
+    "component.case-card"
+  ],
+  "motionPatterns": [
+    "BLOG-M8"
+  ],
+  "measuredFrom": [
+    "src/components/cms/DetailHeader.jsx:8",
+    "src/components/cms/BackLink.jsx:10"
+  ],
+  "usedBySections": [
+    "content.post-header",
+    "content.case-header"
+  ]
+}

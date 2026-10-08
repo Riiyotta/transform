@@ -1,0 +1,38 @@
+{
+  "id": "meta-point",
+  "kind": "primitive",
+  "purpose": "1px green left-rule cell with author / date or a stat (value + label)",
+  "props": {
+    "text": "string",
+    "role": [
+      "author",
+      "date",
+      "stat-value",
+      "stat-label"
+    ]
+  },
+  "additionalProps": false,
+  "states": [
+    "default",
+    "card-hover"
+  ],
+  "tokens": [
+    "semantic.surface.accent",
+    "component.post-card"
+  ],
+  "motionPatterns": [
+    "BLOG-M6"
+  ],
+  "measuredFrom": [
+    "specs/blog.md:90"
+  ],
+  "usedBySections": [
+    "hero.blog-index",
+    "proof.testimonials",
+    "content.blog-list",
+    "content.case-list",
+    "content.post-header",
+    "content.case-header",
+    "content.read-next"
+  ]
+}

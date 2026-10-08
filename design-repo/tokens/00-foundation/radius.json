@@ -1,0 +1,21 @@
+{
+  "radius": {
+    "none": {
+      "$type": "dimension",
+      "$value": "0",
+      "$description": "Radii are 0 everywhere (Webflow base); the only rounded shapes are hidden .bg-circle (100%) and hidden slider dots",
+      "measuredFrom": [
+        "CLONE_SPEC.md:40"
+      ]
+    },
+    "hubspot-replica-input": {
+      "$type": "dimension",
+      "$value": "3px",
+      "$description": "Footer email-form replica input and Submit button radius (measured in the HubSpot iframe)",
+      "measuredFrom": [
+        "CLONE_SPEC.md:439",
+        "CLONE_SPEC.md:440"
+      ]
+    }
+  }
+}

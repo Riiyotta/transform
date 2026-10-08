@@ -1,0 +1,202 @@
+{
+  "id": "product.tasking-agent",
+  "kind": "section",
+  "category": "PRODUCT",
+  "surface": "light",
+  "claimsPolicy": "none",
+  "purpose": "Present Agent #2 Tasking as an auto-rotating tab set with a paired image pane.",
+  "description": "Agent #2 Tasking: 200vh half-split with auto-rotating vertical tabs (4s progress bar) and fading image panes; click tabs at ≤991.",
+  "implementedBy": "src/components/TaskingAgent.jsx",
+  "evidenceLevel": "measured",
+  "scope": {
+    "templates": [
+      "template.home"
+    ],
+    "routes": [
+      "/"
+    ],
+    "routeCount": 1
+  },
+  "constraints": {
+    "onePerPage": true,
+    "maxPerPage": 1,
+    "allowedTemplates": [
+      "template.home"
+    ],
+    "allowedRoutes": [
+      "/"
+    ]
+  },
+  "variants": {},
+  "fixedChrome": false,
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "title",
+      "agentNumber",
+      "tabs"
+    ],
+    "properties": {
+      "title": {
+        "type": "array",
+        "minItems": 1,
+        "maxItems": 1,
+        "maxWords": 5,
+        "observedMax": 2,
+        "items": {
+          "type": "object",
+          "required": [
+            "text"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "text": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "^\\S(?:[\\s\\S]*\\S)?$"
+            },
+            "tone": {
+              "enum": [
+                "default",
+                "accent-green",
+                "accent-blue"
+              ]
+            },
+            "breakAfter": {
+              "type": "boolean"
+            }
+          }
+        },
+        "examples": [
+          [
+            {
+              "text": "Tasking Agent"
+            }
+          ]
+        ]
+      },
+      "agentNumber": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 5,
+        "observedMax": 1,
+        "examples": [
+          "#2"
+        ]
+      },
+      "tabs": {
+        "type": "array",
+        "minItems": 3,
+        "maxItems": 3,
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "title",
+            "text",
+            "image"
+          ],
+          "properties": {
+            "title": {
+              "type": "string",
+              "minLength": 1,
+              "maxWords": 5,
+              "observedMax": 3,
+              "examples": [
+                "Patient-to-Provider Messaging"
+              ]
+            },
+            "text": {
+              "type": "string",
+              "minLength": 1,
+              "maxWords": 25,
+              "observedMax": 21,
+              "examples": [
+                "Routes patient inquiries to the appropriate provider or department."
+              ]
+            },
+            "image": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "assetRole",
+                "assetRef"
+              ],
+              "properties": {
+                "assetRole": {
+                  "allOf": [
+                    {
+                      "$ref": "#/definitions/assetRole"
+                    },
+                    {
+                      "const": "product.ui-illustration"
+                    }
+                  ]
+                },
+                "assetRef": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "examples": [
+                {
+                  "assetRole": "product.ui-illustration",
+                  "assetRef": "/assets/6895ba258eb91995c9cabdf4-task-img-1.avif"
+                }
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  "contentFields": [
+    "title",
+    "agentNumber",
+    "tabs"
+  ],
+  "assetRoles": [
+    "product.ui-illustration"
+  ],
+  "composes": [
+    "tab-group",
+    "tab-link",
+    "media-cover",
+    "noise-overlay",
+    "label-eyebrow"
+  ],
+  "motion": {
+    "allowedPatterns": [
+      "M10",
+      "M10b"
+    ],
+    "reducedMotionFallback": "parity-unchanged"
+  },
+  "responsive": [
+    {
+      "at": ">=992",
+      "target": "half-split-wrap",
+      "property": "height",
+      "value": "200vh; tabs auto-rotate every 4000ms"
+    },
+    {
+      "at": "<=991",
+      "target": "tab-progress-vert",
+      "property": "display",
+      "value": "off; no auto-rotation; active tab reveals .task-text-row"
+    },
+    {
+      "at": "<=767",
+      "target": "tabs",
+      "property": "direction",
+      "value": "column-reverse; content 121vw tall above tabs"
+    }
+  ],
+  "measuredFrom": [
+    "CLONE_SPEC.md:291-306",
+    "src/components/TaskingAgent.jsx:122-186",
+    "src/data/taskingTabs.js:4",
+    "ia/ia.json:145"
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "id": "media-cover",
+  "kind": "primitive",
+  "purpose": "Cover-fit image or background (object-fit/background-size cover) with optional noise overlay",
+  "props": {
+    "ratio": [
+      "rail-461x385",
+      "pane-463x385",
+      "card-17.292vw",
+      "featured-33.403vw"
+    ],
+    "noise": "boolean"
+  },
+  "additionalProps": false,
+  "states": [
+    "default"
+  ],
+  "tokens": [
+    "opacity.noise-desktop"
+  ],
+  "motionPatterns": [],
+  "measuredFrom": [
+    "CLONE_SPEC.md:342",
+    "specs/blog.md:103"
+  ],
+  "usedBySections": [
+    "shell.page-layers",
+    "hero.blog-index",
+    "proof.client-spotlight",
+    "proof.stats",
+    "product.scheduling-agent",
+    "product.tasking-agent",
+    "product.navigator-agent",
+    "product.outreach-agent",
+    "fit.specialties",
+    "fit.security",
+    "compare.generic",
+    "compare.specialty-white",
+    "compare.privacy",
+    "content.blog-list",
+    "content.post-header",
+    "content.case-header"
+  ]
+}

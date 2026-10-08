@@ -1,0 +1,127 @@
+{
+  "description": "18 in-scope routes, each assigned to exactly one template.",
+  "measuredFrom": [
+    "ROUTES.md:5",
+    "src/routes.jsx:25"
+  ],
+  "routes": [
+    {
+      "path": "/",
+      "template": "template.home",
+      "family": "home",
+      "documentTitle": "Transform9 — Maximize Every Call with a Custom AI Agent"
+    },
+    {
+      "path": "/compare",
+      "template": "template.compare",
+      "family": "compare",
+      "documentTitle": "Compare"
+    },
+    {
+      "path": "/book-a-demo",
+      "template": "template.book-a-demo",
+      "family": "book-a-demo",
+      "documentTitle": "Book a Demo"
+    },
+    {
+      "path": "/terms-of-use",
+      "template": "template.legal",
+      "family": "legal",
+      "documentTitle": "Terms of Use"
+    },
+    {
+      "path": "/privacy-policy",
+      "template": "template.legal",
+      "family": "legal",
+      "documentTitle": "Privacy Policy"
+    },
+    {
+      "path": "/hipaa",
+      "template": "template.legal",
+      "family": "legal",
+      "documentTitle": "HIPAA"
+    },
+    {
+      "path": "/blog",
+      "template": "template.blog-index",
+      "family": "blog-index",
+      "documentTitle": "Blog"
+    },
+    {
+      "path": "/blog/ai-voice-agents-for-athenahealth-7-questions-to-ask-before-choosing-a-platform",
+      "template": "template.blog-post",
+      "family": "blog-post",
+      "slug": "ai-voice-agents-for-athenahealth-7-questions-to-ask-before-choosing-a-platform",
+      "documentTitle": "AI Voice Agents for athenahealth: 7 Questions to Ask Before Choosing a Platform"
+    },
+    {
+      "path": "/blog/ent-reimbursement-in-2027-what-medicare-s-proposed-cuts-mean-for-otolaryngology-practices",
+      "template": "template.blog-post",
+      "family": "blog-post",
+      "slug": "ent-reimbursement-in-2027-what-medicare-s-proposed-cuts-mean-for-otolaryngology-practices",
+      "documentTitle": "ENT Reimbursement in 2027: What Medicare's Proposed Cuts Mean for Otolaryngology Practices"
+    },
+    {
+      "path": "/blog/medical-practice-call-volume-january",
+      "template": "template.blog-post",
+      "family": "blog-post",
+      "slug": "medical-practice-call-volume-january",
+      "documentTitle": "Your Practice's January Call Surge Starts Being a Problem in October"
+    },
+    {
+      "path": "/blog/orthopedic-ai-answering-service",
+      "template": "template.blog-post",
+      "family": "blog-post",
+      "slug": "orthopedic-ai-answering-service",
+      "documentTitle": "The Orthopedic Bottleneck: Why Traditional Answering Services Are Failing Your Practice"
+    },
+    {
+      "path": "/blog/redefining-healthcare-ai",
+      "template": "template.blog-post",
+      "family": "blog-post",
+      "slug": "redefining-healthcare-ai",
+      "documentTitle": "Redefining Healthcare AI: The Future Of Medicine"
+    },
+    {
+      "path": "/blog/the-12-month-shift-why-voice-ai-agents-are-now-a-financial-imperative-for-specialty-practices",
+      "template": "template.blog-post",
+      "family": "blog-post",
+      "slug": "the-12-month-shift-why-voice-ai-agents-are-now-a-financial-imperative-for-specialty-practices",
+      "documentTitle": "The 12-Month Shift: Why Voice AI Agents Are Now a Financial Imperative for Specialty Practices"
+    },
+    {
+      "path": "/blog/why-generic-ai-virtual-assistants-fail-specialty-medical-practices-and-what-actually-works",
+      "template": "template.blog-post",
+      "family": "blog-post",
+      "slug": "why-generic-ai-virtual-assistants-fail-specialty-medical-practices-and-what-actually-works",
+      "documentTitle": "Why Generic AI Virtual Assistants Fail Specialty Medical Practices (and What Actually Works)"
+    },
+    {
+      "path": "/blog/why-traditional-ivr-is-failing-your-practice-and-how-ai-voice-agents-fix-the-press-0-trap",
+      "template": "template.blog-post",
+      "family": "blog-post",
+      "slug": "why-traditional-ivr-is-failing-your-practice-and-how-ai-voice-agents-fix-the-press-0-trap",
+      "documentTitle": "Why Traditional IVR is Failing Your Practice—and How AI Voice Agents Fix the 'Press 0' Trap"
+    },
+    {
+      "path": "/case-studies",
+      "template": "template.case-studies-index",
+      "family": "case-studies-index",
+      "documentTitle": "Case Studies"
+    },
+    {
+      "path": "/case-studies/southern-bone-joint",
+      "template": "template.case-study",
+      "family": "case-study",
+      "slug": "southern-bone-joint",
+      "documentTitle": "Southern Bone & Joint"
+    },
+    {
+      "path": "/case-studies/the-orthopaedic-center",
+      "template": "template.case-study",
+      "family": "case-study",
+      "slug": "the-orthopaedic-center",
+      "documentTitle": "The Orthopaedic Center"
+    }
+  ]
+}

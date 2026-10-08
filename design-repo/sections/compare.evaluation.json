@@ -1,0 +1,171 @@
+{
+  "id": "compare.evaluation",
+  "kind": "section",
+  "category": "COMPARE",
+  "surface": "dark",
+  "claimsPolicy": "none",
+  "purpose": "Give buyers an evaluation checklist as a four-item accordion where exactly one item is open.",
+  "description": "'Healthcare AI Evaluation': a four-item accordion (Webflow tabs used as an accordion; click activates, exactly one item open, arrow/Home/End keyboard support).",
+  "implementedBy": "src/components/compare/EvSection.jsx",
+  "evidenceLevel": "measured",
+  "scope": {
+    "templates": [
+      "template.compare"
+    ],
+    "routes": [
+      "/compare"
+    ],
+    "routeCount": 1
+  },
+  "constraints": {
+    "onePerPage": true,
+    "maxPerPage": 1,
+    "allowedTemplates": [
+      "template.compare"
+    ],
+    "allowedRoutes": [
+      "/compare"
+    ]
+  },
+  "variants": {},
+  "fixedChrome": false,
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "label",
+      "headline",
+      "tabs"
+    ],
+    "properties": {
+      "label": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 5,
+        "observedMax": 4,
+        "examples": [
+          "Practices choose Transform9 for:"
+        ]
+      },
+      "headline": {
+        "type": "array",
+        "minItems": 1,
+        "maxItems": 2,
+        "maxWords": 5,
+        "observedMax": 3,
+        "items": {
+          "type": "object",
+          "required": [
+            "text"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "text": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "^\\S(?:[\\s\\S]*\\S)?$"
+            },
+            "tone": {
+              "enum": [
+                "default",
+                "accent-green",
+                "accent-blue"
+              ]
+            },
+            "breakAfter": {
+              "type": "boolean"
+            }
+          }
+        },
+        "examples": [
+          [
+            {
+              "text": "Healthcare",
+              "breakAfter": true
+            },
+            {
+              "text": "AI Evaluation"
+            }
+          ]
+        ]
+      },
+      "tabs": {
+        "type": "array",
+        "minItems": 4,
+        "maxItems": 4,
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "title",
+            "text"
+          ],
+          "properties": {
+            "title": {
+              "type": "string",
+              "minLength": 1,
+              "maxWords": 5,
+              "observedMax": 3,
+              "examples": [
+                "Healthcare-Specific Design"
+              ]
+            },
+            "text": {
+              "type": "string",
+              "minLength": 1,
+              "maxWords": 25,
+              "observedMax": 23,
+              "examples": [
+                "Healthcare conversations need predictable outcomes. Systems that rely on guessing introduce risk and inconsistency into patient access workflows."
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  "contentFields": [
+    "label",
+    "headline",
+    "tabs"
+  ],
+  "assetRoles": [],
+  "composes": [
+    "tab-link",
+    "claim-block",
+    "label-eyebrow",
+    "hairline"
+  ],
+  "motion": {
+    "allowedPatterns": [
+      "CMP-M4"
+    ],
+    "reducedMotionFallback": "parity-unchanged"
+  },
+  "responsive": [
+    {
+      "at": ">=992",
+      "target": "ev-left",
+      "property": "display",
+      "value": "rail spacer"
+    },
+    {
+      "at": "<=767",
+      "target": "ev-left",
+      "property": "display",
+      "value": "none"
+    },
+    {
+      "at": "<=479",
+      "target": "ev-top",
+      "property": "padding-top",
+      "value": "32vw (124.8px)"
+    }
+  ],
+  "measuredFrom": [
+    "specs/compare.md:243-267",
+    "src/components/compare/EvSection.jsx:11-78",
+    "ia/ia.json:235"
+  ],
+  "notes": "Webflow tabs used as an accordion: click activates, clicking the open tab keeps it open, arrow/Home/End keys work, hover does nothing."
+}

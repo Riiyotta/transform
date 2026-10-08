@@ -1,0 +1,30 @@
+{
+  "id": "logo-block",
+  "kind": "component",
+  "purpose": "Integration or certification block with white/black logo swap and hover fill",
+  "props": {
+    "logoWhite": "asset:partner.logo|certification.badge",
+    "logoBlack": "asset:partner.logo|certification.badge",
+    "href": "string?"
+  },
+  "additionalProps": false,
+  "composes": [
+    "hairline"
+  ],
+  "tokens": [
+    "semantic.surface.hover"
+  ],
+  "motionPatterns": [
+    "M14",
+    "CMP-M3"
+  ],
+  "measuredFrom": [
+    "src/components/Integrations.jsx:63",
+    "src/components/Security.jsx:9"
+  ],
+  "usedBySections": [
+    "fit.integrations",
+    "fit.security",
+    "compare.integrations-white"
+  ]
+}

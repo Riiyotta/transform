@@ -1,0 +1,340 @@
+{
+  "id": "proof.testimonials",
+  "kind": "section",
+  "category": "PROOF",
+  "surface": "dark",
+  "claimsPolicy": "must-not-fabricate",
+  "purpose": "Let named practice leaders vouch for the product with a quote, metrics and their practice logo in a cross-fading slider.",
+  "description": "Testimonial slider: photo block, quote, author with green title badge, practice logo, numbered prev/next arrows with cross-fade.",
+  "implementedBy": "src/components/Testimonials.jsx",
+  "evidenceLevel": "measured",
+  "scope": {
+    "templates": [
+      "template.home"
+    ],
+    "routes": [
+      "/"
+    ],
+    "routeCount": 1
+  },
+  "constraints": {
+    "onePerPage": true,
+    "maxPerPage": 1,
+    "allowedTemplates": [
+      "template.home"
+    ],
+    "allowedRoutes": [
+      "/"
+    ]
+  },
+  "variants": {},
+  "fixedChrome": false,
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "label",
+      "headline",
+      "slides"
+    ],
+    "properties": {
+      "label": {
+        "type": "array",
+        "minItems": 1,
+        "maxItems": 2,
+        "maxWords": 5,
+        "observedMax": 2,
+        "items": {
+          "type": "object",
+          "required": [
+            "text"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "text": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "^\\S(?:[\\s\\S]*\\S)?$"
+            },
+            "tone": {
+              "enum": [
+                "default",
+                "accent-green",
+                "accent-blue"
+              ]
+            },
+            "breakAfter": {
+              "type": "boolean"
+            }
+          }
+        },
+        "examples": [
+          [
+            {
+              "text": "Featured",
+              "breakAfter": true
+            },
+            {
+              "text": "Testimonials"
+            }
+          ]
+        ]
+      },
+      "headline": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 10,
+        "observedMax": 7,
+        "examples": [
+          "Don’t Just Take Our Word for It"
+        ]
+      },
+      "slides": {
+        "type": "array",
+        "minItems": 2,
+        "maxItems": 2,
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "photo",
+            "name",
+            "title",
+            "quote",
+            "points",
+            "logo"
+          ],
+          "properties": {
+            "photo": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "assetRole",
+                "assetRef",
+                "alt"
+              ],
+              "properties": {
+                "assetRole": {
+                  "allOf": [
+                    {
+                      "$ref": "#/definitions/assetRole"
+                    },
+                    {
+                      "const": "person.photo"
+                    }
+                  ]
+                },
+                "assetRef": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "alt": {
+                  "type": "string",
+                  "maxWords": 5,
+                  "observedMax": 5
+                }
+              },
+              "examples": [
+                {
+                  "assetRole": "person.photo",
+                  "assetRef": "/assets/687f914b39717f558eb082e8-tammy-jackson.webp",
+                  "alt": "A photo of Tammy Jackson"
+                }
+              ]
+            },
+            "name": {
+              "type": "string",
+              "minLength": 1,
+              "maxWords": 5,
+              "observedMax": 3,
+              "examples": [
+                "Tammy Jackson"
+              ]
+            },
+            "title": {
+              "type": "string",
+              "minLength": 1,
+              "maxWords": 10,
+              "observedMax": 6,
+              "examples": [
+                "CAO, The Orthopaedic Center"
+              ]
+            },
+            "quote": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "lead",
+                "highlight",
+                "closing"
+              ],
+              "properties": {
+                "lead": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxWords": 35,
+                  "observedMax": 35,
+                  "examples": [
+                    "“Implementing Transform9 has been one of our best decisions. Their team is incredibly knowledgeable, accommodating, and always looking for ways to further support our practice. We have experienced significant impacts in our operations and "
+                  ]
+                },
+                "highlight": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxWords": 10,
+                  "observedMax": 7,
+                  "examples": [
+                    "It's been a great relationship."
+                  ]
+                },
+                "closing": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxWords": 5,
+                  "observedMax": 1,
+                  "examples": [
+                    "”"
+                  ]
+                }
+              }
+            },
+            "points": {
+              "type": "array",
+              "minItems": 1,
+              "maxItems": 2,
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "value",
+                  "text"
+                ],
+                "properties": {
+                  "value": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxWords": 5,
+                    "observedMax": 1,
+                    "examples": [
+                      "80%"
+                    ]
+                  },
+                  "text": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxWords": 5,
+                    "observedMax": 4,
+                    "examples": [
+                      "decrease in"
+                    ]
+                  },
+                  "sub": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxWords": 10,
+                    "observedMax": 7,
+                    "examples": [
+                      "patient hold times"
+                    ]
+                  }
+                }
+              }
+            },
+            "logo": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "assetRole",
+                "assetRef",
+                "alt"
+              ],
+              "properties": {
+                "assetRole": {
+                  "allOf": [
+                    {
+                      "$ref": "#/definitions/assetRole"
+                    },
+                    {
+                      "const": "client.logo"
+                    }
+                  ]
+                },
+                "assetRef": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "alt": {
+                  "type": "string",
+                  "maxWords": 10,
+                  "observedMax": 6
+                }
+              },
+              "examples": [
+                {
+                  "assetRole": "client.logo",
+                  "assetRef": "/assets/687f56b54ba0d2c838ec91b8-the-orthopaedic-center.webp",
+                  "alt": "The Orthopaedic Center logo"
+                }
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  "contentFields": [
+    "label",
+    "headline",
+    "slides"
+  ],
+  "assetRoles": [
+    "client.logo",
+    "person.photo"
+  ],
+  "composes": [
+    "quote-slide",
+    "badge-tag",
+    "icon-button",
+    "meta-point"
+  ],
+  "motion": {
+    "allowedPatterns": [
+      "M13",
+      "M19"
+    ],
+    "reducedMotionFallback": "parity-unchanged"
+  },
+  "responsive": [
+    {
+      "at": ">=992",
+      "target": "testimonials-slider",
+      "property": "height",
+      "value": "41.667vw (600px at 1440)"
+    },
+    {
+      "at": "<=991",
+      "target": "test-arrow-wrap",
+      "property": "size",
+      "value": "60x60 (100x100 at >=992)"
+    },
+    {
+      "at": "<=767",
+      "target": "slide",
+      "property": "layout",
+      "value": "stacked; photo block 100% x 130vw; quote 22px"
+    },
+    {
+      "at": "<=479",
+      "target": "testim-logo",
+      "property": "position",
+      "value": "static, height 12vw"
+    }
+  ],
+  "measuredFrom": [
+    "CLONE_SPEC.md:226-240",
+    "src/components/Testimonials.jsx:78-187",
+    "src/data/testimonials.js:7",
+    "ia/ia.json:127"
+  ],
+  "notes": "Real people (Tammy Jackson, Scott Griffin) and real quotes: must-not-fabricate. Slide change swipe is not implemented (threshold never measured, QA_REPORT). The highlight span renders green; the first point text ends in U+2028 on live."
+}

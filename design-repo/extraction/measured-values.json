@@ -1,0 +1,5083 @@
+{
+  "description": "Evidence ledger. Every measuredFrom citation (path:line[-line]) used anywhere in this repo is listed here with the text expected inside the range. Paths are relative to the SOURCE project (the cloned site), which is NOT shipped with this package: extraction/verify_all.py verifies ranges and quoted text when the source tree is present (flag --source-root or sibling folder) and degrades to a warning when it is absent.",
+  "ledgerVersion": "1.0.0",
+  "sourceProject": {
+    "name": "Transform9 clone",
+    "liveSite": "https://www.transform9.com/",
+    "authority": "live site measurements in CLONE_SPEC.md and specs/*.md; QA/audit/motion files carry measured corrections that outrank the original brief",
+    "snapshot": {
+      "gitHead": "900a82b",
+      "uncommittedAtBuild": [
+        "src/components/cms/cmsHover.js",
+        "recon/motion-4/clone-1440.json",
+        "recon/motion-4/routes.log",
+        "recon/motion-4/MOTION-4.md (untracked)",
+        "recon/motion-4/smoke.log (untracked)"
+      ],
+      "iaSourceRevision": "6837462"
+    }
+  },
+  "wordBudgetMethod": "maxWords = next multiple of 5 at or above observedMax (minimum 5), where observedMax is the largest word count of that field across every real instance in the source (content/*.json, src/data/*.js, CLONE_SPEC/specs copy). Words are whitespace-separated after treating U+00A0, U+2028 as spaces and dropping U+200B/U+200D. observedMax is stored beside each budget; verify_all.py checks maxWords == roundup5(observedMax). The rounding rule is a design-repo policy, not a measurement. Structural list sizes (minItems/maxItems) are the exact observed counts.",
+  "iaReconciliation": {
+    "iaSourceRevision": "6837462",
+    "iaSections": 43,
+    "iaTemplates": 8,
+    "iaRoutes": 18,
+    "diffs": [],
+    "result": "identical"
+  },
+  "structuralNotes": [
+    {
+      "id": "PAGESTUB_NOT_FOUND_FALLBACK",
+      "summary": "src/pages/PageStub.jsx is MOUNTED, not dead: resolveRoute() returns it as the not-found fallback for every path that matches no route and for blog/case-study slugs whose content does not exist. It renders the full shell around an empty min-height 100vh <section data-page-stub>. It is not one of the 18 in-scope routes, has no template, no section contract and no measured live counterpart; its file comment (\"STUB - placeholder for a page family not built yet\") is stale. Documented here instead of normalised away.",
+      "measuredFrom": [
+        "src/routes.jsx:36",
+        "src/routes.jsx:42",
+        "src/pages/PageStub.jsx:1"
+      ]
+    },
+    {
+      "id": "SCOPE_REDUCTION_EXTERNAL_DOMAINS",
+      "summary": "Pages on external domains are deliberately excluded and stay outbound links: Careers (apply.workable.com), Login (portal.transform9.com), EMR marketplaces, LinkedIn, YouTube. They must not be recreated as routes or templates; the validator rejects /careers as an unknown route.",
+      "measuredFrom": [
+        "ROUTES.md:31",
+        "PROJECT_SCOPE.md:10"
+      ]
+    },
+    {
+      "id": "REAL_COMPANY_SOURCE",
+      "summary": "Assets and content are the real company's, reused for private/internal use only with no redistribution. Forms render all states and submit nowhere; tracking/analytics/reCAPTCHA are stripped (an exhaustive grep of index.html, src/ and public/ for the named vendors found only one explanatory comment in CallAlexModal.jsx and no script, pixel or endpoint).",
+      "measuredFrom": [
+        "PROJECT_SCOPE.md:15",
+        "PROJECT_SCOPE.md:13",
+        "PROJECT_SCOPE.md:12",
+        "src/components/CallAlexModal.jsx:10"
+      ]
+    },
+    {
+      "id": "REDUCED_MOTION_PARITY",
+      "summary": "The original honours prefers-reduced-motion only for the background video; marquees, IX2/IX3 interactions, load intros and Lenis keep running, and the clone reproduces this on purpose. Sections therefore declare reducedMotionFallback parity-unchanged (measured parity), video-still-image (page layers) or static-no-motion; a static settled state for reduced motion was NOT measured and is left as an open human decision.",
+      "measuredFrom": [
+        "CLONE_SPEC.md:461",
+        "ASSET_MANIFEST.md:220",
+        "src/styles/motion-interactions.css:4"
+      ]
+    },
+    {
+      "id": "LIVE_MODAL_ON_CMS_TEMPLATES",
+      "summary": "The live site renders the hidden Call Alex modal (div.modal-wrap) on blog index, blog post and case-study pages and their shared CTA exposes the Call Alex link; the clone sets modal:false for these routes (src/routes.jsx), so the CTA Call Alex link is inert there. The template node lists follow the built clone (and ia/ia.json); this is recorded, not normalised away.",
+      "measuredFrom": [
+        "src/routes.jsx:29",
+        "recon/pages/blog/outline-_index-1440.txt:13",
+        "specs/blog.md:24"
+      ]
+    },
+    {
+      "id": "PAGE_LOCAL_TOKENS_NOT_PROMOTED",
+      "summary": "Several measured tokens live only in page-level :root blocks (cms.css, page-compare.css, page-legal.css, page-book-a-demo.css) marked PROMOTE; they are not in src/index.css. The design-repo takes all of them as foundation tokens with citations to the file that defines them.",
+      "measuredFrom": [
+        "src/components/cms/cms.css:13",
+        "src/styles/page-book-a-demo.css:9"
+      ]
+    },
+    {
+      "id": "TEMPLATE_FAMILIES_10_VS_8",
+      "summary": "PROJECT_SCOPE/ROUTES.md count 10 template families for 18 routes; ia.json and this repo have 8 templates because the three legal pages share one template (identical class-key set measured at 1440). This is a deliberate merge, not drift.",
+      "measuredFrom": [
+        "ROUTES.md:5",
+        "specs/legal.md:21"
+      ]
+    },
+    {
+      "id": "SECTION_ORDER_SHELL_LOGICAL",
+      "summary": "Template node order for shell sections follows ia.json (page-layers first, call-alex-modal last), which is a logical layer order; src/App.jsx renders Navbar, Preloader, CallAlexModal, .page-wrap[PageLayers, page, FooterTop], FooterBottom. Page-level section order (inside .page-wrap) matches each page component exactly.",
+      "measuredFrom": [
+        "src/App.jsx:18-40"
+      ]
+    }
+  ],
+  "findings": [
+    {
+      "id": "IA_SOURCE_REVISION_STALE",
+      "claim": "ia.json meta.sourceRevision = 6837462",
+      "result": "does not hold as a statement about HEAD",
+      "detail": "HEAD is 900a82b (plus uncommitted changes to src/components/cms/cmsHover.js and recon/motion-4/*). git diff --stat 6837462 HEAD over src/, content/, ia/ and tailwind.config.js touches only the CMS hover polish (BackLink, CaseCard, FeaturedPost, PostCard, cms.css, cmsHover.js) and the ia/ files themselves. Routes (18), templates (8), sections (43) and their node lists are unchanged; the design-repo re-derived them from the current source and they equal ia.json exactly.",
+      "measuredFrom": [
+        "ia/ia.json:7"
+      ]
+    },
+    {
+      "id": "IA_IDS_NOT_LITERAL_ATTRIBUTES",
+      "claim": "ia.json $comment: every route and section id is a real match/data-section attribute in the codebase",
+      "result": "does not hold literally",
+      "detail": "IA ids are dotted logical names mapped to components through implementedBy (all 43 implementedBy files exist). The real attributes differ: six hero sections all carry data-section=\"hero\"; ids such as compare.evaluation map to data-section=\"healthcare-evaluation\" and content.post-header to \"post-header\"; shell sections carry data-component (preloader, navbar, mobile-menu...), not data-section. Only transition.black-to-white / transition.white-to-black match a data-section value literally.",
+      "measuredFrom": [
+        "ia/ia.json:2",
+        "src/components/TransitionPixels.jsx:71",
+        "src/components/Preloader.jsx:10"
+      ]
+    },
+    {
+      "id": "IA_MODAL_SCOPE_MATCHES_CLONE_NOT_LIVE",
+      "claim": "shell.call-alex-modal is present on home and /compare (2 routes)",
+      "result": "holds for the clone, not for the live site",
+      "detail": "Live renders the hidden modal on blog and case-study pages too (CTA Call Alex link present); the clone sets modal:false there. See structuralNotes LIVE_MODAL_ON_CMS_TEMPLATES and the graph rule CTA_CALL_LINK_NEEDS_MODAL (warn).",
+      "measuredFrom": [
+        "ia/ia.json:55",
+        "src/routes.jsx:29"
+      ]
+    },
+    {
+      "id": "IA_PRODUCTION_APPROVED_TRUE",
+      "claim": "ia.json meta.productionApproved: true",
+      "result": "applies to the IA only",
+      "detail": "The design-repo is a separate artifact: status design-review-pending, productionApproved false. ia.json status \"validated\" was re-confirmed by running ia/validate.mjs (all hard invariants reconcile).",
+      "measuredFrom": [
+        "ia/ia.json:6"
+      ]
+    },
+    {
+      "id": "ROUTES_MD_STATUS_STALE",
+      "claim": "ROUTES.md status column: every route except Home is \"to build\"",
+      "result": "does not hold",
+      "detail": "All 18 routes are built in src/routes.jsx and src/pages/*. QA_REPORT.md also still says \"Route in scope: / only\" and that the other internal routes 404 locally; both statements predate the full-site build.",
+      "measuredFrom": [
+        "ROUTES.md:8",
+        "QA_REPORT.md:3",
+        "src/routes.jsx:25"
+      ]
+    },
+    {
+      "id": "CLONE_SPEC_FOOTER_LOGO_BREAKPOINT",
+      "claim": "CLONE_SPEC section 17b: the big footer logo is hidden at <=767",
+      "result": "does not hold",
+      "detail": "src/index.css hides .footer-logo only inside the max-width 479px block, and specs/book-a-demo.md states the same (existing rule at <=479); the pixel audits found 0 footer geometry mismatches. The CSS value is used in shell.footer-bottom-reveal.",
+      "measuredFrom": [
+        "CLONE_SPEC.md:185",
+        "src/index.css:1906"
+      ]
+    },
+    {
+      "id": "IA_SHELL_ORDER_NOT_DOM_ORDER",
+      "claim": "ia.json $comment: Order = DOM order in each page component",
+      "result": "holds for page-level sections; shell nodes are a logical order",
+      "detail": "See structuralNotes SECTION_ORDER_SHELL_LOGICAL.",
+      "measuredFrom": [
+        "ia/ia.json:2"
+      ]
+    }
+  ],
+  "citations": {
+    "ASSET_MANIFEST.md:111": {
+      "path": "ASSET_MANIFEST.md",
+      "start": 111,
+      "end": 111,
+      "needle": "## 8. Product sections",
+      "usedBy": [
+        "assets/asset-roles.json"
+      ]
+    },
+    "ASSET_MANIFEST.md:115": {
+      "path": "ASSET_MANIFEST.md",
+      "start": 115,
+      "end": 115,
+      "needle": "| Outreach card icon 4",
+      "usedBy": [
+        "assets/asset-roles.json"
+      ]
+    },
+    "ASSET_MANIFEST.md:132": {
+      "path": "ASSET_MANIFEST.md",
+      "start": 132,
+      "end": 132,
+      "needle": "## 9. Specialties",
+      "usedBy": [
+        "assets/asset-roles.json"
+      ]
+    },
+    "ASSET_MANIFEST.md:150": {
+      "path": "ASSET_MANIFEST.md",
+      "start": 150,
+      "end": 150,
+      "needle": "## 10. Integrations",
+      "usedBy": [
+        "assets/asset-roles.json"
+      ]
+    },
+    "ASSET_MANIFEST.md:175": {
+      "path": "ASSET_MANIFEST.md",
+      "start": 175,
+      "end": 175,
+      "needle": "## 11. Security badges",
+      "usedBy": [
+        "assets/asset-roles.json"
+      ]
+    },
+    "ASSET_MANIFEST.md:186": {
+      "path": "ASSET_MANIFEST.md",
+      "start": 186,
+      "end": 186,
+      "needle": "## 12. Third-party / external images",
+      "usedBy": [
+        "assets/asset-roles.json"
+      ]
+    },
+    "ASSET_MANIFEST.md:193": {
+      "path": "ASSET_MANIFEST.md",
+      "start": 193,
+      "end": 193,
+      "needle": "## 13. Head / meta images (not in snapshot)",
+      "usedBy": [
+        "assets/asset-roles.json"
+      ]
+    },
+    "ASSET_MANIFEST.md:20": {
+      "path": "ASSET_MANIFEST.md",
+      "start": 20,
+      "end": 20,
+      "needle": "## 1. Font",
+      "usedBy": [
+        "assets/asset-roles.json"
+      ]
+    },
+    "ASSET_MANIFEST.md:220": {
+      "path": "ASSET_MANIFEST.md",
+      "start": 220,
+      "end": 220,
+      "needle": "- Reduced motion: faithful to original",
+      "usedBy": [
+        "extraction/measured-values.json"
+      ]
+    },
+    "ASSET_MANIFEST.md:26": {
+      "path": "ASSET_MANIFEST.md",
+      "start": 26,
+      "end": 26,
+      "needle": "## 2. Video and motion media",
+      "usedBy": [
+        "assets/asset-roles.json"
+      ]
+    },
+    "ASSET_MANIFEST.md:33": {
+      "path": "ASSET_MANIFEST.md",
+      "start": 33,
+      "end": 33,
+      "needle": "| Hero bg still fallback",
+      "usedBy": [
+        "assets/asset-roles.json"
+      ]
+    },
+    "ASSET_MANIFEST.md:37": {
+      "path": "ASSET_MANIFEST.md",
+      "start": 37,
+      "end": 37,
+      "needle": "## 3. CSS background images",
+      "usedBy": [
+        "assets/asset-roles.json"
+      ]
+    },
+    "ASSET_MANIFEST.md:43": {
+      "path": "ASSET_MANIFEST.md",
+      "start": 43,
+      "end": 43,
+      "needle": "| Stats block 01 hover image",
+      "usedBy": [
+        "assets/asset-roles.json"
+      ]
+    },
+    "ASSET_MANIFEST.md:47": {
+      "path": "ASSET_MANIFEST.md",
+      "start": 47,
+      "end": 47,
+      "needle": "| Noise texture tile",
+      "usedBy": [
+        "assets/asset-roles.json"
+      ]
+    },
+    "ASSET_MANIFEST.md:51": {
+      "path": "ASSET_MANIFEST.md",
+      "start": 51,
+      "end": 51,
+      "needle": "## 4. Brand, UI icons",
+      "usedBy": [
+        "assets/asset-roles.json",
+        "primitives/icon.json",
+        "primitives/wordmark.json"
+      ]
+    },
+    "ASSET_MANIFEST.md:55": {
+      "path": "ASSET_MANIFEST.md",
+      "start": 55,
+      "end": 55,
+      "needle": "| Nav logo (white) + popup logo |",
+      "usedBy": [
+        "assets/asset-roles.json"
+      ]
+    },
+    "ASSET_MANIFEST.md:57": {
+      "path": "ASSET_MANIFEST.md",
+      "start": 57,
+      "end": 57,
+      "needle": "| Nav logo (black, on-white state) |",
+      "usedBy": [
+        "assets/asset-roles.json"
+      ]
+    },
+    "ASSET_MANIFEST.md:58": {
+      "path": "ASSET_MANIFEST.md",
+      "start": 58,
+      "end": 58,
+      "needle": "| Footer big logo |",
+      "usedBy": [
+        "assets/asset-roles.json"
+      ]
+    },
+    "ASSET_MANIFEST.md:68": {
+      "path": "ASSET_MANIFEST.md",
+      "start": 68,
+      "end": 68,
+      "needle": "## 5. Client logo marquee",
+      "usedBy": [
+        "assets/asset-roles.json"
+      ]
+    },
+    "ASSET_MANIFEST.md:93": {
+      "path": "ASSET_MANIFEST.md",
+      "start": 93,
+      "end": 93,
+      "needle": "## 6. Testimonials",
+      "usedBy": [
+        "assets/asset-roles.json"
+      ]
+    },
+    "CLONE_SPEC.md:100": {
+      "path": "CLONE_SPEC.md",
+      "start": 100,
+      "end": 100,
+      "needle": "- `._16px-text.white-text` has `margin-left: 43px`",
+      "usedBy": [
+        "primitives/label-eyebrow.json"
+      ]
+    },
+    "CLONE_SPEC.md:129-145": {
+      "path": "CLONE_SPEC.md",
+      "start": 129,
+      "end": 145,
+      "needle": "## 2. Page shell and background layers",
+      "usedBy": [
+        "tokens/30-layout/layout.json"
+      ]
+    },
+    "CLONE_SPEC.md:129-149": {
+      "path": "CLONE_SPEC.md",
+      "start": 129,
+      "end": 149,
+      "needle": "## 2. Page shell and background layers",
+      "usedBy": [
+        "compatibility/graph.json",
+        "sections/shell.page-layers.json"
+      ]
+    },
+    "CLONE_SPEC.md:138": {
+      "path": "CLONE_SPEC.md",
+      "start": 138,
+      "end": 138,
+      "needle": "skips `play()` entirely when `prefers-reduced-motion: reduce`",
+      "usedBy": [
+        "tokens/00-foundation/motion-patterns.json"
+      ]
+    },
+    "CLONE_SPEC.md:147": {
+      "path": "CLONE_SPEC.md",
+      "start": 147,
+      "end": 147,
+      "needle": "**Footer reveal:**",
+      "usedBy": [
+        "tokens/00-foundation/motion-patterns.json",
+        "tokens/30-layout/layout.json"
+      ]
+    },
+    "CLONE_SPEC.md:151": {
+      "path": "CLONE_SPEC.md",
+      "start": 151,
+      "end": 151,
+      "needle": "## 3. Navbar",
+      "usedBy": [
+        "tokens/20-component/component.json"
+      ]
+    },
+    "CLONE_SPEC.md:151-173": {
+      "path": "CLONE_SPEC.md",
+      "start": 151,
+      "end": 173,
+      "needle": "## 3. Navbar (`.nav-menu.w-nav`",
+      "usedBy": [
+        "sections/shell.navbar.json"
+      ]
+    },
+    "CLONE_SPEC.md:153": {
+      "path": "CLONE_SPEC.md",
+      "start": 153,
+      "end": 153,
+      "needle": "- `position:fixed; inset:0 0 auto; z-index:3; min-height:60px`",
+      "usedBy": [
+        "tokens/30-layout/layout.json"
+      ]
+    },
+    "CLONE_SPEC.md:158": {
+      "path": "CLONE_SPEC.md",
+      "start": 158,
+      "end": 158,
+      "needle": "- CTA: bg `#a2fa8e`, text `#020801`",
+      "usedBy": [
+        "primitives/cta-button.json"
+      ]
+    },
+    "CLONE_SPEC.md:160": {
+      "path": "CLONE_SPEC.md",
+      "start": 160,
+      "end": 160,
+      "needle": "- **On-white state (scroll):**",
+      "usedBy": [
+        "tokens/10-semantic/semantic.json",
+        "tokens/themes/light.json"
+      ]
+    },
+    "CLONE_SPEC.md:161": {
+      "path": "CLONE_SPEC.md",
+      "start": 161,
+      "end": 161,
+      "needle": "It contains the icons `menu-burger.svg`",
+      "usedBy": [
+        "tokens/00-foundation/icon-size.json"
+      ]
+    },
+    "CLONE_SPEC.md:162": {
+      "path": "CLONE_SPEC.md",
+      "start": 162,
+      "end": 162,
+      "needle": "- **≤767:** `.nav-link-block.cta.mobil-top-cta`",
+      "usedBy": [
+        "primitives/cta-button.json"
+      ]
+    },
+    "CLONE_SPEC.md:163-171": {
+      "path": "CLONE_SPEC.md",
+      "start": 163,
+      "end": 171,
+      "needle": "- **Mobile menu open** (measured 768 and 390):",
+      "usedBy": [
+        "sections/shell.mobile-menu.json"
+      ]
+    },
+    "CLONE_SPEC.md:175-193": {
+      "path": "CLONE_SPEC.md",
+      "start": 175,
+      "end": 193,
+      "needle": "## 4. Hero (`section.hero.home`)",
+      "usedBy": [
+        "sections/hero.home.json"
+      ]
+    },
+    "CLONE_SPEC.md:183": {
+      "path": "CLONE_SPEC.md",
+      "start": 183,
+      "end": 183,
+      "needle": "- `min-height:100dvh`, padding-top 110px",
+      "usedBy": [
+        "tokens/30-layout/layout.json"
+      ]
+    },
+    "CLONE_SPEC.md:185": {
+      "path": "CLONE_SPEC.md",
+      "start": 185,
+      "end": 185,
+      "needle": "hidden at ≤767)",
+      "usedBy": [
+        "extraction/measured-values.json"
+      ]
+    },
+    "CLONE_SPEC.md:195-201": {
+      "path": "CLONE_SPEC.md",
+      "start": 195,
+      "end": 201,
+      "needle": "## 5. Client logo marquee (`section.client-logos`)",
+      "usedBy": [
+        "sections/proof.client-logos.json"
+      ]
+    },
+    "CLONE_SPEC.md:203": {
+      "path": "CLONE_SPEC.md",
+      "start": 203,
+      "end": 203,
+      "needle": "## 6. Client Spotlight",
+      "usedBy": [
+        "tokens/20-component/component.json"
+      ]
+    },
+    "CLONE_SPEC.md:203-209": {
+      "path": "CLONE_SPEC.md",
+      "start": 203,
+      "end": 209,
+      "needle": "## 6. Client Spotlight (`div.div-block-5`)",
+      "usedBy": [
+        "sections/proof.client-spotlight.json"
+      ]
+    },
+    "CLONE_SPEC.md:207": {
+      "path": "CLONE_SPEC.md",
+      "start": 207,
+      "end": 207,
+      "needle": "Play button `.yt-facade__play`: 84×84",
+      "usedBy": [
+        "tokens/00-foundation/icon-size.json"
+      ]
+    },
+    "CLONE_SPEC.md:211": {
+      "path": "CLONE_SPEC.md",
+      "start": 211,
+      "end": 211,
+      "needle": "## 7. Stats",
+      "usedBy": [
+        "tokens/20-component/component.json"
+      ]
+    },
+    "CLONE_SPEC.md:211-224": {
+      "path": "CLONE_SPEC.md",
+      "start": 211,
+      "end": 224,
+      "needle": "## 7. Stats (`section.stats`)",
+      "usedBy": [
+        "sections/proof.stats.json"
+      ]
+    },
+    "CLONE_SPEC.md:226-240": {
+      "path": "CLONE_SPEC.md",
+      "start": 226,
+      "end": 240,
+      "needle": "## 8. Testimonials (`section.testimonials#testimonials`)",
+      "usedBy": [
+        "sections/proof.testimonials.json"
+      ]
+    },
+    "CLONE_SPEC.md:233": {
+      "path": "CLONE_SPEC.md",
+      "start": 233,
+      "end": 233,
+      "needle": "`.testim-author-name` (bg white",
+      "usedBy": [
+        "primitives/badge-tag.json"
+      ]
+    },
+    "CLONE_SPEC.md:237": {
+      "path": "CLONE_SPEC.md",
+      "start": 237,
+      "end": 237,
+      "needle": "Each holds a white arrow",
+      "usedBy": [
+        "tokens/00-foundation/icon-size.json"
+      ]
+    },
+    "CLONE_SPEC.md:242-260": {
+      "path": "CLONE_SPEC.md",
+      "start": 242,
+      "end": 260,
+      "needle": "## 9. How It Works (`section.how-it-works`)",
+      "usedBy": [
+        "sections/product.how-it-works.json"
+      ]
+    },
+    "CLONE_SPEC.md:25-31": {
+      "path": "CLONE_SPEC.md",
+      "start": 25,
+      "end": 31,
+      "needle": "### 1.1 Breakpoints (Webflow standard)",
+      "usedBy": [
+        "tokens/00-foundation/breakpoint.json"
+      ]
+    },
+    "CLONE_SPEC.md:262": {
+      "path": "CLONE_SPEC.md",
+      "start": 262,
+      "end": 262,
+      "needle": "## 10. White section",
+      "usedBy": [
+        "tokens/10-semantic/semantic.json",
+        "tokens/themes/light.json"
+      ]
+    },
+    "CLONE_SPEC.md:264": {
+      "path": "CLONE_SPEC.md",
+      "start": 264,
+      "end": 264,
+      "needle": "### 10a. Pixel transition black to white",
+      "usedBy": [
+        "primitives/pixel-cell.json"
+      ]
+    },
+    "CLONE_SPEC.md:264-269": {
+      "path": "CLONE_SPEC.md",
+      "start": 264,
+      "end": 269,
+      "needle": "### 10a. Pixel transition black to white (`.transition-cont.black-to-white`)",
+      "usedBy": [
+        "sections/transition.black-to-white.json"
+      ]
+    },
+    "CLONE_SPEC.md:271": {
+      "path": "CLONE_SPEC.md",
+      "start": 271,
+      "end": 271,
+      "needle": "### 10b. Scheduling Agent #1",
+      "usedBy": [
+        "tokens/20-component/component.json"
+      ]
+    },
+    "CLONE_SPEC.md:271-289": {
+      "path": "CLONE_SPEC.md",
+      "start": 271,
+      "end": 289,
+      "needle": "### 10b. Scheduling Agent #1",
+      "usedBy": [
+        "sections/product.scheduling-agent.json"
+      ]
+    },
+    "CLONE_SPEC.md:291": {
+      "path": "CLONE_SPEC.md",
+      "start": 291,
+      "end": 291,
+      "needle": "### 10c. Tasking Agent #2",
+      "usedBy": [
+        "primitives/tab-link.json",
+        "tokens/20-component/component.json"
+      ]
+    },
+    "CLONE_SPEC.md:291-306": {
+      "path": "CLONE_SPEC.md",
+      "start": 291,
+      "end": 306,
+      "needle": "### 10c. Tasking Agent #2",
+      "usedBy": [
+        "sections/product.tasking-agent.json"
+      ]
+    },
+    "CLONE_SPEC.md:308": {
+      "path": "CLONE_SPEC.md",
+      "start": 308,
+      "end": 308,
+      "needle": "### 10d. Navigator Agent #3",
+      "usedBy": [
+        "primitives/tab-link.json",
+        "tokens/20-component/component.json"
+      ]
+    },
+    "CLONE_SPEC.md:308-316": {
+      "path": "CLONE_SPEC.md",
+      "start": 308,
+      "end": 316,
+      "needle": "### 10d. Navigator Agent #3",
+      "usedBy": [
+        "sections/product.navigator-agent.json"
+      ]
+    },
+    "CLONE_SPEC.md:318": {
+      "path": "CLONE_SPEC.md",
+      "start": 318,
+      "end": 318,
+      "needle": "### 10e. Outreach Agent #4",
+      "usedBy": [
+        "tokens/20-component/component.json"
+      ]
+    },
+    "CLONE_SPEC.md:318-337": {
+      "path": "CLONE_SPEC.md",
+      "start": 318,
+      "end": 337,
+      "needle": "### 10e. Outreach Agent #4",
+      "usedBy": [
+        "sections/product.outreach-agent.json"
+      ]
+    },
+    "CLONE_SPEC.md:339-340": {
+      "path": "CLONE_SPEC.md",
+      "start": 339,
+      "end": 340,
+      "needle": "## 11. Pixel transition white to black (`.transition-cont.white-to-black`)",
+      "usedBy": [
+        "compatibility/graph.json",
+        "sections/transition.white-to-black.json"
+      ]
+    },
+    "CLONE_SPEC.md:342": {
+      "path": "CLONE_SPEC.md",
+      "start": 342,
+      "end": 342,
+      "needle": "## 12. Specialties",
+      "usedBy": [
+        "primitives/media-cover.json",
+        "tokens/20-component/component.json"
+      ]
+    },
+    "CLONE_SPEC.md:342-352": {
+      "path": "CLONE_SPEC.md",
+      "start": 342,
+      "end": 352,
+      "needle": "## 12. Specialties (`section.specialty-section#specialties`, mt 5vw, top hairline)",
+      "usedBy": [
+        "sections/fit.specialties.json"
+      ]
+    },
+    "CLONE_SPEC.md:354-368": {
+      "path": "CLONE_SPEC.md",
+      "start": 354,
+      "end": 368,
+      "needle": "## 13. Integrations (`section.integration-section#integrations`)",
+      "usedBy": [
+        "sections/fit.integrations.json"
+      ]
+    },
+    "CLONE_SPEC.md:36": {
+      "path": "CLONE_SPEC.md",
+      "start": 36,
+      "end": 36,
+      "needle": "- **Full-bleed layout.",
+      "usedBy": [
+        "tokens/30-layout/layout.json"
+      ]
+    },
+    "CLONE_SPEC.md:370-381": {
+      "path": "CLONE_SPEC.md",
+      "start": 370,
+      "end": 381,
+      "needle": "## 14. Security (`section.secure-section#security`, top and bottom hairlines, mb 10vw)",
+      "usedBy": [
+        "sections/fit.security.json"
+      ]
+    },
+    "CLONE_SPEC.md:383-393": {
+      "path": "CLONE_SPEC.md",
+      "start": 383,
+      "end": 393,
+      "needle": "## 15. CTA (`section.cta-section`)",
+      "usedBy": [
+        "sections/conversion.cta.json"
+      ]
+    },
+    "CLONE_SPEC.md:39": {
+      "path": "CLONE_SPEC.md",
+      "start": 39,
+      "end": 39,
+      "needle": "- **Hairlines:**",
+      "usedBy": [
+        "primitives/hairline.json",
+        "tokens/10-semantic/semantic.json",
+        "tokens/30-layout/layout.json"
+      ]
+    },
+    "CLONE_SPEC.md:395": {
+      "path": "CLONE_SPEC.md",
+      "start": 395,
+      "end": 395,
+      "needle": "## 16. \"Call Alex\" popup",
+      "usedBy": [
+        "tokens/20-component/component.json"
+      ]
+    },
+    "CLONE_SPEC.md:395-420": {
+      "path": "CLONE_SPEC.md",
+      "start": 395,
+      "end": 420,
+      "needle": "## 16. \"Call Alex\" popup (`.modal-wrap`)",
+      "usedBy": [
+        "sections/shell.call-alex-modal.json"
+      ]
+    },
+    "CLONE_SPEC.md:396": {
+      "path": "CLONE_SPEC.md",
+      "start": 396,
+      "end": 396,
+      "needle": "- `position:fixed; inset:0; z-index:4; display:none`",
+      "usedBy": [
+        "tokens/30-layout/layout.json"
+      ]
+    },
+    "CLONE_SPEC.md:40": {
+      "path": "CLONE_SPEC.md",
+      "start": 40,
+      "end": 40,
+      "needle": "- **Radii:** 0 everywhere",
+      "usedBy": [
+        "tokens/00-foundation/radius.json"
+      ]
+    },
+    "CLONE_SPEC.md:41": {
+      "path": "CLONE_SPEC.md",
+      "start": 41,
+      "end": 41,
+      "needle": "- **Shadows:** there are no drop shadows",
+      "usedBy": [
+        "tokens/00-foundation/elevation.json"
+      ]
+    },
+    "CLONE_SPEC.md:411": {
+      "path": "CLONE_SPEC.md",
+      "start": 411,
+      "end": 411,
+      "needle": "submit `input._30px-text.submit-form` \"Call Me Now\"",
+      "usedBy": [
+        "primitives/submit-control.json"
+      ]
+    },
+    "CLONE_SPEC.md:418": {
+      "path": "CLONE_SPEC.md",
+      "start": 418,
+      "end": 418,
+      "needle": "Close button `.close-popup-wrap`",
+      "usedBy": [
+        "tokens/00-foundation/icon-size.json"
+      ]
+    },
+    "CLONE_SPEC.md:42": {
+      "path": "CLONE_SPEC.md",
+      "start": 42,
+      "end": 42,
+      "needle": "- **Backdrop blur 80px:**",
+      "usedBy": [
+        "tokens/00-foundation/elevation.json"
+      ]
+    },
+    "CLONE_SPEC.md:424-444": {
+      "path": "CLONE_SPEC.md",
+      "start": 424,
+      "end": 444,
+      "needle": "### 17a. `section.footer.section`",
+      "usedBy": [
+        "sections/shell.footer.json"
+      ]
+    },
+    "CLONE_SPEC.md:43": {
+      "path": "CLONE_SPEC.md",
+      "start": 43,
+      "end": 43,
+      "needle": "- **Noise texture:**",
+      "usedBy": [
+        "primitives/noise-overlay.json"
+      ]
+    },
+    "CLONE_SPEC.md:437": {
+      "path": "CLONE_SPEC.md",
+      "start": 437,
+      "end": 437,
+      "needle": "- `.footer-bottom-right` (mr 74",
+      "usedBy": [
+        "tokens/20-component/component.json"
+      ]
+    },
+    "CLONE_SPEC.md:439": {
+      "path": "CLONE_SPEC.md",
+      "start": 439,
+      "end": 439,
+      "needle": "Email input 270×40",
+      "usedBy": [
+        "tokens/00-foundation/radius.json"
+      ]
+    },
+    "CLONE_SPEC.md:440": {
+      "path": "CLONE_SPEC.md",
+      "start": 440,
+      "end": 440,
+      "needle": "\"Submit\" button: bg `#ff7a59`",
+      "usedBy": [
+        "tokens/00-foundation/radius.json"
+      ]
+    },
+    "CLONE_SPEC.md:442": {
+      "path": "CLONE_SPEC.md",
+      "start": 442,
+      "end": 442,
+      "needle": "The inner HubSpot font is Helvetica Neue",
+      "usedBy": [
+        "tokens/00-foundation/typography.json"
+      ]
+    },
+    "CLONE_SPEC.md:444": {
+      "path": "CLONE_SPEC.md",
+      "start": 444,
+      "end": 444,
+      "needle": "### 17b. `.footer-bottom-wrap`",
+      "usedBy": [
+        "sections/shell.footer-bottom-reveal.json"
+      ]
+    },
+    "CLONE_SPEC.md:45-69": {
+      "path": "CLONE_SPEC.md",
+      "start": 45,
+      "end": 69,
+      "needle": "### 1.3 Token table: colors",
+      "usedBy": [
+        "tokens/10-semantic/semantic.json",
+        "tokens/themes/dark.json"
+      ]
+    },
+    "CLONE_SPEC.md:452-497": {
+      "path": "CLONE_SPEC.md",
+      "start": 452,
+      "end": 497,
+      "needle": "## 18. Motion inventory",
+      "usedBy": [
+        "tokens/00-foundation/motion.json"
+      ]
+    },
+    "CLONE_SPEC.md:456": {
+      "path": "CLONE_SPEC.md",
+      "start": 456,
+      "end": 456,
+      "needle": "IX3 ease index map",
+      "usedBy": [
+        "tokens/00-foundation/motion.json"
+      ]
+    },
+    "CLONE_SPEC.md:459": {
+      "path": "CLONE_SPEC.md",
+      "start": 459,
+      "end": 459,
+      "needle": "Empty IX2 easing was measured as linear",
+      "usedBy": [
+        "tokens/00-foundation/motion.json"
+      ]
+    },
+    "CLONE_SPEC.md:461": {
+      "path": "CLONE_SPEC.md",
+      "start": 461,
+      "end": 461,
+      "needle": "**Reduced motion:** the original honours",
+      "usedBy": [
+        "tokens/00-foundation/motion-patterns.json"
+      ]
+    },
+    "CLONE_SPEC.md:465": {
+      "path": "CLONE_SPEC.md",
+      "start": 465,
+      "end": 465,
+      "needle": "| M1 |",
+      "usedBy": [
+        "tokens/00-foundation/motion-patterns.json",
+        "tokens/00-foundation/motion.json"
+      ]
+    },
+    "CLONE_SPEC.md:466": {
+      "path": "CLONE_SPEC.md",
+      "start": 466,
+      "end": 466,
+      "needle": "| M2a |",
+      "usedBy": [
+        "tokens/00-foundation/motion-patterns.json",
+        "tokens/00-foundation/motion.json"
+      ]
+    },
+    "CLONE_SPEC.md:467": {
+      "path": "CLONE_SPEC.md",
+      "start": 467,
+      "end": 467,
+      "needle": "| M2b |",
+      "usedBy": [
+        "tokens/00-foundation/motion-patterns.json"
+      ]
+    },
+    "CLONE_SPEC.md:468": {
+      "path": "CLONE_SPEC.md",
+      "start": 468,
+      "end": 468,
+      "needle": "| M3 |",
+      "usedBy": [
+        "tokens/00-foundation/motion-patterns.json"
+      ]
+    },
+    "CLONE_SPEC.md:469": {
+      "path": "CLONE_SPEC.md",
+      "start": 469,
+      "end": 469,
+      "needle": "| M4 |",
+      "usedBy": [
+        "tokens/00-foundation/motion-patterns.json"
+      ]
+    },
+    "CLONE_SPEC.md:470": {
+      "path": "CLONE_SPEC.md",
+      "start": 470,
+      "end": 470,
+      "needle": "| M5 |",
+      "usedBy": [
+        "tokens/00-foundation/motion-patterns.json"
+      ]
+    },
+    "CLONE_SPEC.md:474": {
+      "path": "CLONE_SPEC.md",
+      "start": 474,
+      "end": 474,
+      "needle": "| M6 |",
+      "usedBy": [
+        "tokens/00-foundation/motion-patterns.json"
+      ]
+    },
+    "CLONE_SPEC.md:475": {
+      "path": "CLONE_SPEC.md",
+      "start": 475,
+      "end": 475,
+      "needle": "| M7 |",
+      "usedBy": [
+        "tokens/00-foundation/motion-patterns.json"
+      ]
+    },
+    "CLONE_SPEC.md:476": {
+      "path": "CLONE_SPEC.md",
+      "start": 476,
+      "end": 476,
+      "needle": "| M8a |",
+      "usedBy": [
+        "tokens/00-foundation/motion-patterns.json"
+      ]
+    },
+    "CLONE_SPEC.md:477": {
+      "path": "CLONE_SPEC.md",
+      "start": 477,
+      "end": 477,
+      "needle": "| M8b |",
+      "usedBy": [
+        "tokens/00-foundation/motion-patterns.json"
+      ]
+    },
+    "CLONE_SPEC.md:478": {
+      "path": "CLONE_SPEC.md",
+      "start": 478,
+      "end": 478,
+      "needle": "| M8c |",
+      "usedBy": [
+        "tokens/00-foundation/motion-patterns.json"
+      ]
+    },
+    "CLONE_SPEC.md:479": {
+      "path": "CLONE_SPEC.md",
+      "start": 479,
+      "end": 479,
+      "needle": "| M9 |",
+      "usedBy": [
+        "tokens/00-foundation/motion-patterns.json"
+      ]
+    },
+    "CLONE_SPEC.md:480": {
+      "path": "CLONE_SPEC.md",
+      "start": 480,
+      "end": 480,
+      "needle": "| M10 |",
+      "usedBy": [
+        "tokens/00-foundation/motion-patterns.json"
+      ]
+    },
+    "CLONE_SPEC.md:481": {
+      "path": "CLONE_SPEC.md",
+      "start": 481,
+      "end": 481,
+      "needle": "| M10b |",
+      "usedBy": [
+        "tokens/00-foundation/motion-patterns.json"
+      ]
+    },
+    "CLONE_SPEC.md:482": {
+      "path": "CLONE_SPEC.md",
+      "start": 482,
+      "end": 482,
+      "needle": "| M11 |",
+      "usedBy": [
+        "tokens/00-foundation/motion-patterns.json"
+      ]
+    },
+    "CLONE_SPEC.md:483": {
+      "path": "CLONE_SPEC.md",
+      "start": 483,
+      "end": 483,
+      "needle": "| M11b |",
+      "usedBy": [
+        "tokens/00-foundation/motion-patterns.json"
+      ]
+    },
+    "CLONE_SPEC.md:484": {
+      "path": "CLONE_SPEC.md",
+      "start": 484,
+      "end": 484,
+      "needle": "| M12 |",
+      "usedBy": [
+        "primitives/underline-link.json",
+        "tokens/00-foundation/motion-patterns.json"
+      ]
+    },
+    "CLONE_SPEC.md:486": {
+      "path": "CLONE_SPEC.md",
+      "start": 486,
+      "end": 486,
+      "needle": "| M12b |",
+      "usedBy": [
+        "primitives/text-link.json",
+        "tokens/00-foundation/motion-patterns.json"
+      ]
+    },
+    "CLONE_SPEC.md:488": {
+      "path": "CLONE_SPEC.md",
+      "start": 488,
+      "end": 488,
+      "needle": "| M13 |",
+      "usedBy": [
+        "primitives/icon-button.json",
+        "tokens/00-foundation/motion-patterns.json"
+      ]
+    },
+    "CLONE_SPEC.md:489": {
+      "path": "CLONE_SPEC.md",
+      "start": 489,
+      "end": 489,
+      "needle": "| M14 |",
+      "usedBy": [
+        "tokens/00-foundation/motion-patterns.json",
+        "tokens/10-semantic/semantic.json"
+      ]
+    },
+    "CLONE_SPEC.md:490": {
+      "path": "CLONE_SPEC.md",
+      "start": 490,
+      "end": 490,
+      "needle": "| M15 |",
+      "usedBy": [
+        "tokens/00-foundation/motion-patterns.json"
+      ]
+    },
+    "CLONE_SPEC.md:491": {
+      "path": "CLONE_SPEC.md",
+      "start": 491,
+      "end": 491,
+      "needle": "| M16 |",
+      "usedBy": [
+        "primitives/icon-button.json",
+        "tokens/00-foundation/motion-patterns.json"
+      ]
+    },
+    "CLONE_SPEC.md:492": {
+      "path": "CLONE_SPEC.md",
+      "start": 492,
+      "end": 492,
+      "needle": "| M17 |",
+      "usedBy": [
+        "primitives/text-link.json",
+        "tokens/00-foundation/motion-patterns.json"
+      ]
+    },
+    "CLONE_SPEC.md:493": {
+      "path": "CLONE_SPEC.md",
+      "start": 493,
+      "end": 493,
+      "needle": "| M18 |",
+      "usedBy": [
+        "tokens/00-foundation/motion-patterns.json"
+      ]
+    },
+    "CLONE_SPEC.md:494": {
+      "path": "CLONE_SPEC.md",
+      "start": 494,
+      "end": 494,
+      "needle": "| M19 |",
+      "usedBy": [
+        "tokens/00-foundation/motion-patterns.json"
+      ]
+    },
+    "CLONE_SPEC.md:495": {
+      "path": "CLONE_SPEC.md",
+      "start": 495,
+      "end": 495,
+      "needle": "| M20 |",
+      "usedBy": [
+        "tokens/00-foundation/motion-patterns.json"
+      ]
+    },
+    "CLONE_SPEC.md:496": {
+      "path": "CLONE_SPEC.md",
+      "start": 496,
+      "end": 496,
+      "needle": "| M21 |",
+      "usedBy": [
+        "tokens/00-foundation/motion-patterns.json"
+      ]
+    },
+    "CLONE_SPEC.md:497": {
+      "path": "CLONE_SPEC.md",
+      "start": 497,
+      "end": 497,
+      "needle": "| M22 |",
+      "usedBy": [
+        "tokens/00-foundation/motion-patterns.json"
+      ]
+    },
+    "CLONE_SPEC.md:499": {
+      "path": "CLONE_SPEC.md",
+      "start": 499,
+      "end": 499,
+      "needle": "There are **no load-in or entrance animations**",
+      "usedBy": [
+        "tokens/00-foundation/motion-patterns.json"
+      ]
+    },
+    "CLONE_SPEC.md:63": {
+      "path": "CLONE_SPEC.md",
+      "start": 63,
+      "end": 63,
+      "needle": "| modal overlay |",
+      "usedBy": [
+        "tokens/00-foundation/gradient.json"
+      ]
+    },
+    "CLONE_SPEC.md:66": {
+      "path": "CLONE_SPEC.md",
+      "start": 66,
+      "end": 66,
+      "needle": "| hero input |",
+      "usedBy": [
+        "primitives/text-field.json",
+        "tokens/20-component/component.json"
+      ]
+    },
+    "CLONE_SPEC.md:67": {
+      "path": "CLONE_SPEC.md",
+      "start": 67,
+      "end": 67,
+      "needle": "| popup input |",
+      "usedBy": [
+        "primitives/text-field.json",
+        "tokens/20-component/component.json"
+      ]
+    },
+    "CLONE_SPEC.md:69": {
+      "path": "CLONE_SPEC.md",
+      "start": 69,
+      "end": 69,
+      "needle": "| muted text |",
+      "usedBy": [
+        "tokens/00-foundation/opacity.json"
+      ]
+    },
+    "CLONE_SPEC.md:71-92": {
+      "path": "CLONE_SPEC.md",
+      "start": 71,
+      "end": 92,
+      "needle": "### 1.4 Token table: typography",
+      "usedBy": [
+        "tokens/00-foundation/typography.json"
+      ]
+    },
+    "CLONE_SPEC.md:72": {
+      "path": "CLONE_SPEC.md",
+      "start": 72,
+      "end": 72,
+      "needle": "**Family:** `\"Polysans Neutral\"",
+      "usedBy": [
+        "tokens/00-foundation/typography.json"
+      ]
+    },
+    "CLONE_SPEC.md:97-100": {
+      "path": "CLONE_SPEC.md",
+      "start": 97,
+      "end": 100,
+      "needle": "### 1.5 Spacing tokens",
+      "usedBy": [
+        "tokens/00-foundation/spacing.json"
+      ]
+    },
+    "DEVIATIONS.md:12": {
+      "path": "DEVIATIONS.md",
+      "start": 12,
+      "end": 12,
+      "needle": "| D8 |",
+      "usedBy": [
+        "sections/shell.call-alex-modal.json"
+      ]
+    },
+    "DEVIATIONS.md:13": {
+      "path": "DEVIATIONS.md",
+      "start": 13,
+      "end": 13,
+      "needle": "| D9 |",
+      "usedBy": [
+        "sections/hero.book-a-demo.json"
+      ]
+    },
+    "DEVIATIONS.md:16": {
+      "path": "DEVIATIONS.md",
+      "start": 16,
+      "end": 16,
+      "needle": "| D12 |",
+      "usedBy": [
+        "sections/hero.book-a-demo.json"
+      ]
+    },
+    "DEVIATIONS.md:17": {
+      "path": "DEVIATIONS.md",
+      "start": 17,
+      "end": 17,
+      "needle": "| D13 |",
+      "usedBy": [
+        "assets/asset-roles.json",
+        "sections/content.post-body.json"
+      ]
+    },
+    "DEVIATIONS.md:18": {
+      "path": "DEVIATIONS.md",
+      "start": 18,
+      "end": 18,
+      "needle": "| D14 |",
+      "usedBy": [
+        "sections/content.blog-list.json"
+      ]
+    },
+    "DEVIATIONS.md:19": {
+      "path": "DEVIATIONS.md",
+      "start": 19,
+      "end": 19,
+      "needle": "| D15 |",
+      "usedBy": [
+        "sections/content.post-body.json"
+      ]
+    },
+    "DEVIATIONS.md:6": {
+      "path": "DEVIATIONS.md",
+      "start": 6,
+      "end": 6,
+      "needle": "| D2 |",
+      "usedBy": [
+        "sections/shell.call-alex-modal.json"
+      ]
+    },
+    "DEVIATIONS.md:7": {
+      "path": "DEVIATIONS.md",
+      "start": 7,
+      "end": 7,
+      "needle": "| D3 |",
+      "usedBy": [
+        "sections/shell.call-alex-modal.json"
+      ]
+    },
+    "DEVIATIONS.md:8": {
+      "path": "DEVIATIONS.md",
+      "start": 8,
+      "end": 8,
+      "needle": "| D4 |",
+      "usedBy": [
+        "assets/asset-roles.json",
+        "sections/proof.client-spotlight.json"
+      ]
+    },
+    "DEVIATIONS.md:9": {
+      "path": "DEVIATIONS.md",
+      "start": 9,
+      "end": 9,
+      "needle": "| D5 |",
+      "usedBy": [
+        "assets/asset-roles.json",
+        "sections/proof.client-spotlight.json"
+      ]
+    },
+    "PROJECT_SCOPE.md:10": {
+      "path": "PROJECT_SCOPE.md",
+      "start": 10,
+      "end": 10,
+      "needle": "| Pages |",
+      "usedBy": [
+        "extraction/measured-values.json"
+      ]
+    },
+    "PROJECT_SCOPE.md:12": {
+      "path": "PROJECT_SCOPE.md",
+      "start": 12,
+      "end": 12,
+      "needle": "| Tracking |",
+      "usedBy": [
+        "assets/asset-roles.json"
+      ]
+    },
+    "PROJECT_SCOPE.md:13": {
+      "path": "PROJECT_SCOPE.md",
+      "start": 13,
+      "end": 13,
+      "needle": "| Forms |",
+      "usedBy": [
+        "assets/asset-roles.json"
+      ]
+    },
+    "PROJECT_SCOPE.md:15": {
+      "path": "PROJECT_SCOPE.md",
+      "start": 15,
+      "end": 15,
+      "needle": "| Assets/content |",
+      "usedBy": [
+        "assets/asset-roles.json"
+      ]
+    },
+    "QA_REPORT.md:3": {
+      "path": "QA_REPORT.md",
+      "start": 3,
+      "end": 3,
+      "needle": "Route in scope: `/` only",
+      "usedBy": [
+        "extraction/measured-values.json"
+      ]
+    },
+    "ROUTES.md:31": {
+      "path": "ROUTES.md",
+      "start": 31,
+      "end": 31,
+      "needle": "## Excluded",
+      "usedBy": [
+        "extraction/measured-values.json"
+      ]
+    },
+    "ROUTES.md:5": {
+      "path": "ROUTES.md",
+      "start": 5,
+      "end": 5,
+      "needle": "## In scope",
+      "usedBy": [
+        "templates/routes.json"
+      ]
+    },
+    "ROUTES.md:8": {
+      "path": "ROUTES.md",
+      "start": 8,
+      "end": 8,
+      "needle": "| Home | `/` |",
+      "usedBy": [
+        "extraction/measured-values.json"
+      ]
+    },
+    "ia/ia.json:103": {
+      "path": "ia/ia.json",
+      "start": 103,
+      "end": 103,
+      "needle": "\"hero.case-studies-index\": {",
+      "usedBy": [
+        "sections/hero.case-studies-index.json"
+      ]
+    },
+    "ia/ia.json:109": {
+      "path": "ia/ia.json",
+      "start": 109,
+      "end": 109,
+      "needle": "\"proof.client-logos\": {",
+      "usedBy": [
+        "sections/proof.client-logos.json"
+      ]
+    },
+    "ia/ia.json:115": {
+      "path": "ia/ia.json",
+      "start": 115,
+      "end": 115,
+      "needle": "\"proof.client-spotlight\": {",
+      "usedBy": [
+        "sections/proof.client-spotlight.json"
+      ]
+    },
+    "ia/ia.json:121": {
+      "path": "ia/ia.json",
+      "start": 121,
+      "end": 121,
+      "needle": "\"proof.stats\": {",
+      "usedBy": [
+        "sections/proof.stats.json"
+      ]
+    },
+    "ia/ia.json:127": {
+      "path": "ia/ia.json",
+      "start": 127,
+      "end": 127,
+      "needle": "\"proof.testimonials\": {",
+      "usedBy": [
+        "sections/proof.testimonials.json"
+      ]
+    },
+    "ia/ia.json:133": {
+      "path": "ia/ia.json",
+      "start": 133,
+      "end": 133,
+      "needle": "\"product.how-it-works\": {",
+      "usedBy": [
+        "sections/product.how-it-works.json"
+      ]
+    },
+    "ia/ia.json:139": {
+      "path": "ia/ia.json",
+      "start": 139,
+      "end": 139,
+      "needle": "\"product.scheduling-agent\": {",
+      "usedBy": [
+        "sections/product.scheduling-agent.json"
+      ]
+    },
+    "ia/ia.json:145": {
+      "path": "ia/ia.json",
+      "start": 145,
+      "end": 145,
+      "needle": "\"product.tasking-agent\": {",
+      "usedBy": [
+        "sections/product.tasking-agent.json"
+      ]
+    },
+    "ia/ia.json:151": {
+      "path": "ia/ia.json",
+      "start": 151,
+      "end": 151,
+      "needle": "\"product.navigator-agent\": {",
+      "usedBy": [
+        "sections/product.navigator-agent.json"
+      ]
+    },
+    "ia/ia.json:157": {
+      "path": "ia/ia.json",
+      "start": 157,
+      "end": 157,
+      "needle": "\"product.outreach-agent\": {",
+      "usedBy": [
+        "sections/product.outreach-agent.json"
+      ]
+    },
+    "ia/ia.json:163": {
+      "path": "ia/ia.json",
+      "start": 163,
+      "end": 163,
+      "needle": "\"transition.black-to-white\": {",
+      "usedBy": [
+        "sections/transition.black-to-white.json"
+      ]
+    },
+    "ia/ia.json:169": {
+      "path": "ia/ia.json",
+      "start": 169,
+      "end": 169,
+      "needle": "\"transition.white-to-black\": {",
+      "usedBy": [
+        "sections/transition.white-to-black.json"
+      ]
+    },
+    "ia/ia.json:175": {
+      "path": "ia/ia.json",
+      "start": 175,
+      "end": 175,
+      "needle": "\"fit.specialties\": {",
+      "usedBy": [
+        "sections/fit.specialties.json"
+      ]
+    },
+    "ia/ia.json:181": {
+      "path": "ia/ia.json",
+      "start": 181,
+      "end": 181,
+      "needle": "\"fit.integrations\": {",
+      "usedBy": [
+        "sections/fit.integrations.json"
+      ]
+    },
+    "ia/ia.json:187": {
+      "path": "ia/ia.json",
+      "start": 187,
+      "end": 187,
+      "needle": "\"fit.security\": {",
+      "usedBy": [
+        "sections/fit.security.json"
+      ]
+    },
+    "ia/ia.json:193": {
+      "path": "ia/ia.json",
+      "start": 193,
+      "end": 193,
+      "needle": "\"conversion.cta\": {",
+      "usedBy": [
+        "sections/conversion.cta.json"
+      ]
+    },
+    "ia/ia.json:199": {
+      "path": "ia/ia.json",
+      "start": 199,
+      "end": 199,
+      "needle": "\"compare.generic\": {",
+      "usedBy": [
+        "sections/compare.generic.json"
+      ]
+    },
+    "ia/ia.json:2": {
+      "path": "ia/ia.json",
+      "start": 2,
+      "end": 2,
+      "needle": "\"$comment\"",
+      "usedBy": [
+        "extraction/measured-values.json"
+      ]
+    },
+    "ia/ia.json:205": {
+      "path": "ia/ia.json",
+      "start": 205,
+      "end": 205,
+      "needle": "\"compare.comparison-table\": {",
+      "usedBy": [
+        "sections/compare.comparison-table.json"
+      ]
+    },
+    "ia/ia.json:211": {
+      "path": "ia/ia.json",
+      "start": 211,
+      "end": 211,
+      "needle": "\"compare.access\": {",
+      "usedBy": [
+        "sections/compare.access.json"
+      ]
+    },
+    "ia/ia.json:217": {
+      "path": "ia/ia.json",
+      "start": 217,
+      "end": 217,
+      "needle": "\"compare.specialty-white\": {",
+      "usedBy": [
+        "sections/compare.specialty-white.json"
+      ]
+    },
+    "ia/ia.json:223": {
+      "path": "ia/ia.json",
+      "start": 223,
+      "end": 223,
+      "needle": "\"compare.integrations-white\": {",
+      "usedBy": [
+        "sections/compare.integrations-white.json"
+      ]
+    },
+    "ia/ia.json:229": {
+      "path": "ia/ia.json",
+      "start": 229,
+      "end": 229,
+      "needle": "\"compare.privacy\": {",
+      "usedBy": [
+        "sections/compare.privacy.json"
+      ]
+    },
+    "ia/ia.json:235": {
+      "path": "ia/ia.json",
+      "start": 235,
+      "end": 235,
+      "needle": "\"compare.evaluation\": {",
+      "usedBy": [
+        "sections/compare.evaluation.json"
+      ]
+    },
+    "ia/ia.json:241": {
+      "path": "ia/ia.json",
+      "start": 241,
+      "end": 241,
+      "needle": "\"legal.content\": {",
+      "usedBy": [
+        "sections/legal.content.json"
+      ]
+    },
+    "ia/ia.json:247": {
+      "path": "ia/ia.json",
+      "start": 247,
+      "end": 247,
+      "needle": "\"content.blog-list\": {",
+      "usedBy": [
+        "sections/content.blog-list.json"
+      ]
+    },
+    "ia/ia.json:25": {
+      "path": "ia/ia.json",
+      "start": 25,
+      "end": 25,
+      "needle": "\"shell.page-layers\": {",
+      "usedBy": [
+        "sections/shell.page-layers.json"
+      ]
+    },
+    "ia/ia.json:253": {
+      "path": "ia/ia.json",
+      "start": 253,
+      "end": 253,
+      "needle": "\"content.case-list\": {",
+      "usedBy": [
+        "sections/content.case-list.json"
+      ]
+    },
+    "ia/ia.json:259": {
+      "path": "ia/ia.json",
+      "start": 259,
+      "end": 259,
+      "needle": "\"content.post-header\": {",
+      "usedBy": [
+        "sections/content.post-header.json"
+      ]
+    },
+    "ia/ia.json:265": {
+      "path": "ia/ia.json",
+      "start": 265,
+      "end": 265,
+      "needle": "\"content.case-header\": {",
+      "usedBy": [
+        "sections/content.case-header.json"
+      ]
+    },
+    "ia/ia.json:271": {
+      "path": "ia/ia.json",
+      "start": 271,
+      "end": 271,
+      "needle": "\"content.post-body\": {",
+      "usedBy": [
+        "sections/content.post-body.json"
+      ]
+    },
+    "ia/ia.json:277": {
+      "path": "ia/ia.json",
+      "start": 277,
+      "end": 277,
+      "needle": "\"content.read-next\": {",
+      "usedBy": [
+        "sections/content.read-next.json"
+      ]
+    },
+    "ia/ia.json:284": {
+      "path": "ia/ia.json",
+      "start": 284,
+      "end": 284,
+      "needle": "\"templates\": [",
+      "usedBy": [
+        "templates/templates.json"
+      ]
+    },
+    "ia/ia.json:31": {
+      "path": "ia/ia.json",
+      "start": 31,
+      "end": 31,
+      "needle": "\"shell.navbar\": {",
+      "usedBy": [
+        "sections/shell.navbar.json"
+      ]
+    },
+    "ia/ia.json:37": {
+      "path": "ia/ia.json",
+      "start": 37,
+      "end": 37,
+      "needle": "\"shell.mobile-menu\": {",
+      "usedBy": [
+        "sections/shell.mobile-menu.json"
+      ]
+    },
+    "ia/ia.json:43": {
+      "path": "ia/ia.json",
+      "start": 43,
+      "end": 43,
+      "needle": "\"shell.preloader\": {",
+      "usedBy": [
+        "sections/shell.preloader.json"
+      ]
+    },
+    "ia/ia.json:49": {
+      "path": "ia/ia.json",
+      "start": 49,
+      "end": 49,
+      "needle": "\"shell.bg-pixels-overlay\": {",
+      "usedBy": [
+        "sections/shell.bg-pixels-overlay.json"
+      ]
+    },
+    "ia/ia.json:55": {
+      "path": "ia/ia.json",
+      "start": 55,
+      "end": 55,
+      "needle": "\"shell.call-alex-modal\": {",
+      "usedBy": [
+        "sections/shell.call-alex-modal.json"
+      ]
+    },
+    "ia/ia.json:6": {
+      "path": "ia/ia.json",
+      "start": 6,
+      "end": 6,
+      "needle": "\"productionApproved\"",
+      "usedBy": [
+        "extraction/measured-values.json"
+      ]
+    },
+    "ia/ia.json:61": {
+      "path": "ia/ia.json",
+      "start": 61,
+      "end": 61,
+      "needle": "\"shell.footer\": {",
+      "usedBy": [
+        "sections/shell.footer.json"
+      ]
+    },
+    "ia/ia.json:67": {
+      "path": "ia/ia.json",
+      "start": 67,
+      "end": 67,
+      "needle": "\"shell.footer-bottom-reveal\": {",
+      "usedBy": [
+        "sections/shell.footer-bottom-reveal.json"
+      ]
+    },
+    "ia/ia.json:7": {
+      "path": "ia/ia.json",
+      "start": 7,
+      "end": 7,
+      "needle": "\"sourceRevision\"",
+      "usedBy": [
+        "extraction/measured-values.json"
+      ]
+    },
+    "ia/ia.json:73": {
+      "path": "ia/ia.json",
+      "start": 73,
+      "end": 73,
+      "needle": "\"hero.home\": {",
+      "usedBy": [
+        "sections/hero.home.json"
+      ]
+    },
+    "ia/ia.json:79": {
+      "path": "ia/ia.json",
+      "start": 79,
+      "end": 79,
+      "needle": "\"hero.compare\": {",
+      "usedBy": [
+        "sections/hero.compare.json"
+      ]
+    },
+    "ia/ia.json:85": {
+      "path": "ia/ia.json",
+      "start": 85,
+      "end": 85,
+      "needle": "\"hero.legal\": {",
+      "usedBy": [
+        "sections/hero.legal.json"
+      ]
+    },
+    "ia/ia.json:91": {
+      "path": "ia/ia.json",
+      "start": 91,
+      "end": 91,
+      "needle": "\"hero.book-a-demo\": {",
+      "usedBy": [
+        "sections/hero.book-a-demo.json"
+      ]
+    },
+    "ia/ia.json:97": {
+      "path": "ia/ia.json",
+      "start": 97,
+      "end": 97,
+      "needle": "\"hero.blog-index\": {",
+      "usedBy": [
+        "sections/hero.blog-index.json"
+      ]
+    },
+    "recon/hiw-scroll-trace.txt:1": {
+      "path": "recon/hiw-scroll-trace.txt",
+      "start": 1,
+      "end": 1,
+      "needle": "howItWorksTop",
+      "usedBy": [
+        "sections/product.how-it-works.json"
+      ]
+    },
+    "recon/motion-3/MOTION-3.md:12": {
+      "path": "recon/motion-3/MOTION-3.md",
+      "start": 12,
+      "end": 12,
+      "needle": "| LGL-M1 | /terms-of-use | 1440 |",
+      "usedBy": [
+        "tokens/00-foundation/motion-patterns.json"
+      ]
+    },
+    "recon/motion-3/MOTION-3.md:25": {
+      "path": "recon/motion-3/MOTION-3.md",
+      "start": 25,
+      "end": 25,
+      "needle": "| LGL-M1 / BLOG-M1..M3 |",
+      "usedBy": [
+        "tokens/00-foundation/motion-patterns.json"
+      ]
+    },
+    "recon/motion-3/MOTION-3.md:70": {
+      "path": "recon/motion-3/MOTION-3.md",
+      "start": 70,
+      "end": 70,
+      "needle": "- **CMP-M2** `.privacy-block`: one IX2 group",
+      "usedBy": [
+        "tokens/00-foundation/motion.json"
+      ]
+    },
+    "recon/pages/blog/outline-_index-1440.txt:13": {
+      "path": "recon/pages/blog/outline-_index-1440.txt",
+      "start": 13,
+      "end": 13,
+      "needle": "div.modal-wrap",
+      "usedBy": [
+        "compatibility/graph.json",
+        "templates/templates.json"
+      ]
+    },
+    "specs/blog.md:102": {
+      "path": "specs/blog.md",
+      "start": 102,
+      "end": 102,
+      "needle": "**Card** `div.blogs-item.w-dyn-item",
+      "usedBy": [
+        "components/post-card.json"
+      ]
+    },
+    "specs/blog.md:103": {
+      "path": "specs/blog.md",
+      "start": 103,
+      "end": 103,
+      "needle": "`div.post-img-wrap` (overflow hidden",
+      "usedBy": [
+        "primitives/media-cover.json"
+      ]
+    },
+    "specs/blog.md:107": {
+      "path": "specs/blog.md",
+      "start": 107,
+      "end": 107,
+      "needle": "`div.post-arrow-wrap`: absolute bottom-right, 100×100",
+      "usedBy": [
+        "tokens/00-foundation/icon-size.json"
+      ]
+    },
+    "specs/blog.md:144-153": {
+      "path": "specs/blog.md",
+      "start": 144,
+      "end": 153,
+      "needle": "### 4.2 Header `section.blog-top-header` (flex row; margin-top 60)",
+      "usedBy": [
+        "sections/content.post-header.json"
+      ]
+    },
+    "specs/blog.md:150": {
+      "path": "specs/blog.md",
+      "start": 150,
+      "end": 150,
+      "needle": "Back link `a.icon-w-text.w-inline-block`",
+      "usedBy": [
+        "tokens/00-foundation/icon-size.json",
+        "tokens/00-foundation/opacity.json"
+      ]
+    },
+    "specs/blog.md:155-165": {
+      "path": "specs/blog.md",
+      "start": 155,
+      "end": 165,
+      "needle": "### 4.3 Body `section.post-body-section`",
+      "usedBy": [
+        "sections/content.post-body.json"
+      ]
+    },
+    "specs/blog.md:164": {
+      "path": "specs/blog.md",
+      "start": 164,
+      "end": 164,
+      "needle": "3 × `a.share-link-block.w-inline-block`",
+      "usedBy": [
+        "tokens/00-foundation/icon-size.json"
+      ]
+    },
+    "specs/blog.md:167": {
+      "path": "specs/blog.md",
+      "start": 167,
+      "end": 167,
+      "needle": "### 4.4 Rich-text element styles",
+      "usedBy": [
+        "components/rich-text-slot.json",
+        "tokens/20-component/component.json"
+      ]
+    },
+    "specs/blog.md:167-186": {
+      "path": "specs/blog.md",
+      "start": 167,
+      "end": 186,
+      "needle": "### 4.4 Rich-text element styles (`.rich-text-post …`); identical on every post",
+      "usedBy": [
+        "sections/content.post-body.json"
+      ]
+    },
+    "specs/blog.md:197": {
+      "path": "specs/blog.md",
+      "start": 197,
+      "end": 197,
+      "needle": "### 4.6 Read-next section (blog posts): hidden",
+      "usedBy": [
+        "compatibility/graph.json"
+      ]
+    },
+    "specs/blog.md:208": {
+      "path": "specs/blog.md",
+      "start": 208,
+      "end": 208,
+      "needle": "| BLOG-M1 |",
+      "usedBy": [
+        "tokens/00-foundation/motion-patterns.json"
+      ]
+    },
+    "specs/blog.md:209": {
+      "path": "specs/blog.md",
+      "start": 209,
+      "end": 209,
+      "needle": "| BLOG-M2 |",
+      "usedBy": [
+        "tokens/00-foundation/motion-patterns.json"
+      ]
+    },
+    "specs/blog.md:210": {
+      "path": "specs/blog.md",
+      "start": 210,
+      "end": 210,
+      "needle": "| BLOG-M3 |",
+      "usedBy": [
+        "tokens/00-foundation/motion-patterns.json"
+      ]
+    },
+    "specs/blog.md:211": {
+      "path": "specs/blog.md",
+      "start": 211,
+      "end": 211,
+      "needle": "| BLOG-M4 |",
+      "usedBy": [
+        "tokens/00-foundation/motion-patterns.json"
+      ]
+    },
+    "specs/blog.md:213": {
+      "path": "specs/blog.md",
+      "start": 213,
+      "end": 213,
+      "needle": "| BLOG-M6 |",
+      "usedBy": [
+        "tokens/00-foundation/motion-patterns.json",
+        "tokens/20-component/component.json"
+      ]
+    },
+    "specs/blog.md:214": {
+      "path": "specs/blog.md",
+      "start": 214,
+      "end": 214,
+      "needle": "| BLOG-M7 |",
+      "usedBy": [
+        "tokens/00-foundation/motion-patterns.json"
+      ]
+    },
+    "specs/blog.md:215": {
+      "path": "specs/blog.md",
+      "start": 215,
+      "end": 215,
+      "needle": "| BLOG-M8 |",
+      "usedBy": [
+        "tokens/00-foundation/motion-patterns.json"
+      ]
+    },
+    "specs/blog.md:216": {
+      "path": "specs/blog.md",
+      "start": 216,
+      "end": 216,
+      "needle": "| BLOG-M9 |",
+      "usedBy": [
+        "tokens/00-foundation/motion-patterns.json"
+      ]
+    },
+    "specs/blog.md:217": {
+      "path": "specs/blog.md",
+      "start": 217,
+      "end": 217,
+      "needle": "| BLOG-M10 |",
+      "usedBy": [
+        "tokens/00-foundation/motion-patterns.json"
+      ]
+    },
+    "specs/blog.md:238": {
+      "path": "specs/blog.md",
+      "start": 238,
+      "end": 238,
+      "needle": "## 8. Asset inventory",
+      "usedBy": [
+        "assets/asset-roles.json"
+      ]
+    },
+    "specs/blog.md:24": {
+      "path": "specs/blog.md",
+      "start": 24,
+      "end": 24,
+      "needle": "**These are identical to the homepage and should reuse its components:**",
+      "usedBy": [
+        "templates/templates.json"
+      ]
+    },
+    "specs/blog.md:252": {
+      "path": "specs/blog.md",
+      "start": 252,
+      "end": 252,
+      "needle": "| X icon |",
+      "usedBy": [
+        "assets/asset-roles.json"
+      ]
+    },
+    "specs/blog.md:31": {
+      "path": "specs/blog.md",
+      "start": 31,
+      "end": 31,
+      "needle": "**absent.** Replaced by `div.bg-pixels.test-size`",
+      "usedBy": [
+        "sections/shell.page-layers.json"
+      ]
+    },
+    "specs/blog.md:64": {
+      "path": "specs/blog.md",
+      "start": 64,
+      "end": 64,
+      "needle": "weight 400 everywhere (rich-text `strong` is **also 400**",
+      "usedBy": [
+        "tokens/00-foundation/typography.json"
+      ]
+    },
+    "specs/blog.md:82-92": {
+      "path": "specs/blog.md",
+      "start": 82,
+      "end": 92,
+      "needle": "### 3.2 Hero `section.hero.blog.hide-on-scroll`",
+      "usedBy": [
+        "sections/hero.blog-index.json"
+      ]
+    },
+    "specs/blog.md:90": {
+      "path": "specs/blog.md",
+      "start": 90,
+      "end": 90,
+      "needle": "`div.testim-bottom-cont.blog`: flex row, gap 5vw",
+      "usedBy": [
+        "primitives/meta-point.json"
+      ]
+    },
+    "specs/blog.md:94-112": {
+      "path": "specs/blog.md",
+      "start": 94,
+      "end": 112,
+      "needle": "### 3.3 All articles `section.all-blogs-section`",
+      "usedBy": [
+        "sections/content.blog-list.json"
+      ]
+    },
+    "specs/book-a-demo.md:137": {
+      "path": "specs/book-a-demo.md",
+      "start": 137,
+      "end": 137,
+      "needle": "| Webflow default form: label |",
+      "usedBy": [
+        "primitives/text-field.json",
+        "tokens/20-component/component.json"
+      ]
+    },
+    "specs/book-a-demo.md:148": {
+      "path": "specs/book-a-demo.md",
+      "start": 148,
+      "end": 148,
+      "needle": "| M3b |",
+      "usedBy": [
+        "tokens/00-foundation/motion-patterns.json"
+      ]
+    },
+    "specs/book-a-demo.md:160": {
+      "path": "specs/book-a-demo.md",
+      "start": 160,
+      "end": 160,
+      "needle": "| BAD-M1 |",
+      "usedBy": [
+        "tokens/00-foundation/motion-patterns.json"
+      ]
+    },
+    "specs/book-a-demo.md:161": {
+      "path": "specs/book-a-demo.md",
+      "start": 161,
+      "end": 161,
+      "needle": "| BAD-M2 |",
+      "usedBy": [
+        "tokens/00-foundation/motion-patterns.json",
+        "tokens/10-semantic/semantic.json"
+      ]
+    },
+    "specs/book-a-demo.md:33": {
+      "path": "specs/book-a-demo.md",
+      "start": 33,
+      "end": 33,
+      "needle": "At ≤479 `.footer-logo` is `display:none`",
+      "usedBy": [
+        "sections/shell.footer-bottom-reveal.json"
+      ]
+    },
+    "specs/book-a-demo.md:45-100": {
+      "path": "specs/book-a-demo.md",
+      "start": 45,
+      "end": 100,
+      "needle": "## 2. Hero (`section.hero.hide-on-scroll.demo`)",
+      "usedBy": [
+        "sections/hero.book-a-demo.json"
+      ]
+    },
+    "specs/book-a-demo.md:61": {
+      "path": "specs/book-a-demo.md",
+      "start": 61,
+      "end": 61,
+      "needle": "- Paragraph `div.text-block-5`",
+      "usedBy": [
+        "tokens/20-component/component.json"
+      ]
+    },
+    "specs/case-studies.md:106": {
+      "path": "specs/case-studies.md",
+      "start": 106,
+      "end": 106,
+      "needle": "| CS-M1 |",
+      "usedBy": [
+        "tokens/00-foundation/motion-patterns.json"
+      ]
+    },
+    "specs/case-studies.md:114": {
+      "path": "specs/case-studies.md",
+      "start": 114,
+      "end": 114,
+      "needle": "- **Variant rule:**",
+      "usedBy": [
+        "sections/content.case-list.json"
+      ]
+    },
+    "specs/case-studies.md:21": {
+      "path": "specs/case-studies.md",
+      "start": 21,
+      "end": 21,
+      "needle": "| **NEW** logo cell tint",
+      "usedBy": [
+        "tokens/20-component/component.json"
+      ]
+    },
+    "specs/case-studies.md:37-38": {
+      "path": "specs/case-studies.md",
+      "start": 37,
+      "end": 38,
+      "needle": "### 3.2 Hero",
+      "usedBy": [
+        "sections/hero.case-studies-index.json"
+      ]
+    },
+    "specs/case-studies.md:40-50": {
+      "path": "specs/case-studies.md",
+      "start": 40,
+      "end": 50,
+      "needle": "### 3.3 List `section.all-blogs-section.cs`",
+      "usedBy": [
+        "sections/content.case-list.json"
+      ]
+    },
+    "specs/case-studies.md:77-86": {
+      "path": "specs/case-studies.md",
+      "start": 77,
+      "end": 86,
+      "needle": "### 4.2 Header (differences from Blog §4.2)",
+      "usedBy": [
+        "sections/content.case-header.json"
+      ]
+    },
+    "specs/case-studies.md:91-99": {
+      "path": "specs/case-studies.md",
+      "start": 91,
+      "end": 99,
+      "needle": "### 4.4 Read-next `section.read-next-section.read-next` (visible on case studies)",
+      "usedBy": [
+        "sections/content.read-next.json"
+      ]
+    },
+    "specs/compare.md:110": {
+      "path": "specs/compare.md",
+      "start": 110,
+      "end": 110,
+      "needle": "## 4. Comparison table",
+      "usedBy": [
+        "tokens/20-component/component.json"
+      ]
+    },
+    "specs/compare.md:110-159": {
+      "path": "specs/compare.md",
+      "start": 110,
+      "end": 159,
+      "needle": "## 4. Comparison table (`section.table-section`)",
+      "usedBy": [
+        "sections/compare.comparison-table.json"
+      ]
+    },
+    "specs/compare.md:130": {
+      "path": "specs/compare.md",
+      "start": 130,
+      "end": 130,
+      "needle": "`img.tick-img` (`tick.svg`, 24×24; 20px at ≤479)",
+      "usedBy": [
+        "tokens/00-foundation/icon-size.json"
+      ]
+    },
+    "specs/compare.md:161-176": {
+      "path": "specs/compare.md",
+      "start": 161,
+      "end": 176,
+      "needle": "## 5. Patient-access section (`section.access-section`)",
+      "usedBy": [
+        "sections/compare.access.json"
+      ]
+    },
+    "specs/compare.md:182-207": {
+      "path": "specs/compare.md",
+      "start": 182,
+      "end": 207,
+      "needle": "- **6b. `div.specialty-white`** (NEW wrapper)",
+      "usedBy": [
+        "sections/compare.specialty-white.json"
+      ]
+    },
+    "specs/compare.md:195": {
+      "path": "specs/compare.md",
+      "start": 195,
+      "end": 195,
+      "needle": "**Active** (`w--current`): bg **`#a2fa8e`**",
+      "usedBy": [
+        "tokens/20-component/component.json"
+      ]
+    },
+    "specs/compare.md:207-221": {
+      "path": "specs/compare.md",
+      "start": 207,
+      "end": 221,
+      "needle": "- **6c. `section.integration-section.white#integrations`**",
+      "usedBy": [
+        "sections/compare.integrations-white.json"
+      ]
+    },
+    "specs/compare.md:221-241": {
+      "path": "specs/compare.md",
+      "start": 221,
+      "end": 241,
+      "needle": "## 7. Privacy & Security (`section.privacy-section`)",
+      "usedBy": [
+        "sections/compare.privacy.json"
+      ]
+    },
+    "specs/compare.md:243-267": {
+      "path": "specs/compare.md",
+      "start": 243,
+      "end": 267,
+      "needle": "## 8. Healthcare AI Evaluation (`section.ev-section`)",
+      "usedBy": [
+        "sections/compare.evaluation.json"
+      ]
+    },
+    "specs/compare.md:28": {
+      "path": "specs/compare.md",
+      "start": 28,
+      "end": 28,
+      "needle": "**present.** It is a direct child of `body` after the nav",
+      "usedBy": [
+        "sections/shell.preloader.json",
+        "tokens/30-layout/layout.json"
+      ]
+    },
+    "specs/compare.md:281": {
+      "path": "specs/compare.md",
+      "start": 281,
+      "end": 281,
+      "needle": "half-white text",
+      "usedBy": [
+        "tokens/10-semantic/semantic.json"
+      ]
+    },
+    "specs/compare.md:29": {
+      "path": "specs/compare.md",
+      "start": 29,
+      "end": 29,
+      "needle": "| `.bg-pixels-overlay` | absent |",
+      "usedBy": [
+        "sections/shell.bg-pixels-overlay.json"
+      ]
+    },
+    "specs/compare.md:31": {
+      "path": "specs/compare.md",
+      "start": 31,
+      "end": 31,
+      "needle": "| Call Alex modal (`.modal-wrap`) | yes |",
+      "usedBy": [
+        "compatibility/graph.json"
+      ]
+    },
+    "specs/compare.md:318": {
+      "path": "specs/compare.md",
+      "start": 318,
+      "end": 318,
+      "needle": "| CMP-M1 |",
+      "usedBy": [
+        "tokens/00-foundation/motion-patterns.json"
+      ]
+    },
+    "specs/compare.md:319": {
+      "path": "specs/compare.md",
+      "start": 319,
+      "end": 319,
+      "needle": "| CMP-M2 |",
+      "usedBy": [
+        "tokens/00-foundation/motion-patterns.json"
+      ]
+    },
+    "specs/compare.md:320": {
+      "path": "specs/compare.md",
+      "start": 320,
+      "end": 320,
+      "needle": "| CMP-M3 |",
+      "usedBy": [
+        "tokens/00-foundation/motion-patterns.json",
+        "tokens/10-semantic/semantic.json"
+      ]
+    },
+    "specs/compare.md:321": {
+      "path": "specs/compare.md",
+      "start": 321,
+      "end": 321,
+      "needle": "| CMP-M4 |",
+      "usedBy": [
+        "tokens/00-foundation/motion-patterns.json"
+      ]
+    },
+    "specs/compare.md:322": {
+      "path": "specs/compare.md",
+      "start": 322,
+      "end": 322,
+      "needle": "| CMP-M5 |",
+      "usedBy": [
+        "tokens/00-foundation/motion-patterns.json"
+      ]
+    },
+    "specs/compare.md:350": {
+      "path": "specs/compare.md",
+      "start": 350,
+      "end": 350,
+      "needle": "| call-blue |",
+      "usedBy": [
+        "assets/asset-roles.json"
+      ]
+    },
+    "specs/compare.md:352": {
+      "path": "specs/compare.md",
+      "start": 352,
+      "end": 352,
+      "needle": "| tick |",
+      "usedBy": [
+        "assets/asset-roles.json"
+      ]
+    },
+    "specs/compare.md:366": {
+      "path": "specs/compare.md",
+      "start": 366,
+      "end": 366,
+      "needle": "4. **Access H2 at 390.**",
+      "usedBy": [
+        "sections/compare.access.json"
+      ]
+    },
+    "specs/compare.md:59-84": {
+      "path": "specs/compare.md",
+      "start": 59,
+      "end": 84,
+      "needle": "## 2. Hero (`section.hero.home`): the homepage hero with compare modifiers",
+      "usedBy": [
+        "sections/hero.compare.json"
+      ]
+    },
+    "specs/compare.md:86-108": {
+      "path": "specs/compare.md",
+      "start": 86,
+      "end": 108,
+      "needle": "## 3. \"Not Generic\" section (`section.generic-section`)",
+      "usedBy": [
+        "sections/compare.generic.json"
+      ]
+    },
+    "specs/legal.md:106": {
+      "path": "specs/legal.md",
+      "start": 106,
+      "end": 106,
+      "needle": "- **`.legal-text-wrap`:**",
+      "usedBy": [
+        "sections/legal.content.json"
+      ]
+    },
+    "specs/legal.md:21": {
+      "path": "specs/legal.md",
+      "start": 21,
+      "end": 21,
+      "needle": "**The three pages share one template.**",
+      "usedBy": [
+        "templates/templates.json"
+      ]
+    },
+    "specs/legal.md:29": {
+      "path": "specs/legal.md",
+      "start": 29,
+      "end": 29,
+      "needle": "| Hero paragraph modifier |",
+      "usedBy": [
+        "sections/hero.legal.json"
+      ]
+    },
+    "specs/legal.md:40": {
+      "path": "specs/legal.md",
+      "start": 40,
+      "end": 40,
+      "needle": "**Build recommendation:** one `LegalPage` component",
+      "usedBy": [
+        "sections/legal.content.json"
+      ]
+    },
+    "specs/legal.md:69-95": {
+      "path": "specs/legal.md",
+      "start": 69,
+      "end": 95,
+      "needle": "## 3. Hero (`section.hero.hide-on-scroll`)",
+      "usedBy": [
+        "sections/hero.legal.json"
+      ]
+    },
+    "src/App.jsx:18-40": {
+      "path": "src/App.jsx",
+      "start": 18,
+      "end": 40,
+      "needle": "export default function App",
+      "usedBy": [
+        "templates/templates.json"
+      ]
+    },
+    "src/App.jsx:29": {
+      "path": "src/App.jsx",
+      "start": 29,
+      "end": 29,
+      "needle": "<Navbar />",
+      "usedBy": [
+        "compatibility/graph.json"
+      ]
+    },
+    "src/App.jsx:37": {
+      "path": "src/App.jsx",
+      "start": 37,
+      "end": 37,
+      "needle": "<FooterBottom />",
+      "usedBy": [
+        "compatibility/graph.json"
+      ]
+    },
+    "src/components/CallAlexModal.jsx:10": {
+      "path": "src/components/CallAlexModal.jsx",
+      "start": 10,
+      "end": 10,
+      "needle": "NO network submission",
+      "usedBy": [
+        "extraction/measured-values.json"
+      ]
+    },
+    "src/components/CallAlexModal.jsx:48": {
+      "path": "src/components/CallAlexModal.jsx",
+      "start": 48,
+      "end": 48,
+      "needle": "export default function CallAlexModal",
+      "usedBy": [
+        "components/form-block.json"
+      ]
+    },
+    "src/components/ClientLogos.jsx:7": {
+      "path": "src/components/ClientLogos.jsx",
+      "start": 7,
+      "end": 7,
+      "needle": "export default function ClientLogos",
+      "usedBy": [
+        "components/marquee-track.json"
+      ]
+    },
+    "src/components/ClientLogos.jsx:7-27": {
+      "path": "src/components/ClientLogos.jsx",
+      "start": 7,
+      "end": 27,
+      "needle": "export default function ClientLogos",
+      "usedBy": [
+        "sections/proof.client-logos.json"
+      ]
+    },
+    "src/components/ClientSpotlight.jsx:18-61": {
+      "path": "src/components/ClientSpotlight.jsx",
+      "start": 18,
+      "end": 61,
+      "needle": "export default function ClientSpotlight",
+      "usedBy": [
+        "sections/proof.client-spotlight.json"
+      ]
+    },
+    "src/components/Cta.jsx:52-141": {
+      "path": "src/components/Cta.jsx",
+      "start": 52,
+      "end": 141,
+      "needle": "export default function Cta",
+      "usedBy": [
+        "sections/conversion.cta.json"
+      ]
+    },
+    "src/components/Footer.jsx:143-195": {
+      "path": "src/components/Footer.jsx",
+      "start": 143,
+      "end": 195,
+      "needle": "export function FooterTop",
+      "usedBy": [
+        "sections/shell.footer.json"
+      ]
+    },
+    "src/components/Footer.jsx:197-215": {
+      "path": "src/components/Footer.jsx",
+      "start": 197,
+      "end": 215,
+      "needle": "export function FooterBottom",
+      "usedBy": [
+        "sections/shell.footer-bottom-reveal.json"
+      ]
+    },
+    "src/components/Hero.jsx:6-76": {
+      "path": "src/components/Hero.jsx",
+      "start": 6,
+      "end": 76,
+      "needle": "export default function Hero",
+      "usedBy": [
+        "sections/hero.home.json"
+      ]
+    },
+    "src/components/HowItWorks.jsx:62-112": {
+      "path": "src/components/HowItWorks.jsx",
+      "start": 62,
+      "end": 112,
+      "needle": "export default function HowItWorks",
+      "usedBy": [
+        "sections/product.how-it-works.json"
+      ]
+    },
+    "src/components/Integrations.jsx:63": {
+      "path": "src/components/Integrations.jsx",
+      "start": 63,
+      "end": 63,
+      "needle": "export default function Integrations",
+      "usedBy": [
+        "components/logo-block.json",
+        "components/marquee-track.json"
+      ]
+    },
+    "src/components/Integrations.jsx:63-135": {
+      "path": "src/components/Integrations.jsx",
+      "start": 63,
+      "end": 135,
+      "needle": "export default function Integrations",
+      "usedBy": [
+        "sections/compare.integrations-white.json",
+        "sections/fit.integrations.json"
+      ]
+    },
+    "src/components/Navbar.jsx:127-281": {
+      "path": "src/components/Navbar.jsx",
+      "start": 127,
+      "end": 281,
+      "needle": "export default function Navbar",
+      "usedBy": [
+        "sections/shell.mobile-menu.json"
+      ]
+    },
+    "src/components/NavigatorAgent.jsx:9": {
+      "path": "src/components/NavigatorAgent.jsx",
+      "start": 9,
+      "end": 9,
+      "needle": "export default function NavigatorAgent",
+      "usedBy": [
+        "components/tab-group.json"
+      ]
+    },
+    "src/components/NavigatorAgent.jsx:9-83": {
+      "path": "src/components/NavigatorAgent.jsx",
+      "start": 9,
+      "end": 83,
+      "needle": "export default function NavigatorAgent",
+      "usedBy": [
+        "sections/product.navigator-agent.json"
+      ]
+    },
+    "src/components/OutreachAgent.jsx:8": {
+      "path": "src/components/OutreachAgent.jsx",
+      "start": 8,
+      "end": 8,
+      "needle": "export default function OutreachAgent",
+      "usedBy": [
+        "components/stack-card.json"
+      ]
+    },
+    "src/components/OutreachAgent.jsx:8-38": {
+      "path": "src/components/OutreachAgent.jsx",
+      "start": 8,
+      "end": 38,
+      "needle": "export default function OutreachAgent",
+      "usedBy": [
+        "sections/product.outreach-agent.json"
+      ]
+    },
+    "src/components/PageLayers.jsx:21": {
+      "path": "src/components/PageLayers.jsx",
+      "start": 21,
+      "end": 21,
+      "needle": "const reduce = prefersReducedMotion()",
+      "usedBy": [
+        "tokens/00-foundation/motion-patterns.json"
+      ]
+    },
+    "src/components/PageLayers.jsx:89-114": {
+      "path": "src/components/PageLayers.jsx",
+      "start": 89,
+      "end": 114,
+      "needle": "export default function PageLayers",
+      "usedBy": [
+        "sections/shell.page-layers.json"
+      ]
+    },
+    "src/components/Preloader.jsx:10": {
+      "path": "src/components/Preloader.jsx",
+      "start": 10,
+      "end": 10,
+      "needle": "data-component=\"preloader\"",
+      "usedBy": [
+        "extraction/measured-values.json"
+      ]
+    },
+    "src/components/Preloader.jsx:9-11": {
+      "path": "src/components/Preloader.jsx",
+      "start": 9,
+      "end": 11,
+      "needle": "export default function Preloader",
+      "usedBy": [
+        "sections/shell.preloader.json"
+      ]
+    },
+    "src/components/SchedulingAgent.jsx:72": {
+      "path": "src/components/SchedulingAgent.jsx",
+      "start": 72,
+      "end": 72,
+      "needle": "export default function SchedulingAgent",
+      "usedBy": [
+        "components/stack-card.json"
+      ]
+    },
+    "src/components/SchedulingAgent.jsx:72-120": {
+      "path": "src/components/SchedulingAgent.jsx",
+      "start": 72,
+      "end": 120,
+      "needle": "export default function SchedulingAgent",
+      "usedBy": [
+        "sections/product.scheduling-agent.json"
+      ]
+    },
+    "src/components/Security.jsx:9": {
+      "path": "src/components/Security.jsx",
+      "start": 9,
+      "end": 9,
+      "needle": "export default function Security",
+      "usedBy": [
+        "components/logo-block.json"
+      ]
+    },
+    "src/components/Security.jsx:9-57": {
+      "path": "src/components/Security.jsx",
+      "start": 9,
+      "end": 57,
+      "needle": "export default function Security",
+      "usedBy": [
+        "sections/fit.security.json"
+      ]
+    },
+    "src/components/Specialties.jsx:17-112": {
+      "path": "src/components/Specialties.jsx",
+      "start": 17,
+      "end": 112,
+      "needle": "export default function Specialties",
+      "usedBy": [
+        "sections/fit.specialties.json"
+      ]
+    },
+    "src/components/Stats.jsx:89": {
+      "path": "src/components/Stats.jsx",
+      "start": 89,
+      "end": 89,
+      "needle": "export default function Stats",
+      "usedBy": [
+        "components/stat-block.json"
+      ]
+    },
+    "src/components/Stats.jsx:89-129": {
+      "path": "src/components/Stats.jsx",
+      "start": 89,
+      "end": 129,
+      "needle": "export default function Stats",
+      "usedBy": [
+        "sections/proof.stats.json"
+      ]
+    },
+    "src/components/TaskingAgent.jsx:122": {
+      "path": "src/components/TaskingAgent.jsx",
+      "start": 122,
+      "end": 122,
+      "needle": "export default function TaskingAgent",
+      "usedBy": [
+        "components/tab-group.json"
+      ]
+    },
+    "src/components/TaskingAgent.jsx:122-186": {
+      "path": "src/components/TaskingAgent.jsx",
+      "start": 122,
+      "end": 186,
+      "needle": "export default function TaskingAgent",
+      "usedBy": [
+        "sections/product.tasking-agent.json"
+      ]
+    },
+    "src/components/Testimonials.jsx:78": {
+      "path": "src/components/Testimonials.jsx",
+      "start": 78,
+      "end": 78,
+      "needle": "export default function Testimonials",
+      "usedBy": [
+        "components/quote-slide.json"
+      ]
+    },
+    "src/components/Testimonials.jsx:78-187": {
+      "path": "src/components/Testimonials.jsx",
+      "start": 78,
+      "end": 187,
+      "needle": "export default function Testimonials",
+      "usedBy": [
+        "sections/proof.testimonials.json"
+      ]
+    },
+    "src/components/TransitionPixels.jsx:63-83": {
+      "path": "src/components/TransitionPixels.jsx",
+      "start": 63,
+      "end": 83,
+      "needle": "export default function TransitionPixels",
+      "usedBy": [
+        "sections/transition.black-to-white.json",
+        "sections/transition.white-to-black.json"
+      ]
+    },
+    "src/components/TransitionPixels.jsx:71": {
+      "path": "src/components/TransitionPixels.jsx",
+      "start": 71,
+      "end": 71,
+      "needle": "data-section={`transition-${variant}`}",
+      "usedBy": [
+        "extraction/measured-values.json"
+      ]
+    },
+    "src/components/WhiteSection.jsx:11": {
+      "path": "src/components/WhiteSection.jsx",
+      "start": 11,
+      "end": 11,
+      "needle": "export default function WhiteSection",
+      "usedBy": [
+        "compatibility/graph.json"
+      ]
+    },
+    "src/components/cms/BackLink.jsx:10": {
+      "path": "src/components/cms/BackLink.jsx",
+      "start": 10,
+      "end": 10,
+      "needle": "export default function BackLink",
+      "usedBy": [
+        "components/page-intro-header.json"
+      ]
+    },
+    "src/components/cms/CaseCard.jsx:29": {
+      "path": "src/components/cms/CaseCard.jsx",
+      "start": 29,
+      "end": 29,
+      "needle": "export default function CaseCard",
+      "usedBy": [
+        "components/case-card.json"
+      ]
+    },
+    "src/components/cms/CaseCard.jsx:29-50": {
+      "path": "src/components/cms/CaseCard.jsx",
+      "start": 29,
+      "end": 50,
+      "needle": "export default function CaseCard",
+      "usedBy": [
+        "sections/content.case-list.json"
+      ]
+    },
+    "src/components/cms/CaseVariant.jsx:7-25": {
+      "path": "src/components/cms/CaseVariant.jsx",
+      "start": 7,
+      "end": 25,
+      "needle": "export default function CaseVariant",
+      "usedBy": [
+        "sections/content.case-header.json"
+      ]
+    },
+    "src/components/cms/DetailHeader.jsx:8": {
+      "path": "src/components/cms/DetailHeader.jsx",
+      "start": 8,
+      "end": 8,
+      "needle": "export default function DetailHeader",
+      "usedBy": [
+        "components/page-intro-header.json"
+      ]
+    },
+    "src/components/cms/DetailHeader.jsx:8-24": {
+      "path": "src/components/cms/DetailHeader.jsx",
+      "start": 8,
+      "end": 24,
+      "needle": "export default function DetailHeader",
+      "usedBy": [
+        "sections/content.post-header.json"
+      ]
+    },
+    "src/components/cms/FeaturedPost.jsx:15": {
+      "path": "src/components/cms/FeaturedPost.jsx",
+      "start": 15,
+      "end": 15,
+      "needle": "export default function FeaturedPost",
+      "usedBy": [
+        "components/featured-post.json"
+      ]
+    },
+    "src/components/cms/FeaturedPost.jsx:15-43": {
+      "path": "src/components/cms/FeaturedPost.jsx",
+      "start": 15,
+      "end": 43,
+      "needle": "export default function FeaturedPost",
+      "usedBy": [
+        "sections/hero.blog-index.json"
+      ]
+    },
+    "src/components/cms/IndexHero.jsx:10-26": {
+      "path": "src/components/cms/IndexHero.jsx",
+      "start": 10,
+      "end": 26,
+      "needle": "export default function IndexHero",
+      "usedBy": [
+        "sections/hero.blog-index.json",
+        "sections/hero.case-studies-index.json"
+      ]
+    },
+    "src/components/cms/ListSection.jsx:10-39": {
+      "path": "src/components/cms/ListSection.jsx",
+      "start": 10,
+      "end": 39,
+      "needle": "export default function ListSection",
+      "usedBy": [
+        "sections/content.blog-list.json"
+      ]
+    },
+    "src/components/cms/PostBody.jsx:10-22": {
+      "path": "src/components/cms/PostBody.jsx",
+      "start": 10,
+      "end": 22,
+      "needle": "export default function PostBody",
+      "usedBy": [
+        "sections/content.post-body.json"
+      ]
+    },
+    "src/components/cms/PostCard.jsx:15": {
+      "path": "src/components/cms/PostCard.jsx",
+      "start": 15,
+      "end": 15,
+      "needle": "export default function PostCard",
+      "usedBy": [
+        "components/post-card.json"
+      ]
+    },
+    "src/components/cms/ReadNext.jsx:7-27": {
+      "path": "src/components/cms/ReadNext.jsx",
+      "start": 7,
+      "end": 27,
+      "needle": "export default function ReadNext",
+      "usedBy": [
+        "sections/content.read-next.json"
+      ]
+    },
+    "src/components/cms/RichText.jsx:61": {
+      "path": "src/components/cms/RichText.jsx",
+      "start": 61,
+      "end": 61,
+      "needle": "export default function RichTextSlot",
+      "usedBy": [
+        "components/rich-text-slot.json"
+      ]
+    },
+    "src/components/cms/ShareColumn.jsx:14": {
+      "path": "src/components/cms/ShareColumn.jsx",
+      "start": 14,
+      "end": 14,
+      "needle": "export default function ShareColumn",
+      "usedBy": [
+        "components/share-column.json"
+      ]
+    },
+    "src/components/cms/cms.css:13": {
+      "path": "src/components/cms/cms.css",
+      "start": 13,
+      "end": 13,
+      "needle": "PROMOTE: --white-0-6",
+      "usedBy": [
+        "extraction/measured-values.json"
+      ]
+    },
+    "src/components/cms/cms.css:14": {
+      "path": "src/components/cms/cms.css",
+      "start": 14,
+      "end": 14,
+      "needle": "--color-white-60:",
+      "usedBy": [
+        "tokens/00-foundation/color.json"
+      ]
+    },
+    "src/components/cms/cms.css:17": {
+      "path": "src/components/cms/cms.css",
+      "start": 17,
+      "end": 17,
+      "needle": "--fs-clamp-16-18:",
+      "usedBy": [
+        "tokens/00-foundation/typography.json"
+      ]
+    },
+    "src/components/cms/cms.css:19": {
+      "path": "src/components/cms/cms.css",
+      "start": 19,
+      "end": 19,
+      "needle": "--gradient-post-top:",
+      "usedBy": [
+        "tokens/00-foundation/gradient.json"
+      ]
+    },
+    "src/components/cms/cms.css:21": {
+      "path": "src/components/cms/cms.css",
+      "start": 21,
+      "end": 21,
+      "needle": "--color-logo-cell:",
+      "usedBy": [
+        "tokens/00-foundation/color.json"
+      ]
+    },
+    "src/components/cms/cms.css:23": {
+      "path": "src/components/cms/cms.css",
+      "start": 23,
+      "end": 23,
+      "needle": "--color-cs-divider:",
+      "usedBy": [
+        "tokens/00-foundation/color.json"
+      ]
+    },
+    "src/components/cms/cms.css:25": {
+      "path": "src/components/cms/cms.css",
+      "start": 25,
+      "end": 25,
+      "needle": "--color-cs-edge:",
+      "usedBy": [
+        "tokens/00-foundation/color.json"
+      ]
+    },
+    "src/components/compare/AccessSection.jsx:5": {
+      "path": "src/components/compare/AccessSection.jsx",
+      "start": 5,
+      "end": 5,
+      "needle": "export default function AccessSection",
+      "usedBy": [
+        "components/claim-block.json"
+      ]
+    },
+    "src/components/compare/AccessSection.jsx:5-27": {
+      "path": "src/components/compare/AccessSection.jsx",
+      "start": 5,
+      "end": 27,
+      "needle": "export default function AccessSection",
+      "usedBy": [
+        "sections/compare.access.json"
+      ]
+    },
+    "src/components/compare/BgPixelsOverlay.jsx:8-10": {
+      "path": "src/components/compare/BgPixelsOverlay.jsx",
+      "start": 8,
+      "end": 10,
+      "needle": "export default function BgPixelsOverlay",
+      "usedBy": [
+        "sections/shell.bg-pixels-overlay.json"
+      ]
+    },
+    "src/components/compare/CompareHero.jsx:11-38": {
+      "path": "src/components/compare/CompareHero.jsx",
+      "start": 11,
+      "end": 38,
+      "needle": "export default function CompareHero",
+      "usedBy": [
+        "sections/hero.compare.json"
+      ]
+    },
+    "src/components/compare/CompareWhiteSection.jsx:11": {
+      "path": "src/components/compare/CompareWhiteSection.jsx",
+      "start": 11,
+      "end": 11,
+      "needle": "export default function CompareWhiteSection",
+      "usedBy": [
+        "compatibility/graph.json"
+      ]
+    },
+    "src/components/compare/CompareWhiteSection.jsx:11-33": {
+      "path": "src/components/compare/CompareWhiteSection.jsx",
+      "start": 11,
+      "end": 33,
+      "needle": "export default function CompareWhiteSection",
+      "usedBy": [
+        "sections/compare.specialty-white.json"
+      ]
+    },
+    "src/components/compare/ComparisonTable.jsx:8": {
+      "path": "src/components/compare/ComparisonTable.jsx",
+      "start": 8,
+      "end": 8,
+      "needle": "export default function ComparisonTable",
+      "usedBy": [
+        "components/table-row.json"
+      ]
+    },
+    "src/components/compare/ComparisonTable.jsx:8-58": {
+      "path": "src/components/compare/ComparisonTable.jsx",
+      "start": 8,
+      "end": 58,
+      "needle": "export default function ComparisonTable",
+      "usedBy": [
+        "sections/compare.comparison-table.json"
+      ]
+    },
+    "src/components/compare/EvSection.jsx:11-78": {
+      "path": "src/components/compare/EvSection.jsx",
+      "start": 11,
+      "end": 78,
+      "needle": "export default function EvSection",
+      "usedBy": [
+        "sections/compare.evaluation.json"
+      ]
+    },
+    "src/components/compare/GenericSection.jsx:6-21": {
+      "path": "src/components/compare/GenericSection.jsx",
+      "start": 6,
+      "end": 21,
+      "needle": "export default function GenericSection",
+      "usedBy": [
+        "sections/compare.generic.json"
+      ]
+    },
+    "src/components/compare/PrivacySection.jsx:40": {
+      "path": "src/components/compare/PrivacySection.jsx",
+      "start": 40,
+      "end": 40,
+      "needle": "export default function PrivacySection",
+      "usedBy": [
+        "components/claim-block.json"
+      ]
+    },
+    "src/components/compare/PrivacySection.jsx:40-67": {
+      "path": "src/components/compare/PrivacySection.jsx",
+      "start": 40,
+      "end": 67,
+      "needle": "export default function PrivacySection",
+      "usedBy": [
+        "sections/compare.privacy.json"
+      ]
+    },
+    "src/components/demo/DemoForm.jsx:23": {
+      "path": "src/components/demo/DemoForm.jsx",
+      "start": 23,
+      "end": 23,
+      "needle": "export default function DemoForm",
+      "usedBy": [
+        "components/form-block.json"
+      ]
+    },
+    "src/components/legal/LegalContent.jsx:90-100": {
+      "path": "src/components/legal/LegalContent.jsx",
+      "start": 90,
+      "end": 100,
+      "needle": "export default function LegalContent",
+      "usedBy": [
+        "sections/legal.content.json"
+      ]
+    },
+    "src/components/legal/LegalHero.jsx:7-22": {
+      "path": "src/components/legal/LegalHero.jsx",
+      "start": 7,
+      "end": 22,
+      "needle": "export default function LegalHero",
+      "usedBy": [
+        "sections/hero.legal.json"
+      ]
+    },
+    "src/components/ui/CallAlexLink.jsx:6": {
+      "path": "src/components/ui/CallAlexLink.jsx",
+      "start": 6,
+      "end": 6,
+      "needle": "export default function CallAlexLink",
+      "usedBy": [
+        "compatibility/graph.json"
+      ]
+    },
+    "src/components/ui/Noise.jsx:2": {
+      "path": "src/components/ui/Noise.jsx",
+      "start": 2,
+      "end": 2,
+      "needle": "export default function Noise",
+      "usedBy": [
+        "primitives/noise-overlay.json"
+      ]
+    },
+    "src/components/ui/UnderlinePair.jsx:14": {
+      "path": "src/components/ui/UnderlinePair.jsx",
+      "start": 14,
+      "end": 14,
+      "needle": "export default function UnderlinePair",
+      "usedBy": [
+        "primitives/underline-link.json"
+      ]
+    },
+    "src/data/bookDemo.js:11": {
+      "path": "src/data/bookDemo.js",
+      "start": 11,
+      "end": 11,
+      "needle": "export const DEMO_FIELDS",
+      "usedBy": [
+        "sections/hero.book-a-demo.json"
+      ]
+    },
+    "src/data/bookDemo.js:23": {
+      "path": "src/data/bookDemo.js",
+      "start": 23,
+      "end": 23,
+      "needle": "submit: 'Book My Demo'",
+      "usedBy": [
+        "primitives/submit-control.json"
+      ]
+    },
+    "src/data/clientLogos.js:6": {
+      "path": "src/data/clientLogos.js",
+      "start": 6,
+      "end": 6,
+      "needle": "export const CLIENT_LOGOS",
+      "usedBy": [
+        "sections/proof.client-logos.json"
+      ]
+    },
+    "src/data/compare.js:30": {
+      "path": "src/data/compare.js",
+      "start": 30,
+      "end": 30,
+      "needle": "export const COMPARE_ROWS",
+      "usedBy": [
+        "sections/compare.comparison-table.json"
+      ]
+    },
+    "src/data/cta.js:2": {
+      "path": "src/data/cta.js",
+      "start": 2,
+      "end": 2,
+      "needle": "export const CTA_AGENTS",
+      "usedBy": [
+        "sections/conversion.cta.json"
+      ]
+    },
+    "src/data/integrations.js:5": {
+      "path": "src/data/integrations.js",
+      "start": 5,
+      "end": 5,
+      "needle": "export const INTEGRATIONS_ROW_1",
+      "usedBy": [
+        "sections/fit.integrations.json"
+      ]
+    },
+    "src/data/nav.js:2": {
+      "path": "src/data/nav.js",
+      "start": 2,
+      "end": 2,
+      "needle": "export const NAV_LEFT",
+      "usedBy": [
+        "sections/shell.navbar.json"
+      ]
+    },
+    "src/data/navigator.js:4": {
+      "path": "src/data/navigator.js",
+      "start": 4,
+      "end": 4,
+      "needle": "export const NAVIGATOR_TABS",
+      "usedBy": [
+        "sections/product.navigator-agent.json"
+      ]
+    },
+    "src/data/outreachCards.js:5": {
+      "path": "src/data/outreachCards.js",
+      "start": 5,
+      "end": 5,
+      "needle": "export const OUTREACH_CARDS",
+      "usedBy": [
+        "sections/product.outreach-agent.json"
+      ]
+    },
+    "src/data/schedulingCards.js:6": {
+      "path": "src/data/schedulingCards.js",
+      "start": 6,
+      "end": 6,
+      "needle": "export const SCHEDULING_CARDS",
+      "usedBy": [
+        "sections/product.scheduling-agent.json"
+      ]
+    },
+    "src/data/security.js:5": {
+      "path": "src/data/security.js",
+      "start": 5,
+      "end": 5,
+      "needle": "export const SECURITY_ROWS",
+      "usedBy": [
+        "sections/fit.security.json"
+      ]
+    },
+    "src/data/specialties.js:4": {
+      "path": "src/data/specialties.js",
+      "start": 4,
+      "end": 4,
+      "needle": "export const SPECIALTIES",
+      "usedBy": [
+        "sections/fit.specialties.json"
+      ]
+    },
+    "src/data/stats.js:3": {
+      "path": "src/data/stats.js",
+      "start": 3,
+      "end": 3,
+      "needle": "export const STATS",
+      "usedBy": [
+        "sections/proof.stats.json"
+      ]
+    },
+    "src/data/taskingTabs.js:4": {
+      "path": "src/data/taskingTabs.js",
+      "start": 4,
+      "end": 4,
+      "needle": "export const TASKING_TABS",
+      "usedBy": [
+        "sections/product.tasking-agent.json"
+      ]
+    },
+    "src/data/testimonials.js:10": {
+      "path": "src/data/testimonials.js",
+      "start": 10,
+      "end": 10,
+      "needle": "photoAlt",
+      "usedBy": [
+        "assets/asset-roles.json"
+      ]
+    },
+    "src/data/testimonials.js:7": {
+      "path": "src/data/testimonials.js",
+      "start": 7,
+      "end": 7,
+      "needle": "export const TESTIMONIALS",
+      "usedBy": [
+        "sections/proof.testimonials.json"
+      ]
+    },
+    "src/index.css:100": {
+      "path": "src/index.css",
+      "start": 100,
+      "end": 100,
+      "needle": "--fs-16:",
+      "usedBy": [
+        "tokens/00-foundation/typography.json"
+      ]
+    },
+    "src/index.css:101": {
+      "path": "src/index.css",
+      "start": 101,
+      "end": 101,
+      "needle": "--fs-16-specialty:",
+      "usedBy": [
+        "tokens/00-foundation/typography.json"
+      ]
+    },
+    "src/index.css:102": {
+      "path": "src/index.css",
+      "start": 102,
+      "end": 102,
+      "needle": "--fs-14:",
+      "usedBy": [
+        "tokens/00-foundation/typography.json"
+      ]
+    },
+    "src/index.css:103": {
+      "path": "src/index.css",
+      "start": 103,
+      "end": 103,
+      "needle": "--fs-legal:",
+      "usedBy": [
+        "tokens/00-foundation/typography.json"
+      ]
+    },
+    "src/index.css:104": {
+      "path": "src/index.css",
+      "start": 104,
+      "end": 104,
+      "needle": "--fs-nav:",
+      "usedBy": [
+        "tokens/00-foundation/typography.json"
+      ]
+    },
+    "src/index.css:105": {
+      "path": "src/index.css",
+      "start": 105,
+      "end": 105,
+      "needle": "--fs-nav-cta:",
+      "usedBy": [
+        "tokens/00-foundation/typography.json"
+      ]
+    },
+    "src/index.css:106": {
+      "path": "src/index.css",
+      "start": 106,
+      "end": 106,
+      "needle": "--fs-form-input:",
+      "usedBy": [
+        "tokens/00-foundation/typography.json"
+      ]
+    },
+    "src/index.css:107": {
+      "path": "src/index.css",
+      "start": 107,
+      "end": 107,
+      "needle": "--fs-hero-input:",
+      "usedBy": [
+        "tokens/00-foundation/typography.json"
+      ]
+    },
+    "src/index.css:110": {
+      "path": "src/index.css",
+      "start": 110,
+      "end": 110,
+      "needle": "--ease-out-cubic:",
+      "usedBy": [
+        "tokens/00-foundation/motion.json"
+      ]
+    },
+    "src/index.css:111": {
+      "path": "src/index.css",
+      "start": 111,
+      "end": 111,
+      "needle": "--ease-out-quad:",
+      "usedBy": [
+        "tokens/00-foundation/motion.json"
+      ]
+    },
+    "src/index.css:112": {
+      "path": "src/index.css",
+      "start": 112,
+      "end": 112,
+      "needle": "--ease-in-out-quad:",
+      "usedBy": [
+        "tokens/00-foundation/motion.json"
+      ]
+    },
+    "src/index.css:113": {
+      "path": "src/index.css",
+      "start": 113,
+      "end": 113,
+      "needle": "--ease-in-out-cubic:",
+      "usedBy": [
+        "tokens/00-foundation/motion.json"
+      ]
+    },
+    "src/index.css:118": {
+      "path": "src/index.css",
+      "start": 118,
+      "end": 118,
+      "needle": "--pad:",
+      "usedBy": [
+        "tokens/00-foundation/spacing.json"
+      ]
+    },
+    "src/index.css:119": {
+      "path": "src/index.css",
+      "start": 119,
+      "end": 119,
+      "needle": "--noise-opacity:",
+      "usedBy": [
+        "tokens/00-foundation/opacity.json"
+      ]
+    },
+    "src/index.css:120": {
+      "path": "src/index.css",
+      "start": 120,
+      "end": 120,
+      "needle": "--fs-hero:",
+      "usedBy": [
+        "tokens/00-foundation/typography.json"
+      ]
+    },
+    "src/index.css:121": {
+      "path": "src/index.css",
+      "start": 121,
+      "end": 121,
+      "needle": "--fs-56:",
+      "usedBy": [
+        "tokens/00-foundation/typography.json"
+      ]
+    },
+    "src/index.css:122": {
+      "path": "src/index.css",
+      "start": 122,
+      "end": 122,
+      "needle": "--fs-stats-head:",
+      "usedBy": [
+        "tokens/00-foundation/typography.json"
+      ]
+    },
+    "src/index.css:123": {
+      "path": "src/index.css",
+      "start": 123,
+      "end": 123,
+      "needle": "--fs-30:",
+      "usedBy": [
+        "tokens/00-foundation/typography.json"
+      ]
+    },
+    "src/index.css:124": {
+      "path": "src/index.css",
+      "start": 124,
+      "end": 124,
+      "needle": "--fs-30-hero:",
+      "usedBy": [
+        "tokens/00-foundation/typography.json"
+      ]
+    },
+    "src/index.css:125": {
+      "path": "src/index.css",
+      "start": 125,
+      "end": 125,
+      "needle": "--fs-30-testimonial:",
+      "usedBy": [
+        "tokens/00-foundation/typography.json"
+      ]
+    },
+    "src/index.css:126": {
+      "path": "src/index.css",
+      "start": 126,
+      "end": 126,
+      "needle": "--fs-30-card-head:",
+      "usedBy": [
+        "tokens/00-foundation/typography.json"
+      ]
+    },
+    "src/index.css:127": {
+      "path": "src/index.css",
+      "start": 127,
+      "end": 127,
+      "needle": "--fs-30-card-index:",
+      "usedBy": [
+        "tokens/00-foundation/typography.json"
+      ]
+    },
+    "src/index.css:128": {
+      "path": "src/index.css",
+      "start": 128,
+      "end": 128,
+      "needle": "--fs-submit:",
+      "usedBy": [
+        "tokens/00-foundation/typography.json"
+      ]
+    },
+    "src/index.css:129": {
+      "path": "src/index.css",
+      "start": 129,
+      "end": 129,
+      "needle": "--fs-16:",
+      "usedBy": [
+        "tokens/00-foundation/typography.json"
+      ]
+    },
+    "src/index.css:130": {
+      "path": "src/index.css",
+      "start": 130,
+      "end": 130,
+      "needle": "--fs-16-specialty:",
+      "usedBy": [
+        "tokens/00-foundation/typography.json"
+      ]
+    },
+    "src/index.css:131": {
+      "path": "src/index.css",
+      "start": 131,
+      "end": 131,
+      "needle": "--fs-14:",
+      "usedBy": [
+        "tokens/00-foundation/typography.json"
+      ]
+    },
+    "src/index.css:132": {
+      "path": "src/index.css",
+      "start": 132,
+      "end": 132,
+      "needle": "--fs-legal:",
+      "usedBy": [
+        "tokens/00-foundation/typography.json"
+      ]
+    },
+    "src/index.css:133": {
+      "path": "src/index.css",
+      "start": 133,
+      "end": 133,
+      "needle": "--fs-nav:",
+      "usedBy": [
+        "tokens/00-foundation/typography.json"
+      ]
+    },
+    "src/index.css:134": {
+      "path": "src/index.css",
+      "start": 134,
+      "end": 134,
+      "needle": "--fs-nav-cta:",
+      "usedBy": [
+        "tokens/00-foundation/typography.json"
+      ]
+    },
+    "src/index.css:135": {
+      "path": "src/index.css",
+      "start": 135,
+      "end": 135,
+      "needle": "--fs-hero-input:",
+      "usedBy": [
+        "tokens/00-foundation/typography.json"
+      ]
+    },
+    "src/index.css:141": {
+      "path": "src/index.css",
+      "start": 141,
+      "end": 141,
+      "needle": "--fs-hero:",
+      "usedBy": [
+        "tokens/00-foundation/typography.json"
+      ]
+    },
+    "src/index.css:142": {
+      "path": "src/index.css",
+      "start": 142,
+      "end": 142,
+      "needle": "--fs-display:",
+      "usedBy": [
+        "tokens/00-foundation/typography.json"
+      ]
+    },
+    "src/index.css:143": {
+      "path": "src/index.css",
+      "start": 143,
+      "end": 143,
+      "needle": "--fs-hiw:",
+      "usedBy": [
+        "tokens/00-foundation/typography.json"
+      ]
+    },
+    "src/index.css:144": {
+      "path": "src/index.css",
+      "start": 144,
+      "end": 144,
+      "needle": "--fs-stats-head:",
+      "usedBy": [
+        "tokens/00-foundation/typography.json"
+      ]
+    },
+    "src/index.css:145": {
+      "path": "src/index.css",
+      "start": 145,
+      "end": 145,
+      "needle": "--fs-30:",
+      "usedBy": [
+        "tokens/00-foundation/typography.json"
+      ]
+    },
+    "src/index.css:146": {
+      "path": "src/index.css",
+      "start": 146,
+      "end": 146,
+      "needle": "--fs-30-hero:",
+      "usedBy": [
+        "tokens/00-foundation/typography.json"
+      ]
+    },
+    "src/index.css:147": {
+      "path": "src/index.css",
+      "start": 147,
+      "end": 147,
+      "needle": "--fs-30-testimonial:",
+      "usedBy": [
+        "tokens/00-foundation/typography.json"
+      ]
+    },
+    "src/index.css:148": {
+      "path": "src/index.css",
+      "start": 148,
+      "end": 148,
+      "needle": "--fs-30-card-index:",
+      "usedBy": [
+        "tokens/00-foundation/typography.json"
+      ]
+    },
+    "src/index.css:149": {
+      "path": "src/index.css",
+      "start": 149,
+      "end": 149,
+      "needle": "--fs-16:",
+      "usedBy": [
+        "tokens/00-foundation/typography.json"
+      ]
+    },
+    "src/index.css:150": {
+      "path": "src/index.css",
+      "start": 150,
+      "end": 150,
+      "needle": "--fs-16-specialty:",
+      "usedBy": [
+        "tokens/00-foundation/typography.json"
+      ]
+    },
+    "src/index.css:151": {
+      "path": "src/index.css",
+      "start": 151,
+      "end": 151,
+      "needle": "--fs-14:",
+      "usedBy": [
+        "tokens/00-foundation/typography.json"
+      ]
+    },
+    "src/index.css:152": {
+      "path": "src/index.css",
+      "start": 152,
+      "end": 152,
+      "needle": "--fs-legal:",
+      "usedBy": [
+        "tokens/00-foundation/typography.json"
+      ]
+    },
+    "src/index.css:153": {
+      "path": "src/index.css",
+      "start": 153,
+      "end": 153,
+      "needle": "--fs-hero-input:",
+      "usedBy": [
+        "tokens/00-foundation/typography.json"
+      ]
+    },
+    "src/index.css:159": {
+      "path": "src/index.css",
+      "start": 159,
+      "end": 159,
+      "needle": "--fs-display:",
+      "usedBy": [
+        "tokens/00-foundation/typography.json"
+      ]
+    },
+    "src/index.css:160": {
+      "path": "src/index.css",
+      "start": 160,
+      "end": 160,
+      "needle": "--fs-stats-head:",
+      "usedBy": [
+        "tokens/00-foundation/typography.json"
+      ]
+    },
+    "src/index.css:161": {
+      "path": "src/index.css",
+      "start": 161,
+      "end": 161,
+      "needle": "--fs-popup-head:",
+      "usedBy": [
+        "tokens/00-foundation/typography.json"
+      ]
+    },
+    "src/index.css:162": {
+      "path": "src/index.css",
+      "start": 162,
+      "end": 162,
+      "needle": "--fs-30-hero:",
+      "usedBy": [
+        "tokens/00-foundation/typography.json"
+      ]
+    },
+    "src/index.css:163": {
+      "path": "src/index.css",
+      "start": 163,
+      "end": 163,
+      "needle": "--fs-30-card-index:",
+      "usedBy": [
+        "tokens/00-foundation/typography.json"
+      ]
+    },
+    "src/index.css:164": {
+      "path": "src/index.css",
+      "start": 164,
+      "end": 164,
+      "needle": "--fs-legal:",
+      "usedBy": [
+        "tokens/00-foundation/typography.json"
+      ]
+    },
+    "src/index.css:165": {
+      "path": "src/index.css",
+      "start": 165,
+      "end": 165,
+      "needle": "--fs-nav-cta:",
+      "usedBy": [
+        "tokens/00-foundation/typography.json"
+      ]
+    },
+    "src/index.css:166": {
+      "path": "src/index.css",
+      "start": 166,
+      "end": 166,
+      "needle": "--indent-label:",
+      "usedBy": [
+        "tokens/00-foundation/spacing.json"
+      ]
+    },
+    "src/index.css:183": {
+      "path": "src/index.css",
+      "start": 183,
+      "end": 183,
+      "needle": "font-size: 0.875rem;",
+      "usedBy": [
+        "tokens/00-foundation/typography.json"
+      ]
+    },
+    "src/index.css:1906": {
+      "path": "src/index.css",
+      "start": 1906,
+      "end": 1906,
+      "needle": "  .footer-logo {",
+      "usedBy": [
+        "sections/shell.footer-bottom-reveal.json"
+      ]
+    },
+    "src/index.css:23": {
+      "path": "src/index.css",
+      "start": 23,
+      "end": 23,
+      "needle": "--color-black:",
+      "usedBy": [
+        "tokens/00-foundation/color.json"
+      ]
+    },
+    "src/index.css:24": {
+      "path": "src/index.css",
+      "start": 24,
+      "end": 24,
+      "needle": "--color-white:",
+      "usedBy": [
+        "tokens/00-foundation/color.json"
+      ]
+    },
+    "src/index.css:25": {
+      "path": "src/index.css",
+      "start": 25,
+      "end": 25,
+      "needle": "--color-green:",
+      "usedBy": [
+        "tokens/00-foundation/color.json"
+      ]
+    },
+    "src/index.css:26": {
+      "path": "src/index.css",
+      "start": 26,
+      "end": 26,
+      "needle": "--color-blue-light:",
+      "usedBy": [
+        "tokens/00-foundation/color.json"
+      ]
+    },
+    "src/index.css:27": {
+      "path": "src/index.css",
+      "start": 27,
+      "end": 27,
+      "needle": "--color-blue-dark:",
+      "usedBy": [
+        "tokens/00-foundation/color.json"
+      ]
+    },
+    "src/index.css:28": {
+      "path": "src/index.css",
+      "start": 28,
+      "end": 28,
+      "needle": "--color-blue-2:",
+      "usedBy": [
+        "tokens/00-foundation/color.json"
+      ]
+    },
+    "src/index.css:29": {
+      "path": "src/index.css",
+      "start": 29,
+      "end": 29,
+      "needle": "--color-blue-3:",
+      "usedBy": [
+        "tokens/00-foundation/color.json"
+      ]
+    },
+    "src/index.css:30": {
+      "path": "src/index.css",
+      "start": 30,
+      "end": 30,
+      "needle": "--color-blue-4:",
+      "usedBy": [
+        "tokens/00-foundation/color.json"
+      ]
+    },
+    "src/index.css:31": {
+      "path": "src/index.css",
+      "start": 31,
+      "end": 31,
+      "needle": "--color-gray:",
+      "usedBy": [
+        "tokens/00-foundation/color.json"
+      ]
+    },
+    "src/index.css:32": {
+      "path": "src/index.css",
+      "start": 32,
+      "end": 32,
+      "needle": "--color-stroke-dark:",
+      "usedBy": [
+        "tokens/00-foundation/color.json"
+      ]
+    },
+    "src/index.css:33": {
+      "path": "src/index.css",
+      "start": 33,
+      "end": 33,
+      "needle": "--color-stroke-light:",
+      "usedBy": [
+        "tokens/00-foundation/color.json"
+      ]
+    },
+    "src/index.css:34": {
+      "path": "src/index.css",
+      "start": 34,
+      "end": 34,
+      "needle": "--color-nav-bg:",
+      "usedBy": [
+        "tokens/00-foundation/color.json"
+      ]
+    },
+    "src/index.css:35": {
+      "path": "src/index.css",
+      "start": 35,
+      "end": 35,
+      "needle": "--color-nav-link:",
+      "usedBy": [
+        "tokens/00-foundation/color.json"
+      ]
+    },
+    "src/index.css:36": {
+      "path": "src/index.css",
+      "start": 36,
+      "end": 36,
+      "needle": "--color-hiw-inactive:",
+      "usedBy": [
+        "tokens/00-foundation/color.json"
+      ]
+    },
+    "src/index.css:37": {
+      "path": "src/index.css",
+      "start": 37,
+      "end": 37,
+      "needle": "--color-card-tint-1:",
+      "usedBy": [
+        "tokens/00-foundation/color.json"
+      ]
+    },
+    "src/index.css:38": {
+      "path": "src/index.css",
+      "start": 38,
+      "end": 38,
+      "needle": "--color-card-tint-2:",
+      "usedBy": [
+        "tokens/00-foundation/color.json"
+      ]
+    },
+    "src/index.css:39": {
+      "path": "src/index.css",
+      "start": 39,
+      "end": 39,
+      "needle": "--color-card-tint-3:",
+      "usedBy": [
+        "tokens/00-foundation/color.json"
+      ]
+    },
+    "src/index.css:40": {
+      "path": "src/index.css",
+      "start": 40,
+      "end": 40,
+      "needle": "--color-block-bg:",
+      "usedBy": [
+        "tokens/00-foundation/color.json"
+      ]
+    },
+    "src/index.css:41": {
+      "path": "src/index.css",
+      "start": 41,
+      "end": 41,
+      "needle": "--color-tab-inactive:",
+      "usedBy": [
+        "tokens/00-foundation/color.json"
+      ]
+    },
+    "src/index.css:42": {
+      "path": "src/index.css",
+      "start": 42,
+      "end": 42,
+      "needle": "--color-overlay:",
+      "usedBy": [
+        "tokens/00-foundation/color.json"
+      ]
+    },
+    "src/index.css:43": {
+      "path": "src/index.css",
+      "start": 43,
+      "end": 43,
+      "needle": "--color-overlay-tint:",
+      "usedBy": [
+        "tokens/00-foundation/color.json"
+      ]
+    },
+    "src/index.css:44": {
+      "path": "src/index.css",
+      "start": 44,
+      "end": 44,
+      "needle": "--color-yt-play:",
+      "usedBy": [
+        "tokens/00-foundation/color.json"
+      ]
+    },
+    "src/index.css:45": {
+      "path": "src/index.css",
+      "start": 45,
+      "end": 45,
+      "needle": "--color-yt-icon:",
+      "usedBy": [
+        "tokens/00-foundation/color.json"
+      ]
+    },
+    "src/index.css:46": {
+      "path": "src/index.css",
+      "start": 46,
+      "end": 46,
+      "needle": "--color-error:",
+      "usedBy": [
+        "tokens/00-foundation/color.json"
+      ]
+    },
+    "src/index.css:47": {
+      "path": "src/index.css",
+      "start": 47,
+      "end": 47,
+      "needle": "--color-error-bg:",
+      "usedBy": [
+        "tokens/00-foundation/color.json"
+      ]
+    },
+    "src/index.css:48": {
+      "path": "src/index.css",
+      "start": 48,
+      "end": 48,
+      "needle": "--color-white-30:",
+      "usedBy": [
+        "tokens/00-foundation/color.json"
+      ]
+    },
+    "src/index.css:50": {
+      "path": "src/index.css",
+      "start": 50,
+      "end": 50,
+      "needle": "--color-input-bg:",
+      "usedBy": [
+        "tokens/00-foundation/color.json"
+      ]
+    },
+    "src/index.css:51": {
+      "path": "src/index.css",
+      "start": 51,
+      "end": 51,
+      "needle": "--color-input-text:",
+      "usedBy": [
+        "tokens/00-foundation/color.json"
+      ]
+    },
+    "src/index.css:52": {
+      "path": "src/index.css",
+      "start": 52,
+      "end": 52,
+      "needle": "--color-input-border:",
+      "usedBy": [
+        "tokens/00-foundation/color.json"
+      ]
+    },
+    "src/index.css:53": {
+      "path": "src/index.css",
+      "start": 53,
+      "end": 53,
+      "needle": "--color-input-focus:",
+      "usedBy": [
+        "tokens/00-foundation/color.json"
+      ]
+    },
+    "src/index.css:54": {
+      "path": "src/index.css",
+      "start": 54,
+      "end": 54,
+      "needle": "--color-input-placeholder:",
+      "usedBy": [
+        "tokens/00-foundation/color.json"
+      ]
+    },
+    "src/index.css:56": {
+      "path": "src/index.css",
+      "start": 56,
+      "end": 56,
+      "needle": "--color-wform-done-bg:",
+      "usedBy": [
+        "tokens/00-foundation/color.json"
+      ]
+    },
+    "src/index.css:57": {
+      "path": "src/index.css",
+      "start": 57,
+      "end": 57,
+      "needle": "--color-wform-fail-bg:",
+      "usedBy": [
+        "tokens/00-foundation/color.json"
+      ]
+    },
+    "src/index.css:59": {
+      "path": "src/index.css",
+      "start": 59,
+      "end": 59,
+      "needle": "--color-hs-text:",
+      "usedBy": [
+        "tokens/00-foundation/color.json"
+      ]
+    },
+    "src/index.css:60": {
+      "path": "src/index.css",
+      "start": 60,
+      "end": 60,
+      "needle": "--color-hs-input-bg:",
+      "usedBy": [
+        "tokens/00-foundation/color.json"
+      ]
+    },
+    "src/index.css:61": {
+      "path": "src/index.css",
+      "start": 61,
+      "end": 61,
+      "needle": "--color-hs-input-border:",
+      "usedBy": [
+        "tokens/00-foundation/color.json"
+      ]
+    },
+    "src/index.css:62": {
+      "path": "src/index.css",
+      "start": 62,
+      "end": 62,
+      "needle": "--color-hs-input-focus:",
+      "usedBy": [
+        "tokens/00-foundation/color.json"
+      ]
+    },
+    "src/index.css:63": {
+      "path": "src/index.css",
+      "start": 63,
+      "end": 63,
+      "needle": "--color-hs-button:",
+      "usedBy": [
+        "tokens/00-foundation/color.json"
+      ]
+    },
+    "src/index.css:64": {
+      "path": "src/index.css",
+      "start": 64,
+      "end": 64,
+      "needle": "--color-hs-button-hover:",
+      "usedBy": [
+        "tokens/00-foundation/color.json"
+      ]
+    },
+    "src/index.css:65": {
+      "path": "src/index.css",
+      "start": 65,
+      "end": 65,
+      "needle": "--color-hs-button-active:",
+      "usedBy": [
+        "tokens/00-foundation/color.json"
+      ]
+    },
+    "src/index.css:66": {
+      "path": "src/index.css",
+      "start": 66,
+      "end": 66,
+      "needle": "--color-hs-error-border:",
+      "usedBy": [
+        "tokens/00-foundation/color.json"
+      ]
+    },
+    "src/index.css:67": {
+      "path": "src/index.css",
+      "start": 67,
+      "end": 67,
+      "needle": "--color-hs-error-border-focus:",
+      "usedBy": [
+        "tokens/00-foundation/color.json"
+      ]
+    },
+    "src/index.css:68": {
+      "path": "src/index.css",
+      "start": 68,
+      "end": 68,
+      "needle": "--color-hs-error-text:",
+      "usedBy": [
+        "tokens/00-foundation/color.json"
+      ]
+    },
+    "src/index.css:69": {
+      "path": "src/index.css",
+      "start": 69,
+      "end": 69,
+      "needle": "--color-hs-required:",
+      "usedBy": [
+        "tokens/00-foundation/color.json"
+      ]
+    },
+    "src/index.css:70": {
+      "path": "src/index.css",
+      "start": 70,
+      "end": 70,
+      "needle": "--color-hs-placeholder:",
+      "usedBy": [
+        "tokens/00-foundation/color.json"
+      ]
+    },
+    "src/index.css:73": {
+      "path": "src/index.css",
+      "start": 73,
+      "end": 73,
+      "needle": "--font-sans:",
+      "usedBy": [
+        "tokens/00-foundation/typography.json"
+      ]
+    },
+    "src/index.css:74": {
+      "path": "src/index.css",
+      "start": 74,
+      "end": 74,
+      "needle": "--font-hubspot:",
+      "usedBy": [
+        "tokens/00-foundation/typography.json"
+      ]
+    },
+    "src/index.css:77": {
+      "path": "src/index.css",
+      "start": 77,
+      "end": 77,
+      "needle": "--pad:",
+      "usedBy": [
+        "tokens/00-foundation/spacing.json"
+      ]
+    },
+    "src/index.css:78": {
+      "path": "src/index.css",
+      "start": 78,
+      "end": 78,
+      "needle": "--rail:",
+      "usedBy": [
+        "tokens/00-foundation/spacing.json"
+      ]
+    },
+    "src/index.css:79": {
+      "path": "src/index.css",
+      "start": 79,
+      "end": 79,
+      "needle": "--nav-h:",
+      "usedBy": [
+        "tokens/00-foundation/spacing.json"
+      ]
+    },
+    "src/index.css:80": {
+      "path": "src/index.css",
+      "start": 80,
+      "end": 80,
+      "needle": "--indent-label:",
+      "usedBy": [
+        "tokens/00-foundation/spacing.json"
+      ]
+    },
+    "src/index.css:81": {
+      "path": "src/index.css",
+      "start": 81,
+      "end": 81,
+      "needle": "--noise-opacity:",
+      "usedBy": [
+        "tokens/00-foundation/opacity.json"
+      ]
+    },
+    "src/index.css:84": {
+      "path": "src/index.css",
+      "start": 84,
+      "end": 84,
+      "needle": "--lh-body:",
+      "usedBy": [
+        "tokens/00-foundation/typography.json"
+      ]
+    },
+    "src/index.css:85": {
+      "path": "src/index.css",
+      "start": 85,
+      "end": 85,
+      "needle": "--lh-hero:",
+      "usedBy": [
+        "tokens/00-foundation/typography.json"
+      ]
+    },
+    "src/index.css:86": {
+      "path": "src/index.css",
+      "start": 86,
+      "end": 86,
+      "needle": "--lh-display:",
+      "usedBy": [
+        "tokens/00-foundation/typography.json"
+      ]
+    },
+    "src/index.css:87": {
+      "path": "src/index.css",
+      "start": 87,
+      "end": 87,
+      "needle": "--lh-30:",
+      "usedBy": [
+        "tokens/00-foundation/typography.json"
+      ]
+    },
+    "src/index.css:88": {
+      "path": "src/index.css",
+      "start": 88,
+      "end": 88,
+      "needle": "--fs-hero:",
+      "usedBy": [
+        "tokens/00-foundation/typography.json"
+      ]
+    },
+    "src/index.css:89": {
+      "path": "src/index.css",
+      "start": 89,
+      "end": 89,
+      "needle": "--fs-display:",
+      "usedBy": [
+        "tokens/00-foundation/typography.json"
+      ]
+    },
+    "src/index.css:90": {
+      "path": "src/index.css",
+      "start": 90,
+      "end": 90,
+      "needle": "--fs-hiw:",
+      "usedBy": [
+        "tokens/00-foundation/typography.json"
+      ]
+    },
+    "src/index.css:91": {
+      "path": "src/index.css",
+      "start": 91,
+      "end": 91,
+      "needle": "--fs-56:",
+      "usedBy": [
+        "tokens/00-foundation/typography.json"
+      ]
+    },
+    "src/index.css:92": {
+      "path": "src/index.css",
+      "start": 92,
+      "end": 92,
+      "needle": "--fs-stats-head:",
+      "usedBy": [
+        "tokens/00-foundation/typography.json"
+      ]
+    },
+    "src/index.css:93": {
+      "path": "src/index.css",
+      "start": 93,
+      "end": 93,
+      "needle": "--fs-popup-head:",
+      "usedBy": [
+        "tokens/00-foundation/typography.json"
+      ]
+    },
+    "src/index.css:94": {
+      "path": "src/index.css",
+      "start": 94,
+      "end": 94,
+      "needle": "--fs-30:",
+      "usedBy": [
+        "tokens/00-foundation/typography.json"
+      ]
+    },
+    "src/index.css:95": {
+      "path": "src/index.css",
+      "start": 95,
+      "end": 95,
+      "needle": "--fs-30-hero:",
+      "usedBy": [
+        "tokens/00-foundation/typography.json"
+      ]
+    },
+    "src/index.css:96": {
+      "path": "src/index.css",
+      "start": 96,
+      "end": 96,
+      "needle": "--fs-30-testimonial:",
+      "usedBy": [
+        "tokens/00-foundation/typography.json"
+      ]
+    },
+    "src/index.css:97": {
+      "path": "src/index.css",
+      "start": 97,
+      "end": 97,
+      "needle": "--fs-30-card-head:",
+      "usedBy": [
+        "tokens/00-foundation/typography.json"
+      ]
+    },
+    "src/index.css:98": {
+      "path": "src/index.css",
+      "start": 98,
+      "end": 98,
+      "needle": "--fs-30-card-index:",
+      "usedBy": [
+        "tokens/00-foundation/typography.json"
+      ]
+    },
+    "src/index.css:99": {
+      "path": "src/index.css",
+      "start": 99,
+      "end": 99,
+      "needle": "--fs-submit:",
+      "usedBy": [
+        "tokens/00-foundation/typography.json"
+      ]
+    },
+    "src/motion/pageIntro.js:17": {
+      "path": "src/motion/pageIntro.js",
+      "start": 17,
+      "end": 17,
+      "needle": "Reduced motion: the original runs these intros unchanged",
+      "usedBy": [
+        "tokens/00-foundation/motion-patterns.json"
+      ]
+    },
+    "src/pages/BlogIndexPage.jsx:39-64": {
+      "path": "src/pages/BlogIndexPage.jsx",
+      "start": 39,
+      "end": 64,
+      "needle": "export default function BlogIndexPage",
+      "usedBy": [
+        "templates/templates.json"
+      ]
+    },
+    "src/pages/BlogPostPage.jsx:11": {
+      "path": "src/pages/BlogPostPage.jsx",
+      "start": 11,
+      "end": 11,
+      "needle": "// /blog/<slug>",
+      "usedBy": [
+        "compatibility/graph.json"
+      ]
+    },
+    "src/pages/BlogPostPage.jsx:15-36": {
+      "path": "src/pages/BlogPostPage.jsx",
+      "start": 15,
+      "end": 36,
+      "needle": "export default function BlogPostPage",
+      "usedBy": [
+        "sections/content.post-header.json",
+        "templates/templates.json"
+      ]
+    },
+    "src/pages/BookDemoPage.jsx:8": {
+      "path": "src/pages/BookDemoPage.jsx",
+      "start": 8,
+      "end": 8,
+      "needle": "export default function BookDemoPage",
+      "usedBy": [
+        "compatibility/graph.json"
+      ]
+    },
+    "src/pages/BookDemoPage.jsx:8-10": {
+      "path": "src/pages/BookDemoPage.jsx",
+      "start": 8,
+      "end": 10,
+      "needle": "export default function BookDemoPage",
+      "usedBy": [
+        "templates/templates.json"
+      ]
+    },
+    "src/pages/CaseStudiesIndexPage.jsx:12-24": {
+      "path": "src/pages/CaseStudiesIndexPage.jsx",
+      "start": 12,
+      "end": 24,
+      "needle": "export default function CaseStudiesIndexPage",
+      "usedBy": [
+        "templates/templates.json"
+      ]
+    },
+    "src/pages/CaseStudyPage.jsx:12": {
+      "path": "src/pages/CaseStudyPage.jsx",
+      "start": 12,
+      "end": 12,
+      "needle": "// /case-studies/<slug>",
+      "usedBy": [
+        "compatibility/graph.json"
+      ]
+    },
+    "src/pages/CaseStudyPage.jsx:17-48": {
+      "path": "src/pages/CaseStudyPage.jsx",
+      "start": 17,
+      "end": 48,
+      "needle": "export default function CaseStudyPage",
+      "usedBy": [
+        "sections/content.case-header.json",
+        "templates/templates.json"
+      ]
+    },
+    "src/pages/CaseStudyPage.jsx:44": {
+      "path": "src/pages/CaseStudyPage.jsx",
+      "start": 44,
+      "end": 44,
+      "needle": "study.readNext?.visible",
+      "usedBy": [
+        "compatibility/graph.json"
+      ]
+    },
+    "src/pages/ComparePage.jsx:30-48": {
+      "path": "src/pages/ComparePage.jsx",
+      "start": 30,
+      "end": 48,
+      "needle": "export default function ComparePage",
+      "usedBy": [
+        "templates/templates.json"
+      ]
+    },
+    "src/pages/ComparePage.jsx:41": {
+      "path": "src/pages/ComparePage.jsx",
+      "start": 41,
+      "end": 41,
+      "needle": "variant=\"white-to-black\"",
+      "usedBy": [
+        "compatibility/graph.json"
+      ]
+    },
+    "src/pages/HomePage.jsx:15-32": {
+      "path": "src/pages/HomePage.jsx",
+      "start": 15,
+      "end": 32,
+      "needle": "export default function HomePage",
+      "usedBy": [
+        "templates/templates.json"
+      ]
+    },
+    "src/pages/HomePage.jsx:18": {
+      "path": "src/pages/HomePage.jsx",
+      "start": 18,
+      "end": 18,
+      "needle": "<Hero />",
+      "usedBy": [
+        "compatibility/graph.json"
+      ]
+    },
+    "src/pages/HomePage.jsx:24": {
+      "path": "src/pages/HomePage.jsx",
+      "start": 24,
+      "end": 24,
+      "needle": "<WhiteSection />",
+      "usedBy": [
+        "compatibility/graph.json"
+      ]
+    },
+    "src/pages/LegalPage.jsx:16": {
+      "path": "src/pages/LegalPage.jsx",
+      "start": 16,
+      "end": 16,
+      "needle": "export default function LegalPage",
+      "usedBy": [
+        "compatibility/graph.json"
+      ]
+    },
+    "src/pages/LegalPage.jsx:16-24": {
+      "path": "src/pages/LegalPage.jsx",
+      "start": 16,
+      "end": 24,
+      "needle": "export default function LegalPage",
+      "usedBy": [
+        "templates/templates.json"
+      ]
+    },
+    "src/pages/PageStub.jsx:1": {
+      "path": "src/pages/PageStub.jsx",
+      "start": 1,
+      "end": 1,
+      "needle": "// STUB",
+      "usedBy": [
+        "templates/templates.json"
+      ]
+    },
+    "src/pages/PageStub.jsx:2-4": {
+      "path": "src/pages/PageStub.jsx",
+      "start": 2,
+      "end": 4,
+      "needle": "export default function PageStub",
+      "usedBy": [
+        "templates/templates.json"
+      ]
+    },
+    "src/routes.jsx:25": {
+      "path": "src/routes.jsx",
+      "start": 25,
+      "end": 25,
+      "needle": "export const ROUTES",
+      "usedBy": [
+        "templates/routes.json"
+      ]
+    },
+    "src/routes.jsx:26": {
+      "path": "src/routes.jsx",
+      "start": 26,
+      "end": 26,
+      "needle": "family: 'home'",
+      "usedBy": [
+        "templates/templates.json"
+      ]
+    },
+    "src/routes.jsx:27": {
+      "path": "src/routes.jsx",
+      "start": 27,
+      "end": 27,
+      "needle": "family: 'compare'",
+      "usedBy": [
+        "templates/templates.json"
+      ]
+    },
+    "src/routes.jsx:28": {
+      "path": "src/routes.jsx",
+      "start": 28,
+      "end": 28,
+      "needle": "family: 'book-a-demo'",
+      "usedBy": [
+        "templates/templates.json"
+      ]
+    },
+    "src/routes.jsx:29": {
+      "path": "src/routes.jsx",
+      "start": 29,
+      "end": 29,
+      "needle": "family: 'blog-index'",
+      "usedBy": [
+        "compatibility/graph.json",
+        "templates/templates.json"
+      ]
+    },
+    "src/routes.jsx:30": {
+      "path": "src/routes.jsx",
+      "start": 30,
+      "end": 30,
+      "needle": "family: 'blog-post'",
+      "usedBy": [
+        "templates/templates.json"
+      ]
+    },
+    "src/routes.jsx:31": {
+      "path": "src/routes.jsx",
+      "start": 31,
+      "end": 31,
+      "needle": "family: 'case-studies-index'",
+      "usedBy": [
+        "templates/templates.json"
+      ]
+    },
+    "src/routes.jsx:32": {
+      "path": "src/routes.jsx",
+      "start": 32,
+      "end": 32,
+      "needle": "family: 'case-study'",
+      "usedBy": [
+        "templates/templates.json"
+      ]
+    },
+    "src/routes.jsx:33": {
+      "path": "src/routes.jsx",
+      "start": 33,
+      "end": 33,
+      "needle": "family: 'legal'",
+      "usedBy": [
+        "templates/templates.json"
+      ]
+    },
+    "src/routes.jsx:36": {
+      "path": "src/routes.jsx",
+      "start": 36,
+      "end": 36,
+      "needle": "export function resolveRoute",
+      "usedBy": [
+        "extraction/measured-values.json"
+      ]
+    },
+    "src/routes.jsx:42": {
+      "path": "src/routes.jsx",
+      "start": 42,
+      "end": 42,
+      "needle": "family: 'not-found'",
+      "usedBy": [
+        "templates/templates.json"
+      ]
+    },
+    "src/styles/motion-interactions.css:4": {
+      "path": "src/styles/motion-interactions.css",
+      "start": 4,
+      "end": 4,
+      "needle": "No reduced-motion guards",
+      "usedBy": [
+        "tokens/00-foundation/motion-patterns.json"
+      ]
+    },
+    "src/styles/page-book-a-demo.css:10": {
+      "path": "src/styles/page-book-a-demo.css",
+      "start": 10,
+      "end": 10,
+      "needle": "--color-muted-light:",
+      "usedBy": [
+        "tokens/00-foundation/color.json"
+      ]
+    },
+    "src/styles/page-book-a-demo.css:12": {
+      "path": "src/styles/page-book-a-demo.css",
+      "start": 12,
+      "end": 12,
+      "needle": "--color-wform-placeholder:",
+      "usedBy": [
+        "tokens/00-foundation/color.json"
+      ]
+    },
+    "src/styles/page-book-a-demo.css:14": {
+      "path": "src/styles/page-book-a-demo.css",
+      "start": 14,
+      "end": 14,
+      "needle": "--color-wform-button:",
+      "usedBy": [
+        "tokens/00-foundation/color.json"
+      ]
+    },
+    "src/styles/page-book-a-demo.css:15": {
+      "path": "src/styles/page-book-a-demo.css",
+      "start": 15,
+      "end": 15,
+      "needle": "--color-wform-button-text:",
+      "usedBy": [
+        "tokens/00-foundation/color.json"
+      ]
+    },
+    "src/styles/page-book-a-demo.css:9": {
+      "path": "src/styles/page-book-a-demo.css",
+      "start": 9,
+      "end": 9,
+      "needle": "PROMOTE: text-muted-light",
+      "usedBy": [
+        "extraction/measured-values.json"
+      ]
+    },
+    "src/styles/page-compare.css:18": {
+      "path": "src/styles/page-compare.css",
+      "start": 18,
+      "end": 18,
+      "needle": "--color-t9-tint:",
+      "usedBy": [
+        "tokens/00-foundation/color.json"
+      ]
+    },
+    "src/styles/page-compare.css:20": {
+      "path": "src/styles/page-compare.css",
+      "start": 20,
+      "end": 20,
+      "needle": "--color-white-50:",
+      "usedBy": [
+        "tokens/00-foundation/color.json"
+      ]
+    },
+    "src/styles/page-compare.css:22": {
+      "path": "src/styles/page-compare.css",
+      "start": 22,
+      "end": 22,
+      "needle": "--opacity-half-white:",
+      "usedBy": [
+        "tokens/00-foundation/opacity.json"
+      ]
+    },
+    "src/styles/page-compare.css:24": {
+      "path": "src/styles/page-compare.css",
+      "start": 24,
+      "end": 24,
+      "needle": "--fs-table-text:",
+      "usedBy": [
+        "tokens/00-foundation/typography.json"
+      ]
+    },
+    "src/styles/page-compare.css:26": {
+      "path": "src/styles/page-compare.css",
+      "start": 26,
+      "end": 26,
+      "needle": "--fs-access:",
+      "usedBy": [
+        "tokens/00-foundation/typography.json"
+      ]
+    },
+    "src/styles/page-compare.css:28": {
+      "path": "src/styles/page-compare.css",
+      "start": 28,
+      "end": 28,
+      "needle": "--w-logo-table:",
+      "usedBy": [
+        "tokens/00-foundation/spacing.json"
+      ]
+    },
+    "src/styles/page-compare.css:32": {
+      "path": "src/styles/page-compare.css",
+      "start": 32,
+      "end": 32,
+      "needle": "--fs-table-text:",
+      "usedBy": [
+        "tokens/00-foundation/typography.json"
+      ]
+    },
+    "src/styles/page-compare.css:37": {
+      "path": "src/styles/page-compare.css",
+      "start": 37,
+      "end": 37,
+      "needle": "--w-logo-table:",
+      "usedBy": [
+        "tokens/00-foundation/spacing.json"
+      ]
+    },
+    "src/styles/page-compare.css:42": {
+      "path": "src/styles/page-compare.css",
+      "start": 42,
+      "end": 42,
+      "needle": "--w-logo-table:",
+      "usedBy": [
+        "tokens/00-foundation/spacing.json"
+      ]
+    },
+    "src/styles/page-legal.css:10": {
+      "path": "src/styles/page-legal.css",
+      "start": 10,
+      "end": 10,
+      "needle": "--color-white-50:",
+      "usedBy": [
+        "tokens/00-foundation/color.json"
+      ]
+    },
+    "src/styles/page-legal.css:12": {
+      "path": "src/styles/page-legal.css",
+      "start": 12,
+      "end": 12,
+      "needle": "--fs-legal-subhead:",
+      "usedBy": [
+        "tokens/00-foundation/typography.json",
+        "tokens/20-component/component.json"
+      ]
+    },
+    "src/styles/page-legal.css:14": {
+      "path": "src/styles/page-legal.css",
+      "start": 14,
+      "end": 14,
+      "needle": "--legal-cont-w:",
+      "usedBy": [
+        "tokens/00-foundation/spacing.json"
+      ]
+    },
+    "src/styles/page-legal.css:15": {
+      "path": "src/styles/page-legal.css",
+      "start": 15,
+      "end": 15,
+      "needle": "--legal-cont-min:",
+      "usedBy": [
+        "tokens/00-foundation/spacing.json"
+      ]
+    },
+    "src/styles/page-legal.css:16": {
+      "path": "src/styles/page-legal.css",
+      "start": 16,
+      "end": 16,
+      "needle": "--legal-cont-max:",
+      "usedBy": [
+        "tokens/00-foundation/spacing.json"
+      ]
+    },
+    "src/styles/page-legal.css:18": {
+      "path": "src/styles/page-legal.css",
+      "start": 18,
+      "end": 18,
+      "needle": "--legal-section-pt:",
+      "usedBy": [
+        "tokens/00-foundation/spacing.json"
+      ]
+    },
+    "src/styles/page-legal.css:19": {
+      "path": "src/styles/page-legal.css",
+      "start": 19,
+      "end": 19,
+      "needle": "--legal-cont-gap:",
+      "usedBy": [
+        "tokens/00-foundation/spacing.json"
+      ]
+    },
+    "src/styles/page-legal.css:20": {
+      "path": "src/styles/page-legal.css",
+      "start": 20,
+      "end": 20,
+      "needle": "--legal-block-gap:",
+      "usedBy": [
+        "tokens/00-foundation/spacing.json"
+      ]
+    },
+    "src/styles/page-legal.css:21": {
+      "path": "src/styles/page-legal.css",
+      "start": 21,
+      "end": 21,
+      "needle": "--legal-block-pb:",
+      "usedBy": [
+        "tokens/00-foundation/spacing.json"
+      ]
+    },
+    "src/styles/page-legal.css:22": {
+      "path": "src/styles/page-legal.css",
+      "start": 22,
+      "end": 22,
+      "needle": "--legal-text-gap:",
+      "usedBy": [
+        "tokens/00-foundation/spacing.json"
+      ]
+    },
+    "src/styles/page-legal.css:24": {
+      "path": "src/styles/page-legal.css",
+      "start": 24,
+      "end": 24,
+      "needle": "--list-indent:",
+      "usedBy": [
+        "tokens/00-foundation/spacing.json"
+      ]
+    },
+    "src/styles/page-legal.css:28": {
+      "path": "src/styles/page-legal.css",
+      "start": 28,
+      "end": 28,
+      "needle": "--legal-cont-w:",
+      "usedBy": [
+        "tokens/00-foundation/spacing.json"
+      ]
+    },
+    "src/styles/page-legal.css:29": {
+      "path": "src/styles/page-legal.css",
+      "start": 29,
+      "end": 29,
+      "needle": "--legal-cont-min:",
+      "usedBy": [
+        "tokens/00-foundation/spacing.json"
+      ]
+    },
+    "src/styles/page-legal.css:34": {
+      "path": "src/styles/page-legal.css",
+      "start": 34,
+      "end": 34,
+      "needle": "--legal-cont-gap:",
+      "usedBy": [
+        "tokens/00-foundation/spacing.json"
+      ]
+    },
+    "src/styles/page-legal.css:35": {
+      "path": "src/styles/page-legal.css",
+      "start": 35,
+      "end": 35,
+      "needle": "--legal-block-gap:",
+      "usedBy": [
+        "tokens/00-foundation/spacing.json"
+      ]
+    },
+    "src/styles/page-legal.css:36": {
+      "path": "src/styles/page-legal.css",
+      "start": 36,
+      "end": 36,
+      "needle": "--legal-block-pb:",
+      "usedBy": [
+        "tokens/00-foundation/spacing.json"
+      ]
+    },
+    "tailwind.config.js:23": {
+      "path": "tailwind.config.js",
+      "start": 23,
+      "end": 23,
+      "needle": "tablet: { max",
+      "usedBy": [
+        "tokens/00-foundation/breakpoint.json"
+      ]
+    },
+    "tailwind.config.js:24": {
+      "path": "tailwind.config.js",
+      "start": 24,
+      "end": 24,
+      "needle": "mobile: { max",
+      "usedBy": [
+        "tokens/00-foundation/breakpoint.json"
+      ]
+    },
+    "tailwind.config.js:25": {
+      "path": "tailwind.config.js",
+      "start": 25,
+      "end": 25,
+      "needle": "tiny: { max",
+      "usedBy": [
+        "tokens/00-foundation/breakpoint.json"
+      ]
+    },
+    "tailwind.config.js:99": {
+      "path": "tailwind.config.js",
+      "start": 99,
+      "end": 99,
+      "needle": "nav: '80px'",
+      "usedBy": [
+        "tokens/00-foundation/elevation.json"
+      ]
+    }
+  }
+}

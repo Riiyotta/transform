@@ -1,0 +1,49 @@
+{
+  "id": "tab-link",
+  "kind": "primitive",
+  "purpose": "Tab/row link with active state: Tasking (gray + progress bar), Navigator (black active), Specialty (white / green active), EV accordion (white active)",
+  "props": {
+    "title": "string",
+    "text": "string",
+    "family": [
+      "tasking",
+      "navigator",
+      "specialty",
+      "specialty-white",
+      "ev-accordion"
+    ],
+    "activateOn": [
+      "click",
+      "hover",
+      "timer"
+    ]
+  },
+  "additionalProps": false,
+  "states": [
+    "inactive",
+    "active"
+  ],
+  "tokens": [
+    "component.tasking-tab",
+    "component.navigator-tab",
+    "component.specialty-tab"
+  ],
+  "motionPatterns": [
+    "M10",
+    "M10b",
+    "M20",
+    "CMP-M4"
+  ],
+  "measuredFrom": [
+    "CLONE_SPEC.md:291",
+    "CLONE_SPEC.md:308"
+  ],
+  "a11y": "Webflow tabs: arrow keys, Home, End on the EV accordion; hover also activates Navigator/Specialty tabs (hover = click)",
+  "usedBySections": [
+    "product.tasking-agent",
+    "product.navigator-agent",
+    "fit.specialties",
+    "compare.specialty-white",
+    "compare.evaluation"
+  ]
+}

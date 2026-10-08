@@ -1,0 +1,219 @@
+{
+  "id": "shell.page-layers",
+  "kind": "section",
+  "category": "SHELL",
+  "surface": "dark",
+  "claimsPolicy": "none",
+  "purpose": "Give every page the same fixed atmosphere: noise tile, solid black base and, where shown, a looping brand video that fades out as the hero scrolls away.",
+  "description": "Fixed background layers behind page content: tiled noise overlay and solid background on every route, plus a looping hero video (with a still-image fallback under reduced motion) on templates that show one.",
+  "implementedBy": "src/components/PageLayers.jsx",
+  "evidenceLevel": "measured",
+  "scope": {
+    "templates": [
+      "template.home",
+      "template.compare",
+      "template.book-a-demo",
+      "template.legal",
+      "template.blog-index",
+      "template.blog-post",
+      "template.case-studies-index",
+      "template.case-study"
+    ],
+    "routes": [
+      "/",
+      "/compare",
+      "/book-a-demo",
+      "/terms-of-use",
+      "/privacy-policy",
+      "/hipaa",
+      "/blog",
+      "/blog/ai-voice-agents-for-athenahealth-7-questions-to-ask-before-choosing-a-platform",
+      "/blog/ent-reimbursement-in-2027-what-medicare-s-proposed-cuts-mean-for-otolaryngology-practices",
+      "/blog/medical-practice-call-volume-january",
+      "/blog/orthopedic-ai-answering-service",
+      "/blog/redefining-healthcare-ai",
+      "/blog/the-12-month-shift-why-voice-ai-agents-are-now-a-financial-imperative-for-specialty-practices",
+      "/blog/why-generic-ai-virtual-assistants-fail-specialty-medical-practices-and-what-actually-works",
+      "/blog/why-traditional-ivr-is-failing-your-practice-and-how-ai-voice-agents-fix-the-press-0-trap",
+      "/case-studies",
+      "/case-studies/southern-bone-joint",
+      "/case-studies/the-orthopaedic-center"
+    ],
+    "routeCount": 18
+  },
+  "constraints": {
+    "onePerPage": true,
+    "maxPerPage": 1,
+    "allowedTemplates": [
+      "template.home",
+      "template.compare",
+      "template.book-a-demo",
+      "template.legal",
+      "template.blog-index",
+      "template.blog-post",
+      "template.case-studies-index",
+      "template.case-study"
+    ],
+    "mustBeFirst": true
+  },
+  "variants": {
+    "with-video": {
+      "requires": [
+        "videoSource",
+        "stillFallback"
+      ],
+      "forbids": []
+    },
+    "without-video": {
+      "requires": [],
+      "forbids": [
+        "videoSource",
+        "stillFallback"
+      ]
+    }
+  },
+  "fixedChrome": false,
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "noiseTile"
+    ],
+    "properties": {
+      "noiseTile": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "assetRole",
+          "assetRef"
+        ],
+        "properties": {
+          "assetRole": {
+            "allOf": [
+              {
+                "$ref": "#/definitions/assetRole"
+              },
+              {
+                "const": "bg.noise-tile"
+              }
+            ]
+          },
+          "assetRef": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "examples": [
+          {
+            "assetRole": "bg.noise-tile",
+            "assetRef": "/assets/noise.webp"
+          }
+        ]
+      },
+      "videoSource": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "assetRole",
+          "assetRef"
+        ],
+        "properties": {
+          "assetRole": {
+            "allOf": [
+              {
+                "$ref": "#/definitions/assetRole"
+              },
+              {
+                "const": "bg.video-loop"
+              }
+            ]
+          },
+          "assetRef": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "examples": [
+          {
+            "assetRole": "bg.video-loop",
+            "assetRef": "/assets/hero-tablet.mp4"
+          }
+        ]
+      },
+      "stillFallback": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "assetRole",
+          "assetRef"
+        ],
+        "properties": {
+          "assetRole": {
+            "allOf": [
+              {
+                "$ref": "#/definitions/assetRole"
+              },
+              {
+                "const": "bg.still-fallback"
+              }
+            ]
+          },
+          "assetRef": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "examples": [
+          {
+            "assetRole": "bg.still-fallback",
+            "assetRef": "/assets/tablet-pixels.webp"
+          }
+        ]
+      }
+    }
+  },
+  "contentFields": [
+    "noiseTile",
+    "videoSource",
+    "stillFallback"
+  ],
+  "assetRoles": [
+    "bg.noise-tile",
+    "bg.still-fallback",
+    "bg.video-loop"
+  ],
+  "composes": [
+    "noise-overlay",
+    "media-cover"
+  ],
+  "motion": {
+    "allowedPatterns": [
+      "M3",
+      "M3b",
+      "M21",
+      "BLOG-M4"
+    ],
+    "reducedMotionFallback": "video-still-image"
+  },
+  "responsive": [
+    {
+      "at": ">=992",
+      "target": ".bg-noise",
+      "property": "opacity",
+      "value": "0.5"
+    },
+    {
+      "at": "<=991",
+      "target": ".bg-noise",
+      "property": "opacity",
+      "value": "0.3"
+    }
+  ],
+  "measuredFrom": [
+    "CLONE_SPEC.md:129-149",
+    "src/components/PageLayers.jsx:89-114",
+    "specs/blog.md:31",
+    "ia/ia.json:25"
+  ],
+  "notes": "variant is bound to the template video flag: blog-post and case-study templates have no background video (specs/blog.md section 1). The still image shows until the video fires playing, and always under prefers-reduced-motion."
+}

@@ -1,0 +1,243 @@
+{
+  "id": "proof.stats",
+  "kind": "section",
+  "category": "PROOF",
+  "surface": "dark",
+  "claimsPolicy": "must-not-fabricate",
+  "purpose": "Quantify impact with four metric blocks that expand on hover (desktop) or tap (tablet/mobile) to reveal imagery.",
+  "description": "Four metric blocks in blue tints: hover expands a block and reveals its image on desktop; click accordion at ≤991.",
+  "implementedBy": "src/components/Stats.jsx",
+  "evidenceLevel": "measured",
+  "scope": {
+    "templates": [
+      "template.home"
+    ],
+    "routes": [
+      "/"
+    ],
+    "routeCount": 1
+  },
+  "constraints": {
+    "onePerPage": true,
+    "maxPerPage": 1,
+    "allowedTemplates": [
+      "template.home"
+    ],
+    "allowedRoutes": [
+      "/"
+    ]
+  },
+  "variants": {},
+  "fixedChrome": false,
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "headline",
+      "railImage",
+      "blocks"
+    ],
+    "properties": {
+      "headline": {
+        "type": "array",
+        "minItems": 1,
+        "maxItems": 2,
+        "maxWords": 5,
+        "observedMax": 4,
+        "items": {
+          "type": "object",
+          "required": [
+            "text"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "text": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "^\\S(?:[\\s\\S]*\\S)?$"
+            },
+            "tone": {
+              "enum": [
+                "default",
+                "accent-green",
+                "accent-blue"
+              ]
+            },
+            "breakAfter": {
+              "type": "boolean"
+            }
+          }
+        },
+        "examples": [
+          [
+            {
+              "text": "Proven Results."
+            },
+            {
+              "text": "Powerful Impact.",
+              "tone": "accent-blue"
+            }
+          ]
+        ]
+      },
+      "railImage": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "assetRole",
+          "assetRef"
+        ],
+        "properties": {
+          "assetRole": {
+            "allOf": [
+              {
+                "$ref": "#/definitions/assetRole"
+              },
+              {
+                "const": "bg.section-image"
+              }
+            ]
+          },
+          "assetRef": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "examples": [
+          {
+            "assetRole": "bg.section-image",
+            "assetRef": "/assets/6894e2b1ef0879a32ffdc2a5-gr-bl.webp"
+          }
+        ]
+      },
+      "blocks": {
+        "type": "array",
+        "minItems": 4,
+        "maxItems": 4,
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "index",
+            "value",
+            "label",
+            "hoverImage"
+          ],
+          "properties": {
+            "index": {
+              "type": "string",
+              "minLength": 1,
+              "maxWords": 5,
+              "observedMax": 1,
+              "examples": [
+                "01"
+              ]
+            },
+            "value": {
+              "type": "string",
+              "minLength": 1,
+              "maxWords": 5,
+              "observedMax": 1,
+              "examples": [
+                "96%"
+              ]
+            },
+            "label": {
+              "type": "string",
+              "minLength": 1,
+              "maxWords": 5,
+              "observedMax": 5,
+              "examples": [
+                "Providers"
+              ]
+            },
+            "hoverImage": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "assetRole",
+                "assetRef"
+              ],
+              "properties": {
+                "assetRole": {
+                  "allOf": [
+                    {
+                      "$ref": "#/definitions/assetRole"
+                    },
+                    {
+                      "const": "stat.hover-image"
+                    }
+                  ]
+                },
+                "assetRef": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "examples": [
+                {
+                  "assetRole": "stat.hover-image",
+                  "assetRef": "/assets/stat-1.webp"
+                }
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  "contentFields": [
+    "headline",
+    "railImage",
+    "blocks"
+  ],
+  "assetRoles": [
+    "bg.section-image",
+    "stat.hover-image"
+  ],
+  "composes": [
+    "stat-block",
+    "media-cover",
+    "noise-overlay"
+  ],
+  "motion": {
+    "allowedPatterns": [
+      "M5",
+      "M6"
+    ],
+    "reducedMotionFallback": "parity-unchanged"
+  },
+  "responsive": [
+    {
+      "at": ">=992",
+      "target": "stats-block",
+      "property": "flex-basis",
+      "value": "16% rest, 100% on hover (130.3/664.1/130.3/130.3 at 1440)"
+    },
+    {
+      "at": "768-991",
+      "target": "stats-block",
+      "property": "width",
+      "value": "click accordion: active 70%, others 10%; first opens on load"
+    },
+    {
+      "at": "<=767",
+      "target": "stats",
+      "property": "layout",
+      "value": "vertical stack; active block height 260px"
+    },
+    {
+      "at": "<=991",
+      "target": "stats",
+      "property": "height",
+      "value": "400px (41.667vw at >=992)"
+    }
+  ],
+  "measuredFrom": [
+    "CLONE_SPEC.md:211-224",
+    "src/components/Stats.jsx:89-129",
+    "src/data/stats.js:3",
+    "ia/ia.json:121"
+  ],
+  "notes": "Real metrics (2,000+ providers, 96%, 8:1, 80%) are claims about a real company and must not be fabricated."
+}

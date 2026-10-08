@@ -1,0 +1,21 @@
+{
+  "gradient": {
+    "post-top": {
+      "$type": "gradient",
+      "$value": "linear-gradient(270deg, rgba(255,255,255,0), {color.black})",
+      "$description": "Blog/case-study header left overlay (40% width)",
+      "cssVar": "--gradient-post-top",
+      "measuredFrom": [
+        "src/components/cms/cms.css:19"
+      ]
+    },
+    "modal-overlay-tint": {
+      "$type": "gradient",
+      "$value": "linear-gradient({color.overlay-tint}, {color.overlay-tint})",
+      "$description": "Modal overlay 2% white layer",
+      "measuredFrom": [
+        "CLONE_SPEC.md:63"
+      ]
+    }
+  }
+}

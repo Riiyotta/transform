@@ -1,0 +1,183 @@
+{
+  "id": "compare.generic",
+  "kind": "section",
+  "category": "COMPARE",
+  "surface": "dark",
+  "claimsPolicy": "none",
+  "purpose": "Claim the category: this is healthcare-specific voice AI, not generic call-center AI.",
+  "description": "'Not Generic Call Center AI' claim section: image rail plus a headline and body paragraph.",
+  "implementedBy": "src/components/compare/GenericSection.jsx",
+  "evidenceLevel": "measured",
+  "scope": {
+    "templates": [
+      "template.compare"
+    ],
+    "routes": [
+      "/compare"
+    ],
+    "routeCount": 1
+  },
+  "constraints": {
+    "onePerPage": true,
+    "maxPerPage": 1,
+    "allowedTemplates": [
+      "template.compare"
+    ],
+    "allowedRoutes": [
+      "/compare"
+    ]
+  },
+  "variants": {},
+  "fixedChrome": false,
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "label",
+      "headline",
+      "text",
+      "railImage"
+    ],
+    "properties": {
+      "label": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 5,
+        "observedMax": 2,
+        "examples": [
+          "Why Transform9"
+        ]
+      },
+      "headline": {
+        "type": "array",
+        "minItems": 1,
+        "maxItems": 2,
+        "maxWords": 5,
+        "observedMax": 5,
+        "items": {
+          "type": "object",
+          "required": [
+            "text"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "text": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "^\\S(?:[\\s\\S]*\\S)?$"
+            },
+            "tone": {
+              "enum": [
+                "default",
+                "accent-green",
+                "accent-blue"
+              ]
+            },
+            "breakAfter": {
+              "type": "boolean"
+            }
+          }
+        },
+        "examples": [
+          [
+            {
+              "text": "Not Generic",
+              "tone": "accent-blue"
+            },
+            {
+              "text": "Call Center AI"
+            }
+          ]
+        ]
+      },
+      "text": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 50,
+        "observedMax": 46,
+        "examples": [
+          "Our AI voice agents are designed to handle real patient access workflows with precision, security, and consistency. Unlike general-purpose AI solutions, Transform9 is an expert in healthcare where accuracy and security matter most. Our knowledge and deep understanding of the industry separate us from our competition."
+        ]
+      },
+      "railImage": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "assetRole",
+          "assetRef"
+        ],
+        "properties": {
+          "assetRole": {
+            "allOf": [
+              {
+                "$ref": "#/definitions/assetRole"
+              },
+              {
+                "const": "bg.section-image"
+              }
+            ]
+          },
+          "assetRef": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "examples": [
+          {
+            "assetRole": "bg.section-image",
+            "assetRef": "/assets/6992da8bade6530f1dab73f8-call-blue.avif"
+          }
+        ]
+      }
+    }
+  },
+  "contentFields": [
+    "label",
+    "headline",
+    "text",
+    "railImage"
+  ],
+  "assetRoles": [
+    "bg.section-image"
+  ],
+  "composes": [
+    "label-eyebrow",
+    "media-cover",
+    "hairline"
+  ],
+  "motion": {
+    "allowedPatterns": [],
+    "reducedMotionFallback": "static-no-motion"
+  },
+  "responsive": [
+    {
+      "at": ">=992",
+      "target": "why-text",
+      "property": "position",
+      "value": "absolute, bottom 100% (above the section top border)"
+    },
+    {
+      "at": "<=767",
+      "target": "why-text",
+      "property": "position",
+      "value": "relative, in flow"
+    },
+    {
+      "at": "<=767",
+      "target": "left-side.generic",
+      "property": "height",
+      "value": "80vw"
+    },
+    {
+      "at": "<=479",
+      "target": "generic-text",
+      "property": "font-size",
+      "value": "5vw (19.5px at 390)"
+    }
+  ],
+  "measuredFrom": [
+    "specs/compare.md:86-108",
+    "src/components/compare/GenericSection.jsx:6-21",
+    "ia/ia.json:199"
+  ]
+}

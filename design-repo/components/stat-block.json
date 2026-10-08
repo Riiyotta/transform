@@ -1,0 +1,29 @@
+{
+  "id": "stat-block",
+  "kind": "component",
+  "purpose": "Stats panel with index, big value, label and hover image; expands on hover (>=992) or click (<=991)",
+  "props": {
+    "index": "string",
+    "value": "string",
+    "label": "string",
+    "hoverImage": "asset:stat.hover-image"
+  },
+  "additionalProps": false,
+  "composes": [
+    "media-cover",
+    "noise-overlay"
+  ],
+  "tokens": [
+    "component.stats-block"
+  ],
+  "motionPatterns": [
+    "M5",
+    "M6"
+  ],
+  "measuredFrom": [
+    "src/components/Stats.jsx:89"
+  ],
+  "usedBySections": [
+    "proof.stats"
+  ]
+}

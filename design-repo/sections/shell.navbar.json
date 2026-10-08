@@ -1,0 +1,239 @@
+{
+  "id": "shell.navbar",
+  "kind": "section",
+  "category": "SHELL",
+  "surface": "dark",
+  "claimsPolicy": "none",
+  "purpose": "Persistent wayfinding and the always-visible Book a Demo conversion path; flips to a white treatment while a white section is under it.",
+  "description": "Fixed 60px top bar with a blurred translucent dark background: logo, primary links, Login, green Book a Demo button. Tweens to a white treatment while a white section (home, /compare) is under it.",
+  "implementedBy": "src/components/Navbar.jsx",
+  "evidenceLevel": "measured",
+  "scope": {
+    "templates": [
+      "template.home",
+      "template.compare",
+      "template.book-a-demo",
+      "template.legal",
+      "template.blog-index",
+      "template.blog-post",
+      "template.case-studies-index",
+      "template.case-study"
+    ],
+    "routes": [
+      "/",
+      "/compare",
+      "/book-a-demo",
+      "/terms-of-use",
+      "/privacy-policy",
+      "/hipaa",
+      "/blog",
+      "/blog/ai-voice-agents-for-athenahealth-7-questions-to-ask-before-choosing-a-platform",
+      "/blog/ent-reimbursement-in-2027-what-medicare-s-proposed-cuts-mean-for-otolaryngology-practices",
+      "/blog/medical-practice-call-volume-january",
+      "/blog/orthopedic-ai-answering-service",
+      "/blog/redefining-healthcare-ai",
+      "/blog/the-12-month-shift-why-voice-ai-agents-are-now-a-financial-imperative-for-specialty-practices",
+      "/blog/why-generic-ai-virtual-assistants-fail-specialty-medical-practices-and-what-actually-works",
+      "/blog/why-traditional-ivr-is-failing-your-practice-and-how-ai-voice-agents-fix-the-press-0-trap",
+      "/case-studies",
+      "/case-studies/southern-bone-joint",
+      "/case-studies/the-orthopaedic-center"
+    ],
+    "routeCount": 18
+  },
+  "constraints": {
+    "onePerPage": true,
+    "maxPerPage": 1,
+    "allowedTemplates": [
+      "template.home",
+      "template.compare",
+      "template.book-a-demo",
+      "template.legal",
+      "template.blog-index",
+      "template.blog-post",
+      "template.case-studies-index",
+      "template.case-study"
+    ],
+    "mustImmediatelyFollowAnyOf": [
+      "shell.page-layers"
+    ]
+  },
+  "variants": {},
+  "fixedChrome": false,
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "logoWhite",
+      "logoBlack"
+    ],
+    "properties": {
+      "logoWhite": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "assetRole",
+          "assetRef",
+          "alt"
+        ],
+        "properties": {
+          "assetRole": {
+            "allOf": [
+              {
+                "$ref": "#/definitions/assetRole"
+              },
+              {
+                "const": "brand.wordmark-white"
+              }
+            ]
+          },
+          "assetRef": {
+            "type": "string",
+            "minLength": 1
+          },
+          "alt": {
+            "type": "string",
+            "maxWords": 5,
+            "observedMax": 2
+          }
+        },
+        "examples": [
+          {
+            "assetRole": "brand.wordmark-white",
+            "assetRef": "/assets/68639bb30a93107837363b04-logo-2.svg",
+            "alt": "Transform9 logo"
+          }
+        ]
+      },
+      "logoBlack": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "assetRole",
+          "assetRef",
+          "alt"
+        ],
+        "properties": {
+          "assetRole": {
+            "allOf": [
+              {
+                "$ref": "#/definitions/assetRole"
+              },
+              {
+                "const": "brand.wordmark-black"
+              }
+            ]
+          },
+          "assetRef": {
+            "type": "string",
+            "minLength": 1
+          },
+          "alt": {
+            "type": "string",
+            "maxWords": 5,
+            "observedMax": 2
+          }
+        },
+        "examples": [
+          {
+            "assetRole": "brand.wordmark-black",
+            "assetRef": "/assets/68906575d051bc5b61776ed5-logo-black.svg",
+            "alt": "Transform9 logo"
+          }
+        ]
+      }
+    }
+  },
+  "contentFields": [
+    "logoWhite",
+    "logoBlack"
+  ],
+  "assetRoles": [
+    "brand.wordmark-black",
+    "brand.wordmark-white"
+  ],
+  "composes": [
+    "wordmark",
+    "cta-button",
+    "text-link",
+    "hairline",
+    "icon"
+  ],
+  "motion": {
+    "allowedPatterns": [
+      "M4",
+      "M15",
+      "M17",
+      "CMP-M1",
+      "BAD-M1",
+      "LGL-M1",
+      "BLOG-M2"
+    ],
+    "reducedMotionFallback": "parity-unchanged"
+  },
+  "responsive": [
+    {
+      "at": ">=992",
+      "target": "nav-links",
+      "property": "display",
+      "value": "flex row"
+    },
+    {
+      "at": "<=991",
+      "target": "nav-links",
+      "property": "display",
+      "value": "hidden; burger button 60x60 shown"
+    },
+    {
+      "at": "<=767",
+      "target": "mobil-top-cta",
+      "property": "display",
+      "value": "green Book a Demo 170x60 shown in the bar"
+    },
+    {
+      "at": "<=991",
+      "target": "logo-wrap",
+      "property": "width",
+      "value": "170px (160px at <=479)"
+    }
+  ],
+  "measuredFrom": [
+    "CLONE_SPEC.md:151-173",
+    "src/data/nav.js:2",
+    "ia/ia.json:31"
+  ],
+  "fixedContent": {
+    "leftLinks": [
+      {
+        "label": "Compare",
+        "href": "/compare",
+        "external": false
+      },
+      {
+        "label": "Blog",
+        "href": "/blog",
+        "external": false
+      },
+      {
+        "label": "Case Studies",
+        "href": "/case-studies",
+        "external": false
+      },
+      {
+        "label": "Careers",
+        "href": "https://apply.workable.com/transform9/",
+        "external": true
+      }
+    ],
+    "login": {
+      "label": "Login",
+      "href": "https://portal.transform9.com/",
+      "external": true
+    },
+    "cta": {
+      "label": "Book a Demo",
+      "href": "/book-a-demo"
+    }
+  },
+  "notes": "Only the two wordmark references are settable; the link set is fixed chrome recorded in fixedContent. Careers and Login are external-domain pages (PROJECT_SCOPE) and stay outbound links."
+}

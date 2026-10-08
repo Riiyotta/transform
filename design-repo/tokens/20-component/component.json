@@ -1,0 +1,223 @@
+{
+  "component": {
+    "navbar": {
+      "tokens": {
+        "height": "{layout.nav-h}",
+        "background": "{semantic.surface.nav}",
+        "linkColor": "{semantic.text.secondary}",
+        "ctaBackground": "{semantic.surface.accent}",
+        "ctaText": "{semantic.text.on-accent}",
+        "ctaHoverBackground": "{semantic.surface.subtle}",
+        "backdropBlur": "{elevation.backdrop-blur-nav}",
+        "bottomLine": "{elevation.hairline-bottom-dark}"
+      },
+      "measuredFrom": [
+        "CLONE_SPEC.md:151"
+      ]
+    },
+    "stats-block": {
+      "tokens": {
+        "tint-1": "{color.blue-light}",
+        "tint-2": "{color.blue-2}",
+        "tint-3": "{color.blue-3}",
+        "tint-4": "{color.blue-4}",
+        "flexTransition": "{duration.flex-grow}"
+      },
+      "measuredFrom": [
+        "CLONE_SPEC.md:211"
+      ]
+    },
+    "scheduling-card": {
+      "tokens": {
+        "background": "{color.black}",
+        "stackedTint-1": "{color.card-tint-1}",
+        "stackedTint-2": "{color.card-tint-2}",
+        "stackedTint-3": "{color.card-tint-3}"
+      },
+      "measuredFrom": [
+        "CLONE_SPEC.md:271"
+      ]
+    },
+    "outreach-card": {
+      "tokens": {
+        "tint-1": "{color.blue-dark}",
+        "tint-2": "{color.blue-2}",
+        "tint-3": "{color.blue-3}",
+        "tint-4": "{color.blue-4}",
+        "tint-5": "{color.black}"
+      },
+      "measuredFrom": [
+        "CLONE_SPEC.md:318"
+      ]
+    },
+    "tasking-tab": {
+      "tokens": {
+        "activeBackground": "{color.gray}",
+        "progressBar": "{color.blue-dark}"
+      },
+      "measuredFrom": [
+        "CLONE_SPEC.md:291"
+      ]
+    },
+    "navigator-tab": {
+      "tokens": {
+        "activeBackground": "{color.black}",
+        "activeText": "{color.white}",
+        "inactiveText": "{color.tab-inactive}"
+      },
+      "measuredFrom": [
+        "CLONE_SPEC.md:308"
+      ]
+    },
+    "specialty-tab": {
+      "tokens": {
+        "activeBackgroundDark": "{color.white}",
+        "activeBackgroundWhite": "{color.green}",
+        "activeText": "{color.black}"
+      },
+      "measuredFrom": [
+        "CLONE_SPEC.md:342",
+        "specs/compare.md:195"
+      ]
+    },
+    "comparison-table": {
+      "tokens": {
+        "transformCellTint": "{color.t9-tint}",
+        "labelOpacity": "{opacity.half-text}"
+      },
+      "measuredFrom": [
+        "specs/compare.md:110"
+      ]
+    },
+    "post-card": {
+      "tokens": {
+        "hoverBottomBackground": "{color.white}",
+        "hoverText": "{color.black}",
+        "metaRuleRest": "{color.green}",
+        "metaRuleHover": "{color.blue-dark}",
+        "arrowTile": "{color.blue-dark}"
+      },
+      "measuredFrom": [
+        "specs/blog.md:213"
+      ]
+    },
+    "case-card": {
+      "tokens": {
+        "logoCellTint": "{color.logo-cell}",
+        "logoCellHover": "{color.gray}",
+        "headerDivider": "{color.cs-divider}",
+        "gradientEdge": "{color.cs-edge}"
+      },
+      "measuredFrom": [
+        "specs/case-studies.md:21"
+      ]
+    },
+    "rich-text": {
+      "tokens": {
+        "body": "{color.white-60}",
+        "strong": "{color.white}",
+        "link": "{color.white}",
+        "blockquoteBorder": "{color.green}",
+        "blockquoteBorderWidth": "6px"
+      },
+      "measuredFrom": [
+        "specs/blog.md:167"
+      ]
+    },
+    "legal": {
+      "tokens": {
+        "subheadSize": "{fontSize.legal-subhead}",
+        "subheadColor": "{color.green}"
+      },
+      "measuredFrom": [
+        "src/styles/page-legal.css:12"
+      ]
+    },
+    "hero-input": {
+      "tokens": {
+        "background": "{color.input-bg}",
+        "text": "{color.input-text}",
+        "border": "{color.input-border}",
+        "focusBorder": "{color.input-focus}",
+        "placeholder": "{color.input-placeholder}"
+      },
+      "measuredFrom": [
+        "CLONE_SPEC.md:66"
+      ]
+    },
+    "popup-input": {
+      "tokens": {
+        "text": "{color.white}",
+        "border": "{color.stroke-dark}",
+        "focusBorder": "{color.white}",
+        "placeholder": "{color.white-30}"
+      },
+      "measuredFrom": [
+        "CLONE_SPEC.md:67"
+      ]
+    },
+    "webflow-form-default": {
+      "tokens": {
+        "text": "{color.input-text}",
+        "border": "{color.input-border}",
+        "placeholder": "{color.wform-placeholder}",
+        "focusBorder": "{color.input-focus}",
+        "button": "{color.wform-button}",
+        "buttonText": "{color.wform-button-text}",
+        "doneBackground": "{color.wform-done-bg}",
+        "failBackground": "{color.wform-fail-bg}"
+      },
+      "measuredFrom": [
+        "specs/book-a-demo.md:137"
+      ]
+    },
+    "hubspot-form-replica": {
+      "tokens": {
+        "text": "{color.hs-text}",
+        "inputBackground": "{color.hs-input-bg}",
+        "inputBorder": "{color.hs-input-border}",
+        "button": "{color.hs-button}",
+        "buttonHover": "{color.hs-button-hover}",
+        "buttonActive": "{color.hs-button-active}",
+        "errorBorder": "{color.hs-error-border}",
+        "errorText": "{color.hs-error-text}",
+        "required": "{color.hs-required}",
+        "radius": "{radius.hubspot-replica-input}",
+        "fontFamily": "{fontFamily.hubspot-replica}"
+      },
+      "measuredFrom": [
+        "CLONE_SPEC.md:437"
+      ]
+    },
+    "yt-facade": {
+      "tokens": {
+        "play": "{color.yt-play}",
+        "glyph": "{color.yt-icon}",
+        "size": "{iconSize.yt-play}"
+      },
+      "measuredFrom": [
+        "CLONE_SPEC.md:203"
+      ]
+    },
+    "modal": {
+      "tokens": {
+        "overlay": "{semantic.surface.overlay}",
+        "overlayTint": "{gradient.modal-overlay-tint}",
+        "windowBackground": "{color.black}",
+        "windowBorder": "{color.stroke-dark}"
+      },
+      "measuredFrom": [
+        "CLONE_SPEC.md:395"
+      ]
+    },
+    "book-demo": {
+      "tokens": {
+        "headline": "{color.green}",
+        "paragraph": "{color.muted-light}"
+      },
+      "measuredFrom": [
+        "specs/book-a-demo.md:61"
+      ]
+    }
+  }
+}

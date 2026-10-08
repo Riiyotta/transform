@@ -1,0 +1,204 @@
+{
+  "id": "product.navigator-agent",
+  "kind": "section",
+  "category": "PRODUCT",
+  "surface": "light",
+  "claimsPolicy": "none",
+  "purpose": "Present Agent #3 Navigator as four row tabs that activate on hover with a matching image in the rail.",
+  "description": "Agent #3 Navigator: four row tabs activated on hover, with the matching image in the left rail.",
+  "implementedBy": "src/components/NavigatorAgent.jsx",
+  "evidenceLevel": "measured",
+  "scope": {
+    "templates": [
+      "template.home"
+    ],
+    "routes": [
+      "/"
+    ],
+    "routeCount": 1
+  },
+  "constraints": {
+    "onePerPage": true,
+    "maxPerPage": 1,
+    "allowedTemplates": [
+      "template.home"
+    ],
+    "allowedRoutes": [
+      "/"
+    ]
+  },
+  "variants": {},
+  "fixedChrome": false,
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "title",
+      "agentNumber",
+      "tabs"
+    ],
+    "properties": {
+      "title": {
+        "type": "array",
+        "minItems": 1,
+        "maxItems": 2,
+        "maxWords": 5,
+        "observedMax": 2,
+        "items": {
+          "type": "object",
+          "required": [
+            "text"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "text": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "^\\S(?:[\\s\\S]*\\S)?$"
+            },
+            "tone": {
+              "enum": [
+                "default",
+                "accent-green",
+                "accent-blue"
+              ]
+            },
+            "breakAfter": {
+              "type": "boolean"
+            }
+          }
+        },
+        "examples": [
+          [
+            {
+              "text": "Navigator",
+              "breakAfter": true
+            },
+            {
+              "text": "Agent"
+            }
+          ]
+        ]
+      },
+      "agentNumber": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 5,
+        "observedMax": 1,
+        "examples": [
+          "#3"
+        ]
+      },
+      "tabs": {
+        "type": "array",
+        "minItems": 4,
+        "maxItems": 4,
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "title",
+            "text",
+            "image"
+          ],
+          "properties": {
+            "title": {
+              "type": "string",
+              "minLength": 1,
+              "maxWords": 5,
+              "observedMax": 5,
+              "examples": [
+                "Answers FAQs"
+              ]
+            },
+            "text": {
+              "type": "string",
+              "minLength": 1,
+              "maxWords": 15,
+              "observedMax": 13,
+              "examples": [
+                "Ensures patients receive assistance even when your office is closed."
+              ]
+            },
+            "image": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "assetRole",
+                "assetRef"
+              ],
+              "properties": {
+                "assetRole": {
+                  "allOf": [
+                    {
+                      "$ref": "#/definitions/assetRole"
+                    },
+                    {
+                      "const": "product.ui-illustration"
+                    }
+                  ]
+                },
+                "assetRef": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "examples": [
+                {
+                  "assetRole": "product.ui-illustration",
+                  "assetRef": "/assets/6895c0e0cf1da44572715af5-nav-img-1.avif"
+                }
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  "contentFields": [
+    "title",
+    "agentNumber",
+    "tabs"
+  ],
+  "assetRoles": [
+    "product.ui-illustration"
+  ],
+  "composes": [
+    "tab-group",
+    "tab-link",
+    "media-cover",
+    "label-eyebrow"
+  ],
+  "motion": {
+    "allowedPatterns": [
+      "M20"
+    ],
+    "reducedMotionFallback": "parity-unchanged"
+  },
+  "responsive": [
+    {
+      "at": ">=992",
+      "target": "row-tabs",
+      "property": "direction",
+      "value": "row-reverse; image rail 385px, tabs hover-activated"
+    },
+    {
+      "at": "<=767",
+      "target": "row-tabs",
+      "property": "direction",
+      "value": "column-reverse; image area 121vw tall, links stacked"
+    },
+    {
+      "at": "<=991",
+      "target": "row-tabs-section",
+      "property": "margin-bottom",
+      "value": "25vw (17vw at >=992)"
+    }
+  ],
+  "measuredFrom": [
+    "CLONE_SPEC.md:308-316",
+    "src/components/NavigatorAgent.jsx:9-83",
+    "src/data/navigator.js:4",
+    "ia/ia.json:151"
+  ]
+}

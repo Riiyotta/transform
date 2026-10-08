@@ -1,0 +1,39 @@
+{
+  "id": "noise-overlay",
+  "kind": "primitive",
+  "purpose": "Tiled noise.webp overlay (200px, opacity .5 / .3 at <=991) placed on page, nav (tablet), popup, images, CTA, footer",
+  "props": {
+    "opacity": [
+      "desktop",
+      "tablet"
+    ]
+  },
+  "additionalProps": false,
+  "states": [
+    "default"
+  ],
+  "tokens": [
+    "opacity.noise-desktop",
+    "opacity.noise-tablet"
+  ],
+  "motionPatterns": [],
+  "measuredFrom": [
+    "CLONE_SPEC.md:43",
+    "src/components/ui/Noise.jsx:2"
+  ],
+  "a11y": "Decorative; pointer-events none",
+  "usedBySections": [
+    "shell.page-layers",
+    "shell.call-alex-modal",
+    "shell.footer",
+    "proof.stats",
+    "product.scheduling-agent",
+    "product.tasking-agent",
+    "transition.black-to-white",
+    "fit.specialties",
+    "conversion.cta",
+    "compare.specialty-white",
+    "content.case-header",
+    "content.post-body"
+  ]
+}

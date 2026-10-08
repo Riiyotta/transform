@@ -1,0 +1,317 @@
+{
+  "id": "compare.comparison-table",
+  "kind": "section",
+  "category": "COMPARE",
+  "surface": "dark",
+  "claimsPolicy": "must-not-fabricate",
+  "purpose": "Make the differentiation concrete with a 10-row Transform9 versus other AI agents comparison, then offer a live demo.",
+  "description": "Static 10-row feature-comparison table against competitors; the Transform9 column is tinted. Header row is sticky at ≤767 (top 60, blurred).",
+  "implementedBy": "src/components/compare/ComparisonTable.jsx",
+  "evidenceLevel": "measured",
+  "scope": {
+    "templates": [
+      "template.compare"
+    ],
+    "routes": [
+      "/compare"
+    ],
+    "routeCount": 1
+  },
+  "constraints": {
+    "onePerPage": true,
+    "maxPerPage": 1,
+    "allowedTemplates": [
+      "template.compare"
+    ],
+    "allowedRoutes": [
+      "/compare"
+    ]
+  },
+  "variants": {},
+  "fixedChrome": false,
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "headline",
+      "headerLogo",
+      "otherColumnLabel",
+      "tick",
+      "rows",
+      "footnote",
+      "bookDemo"
+    ],
+    "properties": {
+      "headline": {
+        "type": "array",
+        "minItems": 1,
+        "maxItems": 2,
+        "maxWords": 5,
+        "observedMax": 3,
+        "items": {
+          "type": "object",
+          "required": [
+            "text"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "text": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "^\\S(?:[\\s\\S]*\\S)?$"
+            },
+            "tone": {
+              "enum": [
+                "default",
+                "accent-green",
+                "accent-blue"
+              ]
+            },
+            "breakAfter": {
+              "type": "boolean"
+            }
+          }
+        },
+        "examples": [
+          [
+            {
+              "text": "How Transform9"
+            },
+            {
+              "text": "Compares",
+              "tone": "accent-blue"
+            }
+          ]
+        ]
+      },
+      "headerLogo": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "assetRole",
+          "assetRef",
+          "alt"
+        ],
+        "properties": {
+          "assetRole": {
+            "allOf": [
+              {
+                "$ref": "#/definitions/assetRole"
+              },
+              {
+                "const": "brand.wordmark-white"
+              }
+            ]
+          },
+          "assetRef": {
+            "type": "string",
+            "minLength": 1
+          },
+          "alt": {
+            "type": "string",
+            "maxWords": 5,
+            "observedMax": 2
+          }
+        },
+        "examples": [
+          {
+            "assetRole": "brand.wordmark-white",
+            "assetRef": "/assets/68639bb30a93107837363b04-logo-2.svg",
+            "alt": "Transform9 logo"
+          }
+        ]
+      },
+      "otherColumnLabel": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 5,
+        "observedMax": 3,
+        "examples": [
+          "Other AI Agents"
+        ]
+      },
+      "tick": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "assetRole",
+          "assetRef",
+          "alt"
+        ],
+        "properties": {
+          "assetRole": {
+            "allOf": [
+              {
+                "$ref": "#/definitions/assetRole"
+              },
+              {
+                "const": "ui.icon"
+              }
+            ]
+          },
+          "assetRef": {
+            "type": "string",
+            "minLength": 1
+          },
+          "alt": {
+            "type": "string",
+            "maxWords": 5,
+            "observedMax": 1
+          }
+        },
+        "examples": [
+          {
+            "assetRole": "ui.icon",
+            "assetRef": "/assets/69930212d8ba3f0cb66dbbe1-tick.svg",
+            "alt": "tick"
+          }
+        ]
+      },
+      "rows": {
+        "type": "array",
+        "minItems": 10,
+        "maxItems": 10,
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "label",
+            "transform9",
+            "other"
+          ],
+          "properties": {
+            "label": {
+              "type": "string",
+              "minLength": 1,
+              "maxWords": 5,
+              "observedMax": 3,
+              "examples": [
+                "Hidden fees"
+              ]
+            },
+            "transform9": {
+              "type": "string",
+              "minLength": 1,
+              "maxWords": 25,
+              "observedMax": 25,
+              "examples": [
+                "Easy to forecast monthly/annually"
+              ]
+            },
+            "other": {
+              "type": "string",
+              "minLength": 1,
+              "maxWords": 20,
+              "observedMax": 16,
+              "examples": [
+                "Usage-based/per-call. Can be highly variable"
+              ]
+            }
+          }
+        }
+      },
+      "footnote": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 30,
+        "observedMax": 29,
+        "examples": [
+          "The chart above highlights the fundamental differences between Transform9 and typical AI voice agents. Transform9 is designed around practice-specific workflows and healthcare-first principles — not templates or guess-based behavior."
+        ]
+      },
+      "bookDemo": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "label",
+          "href"
+        ],
+        "properties": {
+          "label": {
+            "type": "string",
+            "minLength": 1,
+            "maxWords": 5,
+            "observedMax": 4,
+            "examples": [
+              "Book a Live Demo"
+            ]
+          },
+          "href": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "^(/|https://|mailto:|#)",
+            "examples": [
+              "/book-a-demo"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "contentFields": [
+    "headline",
+    "headerLogo",
+    "otherColumnLabel",
+    "tick",
+    "rows",
+    "footnote",
+    "bookDemo"
+  ],
+  "assetRoles": [
+    "brand.wordmark-white",
+    "ui.icon"
+  ],
+  "composes": [
+    "table-row",
+    "underline-link",
+    "wordmark",
+    "icon",
+    "hairline"
+  ],
+  "motion": {
+    "allowedPatterns": [
+      "CMP-M5",
+      "M12"
+    ],
+    "reducedMotionFallback": "parity-unchanged"
+  },
+  "responsive": [
+    {
+      "at": ">=992",
+      "target": "table-text",
+      "property": "font-size",
+      "value": "clamp(1.25rem,1.389vw,1.375rem) = 20px"
+    },
+    {
+      "at": "<=991",
+      "target": "table-text",
+      "property": "font-size",
+      "value": "14px"
+    },
+    {
+      "at": "<=767",
+      "target": "table-row",
+      "property": "direction",
+      "value": "column; label full width; value cells side by side"
+    },
+    {
+      "at": "<=767",
+      "target": "table-row.head",
+      "property": "position",
+      "value": "sticky top 60, bg rgba(2,8,1,.5), blur 80px"
+    },
+    {
+      "at": "<=767",
+      "target": "logo-table",
+      "property": "width",
+      "value": "170px (116px at <=479; 13.5vw at >=992)"
+    }
+  ],
+  "measuredFrom": [
+    "specs/compare.md:110-159",
+    "src/components/compare/ComparisonTable.jsx:8-58",
+    "src/data/compare.js:30",
+    "ia/ia.json:205"
+  ],
+  "notes": "Competitive and compliance claims about a real company (top-5% most secure vendors, FedRAMP 20x etc.). The table is static: no hover, sort or interaction. Copy contains non-breaking spaces that change wrapping."
+}

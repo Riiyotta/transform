@@ -1,0 +1,182 @@
+{
+  "spacing": {
+    "pad": {
+      "$type": "dimension",
+      "cssVar": "--pad",
+      "$description": "Block padding: 36px >=992, 20px <=991",
+      "measuredFrom": [
+        "src/index.css:118",
+        "src/index.css:77"
+      ],
+      "$value": {
+        "base": "36px",
+        "<=991": "20px"
+      }
+    },
+    "rail": {
+      "$type": "dimension",
+      "cssVar": "--rail",
+      "$description": "Left rail column 26.7361vw (385 / 273.78 / 205.33 px); collapses <=767",
+      "measuredFrom": [
+        "src/index.css:78"
+      ],
+      "$value": {
+        "base": "26.7361vw"
+      }
+    },
+    "nav-h": {
+      "$type": "dimension",
+      "cssVar": "--nav-h",
+      "$description": "Fixed navbar height",
+      "measuredFrom": [
+        "src/index.css:79"
+      ],
+      "$value": {
+        "base": "60px"
+      }
+    },
+    "indent-label": {
+      "$type": "dimension",
+      "cssVar": "--indent-label",
+      "$description": "Recurring indent on small labels (43px; 0 at <=479)",
+      "measuredFrom": [
+        "src/index.css:166",
+        "src/index.css:80"
+      ],
+      "$value": {
+        "base": "43px",
+        "<=479": "0px"
+      }
+    },
+    "legal-block-gap": {
+      "$type": "dimension",
+      "cssVar": "--legal-block-gap",
+      "$description": "Legal template spacing",
+      "measuredFrom": [
+        "src/styles/page-legal.css:20",
+        "src/styles/page-legal.css:35"
+      ],
+      "$value": {
+        "base": "clamp(30px, 2.083vw, 40px)",
+        "<=479": "20px"
+      }
+    },
+    "legal-block-pb": {
+      "$type": "dimension",
+      "cssVar": "--legal-block-pb",
+      "$description": "Legal template spacing",
+      "measuredFrom": [
+        "src/styles/page-legal.css:21",
+        "src/styles/page-legal.css:36"
+      ],
+      "$value": {
+        "base": "max(36px, 2.5vw)",
+        "<=479": "24px"
+      }
+    },
+    "legal-cont-gap": {
+      "$type": "dimension",
+      "cssVar": "--legal-cont-gap",
+      "$description": "Legal template spacing",
+      "measuredFrom": [
+        "src/styles/page-legal.css:19",
+        "src/styles/page-legal.css:34"
+      ],
+      "$value": {
+        "base": "clamp(36px, 2.5vw, 2.5vw)",
+        "<=479": "24px"
+      }
+    },
+    "legal-cont-max": {
+      "$type": "dimension",
+      "cssVar": "--legal-cont-max",
+      "$description": "Legal template spacing",
+      "measuredFrom": [
+        "src/styles/page-legal.css:16"
+      ],
+      "$value": {
+        "base": "960px"
+      }
+    },
+    "legal-cont-min": {
+      "$type": "dimension",
+      "cssVar": "--legal-cont-min",
+      "$description": "Legal template spacing",
+      "measuredFrom": [
+        "src/styles/page-legal.css:15",
+        "src/styles/page-legal.css:29"
+      ],
+      "$value": {
+        "base": "720px",
+        "<=991": "auto"
+      }
+    },
+    "legal-cont-w": {
+      "$type": "dimension",
+      "cssVar": "--legal-cont-w",
+      "$description": "Legal template spacing",
+      "measuredFrom": [
+        "src/styles/page-legal.css:14",
+        "src/styles/page-legal.css:28"
+      ],
+      "$value": {
+        "base": "50vw",
+        "<=991": "100%"
+      }
+    },
+    "legal-section-pt": {
+      "$type": "dimension",
+      "cssVar": "--legal-section-pt",
+      "$description": "Legal template spacing",
+      "measuredFrom": [
+        "src/styles/page-legal.css:18"
+      ],
+      "$value": {
+        "base": "max(80px, 5.556vw)"
+      }
+    },
+    "legal-text-gap": {
+      "$type": "dimension",
+      "cssVar": "--legal-text-gap",
+      "$description": "Legal template spacing",
+      "measuredFrom": [
+        "src/styles/page-legal.css:22"
+      ],
+      "$value": {
+        "base": "24px"
+      }
+    },
+    "list-indent": {
+      "$type": "dimension",
+      "cssVar": "--list-indent",
+      "$description": "Legal template spacing",
+      "measuredFrom": [
+        "src/styles/page-legal.css:24"
+      ],
+      "$value": {
+        "base": "40px"
+      }
+    },
+    "w-logo-table": {
+      "$type": "dimension",
+      "cssVar": "--w-logo-table",
+      "$description": "Compare table header logo width",
+      "measuredFrom": [
+        "src/styles/page-compare.css:28",
+        "src/styles/page-compare.css:37",
+        "src/styles/page-compare.css:42"
+      ],
+      "$value": {
+        "base": "13.5vw",
+        "<=767": "170px",
+        "<=479": "116px"
+      }
+    }
+  },
+  "sectionRhythm": {
+    "$description": "Section vertical rhythm is vw-based (CLONE_SPEC 1.5): stats mb 17.361vw; white-section pb 10vw/15vw<=991/20vw<=767; stacking-cards mb 17vw; row-tabs mb 17vw (25vw<=991); secure mb 10vw (20vw<=767); integration pb 16.667vw (22vw<=991); specialty mt 5vw (20vw<=767); client-logos padding max(110px,7.639vw) (80px<=991)",
+    "measuredFrom": [
+      "CLONE_SPEC.md:97-100"
+    ]
+  }
+}

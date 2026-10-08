@@ -1,0 +1,150 @@
+{
+  "id": "shell.footer",
+  "kind": "section",
+  "category": "SHELL",
+  "surface": "dark",
+  "claimsPolicy": "none",
+  "purpose": "Closing rail: company description, Navigate/Integrate/Follow columns, contact details and a static email-signup replica.",
+  "description": "Footer top: rail with company description, Navigate/Legal/Social link columns and an email signup form (static, no network).",
+  "implementedBy": "src/components/Footer.jsx",
+  "evidenceLevel": "measured",
+  "scope": {
+    "templates": [
+      "template.home",
+      "template.compare",
+      "template.legal",
+      "template.blog-index",
+      "template.blog-post",
+      "template.case-studies-index",
+      "template.case-study"
+    ],
+    "routes": [
+      "/",
+      "/compare",
+      "/terms-of-use",
+      "/privacy-policy",
+      "/hipaa",
+      "/blog",
+      "/blog/ai-voice-agents-for-athenahealth-7-questions-to-ask-before-choosing-a-platform",
+      "/blog/ent-reimbursement-in-2027-what-medicare-s-proposed-cuts-mean-for-otolaryngology-practices",
+      "/blog/medical-practice-call-volume-january",
+      "/blog/orthopedic-ai-answering-service",
+      "/blog/redefining-healthcare-ai",
+      "/blog/the-12-month-shift-why-voice-ai-agents-are-now-a-financial-imperative-for-specialty-practices",
+      "/blog/why-generic-ai-virtual-assistants-fail-specialty-medical-practices-and-what-actually-works",
+      "/blog/why-traditional-ivr-is-failing-your-practice-and-how-ai-voice-agents-fix-the-press-0-trap",
+      "/case-studies",
+      "/case-studies/southern-bone-joint",
+      "/case-studies/the-orthopaedic-center"
+    ],
+    "routeCount": 17
+  },
+  "constraints": {
+    "onePerPage": true,
+    "maxPerPage": 1,
+    "allowedTemplates": [
+      "template.home",
+      "template.compare",
+      "template.legal",
+      "template.blog-index",
+      "template.blog-post",
+      "template.case-studies-index",
+      "template.case-study"
+    ]
+  },
+  "variants": {},
+  "fixedChrome": true,
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [],
+    "properties": {}
+  },
+  "contentFields": [],
+  "assetRoles": [],
+  "composes": [
+    "text-link",
+    "form-block",
+    "text-field",
+    "submit-control",
+    "hairline",
+    "noise-overlay"
+  ],
+  "motion": {
+    "allowedPatterns": [
+      "M12",
+      "M12b"
+    ],
+    "reducedMotionFallback": "parity-unchanged"
+  },
+  "responsive": [
+    {
+      "at": "<=991",
+      "target": "footer-columns-wrap",
+      "property": "gap",
+      "value": "50px (120 at >=992)"
+    },
+    {
+      "at": "<=991",
+      "target": "footer-top-wrap",
+      "property": "padding-top",
+      "value": "22vw (15.972vw at >=992)"
+    },
+    {
+      "at": "<=479",
+      "target": "footer-columns-wrap",
+      "property": "layout",
+      "value": "2-column grid"
+    }
+  ],
+  "measuredFrom": [
+    "CLONE_SPEC.md:424-444",
+    "src/components/Footer.jsx:143-195",
+    "ia/ia.json:61"
+  ],
+  "fixedContent": {
+    "blurb": "Transform9 improves access, generates savings, and increases efficiency for practices and patients.",
+    "columns": [
+      {
+        "title": "Navigate",
+        "links": [
+          "Home",
+          "Compare",
+          "Blog",
+          "Case Studies",
+          "Careers"
+        ]
+      },
+      {
+        "title": "Integrate",
+        "links": [
+          "Athenahealth",
+          "ModMed",
+          "NextGen"
+        ]
+      },
+      {
+        "title": "Follow",
+        "links": [
+          "LinkedIn",
+          "YouTube"
+        ]
+      }
+    ],
+    "topRight": [
+      "Login",
+      "Book a Demo"
+    ],
+    "contact": {
+      "label": "Contact Us",
+      "phone": "(205) 892-2888",
+      "email": "info@transform9.com"
+    },
+    "emailForm": {
+      "heading": "Stay Updated",
+      "fieldLabel": "Email",
+      "submitLabel": "Submit"
+    }
+  },
+  "notes": "The HubSpot email form is a static, non-submitting replica of measured iframe styles (D2); its success copy is an unverified placeholder (DEVIATIONS D2). Absent on /book-a-demo."
+}

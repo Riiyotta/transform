@@ -1,0 +1,69 @@
+{
+  "id": "transition.white-to-black",
+  "kind": "section",
+  "category": "TRANSITION",
+  "surface": "transition",
+  "claimsPolicy": "none",
+  "purpose": "Scroll-scrubbed pixel grid that returns from a white section to the dark page.",
+  "description": "Scroll-scrubbed pixel-grid transition from a white section back to the dark page.",
+  "implementedBy": "src/components/TransitionPixels.jsx",
+  "evidenceLevel": "measured",
+  "scope": {
+    "templates": [
+      "template.home",
+      "template.compare"
+    ],
+    "routes": [
+      "/",
+      "/compare"
+    ],
+    "routeCount": 2
+  },
+  "constraints": {
+    "onePerPage": true,
+    "maxPerPage": 1,
+    "allowedTemplates": [
+      "template.home",
+      "template.compare"
+    ]
+  },
+  "variants": {},
+  "fixedChrome": true,
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [],
+    "properties": {}
+  },
+  "contentFields": [],
+  "assetRoles": [],
+  "composes": [
+    "pixel-cell"
+  ],
+  "motion": {
+    "allowedPatterns": [
+      "M8b"
+    ],
+    "reducedMotionFallback": "parity-unchanged"
+  },
+  "responsive": [
+    {
+      "at": ">=992",
+      "target": "pixel",
+      "property": "size",
+      "value": "5vw x 5vw, 20 per row, 5 rows"
+    },
+    {
+      "at": "<=767",
+      "target": "pixel",
+      "property": "size",
+      "value": "10vw, 10 per row"
+    }
+  ],
+  "measuredFrom": [
+    "CLONE_SPEC.md:339-340",
+    "src/components/TransitionPixels.jsx:63-83",
+    "ia/ia.json:169"
+  ],
+  "fixedContent": {}
+}

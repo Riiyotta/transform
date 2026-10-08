@@ -1,0 +1,34 @@
+{
+  "id": "tab-group",
+  "kind": "component",
+  "purpose": "Tab set with a paired image pane: Tasking (auto-rotating), Navigator (hover), Specialties (hover, 13 tabs)",
+  "props": {
+    "tabs": "array",
+    "image": "asset:product.ui-illustration|specialty.image"
+  },
+  "additionalProps": false,
+  "composes": [
+    "tab-link",
+    "media-cover",
+    "noise-overlay"
+  ],
+  "tokens": [
+    "component.tasking-tab",
+    "component.navigator-tab",
+    "component.specialty-tab"
+  ],
+  "motionPatterns": [
+    "M10",
+    "M20"
+  ],
+  "measuredFrom": [
+    "src/components/TaskingAgent.jsx:122",
+    "src/components/NavigatorAgent.jsx:9"
+  ],
+  "usedBySections": [
+    "product.tasking-agent",
+    "product.navigator-agent",
+    "fit.specialties",
+    "compare.specialty-white"
+  ]
+}

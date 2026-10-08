@@ -1,0 +1,115 @@
+{
+  "id": "hero.legal",
+  "kind": "section",
+  "category": "HERO",
+  "surface": "dark",
+  "claimsPolicy": "none",
+  "purpose": "State what the legal document covers in plain language above the long-form text.",
+  "description": "Hero for the legal template: H1 plus an intro paragraph over the fixed video, shared verbatim by all three legal routes with only the H1/intro content varying.",
+  "implementedBy": "src/components/legal/LegalHero.jsx",
+  "evidenceLevel": "measured",
+  "scope": {
+    "templates": [
+      "template.legal"
+    ],
+    "routes": [
+      "/terms-of-use",
+      "/privacy-policy",
+      "/hipaa"
+    ],
+    "routeCount": 3
+  },
+  "constraints": {
+    "onePerPage": true,
+    "maxPerPage": 1,
+    "allowedTemplates": [
+      "template.legal"
+    ]
+  },
+  "variants": {
+    "terms": {
+      "requires": [],
+      "forbids": []
+    },
+    "privacy": {
+      "requires": [],
+      "forbids": []
+    }
+  },
+  "fixedChrome": false,
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "headline",
+      "intro"
+    ],
+    "properties": {
+      "headline": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 10,
+        "observedMax": 9,
+        "examples": [
+          "HIPAA Compliance Services | Expert Solutions"
+        ]
+      },
+      "intro": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 35,
+        "observedMax": 31,
+        "examples": [
+          "At Transform9, we help you easily book appointments with your preferred doctor. This document outlines key information to review before making a decision."
+        ]
+      }
+    }
+  },
+  "contentFields": [
+    "headline",
+    "intro"
+  ],
+  "assetRoles": [],
+  "composes": [
+    "hairline"
+  ],
+  "motion": {
+    "allowedPatterns": [
+      "LGL-M1",
+      "M3b"
+    ],
+    "reducedMotionFallback": "parity-unchanged"
+  },
+  "responsive": [
+    {
+      "at": "all",
+      "target": "h1.legal",
+      "property": "font-size",
+      "value": "hero scale 93.6/66.56/75/49.92"
+    },
+    {
+      "at": ">=992",
+      "target": "legal-terms paragraph",
+      "property": "max-width",
+      "value": "31ch, no left margin"
+    },
+    {
+      "at": ">=992",
+      "target": "legal-privacy paragraph",
+      "property": "max-width",
+      "value": "38ch, margin-left 43px"
+    }
+  ],
+  "measuredFrom": [
+    "specs/legal.md:69-95",
+    "specs/legal.md:29",
+    "src/components/legal/LegalHero.jsx:7-22",
+    "ia/ia.json:85"
+  ],
+  "variantByRoute": {
+    "/terms-of-use": "terms",
+    "/privacy-policy": "privacy",
+    "/hipaa": "privacy"
+  },
+  "notes": "Variant maps to the intro modifier: terms (.legal-terms) for /terms-of-use; privacy (.legal-privacy) for /privacy-policy and /hipaa (measured: HIPAA uses the privacy modifier)."
+}

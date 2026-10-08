@@ -1,0 +1,500 @@
+{
+  "color": {
+    "black": {
+      "$type": "color",
+      "$value": "#020801",
+      "$description": "Page background and text on white (rgb 2,8,1)",
+      "cssVar": "--color-black",
+      "measuredFrom": [
+        "src/index.css:23"
+      ]
+    },
+    "block-bg": {
+      "$type": "color",
+      "$value": "#02080103",
+      "$description": "Near-transparent block fill rgba(2,8,1,.01)",
+      "cssVar": "--color-block-bg",
+      "measuredFrom": [
+        "src/index.css:40"
+      ]
+    },
+    "blue-2": {
+      "$type": "color",
+      "$value": "#00269b",
+      "$description": "Stats block 02 / outreach card 02",
+      "cssVar": "--color-blue-2",
+      "measuredFrom": [
+        "src/index.css:28"
+      ]
+    },
+    "blue-3": {
+      "$type": "color",
+      "$value": "#001a6a",
+      "$description": "Stats block 03 / outreach card 03",
+      "cssVar": "--color-blue-3",
+      "measuredFrom": [
+        "src/index.css:29"
+      ]
+    },
+    "blue-4": {
+      "$type": "color",
+      "$value": "#000d39",
+      "$description": "Stats block 04 / outreach card 04",
+      "cssVar": "--color-blue-4",
+      "measuredFrom": [
+        "src/index.css:30"
+      ]
+    },
+    "blue-dark": {
+      "$type": "color",
+      "$value": "#0033cc",
+      "$description": "Outreach card 01, tab progress bar, blog arrow tile, blue pixels",
+      "cssVar": "--color-blue-dark",
+      "measuredFrom": [
+        "src/index.css:27"
+      ]
+    },
+    "blue-light": {
+      "$type": "color",
+      "$value": "#168ae2",
+      "$description": "Accent spans (\"Powerful Impact.\", \"Trusted.\"), stats block 01",
+      "cssVar": "--color-blue-light",
+      "measuredFrom": [
+        "src/index.css:26"
+      ]
+    },
+    "card-tint-1": {
+      "$type": "color",
+      "$value": "#e9e9eb",
+      "$description": "Scheduling card 1 once stacked",
+      "cssVar": "--color-card-tint-1",
+      "measuredFrom": [
+        "src/index.css:37"
+      ]
+    },
+    "card-tint-2": {
+      "$type": "color",
+      "$value": "#c1c0c7",
+      "$description": "Scheduling card 2 once stacked",
+      "cssVar": "--color-card-tint-2",
+      "measuredFrom": [
+        "src/index.css:38"
+      ]
+    },
+    "card-tint-3": {
+      "$type": "color",
+      "$value": "#858391",
+      "$description": "Scheduling card 3 once stacked",
+      "cssVar": "--color-card-tint-3",
+      "measuredFrom": [
+        "src/index.css:39"
+      ]
+    },
+    "cs-divider": {
+      "$type": "color",
+      "$value": "#3a3e39",
+      "$description": "Case-study header left divider",
+      "cssVar": "--color-cs-divider",
+      "measuredFrom": [
+        "src/components/cms/cms.css:23"
+      ]
+    },
+    "cs-edge": {
+      "$type": "color",
+      "$value": "#000000",
+      "$description": "Case-study gradient edge",
+      "cssVar": "--color-cs-edge",
+      "measuredFrom": [
+        "src/components/cms/cms.css:25"
+      ]
+    },
+    "error": {
+      "$type": "color",
+      "$value": "#e64141",
+      "$description": "Popup error text",
+      "cssVar": "--color-error",
+      "measuredFrom": [
+        "src/index.css:46"
+      ]
+    },
+    "error-bg": {
+      "$type": "color",
+      "$value": "rgba(230, 65, 65, 0.1)",
+      "$description": "Popup error background",
+      "cssVar": "--color-error-bg",
+      "measuredFrom": [
+        "src/index.css:47"
+      ]
+    },
+    "gray": {
+      "$type": "color",
+      "$value": "#f1f3f3",
+      "$description": "Testimonial photo bg, active Tasking tab, Navigator image pane, nav CTA hover, case card hover cell",
+      "cssVar": "--color-gray",
+      "measuredFrom": [
+        "src/index.css:31"
+      ]
+    },
+    "green": {
+      "$type": "color",
+      "$value": "#a2fa8e",
+      "$description": "Brand accent: nav CTA background, accent spans, author-title badge",
+      "cssVar": "--color-green",
+      "measuredFrom": [
+        "src/index.css:25"
+      ]
+    },
+    "hiw-inactive": {
+      "$type": "color",
+      "$value": "#4c4c4c",
+      "$description": "How-it-works inactive words",
+      "cssVar": "--color-hiw-inactive",
+      "measuredFrom": [
+        "src/index.css:36"
+      ]
+    },
+    "hs-button": {
+      "$type": "color",
+      "$value": "#ff7a59",
+      "$description": "Replica of measured HubSpot footer form style",
+      "cssVar": "--color-hs-button",
+      "measuredFrom": [
+        "src/index.css:63"
+      ]
+    },
+    "hs-button-active": {
+      "$type": "color",
+      "$value": "#e66e50",
+      "$description": "Replica of measured HubSpot footer form style",
+      "cssVar": "--color-hs-button-active",
+      "measuredFrom": [
+        "src/index.css:65"
+      ]
+    },
+    "hs-button-hover": {
+      "$type": "color",
+      "$value": "#ff8f73",
+      "$description": "Replica of measured HubSpot footer form style",
+      "cssVar": "--color-hs-button-hover",
+      "measuredFrom": [
+        "src/index.css:64"
+      ]
+    },
+    "hs-error-border": {
+      "$type": "color",
+      "$value": "#c87872",
+      "$description": "Replica of measured HubSpot footer form style",
+      "cssVar": "--color-hs-error-border",
+      "measuredFrom": [
+        "src/index.css:66"
+      ]
+    },
+    "hs-error-border-focus": {
+      "$type": "color",
+      "$value": "#b9554d",
+      "$description": "Replica of measured HubSpot footer form style",
+      "cssVar": "--color-hs-error-border-focus",
+      "measuredFrom": [
+        "src/index.css:67"
+      ]
+    },
+    "hs-error-text": {
+      "$type": "color",
+      "$value": "#f2545b",
+      "$description": "Replica of measured HubSpot footer form style",
+      "cssVar": "--color-hs-error-text",
+      "measuredFrom": [
+        "src/index.css:68"
+      ]
+    },
+    "hs-input-bg": {
+      "$type": "color",
+      "$value": "#f5f8fa",
+      "$description": "Replica of measured HubSpot footer form style",
+      "cssVar": "--color-hs-input-bg",
+      "measuredFrom": [
+        "src/index.css:60"
+      ]
+    },
+    "hs-input-border": {
+      "$type": "color",
+      "$value": "#cbd6e2",
+      "$description": "Replica of measured HubSpot footer form style",
+      "cssVar": "--color-hs-input-border",
+      "measuredFrom": [
+        "src/index.css:61"
+      ]
+    },
+    "hs-input-focus": {
+      "$type": "color",
+      "$value": "rgba(82, 168, 236, 0.8)",
+      "$description": "Replica of measured HubSpot footer form style",
+      "cssVar": "--color-hs-input-focus",
+      "measuredFrom": [
+        "src/index.css:62"
+      ]
+    },
+    "hs-placeholder": {
+      "$type": "color",
+      "$value": "#bfbfbf",
+      "$description": "Replica of measured HubSpot footer form style",
+      "cssVar": "--color-hs-placeholder",
+      "measuredFrom": [
+        "src/index.css:70"
+      ]
+    },
+    "hs-required": {
+      "$type": "color",
+      "$value": "#ff0000",
+      "$description": "Replica of measured HubSpot footer form style",
+      "cssVar": "--color-hs-required",
+      "measuredFrom": [
+        "src/index.css:69"
+      ]
+    },
+    "hs-text": {
+      "$type": "color",
+      "$value": "#33475b",
+      "$description": "Replica of measured HubSpot footer form style",
+      "cssVar": "--color-hs-text",
+      "measuredFrom": [
+        "src/index.css:59"
+      ]
+    },
+    "input-bg": {
+      "$type": "color",
+      "$value": "#ffffff",
+      "$description": "Hero phone input background",
+      "cssVar": "--color-input-bg",
+      "measuredFrom": [
+        "src/index.css:50"
+      ]
+    },
+    "input-border": {
+      "$type": "color",
+      "$value": "#cccccc",
+      "$description": "Hero phone input border / Webflow default form border",
+      "cssVar": "--color-input-border",
+      "measuredFrom": [
+        "src/index.css:52"
+      ]
+    },
+    "input-focus": {
+      "$type": "color",
+      "$value": "#3898ec",
+      "$description": "Input focus border / Webflow default form button",
+      "cssVar": "--color-input-focus",
+      "measuredFrom": [
+        "src/index.css:53"
+      ]
+    },
+    "input-placeholder": {
+      "$type": "color",
+      "$value": "rgba(2, 8, 1, 0.5)",
+      "$description": "Hero phone input placeholder",
+      "cssVar": "--color-input-placeholder",
+      "measuredFrom": [
+        "src/index.css:54"
+      ]
+    },
+    "input-text": {
+      "$type": "color",
+      "$value": "#333333",
+      "$description": "Hero phone input text",
+      "cssVar": "--color-input-text",
+      "measuredFrom": [
+        "src/index.css:51"
+      ]
+    },
+    "logo-cell": {
+      "$type": "color",
+      "$value": "rgba(255, 255, 255, 0.01)",
+      "$description": "Case-study logo cell tint (rgba .01)",
+      "cssVar": "--color-logo-cell",
+      "measuredFrom": [
+        "src/components/cms/cms.css:21"
+      ]
+    },
+    "muted-light": {
+      "$type": "color",
+      "$value": "#e0e0e0",
+      "$description": "/book-a-demo paragraph text",
+      "cssVar": "--color-muted-light",
+      "measuredFrom": [
+        "src/styles/page-book-a-demo.css:10"
+      ]
+    },
+    "nav-bg": {
+      "$type": "color",
+      "$value": "rgba(2, 8, 1, 0.5)",
+      "$description": "Navbar default translucent background",
+      "cssVar": "--color-nav-bg",
+      "measuredFrom": [
+        "src/index.css:34"
+      ]
+    },
+    "nav-link": {
+      "$type": "color",
+      "$value": "rgba(255, 255, 255, 0.7)",
+      "$description": "Desktop nav link text",
+      "cssVar": "--color-nav-link",
+      "measuredFrom": [
+        "src/index.css:35"
+      ]
+    },
+    "overlay": {
+      "$type": "color",
+      "$value": "rgba(2, 8, 1, 0.9)",
+      "$description": "Call Alex modal overlay",
+      "cssVar": "--color-overlay",
+      "measuredFrom": [
+        "src/index.css:42"
+      ]
+    },
+    "overlay-tint": {
+      "$type": "color",
+      "$value": "#ffffff05",
+      "$description": "Modal overlay 2% white gradient layer",
+      "cssVar": "--color-overlay-tint",
+      "measuredFrom": [
+        "src/index.css:43"
+      ]
+    },
+    "stroke-dark": {
+      "$type": "color",
+      "$value": "rgba(255, 255, 255, 0.2)",
+      "$description": "All hairlines on dark surfaces (--white-0-2)",
+      "cssVar": "--color-stroke-dark",
+      "measuredFrom": [
+        "src/index.css:32"
+      ]
+    },
+    "stroke-light": {
+      "$type": "color",
+      "$value": "rgba(2, 8, 1, 0.15)",
+      "$description": "Hairlines in the white section (--black-0-15)",
+      "cssVar": "--color-stroke-light",
+      "measuredFrom": [
+        "src/index.css:33"
+      ]
+    },
+    "t9-tint": {
+      "$type": "color",
+      "$value": "rgba(22, 138, 226, 0.06)",
+      "$description": "Compare table Transform9 column tint",
+      "cssVar": "--color-t9-tint",
+      "measuredFrom": [
+        "src/styles/page-compare.css:18"
+      ]
+    },
+    "tab-inactive": {
+      "$type": "color",
+      "$value": "#222222",
+      "$description": "Inactive w-tab text (Webflow default #222)",
+      "cssVar": "--color-tab-inactive",
+      "measuredFrom": [
+        "src/index.css:41"
+      ]
+    },
+    "wform-button": {
+      "$type": "color",
+      "$value": "var(--color-input-focus)",
+      "$description": "Webflow default form button background",
+      "cssVar": "--color-wform-button",
+      "measuredFrom": [
+        "src/styles/page-book-a-demo.css:14"
+      ]
+    },
+    "wform-button-text": {
+      "$type": "color",
+      "$value": "var(--color-white)",
+      "$description": "Webflow default form button text",
+      "cssVar": "--color-wform-button-text",
+      "measuredFrom": [
+        "src/styles/page-book-a-demo.css:15"
+      ]
+    },
+    "wform-done-bg": {
+      "$type": "color",
+      "$value": "#dddddd",
+      "$description": "Webflow form success fallback block",
+      "cssVar": "--color-wform-done-bg",
+      "measuredFrom": [
+        "src/index.css:56"
+      ]
+    },
+    "wform-fail-bg": {
+      "$type": "color",
+      "$value": "#ffdede",
+      "$description": "Webflow form failure fallback block",
+      "cssVar": "--color-wform-fail-bg",
+      "measuredFrom": [
+        "src/index.css:57"
+      ]
+    },
+    "wform-placeholder": {
+      "$type": "color",
+      "$value": "#999999",
+      "$description": "Webflow default form placeholder",
+      "cssVar": "--color-wform-placeholder",
+      "measuredFrom": [
+        "src/styles/page-book-a-demo.css:12"
+      ]
+    },
+    "white": {
+      "$type": "color",
+      "$value": "#ffffff",
+      "$description": "Text on dark, white-section background",
+      "cssVar": "--color-white",
+      "measuredFrom": [
+        "src/index.css:24"
+      ]
+    },
+    "white-30": {
+      "$type": "color",
+      "$value": "rgba(255, 255, 255, 0.3)",
+      "$description": "Popup disclaimer / placeholder, faint text",
+      "cssVar": "--color-white-30",
+      "measuredFrom": [
+        "src/index.css:48"
+      ]
+    },
+    "white-50": {
+      "$type": "color",
+      "$value": "rgba(255, 255, 255, 0.5)",
+      "$description": "Half-white text (labels, table values)",
+      "cssVar": "--color-white-50",
+      "measuredFrom": [
+        "src/styles/page-compare.css:20",
+        "src/styles/page-legal.css:10"
+      ]
+    },
+    "white-60": {
+      "$type": "color",
+      "$value": "rgba(255, 255, 255, 0.6)",
+      "$description": "Rich-text p / li / em colour on blog and case-study bodies",
+      "cssVar": "--color-white-60",
+      "measuredFrom": [
+        "src/components/cms/cms.css:14"
+      ]
+    },
+    "yt-icon": {
+      "$type": "color",
+      "$value": "#030303",
+      "$description": "YouTube facade play glyph",
+      "cssVar": "--color-yt-icon",
+      "measuredFrom": [
+        "src/index.css:45"
+      ]
+    },
+    "yt-play": {
+      "$type": "color",
+      "$value": "#67bd53",
+      "$description": "YouTube facade play button",
+      "cssVar": "--color-yt-play",
+      "measuredFrom": [
+        "src/index.css:44"
+      ]
+    }
+  }
+}

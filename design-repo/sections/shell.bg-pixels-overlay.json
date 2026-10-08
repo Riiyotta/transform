@@ -1,0 +1,65 @@
+{
+  "id": "shell.bg-pixels-overlay",
+  "kind": "section",
+  "category": "SHELL",
+  "surface": "dark",
+  "claimsPolicy": "none",
+  "purpose": "Dims and un-dims the background video during the /compare load intro.",
+  "description": "Fixed full-screen overlay that dims and undims the background video during the /compare page-load intro.",
+  "implementedBy": "src/components/compare/BgPixelsOverlay.jsx",
+  "evidenceLevel": "measured",
+  "scope": {
+    "templates": [
+      "template.compare"
+    ],
+    "routes": [
+      "/compare"
+    ],
+    "routeCount": 1
+  },
+  "constraints": {
+    "onePerPage": true,
+    "maxPerPage": 1,
+    "allowedTemplates": [
+      "template.compare"
+    ],
+    "allowedRoutes": [
+      "/compare"
+    ],
+    "mustImmediatelyFollowAnyOf": [
+      "shell.preloader"
+    ]
+  },
+  "variants": {},
+  "fixedChrome": true,
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [],
+    "properties": {}
+  },
+  "contentFields": [],
+  "assetRoles": [],
+  "composes": [],
+  "motion": {
+    "allowedPatterns": [
+      "CMP-M1"
+    ],
+    "reducedMotionFallback": "parity-unchanged"
+  },
+  "responsive": [
+    {
+      "at": "all",
+      "target": "bg-pixels-overlay",
+      "property": "size",
+      "value": "fixed inset 0, 100vw x 100dvh, bg #020801, z -2"
+    }
+  ],
+  "measuredFrom": [
+    "specs/compare.md:29",
+    "src/components/compare/BgPixelsOverlay.jsx:8-10",
+    "ia/ia.json:49"
+  ],
+  "fixedContent": {},
+  "notes": "/compare only. A hidden equivalent exists on blog/case-study detail pages on live (BLOG-M5, black on black) and is deliberately not rendered."
+}

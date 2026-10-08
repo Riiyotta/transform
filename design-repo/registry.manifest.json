@@ -1,0 +1,103 @@
+{
+  "repositoryId": "transform9-clone-design-repo",
+  "repositoryVersion": "0.1.0",
+  "pageSpecVersion": "1.0.0",
+  "allowlistVersion": "1.0.0",
+  "status": "design-review-pending",
+  "productionApproved": false,
+  "versionFieldNote": "allowlistVersion is MACHINE-CHECKED: extraction/verify_all.py fails the run if it differs from the version field of tokens/llm/component-allowlist.json. repositoryVersion and pageSpecVersion are documentation-only, hand-maintained markers; nothing checks them against anything (instances must carry pageSpecVersion equal to the schema const, but this manifest value itself is not compared). The counts block is also machine-checked (recomputed from disk).",
+  "defaultTheme": "dark",
+  "schemaValidatedThemes": [
+    "dark",
+    "light"
+  ],
+  "themeNote": "schemaValidatedThemes lists the themes whose every semantic token is verified to resolve to a real foundation token by extraction/verify_all.py (check 10).",
+  "sourceProject": {
+    "name": "Transform9 clone",
+    "liveSite": "https://www.transform9.com/",
+    "framework": "React + Vite + Tailwind v3",
+    "stack": {
+      "react": {
+        "declared": "^18.3.1",
+        "installed": "18.3.1"
+      },
+      "react-dom": {
+        "declared": "^18.3.1",
+        "installed": "18.3.1"
+      },
+      "tailwindcss": {
+        "declared": "^3.4.14",
+        "installed": "3.4.19"
+      },
+      "vite": {
+        "declared": "^5.4.10",
+        "installed": "5.4.21"
+      },
+      "gsap": {
+        "declared": "^3.15.0",
+        "installed": "3.15.0"
+      },
+      "lenis": {
+        "declared": "^1.3.26",
+        "installed": "1.3.26"
+      }
+    },
+    "snapshot": "git 900a82b with uncommitted cmsHover.js changes at build time; see extraction/measured-values.json",
+    "realCompany": true,
+    "usageRestriction": "Assets and content are the real company's, reused for private/internal use only (PROJECT_SCOPE). See assets/asset-roles.json."
+  },
+  "counts": {
+    "tokens": 260,
+    "primitives": 16,
+    "components": 15,
+    "sections": 43,
+    "templates": 8,
+    "routes": 18,
+    "motionPatterns": 48,
+    "assetRoles": 19,
+    "graphRules": 11
+  },
+  "entryPoints": {
+    "docs": {
+      "readme": "README.md",
+      "changelog": "CHANGELOG.md"
+    },
+    "tokens": {
+      "foundation": "tokens/00-foundation/",
+      "semantic": "tokens/10-semantic/semantic.json",
+      "component": "tokens/20-component/component.json",
+      "layout": "tokens/30-layout/layout.json",
+      "themes": [
+        "tokens/themes/dark.json",
+        "tokens/themes/light.json"
+      ],
+      "llm": [
+        "tokens/llm/component-allowlist.json",
+        "tokens/llm/token-catalog.json",
+        "tokens/llm/token-policy.json"
+      ],
+      "motionPatterns": "tokens/00-foundation/motion-patterns.json"
+    },
+    "contracts": {
+      "primitives": "primitives/",
+      "components": "components/",
+      "sections": "sections/",
+      "templates": "templates/templates.json",
+      "routes": "templates/routes.json",
+      "compatibilityGraph": "compatibility/graph.json",
+      "assetRoles": "assets/asset-roles.json"
+    },
+    "schema": {
+      "pageSpecSchema": "schema/pagespec.schema.json",
+      "sectionContractSchema": "schema/section-contract.schema.json",
+      "example": "schema/example.pagespec.json",
+      "semanticValidator": "schema/semantic_validate.py",
+      "adversarialTests": "schema/tests/adversarial_test.py"
+    },
+    "extraction": {
+      "measuredValues": "extraction/measured-values.json",
+      "verifyAll": "extraction/verify_all.py",
+      "proveDrift": "extraction/prove_drift.py"
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "id": "badge-tag",
+  "kind": "primitive",
+  "purpose": "Testimonial author tags: white name tag and green title tag",
+  "props": {
+    "text": "string",
+    "tone": [
+      "name",
+      "title"
+    ]
+  },
+  "additionalProps": false,
+  "states": [
+    "default"
+  ],
+  "tokens": [
+    "semantic.surface.accent",
+    "semantic.text.on-accent"
+  ],
+  "motionPatterns": [],
+  "measuredFrom": [
+    "CLONE_SPEC.md:233"
+  ],
+  "usedBySections": [
+    "proof.testimonials"
+  ]
+}

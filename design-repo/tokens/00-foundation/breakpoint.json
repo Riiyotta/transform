@@ -1,0 +1,45 @@
+{
+  "breakpoint": {
+    "main": {
+      "$type": "dimension",
+      "$value": {
+        "min": "992px"
+      },
+      "$description": "Desktop base rules (>=992)",
+      "measuredFrom": [
+        "CLONE_SPEC.md:25-31"
+      ]
+    },
+    "tablet": {
+      "$type": "dimension",
+      "$value": {
+        "max": "991px"
+      },
+      "$description": "@media screen and (max-width: 991px)",
+      "measuredFrom": [
+        "tailwind.config.js:23"
+      ]
+    },
+    "mobile": {
+      "$type": "dimension",
+      "$value": {
+        "max": "767px"
+      },
+      "$description": "@media screen and (max-width: 767px)",
+      "measuredFrom": [
+        "tailwind.config.js:24"
+      ]
+    },
+    "tiny": {
+      "$type": "dimension",
+      "$value": {
+        "max": "479px"
+      },
+      "$description": "@media screen and (max-width: 479px)",
+      "measuredFrom": [
+        "tailwind.config.js:25"
+      ]
+    },
+    "$strategy": "desktop-first max-width overrides (Webflow standard); measured viewports 1440, 1024, 768, 390"
+  }
+}

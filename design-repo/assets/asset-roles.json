@@ -1,0 +1,562 @@
+{
+  "version": "1.0.0",
+  "description": "Closed assetRole registry. Every media field in every section contract is const-locked to exactly one role; the enum here is the same set as definitions.assetRole in schema/pagespec.schema.json and assetRoles in tokens/llm/component-allowlist.json (verify_all.py checks parity).",
+  "sourceIsRealCompany": true,
+  "scopeStatement": "The assets and content are the REAL Transform9 company's, reused locally for private/internal use only (PROJECT_SCOPE.md). No redistribution. This registry governs two usage contexts, set per PageSpec in the usage field.",
+  "usageContexts": {
+    "internal-clone": "The private clone itself: exact reuse of the original assets and copy is the documented, scoped decision (PROJECT_SCOPE). Roles with must-not-fabricate may only reference existing files.",
+    "generated-derivative": "AI-generated NEW pages or derivatives. MUST NOT reproduce real logos (client, partner, certification, third-party marks), real people's photos or names, real testimonials, real metrics/claims, real legal text, real product UI, or live endpoints (video ids). Such roles accept only placeholder tokens a human replaces with authorised assets; sections flagged claimsPolicy must-not-fabricate are rejected outright."
+  },
+  "generationPolicies": {
+    "may-generate-new": "Generic, non-brand, non-person material that an AI may generate fresh (abstract textures, UI glyphs, atmospheric imagery with no identifiable real person). Never copy the original file bytes into generated output.",
+    "must-reuse-exact": "The company's own brand mark: reference the existing file by path; never redraw, regenerate, recolour or restyle it.",
+    "must-not-fabricate": "Depicts or asserts something real (a real customer, partner, certification, person, third-party trademark, or real product UI). Never invent one; never reproduce one in generated output. Reuse of the original file is allowed only in the private internal clone.",
+    "must-not-reuse-live-endpoint": "Points at a live third-party endpoint (a real video id). Generated output must never carry the real id; only the private internal clone may, via the click-to-load facade (DEVIATIONS D4)."
+  },
+  "refKinds": {
+    "reuse": {
+      "pattern": "^/assets/[a-z0-9][a-z0-9.-]*$",
+      "description": "Web path of an existing file in the clone's public/assets store"
+    },
+    "generate": {
+      "pattern": "^generate:[a-z0-9][a-z0-9-]*$",
+      "description": "Request for a newly generated asset (slug names the intent)"
+    },
+    "placeholder": {
+      "pattern": "^placeholder:[a-z0-9][a-z0-9-]*$",
+      "description": "Neutral stand-in token; a human supplies the real, authorised asset"
+    },
+    "yt": {
+      "pattern": "^yt:[A-Za-z0-9_-]{11}$",
+      "description": "YouTube video id (internal clone facade only)"
+    }
+  },
+  "forbiddenInGeneratedOutput": [
+    "real client or partner logos",
+    "real certification badges (NIST, SOC 2) or implied compliance status",
+    "real people's photos, names, titles or quotes",
+    "real metrics and competitive claims",
+    "real legal text (Terms, Privacy Policy, HIPAA)",
+    "real product UI illustrations",
+    "live third-party video ids / form endpoints",
+    "the original asset files copied byte-for-byte"
+  ],
+  "pinnedRoles": {
+    "brand.wordmark-white": "must-reuse-exact",
+    "brand.wordmark-black": "must-reuse-exact",
+    "brand.wordmark-footer": "must-reuse-exact",
+    "client.logo": "must-not-fabricate",
+    "partner.logo": "must-not-fabricate",
+    "certification.badge": "must-not-fabricate",
+    "person.photo": "must-not-fabricate",
+    "ui.social-mark": "must-not-fabricate",
+    "product.ui-illustration": "must-not-fabricate",
+    "embed.video": "must-not-reuse-live-endpoint"
+  },
+  "notReferencedByPageSpec": [
+    {
+      "asset": "PolySans Neutral woff2",
+      "note": "Licensed typeface of unknown licence terms; reuse is private/internal only (PROJECT_SCOPE). Not a node field.",
+      "measuredFrom": [
+        "ASSET_MANIFEST.md:20"
+      ]
+    },
+    {
+      "asset": "favicon, webclip, og:image",
+      "note": "Head meta images; the og image was not fetched. Not node fields.",
+      "measuredFrom": [
+        "ASSET_MANIFEST.md:193"
+      ]
+    }
+  ],
+  "measuredFrom": [
+    "PROJECT_SCOPE.md:15",
+    "PROJECT_SCOPE.md:13",
+    "PROJECT_SCOPE.md:12",
+    "DEVIATIONS.md:8"
+  ],
+  "roles": {
+    "brand.wordmark-white": {
+      "generationPolicy": "must-reuse-exact",
+      "description": "White Transform9 wordmark: nav, popup, comparison-table header",
+      "realWorldSubject": "the real company logo",
+      "licensing": "Transform9 trademark (the real company). Private/internal reuse only (PROJECT_SCOPE); never redrawn.",
+      "measuredFrom": [
+        "ASSET_MANIFEST.md:55"
+      ],
+      "constraints": {
+        "sizes": "130x38 svg; table 13.5vw wide"
+      },
+      "usedBy": [
+        "shell.navbar:logoWhite",
+        "compare.comparison-table:headerLogo"
+      ],
+      "allowedRefKinds": {
+        "internal-clone": [
+          "reuse"
+        ],
+        "generated-derivative": [
+          "reuse"
+        ]
+      }
+    },
+    "brand.wordmark-black": {
+      "generationPolicy": "must-reuse-exact",
+      "description": "Black Transform9 wordmark shown while the navbar is on white",
+      "realWorldSubject": "the real company logo",
+      "licensing": "Transform9 trademark (the real company). Private/internal reuse only (PROJECT_SCOPE); never redrawn.",
+      "measuredFrom": [
+        "ASSET_MANIFEST.md:57"
+      ],
+      "constraints": {
+        "sizes": "130x38 svg"
+      },
+      "usedBy": [
+        "shell.navbar:logoBlack"
+      ],
+      "allowedRefKinds": {
+        "internal-clone": [
+          "reuse"
+        ],
+        "generated-derivative": [
+          "reuse"
+        ]
+      }
+    },
+    "brand.wordmark-footer": {
+      "generationPolicy": "must-reuse-exact",
+      "description": "Oversized footer wordmark",
+      "realWorldSubject": "the real company logo",
+      "licensing": "Transform9 trademark (the real company). Private/internal reuse only (PROJECT_SCOPE); never redrawn.",
+      "measuredFrom": [
+        "ASSET_MANIFEST.md:58"
+      ],
+      "constraints": {
+        "sizes": "400x68 svg viewBox; hidden at <=767"
+      },
+      "usedBy": [
+        "shell.footer-bottom-reveal:logo"
+      ],
+      "allowedRefKinds": {
+        "internal-clone": [
+          "reuse"
+        ],
+        "generated-derivative": [
+          "reuse"
+        ]
+      }
+    },
+    "ui.icon": {
+      "generationPolicy": "may-generate-new",
+      "description": "Generic UI glyphs: burger, close, arrows, tick",
+      "realWorldSubject": "none (generic geometry)",
+      "licensing": "Simple geometric glyphs; regenerating is allowed, keep measured sizes 24px (burger/close/tick) and 28px (arrows).",
+      "measuredFrom": [
+        "ASSET_MANIFEST.md:51",
+        "specs/compare.md:352"
+      ],
+      "constraints": {
+        "sizes": "24 / 28 px, white and black variants"
+      },
+      "usedBy": [
+        "compare.comparison-table:tick"
+      ],
+      "allowedRefKinds": {
+        "internal-clone": [
+          "reuse",
+          "generate"
+        ],
+        "generated-derivative": [
+          "generate"
+        ]
+      }
+    },
+    "ui.social-mark": {
+      "generationPolicy": "must-not-fabricate",
+      "description": "X, Facebook and LinkedIn share icons",
+      "realWorldSubject": "third-party trademarks",
+      "licensing": "Third-party brand marks; never redrawn or invented. Share icons are inert (D13).",
+      "measuredFrom": [
+        "specs/blog.md:252",
+        "DEVIATIONS.md:17"
+      ],
+      "constraints": {
+        "sizes": "24x24 svg"
+      },
+      "usedBy": [
+        "content.post-body:share.icon"
+      ],
+      "allowedRefKinds": {
+        "internal-clone": [
+          "reuse"
+        ],
+        "generated-derivative": [
+          "placeholder"
+        ]
+      }
+    },
+    "bg.video-loop": {
+      "generationPolicy": "may-generate-new",
+      "description": "Fixed background pixel video (15.07s loop, 520x720, mp4/webm)",
+      "realWorldSubject": "none (abstract pixel animation)",
+      "licensing": "Abstract brand motion asset; in generated output create a new abstract loop, do not copy the original file.",
+      "measuredFrom": [
+        "ASSET_MANIFEST.md:26"
+      ],
+      "constraints": {
+        "format": "mp4 + webm, muted loop, 520x720, 15.07s"
+      },
+      "usedBy": [
+        "shell.page-layers:videoSource"
+      ],
+      "allowedRefKinds": {
+        "internal-clone": [
+          "reuse",
+          "generate"
+        ],
+        "generated-derivative": [
+          "generate"
+        ]
+      }
+    },
+    "bg.still-fallback": {
+      "generationPolicy": "may-generate-new",
+      "description": "Still image shown while the video is not playing and under prefers-reduced-motion",
+      "realWorldSubject": "none (abstract)",
+      "licensing": "Abstract pixel still; generate a new one.",
+      "measuredFrom": [
+        "ASSET_MANIFEST.md:33"
+      ],
+      "constraints": {
+        "format": "webp, cover"
+      },
+      "usedBy": [
+        "shell.page-layers:stillFallback"
+      ],
+      "allowedRefKinds": {
+        "internal-clone": [
+          "reuse",
+          "generate"
+        ],
+        "generated-derivative": [
+          "generate"
+        ]
+      }
+    },
+    "bg.noise-tile": {
+      "generationPolicy": "may-generate-new",
+      "description": "Tiled noise texture overlay (200px tile)",
+      "realWorldSubject": "none (texture)",
+      "licensing": "Generic texture.",
+      "measuredFrom": [
+        "ASSET_MANIFEST.md:47"
+      ],
+      "constraints": {
+        "format": "webp tile at 200px, opacity .5 / .3 at <=991"
+      },
+      "usedBy": [
+        "shell.page-layers:noiseTile"
+      ],
+      "allowedRefKinds": {
+        "internal-clone": [
+          "reuse",
+          "generate"
+        ],
+        "generated-derivative": [
+          "generate"
+        ]
+      }
+    },
+    "bg.section-image": {
+      "generationPolicy": "may-generate-new",
+      "description": "Full-bleed section backgrounds and rail panels: CTA background, security rail, compare generic/privacy rails, stats rail gradient",
+      "realWorldSubject": "none (abstract renders; the CTA image is a non-identifiable silhouette)",
+      "licensing": "Generate new abstract or silhouette imagery; no identifiable real person.",
+      "measuredFrom": [
+        "ASSET_MANIFEST.md:37",
+        "specs/compare.md:350"
+      ],
+      "constraints": {
+        "format": "avif/webp, cover"
+      },
+      "usedBy": [
+        "proof.stats:railImage",
+        "fit.security:railImage",
+        "conversion.cta:backgroundImage",
+        "compare.generic:railImage",
+        "compare.privacy:railImage"
+      ],
+      "allowedRefKinds": {
+        "internal-clone": [
+          "reuse",
+          "generate"
+        ],
+        "generated-derivative": [
+          "generate"
+        ]
+      }
+    },
+    "stat.hover-image": {
+      "generationPolicy": "may-generate-new",
+      "description": "Image revealed when a stats block is active",
+      "realWorldSubject": "none (abstract pixel imagery)",
+      "licensing": "Generate new abstract imagery.",
+      "measuredFrom": [
+        "ASSET_MANIFEST.md:43"
+      ],
+      "constraints": {
+        "format": "webp, cover, noise overlay .5"
+      },
+      "usedBy": [
+        "proof.stats:blocks.hoverImage"
+      ],
+      "allowedRefKinds": {
+        "internal-clone": [
+          "reuse",
+          "generate"
+        ],
+        "generated-derivative": [
+          "generate"
+        ]
+      }
+    },
+    "product.outreach-icon": {
+      "generationPolicy": "may-generate-new",
+      "description": "Outreach card icon (abstract UI icon)",
+      "realWorldSubject": "none",
+      "licensing": "Generate new abstract icon art.",
+      "measuredFrom": [
+        "ASSET_MANIFEST.md:115"
+      ],
+      "constraints": {
+        "sizes": "400x400 webp, 6.944vw (100px at 1440)"
+      },
+      "usedBy": [
+        "product.outreach-agent:cards.icon"
+      ],
+      "allowedRefKinds": {
+        "internal-clone": [
+          "reuse",
+          "generate"
+        ],
+        "generated-derivative": [
+          "generate"
+        ]
+      }
+    },
+    "specialty.image": {
+      "generationPolicy": "may-generate-new",
+      "description": "Image paired with a specialty tab",
+      "realWorldSubject": "none (atmospheric imagery, non-identifiable people)",
+      "licensing": "Generate new imagery; no identifiable real person or real patient.",
+      "measuredFrom": [
+        "ASSET_MANIFEST.md:132"
+      ],
+      "constraints": {
+        "sizes": "1155x1389 avif, pane 385x463 at 1440"
+      },
+      "usedBy": [
+        "fit.specialties:items.image",
+        "compare.specialty-white:items.image"
+      ],
+      "allowedRefKinds": {
+        "internal-clone": [
+          "reuse",
+          "generate"
+        ],
+        "generated-derivative": [
+          "generate"
+        ]
+      }
+    },
+    "editorial.hero-image": {
+      "generationPolicy": "may-generate-new",
+      "description": "Blog article hero image (featured row, card, post header)",
+      "realWorldSubject": "photoreal scene imagery; no identifiable real person",
+      "licensing": "Generate a new image per article; never reuse a real article hero or depict a real, identifiable person.",
+      "measuredFrom": [
+        "specs/blog.md:238"
+      ],
+      "constraints": {
+        "sizes": "cover-fit; sources 1000-2400px wide"
+      },
+      "usedBy": [
+        "hero.blog-index:featured.image",
+        "content.blog-list:posts.image",
+        "content.post-header:image"
+      ],
+      "allowedRefKinds": {
+        "internal-clone": [
+          "reuse",
+          "generate"
+        ],
+        "generated-derivative": [
+          "generate"
+        ]
+      }
+    },
+    "product.ui-illustration": {
+      "generationPolicy": "must-not-fabricate",
+      "description": "Product UI illustration for Scheduling, Tasking and Navigator agents (shows persona names such as Dr. Patel)",
+      "realWorldSubject": "the real product interface",
+      "licensing": "Depicts real product capability; generating a new one would misrepresent the product. Reuse only in the private internal clone.",
+      "measuredFrom": [
+        "ASSET_MANIFEST.md:111"
+      ],
+      "constraints": {
+        "sizes": "sch 1200x1014; task 1440x1408; nav 1155x1383 avif"
+      },
+      "usedBy": [
+        "product.scheduling-agent:cards.image",
+        "product.tasking-agent:tabs.image",
+        "product.navigator-agent:tabs.image"
+      ],
+      "allowedRefKinds": {
+        "internal-clone": [
+          "reuse"
+        ],
+        "generated-derivative": [
+          "placeholder"
+        ]
+      }
+    },
+    "client.logo": {
+      "generationPolicy": "must-not-fabricate",
+      "description": "Real client practice logos (marquee, testimonial, case cards/headers)",
+      "realWorldSubject": "real customer organisations",
+      "licensing": "Real customers' trademarks. Never invent a client logo; never reproduce one in generated output; reuse only inside the private internal clone.",
+      "measuredFrom": [
+        "ASSET_MANIFEST.md:68",
+        "ASSET_MANIFEST.md:93"
+      ],
+      "constraints": {
+        "variants": "white and black (hover) versions on case cards"
+      },
+      "usedBy": [
+        "proof.client-logos:logos",
+        "proof.testimonials:slides.logo",
+        "content.case-list:cards.logoWhite",
+        "content.case-list:cards.logoBlack",
+        "content.case-list:cards.logoWhite",
+        "content.case-list:cards.logoBlack",
+        "content.case-header:logo",
+        "content.case-header:logo",
+        "content.read-next:card.logoWhite",
+        "content.read-next:card.logoBlack",
+        "content.read-next:card.logoWhite",
+        "content.read-next:card.logoBlack"
+      ],
+      "allowedRefKinds": {
+        "internal-clone": [
+          "reuse"
+        ],
+        "generated-derivative": [
+          "placeholder"
+        ]
+      }
+    },
+    "partner.logo": {
+      "generationPolicy": "must-not-fabricate",
+      "description": "Real EMR / platform partner logos (Athena, NextGen, ModMed, Epic, Greenway, Nextech, Veradigm, eClinicalWorks, systemedx)",
+      "realWorldSubject": "real third-party companies",
+      "licensing": "Third-party trademarks. Never redraw or invent; implying a partnership that does not exist is forbidden.",
+      "measuredFrom": [
+        "ASSET_MANIFEST.md:150"
+      ],
+      "constraints": {
+        "variants": "white and black (hover) versions"
+      },
+      "usedBy": [
+        "fit.integrations:rowLeft.logoWhite",
+        "fit.integrations:rowLeft.logoBlack",
+        "fit.integrations:rowRight.logoWhite",
+        "fit.integrations:rowRight.logoBlack",
+        "compare.integrations-white:rowLeft.logoBlack",
+        "compare.integrations-white:rowRight.logoBlack"
+      ],
+      "allowedRefKinds": {
+        "internal-clone": [
+          "reuse"
+        ],
+        "generated-derivative": [
+          "placeholder"
+        ]
+      }
+    },
+    "certification.badge": {
+      "generationPolicy": "must-not-fabricate",
+      "description": "NIST 800-53, NIST 800-30 and SOC 2 badges",
+      "realWorldSubject": "real compliance attestations",
+      "licensing": "Certification marks assert a real compliance status. Never fabricate or approximate one.",
+      "measuredFrom": [
+        "ASSET_MANIFEST.md:175"
+      ],
+      "constraints": {
+        "variants": "white and black (hover) versions"
+      },
+      "usedBy": [
+        "fit.security:badges.badgeWhite",
+        "fit.security:badges.badgeBlack"
+      ],
+      "allowedRefKinds": {
+        "internal-clone": [
+          "reuse"
+        ],
+        "generated-derivative": [
+          "placeholder"
+        ]
+      }
+    },
+    "person.photo": {
+      "generationPolicy": "must-not-fabricate",
+      "description": "Testimonial portrait of a named real person",
+      "realWorldSubject": "real individuals (Tammy Jackson, Scott Griffin)",
+      "licensing": "Real people's likeness. Never generate or substitute a face for a real name; never reproduce in generated output.",
+      "measuredFrom": [
+        "ASSET_MANIFEST.md:93",
+        "src/data/testimonials.js:10"
+      ],
+      "constraints": {
+        "sizes": "770x1198 webp"
+      },
+      "usedBy": [
+        "proof.testimonials:slides.photo"
+      ],
+      "allowedRefKinds": {
+        "internal-clone": [
+          "reuse"
+        ],
+        "generated-derivative": [
+          "placeholder"
+        ]
+      }
+    },
+    "embed.video": {
+      "generationPolicy": "must-not-reuse-live-endpoint",
+      "description": "Click-to-load video facade: YouTube video id and its thumbnail",
+      "realWorldSubject": "a real client video hosted on YouTube",
+      "licensing": "Real third-party video and thumbnail. Generated output must use a placeholder, never the live id.",
+      "measuredFrom": [
+        "ASSET_MANIFEST.md:186",
+        "DEVIATIONS.md:8",
+        "DEVIATIONS.md:9"
+      ],
+      "constraints": {
+        "embed": "iframe created only after user click (youtube-nocookie)"
+      },
+      "usedBy": [
+        "proof.client-spotlight:video",
+        "proof.client-spotlight:thumbnail"
+      ],
+      "allowedRefKinds": {
+        "internal-clone": [
+          "reuse",
+          "yt"
+        ],
+        "generated-derivative": [
+          "placeholder"
+        ]
+      }
+    }
+  }
+}

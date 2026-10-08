@@ -1,0 +1,63 @@
+{
+  "layout": {
+    "grid": {
+      "fullBleed": true,
+      "maxWidth": "none",
+      "centeredContainer": false,
+      "rail": "{spacing.rail}",
+      "pad": "{spacing.pad}",
+      "$description": "Full-bleed layout: no centered container, no max-width; every section spans 100vw; the vertical rail line at 26.7361vw runs through most sections",
+      "measuredFrom": [
+        "CLONE_SPEC.md:36"
+      ]
+    },
+    "nav-h": {
+      "$type": "dimension",
+      "$value": "60px",
+      "$description": "Fixed navbar height (spacing.nav-h)",
+      "measuredFrom": [
+        "CLONE_SPEC.md:153"
+      ]
+    },
+    "hairline": {
+      "width": "1px",
+      "style": "solid",
+      "color": "{semantic.border.default}",
+      "measuredFrom": [
+        "CLONE_SPEC.md:39"
+      ]
+    },
+    "zIndex": {
+      "$description": "Stacking order measured on the shell",
+      "values": {
+        "page-wrap-solid-bg": -3,
+        "bg-pixels-wrapper": -2,
+        "bg-noise-wrap": -1,
+        "footer-bottom-wrap": 1,
+        "page-wrap": 2,
+        "navbar": 3,
+        "modal-wrap": 4,
+        "preloader-wrap": 4
+      },
+      "measuredFrom": [
+        "CLONE_SPEC.md:129-145",
+        "CLONE_SPEC.md:153",
+        "CLONE_SPEC.md:396",
+        "specs/compare.md:28"
+      ]
+    },
+    "hero": {
+      "minHeight": "100dvh",
+      "paddingTop": "110px (74 at <=479)",
+      "measuredFrom": [
+        "CLONE_SPEC.md:183"
+      ]
+    },
+    "footerReveal": {
+      "description": ".footer-bottom-wrap is position:sticky inset:auto 0 0, z 1, under .page-wrap (z 2): revealed like a curtain as the page ends",
+      "measuredFrom": [
+        "CLONE_SPEC.md:147"
+      ]
+    }
+  }
+}

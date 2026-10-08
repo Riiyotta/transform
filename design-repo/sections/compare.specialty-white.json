@@ -1,0 +1,179 @@
+{
+  "id": "compare.specialty-white",
+  "kind": "section",
+  "category": "COMPARE",
+  "surface": "light",
+  "claimsPolicy": "none",
+  "purpose": "Reinforce specialty fit inside the comparison narrative with the white variant of the specialty tabs.",
+  "description": "White-background variant of the homepage specialty tabs (fit.specialties), reinforcing specialty fit inside the comparison narrative.",
+  "implementedBy": "src/components/compare/CompareWhiteSection.jsx",
+  "evidenceLevel": "measured",
+  "scope": {
+    "templates": [
+      "template.compare"
+    ],
+    "routes": [
+      "/compare"
+    ],
+    "routeCount": 1
+  },
+  "constraints": {
+    "onePerPage": true,
+    "maxPerPage": 1,
+    "allowedTemplates": [
+      "template.compare"
+    ],
+    "allowedRoutes": [
+      "/compare"
+    ]
+  },
+  "variants": {},
+  "fixedChrome": false,
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "label",
+      "headline",
+      "items",
+      "bottomText"
+    ],
+    "properties": {
+      "label": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 5,
+        "observedMax": 2,
+        "examples": [
+          "Specialty-specific workflows"
+        ]
+      },
+      "headline": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 5,
+        "observedMax": 4,
+        "examples": [
+          "Built for Specialty Practices"
+        ]
+      },
+      "items": {
+        "type": "array",
+        "minItems": 13,
+        "maxItems": 13,
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "name",
+            "image"
+          ],
+          "properties": {
+            "name": {
+              "type": "string",
+              "minLength": 1,
+              "maxWords": 5,
+              "observedMax": 4,
+              "examples": [
+                "ENT"
+              ]
+            },
+            "image": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "assetRole",
+                "assetRef"
+              ],
+              "properties": {
+                "assetRole": {
+                  "allOf": [
+                    {
+                      "$ref": "#/definitions/assetRole"
+                    },
+                    {
+                      "const": "specialty.image"
+                    }
+                  ]
+                },
+                "assetRef": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "examples": [
+                {
+                  "assetRole": "specialty.image",
+                  "assetRef": "/assets/6895c81333b865db4669b970-orthopedics-physical-therapy.avif"
+                }
+              ]
+            }
+          }
+        }
+      },
+      "bottomText": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 35,
+        "observedMax": 34,
+        "examples": [
+          "Transform9 is designed to support complex specialty workflows, terminology, and scheduling requirements. Each agent is tailored to the unique needs of the specialty it serves, ensuring conversations feel natural, relevant, and accurate for patients."
+        ]
+      }
+    }
+  },
+  "contentFields": [
+    "label",
+    "headline",
+    "items",
+    "bottomText"
+  ],
+  "assetRoles": [
+    "specialty.image"
+  ],
+  "composes": [
+    "tab-group",
+    "tab-link",
+    "media-cover",
+    "noise-overlay",
+    "label-eyebrow"
+  ],
+  "motion": {
+    "allowedPatterns": [
+      "M20"
+    ],
+    "reducedMotionFallback": "parity-unchanged"
+  },
+  "responsive": [
+    {
+      "at": ">=992",
+      "target": "specialty-tabs.wh",
+      "property": "direction",
+      "value": "row-reverse: image pane in the left rail"
+    },
+    {
+      "at": ">=768",
+      "target": "specialty-tab-link.wh.w--current",
+      "property": "background",
+      "value": "#a2fa8e (green) with 20px indent"
+    },
+    {
+      "at": "<=767",
+      "target": "specialty-tabs-content.wh",
+      "property": "display",
+      "value": "none"
+    },
+    {
+      "at": "<=479",
+      "target": "specialty-tab-link.wh._1",
+      "property": "background",
+      "value": "transparent when current"
+    }
+  ],
+  "measuredFrom": [
+    "specs/compare.md:182-207",
+    "src/components/compare/CompareWhiteSection.jsx:11-33",
+    "ia/ia.json:217"
+  ],
+  "notes": "Same 13 tabs and images as fit.specialties; the active tab is green rather than white; shown only between the transition pair on /compare."
+}

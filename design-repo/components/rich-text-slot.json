@@ -1,0 +1,24 @@
+{
+  "id": "rich-text-slot",
+  "kind": "component",
+  "purpose": "Rich-text slot: h1/h2/h3/p/ul/ol/blockquote with inline bold/italic/links; hairline above every slot after the first",
+  "props": {
+    "blocks": "array"
+  },
+  "additionalProps": false,
+  "composes": [
+    "text-link",
+    "hairline"
+  ],
+  "tokens": [
+    "component.rich-text"
+  ],
+  "motionPatterns": [],
+  "measuredFrom": [
+    "src/components/cms/RichText.jsx:61",
+    "specs/blog.md:167"
+  ],
+  "usedBySections": [
+    "content.post-body"
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "id": "form-block",
+  "kind": "component",
+  "purpose": "Form with rendered idle/validation/submitting/success/error states and no network: Call Alex popup, hero/CTA phone form, demo form, footer email replica",
+  "props": {
+    "fields": "array",
+    "submitLabel": "string",
+    "successMessage": "string",
+    "failMessage": "string"
+  },
+  "additionalProps": false,
+  "composes": [
+    "text-field",
+    "submit-control",
+    "label-eyebrow"
+  ],
+  "tokens": [
+    "component.popup-input",
+    "component.webflow-form-default",
+    "component.hubspot-form-replica"
+  ],
+  "motionPatterns": [
+    "M11",
+    "M12"
+  ],
+  "measuredFrom": [
+    "src/components/CallAlexModal.jsx:48",
+    "src/components/demo/DemoForm.jsx:23"
+  ],
+  "notes": "PROJECT_SCOPE: forms render all states, submit nowhere",
+  "usedBySections": [
+    "shell.call-alex-modal",
+    "shell.footer",
+    "hero.home",
+    "hero.book-a-demo",
+    "conversion.cta"
+  ]
+}

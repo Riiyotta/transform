@@ -1,0 +1,85 @@
+{
+  "id": "hero.case-studies-index",
+  "kind": "section",
+  "category": "HERO",
+  "surface": "dark",
+  "claimsPolicy": "none",
+  "purpose": "Introduce the proof library with a word-by-word headline; no featured item.",
+  "description": "Word-by-word animated H1 (6 words) for the case-studies index; no featured item.",
+  "implementedBy": "src/components/cms/IndexHero.jsx",
+  "evidenceLevel": "measured",
+  "scope": {
+    "templates": [
+      "template.case-studies-index"
+    ],
+    "routes": [
+      "/case-studies"
+    ],
+    "routeCount": 1
+  },
+  "constraints": {
+    "onePerPage": true,
+    "maxPerPage": 1,
+    "allowedTemplates": [
+      "template.case-studies-index"
+    ],
+    "allowedRoutes": [
+      "/case-studies"
+    ]
+  },
+  "variants": {},
+  "fixedChrome": false,
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "headline"
+    ],
+    "properties": {
+      "headline": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 10,
+        "observedMax": 6,
+        "examples": [
+          "Case Studies | Proven Success Stories"
+        ]
+      }
+    }
+  },
+  "contentFields": [
+    "headline"
+  ],
+  "assetRoles": [],
+  "composes": [
+    "hairline"
+  ],
+  "motion": {
+    "allowedPatterns": [
+      "BLOG-M2",
+      "BLOG-M3",
+      "BLOG-M4",
+      "M3b"
+    ],
+    "reducedMotionFallback": "parity-unchanged"
+  },
+  "responsive": [
+    {
+      "at": "all",
+      "target": "h1.hero-home.blog",
+      "property": "font-size",
+      "value": "hero scale 93.6/66.56/75/49.92"
+    },
+    {
+      "at": "<=991",
+      "target": "hero.cs",
+      "property": "padding-bottom",
+      "value": "30px (7vw at >=992)"
+    }
+  ],
+  "measuredFrom": [
+    "specs/case-studies.md:37-38",
+    "src/components/cms/IndexHero.jsx:10-26",
+    "ia/ia.json:103"
+  ]
+}

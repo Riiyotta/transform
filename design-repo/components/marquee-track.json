@@ -1,0 +1,33 @@
+{
+  "id": "marquee-track",
+  "kind": "component",
+  "purpose": "Duplicated horizontally scrolling track (client logos; integration rows left/right)",
+  "props": {
+    "items": "array",
+    "direction": [
+      "left",
+      "right"
+    ],
+    "periodMs": "number"
+  },
+  "additionalProps": false,
+  "composes": [],
+  "tokens": [
+    "duration.marquee-logos",
+    "duration.marquee-integrations"
+  ],
+  "motionPatterns": [
+    "M1",
+    "M2a",
+    "M2b"
+  ],
+  "measuredFrom": [
+    "src/components/ClientLogos.jsx:7",
+    "src/components/Integrations.jsx:63"
+  ],
+  "usedBySections": [
+    "proof.client-logos",
+    "fit.integrations",
+    "compare.integrations-white"
+  ]
+}

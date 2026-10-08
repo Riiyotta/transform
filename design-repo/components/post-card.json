@@ -1,0 +1,31 @@
+{
+  "id": "post-card",
+  "kind": "component",
+  "purpose": "Blog list card: image, title, author/date meta, hover arrow tile",
+  "props": {
+    "href": "string",
+    "title": "string",
+    "image": "asset:editorial.hero-image",
+    "author": "string",
+    "date": "string"
+  },
+  "additionalProps": false,
+  "composes": [
+    "media-cover",
+    "meta-point",
+    "icon"
+  ],
+  "tokens": [
+    "component.post-card"
+  ],
+  "motionPatterns": [
+    "BLOG-M6"
+  ],
+  "measuredFrom": [
+    "src/components/cms/PostCard.jsx:15",
+    "specs/blog.md:102"
+  ],
+  "usedBySections": [
+    "content.blog-list"
+  ]
+}

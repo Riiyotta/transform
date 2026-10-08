@@ -1,0 +1,129 @@
+{
+  "id": "product.how-it-works",
+  "kind": "section",
+  "category": "PRODUCT",
+  "surface": "dark",
+  "claimsPolicy": "none",
+  "purpose": "Explain the product in three beats as a scroll-stepped phrase: AI that Speaks, Schedules, Supports Patients.",
+  "description": "Scroll-stepped 'How it works' sequence where three large phrases highlight one at a time.",
+  "implementedBy": "src/components/HowItWorks.jsx",
+  "evidenceLevel": "measured",
+  "scope": {
+    "templates": [
+      "template.home"
+    ],
+    "routes": [
+      "/"
+    ],
+    "routeCount": 1
+  },
+  "constraints": {
+    "onePerPage": true,
+    "maxPerPage": 1,
+    "allowedTemplates": [
+      "template.home"
+    ],
+    "allowedRoutes": [
+      "/"
+    ]
+  },
+  "variants": {},
+  "fixedChrome": false,
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "label",
+      "lead",
+      "words",
+      "closing"
+    ],
+    "properties": {
+      "label": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 5,
+        "observedMax": 3,
+        "examples": [
+          "How It Works"
+        ]
+      },
+      "lead": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 5,
+        "observedMax": 2,
+        "examples": [
+          "AI that"
+        ]
+      },
+      "words": {
+        "type": "array",
+        "minItems": 3,
+        "maxItems": 3,
+        "items": {
+          "type": "string",
+          "minLength": 1,
+          "maxWords": 5,
+          "observedMax": 2,
+          "examples": [
+            "Speaks"
+          ]
+        }
+      },
+      "closing": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 20,
+        "observedMax": 17,
+        "examples": [
+          "Built specifically for high-volume medical practices, our platform streamlines operations, enhances patient access, and drives revenue growth."
+        ]
+      }
+    }
+  },
+  "contentFields": [
+    "label",
+    "lead",
+    "words",
+    "closing"
+  ],
+  "assetRoles": [],
+  "composes": [
+    "label-eyebrow",
+    "hairline"
+  ],
+  "motion": {
+    "allowedPatterns": [
+      "M7"
+    ],
+    "reducedMotionFallback": "parity-unchanged"
+  },
+  "responsive": [
+    {
+      "at": ">=992",
+      "target": "how-works-sticky-cont",
+      "property": "height",
+      "value": "130vw, sticky"
+    },
+    {
+      "at": "<=991",
+      "target": "how-works-sticky-cont",
+      "property": "height",
+      "value": "auto"
+    },
+    {
+      "at": "<=767",
+      "target": "section",
+      "property": "position",
+      "value": "not sticky; lead on its own row; words 12.8vw"
+    }
+  ],
+  "measuredFrom": [
+    "CLONE_SPEC.md:242-260",
+    "src/components/HowItWorks.jsx:62-112",
+    "recon/hiw-scroll-trace.txt:1",
+    "ia/ia.json:133"
+  ],
+  "notes": "Step thresholds measured at 1440x900: 4445 and 4912 px; reset after ~6299."
+}

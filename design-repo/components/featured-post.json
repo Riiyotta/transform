@@ -1,0 +1,31 @@
+{
+  "id": "featured-post",
+  "kind": "component",
+  "purpose": "Large featured row under the blog index H1",
+  "props": {
+    "href": "string",
+    "title": "string",
+    "image": "asset:editorial.hero-image",
+    "author": "string",
+    "date": "string"
+  },
+  "additionalProps": false,
+  "composes": [
+    "media-cover",
+    "meta-point",
+    "underline-link"
+  ],
+  "tokens": [
+    "component.post-card"
+  ],
+  "motionPatterns": [
+    "BLOG-M7",
+    "M12"
+  ],
+  "measuredFrom": [
+    "src/components/cms/FeaturedPost.jsx:15"
+  ],
+  "usedBySections": [
+    "hero.blog-index"
+  ]
+}

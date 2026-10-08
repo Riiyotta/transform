@@ -1,0 +1,186 @@
+{
+  "id": "hero.blog-index",
+  "kind": "section",
+  "category": "HERO",
+  "surface": "dark",
+  "claimsPolicy": "none",
+  "purpose": "Introduce the blog with a word-by-word headline and surface the newest article as a featured row.",
+  "description": "Word-by-word animated H1 (8 words) plus the featured-post card, above the article list.",
+  "implementedBy": "src/components/cms/IndexHero.jsx",
+  "evidenceLevel": "measured",
+  "scope": {
+    "templates": [
+      "template.blog-index"
+    ],
+    "routes": [
+      "/blog"
+    ],
+    "routeCount": 1
+  },
+  "constraints": {
+    "onePerPage": true,
+    "maxPerPage": 1,
+    "allowedTemplates": [
+      "template.blog-index"
+    ],
+    "allowedRoutes": [
+      "/blog"
+    ]
+  },
+  "variants": {},
+  "fixedChrome": false,
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "headline",
+      "featured"
+    ],
+    "properties": {
+      "headline": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 10,
+        "observedMax": 8,
+        "examples": [
+          "Transform 9 Blog: Expert Insights & Growth Strategies"
+        ]
+      },
+      "featured": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "href",
+          "title",
+          "image",
+          "author",
+          "date"
+        ],
+        "properties": {
+          "href": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "^(/|https://|mailto:|#)",
+            "examples": [
+              "/blog/ai-voice-agents-for-athenahealth-7-questions-to-ask-before-choosing-a-platform"
+            ]
+          },
+          "title": {
+            "type": "string",
+            "minLength": 1,
+            "maxWords": 15,
+            "observedMax": 13,
+            "examples": [
+              "AI Voice Agents for athenahealth: 7 Questions to Ask Before Choosing a Platform"
+            ]
+          },
+          "image": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "assetRole",
+              "assetRef"
+            ],
+            "properties": {
+              "assetRole": {
+                "allOf": [
+                  {
+                    "$ref": "#/definitions/assetRole"
+                  },
+                  {
+                    "const": "editorial.hero-image"
+                  }
+                ]
+              },
+              "assetRef": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "examples": [
+              {
+                "assetRole": "editorial.hero-image",
+                "assetRef": "/assets/6aac50cd7d67b3ee047d814c-featured-compressed.jpeg"
+              }
+            ]
+          },
+          "author": {
+            "type": "string",
+            "minLength": 1,
+            "maxWords": 5,
+            "observedMax": 1,
+            "examples": [
+              "Transorm9"
+            ]
+          },
+          "date": {
+            "type": "string",
+            "minLength": 1,
+            "maxWords": 5,
+            "observedMax": 3,
+            "examples": [
+              "September 17, 2026"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "contentFields": [
+    "headline",
+    "featured"
+  ],
+  "assetRoles": [
+    "editorial.hero-image"
+  ],
+  "composes": [
+    "featured-post",
+    "media-cover",
+    "meta-point",
+    "underline-link"
+  ],
+  "motion": {
+    "allowedPatterns": [
+      "BLOG-M2",
+      "BLOG-M3",
+      "BLOG-M4",
+      "BLOG-M7",
+      "M12",
+      "M3b"
+    ],
+    "reducedMotionFallback": "parity-unchanged"
+  },
+  "responsive": [
+    {
+      "at": ">=992",
+      "target": "featured-post",
+      "property": "layout",
+      "value": "row: image rail 33.403vw tall + text column"
+    },
+    {
+      "at": "<=767",
+      "target": "featured-post",
+      "property": "layout",
+      "value": "column; image 53vw tall"
+    },
+    {
+      "at": "<=479",
+      "target": "read-article",
+      "property": "display",
+      "value": "none"
+    },
+    {
+      "at": "<=991",
+      "target": "hero",
+      "property": "gap",
+      "value": "30px (7vw at >=992)"
+    }
+  ],
+  "measuredFrom": [
+    "specs/blog.md:82-92",
+    "src/components/cms/IndexHero.jsx:10-26",
+    "src/components/cms/FeaturedPost.jsx:15-43",
+    "ia/ia.json:97"
+  ],
+  "notes": "The featured author \"Transorm9\" is a CMS typo on live and is preserved verbatim (observedMax counts it as one word)."
+}

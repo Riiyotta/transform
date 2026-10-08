@@ -1,0 +1,47 @@
+{
+  "id": "icon",
+  "kind": "primitive",
+  "purpose": "Inline UI glyph images: burger, close, arrows, tick, share icons",
+  "props": {
+    "glyph": [
+      "burger",
+      "burger-close",
+      "close",
+      "arrow-left",
+      "arrow-right",
+      "arrow-card",
+      "tick",
+      "share-x",
+      "share-facebook",
+      "share-linkedin"
+    ],
+    "tone": [
+      "white",
+      "black"
+    ]
+  },
+  "additionalProps": false,
+  "states": [
+    "default"
+  ],
+  "tokens": [
+    "iconSize.menu-burger",
+    "iconSize.arrow",
+    "iconSize.share",
+    "iconSize.tick"
+  ],
+  "motionPatterns": [],
+  "measuredFrom": [
+    "ASSET_MANIFEST.md:51"
+  ],
+  "notes": "Asset roles ui.icon / ui.social-mark; see assets/asset-roles.json",
+  "usedBySections": [
+    "shell.navbar",
+    "shell.mobile-menu",
+    "proof.client-spotlight",
+    "compare.comparison-table",
+    "content.post-header",
+    "content.case-header",
+    "content.post-body"
+  ]
+}

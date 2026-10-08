@@ -1,0 +1,24 @@
+{
+  "id": "share-column",
+  "kind": "component",
+  "purpose": "Sticky share rail (X, Facebook, LinkedIn icons; inert per D13); moves below the body at <=991",
+  "props": {
+    "label": "string",
+    "share": "array"
+  },
+  "additionalProps": false,
+  "composes": [
+    "icon"
+  ],
+  "tokens": [],
+  "motionPatterns": [
+    "BLOG-M9",
+    "BLOG-M10"
+  ],
+  "measuredFrom": [
+    "src/components/cms/ShareColumn.jsx:14"
+  ],
+  "usedBySections": [
+    "content.post-body"
+  ]
+}

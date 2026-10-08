@@ -1,0 +1,233 @@
+{
+  "id": "hero.book-a-demo",
+  "kind": "section",
+  "category": "HERO",
+  "surface": "dark",
+  "claimsPolicy": "none",
+  "purpose": "Convert intent into a booked 30-minute demo through a five-field form; the whole page is this hero.",
+  "description": "Split hero for /book-a-demo: green H1 and supporting copy on the left; the 5-field booking form (visible white labels per D12, client-side validation, static success block, no network per D2/D9) on the right. This is the whole page.",
+  "implementedBy": "src/components/demo/DemoHero.jsx",
+  "evidenceLevel": "measured",
+  "scope": {
+    "templates": [
+      "template.book-a-demo"
+    ],
+    "routes": [
+      "/book-a-demo"
+    ],
+    "routeCount": 1
+  },
+  "constraints": {
+    "onePerPage": true,
+    "maxPerPage": 1,
+    "allowedTemplates": [
+      "template.book-a-demo"
+    ],
+    "allowedRoutes": [
+      "/book-a-demo"
+    ]
+  },
+  "variants": {},
+  "fixedChrome": false,
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "headline",
+      "introText",
+      "fields",
+      "submitLabel",
+      "submittingLabel",
+      "successMessage",
+      "failMessage"
+    ],
+    "properties": {
+      "headline": {
+        "type": "array",
+        "minItems": 1,
+        "maxItems": 2,
+        "maxWords": 10,
+        "observedMax": 7,
+        "items": {
+          "type": "object",
+          "required": [
+            "text"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "text": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "^\\S(?:[\\s\\S]*\\S)?$"
+            },
+            "tone": {
+              "enum": [
+                "default",
+                "accent-green",
+                "accent-blue"
+              ]
+            },
+            "breakAfter": {
+              "type": "boolean"
+            }
+          }
+        },
+        "examples": [
+          [
+            {
+              "text": "30 minutes. Real Demo.",
+              "tone": "accent-green",
+              "breakAfter": true
+            },
+            {
+              "text": "No Sales Script.",
+              "tone": "accent-green"
+            }
+          ]
+        ]
+      },
+      "introText": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 40,
+        "observedMax": 37,
+        "examples": [
+          "A quick, 30-minute Q&A and demo so that you get the answers you need to the questions you're asking. No hard sell, just a chance to connect and show you how we're helping practices across the country."
+        ]
+      },
+      "fields": {
+        "type": "array",
+        "minItems": 5,
+        "maxItems": 5,
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "id",
+            "label",
+            "type",
+            "placeholder"
+          ],
+          "properties": {
+            "id": {
+              "type": "string",
+              "minLength": 1
+            },
+            "label": {
+              "type": "string",
+              "minLength": 1,
+              "maxWords": 5,
+              "observedMax": 2,
+              "examples": [
+                "EMR/PMS"
+              ]
+            },
+            "type": {
+              "enum": [
+                "text",
+                "email"
+              ]
+            },
+            "placeholder": {
+              "type": "string",
+              "minLength": 1,
+              "maxWords": 5,
+              "observedMax": 2,
+              "examples": [
+                "Email"
+              ]
+            }
+          }
+        }
+      },
+      "submitLabel": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 5,
+        "observedMax": 3,
+        "examples": [
+          "Book My Demo"
+        ]
+      },
+      "submittingLabel": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 5,
+        "observedMax": 1,
+        "examples": [
+          "Submitting..."
+        ]
+      },
+      "successMessage": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 10,
+        "observedMax": 7,
+        "examples": [
+          "Thank you! Your submission has been received!"
+        ]
+      },
+      "failMessage": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 10,
+        "observedMax": 8,
+        "examples": [
+          "Oops! Something went wrong while submitting the form."
+        ]
+      }
+    }
+  },
+  "contentFields": [
+    "headline",
+    "introText",
+    "fields",
+    "submitLabel",
+    "submittingLabel",
+    "successMessage",
+    "failMessage"
+  ],
+  "assetRoles": [],
+  "composes": [
+    "form-block",
+    "text-field",
+    "submit-control",
+    "hairline"
+  ],
+  "motion": {
+    "allowedPatterns": [
+      "BAD-M1",
+      "BAD-M2",
+      "M3b"
+    ],
+    "reducedMotionFallback": "parity-unchanged"
+  },
+  "responsive": [
+    {
+      "at": ">=992",
+      "target": "hero",
+      "property": "layout",
+      "value": "row: left 701.3px / right 738.7px at 1440"
+    },
+    {
+      "at": "<=991",
+      "target": "hero",
+      "property": "layout",
+      "value": "column; border-bottom removed"
+    },
+    {
+      "at": "<=767",
+      "target": "h1",
+      "property": "margin",
+      "value": "-27 12 80 34 at 390"
+    }
+  ],
+  "measuredFrom": [
+    "specs/book-a-demo.md:45-100",
+    "src/data/bookDemo.js:11",
+    "DEVIATIONS.md:13",
+    "DEVIATIONS.md:16",
+    "ia/ia.json:91"
+  ],
+  "notes": "D9: client-side validation, brief Submitting..., then the Webflow success block; no network, honeypot and spam guard omitted. D12: labels render white and visible (live is black on black). The 800ms Submitting hold is a clone choice, not measured."
+}

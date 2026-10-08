@@ -1,0 +1,28 @@
+{
+  "id": "wordmark",
+  "kind": "primitive",
+  "purpose": "Transform9 wordmark: white nav/popup/table logo, black on-white logo, footer big logo",
+  "props": {
+    "tone": [
+      "white",
+      "black",
+      "footer"
+    ]
+  },
+  "additionalProps": false,
+  "states": [
+    "default"
+  ],
+  "tokens": [],
+  "motionPatterns": [],
+  "measuredFrom": [
+    "ASSET_MANIFEST.md:51"
+  ],
+  "notes": "Asset roles brand.wordmark-white / -black / -footer; never redrawn",
+  "usedBySections": [
+    "shell.navbar",
+    "shell.call-alex-modal",
+    "shell.footer-bottom-reveal",
+    "compare.comparison-table"
+  ]
+}

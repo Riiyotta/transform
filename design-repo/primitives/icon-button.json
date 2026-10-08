@@ -1,0 +1,39 @@
+{
+  "id": "icon-button",
+  "kind": "primitive",
+  "purpose": "Square icon buttons with a white/black icon swap on hover: testimonial arrows (100x100, 60x60 <=991), popup close (60x60)",
+  "props": {
+    "icon": [
+      "arrow-left",
+      "arrow-right",
+      "close"
+    ],
+    "size": [
+      "100",
+      "60"
+    ]
+  },
+  "additionalProps": false,
+  "states": [
+    "default",
+    "hover"
+  ],
+  "tokens": [
+    "semantic.surface.hover",
+    "iconSize.arrow",
+    "iconSize.popup-close-box"
+  ],
+  "motionPatterns": [
+    "M13",
+    "M16"
+  ],
+  "measuredFrom": [
+    "CLONE_SPEC.md:488",
+    "CLONE_SPEC.md:491"
+  ],
+  "a11y": "Needs an aria-label; arrows stay visible at the ends of the slider",
+  "usedBySections": [
+    "shell.call-alex-modal",
+    "proof.testimonials"
+  ]
+}

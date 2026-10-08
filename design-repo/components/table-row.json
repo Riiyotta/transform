@@ -1,0 +1,27 @@
+{
+  "id": "table-row",
+  "kind": "component",
+  "purpose": "Comparison table row: label, Transform9 cell (tinted, tick) and Other AI Agents cell",
+  "props": {
+    "label": "string",
+    "t9": "string",
+    "other": "string"
+  },
+  "additionalProps": false,
+  "composes": [
+    "icon",
+    "hairline"
+  ],
+  "tokens": [
+    "component.comparison-table"
+  ],
+  "motionPatterns": [
+    "CMP-M5"
+  ],
+  "measuredFrom": [
+    "src/components/compare/ComparisonTable.jsx:8"
+  ],
+  "usedBySections": [
+    "compare.comparison-table"
+  ]
+}

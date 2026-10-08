@@ -1,0 +1,41 @@
+{
+  "id": "text-link",
+  "kind": "primitive",
+  "purpose": "Small text links: footer columns (underline-small), legal row (opacity .3 to 1), popup terms links",
+  "props": {
+    "label": "string",
+    "href": "string",
+    "external": "boolean",
+    "role": [
+      "footer-link",
+      "legal-link",
+      "rich-text-link"
+    ]
+  },
+  "additionalProps": false,
+  "states": [
+    "default",
+    "hover"
+  ],
+  "tokens": [
+    "semantic.text.primary",
+    "semantic.text.faint"
+  ],
+  "motionPatterns": [
+    "M12b",
+    "M17"
+  ],
+  "measuredFrom": [
+    "CLONE_SPEC.md:486",
+    "CLONE_SPEC.md:492"
+  ],
+  "a11y": "External links carry rel=\"noopener\" (DEVIATIONS D6, D10)",
+  "usedBySections": [
+    "shell.navbar",
+    "shell.mobile-menu",
+    "shell.footer",
+    "shell.footer-bottom-reveal",
+    "legal.content",
+    "content.post-body"
+  ]
+}

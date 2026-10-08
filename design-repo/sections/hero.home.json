@@ -1,0 +1,201 @@
+{
+  "id": "hero.home",
+  "kind": "section",
+  "category": "HERO",
+  "surface": "dark",
+  "claimsPolicy": "none",
+  "purpose": "Open the homepage with the value proposition and let a visitor test the AI voice agent by phone immediately.",
+  "description": "Full-viewport dark hero over the fixed video: 6.5vw headline 'Maximize Every Call with a Custom AI Agent', a 'Who We Are' statement, and a 'Test Our AI Agent' phone input plus 'Call Alex' link.",
+  "implementedBy": "src/components/Hero.jsx",
+  "evidenceLevel": "measured",
+  "scope": {
+    "templates": [
+      "template.home"
+    ],
+    "routes": [
+      "/"
+    ],
+    "routeCount": 1
+  },
+  "constraints": {
+    "onePerPage": true,
+    "maxPerPage": 1,
+    "allowedTemplates": [
+      "template.home"
+    ],
+    "allowedRoutes": [
+      "/"
+    ]
+  },
+  "variants": {},
+  "fixedChrome": false,
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "headline",
+      "introLabel",
+      "introText",
+      "testLabel",
+      "phonePlaceholder",
+      "callLinkLabel"
+    ],
+    "properties": {
+      "headline": {
+        "type": "array",
+        "minItems": 1,
+        "maxItems": 4,
+        "maxWords": 10,
+        "observedMax": 8,
+        "items": {
+          "type": "object",
+          "required": [
+            "text"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "text": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "^\\S(?:[\\s\\S]*\\S)?$"
+            },
+            "tone": {
+              "enum": [
+                "default",
+                "accent-green",
+                "accent-blue"
+              ]
+            },
+            "breakAfter": {
+              "type": "boolean"
+            }
+          }
+        },
+        "examples": [
+          [
+            {
+              "text": "Maximize Every"
+            },
+            {
+              "text": "Call"
+            },
+            {
+              "text": "with a"
+            },
+            {
+              "text": "Custom AI Agent",
+              "tone": "accent-green"
+            }
+          ]
+        ]
+      },
+      "introLabel": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 5,
+        "observedMax": 3,
+        "examples": [
+          "Who We Are:"
+        ]
+      },
+      "introText": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 25,
+        "observedMax": 22,
+        "examples": [
+          "Uniquely built AI voice agents for specialty physician practices that eliminate hold times, reduce call center costs, and fill physician schedules 24/7"
+        ]
+      },
+      "testLabel": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 5,
+        "observedMax": 4,
+        "examples": [
+          "Test Our AI Agent"
+        ]
+      },
+      "phonePlaceholder": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 5,
+        "observedMax": 3,
+        "examples": [
+          "Your phone number"
+        ]
+      },
+      "callLinkLabel": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 5,
+        "observedMax": 2,
+        "examples": [
+          "Call Alex"
+        ]
+      }
+    }
+  },
+  "contentFields": [
+    "headline",
+    "introLabel",
+    "introText",
+    "testLabel",
+    "phonePlaceholder",
+    "callLinkLabel"
+  ],
+  "assetRoles": [],
+  "composes": [
+    "underline-link",
+    "text-field",
+    "label-eyebrow",
+    "hairline",
+    "form-block"
+  ],
+  "motion": {
+    "allowedPatterns": [
+      "M3",
+      "M12",
+      "M11"
+    ],
+    "reducedMotionFallback": "parity-unchanged"
+  },
+  "responsive": [
+    {
+      "at": ">=992",
+      "target": "h1",
+      "property": "font-size",
+      "value": "6.5vw"
+    },
+    {
+      "at": "<=991",
+      "target": "h1",
+      "property": "font-size",
+      "value": "75px; max-width 14ch"
+    },
+    {
+      "at": "<=767",
+      "target": "h1",
+      "property": "font-size",
+      "value": "12.8vw; max-width 11ch"
+    },
+    {
+      "at": "<=767",
+      "target": "hero-bottom-block.left",
+      "property": "position",
+      "value": "absolute top 100%; hero margin-bottom 70vw"
+    },
+    {
+      "at": "<=767",
+      "target": "input-hero-wrap",
+      "property": "direction",
+      "value": "column, input full width"
+    }
+  ],
+  "measuredFrom": [
+    "CLONE_SPEC.md:175-193",
+    "src/components/Hero.jsx:6-76",
+    "ia/ia.json:73"
+  ],
+  "notes": "Homepage only. Phone input and the Call Alex link open the shell popup; hero, popup and footer phone inputs are value-synced."
+}

@@ -1,0 +1,320 @@
+{
+  "id": "content.case-header",
+  "kind": "section",
+  "category": "CONTENT",
+  "surface": "dark",
+  "claimsPolicy": "must-not-fabricate",
+  "purpose": "Orient a reader on a case study: back link, client logo panel, study name and either a highlight statement or two metrics.",
+  "description": "Case-study detail header: back link, client-logo panel with a divider, title, and a data-driven highlight-quote or two-stat block (only the populated variant renders).",
+  "implementedBy": "src/components/cms/DetailHeader.jsx",
+  "evidenceLevel": "measured",
+  "scope": {
+    "templates": [
+      "template.case-study"
+    ],
+    "routes": [
+      "/case-studies/southern-bone-joint",
+      "/case-studies/the-orthopaedic-center"
+    ],
+    "routeCount": 2
+  },
+  "constraints": {
+    "onePerPage": true,
+    "maxPerPage": 1,
+    "allowedTemplates": [
+      "template.case-study"
+    ]
+  },
+  "variants": {
+    "highlight": {
+      "requires": [
+        "highlight"
+      ],
+      "forbids": [
+        "stats"
+      ]
+    },
+    "stats": {
+      "requires": [
+        "stats"
+      ],
+      "forbids": [
+        "highlight"
+      ]
+    }
+  },
+  "fixedChrome": false,
+  "content": {
+    "oneOf": [
+      {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "backLink",
+          "title",
+          "logo",
+          "highlight"
+        ],
+        "properties": {
+          "backLink": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "text",
+              "href"
+            ],
+            "properties": {
+              "text": {
+                "type": "string",
+                "minLength": 1,
+                "maxWords": 5,
+                "observedMax": 4,
+                "examples": [
+                  "Back to Case Studies"
+                ]
+              },
+              "href": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "^(/|https://|mailto:|#)",
+                "examples": [
+                  "/case-studies"
+                ]
+              }
+            }
+          },
+          "title": {
+            "type": "string",
+            "minLength": 1,
+            "maxWords": 5,
+            "observedMax": 4,
+            "examples": [
+              "The Orthopaedic Center"
+            ]
+          },
+          "logo": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "assetRole",
+              "assetRef",
+              "alt"
+            ],
+            "properties": {
+              "assetRole": {
+                "allOf": [
+                  {
+                    "$ref": "#/definitions/assetRole"
+                  },
+                  {
+                    "const": "client.logo"
+                  }
+                ]
+              },
+              "assetRef": {
+                "type": "string",
+                "minLength": 1
+              },
+              "alt": {
+                "type": "string",
+                "maxWords": 5,
+                "observedMax": 0
+              }
+            },
+            "examples": [
+              {
+                "assetRole": "client.logo",
+                "assetRef": "/assets/698c60b11b32134b897d931c-sbj-wh.webp",
+                "alt": ""
+              }
+            ]
+          },
+          "highlight": {
+            "type": "string",
+            "minLength": 1,
+            "maxWords": 15,
+            "observedMax": 15,
+            "examples": [
+              "A Partnership Built on Trust:\nHow Southern Bone & Joint Humanized Patient Access with “Ronnie”"
+            ]
+          }
+        }
+      },
+      {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "backLink",
+          "title",
+          "logo",
+          "stats"
+        ],
+        "properties": {
+          "backLink": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "text",
+              "href"
+            ],
+            "properties": {
+              "text": {
+                "type": "string",
+                "minLength": 1,
+                "maxWords": 5,
+                "observedMax": 4,
+                "examples": [
+                  "Back to Case Studies"
+                ]
+              },
+              "href": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "^(/|https://|mailto:|#)",
+                "examples": [
+                  "/case-studies"
+                ]
+              }
+            }
+          },
+          "title": {
+            "type": "string",
+            "minLength": 1,
+            "maxWords": 5,
+            "observedMax": 4,
+            "examples": [
+              "The Orthopaedic Center"
+            ]
+          },
+          "logo": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "assetRole",
+              "assetRef",
+              "alt"
+            ],
+            "properties": {
+              "assetRole": {
+                "allOf": [
+                  {
+                    "$ref": "#/definitions/assetRole"
+                  },
+                  {
+                    "const": "client.logo"
+                  }
+                ]
+              },
+              "assetRef": {
+                "type": "string",
+                "minLength": 1
+              },
+              "alt": {
+                "type": "string",
+                "maxWords": 5,
+                "observedMax": 0
+              }
+            },
+            "examples": [
+              {
+                "assetRole": "client.logo",
+                "assetRef": "/assets/698c60b11b32134b897d931c-sbj-wh.webp",
+                "alt": ""
+              }
+            ]
+          },
+          "stats": {
+            "type": "array",
+            "minItems": 2,
+            "maxItems": 2,
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "value",
+                "label"
+              ],
+              "properties": {
+                "value": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxWords": 5,
+                  "observedMax": 1,
+                  "examples": [
+                    "80%"
+                  ]
+                },
+                "label": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxWords": 15,
+                  "observedMax": 11,
+                  "examples": [
+                    "decrease in average patient hold times"
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  "contentFields": [
+    "backLink",
+    "title",
+    "logo",
+    "highlight",
+    "stats"
+  ],
+  "assetRoles": [
+    "client.logo"
+  ],
+  "composes": [
+    "page-intro-header",
+    "media-cover",
+    "meta-point",
+    "noise-overlay",
+    "icon"
+  ],
+  "motion": {
+    "allowedPatterns": [
+      "BLOG-M2",
+      "BLOG-M8"
+    ],
+    "reducedMotionFallback": "parity-unchanged"
+  },
+  "responsive": [
+    {
+      "at": ">=768",
+      "target": "blog-header-right.cs",
+      "property": "border-left",
+      "value": "1px #3a3e39"
+    },
+    {
+      "at": "<=767",
+      "target": "blog-header-right.cs",
+      "property": "border",
+      "value": "no left border; 1px top hairline"
+    },
+    {
+      "at": "<=991",
+      "target": "highlight-text-alt",
+      "property": "max-width",
+      "value": "100%"
+    },
+    {
+      "at": "<=479",
+      "target": "testim-bottom-cont",
+      "property": "direction",
+      "value": "column"
+    }
+  ],
+  "measuredFrom": [
+    "specs/case-studies.md:77-86",
+    "src/components/cms/CaseVariant.jsx:7-25",
+    "src/pages/CaseStudyPage.jsx:17-48",
+    "ia/ia.json:265"
+  ],
+  "notes": "Variant rule: highlight XOR stats (data-driven). No author, date, category or tag."
+}

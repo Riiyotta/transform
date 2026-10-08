@@ -1,0 +1,160 @@
+{
+  "id": "compare.privacy",
+  "kind": "section",
+  "category": "COMPARE",
+  "surface": "dark",
+  "claimsPolicy": "must-not-fabricate",
+  "purpose": "Substantiate security with four named certifications, each lighting up on hover.",
+  "description": "Privacy & Security claim blocks with a hover state (background lightens on the hovered block only).",
+  "implementedBy": "src/components/compare/PrivacySection.jsx",
+  "evidenceLevel": "measured",
+  "scope": {
+    "templates": [
+      "template.compare"
+    ],
+    "routes": [
+      "/compare"
+    ],
+    "routeCount": 1
+  },
+  "constraints": {
+    "onePerPage": true,
+    "maxPerPage": 1,
+    "allowedTemplates": [
+      "template.compare"
+    ],
+    "allowedRoutes": [
+      "/compare"
+    ]
+  },
+  "variants": {},
+  "fixedChrome": false,
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "headline",
+      "railImage",
+      "blocks"
+    ],
+    "properties": {
+      "headline": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 5,
+        "observedMax": 3,
+        "examples": [
+          "Privacy & Security"
+        ]
+      },
+      "railImage": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "assetRole",
+          "assetRef"
+        ],
+        "properties": {
+          "assetRole": {
+            "allOf": [
+              {
+                "$ref": "#/definitions/assetRole"
+              },
+              {
+                "const": "bg.section-image"
+              }
+            ]
+          },
+          "assetRef": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "examples": [
+          {
+            "assetRole": "bg.section-image",
+            "assetRef": "/assets/69946c2576805aff36fcf31a-privacy-green.avif"
+          }
+        ]
+      },
+      "blocks": {
+        "type": "array",
+        "minItems": 4,
+        "maxItems": 4,
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "head",
+            "text"
+          ],
+          "properties": {
+            "head": {
+              "type": "string",
+              "minLength": 1,
+              "maxWords": 5,
+              "observedMax": 4,
+              "examples": [
+                "FedRAMP 20x"
+              ]
+            },
+            "text": {
+              "type": "string",
+              "minLength": 1,
+              "maxWords": 35,
+              "observedMax": 32,
+              "examples": [
+                "FedRAMP Low ensures foundational cybersecurity for systems handling non-sensitive or public data, meeting baseline federal requirements for cloud security and operational trust."
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  "contentFields": [
+    "headline",
+    "railImage",
+    "blocks"
+  ],
+  "assetRoles": [
+    "bg.section-image"
+  ],
+  "composes": [
+    "claim-block",
+    "media-cover",
+    "hairline"
+  ],
+  "motion": {
+    "allowedPatterns": [
+      "CMP-M2"
+    ],
+    "reducedMotionFallback": "parity-unchanged"
+  },
+  "responsive": [
+    {
+      "at": ">=992",
+      "target": "privacy-block",
+      "property": "size",
+      "value": "527.5x334.4 at 1440 (row 1)"
+    },
+    {
+      "at": "<=767",
+      "target": "privacy-bottom",
+      "property": "direction",
+      "value": "column; rail 80vw tall"
+    },
+    {
+      "at": "<=767",
+      "target": "privacy-block",
+      "property": "border",
+      "value": "no left border; bottom hairline instead"
+    }
+  ],
+  "measuredFrom": [
+    "specs/compare.md:221-241",
+    "src/components/compare/PrivacySection.jsx:40-67",
+    "ia/ia.json:229"
+  ],
+  "notes": "FedRAMP 20x, NIST 800-30, SOC 2 Type I/II and NIST 800-53 Moderate statements are real compliance claims: never fabricate."
+}

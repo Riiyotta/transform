@@ -1,0 +1,43 @@
+{
+  "id": "underline-link",
+  "kind": "primitive",
+  "purpose": "Large 56px text link with the two-line animated underline (hero CTA, Book a Live Demo, Read Article, Load More, popup submit)",
+  "props": {
+    "label": "string",
+    "href": "string",
+    "tone": [
+      "light-on-dark",
+      "dark-on-accent"
+    ],
+    "size": [
+      "text-56",
+      "text-30"
+    ]
+  },
+  "additionalProps": false,
+  "states": [
+    "default",
+    "hover"
+  ],
+  "tokens": [
+    "fontSize.56",
+    "fontSize.30",
+    "semantic.text.primary"
+  ],
+  "motionPatterns": [
+    "M12"
+  ],
+  "measuredFrom": [
+    "CLONE_SPEC.md:484",
+    "src/components/ui/UnderlinePair.jsx:14"
+  ],
+  "a11y": "Link text is the accessible name; underline pair is decorative",
+  "usedBySections": [
+    "hero.home",
+    "hero.compare",
+    "hero.blog-index",
+    "conversion.cta",
+    "compare.comparison-table",
+    "content.blog-list"
+  ]
+}

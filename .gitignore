@@ -7,3 +7,6 @@ recon/audit-pages-2/after/cmp/
 recon/audit-pages-2/states/**/*.png
 recon/motion-3/**/*.png
 recon/motion-4/**/*.png
+
+# Regenerated from design-repo/ with the CLI zip tool; never committed alongside the live folder.
+*.zip

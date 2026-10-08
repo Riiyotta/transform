@@ -1,0 +1,66 @@
+{
+  "opacity": {
+    "half-text": {
+      "$type": "number",
+      "$value": 0.5,
+      "$description": "Muted text: footer headings/description, table labels, compare labels",
+      "cssVar": "--opacity-half-white",
+      "measuredFrom": [
+        "src/styles/page-compare.css:22",
+        "CLONE_SPEC.md:69"
+      ]
+    },
+    "faint-text": {
+      "$type": "number",
+      "$value": 0.3,
+      "$description": "Faint text: footer legal row, \"/ 02\", popup disclaimer",
+      "measuredFrom": [
+        "CLONE_SPEC.md:69"
+      ]
+    },
+    "dim-text": {
+      "$type": "number",
+      "$value": 0.4,
+      "$description": "\"And other specialties\"",
+      "measuredFrom": [
+        "CLONE_SPEC.md:69"
+      ]
+    },
+    "small-screen-secondary": {
+      "$type": "number",
+      "$value": 0.6,
+      "$description": "Secondary texts at <=479",
+      "measuredFrom": [
+        "CLONE_SPEC.md:69"
+      ]
+    },
+    "noise-desktop": {
+      "$type": "number",
+      "$value": 0.5,
+      "$description": "Noise overlay opacity >=992",
+      "cssVar": "--noise-opacity",
+      "measuredFrom": [
+        "src/index.css:119",
+        "src/index.css:81"
+      ]
+    },
+    "noise-tablet": {
+      "$type": "number",
+      "$value": 0.3,
+      "$description": "Noise overlay opacity <=991",
+      "cssVar": "--noise-opacity",
+      "measuredFrom": [
+        "src/index.css:119",
+        "src/index.css:81"
+      ]
+    },
+    "resting-hidden-arrow": {
+      "$type": "number",
+      "$value": 0.5,
+      "$description": "Back link and share icon resting opacity",
+      "measuredFrom": [
+        "specs/blog.md:150"
+      ]
+    }
+  }
+}

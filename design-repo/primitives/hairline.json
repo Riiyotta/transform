@@ -1,0 +1,58 @@
+{
+  "id": "hairline",
+  "kind": "primitive",
+  "purpose": "1px rules: horizontal, vertical (rail at 26.7361vw, hero centre line) and box-shadow lines",
+  "props": {
+    "orientation": [
+      "horizontal",
+      "vertical"
+    ],
+    "surface": [
+      "dark",
+      "light"
+    ]
+  },
+  "additionalProps": false,
+  "states": [
+    "default"
+  ],
+  "tokens": [
+    "layout.hairline",
+    "elevation.hairline-bottom-dark"
+  ],
+  "motionPatterns": [
+    "CMP-M1"
+  ],
+  "measuredFrom": [
+    "CLONE_SPEC.md:39"
+  ],
+  "notes": "line-hor / line-vert draw during the load intros (CMP-M1, LGL-M1)",
+  "usedBySections": [
+    "shell.navbar",
+    "shell.mobile-menu",
+    "shell.footer",
+    "shell.footer-bottom-reveal",
+    "hero.home",
+    "hero.compare",
+    "hero.legal",
+    "hero.book-a-demo",
+    "hero.case-studies-index",
+    "proof.client-logos",
+    "product.how-it-works",
+    "transition.black-to-white",
+    "fit.integrations",
+    "fit.security",
+    "conversion.cta",
+    "compare.generic",
+    "compare.comparison-table",
+    "compare.access",
+    "compare.integrations-white",
+    "compare.privacy",
+    "compare.evaluation",
+    "legal.content",
+    "content.blog-list",
+    "content.case-list",
+    "content.post-body",
+    "content.read-next"
+  ]
+}

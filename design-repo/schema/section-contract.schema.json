@@ -1,0 +1,373 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "section-contract.schema.json",
+  "title": "Section contract shape",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "kind",
+    "category",
+    "surface",
+    "claimsPolicy",
+    "purpose",
+    "description",
+    "implementedBy",
+    "evidenceLevel",
+    "scope",
+    "constraints",
+    "variants",
+    "fixedChrome",
+    "content",
+    "contentFields",
+    "assetRoles",
+    "composes",
+    "motion",
+    "responsive",
+    "measuredFrom"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z]+\\.[a-z0-9-]+$"
+    },
+    "kind": {
+      "const": "section"
+    },
+    "category": {
+      "enum": [
+        "COMPARE",
+        "CONTENT",
+        "CONVERSION",
+        "FIT",
+        "HERO",
+        "LEGAL",
+        "PRODUCT",
+        "PROOF",
+        "SHELL",
+        "TRANSITION"
+      ]
+    },
+    "surface": {
+      "enum": [
+        "dark",
+        "light",
+        "transition"
+      ]
+    },
+    "claimsPolicy": {
+      "enum": [
+        "none",
+        "must-not-fabricate"
+      ]
+    },
+    "purpose": {
+      "type": "string",
+      "minLength": 10
+    },
+    "description": {
+      "type": "string",
+      "minLength": 10
+    },
+    "implementedBy": {
+      "type": "string",
+      "pattern": "^src/"
+    },
+    "evidenceLevel": {
+      "enum": [
+        "measured",
+        "derived"
+      ]
+    },
+    "scope": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "templates",
+        "routes",
+        "routeCount"
+      ],
+      "properties": {
+        "templates": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string"
+          }
+        },
+        "routes": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string"
+          }
+        },
+        "routeCount": {
+          "type": "integer",
+          "minimum": 1
+        }
+      }
+    },
+    "constraints": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "onePerPage",
+        "maxPerPage",
+        "allowedTemplates"
+      ],
+      "properties": {
+        "onePerPage": {
+          "type": "boolean"
+        },
+        "maxPerPage": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "allowedTemplates": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "allowedRoutes": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "mustBeFirst": {
+          "type": "boolean"
+        },
+        "mustBeLast": {
+          "type": "boolean"
+        },
+        "mustFollowNav": {
+          "type": "boolean"
+        },
+        "mustPrecedeFooter": {
+          "type": "boolean"
+        },
+        "mustImmediatelyFollowAnyOf": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "requiresAnyOf": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "mustFollowSectionAnyOf": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "variants": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "requires",
+          "forbids"
+        ],
+        "properties": {
+          "requires": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "forbids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "variantByRoute": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "string"
+      }
+    },
+    "fixedChrome": {
+      "type": "boolean"
+    },
+    "fixedContent": {
+      "type": "object"
+    },
+    "content": {
+      "type": "object"
+    },
+    "contentFields": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "assetRoles": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/assetRole"
+      }
+    },
+    "composes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "motion": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "allowedPatterns",
+        "reducedMotionFallback"
+      ],
+      "properties": {
+        "allowedPatterns": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "$ref": "#/definitions/motionPattern"
+          }
+        },
+        "reducedMotionFallback": {
+          "$ref": "#/definitions/reducedMotionFallback"
+        }
+      }
+    },
+    "responsive": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "at",
+          "target",
+          "property",
+          "value"
+        ],
+        "properties": {
+          "at": {
+            "type": "string"
+          },
+          "target": {
+            "type": "string"
+          },
+          "property": {
+            "type": "string"
+          },
+          "value": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "notes": {
+      "type": "string"
+    },
+    "measuredFrom": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "pattern": "^[^:]+:\\d+(-\\d+)?$"
+      }
+    }
+  },
+  "definitions": {
+    "assetRole": {
+      "enum": [
+        "bg.noise-tile",
+        "bg.section-image",
+        "bg.still-fallback",
+        "bg.video-loop",
+        "brand.wordmark-black",
+        "brand.wordmark-footer",
+        "brand.wordmark-white",
+        "certification.badge",
+        "client.logo",
+        "editorial.hero-image",
+        "embed.video",
+        "partner.logo",
+        "person.photo",
+        "product.outreach-icon",
+        "product.ui-illustration",
+        "specialty.image",
+        "stat.hover-image",
+        "ui.icon",
+        "ui.social-mark"
+      ]
+    },
+    "motionPattern": {
+      "enum": [
+        "M1",
+        "M2a",
+        "M2b",
+        "M3",
+        "M3b",
+        "M4",
+        "M5",
+        "M6",
+        "M7",
+        "M8a",
+        "M8b",
+        "M8c",
+        "M9",
+        "M10",
+        "M10b",
+        "M11",
+        "M11b",
+        "M12",
+        "M12b",
+        "M13",
+        "M14",
+        "M15",
+        "M16",
+        "M17",
+        "M18",
+        "M19",
+        "M20",
+        "M21",
+        "M22",
+        "CMP-M1",
+        "CMP-M2",
+        "CMP-M3",
+        "CMP-M4",
+        "CMP-M5",
+        "BAD-M1",
+        "BAD-M2",
+        "LGL-M1",
+        "BLOG-M1",
+        "BLOG-M2",
+        "BLOG-M3",
+        "BLOG-M4",
+        "BLOG-M6",
+        "BLOG-M7",
+        "BLOG-M8",
+        "BLOG-M9",
+        "BLOG-M10",
+        "CS-M1",
+        "FOOTER-REVEAL"
+      ]
+    },
+    "reducedMotionFallback": {
+      "enum": [
+        "video-still-image",
+        "parity-unchanged",
+        "static-no-motion"
+      ]
+    }
+  }
+}

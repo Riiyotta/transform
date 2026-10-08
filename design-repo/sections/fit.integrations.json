@@ -1,0 +1,347 @@
+{
+  "id": "fit.integrations",
+  "kind": "section",
+  "category": "FIT",
+  "surface": "dark",
+  "claimsPolicy": "must-not-fabricate",
+  "purpose": "Prove it plugs into the EMR stack with two opposing logo marquees and links to partner marketplaces.",
+  "description": "'Built to Connect': EMR/partner logos in two opposing marquee rows with hover background and logo swap; marketplace links open externally.",
+  "implementedBy": "src/components/Integrations.jsx",
+  "evidenceLevel": "measured",
+  "scope": {
+    "templates": [
+      "template.home"
+    ],
+    "routes": [
+      "/"
+    ],
+    "routeCount": 1
+  },
+  "constraints": {
+    "onePerPage": true,
+    "maxPerPage": 1,
+    "allowedTemplates": [
+      "template.home"
+    ],
+    "allowedRoutes": [
+      "/"
+    ]
+  },
+  "variants": {},
+  "fixedChrome": false,
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "headline",
+      "introText",
+      "subhead",
+      "rowLeft",
+      "rowRight"
+    ],
+    "properties": {
+      "headline": {
+        "type": "array",
+        "minItems": 1,
+        "maxItems": 2,
+        "maxWords": 5,
+        "observedMax": 3,
+        "items": {
+          "type": "object",
+          "required": [
+            "text"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "text": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "^\\S(?:[\\s\\S]*\\S)?$"
+            },
+            "tone": {
+              "enum": [
+                "default",
+                "accent-green",
+                "accent-blue"
+              ]
+            },
+            "breakAfter": {
+              "type": "boolean"
+            }
+          }
+        },
+        "examples": [
+          [
+            {
+              "text": "Built to"
+            },
+            {
+              "text": "Connect",
+              "tone": "accent-green"
+            }
+          ]
+        ]
+      },
+      "introText": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 15,
+        "observedMax": 14,
+        "examples": [
+          "Connect instantly with your EMR, phone system, and workflows—no extra overhead, no missed steps."
+        ]
+      },
+      "subhead": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 5,
+        "observedMax": 2,
+        "examples": [
+          "Native Integrations"
+        ]
+      },
+      "rowLeft": {
+        "type": "array",
+        "minItems": 5,
+        "maxItems": 5,
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "name",
+            "logoWhite",
+            "logoBlack"
+          ],
+          "properties": {
+            "name": {
+              "type": "string",
+              "minLength": 1,
+              "maxWords": 5,
+              "observedMax": 3,
+              "examples": [
+                "Epic logo"
+              ]
+            },
+            "logoWhite": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "assetRole",
+                "assetRef"
+              ],
+              "properties": {
+                "assetRole": {
+                  "allOf": [
+                    {
+                      "$ref": "#/definitions/assetRole"
+                    },
+                    {
+                      "const": "partner.logo"
+                    }
+                  ]
+                },
+                "assetRef": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "examples": [
+                {
+                  "assetRole": "partner.logo",
+                  "assetRef": "/assets/6891ba123690a20e001bdb40-athena.webp"
+                }
+              ]
+            },
+            "logoBlack": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "assetRole",
+                "assetRef"
+              ],
+              "properties": {
+                "assetRole": {
+                  "allOf": [
+                    {
+                      "$ref": "#/definitions/assetRole"
+                    },
+                    {
+                      "const": "partner.logo"
+                    }
+                  ]
+                },
+                "assetRef": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "examples": [
+                {
+                  "assetRole": "partner.logo",
+                  "assetRef": "/assets/6891ca03471a3b7540d45c51-athena-black.webp"
+                }
+              ]
+            },
+            "href": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "^(/|https://|mailto:|#)",
+              "examples": [
+                "https://marketplace.athenahealth.com/product/transform9"
+              ]
+            }
+          }
+        }
+      },
+      "rowRight": {
+        "type": "array",
+        "minItems": 4,
+        "maxItems": 4,
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "name",
+            "logoWhite",
+            "logoBlack"
+          ],
+          "properties": {
+            "name": {
+              "type": "string",
+              "minLength": 1,
+              "maxWords": 5,
+              "observedMax": 3,
+              "examples": [
+                "Epic logo"
+              ]
+            },
+            "logoWhite": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "assetRole",
+                "assetRef"
+              ],
+              "properties": {
+                "assetRole": {
+                  "allOf": [
+                    {
+                      "$ref": "#/definitions/assetRole"
+                    },
+                    {
+                      "const": "partner.logo"
+                    }
+                  ]
+                },
+                "assetRef": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "examples": [
+                {
+                  "assetRole": "partner.logo",
+                  "assetRef": "/assets/6891ba123690a20e001bdb40-athena.webp"
+                }
+              ]
+            },
+            "logoBlack": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "assetRole",
+                "assetRef"
+              ],
+              "properties": {
+                "assetRole": {
+                  "allOf": [
+                    {
+                      "$ref": "#/definitions/assetRole"
+                    },
+                    {
+                      "const": "partner.logo"
+                    }
+                  ]
+                },
+                "assetRef": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "examples": [
+                {
+                  "assetRole": "partner.logo",
+                  "assetRef": "/assets/6891ca03471a3b7540d45c51-athena-black.webp"
+                }
+              ]
+            },
+            "href": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "^(/|https://|mailto:|#)",
+              "examples": [
+                "https://marketplace.athenahealth.com/product/transform9"
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  "contentFields": [
+    "headline",
+    "introText",
+    "subhead",
+    "rowLeft",
+    "rowRight"
+  ],
+  "assetRoles": [
+    "partner.logo"
+  ],
+  "composes": [
+    "marquee-track",
+    "logo-block",
+    "hairline"
+  ],
+  "motion": {
+    "allowedPatterns": [
+      "M2a",
+      "M2b",
+      "M14"
+    ],
+    "reducedMotionFallback": "parity-unchanged"
+  },
+  "responsive": [
+    {
+      "at": ">=992",
+      "target": "integration-block",
+      "property": "size",
+      "value": "min-width 25vw (360px), height max(160px,11.111vw)"
+    },
+    {
+      "at": "<=991",
+      "target": "integration-block",
+      "property": "size",
+      "value": "30vw x 16vw, logo 40px"
+    },
+    {
+      "at": "<=767",
+      "target": "integration-block",
+      "property": "size",
+      "value": "48vw x 24vw"
+    },
+    {
+      "at": "<=479",
+      "target": "integration-block",
+      "property": "size",
+      "value": "50vw x 26vw, logo 32px"
+    }
+  ],
+  "measuredFrom": [
+    "CLONE_SPEC.md:354-368",
+    "src/components/Integrations.jsx:63-135",
+    "src/data/integrations.js:5",
+    "ia/ia.json:181"
+  ],
+  "notes": "Partner names/logos are real third-party trademarks. Athena, NextGen and ModMed link out to their marketplaces (target _blank, rel noopener per D6); the others are unlinked on live."
+}
